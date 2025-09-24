@@ -1,3 +1,12 @@
 .contact {
      border-radius: 20px;
 }
+
+.daily-money-name{
+    width:auto ;
+    height: 300px;
+}
+.daily-money-quote {
+    font-weight: bold; 
+    font-size: 40px;
+}
