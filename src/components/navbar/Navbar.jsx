@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import "./Navbar.css"
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ export default function Navbar() {
             <img
               src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png"
               alt="DailyMoney Logo"
-              className="h-10 w-auto"
+              className="h-15 w-auto"
             />
           </Link>
 
@@ -132,7 +133,7 @@ export default function Navbar() {
 
           {/* Contact Button */}
           <button
-            className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 hidden md:block"
+            className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 hidden md:block contact"
             onClick={() => setContactOpen(true)}
           >
             Contact

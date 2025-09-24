@@ -1,6 +1,6 @@
-import Navbar from "./components/Navbar";
 import { Switch, Route } from "react-router-dom";
-import Home from "./components/home";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./components/Home/Home";
 
 export default function App() {
   return (
@@ -10,5 +10,5 @@ export default function App() {
         <Route exact path="/" component={Home} />
       </Switch>
     </>
-  )
+  );
 }
