@@ -1,56 +1,73 @@
-import React from "react";
-import "./Home.css"
+import React, { useState } from "react";
 
 export default function Home() {
+  const [style, setStyle] = useState({});
+
+  // Hover Effect
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 20;
+    const y = ((e.clientY - rect.top) / rect.height - 0.5) * 20;
+    const brightness = 1 + ((e.clientY - rect.top) / rect.height) * 0.5;
+    setStyle({
+      transform: `rotateX(${-y}deg) rotateY(${x}deg) scale(1.05)`,
+      filter: `brightness(${brightness}) saturate(1.2)`,
+      transition: "transform 0.2s ease, filter 0.2s ease",
+    });
+  };
+
+  const handleMouseLeave = () => {
+    setStyle({
+      transform: "rotateX(0deg) rotateY(0deg) scale(1)",
+      filter: "brightness(1) saturate(1)",
+      transition: "transform 0.3s ease, filter 0.3s ease",
+    });
+  };
+
   return (
-    <div className="bg-gray-50 min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-green-600 text-white py-20 px-5 md:px-20 flex flex-col md:flex-row items-center">
-        <div className="md:w-1/2">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Welcome to DailyMoney
+    <section className="relative bg-white min-h-screen flex items-center">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20 py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        
+        {/* Left Side */}
+        <div className="text-center md:text-left">
+          {/* Gradient Text */}
+          <h1 className="text-4xl md:text-5xl font-extrabold leading-snug">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-green-500 to-lime-500">
+              DAILY MONEY
+            </span>
           </h1>
-          <p className="text-lg mb-6">
-            Your guide for Health, Wealth, Family & Life solutions. Explore and grow with us!
+
+          <h2 className="mt-4 text-2xl md:text-4xl font-bold text-gray-900 leading-snug">
+            INDEPENDENT FOR ENTIRE LIFE
+          </h2>
+
+          <p className="mt-4 text-base md:text-lg text-gray-600 max-w-lg mx-auto md:mx-0">
+            Achieve financial freedom, improve health, and live happily.
           </p>
-          <button className="bg-white text-green-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-200 transition">
-            Get Started
-          </button>
+
+          {/* Buttons */}
+          <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <button className="bg-green-600 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-green-700 transition">
+              Get Started
+            </button>
+            <button className="bg-gray-200 text-gray-800 px-6 py-3 rounded-lg shadow hover:bg-gray-300 transition">
+              Learn More
+            </button>
+          </div>
         </div>
-        <div className="md:w-1/2 mt-10 md:mt-0">
+
+        {/* Right Side: Big Responsive Image */}
+        <div className="flex justify-center md:justify-end">
           <img
-            src="https://via.placeholder.com/500x350"
-            alt="Hero"
-            className="rounded-lg shadow-lg"
+            src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758693691/consumerism-1644808_wwdsmf.jpg"
+            alt="Interactive"
+            className="w-full max-w-[600px] lg:max-w-[800px] md:h-60 rounded-xl cursor-pointer shadow-2xl"
+            style={style}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
           />
         </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="py-20 px-5 md:px-20 grid grid-cols-1 md:grid-cols-3 gap-10">
-        <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h2 className="text-xl font-bold mb-2">Health</h2>
-          <p>Tips and guides to improve your daily health and wellbeing.</p>
-        </div>
-        <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h2 className="text-xl font-bold mb-2">Wealth</h2>
-          <p>Financial tips and strategies for growth and security.</p>
-        </div>
-        <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h2 className="text-xl font-bold mb-2">Family</h2>
-          <p>Guidance and ideas to strengthen family bonds and happiness.</p>
-        </div>
-      </section>
-
-      {/* Call to Action Section */}
-      <section className="bg-green-600 text-white text-center py-16 px-5 md:px-20 rounded-lg mx-5 md:mx-20 my-10">
-        <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Life?</h2>
-        <p className="mb-6">Join us today and explore amazing solutions.</p>
-        <button className="bg-white text-green-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-200 transition">
-          Join Now
-        </button>
-      </section>
-    </div>
+      </div>
+    </section>
   );
-};
-
+}
