@@ -4,7 +4,9 @@ import { FaBars } from "react-icons/fa";
 import "./Navbar.css";
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); // mobile menu
+  const [openDropdown, setOpenDropdown] = useState(null); // desktop dropdown
+  const [openSubDropdown, setOpenSubDropdown] = useState(null); // nested submenu
 
   return (
     <nav className="navbar">
@@ -32,25 +34,50 @@ export default function Navbar() {
             <Link to="/family">Family</Link>
           </li>
 
-          <li>
-            <details>
-              <summary>My Life ▾</summary>
+          {/* My Life Dropdown */}
+          <li
+            onMouseEnter={() => setOpenDropdown("life")}
+            onMouseLeave={() => {
+              setOpenDropdown(null);
+              setOpenSubDropdown(null);
+            }}
+          >
+            <span className="dropdown-label">My Life ▾</span>
+            {openDropdown === "life" && (
               <div className="submenu">
-                <Link to="/women">▾ Women Empowerment</Link>
+                {/* Nested Women Empowerment */}
+                <div
+                  className="submenu-item"
+                  onMouseEnter={() => setOpenSubDropdown("women")}
+                  onMouseLeave={() => setOpenSubDropdown(null)}
+                >
+                  <span>▾ Women Empowerment</span>
+                  {openSubDropdown === "women" && (
+                    <div className="submenu nested">
+                      <Link to="/income">My Income</Link>
+                      <Link to="/entrepreneur">Entrepreneur</Link>
+                    </div>
+                  )}
+                </div>
+
                 <Link to="/students">▾ Students</Link>
                 <Link to="/elder">▾ Elder</Link>
               </div>
-            </details>
+            )}
           </li>
 
-          <li>
-            <details>
-              <summary>My Job/Business ▾</summary>
+          {/* My Job/Business Dropdown */}
+          <li
+            onMouseEnter={() => setOpenDropdown("job")}
+            onMouseLeave={() => setOpenDropdown(null)}
+          >
+            <span className="dropdown-label">My Job/Business ▾</span>
+            {openDropdown === "job" && (
               <div className="submenu">
                 <Link to="/income">▾ My Income</Link>
                 <Link to="/entrepreneur">▾ Entrepreneur</Link>
               </div>
-            </details>
+            )}
           </li>
 
           <li>
@@ -83,22 +110,47 @@ export default function Navbar() {
           <Link to="/wealth">Wealth</Link>
           <Link to="/family">Family</Link>
 
-          <details>
-            <summary>My Life ▾</summary>
-            <div className="submenu">
-              <Link to="/women">▾ Women Empowerment</Link>
-              <Link to="/students">▾ Students</Link>
-              <Link to="/elder">▾ Elder</Link>
-            </div>
-          </details>
+          {/* My Life Dropdown for Mobile */}
+          <div className="mobile-dropdown">
+            <span onClick={() => setOpenDropdown(openDropdown === "life" ? null : "life")}>
+              My Life ▾
+            </span>
+            {openDropdown === "life" && (
+              <div className="submenu">
+                <div>
+                  <span
+                    onClick={() =>
+                      setOpenSubDropdown(openSubDropdown === "women" ? null : "women")
+                    }
+                  >
+                    ▾ Women Empowerment
+                  </span>
+                  {openSubDropdown === "women" && (
+                    <div className="submenu nested">
+                      <Link to="/income">My Income</Link>
+                      <Link to="/entrepreneur">Entrepreneur</Link>
+                    </div>
+                  )}
+                </div>
 
-          <details>
-            <summary>My Job/Business ▾</summary>
-            <div className="submenu">
-              <Link to="/income">▾ My Income</Link>
-              <Link to="/entrepreneur">▾ Entrepreneur</Link>
-            </div>
-          </details>
+                <Link to="/students">▾ Students</Link>
+                <Link to="/elder">▾ Elder</Link>
+              </div>
+            )}
+          </div>
+
+          {/* My Job/Business Dropdown for Mobile */}
+          <div className="mobile-dropdown">
+            <span onClick={() => setOpenDropdown(openDropdown === "job" ? null : "job")}>
+              My Job/Business ▾
+            </span>
+            {openDropdown === "job" && (
+              <div className="submenu">
+                <Link to="/income">▾ My Income</Link>
+                <Link to="/entrepreneur">▾ Entrepreneur</Link>
+              </div>
+            )}
+          </div>
 
           <Link to="/vision">Vision</Link>
           <button className="contact-btn full">Contact</button>
