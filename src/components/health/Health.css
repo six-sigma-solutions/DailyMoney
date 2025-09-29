@@ -11,6 +11,29 @@
   --box-shadow-hover: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
+.step {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-in-out;
+}
+
+.step.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.step-left { transform: translateX(-50px); opacity: 0; transition: all 0.8s ease; }
+.step-left.visible { transform: translateX(0); opacity: 1; }
+
+.step-right { transform: translateX(50px); opacity: 0; transition: all 0.8s ease; }
+.step-right.visible { transform: translateX(0); opacity: 1; }
+
+.solution-card:hover, .health-card:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+
+
 /* ---------------- GLOBAL STYLES ---------------- */
 body {
   font-family: var(--font-primary);
@@ -145,6 +168,19 @@ img:hover {
   line-height: 1.4;
 }
 
+.solution-card-video {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+  .solution-card-video::-webkit-media-controls-timeline,
+.solution-card-video::-webkit-media-controls-current-time-display,
+.solution-card-video::-webkit-media-controls-time-remaining-display {
+  display: none !important;
+}
+
+
+
 
 /* ---------------- SOLUTIONS CARDS MOBILE ---------------- */
 @media (max-width: 640px) {
@@ -216,6 +252,9 @@ img:hover {
 }
 
 
+
+
+
 /* ---------------- INCOME SECTION ---------------- */
 .income-card {
   background: #ffffff;
@@ -241,7 +280,7 @@ img:hover {
 }
 
 .income-card-content p {
-  font-size: 1rem;
+  
   line-height: 1.6;
   margin-bottom: 0.8rem;
   color: var(--color-light);
@@ -378,3 +417,5 @@ footer .footer h2 {
     font-size: 1.1em;
   }
 }
+
+
