@@ -1,0 +1,178 @@
+/* Theme & Variables */
+:root {
+  --accent: #c92a2a;
+  --muted: #9aa0a6;
+  --bg: #ffffff;
+  --dark: #0b0b0b;
+  --max-width: 1320px;
+}
+
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--bg);
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #111;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 28px;
+}
+
+/* HERO card (centered, rounded) */
+.hero-card {
+  max-width: 1320px;
+  margin: 28px auto 0;
+  position: relative;
+  border-radius: 28px;
+  overflow: visible;
+}
+
+.card-inner {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 10px 30px rgba(2, 6, 12, 0.06);
+}
+
+.card-media {
+  display: block;
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  object-position: right center;
+  filter: brightness(0.45) contrast(1);
+}
+
+/* Overlay content aligned left inside card */
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  padding-left: 48px;
+}
+
+.card-text {
+  max-width: 720px;
+  padding: 56px;
+  background: linear-gradient(
+    90deg,
+    rgba(11, 11, 11, 0.88) 0%,
+    rgba(11, 11, 11, 0.45) 60%
+  );
+  border-radius: 12px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 520ms ease, transform 520ms ease;
+}
+
+.kicker {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.66);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.card-text h1 {
+  font-family: 'Playfair Display', serif;
+  color: var(--accent);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.02;
+  margin: 0 0 18px;
+}
+
+.lead {
+  color: #d0d0d0;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 60ch;
+}
+
+/* Feature columns under cards */
+.card-features {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: -40px;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 11, 11, 0.88),
+    rgba(11, 11, 11, 0.88)
+  );
+  padding: 22px;
+  border-radius: 12px;
+  margin-left: 28px;
+  margin-right: 28px;
+  z-index: 3;
+}
+
+.card-features .col {
+  padding: 16px 24px;
+  color: #e6e6e6;
+  border-left: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.card-features .col:first-child {
+  border-left: 0;
+}
+
+/* STANDARDS section */
+.standards {
+  padding: 56px 0;
+  background: var(--bg);
+}
+
+.kicker.small {
+  color: #6b6b6b;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.standards h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--accent);
+  font-weight: 400;
+  margin: 6px 0 12px;
+  font-size: 32px;
+}
+
+.grid-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  margin-top: 28px;
+}
+
+.feature h4 {
+  margin: 0 0 8px;
+  font-size: 15px;
+}
+
+.feature p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Utility */
+.muted {
+  color: var(--muted);
+}
+
+.small {
+  font-size: 13px;
+}

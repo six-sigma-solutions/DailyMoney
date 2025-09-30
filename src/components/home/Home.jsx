@@ -1,3 +1,5 @@
+// Home.jsx
+
 import React from "react";
 import "./Home.css";
 
@@ -28,55 +30,66 @@ export default function Home() {
             </a>
           </div>
         </div>
+
+        {/* === START: HERO IMAGE SECTION === */}
         <div className="hero-image-container">
-          <div className="image-container">
-            <img src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758863572/i-phone-buddha-2_vpr8gt.jpg" alt="Styled" className="styled-img" />
+          <div className="cutout-shape">
+            {/* This is your main phone image */}
+            <img
+              src="/phone.png"
+              alt="Daily Money app on phone"
+              className="hero-promo-image"
+            />
+            {/* Four money pile images, one for each corner */}
+            <img
+              src="/money-pile.png"
+              alt="Money pile"
+              className="money-pile money-bl" /* Bottom-Left */
+            />
+            <img
+              src="/money-pile.png"
+              alt="Money pile"
+              className="money-pile money-br" /* Bottom-Right */
+            />
+            <img
+              src="/money-pile.png"
+              alt="Money pile"
+              className="money-pile money-tl" /* Top-Left */
+            />
+            <img
+              src="/money-pile.png"
+              alt="Money pile"
+              className="money-pile money-tr" /* Top-Right */
+            />
+             {/* PASTE THE NEW CODE HERE */}
+             <img
+              src="/money-pile.png"
+              alt="Money"
+              className="new-money new-bl"
+            />
+            <img
+              src="/currency-tr.png"
+              alt="Money"
+              className="new-money new-tr"
+            />
+            <img
+              src="/money-pile.png"
+              alt="Money"
+              className="extra-money extra-top"
+            />
+            <img
+              src="/money-7.png"
+              alt="Money"
+              className="extra-money extra-bottom"
+            />
           </div>
         </div>
+        {/* === END: HERO IMAGE SECTION === */}
       </section>
 
-      {/* Our Approach Section */}
-      <section className="approach-section">
-        <div className="container">
-          <div className="approach-header">
-            <p className="approach-tagline">Our Approach</p>
-            <h2>
-              Technology with purpose,
-              <br />
-              <span className="red-text">Design with impact.</span>
-            </h2>
-            <p className="approach-description">
-              Get digital solutions that work the way you think. Your team
-              stays focused on what matters while technology handles the
-              complexity behind the scenes.
-            </p>
-          </div>
-          <div className="approach-cards">
-            <div className="approach-card">
-              <h4>Digital Transformation: Complete brand and digital presence.</h4>
-              <p>
-                Establish your market position with cohesive brand identity and digital
-                touchpoints that reflect your vision.
-              </p>
-            </div>
-            <div className="approach-card">
-              <h4>Custom solutions that fit your needs</h4>
-              <p>
-                Free up your team for strategic thinking. Let intelligent systems handle
-                routine tasks while you focus on growth.
-              </p>
-            </div>
-            <div className="approach-card">
-              <h4>AR & VR: Engage users through immersive experiences.</h4>
-              <p>
-                Connect with your audience through AR/VR training, marketing, and
-                interactive environments built for modern devices.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+   
 
+      {/* ... (The rest of your page content remains the same) ... */}
       <section className="testimonial-section">
         <div className="testimonial-content">
           <blockquote className="testimonial-quote">
@@ -87,10 +100,10 @@ export default function Home() {
             expertise at every glance. Simple yet sophisticated.”
           </blockquote>
           <div className="testimonial-author">
-          <img 
-              src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png" 
-              alt="DailyMoney Logo" 
-              className="author-icon" 
+            <img
+              src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png"
+              alt="DailyMoney Logo"
+              className="author-icon"
             />
             <div className="author-details">
               <p className="author-name">Kannappan Sethunarayanan</p>
@@ -100,7 +113,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features / Solutions */}
       <section className="solutions-section">
         <div className="container">
           <div className="solutions-header">
@@ -156,7 +168,6 @@ export default function Home() {
         </div>
       </section>
       
-      {/* Clients Section */}
       <section className="clients-container">
         <div className="clients-title">Our Clinte's</div>
         <div className="clients-logos">
@@ -172,7 +183,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer>
         <div className="footer-main">
           <div className="footer-cta">
