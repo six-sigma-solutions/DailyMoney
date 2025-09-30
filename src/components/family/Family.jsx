@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 import React, { useEffect } from "react";
 import "./Family.css";
 
@@ -19,37 +20,39 @@ const Family = () => {
 
   return (
     <div className="family-page">
-      
-       <section className="solutions-cards">
-          <h2 className="text-2xl font-semibold mb-6 text-center">Family</h2>
-        </section>
+
+      <section className="solutions-cards">
+        <h2 className="text-2xl font-semibold mb-6 text-center">Family</h2>
+      </section>
 
       {/* Process Section */}
       <section className="process">
-        <h2>How we work together</h2>
+        <h2>Daily Money Gives Family</h2>
         <p className="subtitle">
-          Get a transparent, collaborative approach that turns your ideas into
-          working solutions.
+          How Daily Money Works Together to make Happy Family.
         </p>
 
         {/* Step 1 */}
         <div className="step">
           <div className="step-img">
-            <img src="/famimg1.jpeg"alt="Discover" />
+            <img src="/famimg1.jpeg" alt="Discover" />
           </div>
           <div className="step-content">
             <h3>
-              <span>/01</span> Discover & Define
+              <span>/01</span> Stronger Everyday With Daily Money...
             </h3>
-            <p>
-              Research your business, users, and goals through collaborative
-              workshops and analysis.
-            </p>
             <ul>
-              <li>Stakeholder interviews</li>
-              <li>User research & personas</li>
-              <li>Competitive analysis</li>
-              <li>Technical architecture</li>
+              <li>Every family looks for something that brings them closer.
+              </li>
+              <li>A little habit, a simple step, that quietly strengthens the bond.
+              </li>
+              <li>It doesn’t feel like a task—it becomes part of life.
+              </li>
+              <li>And once it begins, everyone feels the difference together.</li>
+              <li>Something that fits into mornings, evenings, and everything in between.
+              </li>
+              <li>It’s more than a routine; it’s a shared experience.
+              </li>
             </ul>
           </div>
         </div>
@@ -61,17 +64,14 @@ const Family = () => {
           </div>
           <div className="step-content">
             <h3>
-              <span>/02</span> Design & Develop
+              <span>/02</span> Daily Spark for Students...
             </h3>
-            <p>
-              Build working prototypes in two-week sprints with regular
-              check-ins.
-            </p>
             <ul>
-              <li>Interactive Prototypes</li>
-              <li>UI & UX Design</li>
-              <li>Frontend & Backend Development</li>
-              <li>Quality Assurance</li>
+              <li>Plan monthly budget as a family – small savings, big dreams.</li>
+              <li>Teaching kids about money today = wealthy future tomorrow.</li>
+              <li>it feels small, but the change it brings is powerful.</li>
+              <li>It doesn’t demand attention, yet it’s always there for you.
+              </li>
             </ul>
           </div>
         </div>
@@ -83,17 +83,13 @@ const Family = () => {
           </div>
           <div className="step-content">
             <h3>
-              <span>/03</span> Deploy & Deliver
+              <span>/03</span> Business Mind, Big Grind...
             </h3>
-            <p>
-              Launch your product with complete deployment handling from app
-              stores to cloud infrastructure.
-            </p>
             <ul>
-              <li>Pre-launch Testing & Optimization</li>
-              <li>App Store Deployment</li>
-              <li>Documentation & Training</li>
-              <li>Ongoing Support & Maintenance</li>
+              <li>Great businesses are built on small consistent efforts</li>
+              <li>Think big, start small, scale fast.</li>
+              <li>Failures are the stepping stones to successful ventures.</li>
+              <li>A businessman sees opportunity where others see obstacles.</li>
             </ul>
           </div>
         </div>
@@ -105,17 +101,14 @@ const Family = () => {
           </div>
           <div className="step-content">
             <h3>
-              <span>/04</span> Support & Growth
+              <span>/04</span> Support Today, Success Tomorrow...
             </h3>
-            <p>
-              We continue working with you to scale and improve your digital
-              products.
-            </p>
             <ul>
-              <li>Continuous Improvement</li>
-              <li>Performance Optimization</li>
-              <li>New Feature Development</li>
-              <li>24/7 Support</li>
+              <li>Support from others makes you stronger, but self-belief makes you unstoppable.</li>
+              <li>Growth is not about speed, it’s about direction.</li>
+              <li>The best way to grow is to keep moving forward, even if it’s small steps.</li>
+              <li>Uplifting each other turns small efforts into big results</li>
+              <li>Facing challenges together strengthens resilience</li>
             </ul>
           </div>
         </div>
