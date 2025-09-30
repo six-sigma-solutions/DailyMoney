@@ -175,23 +175,23 @@ body {
 
 /* Define initial position for each corner */
 .money-bl { /* Bottom-Left */
-  bottom: 5;
-  left: 0;
+  bottom: 50;
+  left: 64px;
   transform: translate(-50%, 50%);
 }
 .money-br { /* Bottom-Right */
-  bottom: 0;
-  right: 0;
+  bottom: -30px;
+  right: 140px;
   transform: translate(50%, 50%);
 }
 .money-tl { /* Top-Left */
   top: 0;
-  left: 0;
+  left: 80px;
   transform: translate(-50%, -50%);
 }
 .money-tr { /* Top-Right */
-  top: 120px;
-  right: 10px;
+  top: 85px;
+  right: 70px;
   transform: translate(50%, -50%);
 }
 
@@ -223,13 +223,13 @@ body {
 
 /* Define initial position for each new image */
 .new-bl { /* Bottom-Left */
-  bottom: -20px;
+  bottom: -60px;
   left: 20px;
   transform: translate(-20%, 20%);
 }
 .new-tr { /* Top-Right */
-  top: -25px;
-  right: 55px;
+  top: -10px;
+  right: 130px;
   transform: translate(50%, -50%);
 }
 
