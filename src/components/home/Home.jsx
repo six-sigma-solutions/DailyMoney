@@ -63,7 +63,7 @@ export default function Home() {
             />
              {/* PASTE THE NEW CODE HERE */}
              <img
-              src="/currency-bl.png"
+              src="/money-pile.png"
               alt="Money"
               className="new-money new-bl"
             />
@@ -72,7 +72,7 @@ export default function Home() {
               alt="Money"
               className="new-money new-tr"
             />
-            {/* <img
+            <img
               src="/money-pile.png"
               alt="Money"
               className="extra-money extra-top"
@@ -81,7 +81,7 @@ export default function Home() {
               src="/money-7.png"
               alt="Money"
               className="extra-money extra-bottom"
-            /> */}
+            />
           </div>
         </div>
         {/* === END: HERO IMAGE SECTION === */}
