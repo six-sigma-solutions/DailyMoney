@@ -2,7 +2,7 @@ import { Switch, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
 import CoreTeam from "./components/coreTeam/CoreTeam";
-import Wealth from "./components/wealth/wealth";
+import Wealth from "./components/wealth/Wealth";
 import Health from "./components/health/Health";
 import Family from "./components/family/Family";
 import Contact from "./components/contact/contact";
