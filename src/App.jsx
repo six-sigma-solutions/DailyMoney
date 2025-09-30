@@ -1,28 +1,27 @@
-import { Switch, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
-import Home from "./components/home/Home";
+import Home from "./components/Home/Home";
 import CoreTeam from "./components/coreTeam/CoreTeam";
-import Wealth from "./components/wealth/wealth";
+import Wealth from "./components/wealth/Wealth";
 import Health from "./components/health/Health";
 import Family from "./components/family/Family";
-import Contact from "./components/contact/contact";
+import Contact from "./components/contact/Contact";
 import Vision from "./components/vision/Vision";
+
 
 export default function App() {
   return (
     <>
       <Navbar />
       
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/core-team" component={CoreTeam} />
-        <Route exact path="/wealth" component={Wealth} />
-        <Route exact path="/health" component={Health} />
-        <Route exact path="/family" component={Family} />
-        <Route exact path="/vision" component={Vision} />
-        <Route exact path="/contact" component={Contact} />
-
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/health" element={<Health />} />
+        <Route path="/wealth" element={<Wealth />} />
+        <Route path="/family" element={<Family />} />
+        <Route path="/vision" element={<Vision />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </>
   );
 }
