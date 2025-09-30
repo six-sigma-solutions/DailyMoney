@@ -1,6 +1,6 @@
 import { Switch, Route } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
-import Home from "./components/Home/Home";
+import Navbar from "./components/navbar/Navbar";
+import Home from "./components/home/Home";
 import CoreTeam from "./components/coreTeam/CoreTeam";
 import Wealth from "./components/wealth/wealth";
 import Health from "./components/health/Health";
