@@ -1,81 +1,87 @@
 import React from "react";
 import "./Wealth.css";
-import { FaChartLine, FaPiggyBank, FaShieldAlt, FaHandsHelping } from "react-icons/fa";
 
-const Wealth = () => {
+const Wealth = () =>{
   return (
-    <div className="wealth-container">
-      
-      <section className="wealth-hero">
-        <div className="hero-content">
-          <h1>Grow & Protect Your Wealth</h1>
+    <div>
+      <div className="title">
+        <h1>Smart Wealth</h1>
+        <img className="firstimg" src="img-1.jpg" alt="Smart Wealth" />
+        <h1>Smart Life</h1>
+      </div>
+
+      <div className="container">
+        <div className="text-box">
+          <h1>Wealth</h1>
           <p>
-            We provide expert strategies and innovative tools to help you
-            achieve financial independence, plan your future, and create lasting
-            wealth.
+            Wealth is the accumulation of valuable economic assets and
+            resources, such as money, property, stocks, and other valuable
+            possessions, minus any outstanding debts, which collectively
+            represent a person's or entity's net worth.
           </p>
-          <button className="hero-btn">Start Your Journey</button>
-        </div>
-        <div className="hero-img">
-          <img
-            src="https://source.unsplash.com/600x400/?finance,wealth"
-            alt="Wealth Growth"
-          />
-        </div>
-      </section>
 
-      {/* Services Section */}
-      <section className="wealth-services">
-        <h2>Our Wealth Solutions</h2>
-        <p className="section-sub">
-          From financial planning to secure investments — everything you need in
-          one place.
-        </p>
-        <div className="services-grid">
-          <div className="service-card">
-            <FaChartLine className="service-icon" />
-            <h3>Investment Growth</h3>
-            <p>
-              Smart strategies to help your money work for you and deliver
-              consistent growth.
-            </p>
-          </div>
-          <div className="service-card">
-            <FaPiggyBank className="service-icon" />
-            <h3>Financial Planning</h3>
-            <p>
-              Build a roadmap for your future with tailored plans to reach your
-              financial goals.
-            </p>
-          </div>
-          <div className="service-card">
-            <FaShieldAlt className="service-icon" />
-            <h3>Risk Protection</h3>
-            <p>
-              Secure your assets with the right balance of insurance and
-              protection plans.
-            </p>
-          </div>
-          <div className="service-card">
-            <FaHandsHelping className="service-icon" />
-            <h3>Advisory Support</h3>
-            <p>
-              Work with our trusted advisors to make smart, informed financial
-              decisions.
-            </p>
-          </div>
-        </div>
-      </section>
+          <h1>Key Aspects of Wealth</h1>
+          <p>
+            <strong>Assets and Liabilities:</strong> Wealth is calculated as the
+            market value of all assets (real estate, investments, cash) owned,
+            minus all liabilities or debts.
+          </p>
+          <p>
+            <strong>Stock vs. Flow:</strong> Wealth is a snapshot of what is
+            owned at a given moment (a stock), while income is a continuous
+            stream of money received over time (a flow).
+          </p>
 
-      {/* CTA Section */}
-      <section className="wealth-cta">
-        <h2>Take Control of Your Financial Future</h2>
-        <p>
-          Your journey to financial freedom starts here. Let’s build a wealth
-          strategy that works for you.
-        </p>
-        <button className="cta-btn">Talk to an Expert</button>
-      </section>
+          <h1>How Wealth is Built</h1>
+          <p>
+            <strong>Saving and Investing:</strong> Wealth is built by saving a
+            portion of one's income and investing it over time in assets like
+            stocks, bonds, and real estate.
+          </p>
+          <p>
+            <strong>Compounding:</strong> Investing early and allowing
+            investments to grow through compound interest is a key strategy for
+            wealth creation.
+          </p>
+
+          <h1>Importance of Wealth</h1>
+          <p>
+            <strong>Financial Stability:</strong> Wealth provides financial
+            security and stability, allowing for greater independence in
+            lifestyle and career choices.
+          </p>
+          <p>
+            <strong>Opportunities:</strong> It creates opportunities for future
+            generations by providing a stronger foundation and access to
+            resources.
+          </p>
+        </div>
+
+        <div>
+          <img className="img" src="img.jpg" alt="Wealth" />
+        </div>
+      </div>
+
+      <div>
+        <img className="secondimg" src="img-2.jpg" alt="Smart Life" />
+      </div>
+
+      <div className="footer">
+        <div className="footer-container">
+          <h1>"செல்வத்துள் செல்வம் செவிச்செல்வம் அச்செல்வம்</h1>
+          <h1>செல்வத்துள் எல்லாம் தலை"</h1>
+          <p>
+            Wealth is the total value of an individual's or society's
+            possessions and resources, including money, property, and
+            investments, after accounting for liabilities. It is often measured
+            as net worth and represents accumulated assets that can be exchanged
+            for money, goods, or services. Wealth provides security, allows for
+            desired lifestyles, and enhances quality of life, though its meaning
+            can extend beyond financial resources to include concepts like time
+            and social connections.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
