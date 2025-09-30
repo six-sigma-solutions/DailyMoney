@@ -31,6 +31,7 @@ body {
   background: linear-gradient(120deg, #fff 80%, #fbeaec 100%);
   flex-wrap: wrap;
   gap: 40px;
+  overflow: hidden; /* Prevents currency from showing outside the shape */
 }
 
 .hero-content {
@@ -109,54 +110,180 @@ body {
   font-weight: bold;
 }
 
+/* === START: FINAL ANIMATION STYLES (SINGLE IMAGE) === */
+/* === START: CLEANED UP HERO ANIMATION STYLES === */
+
 .hero-image-container {
-  width: 420px;
-  height: 420px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex: 1; 
+  min-width: 320px;
+  max-width: 500px;
+  height: 450px;
 }
 
-.image-container {
-  position: relative;
-  width: 350px;
-  height: 400px;
-  margin: 50px auto;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 50%;
-  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
-  background-size: 400% 400%;
-  animation: gradientShift 12s ease infinite;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-}
-
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.styled-img {
+.cutout-shape {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  transition: all 0.6s ease;
+  background-color: #111;
+  position: relative;
+  overflow: hidden; /* This is critical for the effect */
+  
+  mask-image: url('/cutout-mask.jpg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  -webkit-mask-image: url('/cutout-mask.jpg');
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.styled-img:hover {
+/* Main phone image with a simple pop effect */
+.hero-promo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+  z-index: 2; /* In front of the money */
+  filter: grayscale(100%);
+  transform: scale(1);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cutout-shape:hover .hero-promo-image {
+  filter: grayscale(0%);
   transform: scale(1.05);
-  filter: sepia(1) hue-rotate(20deg) saturate(300%) brightness(1.1);
 }
 
+
+/* --- NEW 4-CORNER MONEY ANIMATION --- */
+
+/* Base style for all money pile images */
+.money-pile {
+  position: absolute;
+  width: 45%;
+  max-width: 200px;
+  opacity: 0; /* Start hidden */
+  z-index: 1; /* Behind the phone */
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  pointer-events: none;
+}
+
+/* Define initial position for each corner */
+.money-bl { /* Bottom-Left */
+  bottom: 5;
+  left: 0;
+  transform: translate(-50%, 50%);
+}
+.money-br { /* Bottom-Right */
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+}
+.money-tl { /* Top-Left */
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.money-tr { /* Top-Right */
+  top: 120px;
+  right: 10px;
+  transform: translate(50%, -50%);
+}
+
+
+/* On hover, bring all four images into view */
+.cutout-shape:hover .money-pile {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Staggered delays for a smoother effect */
+.cutout-shape:hover .money-bl { transition-delay: 0.0s; }
+.cutout-shape:hover .money-br { transition-delay: 0.1s; }
+.cutout-shape:hover .money-tl { transition-delay: 0.2s; }
+.cutout-shape:hover .money-tr { transition-delay: 0.3s; }
+
+/* --- ADD THIS NEW CODE to the end of your Home.css file --- */
+
+/* Base style for the two additional images */
+.new-money {
+  position: absolute;
+  width: 50%;
+  max-width: 250px;
+  opacity: 0; /* Start hidden */
+  z-index: 1; /* Behind the phone */
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  pointer-events: none;
+}
+
+/* Define initial position for each new image */
+.new-bl { /* Bottom-Left */
+  bottom: -20px;
+  left: 20px;
+  transform: translate(-20%, 20%);
+}
+.new-tr { /* Top-Right */
+  top: -25px;
+  right: 55px;
+  transform: translate(50%, -50%);
+}
+
+/* On hover, bring both new images into view */
+.cutout-shape:hover .new-money {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Staggered delays to make them appear last */
+.cutout-shape:hover .new-bl { transition-delay: 0.4s; }
+.cutout-shape:hover .new-tr { transition-delay: 0.5s; }
+
+/* --- ADD THIS NEW CODE for the top and bottom images --- */
+
+/* Base style for the top and bottom images */
+.extra-money {
+  position: absolute;
+  opacity: 0; /* Start hidden */
+  z-index: 1; /* Behind the phone */
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  pointer-events: none;
+}
+
+/* Define initial position for each new image */
+.extra-top {
+  width: 50%;
+  max-width: 250px;
+  top: -90px; /* Final position is slightly off the top */
+  left: 50%;
+  /* Start hidden directly above */
+  transform: translate(-50%, -100%);
+}
+.extra-bottom {
+  width: 60%;
+  max-width: 300px;
+  bottom: -150px; /* Final position is slightly off the bottom */
+  left: 50%;
+  /* Start hidden directly below */
+  transform: translate(-50%, 100%);
+}
+
+/* On hover, bring both images into view */
+.cutout-shape:hover .extra-money {
+  opacity: 1;
+  /* Slides them into their final position */
+  transform: translate(-50%, 0);
+}
+
+/* Staggered delays to make them appear last */
+.cutout-shape:hover .extra-top { transition-delay: 0.6s; }
+.cutout-shape:hover .extra-bottom { transition-delay: 0.7s; }
+
+/* === END: CLEANED UP HERO ANIMATION STYLES === */
 /* OUR APPROACH SECTION */
 .approach-section {
   padding-top: 80px;
