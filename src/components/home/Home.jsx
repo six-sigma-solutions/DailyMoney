@@ -15,10 +15,10 @@ export default function Home() {
             </span>
           </h1>
           <h2 className="hero-sub">Health & wealth.</h2>
-          <p id="hero-subtitle">Independent for Entire life.</p>
+          <strong><p id="hero-subtitle">Independent for Entire life.</p></strong>
           <p className="hero-desc">
             imagine a world where nature's bounty fuels your financial future.
-            fresh leaves and fruits dance in the dark. welcome to{" "}
+            fresh leaves and fruits dance in the dark.<br/> welcome to{" "}
             <span className="daily-money">daily money!</span>
           </p>
           <div className="hero-actions">
@@ -36,55 +36,54 @@ export default function Home() {
           <div className="cutout-shape">
             {/* This is your main phone image */}
             <img
-              src="/phone.png"
+              src="/logo2.png"
               alt="Daily Money app on phone"
               className="hero-promo-image"
-            />
-            {/* Four money pile images, one for each corner */}
-            <img
-              src="/money-pile.png"
-              alt="Money pile"
-              className="money-pile money-bl" /* Bottom-Left */
-            />
-            <img
-              src="/money-pile.png"
-              alt="Money pile"
-              className="money-pile money-br" /* Bottom-Right */
-            />
-            <img
-              src="/money-pile.png"
-              alt="Money pile"
-              className="money-pile money-tl" /* Top-Left */
-            />
-            <img
-              src="/money-pile.png"
-              alt="Money pile"
-              className="money-pile money-tr" /* Top-Right */
-            />
-             {/* PASTE THE NEW CODE HERE */}
-             <img
-              src="/money-pile.png"
-              alt="Money"
-              className="new-money new-bl"
-            />
-            <img
-              src="/currency-tr.png"
-              alt="Money"
-              className="new-money new-tr"
-            />
-            <img
-              src="/money-pile.png"
-              alt="Money"
-              className="extra-money extra-top"
-            />
-            <img
-              src="/money-7.png"
-              alt="Money"
-              className="extra-money extra-bottom"
             />
           </div>
         </div>
         {/* === END: HERO IMAGE SECTION === */}
+      </section>
+
+
+      <section className="approach-section">
+        <div className="container">
+          <div className="approach-header">
+            <p className="approach-tagline">Our Approach</p>
+            <h2>
+              <span className="red-text">Technology with purpose,</span><br/>
+              <span className="red-text">Design with impact.</span>
+            </h2>
+            <p className="approach-description">
+              Get digital solutions that work the way you think. Your team
+              stays focused on what matters while technology handles the
+              complexity behind the scenes.
+            </p>
+          </div>
+          <div className="approach-cards">
+            <div className="approach-card">
+              <h4>Digital Transformation: Complete brand and digital presence.</h4>
+              <p>
+                Establish your market position with cohesive brand identity and
+                digital touchpoints that reflect your vision.
+              </p>
+            </div>
+            <div className="approach-card">
+              <h4>Custom solutions that fit your needs</h4>
+              <p>
+                Free up your team for strategic thinking. Let intelligent
+                systems handle routine tasks while you focus on growth.
+              </p>
+            </div>
+            <div className="approach-card">
+              <h4>AR & VR: Engage users through immersive experiences.</h4>
+              <p>
+                Connect with your audience through AR/VR training, marketing, and
+                interactive environments built for modern devices.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
    
