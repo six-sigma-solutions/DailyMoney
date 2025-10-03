@@ -17,9 +17,9 @@ export default function Home() {
           <h2 className="hero-sub">Health & wealth.</h2>
           <strong><p id="hero-subtitle">Independent for Entire life.</p></strong>
           <p className="hero-desc">
-            imagine a world where nature's bounty fuels your financial future.
-            fresh leaves and fruits dance in the dark.<br/> welcome to{" "}
-            <span className="daily-money">daily money!</span>
+            Imagine a world where nature's bounty fuels your financial future.
+            fresh leaves and fruits dance in the dark.<br/> Welcome to{" "}
+            <strong><span className="daily-money">daily money!</span></strong>
           </p>
           <div className="hero-actions">
             <a href="#" className="see-work-btn">
@@ -47,7 +47,7 @@ export default function Home() {
 
 
       <section className="approach-section">
-        <div className="container">
+        <div className="container1">
           <div className="approach-header">
             <p className="approach-tagline">Our Approach</p>
             <h2>
@@ -113,7 +113,7 @@ export default function Home() {
       </section>
 
       <section className="solutions-section">
-        <div className="container">
+        <div className="container1">
           <div className="solutions-header">
             <p className="solutions-tagline">Services</p>
             <h2>
@@ -124,41 +124,41 @@ export default function Home() {
             </p>
           </div>
           <div className="solutions-grid">
-            <div className="solution-card">
+            <div className="solution-card1">
               <div className="solution-card-content">
-                <div className="solution-card-title">Custom Applications</div>
-                <div className="solution-card-desc">
+                <div className="solution-card-title1">Custom Applications</div>
+                <div className="solution-card-desc1">
                   Scale your business with reliable mobile and web applications built for performance and growth.
                 </div>
               </div>
               <img
-                className="solution-card-img"
+                className="solution-card-img1"
                 src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758863572/i-phone-buddha-2_vpr8gt.jpg"
                 alt="Custom Apps"
               />
             </div>
-            <div className="solution-card">
+            <div className="solution-card1">
               <div className="solution-card-content">
-                <div className="solution-card-title">Brand & Design Systems</div>
-                <div className="solution-card-desc">
+                <div className="solution-card-title1">Brand & Design Systems</div>
+                <div className="solution-card-desc1">
                   Build recognition with cohesive visual identity and design systems across all your touchpoints.
                 </div>
               </div>
               <img
-                className="solution-card-img"
+                className="solution-card-img1"
                 src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758863572/i-phone-buddha-2_vpr8gt.jpg"
                 alt="Design Systems"
               />
             </div>
-            <div className="solution-card">
+            <div className="solution-card1">
               <div className="solution-card-content">
-                <div className="solution-card-title">AI Plugins, Chatbots & Automation Tools</div>
-                <div className="solution-card-desc">
+                <div className="solution-card-title1">AI Plugins, Chatbots & Automation Tools</div>
+                <div className="solution-card-desc1">
                   Streamline operations and enhance user experience with intelligent automation solutions.
                 </div>
               </div>
               <img
-                className="solution-card-img"
+                className="solution-card-img1"
                 src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758863572/i-phone-buddha-2_vpr8gt.jpg"
                 alt="AI Tools"
               />
@@ -182,27 +182,36 @@ export default function Home() {
         </div>
       </section>
 
-      <footer>
-        <div className="footer-main">
-          <div className="footer-cta">
+      <footer1>
+        <div className="footer-main1">
+          <div className="footer-cta1">
             <h2>Tell us about your project</h2>
-            <button className="say-hello-btn">Say Hello</button>
+            {/* Changed class name below */}
+            <button className="say-hello-btn1">Say Hello</button>
           </div>
-          <hr className="footer-divider" />
-          <div className="footer-bottom-content">
-            <div className="footer-logo-block">
+          {/* Changed class name below */}
+          <hr className="footer-divider1" />
+          {/* Changed class name below */}
+          <div className="footer-bottom-content1">
+            {/* Changed class name below */}
+            <div className="footer-logo-block1">
             <img
-            src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png"
-            alt="DailyMoney Logo"
-          />
-              <span className="footer-logo-text">Daily Money</span>
-              <span className="footer-subtext">imagine a world where nature's bounty fuels your financial future. fresh leaves and fruits dance in the dark. welcome to daily money!</span>
-              <span className="footer-copyright">
+              src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png"
+              alt="DailyMoney Logo"
+            />
+              {/* Changed class name below */}
+              <span className="footer-logo-text1">Daily Money</span>
+              {/* Changed class name below */}
+              <span className="footer-subtext1">imagine a world where nature's bounty fuels your financial future. fresh leaves and fruits dance in the dark. welcome to daily money!</span>
+              {/* Changed class name below */}
+              <span className="footer-copyright1">
                 © 2025. All rights reserved.
               </span>
             </div>
-            <div className="footer-links-block">
-              <div className="footer-links-col">
+            {/* Changed class name below */}
+            <div className="footer-links-block1">
+              {/* Changed class name below */}
+              <div className="footer-links-col1">
                 <h4>Company</h4>
                 <ul>
                   <li><a href="#">Work</a></li>
@@ -211,7 +220,8 @@ export default function Home() {
                   <li><a href="#">Blog</a></li>
                 </ul>
               </div>
-              <div className="footer-links-col">
+              {/* Changed class name below */}
+              <div className="footer-links-col1">
                 <h4>Connect</h4>
                 <ul>
                   <li><a href="#">Follow on X</a></li>
@@ -222,7 +232,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </footer>
+      </footer1>
     </div>
   );
 }
