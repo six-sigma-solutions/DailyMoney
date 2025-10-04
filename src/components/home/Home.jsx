@@ -2,6 +2,7 @@
 
 import React from "react";
 import "./Home.css";
+import videoFile from "../../assets/Home//gif.mp4";
 
 export default function Home() {
   return (
@@ -14,10 +15,10 @@ export default function Home() {
               Daily <span className="money">Money</span>
             </span>
           </h1>
-          <h2 className="hero-sub">Health & wealth.</h2>
+          <strong><h2 className="hero-sub">Health & wealth.</h2></strong>
           <strong><p id="hero-subtitle">Independent for Entire life.</p></strong>
           <p className="hero-desc">
-            Imagine a world where nature's bounty fuels your financial future.
+            Imagine a world where nature's abundance powers your financial future.
             fresh leaves and fruits dance in the dark.<br/> Welcome to{" "}
             <strong><span className="daily-money">daily money!</span></strong>
           </p>
@@ -46,143 +47,138 @@ export default function Home() {
       </section>
 
 
-      <section className="approach-section">
-        <div className="container1">
-          <div className="approach-header">
-            <p className="approach-tagline">Our Approach</p>
-            <h2>
-              <span className="red-text">Technology with purpose,</span><br/>
-              <span className="red-text">Design with impact.</span>
-            </h2>
-            <p className="approach-description">
-              Get digital solutions that work the way you think. Your team
-              stays focused on what matters while technology handles the
-              complexity behind the scenes.
-            </p>
-          </div>
-          <div className="approach-cards">
-            <div className="approach-card">
-              <h4>Digital Transformation: Complete brand and digital presence.</h4>
-              <p>
-                Establish your market position with cohesive brand identity and
-                digital touchpoints that reflect your vision.
-              </p>
-            </div>
-            <div className="approach-card">
-              <h4>Custom solutions that fit your needs</h4>
-              <p>
-                Free up your team for strategic thinking. Let intelligent
-                systems handle routine tasks while you focus on growth.
-              </p>
-            </div>
-            <div className="approach-card">
-              <h4>AR & VR: Engage users through immersive experiences.</h4>
-              <p>
-                Connect with your audience through AR/VR training, marketing, and
-                interactive environments built for modern devices.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-   
-
-      {/* ... (The rest of your page content remains the same) ... */}
-      <section className="testimonial-section">
-        <div className="testimonial-content">
-          <blockquote className="testimonial-quote">
-            “Archetype Labs created an identity with incredible
-            <br />
-            depth – something that reveals our engineering
-            <br />
-            expertise at every glance. Simple yet sophisticated.”
-          </blockquote>
-          <div className="testimonial-author">
-            <img
-              src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png"
-              alt="DailyMoney Logo"
-              className="author-icon"
-            />
-            <div className="author-details">
-              <p className="author-name">Kannappan Sethunarayanan</p>
-              <p className="author-title">Hydro Engineering Products</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="solutions-section">
-        <div className="container1">
-          <div className="solutions-header">
-            <p className="solutions-tagline">Services</p>
-            <h2>
-              <span className="red-text">Solutions for every <br></br>stage of your journey</span>
-            </h2>
-            <p className="solutions-description">
-              Whether you’re launching your first product or scaling an established business, get custom solutions that fit your specific needs and timeline.
-            </p>
+      <div className="container1">
+          {/* This is the main container for the two-column layout */}
+          <div className="solution-container">
+
+            {/* Left Column: Contains all the text content */}
+            <div className="solution-text-content">
+              <div> {/* Added a wrapper div for clean flex alignment */}
+                <h2>
+                  <span className="red-text">Solutions for every<br />stage of Daily Money</span>
+                </h2>
+                <ul className="solution-bullets">
+                <li><strong>Solutions for Every Stage of Your Health & Wealth Journey.</strong></li>
+<li><strong>Daily Money Made Easy, Health & Wealth Made Possible.</strong></li>
+<li><strong>Smart Choices for Daily Money, Smarter Future in Health & Wealth.</strong></li>
+<li><strong>From Today’s Money to Tomorrow’s Wealth & Wellness.</strong></li>
+<li><strong>Empowering You Every Day with Money, Health, and Wealth.</strong></li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Right Column: Contains the image */}
+            <div className="solution-image-container">
+  <video src={videoFile} autoPlay loop muted alt="Daily Money Solutions"></video>
+</div>
           </div>
           <div className="solutions-grid">
             <div className="solution-card1">
               <div className="solution-card-content">
-                <div className="solution-card-title1">Custom Applications</div>
-                <div className="solution-card-desc1">
-                  Scale your business with reliable mobile and web applications built for performance and growth.
-                </div>
+                <div className="solution-card-title1">Daily Money is your <span>Future</span></div>
+                
               </div>
               <img
                 className="solution-card-img1"
-                src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758863572/i-phone-buddha-2_vpr8gt.jpg"
+                src="/phone1.jpg"
                 alt="Custom Apps"
               />
             </div>
             <div className="solution-card1">
               <div className="solution-card-content">
-                <div className="solution-card-title1">Brand & Design Systems</div>
-                <div className="solution-card-desc1">
-                  Build recognition with cohesive visual identity and design systems across all your touchpoints.
-                </div>
+                <div className="solution-card-title1">Daily Money is your <span>future generation</span></div>
+               
               </div>
               <img
                 className="solution-card-img1"
-                src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758863572/i-phone-buddha-2_vpr8gt.jpg"
+                src="/phone2.jpg"
                 alt="Design Systems"
               />
             </div>
             <div className="solution-card1">
               <div className="solution-card-content">
-                <div className="solution-card-title1">AI Plugins, Chatbots & Automation Tools</div>
-                <div className="solution-card-desc1">
-                  Streamline operations and enhance user experience with intelligent automation solutions.
-                </div>
+                <div className="solution-card-title1">Daily Money is your <span>generation after generations</span></div>
+                
               </div>
               <img
                 className="solution-card-img1"
-                src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758863572/i-phone-buddha-2_vpr8gt.jpg"
+                src="./phone3.png"
                 alt="AI Tools"
               />
             </div>
           </div>
+
+          <div className="ar-vr-container">
+            {/* Left Column with the Image */}
+            <div className="ar-vr-image-column">
+              <img src="./wealth1.jpg" alt="AR/VR Experiences" />
+              {/* The title overlay was removed from the previous design,
+                  but you can add it back here if you want: 
+                  <h3 className="ar-vr-image-title">AR/VR Experiences</h3> 
+              */}
+            </div>
+            {/* Right Column with Content */}
+            <div className="ar-vr-content-column">
+              {/* The H3 and P tags have been REMOVED from here */}
+              
+              <div className="ar-vr-nested-card">
+              <h4 className="nested-card-title">The Daily Money Philosophy</h4>
+                <ul className="solution-bullets">
+                <li><strong>Your Partner in Daily Money, Health, and Wealth for Life.</strong></li>
+<li><strong>Every Stage, Every Step Money, Health & Wealth Solutions.</strong></li>
+<li><strong>Balance Your Daily Money. Build Your Health. Grow Your Wealth.</strong></li>
+<li><strong>Small Daily Money Wins, Big Health & Wealth Gains.</strong></li>
+<li><strong>Simplify Daily Money. Strengthen Health. Secure Wealth.</strong></li>
+<li><strong>Master Your Day, Master Your Money, Master Your Well-being.</strong></li>
+<li><strong>Turn Daily Financial Actions into a Lifetime of Health and Wealth.</strong></li>
+<li><strong>Live Well, Live Wealthy, Every Single Day.</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </section>
       
+      
       <section className="clients-container">
-        <div className="clients-title">Our Clinte's</div>
-        <div className="clients-logos">
-          {[
-            "Xerox", "AT&T", "Staples", "Honest Co.",
-            "RootMetrics", "Xome", "Copper Mobile", "ChildFund",
-          ].map((client) => (
-            <div className="client-logo-block" key={client}>
-              <img src="https://i.imgur.com/8QfQF8F.png" alt={client} />
-              <span>{client}</span>
-            </div>
-          ))}
+        <div className="clients-title">Core Team</div>
+
+        {/* Founder is now in a separate div at the top */}
+        <div className="founder-card">
+          <img src="https://via.placeholder.com/150" alt="Dr.V.Chellapondy DSW" />
+          <h4 className="team-member-name">Dr.V.Chellapondy DSW</h4>
+          <p className="team-member-role">Founder & CEO</p>
+        </div>
+
+        {/* The other team members remain in the grid below */}
+        <div className="team-grid">
+          
+          <div className="team-member-card">
+            <img src="https://via.placeholder.com/120" alt="R.K.Selvamani" />
+            <h4 className="team-member-name">R.K.Selvamani</h4>
+            <p className="team-member-role">Film Director & Producer</p>
+          </div>
+
+          <div className="team-member-card">
+            <img src="https://via.placeholder.com/120" alt="Dr. KP Kosygan" />
+            <h4 className="team-member-name">Dr. KP Kosygan</h4>
+            <p className="team-member-role">Senior Orthopaedic Consultant</p>
+          </div>
+
+          <div className="team-member-card">
+            <img src="https://via.placeholder.com/120" alt="S.Vasu" />
+            <h4 className="team-member-name">S.Vasu</h4>
+            <p className="team-member-role">Technocrat & Media Industry</p>
+          </div>
+
         </div>
       </section>
 
-      <footer>
+
+      <footer1>
         <div className="footer-main1">
           <div className="footer-cta1">
             <h2>Tell us about your project</h2>
@@ -202,7 +198,7 @@ export default function Home() {
               {/* Changed class name below */}
               <span className="footer-logo-text1">Daily Money</span>
               {/* Changed class name below */}
-              <span className="footer-subtext1">imagine a world where nature's bounty fuels your financial future. fresh leaves and fruits dance in the dark. welcome to daily money!</span>
+              <span className="footer-subtext1">Imagine a world where nature's abundance powers your financial future. fresh leaves and fruits dance in the dark.</span>
               {/* Changed class name below */}
               <span className="footer-copyright1">
                 © 2025. All rights reserved.
@@ -232,7 +228,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </footer>
+      </footer1>
     </div>
   );
 }

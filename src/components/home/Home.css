@@ -1,7 +1,9 @@
-/* RESET */
+/* ======================================================= */
+/* GLOBAL RESET & BODY STYLES                            */
+/* ======================================================= */
 * {
   box-sizing: border-box;
-  margin: 0 60px;
+  margin: 0;
   padding: 0;
 }
 
@@ -12,7 +14,6 @@ body {
   color: #111;
 }
 
-/* A reusable container for consistent alignment */
 .container1 {
   max-width: 1400px;
   margin-left: auto;
@@ -21,8 +22,9 @@ body {
   padding-right: 60px;
 }
 
-
-/* HERO SECTION */
+/* ======================================================= */
+/* HERO SECTION                                          */
+/* ======================================================= */
 .hero-section {
   display: flex;
   align-items: center;
@@ -31,19 +33,18 @@ body {
   background: linear-gradient(120deg, #fff 80%, #fbeaec 100%);
   flex-wrap: wrap;
   gap: 40px;
-  overflow: hidden; /* Prevents currency from showing outside the shape */
+  overflow: hidden;
 }
 
 .hero-content {
   max-width: 600px;
   margin-top: 50px;
-  gap: 2px;
 }
 
 .hero-content h1 {
   font-weight: 400;
   line-height: 0.9;
-  letter-spacing:2px;
+  letter-spacing: 2px;
   margin-bottom: 0.1em;
 }
 
@@ -60,15 +61,15 @@ body {
 
 .hero-content h2 {
   font-size: 33px;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 1.1;
-  margin-bottom: 0.25em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 0.2em;
+  font-family: Poppins, sans-serif;
 }
 
 #hero-subtitle {
-  color: chocolate;
-  margin-bottom: 0px;
+  color: green;
   font-size: 20px;
   font-family: 'sans-serif';
 }
@@ -105,17 +106,12 @@ body {
 .get-started-btn {
   color: #0b0a0a;
   font-size: 22px;
-  margin-right: 0;
-  border-width: 0px;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* === START: FINAL ANIMATION STYLES (SINGLE IMAGE) === */
-/* === START: CLEANED UP HERO ANIMATION STYLES === */
-
 .hero-image-container {
-  flex: 1; 
+  flex: 1;
   min-width: 320px;
   max-width: 500px;
   height: 450px;
@@ -126,34 +122,30 @@ body {
   height: 100%;
   background-color: #111;
   position: relative;
-  overflow: hidden; /* This is critical for the effect */
-  
+  overflow: hidden;
   mask-image: url('/cutout-mask.jpg');
   mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center;
-
   -webkit-mask-image: url('/cutout-mask.jpg');
   -webkit-mask-size: contain;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
-  
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Main phone image with a simple pop effect */
 .hero-promo-image {
   width: 100%;
   height: 100%;
-  padding: 30px 40px 0 0 ;
+  padding: 30px 40px 0 0;
   object-fit: contain;
   position: relative;
-  z-index: 2; /* In front of the money */
+  z-index: 2;
   filter: grayscale(100%);
   transform: scale(1);
-  transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.5s ease;
 }
 
 .cutout-shape:hover .hero-promo-image {
@@ -161,154 +153,93 @@ body {
   transform: scale(1.09);
 }
 
-/* === END: CLEANED UP HERO ANIMATION STYLES === */
-/* OUR APPROACH SECTION */
-.approach-section {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: #fdfdfd;
-}
-
-.approach-header {
-  max-width: 800px;
-  margin-bottom: 50px;
-  text-align: left;
-}
-
-.approach-tagline {
-  font-size: 1.1em;
-  font-weight: 500;
-  color: #555;
-  margin-bottom: 12px;
-}
-
-.approach-section h2 {
-  font-size: 3em;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 24px;
-  color: #111;
-}
-
-.approach-section .red-text {
-  color: #d32a2a;
-}
-
-.approach-description {
-  font-size: 1.2em;
-  color: #666;
-  line-height: 1.6;
-}
-
-.approach-cards {
+/* ======================================================= */
+/* SOLUTIONS SECTION                                     */
+/* ======================================================= */
+.solution-container {
   display: flex;
-  gap: 32px;
+  align-items: center;
+  gap: 60px; /* Space between text and image */
+  padding: 40px 0;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
-.approach-card {
-  flex: 1 1 350px;
+.solution-text-content {
+  flex: 1; /* Takes up half the space */
   min-width: 300px;
-  max-width: 325px;
-  padding: 32px;
-  background: #fff;
-  border-radius: 16px;
-  border: 1px solid #eee;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  text-align: left;
+  display:flex;
 }
 
-.approach-card h4 {
-  font-size: 1.3em;
-  font-weight: bold;
-  margin-bottom: 12px;
-  color: #111;
+.solution-image-container {
+  flex: 1; /* Takes up the other half */
+  align-items:flex-end;
+  min-width: 300px;
 }
 
-.approach-card p {
-  font-size: 1.05em;
-  color: #666;
-  line-height: 1.6;
+.solution-text-content {
+  flex: 1; /* Takes up half the space */
+  min-width: 300px;
+  /* The extra 'display:flex' was removed from here */
 }
 
-/* TESTIMONIAL SECTION */
-.testimonial-section {
-  padding: 100px 60px;
-  background-color: #fafafa;
+.solution-image-container {
+  flex: 1; /* Takes up the other half */
+  min-width: 300px;
+}
+/* Replace with this rule */
+.solution-image-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Reusing the bullet point styles from before */
+.solution-bullets {
+  list-style: none;
+  padding: 0;
+  margin-top: 24px;
+}
+
+.solution-bullets li {
   position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.testimonial-section::before {
-  content: '“';
-  position: absolute;
-  z-index: 0;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 25em;
-  font-family: serif;
-  color: #e9e9e9;
-}
-
-.testimonial-content {
-  max-width: 900px;
-  text-align: left;
-  position: relative;
-  z-index: 1;
-}
-
-.testimonial-quote {
-  font-size: 2.2em;
-  font-weight: 450;
-  line-height: 1.3;
-  color: #000000;
-  margin: 0 0 30px 0;
-}
-
-.testimonial-author {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.author-icon {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-}
-
-.author-details {
-  text-align: left;
-}
-
-.author-name {
+  padding-left: 35px;
+  margin-bottom: 18px;
   font-size: 1.1em;
+  line-height: 1.6;
+  color: #070707;
+}
+
+.ar-vr-nested-card .solution-bullets li {
+  font-size: 1.4em;
+}
+
+/* --- Add this to Home.css --- */
+
+.nested-card-title {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #d32a2a;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee; /* Adds a subtle line below the heading */
+}
+
+.solution-bullets li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  color: #d32a2a;
+  font-size: 1.2em;
   font-weight: bold;
-  color: #111;
-  margin: 0;
 }
 
-.author-title {
-  font-size: 1em;
-  color: #666;
-  margin: 0;
-}
-
-/* SOLUTIONS / FEATURES SECTION */
-.solutions-section {
-  padding: 80px 0;
-  background-color: #fff;
-}
-
-.solutions-header {
-  max-width: 700px;
-  margin-bottom: 50px;
-  text-align: left;
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .solution-container {
+    flex-direction: column-reverse; /* Puts image on top on mobile */
+  }
 }
 
 .solutions-tagline {
@@ -365,6 +296,10 @@ body {
   font-size: 1.2em;
 }
 
+.solution-card-title1 span{
+  color: #b71c1c;
+}
+
 .solution-card-desc1 {
   color: #666;
   font-size: 1.08em;
@@ -378,12 +313,159 @@ body {
   border-top: 1px solid #e0e0e0;
 }
 
-/* CLIENTS */
+.solution-card-img1 {
+  transition: filter 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+/* 2. On hover of the card, change the image back to its original color */
+.solution-card1:hover .solution-card-img1 {
+  transform: scale(1.04) translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Part 3: AR/VR Layout */
+.ar-vr-container {
+  display: flex;
+  gap: 50px;
+  align-items: stretch;
+  margin-top: 80px;
+}
+
+.ar-vr-image-column {
+  /* This sets a fixed width similar to the cards above */
+  flex: 0 0 395px;
+  position: relative;
+  min-height: 500px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ar-vr-image-column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ar-vr-image-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 1.2em;
+}
+
+.ar-vr-content-column {
+  /* This makes the column take up the rest of the space */
+  flex: 1;
+  display: flex;
+  /* This will vertically center the card inside the column */
+  justify-content: center; 
+}
+
+.ar-vr-content-column h3 {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.ar-vr-content-column p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+.ar-vr-nested-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 32px;
+  width: 100%; /* Ensure it fills the column width */
+}
+
+/* ======================================================= */
+/* TESTIMONIAL SECTION                                   */
+/* ======================================================= */
+.testimonial-section {
+  padding: 100px 60px;
+  background-color: #fafafa;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-section::before {
+  content: '“';
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25em;
+  font-family: serif;
+  color: #e9e9e9;
+}
+
+.testimonial-content {
+  max-width: 900px;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-quote {
+  font-size: 2.2em;
+  font-weight: 450;
+  line-height: 1.3;
+  color: #000000;
+  margin: 0 0 30px 0;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.author-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.author-details {
+  text-align: left;
+}
+
+.author-name {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #111;
+  margin: 0;
+}
+
+.author-title {
+  font-size: 1em;
+  color: #666;
+  margin: 0;
+}
+/* ======================================================= */
+/* CORE TEAM SECTION STYLES (HIERARCHICAL LAYOUT)        */
+/* ======================================================= */
 .clients-container {
   max-width: 1500px;
   margin: 0 auto;
   padding: 60px 40px;
   text-align: center;
+  /* New styles to stack the founder and the grid */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .clients-title {
@@ -392,39 +474,65 @@ body {
   margin-bottom: 50px;
 }
 
-.clients-logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 80px 120px;
-}
-
-.client-logo-block {
+/* New style for the Founder's card */
+.founder-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 60px; /* Space between founder and the team */
+}
+
+/* Larger image for the founder */
+.founder-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* This is the grid for the rest of the team */
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.team-member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+}
+
+.team-member-card img {
   width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-.client-logo-block img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  margin-bottom: 12px;
-  filter: grayscale(100%);
+/* This style applies to both founder and team member names */
+.team-member-name {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
 }
 
-.client-logo-block span {
-  font-weight: 500;
-  font-size: 1.1em;
-  color: #444;
+/* This style applies to both founder and team member roles */
+.team-member-role {
+  font-size: 1em;
+  color: #777;
 }
-
-/* FOOTER */
-/* ... (all other styles remain the same) ... */
-
-
-/* FOOTER */
+/* ======================================================= */
+/* FOOTER                                                */
+/* ======================================================= */
 .footer-main1 {
   max-width: 1700px;
   margin: 30px 60px;
@@ -448,7 +556,6 @@ body {
   margin-bottom: 15px;
 }
 
-/* Changed selector below */
 .footer-cta1 .say-hello-btn1 {
   background: #d32a2a;
   color: #fff;
@@ -460,19 +567,16 @@ body {
   transition: background 0.2s;
 }
 
-/* Changed selector below */
 .footer-cta1 .say-hello-btn1:hover {
   background: #b71c1c;
 }
 
-/* Changed selector below */
 .footer-divider1 {
   border: none;
   border-top: 1px solid #333;
   margin: 24px 0;
 }
 
-/* Changed selector below */
 .footer-bottom-content1 {
   display: flex;
   justify-content: space-between;
@@ -480,7 +584,6 @@ body {
   gap: 40px;
 }
 
-/* Changed selector below */
 .footer-logo-block1 {
   display: flex;
   flex-direction: column;
@@ -493,19 +596,16 @@ body {
   width: 50px;
 }
 
-/* Changed selector below */
 .footer-logo-text1 {
   font-size: 2em;
   font-weight: 400;
 }
 
-/* Changed selector below */
 .footer-subtext1 {
   font-size: 1.1em;
   color: #bdbdbd;
 }
 
-/* Changed selector below */
 .footer-links-block1 {
   display: flex;
   margin-right: 150px;
@@ -513,25 +613,21 @@ body {
   flex-wrap: wrap;
 }
 
-/* Changed selector below */
 .footer-links-col1 h4 {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 14px;
 }
 
-/* Changed selector below */
 .footer-links-col1 ul {
   list-style: none;
   padding: 0;
 }
 
-/* Changed selector below */
 .footer-links-col1 ul li {
   margin-bottom: 12px;
 }
 
-/* Changed selector below */
 .footer-links-col1 ul li a {
   color: #949090;
   line-height: 25px;
@@ -540,22 +636,19 @@ body {
   font-size: 1.1em;
 }
 
-/* Changed selector below */
 .footer-links-col1 ul li a:hover {
   color: #d32a2a;
 }
 
-/* Changed selector below */
 .footer-copyright1 {
   color: #bdbdbd;
   font-size: 0.9em;
   margin-top: 20px;
 }
-/* ======================================================= */
-/* RESPONSIVE STYLES                   */
-/* ======================================================= */
 
-/* TABLET & SMALLER DESKTOPS */
+/* ======================================================= */
+/* RESPONSIVE STYLES                                     */
+/* ======================================================= */
 @media (max-width: 1200px) {
   .hero-section {
     flex-direction: column;
@@ -573,14 +666,13 @@ body {
     max-width: 350px;
     margin: 0 auto;
   }
-  
+
   .container1 {
     padding-left: 30px;
     padding-right: 30px;
   }
 }
 
-/* TABLET */
 @media (max-width: 900px) {
   .hero-section {
     flex-direction: column;
@@ -592,8 +684,9 @@ body {
     width: 100%;
     height: auto;
   }
-  
-  .approach-cards, .solutions-grid {
+
+  .solutions-grid,
+  .ar-vr-container {
     flex-direction: column;
     align-items: center;
   }
@@ -602,90 +695,80 @@ body {
     gap: 40px;
   }
 
-  .footer-bottom-content {
+  .footer-bottom-content1 {
     flex-direction: column;
     align-items: flex-start;
   }
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
   .container1 {
     padding-left: 20px;
     padding-right: 20px;
   }
-  
+
   .hero-image-container {
     order: 1;
   }
+  
   .hero-content {
     order: 2;
   }
+
   .hero-red {
     font-size: 42px;
   }
+
   .hero-content h2 {
     font-size: 28px;
   }
+
   #hero-subtitle {
     font-size: 22px;
   }
+
   .hero-desc {
     font-size: 1em;
   }
+
   .see-work-btn, .get-started-btn {
     font-size: 18px;
   }
 
-  /* Approach Section */
-  .approach-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  .approach-section h2, .solutions-section h2 {
+  .solutions-section h2 {
     font-size: 2.2em;
   }
-  .approach-description, .solutions-description {
-    font-size: 1.1em;
-  }
 
-  /* Testimonial Section */
   .testimonial-section {
     padding: 80px 20px;
   }
+
   .testimonial-quote {
     font-size: 1.5em;
   }
+
   .testimonial-section::before {
     font-size: 15em;
     opacity: 0.5;
   }
 
-  /* Solutions Section */
-  .solutions-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  /* Other Sections */
   .clients-title {
     font-size: 1.8em;
   }
-  .clients-logos {
-    gap: 30px;
-  }
-  .footer-main {
+  
+  .footer-main1 {
     padding: 32px 20px;
   }
+
   .footer-cta1 h2 {
     font-size: 1.8em;
   }
-  .footer-logo-text {
+  
+  .footer-logo-text1 {
     font-size: 1.5em;
   }
 }
 
-/* SMALL MOBILE */
 @media (max-width: 480px) {
   .container1 {
     padding-left: 16px;
@@ -696,55 +779,57 @@ body {
     padding: 30px 16px;
     gap: 24px;
   }
+  
   .hero-red {
     font-size: 32px;
   }
+  
   .hero-content h2 {
     font-size: 22px;
   }
+  
   #hero-subtitle {
     font-size: 18px;
   }
+  
   .hero-desc {
     font-size: 0.95em;
   }
+  
   .hero-actions {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  
   .see-work-btn, .get-started-btn {
     font-size: 16px;
   }
+  
   .see-work-btn {
     padding: 10px 18px;
   }
+  
   .get-started-btn {
     margin-top: 10px;
   }
 
-  /* Approach & Solutions Sections */
-  .approach-section h2, .solutions-section h2 {
+  .solutions-section h2 {
     font-size: 1.8em;
   }
-  .approach-card {
-    padding: 24px;
-  }
-  
-  /* Testimonial Section */
+
   .testimonial-quote {
     font-size: 1.2em;
   }
 
-  /* Clients Section */
   .clients-title {
     font-size: 1.5em;
   }
+  
   .client-logo-block {
     width: 100px;
   }
 
-  /* Footer */
   .footer-cta1 h2 {
     font-size: 1.5em;
   }

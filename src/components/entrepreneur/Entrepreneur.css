@@ -1,0 +1,255 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: light;
+    height: 100vh;
+    flex-wrap: wrap;
+} 
+
+.title-sec{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    border: 5px solid white;
+    box-shadow: 0px 10px 15px rgba(0.5,0,0,0.5);
+    background-image: url("img-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.title h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex: 1;
+    text-align: center;
+    font-weight: 400;
+    padding: 10px;
+    background-color: navy;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.title h1:first-child{
+    text-align: center;
+}
+
+.title h1:last-child{
+    text-align: center;
+}
+
+.title img{
+    margin: 0 auto;
+    border-radius: 24%;
+    padding: 20px;
+    display: block;
+    max-width: 32%;
+    height: 300px;  
+    z-index: 1;
+    box-shadow: 0px 10px 15px rgba(0.5,0,0,0.5);
+}
+
+.title img:hover{
+    cursor: pointer;
+    width: 40%;
+    animation: pulse 2s infinite;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.container-1 h1:hover{
+    font-size: 30px;
+    font-weight: bold;
+    animation: highlight 3s infinite;
+    cursor: pointer;
+}
+
+.box h1:hover{
+    font-size: 30px;
+    font-weight: bold;
+    animation: highlight 3s infinite;
+    cursor: pointer; 
+}
+
+.box h1{
+    text-align: center;
+}
+
+.container img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
+    
+}
+
+.container img:hover{
+    animation: bounce 2s infinite;
+}
+
+.box{
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: right;
+    padding: 100px;
+    padding-right: 10px;
+}
+
+.container-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 39px;
+}
+
+.box-1 img{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
+    margin-right: 20px;
+}
+
+.box-1 img:hover{
+    animation: bounce 2s infinite;
+}
+
+.box-1{
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 100px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .title h1 {
+        font-size: 1.5rem;
+    }
+    .box, .box-1 {
+        padding: 40px 10px;
+    }
+    .container img, .container-1 img {
+        width: 350px;
+        height: 350px;
+    }
+    .box img, .box-1 img{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title-sec {
+        margin: 20px;
+    }
+    .title {
+        margin: 20px;
+    }
+    .container img, .container-1 img {
+        width: 300px;
+        height: 300px;
+    }
+    .box img, .box-1 img{
+        width: 300px;
+        height: 300px
+    }
+    .title h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .title h1{
+        font-size: 1rem;
+        padding: 8px;
+    }
+    .box, .box-1{
+        padding: 20px 5px;
+    }
+    .container img, .container-1 img{
+        width: 250px;
+        height: 250px;
+    }
+    .box img, .box-1 img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@keyframes pulse{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform: translateY(0); 
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes highlight{
+      0%   
+      { 
+        background-color: yellow; 
+        color: navy; 
+        border-radius: 20px; 
+        padding: 20px; 
+      }
+      50%  
+      { 
+        background-color: transparent; 
+        color: blue; 
+        border-radius: 20px; 
+        padding: 20px; 
+      }
+      100% 
+      { 
+        background-color: yellow; 
+        color: darkblue; 
+        border-radius: 20px; 
+        padding: 20px; 
+      }
+    }
+
+
+

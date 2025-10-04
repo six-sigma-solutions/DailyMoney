@@ -72,14 +72,17 @@ export default function Navbar() {
 
           {/* Entrepreneur Dropdown */}
           <li
-            onMouseEnter={() => setOpenDropdown("entrepreneur")}
+            onMouseEnter={() => setOpenDropdown("my-life")}
             onMouseLeave={() => setOpenDropdown(null)}
           >
             <span id="tab-name" className="dropdown-label">
-              Entrepreneur ▾
+              My Life ▾
             </span>
-            {openDropdown === "entrepreneur" && (
+            {openDropdown === "my-life" && (
               <div className="submenu">
+                <Link id="tab-name" to="/entrepreneur">
+                  ▾ Entrepreneur
+                </Link>
                 <Link id="tab-name" to="/income">
                   ▾ Income
                 </Link>
@@ -187,14 +190,17 @@ export default function Navbar() {
             <span
               onClick={() =>
                 setOpenMobileDropdown(
-                  openMobileDropdown === "entrepreneur" ? null : "entrepreneur"
+                  openMobileDropdown === "my-life" ? null : "my-life"
                 )
               }
             >
-              Entrepreneur ▾
+              My Life ▾
             </span>
-            {openMobileDropdown === "entrepreneur" && (
+            {openMobileDropdown === "my-life" && (
               <div className="mobile-submenu">
+                <Link to="/entrepreneur" onClick={() => setMenuOpen(false)}>
+                  Entrepreneur
+                </Link>
                 <Link to="/income" onClick={() => setMenuOpen(false)}>
                   Income
                 </Link>
