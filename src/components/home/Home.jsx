@@ -2,11 +2,12 @@
 
 import React from "react";
 import "./Home.css";
-import videoFile from "../../assets/Home//gif.mp4";
+import videoFile from "../../assets/gif.mp4";
 
 export default function Home() {
   return (
     <div className="home-page">
+      {/* Hero Section */}
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-content">
@@ -18,8 +19,8 @@ export default function Home() {
           <strong><h2 className="hero-sub">Health & wealth.</h2></strong>
           <strong><p id="hero-subtitle">Independent for Entire life.</p></strong>
           <p className="hero-desc">
-            Imagine a world where nature's abundance powers your financial future.
-            fresh leaves and fruits dance in the dark.<br/> Welcome to{" "}
+          Daily Money stands for discipline, unity, and freedom. Together, we are shaping a future of health, wealth, and limitless opportunities. With Daily Money, every step forward is a step toward freedom, prosperity, and a life without limits.
+          <br/> Welcome to{" "}
             <strong><span className="daily-money">daily money!</span></strong>
           </p>
           <div className="hero-actions">
@@ -32,15 +33,15 @@ export default function Home() {
           </div>
         </div>
 
-        {/* === START: HERO IMAGE SECTION === */}
+        {/* === START: HERO IMAGE SECTION (UPDATED) === */}
         <div className="hero-image-container">
           <div className="cutout-shape">
-            {/* This is your main phone image */}
-            <img
-              src="/logo2.png"
-              alt="Daily Money app on phone"
+            {/* This is now a div for the two-image effect */}
+            <div
               className="hero-promo-image"
-            />
+              role="img"
+              aria-label="Daily Money app on phone"
+            ></div>
           </div>
         </div>
         {/* === END: HERO IMAGE SECTION === */}
@@ -92,7 +93,7 @@ export default function Home() {
               </div>
               <img
                 className="solution-card-img1"
-                src="/phone2.jpg"
+                src="/phone2.png"
                 alt="Design Systems"
               />
             </div>
@@ -148,19 +149,21 @@ export default function Home() {
 
         {/* Founder is now in a separate div at the top */}
         <div className="founder-card">
-          <img src="https://via.placeholder.com/150" alt="Dr.V.Chellapondy DSW" />
-          <h4 className="team-member-name">Dr.V.Chellapondy DSW</h4>
-          <p className="team-member-role">Founder & CEO</p>
+          <img src="/sir.png" alt="Dr.V.Chellapondy DSW" />
+          <h4 className="team-member-name">Dr.V.Chellapondy</h4>
+          <p className="team-member-role founder">Founder & CEO</p>
         </div>
 
         {/* The other team members remain in the grid below */}
         <div className="team-grid">
           
-          <div className="team-member-card">
-            <img src="https://via.placeholder.com/120" alt="R.K.Selvamani" />
-            <h4 className="team-member-name">R.K.Selvamani</h4>
-            <p className="team-member-role">Film Director & Producer</p>
+
+        <div className="team-member-card">
+            <img src="https://via.placeholder.com/120" alt="S.Vasu" />
+            <h4 className="team-member-name">S.Vasu</h4>
+            <p className="team-member-role">Technocrat & Media Industry</p>
           </div>
+          
 
           <div className="team-member-card">
             <img src="https://via.placeholder.com/120" alt="Dr. KP Kosygan" />
@@ -168,10 +171,12 @@ export default function Home() {
             <p className="team-member-role">Senior Orthopaedic Consultant</p>
           </div>
 
+          
+
           <div className="team-member-card">
-            <img src="https://via.placeholder.com/120" alt="S.Vasu" />
-            <h4 className="team-member-name">S.Vasu</h4>
-            <p className="team-member-role">Technocrat & Media Industry</p>
+            <img src="https://via.placeholder.com/120" alt="R.K.Selvamani" />
+            <h4 className="team-member-name">R.K.Selvamani</h4>
+            <p className="team-member-role">Film Director & Producer</p>
           </div>
 
         </div>
