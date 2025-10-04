@@ -320,7 +320,7 @@ html {
 .container img,
 .container-1 img {
   width: 500px;
-  height: 650px;
+  height: 700px;
   border-radius: 20px;
   object-fit: cover;
   cursor: pointer;
