@@ -81,13 +81,13 @@ const OurHealth = () => {
       <footer id="footer" className="footer">
 
         <h2 className="english">
-          "No need of medicine if you for proper digestion between meals."
+          "No need of medicine if you allow proper digestion between meals."
         </h2>
         <h1>“மருந்தென வேண்டாவாம் யாக்கைக்கு அருந்தியது<br></br>
           அற்றது போற்றி உணின்.”</h1>
         <h2>
-          முன் உண்டது செரித்ததைத் தெளிவாக அறிந்து, அதன் பின்னரே உண்பானானால்,
-          அவனுடைய உடலுக்கு ‘மருந்து’ என்னும் எதுவுமே வேண்டாம்.
+          முன் உண்டது செரித்ததைத் தெளிவாக அறிந்து, அதன் பின்னரே உண்பானால்,
+          அவனுடைய உடலுக்கு ‘மருந்து’ வேண்டாம்.
         </h2>
       </footer>
     </div>
