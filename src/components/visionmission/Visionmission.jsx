@@ -1,7 +1,7 @@
 import React from "react";
-import "./Vision.css";
+import "./Visionmission.css";
 
-const Vision = () => {
+const Visionmission = () => {
   return (
     <main>
       {/* HERO: centered rounded card with full-width image inside and left text */}
@@ -89,7 +89,7 @@ const Vision = () => {
         <button
           id="gratitudeBtn"
           className="animated-btn"
-          onClick={() => (window.location.href = "solution/Solution.jsx")}
+          onClick={() => (window.location.href = "solution")}
         >
           Solution
         </button>
@@ -102,4 +102,4 @@ const Vision = () => {
   );
 };
 
-export default Vision;
+export default Visionmission;

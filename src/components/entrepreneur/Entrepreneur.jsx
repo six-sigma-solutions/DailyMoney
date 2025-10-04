@@ -4,6 +4,7 @@ import "./Entrepreneur.css";
 import img1 from "../../assets/Entrepreneur/img-1.jpg"
 import img2 from "../../assets/Entrepreneur/img-2.jpg"
 import img3 from "../../assets/Entrepreneur/img-3.jpg"
+// eslint-disable-next-line no-unused-vars
 import img4 from "../../assets/Entrepreneur/img-4.jpg"
 import img5 from "../../assets/Entrepreneur/img-5.jpg"
 import img6 from "../../assets/Entrepreneur/img-6.jpg"
