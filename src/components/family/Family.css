@@ -1,3 +1,4 @@
+/* Reset + Base */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +12,23 @@ body {
   line-height: 1.6;
 }
 
+li {
+  font-size: 20px;
+}
 
+p {
+  font-size: 25px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 8%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
 
 .logo {
   font-size: 1.5rem;
@@ -45,28 +62,60 @@ body {
 
 .subtitle {
   margin-bottom: 3rem;
-  color: #666;
+  color: rgb(3, 3, 88);
+  font-weight: bold;
+  line-height: 1.6;
 }
 
+/* Steps */
 .step {
   display: flex;
   align-items: center;
   margin-bottom: 4rem;
   gap: 2rem;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.9s ease-in-out;
+}
+
+.step.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .step.reverse {
   flex-direction: row-reverse;
 }
 
+/* Step Image */
 .step-img img {
   width: 100%;
   max-width: 420px;
   border-radius: 14px;
-  box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
   object-fit: cover;
+  transition: transform 0.5s ease;
+  cursor: pointer;
 }
 
+/* Hover Zoom */
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.step-img img:hover {
+  animation: zoomIn 0.6s ease-in-out forwards;
+}
+
+/* Step Content */
 .step-content h3 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
@@ -83,6 +132,23 @@ body {
   margin-top: 1rem;
 }
 
+/* Highlight Text */
+.highlight-text {
+  text-align: justify;
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  display: block;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: 0;
+  transition: transform 0.3s ease;
+}
+
+.highlight-text:hover {
+  transform: scale(1.05);
+}
+
 /* Blog */
 .blog {
   background: #fafafa;
@@ -95,78 +161,15 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
-/* ---------------- FOOTER ---------------- */
+
+/* Footer */
 footer {
-  background: #111827;          /* dark background */
-  color: #fff;                  /* white text */
-  padding: 50px 20px;
+  background: #111;
+  color: #fff;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  border-radius: 16px 16px 0 0; /* rounded top corners */
-  font-family: 'Poppins', sans-serif;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-footer:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
-}
-
-footer h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 10px;
+  padding: 2rem 8%;
 }
 
 footer .btn {
-  background: #10b981;          /* emerald green */
-  color: #fff;
-  padding: 12px 28px;
-  border: none;
-  border-radius: 32px;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-footer .btn:hover {
-  background: #0f946c;
-  transform: translateY(-2px);
-}
-
-footer .footer-links p {
-  font-size: 0.9rem;
-  color: #cbd5e1;               /* light gray */
-  margin-top: 10px;
-}
-
-/* ---------------- RESPONSIVE ---------------- */
-@media (max-width: 640px) {
-  footer h3 {
-    font-size: 1.3rem;
-  }
-  footer .btn {
-    padding: 10px 24px;
-    font-size: 0.95rem;
-  }
-  footer .footer-links p {
-    font-size: 0.85rem;
-  }
-}
-
-/* Animation */
-.step {
-  opacity: 0;
-  transform: translateY(60px);
-  transition: all 0.9s ease-in-out;
-}
-
-.step.visible {
-  opacity: 1;
-  transform: translateY(0);
+  margin: 1rem 0;
 }

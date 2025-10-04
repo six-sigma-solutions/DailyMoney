@@ -8,9 +8,9 @@
 
 
 /* NAVBAR */
-.navbar {
+#navbar {
   width: 100%;
-  background: #fff;
+  background-color: #fff;
   position: sticky;
   top: 0;
   z-index: 100;

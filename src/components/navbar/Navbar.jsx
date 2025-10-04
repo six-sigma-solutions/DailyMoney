@@ -9,7 +9,7 @@ export default function Navbar() {
   const [openMobileDropdown, setOpenMobileDropdown] = useState(null); // for mobile
 
   return (
-    <nav className="navbar">
+    <nav id="navbar">
       <div className="nav-container">
         {/* LEFT: Logo */}
         <Link to="/" className="logo">
@@ -126,8 +126,8 @@ export default function Navbar() {
             />
           </Link>
           <div className="mobile-actions">
-            <button className="contact-btn">Contact</button>
-            <button className="mobile-close" onClick={() => setMenuOpen(false)}>
+            <button type="button" className="contact-btn">Contact</button>
+            <button type="button" className="mobile-close" onClick={() => setMenuOpen(false)}>
               <FaTimes />
             </button>
           </div>
