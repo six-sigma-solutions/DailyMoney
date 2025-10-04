@@ -25,6 +25,9 @@ body {
 /* ======================================================= */
 /* HERO SECTION                                          */
 /* ======================================================= */
+/* ======================================================= */
+/* HERO SECTION                                          */
+/* ======================================================= */
 .hero-section {
   display: flex;
   align-items: center;
@@ -120,7 +123,7 @@ body {
 .cutout-shape {
   width: 100%;
   height: 100%;
-  background-color: #111;
+  background-color: #07080a;
   position: relative;
   overflow: hidden;
   mask-image: url('/cutout-mask.jpg');
@@ -136,23 +139,41 @@ body {
   justify-content: center;
 }
 
+/* --- NEW CSS FOR TWO-IMAGE HOVER EFFECT --- */
+/*
+  This replaces your old .hero-promo-image rule
+*/
+/* --- NEW, SIMPLER CSS FOR HOVER EFFECT --- */
+/*
+  Delete all old .hero-promo-image and .hero-promo-image::before rules
+  and replace them with this block.
+*/
+
 .hero-promo-image {
-  width: 100%;
-  height: 100%;
-  padding: 30px 40px 0 0;
-  object-fit: contain;
+  width: 115%;
+  height: 115%;
+  margin: 0px 35px 38px 0;
   position: relative;
-  z-index: 2;
-  filter: grayscale(100%);
   transform: scale(1);
-  transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.5s ease;
+
+  /* Set the default (grayscale) image */
+  background-image: url('/top-logo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Add a transition for the zoom effect */
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+/* This DIRECTLY changes the background image on hover */
 .cutout-shape:hover .hero-promo-image {
-  filter: grayscale(0%);
+  /* Set the hover (color) image */
+  background-image: url('/logo5.png');
+  
+  /* Apply the zoom effect */
   transform: scale(1.09);
 }
-
 /* ======================================================= */
 /* SOLUTIONS SECTION                                     */
 /* ======================================================= */
@@ -217,7 +238,7 @@ body {
 /* --- Add this to Home.css --- */
 
 .nested-card-title {
-  font-size: 1.4em;
+  font-size: 2em;
   font-weight: 600;
   color: #d32a2a;
   margin-bottom: 20px;
@@ -529,6 +550,10 @@ body {
 .team-member-role {
   font-size: 1em;
   color: #777;
+}
+
+.founder{
+  font-size:18px;
 }
 /* ======================================================= */
 /* FOOTER                                                */
