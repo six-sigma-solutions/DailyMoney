@@ -1,30 +1,13 @@
-/* eslint-disable no-irregular-whitespace */
-import React, { useEffect } from "react";
+import React from "react";
 import "./Vision.css";
 
-// use public folder paths (no import)
-const visionImage = "/vision1.jpeg";
-const missionImage = "/mission.jpeg";
-
-export default function Vision() {
-  useEffect(() => {
-    const txts = document.querySelectorAll(".card-text");
-    txts.forEach((txt) => {
-      txt.style.opacity = "0";
-      txt.style.transform = "translateY(8px)";
-      txt.style.transition = "opacity 520ms ease, transform 520ms ease";
-      requestAnimationFrame(() => {
-        txt.style.opacity = "1";
-        txt.style.transform = "translateY(0)";
-      });
-    });
-  }, []);
-
+const Vision = () => {
   return (
-    <main className="vision-page">
+    <main>
+      {/* HERO: centered rounded card with full-width image inside and left text */}
       <section className="hero-card">
         <div className="card-inner">
-          <img className="card-media" src={visionImage} alt="Vision" />
+          <img className="card-media" src="vision1.jpg" alt="Vision" />
           <div className="card-overlay">
             <div className="card-text">
               <p className="kicker">Our Vision</p>
@@ -39,161 +22,84 @@ export default function Vision() {
               </p>
             </div>
           </div>
+
           <div className="card-features">
             <div className="col">
-              <strong>Financial Excellence.</strong>
-              <span> Master money management through smart habits.</span>
+              <strong>
+                My vision is to build something that will inspire generations.
+              </strong>
             </div>
             <div className="col">
-              <strong>Trusted Partnership.</strong>
-              <span> Walk with users as true partners in growth.</span>
+              <strong>
+                We believe growth and change always carry a big vision.
+              </strong>
             </div>
             <div className="col">
-              <strong>Seamless Experience.</strong>
-              <span> One integrated platform.</span>
+              <strong>
+                I believe in creating the future, not just waiting for it.
+              </strong>
             </div>
           </div>
         </div>
       </section>
 
+      {/* STANDARDS */}
       <section className="standards">
         <div className="container">
           <p className="kicker small">Our standards</p>
           <h2>Every Detail Matters in Daily Money</h2>
           <p className="lead muted">
-            Consistent financial growth requires clear standards and smart choices.
+            Consistent financial growth comes from clear standards and smart
+            choices. With careful planning and security, daily money transforms
+            into lasting wealth and stability.
           </p>
 
           <div className="grid-features">
             <div className="feature">
-              <h4>Transparent Communication.</h4>
-              <p>Track every expense with clear plans and timelines.</p>
+              <h4>
+                My dreams are not limited by today; they are guided by tomorrow.
+              </h4>
             </div>
             <div className="feature">
-              <h4>Security by Design.</h4>
-              <p>Industry‑standard security protocols implemented from day one.</p>
+              <h4>A clear vision turns obstacles into opportunities.</h4>
             </div>
             <div className="feature">
-              <h4>Accessibility Standards.</h4>
-              <p>Secure methods for saving and investing.</p>
+              <h4>I walk with hope, guided by a mission for tomorrow.</h4>
+            </div>
+            <div className="feature">
+              <h4>
+                My future is not found, it is built with vision and effort.
+              </h4>
+            </div>
+            <div className="feature">
+              <h4>Every great change begins with a bold vision.</h4>
+            </div>
+            <div className="feature">
+              <h4>
+                My purpose is greater than my fear; my vision is stronger than
+                my doubt.
+              </h4>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="hero-card">
-        <div className="card-inner">
-          <img className="card-media" src={missionImage} alt="Mission" />
-          <div className="card-overlay">
-            <div className="card-text">
-              <p className="kicker">Our Mission</p>
-              <h1>To make daily money smarter, safer, and more impactful.</h1>
-              <p className="lead">
-                We empower people to spend wisely, save consistently, and grow steadily.
-              </p>
-            </div>
-          </div>
-          <div className="card-features">
-            <div className="col">
-              <strong>Financial Excellence.</strong>
-              <span> Master money management through smart habits.</span>
-            </div>
-            <div className="col">
-              <strong>Trusted Partnership.</strong>
-              <span> Work alongside individuals and businesses.</span>
-            </div>
-            <div className="col">
-              <strong>Integrated Approach.</strong>
-              <span> Blend planning, saving, and investing.</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="standards">
-        <div className="container">
-          <p className="kicker small">Our standards</p>
-          <h2>Every Detail Matters in Daily Money</h2>
-          <p className="lead muted">
-            Consistent financial growth requires clear standards and smart choices.
-          </p>
-
-          <div className="grid-features">
-            <div className="feature">
-              <h4>Transparent Communication.</h4>
-              <p>Track every expense with clear plans and timelines.</p>
-            </div>
-            <div className="feature">
-              <h4>Security by Design.</h4>
-              <p>Industry‑standard security protocols implemented from day one.</p>
-            </div>
-            <div className="feature">
-              <h4>Accessibility Standards.</h4>
-              <p>Secure methods for saving and investing.</p>
-            </div>
-          </div>
-        </div>
+      {/* GRATITUDE SECTION */}
+      <section className="gratitude-section">
+        <button
+          id="gratitudeBtn"
+          className="animated-btn"
+          onClick={() => (window.location.href = "solution/Solution.jsx")}
+        >
+          Solution
+        </button>
       </section>
 
-      <section>
-        {/* Footer */}
-      <footer>
-        <div className="footer-main">
-          <div className="footer-cta">
-            <h2>Tell us about your project</h2>
-            <button className="say-hello-btn">Say Hello</button>
-          </div>
-          <hr className="footer-divider" />
-          <div className="footer-bottom-content">
-            <div className="footer-logo-block">
-            <img
-            src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png"
-            alt="DailyMoney Logo"
-          />
-              <span className="footer-logo-text">Daily Money</span>
-              <span className="footer-subtext">imagine a world where nature's bounty fuels your financial future. fresh leaves and fruits dance in the dark. welcome to daily money!</span>
-              <span className="footer-copyright">
-                © 2025. All rights reserved.
-              </span>
-            </div>
-            <div className="footer-links-block">
-              <div className="footer-links-col">
-                <h4>Company</h4>
-                {/* <ul>
-                  <li>
-                    <a href="#">Work</a>
-                  </li>
-                  <li>
-                    <a href="#">Process</a>
-                  </li>
-                  <li>
-                    <a href="#">About</a>
-                  </li>
-                  <li>
-                    <a href="#">Blog</a>
-                  </li>
-                </ul> */}
-              </div>
-              <div className="footer-links-col">
-                <h4>Connect</h4>
-                <ul>
-                  <li>
-                    <a href="#">Follow on X</a>
-                  </li>
-                  <li>
-                    <a href="#">Book a call</a>
-                  </li>
-                  <li>
-                    <a href="#">Get in touch</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      </section>
-   
+      <br />
+      <br />
+      <br />
     </main>
-    
   );
-}
+};
+
+export default Vision;
