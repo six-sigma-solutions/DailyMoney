@@ -1,5 +1,5 @@
 import React from "react";
-import "./WealthPage.css";
+import "./Wealth.css";
 
 const WealthPage = () => {
   const handleGetStarted = () => {
