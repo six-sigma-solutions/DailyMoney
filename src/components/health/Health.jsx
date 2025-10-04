@@ -21,6 +21,15 @@ const OurHealth = () => {
           </h1>
 
           <p>Your journey to wellness and financial freedom starts here.</p>
+          <p>
+
+            Our health is our true wealth.
+            It gives us energy, focus, and freedom to live fully.
+            Every choice what we eat, how we move, how we rest shapes our future.
+            When we care for our health, we care for our dreams, our families, and our world.
+            Strong bodies. Clear minds. Happy hearts.
+            Together, we build a healthier tomorrow.
+            Our health, our strength, our future.</p>
 
           <a href="#footer" className="btn-primary">
             Learn More
