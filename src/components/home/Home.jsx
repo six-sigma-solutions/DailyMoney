@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./Home.css";
-//import videoFile from "../../assets/gif.mp4";
+import videoFile from "../../assets/gif.mp4";
 
 export default function Home() {
   return (
@@ -71,7 +71,7 @@ export default function Home() {
 
             {/* Right Column: Contains the image */}
             <div className="solution-image-container">
-  // <video src={videoFile} autoPlay loop muted alt="Daily Money Solutions"></video>
+   <video src={videoFile} autoPlay loop muted alt="Daily Money Solutions"></video>
 </div>
           </div>
           <div className="solutions-grid">
