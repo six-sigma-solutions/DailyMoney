@@ -81,8 +81,7 @@ const OurHealth = () => {
       <footer id="footer" className="footer">
 
         <h2 className="english">
-          "No need of medicine if you eat mindfully allow for proper digestion between meals and eat mindfully,
-          your body will not require any other medicine."
+          "No need of medicine if you for proper digestion between meals."
         </h2>
         <h1>“மருந்தென வேண்டாவாம் யாக்கைக்கு அருந்தியது<br></br>
           அற்றது போற்றி உணின்.”</h1>
