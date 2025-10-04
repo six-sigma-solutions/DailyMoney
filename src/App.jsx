@@ -6,6 +6,8 @@ import Family from "./components/family/Family";
 import Contact from "./components/contact/Contact";
 import Entrepreneur from "./components/entrepreneur/Entrepreneur";
 import Visionmission from "./components/visionmission/Visionmission";
+import Solution from "./components/solution/Solution";
+import Gratitude from "./components/gratitude/Gratitude";
 
 
 export default function App() {
@@ -19,6 +21,10 @@ export default function App() {
         <Route path="/family" element={<Family />} />
         
         <Route path="/visionmission" element={<Visionmission />} />
+        
+        <Route path="/solution" element={<Solution />} />
+        
+        <Route path="/gratitude" element={<Gratitude />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/entrepreneur" element={<Entrepreneur />}/>
       </Routes>
