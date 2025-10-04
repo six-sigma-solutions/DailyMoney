@@ -54,7 +54,7 @@ export default function Navbar() {
                 <Link id="tab-name" to="/overview">
                   ▾ Overview
                 </Link>
-                <Link id="tab-name" to="/visionmission">
+                <Link id="tab-name" to="/vision-mission">
                   ▾ Vision & Mission
                 </Link>
                 <Link id="tab-name" to="/founders-msg">
