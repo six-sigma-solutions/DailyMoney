@@ -133,7 +133,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Center grid menu */}
+        
         <div className="mobile-grid">
           <Link to="/" onClick={() => setMenuOpen(false)}>
             Home
