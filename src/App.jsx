@@ -5,7 +5,7 @@ import Health from "./components/health/Health";
 import Family from "./components/family/Family";
 import Wealth from  "./components/wealth/Wealth";
 import Contact from "./components/contact/Contact";
-import Entrepreneur from "./components/entrepreneur/Entrepreneur";
+import Womenempowerment from "./components/womenempowerment/Womenempowerment";
 import Visionmission from "./components/visionmission/Visionmission";
 import Solution from "./components/solution/Solution";
 import Gratitude from "./components/gratitude/Gratitude";
@@ -36,7 +36,7 @@ export default function App() {
         
         <Route path="/overview" element={<Overview/>} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/entrepreneur" element={<Entrepreneur />}/>
+        <Route path="/womenempowerment" element={<Womenempowerment />}/>
         <Route path="/founders-msg" element={<FounderMsg />} />
         <Route path="/presidents-msg" element={<PresidentMsg />} />
         <Route path="/core-Team" element={<CoreTeam />} />
