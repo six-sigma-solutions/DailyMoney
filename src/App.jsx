@@ -40,6 +40,7 @@ export default function App() {
         <Route path="/founders-msg" element={<FounderMsg />} />
         <Route path="/presidents-msg" element={<PresidentMsg />} />
         <Route path="/core-Team" element={<CoreTeam />} />
+        <Route path="/women-empowerment" element={<Womenempowerment />}/>
         
         <Route path="/income" element={<Income />}/>
         <Route path="/students" element={<Students />} />
