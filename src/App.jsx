@@ -13,6 +13,8 @@ import FounderMsg from "./components/founderMsg/FounderMsg";
 import Overview from "./components/overview/Overview";
 import Income from "./components/income/Income";
 import PresidentMsg from "./components/presidentMsg/PresidentMsg";
+import CoreTeam from "./components/coreTeam/CoreTeam";
+
 
 
 export default function App() {
@@ -36,6 +38,7 @@ export default function App() {
         <Route path="/entrepreneur" element={<Entrepreneur />}/>
         <Route path="/founders-msg" element={<FounderMsg />} />
         <Route path="/presidents-msg" element={<PresidentMsg />} />
+        <Route path="/core-Team" element={<CoreTeam />} />
         
         <Route path="/income" element={<Income />}/>
       </Routes>
