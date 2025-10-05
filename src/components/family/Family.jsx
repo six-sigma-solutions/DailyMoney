@@ -65,7 +65,7 @@ const Family = () => {
         {/* Step 2 */}
         <div className="step reverse">
           <div className="step-img">
-            <img src="./public/img8.jpg" alt="Develop" />
+            <img src="img8.jpg" alt="Develop" />
           </div>
           <div className="step-content">
             <h3 className="highlight-text">
