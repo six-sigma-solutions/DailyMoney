@@ -8,9 +8,13 @@ export default function Womenempowerment() {
       <h2 className="women-header">Women Empowerment - A Deeper Vision</h2>
 
       {/* Hero Section */}
-      <section className="women-hero">
+     <section className="women-hero">
+      <div className="women-content">
         <h1>Empowered Women Empower Women</h1>
-      </section>
+        
+      </div>
+    </section>
+
 
       {/* Mission Section */}
       <section className="women-section women-mission">
