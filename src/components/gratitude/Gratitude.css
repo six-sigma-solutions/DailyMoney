@@ -43,7 +43,7 @@
     justify-content: center;
     align-items: center;
     /* Assuming the cosmos.jpg file exists in your public directory */
-    background-image: url('/public/cosmos.jpg'); 
+    background-image: url('/universe.png'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
