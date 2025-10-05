@@ -1,4 +1,4 @@
-// UpdatedStudent.jsx
+
 import React, { useEffect, useRef } from 'react';
 import './Students.css';
 
@@ -39,7 +39,7 @@ export default function Students() {
         {/* Section 1 */}
         <section className="student-section">
           <div className="image-box">
-            <img src="/public/stu1.jpg" alt="Poster 1" />
+            <img src="stu1.jpg" alt="Poster 1" />
           </div>
 
           <div className="text-block">
@@ -57,7 +57,7 @@ export default function Students() {
         {/* Section 2 */}
         <section className="student-section reverse-section">
           <div className="image-box">
-            <img src="/public/stu2.jpg" alt="Poster 2" />
+            <img src="stu2.jpg" alt="Poster 2" />
           </div>
 
           <div className="text-block">
@@ -76,7 +76,7 @@ export default function Students() {
         {/* Section 3 */}
         <section className="student-section">
           <div className="image-box">
-            <img src="/public/stu3.jpg" alt="Poster 3" />
+            <img src="stu3.jpg" alt="Poster 3" />
           </div>
 
           <div className="text-block">
@@ -94,7 +94,7 @@ export default function Students() {
         {/* Section 4 */}
         <section className="student-section reverse-section">
           <div className="image-box">
-            <img src="/public/stu4.jpg" alt="Poster 4" />
+            <img src="stu4.jpg" alt="Poster 4" />
           </div>
 
           <div className="text-block">
