@@ -9,6 +9,7 @@ import Entrepreneur from "./components/entrepreneur/Entrepreneur";
 import Visionmission from "./components/visionmission/Visionmission";
 import Solution from "./components/solution/Solution";
 import Gratitude from "./components/gratitude/Gratitude";
+import FounderMsg from "./components/founderMsg/FounderMsg";
 
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
         <Route path="/gratitude" element={<Gratitude />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/entrepreneur" element={<Entrepreneur />}/>
+        <Route path="/founders-msg" element={<FounderMsg />} />
       </Routes>
     </>
   );
