@@ -2,11 +2,10 @@ import React from "react";
 import "./Wealth.css";
 
 const WealthPage = () => {
-  const handleGetStarted = () => {
-    alert("Welcome to Wealth Management — Let's begin your journey!");
-  };
+  
 
   return (
+    
     <div className="wealthy-page">
       {/* Header */}
       <header className="wealthy-header">
@@ -21,27 +20,10 @@ const WealthPage = () => {
       <main>
         <section className="wealthy-container wealthy-hero-card">
           <div className="wealthy-hero-grid">
-            <div className="wealthy-hero-text">
-              <h1>
-                Wealth
-                <br />
-                <span className="wealthy-accent">Management</span>
-              </h1>
-              <p className="wealthy-lead">
-                Personalized strategies to grow and manage your wealth.
-              </p>
-              <button
-                id="getStarted"
-                className="wealthy-btn"
-                onClick={handleGetStarted}
-              >
-                Get Started
-              </button>
-            </div>
-
+           
             <div className="wealthy-hero-image" aria-hidden="true">
               <div className="wealthy-portrait-card">
-                <img src="wome..jpg" alt="Portrait" />
+                <img src="healt-welt.jpeg" alt="Portrait" />
               </div>
             </div>
           </div>
