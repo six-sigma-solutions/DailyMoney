@@ -1,7 +1,7 @@
 import React from "react";
 import "./Wealth.css";
 
-const WealthPage = () => {
+const Wealth = () => {
   const handleGetStarted = () => {
     alert("Welcome to Wealth Management — Let's begin your journey!");
   };
@@ -110,4 +110,4 @@ const WealthPage = () => {
   );
 };
 
-export default WealthPage;
+export default Wealth;
