@@ -198,3 +198,23 @@ html, body {
   }
 }
 
+/* Responsive */
+@media (max-width: 900px) {
+  .vm-card-overlay {
+    padding-left: 24px;
+    justify-content: center;
+    text-align: center;
+  }
+  .vm-card-text {
+    padding: 32px;
+  }
+  .vm-card-features {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .vm-grid-features {
+    grid-template-columns: 1fr;
+  }
+}
+
