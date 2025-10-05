@@ -10,6 +10,8 @@ import Visionmission from "./components/visionmission/Visionmission";
 import Solution from "./components/solution/Solution";
 import Gratitude from "./components/gratitude/Gratitude";
 import FounderMsg from "./components/founderMsg/FounderMsg";
+import Overview from "./components/overview/Overview";
+
 
 
 export default function App() {
@@ -27,6 +29,8 @@ export default function App() {
         <Route path="/solution" element={<Solution />} />
         
         <Route path="/gratitude" element={<Gratitude />} />
+        
+        <Route path="/overview" element={<Overview/>} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/entrepreneur" element={<Entrepreneur />}/>
         <Route path="/founders-msg" element={<FounderMsg />} />
