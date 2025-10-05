@@ -19,7 +19,7 @@ const Income = () => {
           time, and value created. Whether through wages, salaries, profits, or
           investments, income provides the foundation for stability and growth.
         </p>
-        <img className="image" src="img-1.png" alt="Income concept" />
+        <img className="image" src="incomeimg-1.png" alt="Income concept" />
       </section>
 
       {/* Section 2 */}
@@ -31,7 +31,7 @@ const Income = () => {
         </p>
         <img
           className="image"
-          src="img-2.jpg"
+          src="incomeimg-2.jpg"
           alt="Personal growth and learning"
         />
       </section>
@@ -55,12 +55,12 @@ const Income = () => {
             <strong>Live with peace of mind and purpose</strong>
           </li>
         </ul>
-        <img className="image" src="img-3.avif" alt="Financial freedom" />
+        <img className="image" src="incomeimg-3.avif" alt="Financial freedom" />
       </section>
 
       {/* Left + Right Section */}
       <div className="left">
-        <img src="img-4.jpg" alt="Growth illustration" />
+        <img src="incomeimg-4.jpg" alt="Growth illustration" />
         <div className="right">
           <p className="tick">✔</p>
           <p> Income powers growth, not greed.</p>
