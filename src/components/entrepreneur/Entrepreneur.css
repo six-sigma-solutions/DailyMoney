@@ -100,3 +100,101 @@ html, body {
   z-index: 3;
 }
 
+
+.vm-card-features .vm-col {
+  padding: 16px 24px;
+  color: #e6e6e6;
+  border-left: 1px solid rgba(255,255,255,0.06);
+}
+
+.vm-card-features .vm-col:first-child {
+  border-left: 0;
+}
+
+/* STANDARDS */
+.vm-standards {
+  padding: 56px 0;
+}
+
+.vm-kicker-small {
+  color: #6b6b6b;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.vm-standards h2 {
+  font-family: "Playfair Display", serif;
+  color: var(--accent);
+  font-weight: 400;
+  margin: 6px 0 12px;
+  font-size: 32px;
+}
+
+.vm-grid-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 1rem 0;
+  margin-top: 28px;
+}
+
+.vm-feature {
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transform: translateY(20px);
+  opacity: 0;
+  animation: vm-fadeSlideUp 0.6s forwards;
+}
+
+.vm-feature:nth-child(1) { animation-delay: 0.1s; }
+.vm-feature:nth-child(2) { animation-delay: 0.2s; }
+.vm-feature:nth-child(3) { animation-delay: 0.3s; }
+.vm-feature:nth-child(4) { animation-delay: 0.4s; }
+.vm-feature:nth-child(5) { animation-delay: 0.5s; }
+.vm-feature:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes vm-fadeSlideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.vm-feature h4 {
+  margin: 0;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* GRATITUDE BUTTON */
+.vm-gratitude-section {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.vm-animated-btn {
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  animation: vm-pulse 2s infinite;
+  transition: background-color 0.3s ease;
+}
+
+.vm-animated-btn:hover {
+  background-color: #c92a2a;
+}
+
+@keyframes vm-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 15px 10px rgba(0, 123, 255, 0);
+  }
+}
+
