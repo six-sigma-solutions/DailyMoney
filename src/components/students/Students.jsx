@@ -1,12 +1,13 @@
-
+// UpdatedStudent.jsx
 import React, { useEffect, useRef } from 'react';
 import './Students.css';
 
-export default function Students() {
+export default function UpdatedStudent() {
   const animatedRef = useRef(null);
 
   useEffect(() => {
-    const nodes = animatedRef.current?.querySelectorAll('.animate-block') || [];
+    // Renamed classes to be isolated
+    const nodes = animatedRef.current?.querySelectorAll('.stu-page-animate-block') || [];
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -19,7 +20,8 @@ export default function Students() {
 
     nodes.forEach((n) => observer.observe(n));
 
-    const imgs = animatedRef.current?.querySelectorAll('.image-box img') || [];
+    // Renamed image-box class
+    const imgs = animatedRef.current?.querySelectorAll('.stu-page-image-box img') || [];
     const onClick = (e) => window.open(e.currentTarget.src, '_blank');
     imgs.forEach((img) => img.addEventListener('click', onClick));
 
@@ -30,88 +32,91 @@ export default function Students() {
   }, []);
 
   return (
-    <div className="student-wrapper" ref={animatedRef}>
-      <header className="student-header">
+    <div className="stu-page-wrapper" ref={animatedRef}>
+      <header className="stu-page-header">
         <h1>Daily Money – Empower Students</h1>
       </header>
 
-      <main className="student-container">
+      <main className="stu-page-container">
         {/* Section 1 */}
-        <section className="student-section">
-          <div className="image-box">
-            <img src="stu1.jpg" alt="Poster 1" />
+        <section className="stu-page-section">
+          <div className="stu-page-image-box">
+            <img src="/public/stu1.jpg" alt="Poster 1" />
           </div>
 
-          <div className="text-block">
-            <p className="animate-block tagline-text">
+          <div className="stu-page-text-block">
+            <p className="stu-page-animate-block stu-page-tagline-text">
               <strong>
-                <span className="tick-icon">✔</span>
-                <span className="highlight-text">Learn</span> smart. <span className="highlight-text">Earn</span> steady. <span className="highlight-text">Grow</span> with DailyMoney.
-                Study with <span className="highlight-text">purpose</span>. Earn with <span className="highlight-text">confidence</span>.
-                Balance <span className="highlight-text">learning</span> and <span className="highlight-text">income</span> — the DailyMoney way.
+                <span className="stu-page-tick-icon">✔</span>
+                <span className="stu-page-highlight-text">Your future</span> starts with today's <span className="stu-page-highlight-text">discipline</span>.
+                We help turn <span className="stu-page-highlight-text">student loans</span> into <span className="stu-page-highlight-text">student gains</span>.
+                Your <span className="stu-page-highlight-text">degree</span> gets you a job; your <span className="stu-page-highlight-text">DailyMoney skills</span> get you <span className="stu-page-highlight-text">freedom</span>.
+                Build <span className="stu-page-highlight-text">wealth</span> while you <span className="stu-page-highlight-text">learn</span>.
+                Don't just chase <span className="stu-page-highlight-text">grades</span>—chase <span className="stu-page-highlight-text">growth</span>.
               </strong>
             </p>
           </div>
         </section>
 
         {/* Section 2 */}
-        <section className="student-section reverse-section">
-          <div className="image-box">
-            <img src="stu2.jpg" alt="Poster 2" />
+        <section className="stu-page-section stu-page-reverse-section">
+          <div className="stu-page-image-box">
+            <img src="/public/stu2.jpg" alt="Poster 2" />
           </div>
 
-          <div className="text-block">
-            <p className="animate-block tagline-text">
+          <div className="stu-page-text-block">
+            <p className="stu-page-animate-block stu-page-tagline-text">
               <strong>
-                <span className="tick-icon">✔</span>
-                Education gives <span className="highlight-text">knowledge</span> — DailyMoney gives <span className="highlight-text">financial power</span>.
-                DailyMoney helps you build strong <span className="highlight-text">habits</span> of saving, investing, and earning while you learn.
-                Turn your <span className="highlight-text">daily efforts</span> into <span className="highlight-text">daily income</span> — and your dreams into reality with <span className="highlight-text">DailyMoney</span>.
-                <span className="highlight-text">DailyMoney</span> — a smart start for a <span className="highlight-text">limitless life</span>.
+                <span className="stu-page-tick-icon">✔</span>
+                <span className="stu-page-highlight-text">Learn</span> to <span className="stu-page-highlight-text">earn</span> while you still have <span className="stu-page-highlight-text">time</span>.
+                Your <span className="stu-page-highlight-text">side hustle</span> is your <span className="stu-page-highlight-text">main opportunity</span>.
+                Financial confidence is the best <span className="stu-page-highlight-text">graduation gift</span>.
+                <span className="stu-page-highlight-text">DailyMoney</span> provides a <span className="stu-page-highlight-text">business blueprint</span> for <span className="stu-page-highlight-text">students</span>.
+                We train you for <span className="stu-page-highlight-text">real-world success</span>.
               </strong>
             </p>
           </div>
         </section>
 
         {/* Section 3 */}
-        <section className="student-section">
-          <div className="image-box">
-            <img src="stu3.jpg" alt="Poster 3" />
+        <section className="stu-page-section">
+          <div className="stu-page-image-box">
+            <img src="/public/stu3.jpg" alt="Poster 3" />
           </div>
 
-          <div className="text-block">
-            <p className="animate-block tagline-text">
+          <div className="stu-page-text-block">
+            <p className="stu-page-animate-block stu-page-tagline-text">
               <strong>
-                <span className="tick-icon">✔</span>
-                <span className="highlight-text">DailyMoney</span> — Empowering every student to achieve <span className="highlight-text">financial freedom</span>.
-                Study with <span className="highlight-text">independence</span> through your own earned income.
-                Financial independence that brings <span className="highlight-text">confidence</span> and <span className="highlight-text">self-respect</span>.
+                <span className="stu-page-tick-icon">✔</span>
+                Achieve <span className="stu-page-highlight-text">personal growth</span> and <span className="stu-page-highlight-text">financial freedom</span>.
+                Pay off <span className="stu-page-highlight-text">student debt</span> through your own earned income.
+                Financial independence that brings <span className="stu-page-highlight-text">confidence</span> and <span className="stu-page-highlight-text">self-respect</span>.
               </strong>
             </p>
           </div>
         </section>
 
         {/* Section 4 */}
-        <section className="student-section reverse-section">
-          <div className="image-box">
-            <img src="stu4.jpg" alt="Poster 4" />
+        <section className="stu-page-section stu-page-reverse-section">
+          <div className="stu-page-image-box">
+            <img src="/public/stu4.jpg" alt="Poster 4" />
           </div>
 
-          <div className="text-block">
-            <p className="animate-block tagline-text">
+          <div className="stu-page-text-block">
+            <p className="stu-page-animate-block stu-page-tagline-text">
               <strong>
-                <span className="tick-icon">✔</span>
-                <span className="highlight-text">DailyMoney</span> — Empowered to <span className="highlight-text">learn</span>, inspired to <span className="highlight-text">earn</span>.
-                Earn with <span className="highlight-text">pride</span>, learn with <span className="highlight-text">purpose</span>.
-                Students <span className="highlight-text">earn</span>, and the world learns the value of <span className="highlight-text">determination</span>.
-                Self-earned income builds more than <span className="highlight-text">wealth</span> — it builds <span className="highlight-text">wisdom</span>.
+                <span className="stu-page-tick-icon">✔</span>
+                <span className="stu-page-highlight-text">DailyMoney</span> — Empowered to <span className="stu-page-highlight-text">learn</span>, inspired to <span className="stu-page-highlight-text">earn</span>.
+                Earn with <span className="stu-page-highlight-text">pride</span>, learn with <span className="stu-page-highlight-text">purpose</span>.
+                Students <span className="stu-page-highlight-text">earn</span>, and the world learns the value of <span className="stu-page-highlight-text">determination</span>.
+                Self-earned income builds more than <span className="stu-page-highlight-text">wealth</span> — it builds <span className="stu-page-highlight-text">wisdom</span>.
               </strong>
             </p>
           </div>
         </section>
       </main>
 
-      <footer className="student-footer">© 2023 DailyMoney</footer>
+      <footer className="stu-page-footer">© 2023 DailyMoney</footer>
     </div>
   );
 }
