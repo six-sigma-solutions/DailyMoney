@@ -15,7 +15,7 @@ import Income from "./components/income/Income";
 import PresidentMsg from "./components/presidentMsg/PresidentMsg";
 import CoreTeam from "./components/coreTeam/CoreTeam";
 import Students from "./components/students/Students";
-
+import Entrepreneur from "./components/entrepreneur/Entrepreneur";
 
 
 export default function App() {
@@ -41,6 +41,7 @@ export default function App() {
         <Route path="/presidents-msg" element={<PresidentMsg />} />
         <Route path="/core-Team" element={<CoreTeam />} />
         <Route path="/women-empowerment" element={<Womenempowerment />}/>
+        <Route path="/entrepreneur" element={<Entrepreneur />} />
         
         <Route path="/income" element={<Income />}/>
         <Route path="/students" element={<Students />} />
