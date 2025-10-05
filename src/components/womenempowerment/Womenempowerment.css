@@ -1,0 +1,180 @@
+/* WomenEmpowerment.css */
+
+.women-container {
+  font-family: "Inter", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.women-header {
+  background-color: #b20a2c;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.women-hero {
+  background: url("./images/grp.png") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.women-hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+/* Section Styles */
+.women-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.women-section h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Mission */
+.women-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+
+.red-text {
+  color: red;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.green-text {
+  color: green;
+}
+
+.highlight-yellow {
+  color: #d40000;
+  background-color: #ffe600;
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Image Row */
+.women-image-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.women-image-row img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.women-image-row img:hover {
+  transform: scale(1.05);
+}
+
+/* Stats Section */
+.women-stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #b20a2c;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.stat-box {
+  flex: 1;
+  min-width: 200px;
+  margin: 15px;
+}
+
+.stat-box h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Programs */
+.women-programs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.women-program {
+  background: #f9f9f9;
+  width: 320px;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.women-program:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(178, 10, 44, 0.2);
+}
+
+.women-program h3 {
+  color: #b20a2c;
+  margin-bottom: 10px;
+}
+
+.women-program p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.women-program img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .women-hero h1 {
+    font-size: 2rem;
+  }
+
+  .women-stats {
+    flex-direction: column;
+  }
+
+  .women-programs {
+    flex-direction: column;
+    align-items: center;
+  }
+}
