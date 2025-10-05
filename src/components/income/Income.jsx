@@ -23,7 +23,7 @@ const Income = () => {
           time, and value created. Whether through wages, salaries, profits, or
           investments, **income provides the foundation for stability and growth.**
         </p>
-        <img className="inc-dm-image" src="img-1.png" alt="Income concept" />
+        <img className="inc-dm-image" src="incomeimg-1.png" alt="Income concept" />
       </section>
 
       {/* Section 2 - Holistic income */}
@@ -35,7 +35,7 @@ const Income = () => {
         </p>
         <img
           className="inc-dm-image"
-          src="img-2.jpg"
+          src="incomeimg-2.jpg"
           alt="Personal growth and learning"
         />
       </section>
@@ -59,12 +59,12 @@ const Income = () => {
             <strong>Live with peace of mind and purpose</strong>
           </li>
         </ul>
-        <img className="inc-dm-image" src="img-3.avif" alt="Financial freedom" />
+        <img className="inc-dm-image" src="incomeimg-3.avif" alt="Financial freedom" />
       </section>
 
       {/* Left + Right Section - Benefits List */}
       <div className="inc-dm-info-flex">
-        <img className="inc-dm-info-image" src="img-4.jpg" alt="Growth illustration" />
+        <img className="inc-dm-info-image" src="incomeimg-4.jpg" alt="Growth illustration" />
         <div className="inc-dm-info-list">
           <p className="inc-dm-list-row">
             <span className="inc-dm-tick">✔</span>
