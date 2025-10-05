@@ -21,7 +21,6 @@ export default function App() {
         <Route path="/health" element={<Health />} />
         <Route path="/family" element={<Family />} />
         <Route path="/wealth" element={<Wealth />} />
-        
         <Route path="/visionmission" element={<Visionmission />} />
         
         <Route path="/solution" element={<Solution />} />
