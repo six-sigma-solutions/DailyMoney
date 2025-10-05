@@ -12,7 +12,7 @@ import Gratitude from "./components/gratitude/Gratitude";
 import FounderMsg from "./components/founderMsg/FounderMsg";
 import Overview from "./components/overview/Overview";
 import Income from "./components/income/Income";
-
+import PresidentMsg from "./components/presidentMsg/PresidentMsg";
 
 
 export default function App() {
@@ -35,6 +35,7 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/entrepreneur" element={<Entrepreneur />}/>
         <Route path="/founders-msg" element={<FounderMsg />} />
+        <Route path="/presidents-msg" element={<PresidentMsg />} />
         
         <Route path="/income" element={<Income />}/>
       </Routes>
