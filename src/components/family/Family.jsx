@@ -49,7 +49,7 @@ const Family = () => {
         {/* Step 1 */}
         <div className="step">
           <div className="step-img">
-            <img src="./public/f1.jpg" alt="Discover" />
+            <img src="f1.jpg" alt="Discover" />
           </div>
           <div className="step-content">
             <h3 className="highlight-text">
@@ -81,7 +81,7 @@ const Family = () => {
         {/* Step 3 */}
         <div className="step">
           <div className="step-img">
-            <img src="./public/f2.jpg" alt="Deliver" />
+            <img src="f2.jpg" alt="Deliver" />
           </div>
           <div className="step-content">
             <h3 className="highlight-text">
