@@ -1,1 +1,103 @@
-
+/* Reset - Scoped */
+.dm-grt-wrapper * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; 
+  }
+  
+  /* Body (Wrapper) - Mimics the body styling */
+  .dm-grt-wrapper {
+    padding-top: 60px; /* Space for the fixed header */
+    background: #000;
+    color: #fff;
+    min-height: 100vh;
+  }
+  
+  /* Navbar - Mimics the header styling */
+  .dm-grt-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    /* Original CSS had no background */
+    background: transparent; 
+  }
+  
+  .dm-grt-logo {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  
+  /* Hero Section */
+  .dm-grt-hero {
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Assuming the cosmos.jpg file exists in your public directory */
+    background-image: url('/public/cosmos.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+  }
+  
+  .dm-grt-hero-content {
+    max-width: 800px;
+    padding: 40px;
+    /* Adding a subtle overlay for text readability over the image */
+    background: rgba(0, 0, 0, 0.75); 
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+  }
+  
+  .dm-grt-h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Yellow accent */
+  }
+  
+  .dm-grt-p-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: #f1f1f1;
+  }
+  
+  .dm-grt-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .dm-grt-button:hover {
+    background: #fff;
+    transform: scale(1.05);
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+      .dm-grt-header {
+          padding: 15px 20px;
+      }
+      .dm-grt-h1 {
+          font-size: 2rem;
+      }
+      .dm-grt-hero-content {
+          padding: 20px;
+      }
+  }
