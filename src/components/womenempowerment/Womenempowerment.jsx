@@ -1,7 +1,7 @@
 import React from "react";
-import "./Entrepreneur.css";
+import "./Womenempowerment.css";
 
-export default function Entrepreneur() {
+export default function Womenempowerment() {
   return (
     <div className="women-container">
       {/* Header */}
@@ -38,9 +38,9 @@ export default function Entrepreneur() {
         </ul>
 
         <div className="women-image-row">
-          <img src="./images/smile.png" alt="Women Smiling" />
-          <img src="./images/talk.png" alt="Women Talking" />
-          <img src="./images/hpy.png" alt="Women Laughing" />
+          <img src="smile.png" alt="Women Smiling" />
+          <img src="talk.png" alt="Women Talking" />
+          <img src="hpy.png" alt="Women Laughing" />
         </div>
       </section>
 
@@ -72,7 +72,7 @@ export default function Entrepreneur() {
               initiatives for women.
             </p>
             <img
-              src="./images/em1.jpg"
+              src="em1.jpg"
               alt="Education Program"
               onError={(e) =>
                 (e.target.src =
@@ -88,7 +88,7 @@ export default function Entrepreneur() {
               independence.
             </p>
             <img
-              src="./images/em2.jpg"
+              src="em2.jpg"
               alt="Economic Empowerment Program"
               onError={(e) =>
                 (e.target.src =
@@ -104,7 +104,7 @@ export default function Entrepreneur() {
               community programs.
             </p>
             <img
-              src="./images/em3.jpg"
+              src="em3.jpg"
               alt="Advocacy Program"
               onError={(e) =>
                 (e.target.src =
