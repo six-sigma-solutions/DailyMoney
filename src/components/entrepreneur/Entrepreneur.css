@@ -1,197 +1,102 @@
-*{
-    margin: 0;
-    padding: 0;
+/* Reset & base */
+:root {
+  --accent: #c92a2a;
+  --muted: #9aa0a6;
+  --max-width: 1320px;
 }
 
-body{
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: light;
-    height: 100vh;
-    flex-wrap: wrap;
-} 
-
-.ent-section{
-    margin: 30px 40px;
-    padding: 0 20px;
-    border-radius: 20px;
-    border: 5px solid white;
-    box-shadow: 0px 10px 15px rgba(0.5,0,0,0.5);
-    background-image: url("enterpreimg-2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.ent-title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    margin: 40px;
+html, body {
+  height: 100%;
+  font-family: Montserrat, Arial, sans-serif;
 }
 
-.ent-title h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    flex: 1;
-    text-align: center;
-    font-weight: 400;
-    padding: 10px;
-    background-color: navy;
-    border-radius: 10px;
-    cursor: pointer;
-    color: white;
+.vm-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 28px;
 }
 
-.ent-title img{
-    margin: 0 auto;
-    border-radius: 80px;
-    padding: 20px;
-    display: block;
-    border: 3px solid blue;
-    width: 300px;
-    height: 300px;  
-    z-index: 1;
-    box-shadow: 0px 4px 8px rgba(0.5,0,0,0.5);
+/* HERO card (centered, rounded) */
+.vm-hero-card {
+  max-width: 1320px;
+  margin: 28px auto 0;
+  position: relative;
+  border-radius: 28px;
+  overflow: visible;
 }
 
-.ent-title img:hover{
-    cursor: pointer;
-    width: 28%;
-    height: 300px;
-    animation: pulse 2s infinite;
+.vm-card-inner {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(2,6,12,0.06);
 }
 
-/* Left Image - Right Text */
-.ent-left{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
+.vm-card-media {
+  display: block;
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  object-position: right center;
+  filter: brightness(0.45) contrast(1);
 }
 
-.ent-box-left h1:hover{
-    font-size: 30px;
-    font-weight: bold;
-    animation: highlight 3s infinite;
-    cursor: pointer; 
+.vm-card-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  padding-left: 48px;
 }
 
-.ent-box-left h1{
-    text-align: center;
+.vm-card-text {
+  max-width: 720px;
+  padding: 56px;
+  border-radius: 12px;
+  color: #fff;
 }
 
-.ent-left img{
-    margin: 50px 0;
-    width: 400px;
-    height: 400px;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
+.vm-kicker {
+  font-size: 13px;
+  color: rgba(255,255,255,0.66);
+  margin-bottom: 12px;
+  font-weight: 600;
 }
 
-.ent-left img:hover{
-    animation: bounce 2s infinite;
+.vm-card-text h1 {
+  font-family: "Playfair Display", serif;
+  color: var(--accent);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.02;
+  margin: 0 0 18px;
 }
 
-.ent-box-left{
-    font-weight: bold;
-    margin: 0 20px;
-    text-align: right;
-    padding: 100px 10px 100px 100px;
+.vm-lead {
+  color: #d0d0d0;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 60ch;
 }
 
-/* Right Image - Left Text */
-.ent-right{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 39px;
+/* features strip overlapping bottom of card */
+.vm-card-features {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: -40px;
+  padding: 22px;
+  border-radius: 12px;
+  margin-left: 28px;
+  margin-right: 28px;
+  z-index: 3;
 }
 
-.ent-box-right img{
-    width: 400px;
-    height: 400px;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
-    margin-right: 20px;
-}
-
-.ent-right h1:hover{
-    font-size: 30px;
-    font-weight: bold;
-    animation: highlight 3s infinite;
-    cursor: pointer; 
-}
-
-.ent-box-right img:hover{
-    animation: bounce 2s infinite;
-}
-
-.ent-box-right{
-    font-weight: bold;
-    margin: 0 20px;
-    padding: 100px 10px 100px 100px;
-}
-
-/* Media Queries (unchanged except for class names) */
-@media screen and (max-width: 1024px) {
-    .ent-title h1 {
-        font-size: 1.5rem;
-    }
-    .ent-box-left, .ent-box-right {
-        padding: 40px 10px;
-    }
-    .ent-left img, .ent-right img {
-        width: 350px;
-        height: 350px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .ent-section{
-        margin: 20px;
-    }
-    .ent-title {
-        margin: 20px;
-    }
-    .ent-left img, .ent-right img{
-        width: 300px;
-        height: 300px;
-    }
-    .ent-title h1{
-        font-size: 1.2rem;
-    }
-}
-
-@media screen and (max-width: 480px){
-    .ent-title h1{
-        font-size: 1rem;
-        padding: 8px;
-    }
-    .ent-box-left, .ent-box-right{
-        padding: 20px 5px;
-    }
-    .ent-left img, .ent-right img{
-        width: 250px;
-        height: 250px;
-    }
-}
-
-/* Animations */
-@keyframes pulse{
-    0%,100%{ transform: scale(1);}
-    50%{ transform: scale(1.2);}
-}
-
-@keyframes bounce{
-    0%,100%{ transform: translateY(0);}
-    50%{ transform: translateY(-50px);}
-}
-
-@keyframes highlight{
-  0% { background-color: yellow; color: navy; border-radius: 20px; padding: 20px;}
-  50% { background-color: transparent; color: blue; border-radius: 20px; padding: 20px;}
-  100% { background-color: yellow; color: darkblue; border-radius: 20px; padding: 20px;}
-}
