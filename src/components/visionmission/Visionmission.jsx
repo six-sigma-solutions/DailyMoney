@@ -36,7 +36,7 @@ const Visionmission = () => {
       <section className="dm-vsn-hero-card">
         <div className="dm-vsn-card-inner">
           {/* FIX: Corrected image path to use public assets */}
-          <img className="dm-vsn-card-media" src="/public/vision1.jpg" alt="Vision" />
+          <img className="dm-vsn-card-media" src="/vision1.jpg" alt="Vision" />
           <div className="dm-vsn-card-overlay">
             <div className="dm-vsn-card-text">
               <p className="dm-vsn-kicker">Our Vision</p>
