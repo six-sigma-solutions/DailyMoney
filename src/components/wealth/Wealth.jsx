@@ -1,17 +1,17 @@
 import React from "react";
 import "./Wealth.css";
 
-const Wealth = () => {
+const WealthPage = () => {
   const handleGetStarted = () => {
     alert("Welcome to Wealth Management — Let's begin your journey!");
   };
 
   return (
-    <div className="wealth-page">
+    <div className="wealthy-page">
       {/* Header */}
-      <header className="site-header">
-        <div className="container header-inner">
-          <div className="logo" style={{ color: "#0b3550" }}>
+      <header className="wealthy-header">
+        <div className="wealthy-container wealthy-header-inner">
+          <div className="wealthy-logo" style={{ color: "#0b3550" }}>
             WEALTH
           </div>
         </div>
@@ -19,37 +19,41 @@ const Wealth = () => {
 
       {/* Hero Section */}
       <main>
-        <section className="container hero-card">
-          <div className="hero-grid">
-            <div className="hero-text">
+        <section className="wealthy-container wealthy-hero-card">
+          <div className="wealthy-hero-grid">
+            <div className="wealthy-hero-text">
               <h1>
                 Wealth
                 <br />
-                <span className="accent">Management</span>
+                <span className="wealthy-accent">Management</span>
               </h1>
-              <p className="lead">
+              <p className="wealthy-lead">
                 Personalized strategies to grow and manage your wealth.
               </p>
-              <button id="getStarted" className="btn" onClick={handleGetStarted}>
+              <button
+                id="getStarted"
+                className="wealthy-btn"
+                onClick={handleGetStarted}
+              >
                 Get Started
               </button>
             </div>
 
-            <div className="hero-image-wrap" aria-hidden="true">
-              <div className="portrait-card">
-                <img src="./images/wome.jpg" alt="Portrait" />
+            <div className="wealthy-hero-image" aria-hidden="true">
+              <div className="wealthy-portrait-card">
+                <img src="wome..jpg" alt="Portrait" />
               </div>
             </div>
           </div>
         </section>
 
         {/* Zigzag Section */}
-        <section className="container zigzag">
-          <div className="row">
-            <div className="col image-col">
-              <img src="./images/mo.jpg" alt="Wealth concept 1" />
+        <section className="wealthy-container wealthy-zigzag">
+          <div className="wealthy-row">
+            <div className="wealthy-col wealthy-image-col">
+              <img src="mo.jpg" alt="Wealth concept 1" />
             </div>
-            <div className="col text-col">
+            <div className="wealthy-col wealthy-text-col">
               <h2>
                 <span style={{ color: "red" }}>✔️</span> Wealth is more than
                 numbers in a bank account. It is the freedom to choose our path,
@@ -59,11 +63,11 @@ const Wealth = () => {
             </div>
           </div>
 
-          <div className="row reverse">
-            <div className="col image-col">
-              <img src="./images/w2.jpg" alt="Wealth concept 2" />
+          <div className="wealthy-row wealthy-reverse">
+            <div className="wealthy-col wealthy-image-col">
+              <img src="w2.jpg" alt="Wealth concept 2" />
             </div>
-            <div className="col text-col">
+            <div className="wealthy-col wealthy-text-col">
               <h2>
                 <span style={{ color: "red" }}>✔️</span> True wealth begins with
                 discipline — living with intention, saving with wisdom, and
@@ -74,11 +78,11 @@ const Wealth = () => {
             </div>
           </div>
 
-          <div className="row">
-            <div className="col image-col">
-              <img src="./images/w1.jpg" alt="Wealth concept 3" />
+          <div className="wealthy-row">
+            <div className="wealthy-col wealthy-image-col">
+              <img src="w1.jpg" alt="Wealth concept 3" />
             </div>
-            <div className="col text-col">
+            <div className="wealthy-col wealthy-text-col">
               <h2>
                 <span style={{ color: "red" }}>✔️</span> Our wealth is not just
                 about what we accumulate, but about what we enable. With wealth,
@@ -89,11 +93,11 @@ const Wealth = () => {
             </div>
           </div>
 
-          <div className="row reverse">
-            <div className="col image-col">
-              <img src="./images/w4.jpg" alt="Wealth concept 4" />
+          <div className="wealthy-row wealthy-reverse">
+            <div className="wealthy-col wealthy-image-col">
+              <img src="w4.jpg" alt="Wealth concept 4" />
             </div>
-            <div className="col text-col">
+            <div className="wealthy-col wealthy-text-col">
               <h2>
                 <span style={{ color: "red" }}>✔️</span> Wealth is not
                 greed—it is growth. It is not selfishness—it is stewardship.
@@ -110,4 +114,4 @@ const Wealth = () => {
   );
 };
 
-export default Wealth;
+export default WealthPage;
