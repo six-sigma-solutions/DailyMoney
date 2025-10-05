@@ -65,9 +65,9 @@
   
   .inc-dm-image {
     width: 100%;
-    max-width: 850px;
-    height: 350px;
-    object-fit: cover;
+    max-width: 500px;
+    height: 500px;
+    object-fit:fill;
     border-radius: 12px;
     margin: 25px auto; 
     display: block; 
@@ -113,9 +113,9 @@
       margin: 60px auto;
   }
   .inc-dm-info-image {
-      width: 400px; 
-      height: 400px; 
-      object-fit: cover;
+      width: 500px; 
+      height: 500px; 
+      object-fit: fill;
       border-radius: 15px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   }
