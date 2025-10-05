@@ -36,7 +36,7 @@ export default function App() {
         
         <Route path="/overview" element={<Overview/>} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/womenempowerment" element={<Womenempowerment />}/>
+        <Route path="/women-empowerment" element={<Womenempowerment />}/>
         <Route path="/founders-msg" element={<FounderMsg />} />
         <Route path="/presidents-msg" element={<PresidentMsg />} />
         <Route path="/core-Team" element={<CoreTeam />} />
