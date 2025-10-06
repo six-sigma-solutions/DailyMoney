@@ -1,105 +1,124 @@
 import React from "react";
+// !! IMPORTANT: Make sure these paths are correct for your project !!
+import img1 from "/Enter1.jpeg";
+import img3 from "/img-3.jpg";
+import img4 from "/img-4.jpg";
+import img5 from "/img-5.jpg";
+import img6 from "/img-6.jpg";
+import img7 from "/img-7.jpg";
+import img8 from "/img-8.jpg";
+import img9 from "/img-9.jpg";
+import img10 from "/img-10.jpg";
+
+// Import your regular CSS file
 import "./Entrepreneur.css";
 
-export default function Entrepreneur() {
+const Entrepreneur = () => {
   return (
-    <div>
-      {/* Hero Section */}
+    // This parent div with a unique class name isolates all the styles within it
+    <div className="entrepreneur-container">
       <div className="ent-section">
+        <span>Entrepreneur </span>
         <div className="ent-title">
-          <h1>I'm my Own Boss</h1>
-          <img src="img-1.jpg" alt="Entrepreneur" />
-          <h1>Freedom and Financial Independence</h1>
+          <img src={img1} alt="Entrepreneur" />
         </div>
       </div>
 
-      {/* Left Image - Right Text */}
       <div className="ent-left">
-        <img src="img-3.jpg" alt="Own Boss" />
+        <img src={img3} alt="Left" />
         <div className="ent-box-left">
-          <h1 style={{ fontSize: "24px", fontWeight: 900 }}>
-            "I Want to be my Own Boss".
+          <h1>
+            "I want to be my own boss".<br />
+            "Freedom is my first goal, purpose is my next".<br />
+            "Self-leadership is my success story".<br />
+            "I want to build a life that reflects my values".
           </h1>
         </div>
       </div>
 
-      {/* Right Image - Left Text */}
       <div className="ent-right">
-        <h1 style={{ fontSize: "28px", fontWeight: 900 }}>
-          I'm ready to start, build, and grow something of my own".
+        <h1>
+          "I'm ready to start, build, and grow something of my own".<br />
+          "I’m ready to take my first step toward independence".<br />
+          "I’m ready to shape my own success".<br />
         </h1>
         <div className="ent-box-right">
-          <img src="img-4.jpg" alt="Grow Business" />
+          <img src={img4} alt="Right" />
         </div>
       </div>
 
-      {/* Left Image - Right Text */}
       <div className="ent-left">
-        <img src="img-5.jpg" alt="Financial Independence" />
+        <img src={img5} alt="Left" />
         <div className="ent-box-left">
-          <h1
-            style={{
-              fontSize: "28px",
-              fontWeight: 900,
-              textAlign: "start",
-              paddingLeft: "40px",
-            }}
-          >
-            "Entrepreneurship is for freedom and financial independence".
+          <h1>
+            "Entrepreneurship is for freedom and financial independence".<br />
+            "I choose independence over comfort".<br />
+            "I’m ready to create my own future".<br />
+            "I’m ready to launch my own vision".<br />
           </h1>
         </div>
       </div>
 
-      {/* Right Image - Left Text */}
       <div className="ent-right">
-        <h1 style={{ fontSize: "28px", fontWeight: 900 }}>
-          "I'm looking for entrepreneurship to create opportunities, not just
-          take them".
+        <h1>
+          "I'm looking for entrepreneurship to create opportunities, not just take them".<br />
+          "I’m drawn to entrepreneurship to make opportunities, not just grab them".<br />
+          "I choose entrepreneurship to shape opportunities, not just follow them".<br />
         </h1>
         <div className="ent-box-right">
-          <img src="img-6.jpg" alt="Opportunities" />
+          <img src={img6} alt="Right" />
         </div>
       </div>
 
-      {/* Left Image - Right Text */}
       <div className="ent-left">
-        <img src="img-7.jpg" alt="Dreams" />
+        <img src={img7} alt="Left" />
         <div className="ent-box-left">
-          <h1 style={{ fontSize: "28px", fontWeight: 900 }}>
-            "Yes, I believe in building dreams into reality".
+          <h1>
+            "Yes, I believe in building dreams into reality".<br />
+            "I believe in making dreams come true through action".<br />
+            "I’m committed to turning vision into reality".<br />
+            "I believe that dreams are meant to be built, not just imagined".<br />
           </h1>
         </div>
       </div>
 
-      {/* Right Image - Left Text */}
       <div className="ent-right">
-        <h1 style={{ fontSize: "28px", fontWeight: 900 }}>
-          "I want to lead instead of follow".
+        <h1>
+          "I want to lead instead of follow".<br />
+          "I choose to lead rather than follow".<br />
+          "I aim to set the direction, not just follow it".<br />
+          "Leadership is my choice, not conformity".
         </h1>
         <div className="ent-box-right">
-          <img src="img-8.jpg" alt="Lead Instead of Follow" />
+          <img src={img8} alt="Right" />
         </div>
       </div>
 
-      {/* Left Image - Right Text */}
       <div className="ent-left">
-        <img src="img-9.jpg" alt="Risk Taking" />
+        <img src={img9} alt="Left" />
         <div className="ent-box-left">
-          <h1 style={{ fontSize: "28px", fontWeight: 900 }}>
-            "I am ready to take risk for success".
+          <h1>
+            "I am ready to take risk for success".<br />
+            "I’m willing to take chances for success".<br />
+            "I’m ready to embrace challenges".<br />
+            "I’m not afraid to take bold steps toward my goals".
           </h1>
         </div>
       </div>
 
-      {/* Right Image - Left Text */}
       <div className="ent-right">
-        <h1 style={{ fontSize: "28px", fontWeight: 900 }}>
-          "I have dreams of financial freedom and impact".
+        <h1>
+          "I have dreams of financial freedom and impact".<br />
+          "I dream of creating wealth and making a difference".<br />
+          "My goal is to build financial freedom and inspire change".<br />
+          "My vision combines financial success with social impact".
         </h1>
         <div className="ent-box-right">
-          <img src="img-10.jpg" alt="Financial Freedom" />
+          <img src={img10} alt="Right" />
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default Entrepreneur;
