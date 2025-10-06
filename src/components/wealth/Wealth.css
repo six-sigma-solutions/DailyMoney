@@ -62,23 +62,6 @@ body {
   margin: 0;
 }
 
-/* Checkmark style */
-.wealthy-check {
-  color: var(--accent); /* uses your theme accent color */
-  background: rgba(11, 58, 85, 0.08);
-  border-radius: 50%;
-  padding: 6px;
-  font-size: 18px;
-  margin-right: 10px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  box-shadow: 0 2px 6px rgba(11, 58, 85, 0.1);
-  vertical-align: middle;
-}
-
 /* Container */
 .wealthy-container {
   max-width: var(--container-w);
@@ -106,15 +89,6 @@ body {
   text-decoration: none;
   color: var(--muted);
   font-weight: 600;
-}
-
-.wealthy-check {
-  color: red;
-  font-weight: bold;
-  font-size: 1.2em;
-  margin-right: 6px;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 /* Hero card */
@@ -199,24 +173,39 @@ body {
 .wealthy-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 28px;
+  /* This single 'gap' property creates consistent spacing for all rows */
+  gap: 40px;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 40px; /* This controls the vertical space between each row */
 }
-.wealthy-row.wealthy-reverse {
-  direction: ltr;
-}
+
+/* No change needed here */
 .wealthy-row.wealthy-reverse .wealthy-image-col {
   order: 2;
 }
 .wealthy-row.wealthy-reverse .wealthy-text-col {
   order: 1;
 }
+
+.wealthy-image-col {
+  display: flex;
+  justify-content: flex-end; /* Pushes the image to the right edge of its column */
+}
+
+.wealthy-row.wealthy-reverse .wealthy-image-col {
+  justify-content: flex-start; /* Pushes the image to the left edge of its column */
+}
+
+/* Update image styles to be responsive */
 .wealthy-image-col img {
-  width: 500px;
-  height: 500px;
+  width: 350px; /* Makes image fill its column */
+  height: 100%; /* Keeps a consistent height */
+  object-fit: cover; /* Prevents image from being distorted */
+  display: block; /* Removes extra bottom space */
+  border-radius: 12px;
   box-shadow: 0 10px 30px rgba(11, 20, 25, 0.06);
 }
+
 .wealthy-text-col h3 {
   margin: 0 0 10px 0;
   font-size: 22px;
