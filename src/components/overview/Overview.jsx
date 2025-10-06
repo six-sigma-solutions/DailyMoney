@@ -66,7 +66,7 @@ const Overview = () => {
 
       {/* Get Started Button (RENAMED from .btn-container, .btn) */}
       <div className="overview-btn-container fade-in">
-        <Link className="link" to="/health" >
+        <Link className="link" onClick={getStarted} >
         <button type="button" className="overview-btn">
           Get Started
         </button>
