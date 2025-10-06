@@ -45,6 +45,18 @@
     flex-wrap: wrap;
 }
 
+.entre-title {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    background-color: #0d9488;
+    /* Teal color for brand consistency */
+    border-radius: 20px;
+    border: 7px solid #14b8a6;
+    /* A lighter teal border */
+    padding: 10px;
+}
+
 .entrepreneur-container .ent-title img:hover{
     cursor: pointer;
     animation: pulse 1s infinite;
