@@ -16,6 +16,7 @@ import PresidentMsg from "./components/presidentMsg/PresidentMsg";
 import CoreTeam from "./components/coreTeam/CoreTeam";
 import Students from "./components/students/Students";
 import Entrepreneur from "./components/entrepreneur/Entrepreneur";
+import Elder from "./components/elder/Elder";
 
 
 export default function App() {
@@ -45,6 +46,7 @@ export default function App() {
         
         <Route path="/income" element={<Income />}/>
         <Route path="/students" element={<Students />} />
+        <Route path="/elder" element={<Elder />} />
       </Routes>
     </>
   );
