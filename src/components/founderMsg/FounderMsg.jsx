@@ -6,14 +6,14 @@ const founder = {
     name: "Dr.V.Chellapondy",
     role: "Founder & Financial Advisor",
     // Use the image URL you intend to use for the founder
-    image: "/sir1.jpg",
+    image: "/sir1.jpg", 
 };
 
 export default function FounderMsg() {
     return (
         // Use the custom class for the outer section
         <section className="founder-page-section">
-
+            
             {/* Main Content Card */}
             <div className="founder-message-card">
 
@@ -32,7 +32,7 @@ export default function FounderMsg() {
                         alt={founder.name}
                         className="founder-image"
                     />
-
+                    
                     <h2 className="founder-name">{founder.name}</h2>
                     <p className="founder-role">{founder.role}</p>
                 </div>
@@ -41,11 +41,22 @@ export default function FounderMsg() {
                 {/* Message Content Section */}
                 <div className="message-content">
 
-                    <p className="message-quote">
-                        “I’m <span className="signature">Chellapondy Vellaiswamy</span>, with 35+ years of experience across Media, Finance, and Wellness. From launching Kailash Cable Network in 1990 to serving as Deputy Director - Distribution in Tamilthirai Tv and AVP at India Infoline Ltd, I’ve built expertise in leadership and business growth. Since 2010, I’ve been a wellness consultant, helping over 1 lakh people transform their health and wealth while building an organization of 5000+ associates. My global learning across 15+ countries and a Doctorate in Social Work reflect my passion for holistic well-being and community impact.”
+                <p className="message-quote">
+                    “I’m <span className="signature">Chellapondy Vellaiswamy</span>, with 35+ years of experience across Media, Finance, and Wellness. From launching Kailash Cable Network in 1990 to serving as Deputy Director - Distribution in Tamilthirai Tv and AVP at India Infoline Ltd, I’ve built expertise in leadership and business growth. Since 2010, I’ve been a wellness consultant, helping over 1 lakh people transform their health and wealth while building an organization of 5000+ associates. My global learning across 15+ countries and a Doctorate in Social Work reflect my passion for holistic well-being and community impact.”
                     </p>
+
                     <div className="message-section">
-                        <img src="message.jpeg" alt="Welcome" className="message-image" />
+                        <img src="message1.jpeg" alt="Welcome" className="message-image" />
+                    </div>
+                    
+                    {/* Signature style closing */}
+                    <div className="signature-block">
+                        <p className="signature-name">
+                            {founder.name}
+                        </p>
+                        <p className="signature-title">
+                            Founder, DailyMoney
+                        </p>
                     </div>
                 </div>
 
@@ -55,7 +66,7 @@ export default function FounderMsg() {
                     <div className="footer-logo-container">
                         <img
                             // This logo URL is consistent with your Navbar.jsx
-                            src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png"
+                            src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png" 
                             alt="DailyMoney Logo"
                             className="footer-logo"
                         />
@@ -67,7 +78,7 @@ export default function FounderMsg() {
                         Independent for Entire Life
                     </p>
                 </div>
-
+                
             </div>
 
         </section>
