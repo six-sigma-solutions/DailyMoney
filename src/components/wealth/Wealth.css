@@ -187,6 +187,38 @@ body {
   order: 1;
 }
 
+.row1{
+  background-color:green;
+}
+
+.row1 h2{
+  color:white
+}
+
+.row2{
+  background-color:rgb(53, 34, 0);
+}
+
+.row2 h2{
+  color:white
+}
+
+.row3{
+  background-color:rgb(255, 251, 0);
+}
+
+.row3 h2{
+  color:darkgreen;
+}
+
+.row4{
+  background-color:rgb(255, 123, 0);
+}
+
+.row4 h2{
+  color:navyblue;
+}
+
 .wealthy-image-col {
   display: flex;
   justify-content: flex-end; /* Pushes the image to the right edge of its column */
