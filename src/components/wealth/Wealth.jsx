@@ -1,89 +1,99 @@
 import React from "react";
 import "./Wealth.css";
 
-const Wealth = () =>{
+const WealthPage = () => {
+  
+
   return (
-    <div>
-      <div className="title">
-        <h1>Smart Wealth</h1>
-        <img className="firstimg" src="img-1.jpg" alt="Smart Wealth" />
-        <h1>Smart Life</h1>
-      </div>
-
-      <div className="container">
-        <div className="text-box">
-          <h1>Wealth</h1>
-          <p>
-            Wealth is the accumulation of valuable economic assets and
-            resources, such as money, property, stocks, and other valuable
-            possessions, minus any outstanding debts, which collectively
-            represent a person's or entity's net worth.
-          </p>
-
-          <h1>Key Aspects of Wealth</h1>
-          <p>
-            <strong>Assets and Liabilities:</strong> Wealth is calculated as the
-            market value of all assets (real estate, investments, cash) owned,
-            minus all liabilities or debts.
-          </p>
-          <p>
-            <strong>Stock vs. Flow:</strong> Wealth is a snapshot of what is
-            owned at a given moment (a stock), while income is a continuous
-            stream of money received over time (a flow).
-          </p>
-
-          <h1>How Wealth is Built</h1>
-          <p>
-            <strong>Saving and Investing:</strong> Wealth is built by saving a
-            portion of one's income and investing it over time in assets like
-            stocks, bonds, and real estate.
-          </p>
-          <p>
-            <strong>Compounding:</strong> Investing early and allowing
-            investments to grow through compound interest is a key strategy for
-            wealth creation.
-          </p>
-
-          <h1>Importance of Wealth</h1>
-          <p>
-            <strong>Financial Stability:</strong> Wealth provides financial
-            security and stability, allowing for greater independence in
-            lifestyle and career choices.
-          </p>
-          <p>
-            <strong>Opportunities:</strong> It creates opportunities for future
-            generations by providing a stronger foundation and access to
-            resources.
-          </p>
+    
+    <div className="wealthy-page">
+      {/* Header */}
+      <header className="wealthy-header">
+        <div className="wealthy-container wealthy-header-inner">
+          <div className="wealthy-logo" style={{ color: "#0b3550" }}>
+            WEALTH
+          </div>
         </div>
+      </header>
 
-        <div>
-          <img className="img" src="img.jpg" alt="Wealth" />
-        </div>
-      </div>
+      {/* Hero Section */}
+      <main>
+        <section className="wealthy-container wealthy-hero-card">
+          <div className="wealthy-hero-grid">
+           
+            <div className="wealthy-hero-image" aria-hidden="true">
+              <div className="wealthy-portrait-card">
+                <img src="healt-welt.jpeg" alt="Portrait" />
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <div>
-        <img className="secondimg" src="img-2.jpg" alt="Smart Life" />
-      </div>
+        {/* Zigzag Section */}
+        <section className="wealthy-container wealthy-zigzag">
+          <div className="wealthy-row">
+            <div className="wealthy-col wealthy-image-col">
+              <img src="mo.jpg" alt="Wealth concept 1" />
+            </div>
+            <div className="wealthy-col wealthy-text-col">
+              <h2>
+                <span style={{ color: "red" }}>✔️</span> Wealth is more than
+                numbers in a bank account. It is the freedom to choose our path,
+                the security to protect what matters, and the power to create a
+                lasting impact.
+              </h2>
+            </div>
+          </div>
 
-      <div className="footer">
-        <div className="footer-container">
-          <h1>"செல்வத்துள் செல்வம் செவிச்செல்வம் அச்செல்வம்</h1>
-          <h1>செல்வத்துள் எல்லாம் தலை"</h1>
-          <p>
-            Wealth is the total value of an individual's or society's
-            possessions and resources, including money, property, and
-            investments, after accounting for liabilities. It is often measured
-            as net worth and represents accumulated assets that can be exchanged
-            for money, goods, or services. Wealth provides security, allows for
-            desired lifestyles, and enhances quality of life, though its meaning
-            can extend beyond financial resources to include concepts like time
-            and social connections.
-          </p>
-        </div>
-      </div>
+          <div className="wealthy-row wealthy-reverse">
+            <div className="wealthy-col wealthy-image-col">
+              <img src="w2.jpg" alt="Wealth concept 2" />
+            </div>
+            <div className="wealthy-col wealthy-text-col">
+              <h2>
+                <span style={{ color: "red" }}>✔️</span> True wealth begins with
+                discipline — living with intention, saving with wisdom, and
+                investing with vision. It grows not only through money but also
+                through knowledge, relationships, and the values we pass on to
+                the next generation.
+              </h2>
+            </div>
+          </div>
+
+          <div className="wealthy-row">
+            <div className="wealthy-col wealthy-image-col">
+              <img src="w1.jpg" alt="Wealth concept 3" />
+            </div>
+            <div className="wealthy-col wealthy-text-col">
+              <h2>
+                <span style={{ color: "red" }}>✔️</span> Our wealth is not just
+                about what we accumulate, but about what we enable. With wealth,
+                we gain the ability to support our families, nurture dreams,
+                create opportunities, and contribute to causes that uplift
+                society.
+              </h2>
+            </div>
+          </div>
+
+          <div className="wealthy-row wealthy-reverse">
+            <div className="wealthy-col wealthy-image-col">
+              <img src="w4.jpg" alt="Wealth concept 4" />
+            </div>
+            <div className="wealthy-col wealthy-text-col">
+              <h2>
+                <span style={{ color: "red" }}>✔️</span> Wealth is not
+                greed—it is growth. It is not selfishness—it is stewardship.
+                When guided by purpose, wealth becomes a force for freedom, for
+                impact, and for legacy. Our wealth is our power to live with
+                dignity, give with generosity, and build a future that outlives
+                us.
+              </h2>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
   );
 };
 
-export default Wealth;
+export default WealthPage;

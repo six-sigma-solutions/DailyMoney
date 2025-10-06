@@ -1,0 +1,77 @@
+
+
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Solution card container */
+.sol-img-card {
+  width: 70vw;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative; /* needed for button positioning */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.35s ease;
+}
+
+.sol-img-card:hover {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Image inside card */
+.sol-responsive-img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.sol-img-card:hover .sol-responsive-img {
+  transform: scale(1.03);
+}
+
+/* CTA button */
+.sol-cta-button {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #c92a2a; /* red accent */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+  z-index: 10;
+}
+
+.sol-cta-button:hover {
+  transform: translateX(-50%) translateY(-2px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.28);
+  background-color: #a02525;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .sol-img-card {
+    width: 90vw;
+  }
+  
+  .sol-cta-button {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    bottom: 12px;
+  }
+}

@@ -1,6 +1,6 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -11,33 +11,27 @@ body{
     flex-wrap: wrap;
 } 
 
-.title-sec{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+.ent-section{
+    margin: 30px 40px;
+    padding: 0 20px;
     border-radius: 20px;
     border: 5px solid white;
     box-shadow: 0px 10px 15px rgba(0.5,0,0,0.5);
     background-image: url("img-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 70vh;
 }
 
-.title{
+.ent-title{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 40px;
 }
 
-.title h1{
+.ent-title h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     flex: 1;
     text-align: center;
@@ -49,88 +43,73 @@ body{
     color: white;
 }
 
-.title h1:first-child{
-    text-align: center;
-}
-
-.title h1:last-child{
-    text-align: center;
-}
-
-.title img{
+.ent-title img{
     margin: 0 auto;
-    border-radius: 24%;
+    border-radius: 80px;
     padding: 20px;
     display: block;
-    max-width: 32%;
+    border: 3px solid blue;
+    width: 300px;
     height: 300px;  
     z-index: 1;
-    box-shadow: 0px 10px 15px rgba(0.5,0,0,0.5);
+    box-shadow: 0px 4px 8px rgba(0.5,0,0,0.5);
 }
 
-.title img:hover{
+.ent-title img:hover{
     cursor: pointer;
-    width: 40%;
+    width: 28%;
+    height: 300px;
     animation: pulse 2s infinite;
 }
 
-.container{
+/* Left Image - Right Text */
+.ent-left{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px;
 }
 
-.container-1 h1:hover{
-    font-size: 30px;
-    font-weight: bold;
-    animation: highlight 3s infinite;
-    cursor: pointer;
-}
-
-.box h1:hover{
+.ent-box-left h1:hover{
     font-size: 30px;
     font-weight: bold;
     animation: highlight 3s infinite;
     cursor: pointer; 
 }
 
-.box h1{
+.ent-box-left h1{
     text-align: center;
 }
 
-.container img{
-    margin-top: 50px;
-    margin-bottom: 50px;
+.ent-left img{
+    margin: 50px 0;
     width: 400px;
     height: 400px;
     border-radius: 20px;
     cursor: pointer;
     box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
-    
 }
 
-.container img:hover{
+.ent-left img:hover{
     animation: bounce 2s infinite;
 }
 
-.box{
+.ent-box-left{
     font-weight: bold;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px;
     text-align: right;
-    padding: 100px;
-    padding-right: 10px;
+    padding: 100px 10px 100px 100px;
 }
 
-.container-1{
+/* Right Image - Left Text */
+.ent-right{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 39px;
 }
 
-.box-1 img{
+.ent-box-right img{
     width: 400px;
     height: 400px;
     border-radius: 20px;
@@ -139,117 +118,80 @@ body{
     margin-right: 20px;
 }
 
-.box-1 img:hover{
+.ent-right h1:hover{
+    font-size: 30px;
+    font-weight: bold;
+    animation: highlight 3s infinite;
+    cursor: pointer; 
+}
+
+.ent-box-right img:hover{
     animation: bounce 2s infinite;
 }
 
-.box-1{
+.ent-box-right{
     font-weight: bold;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 100px;
-    padding-right: 10px;
+    margin: 0 20px;
+    padding: 100px 10px 100px 100px;
 }
 
+/* Media Queries (unchanged except for class names) */
 @media screen and (max-width: 1024px) {
-    .title h1 {
+    .ent-title h1 {
         font-size: 1.5rem;
     }
-    .box, .box-1 {
+    .ent-box-left, .ent-box-right {
         padding: 40px 10px;
     }
-    .container img, .container-1 img {
-        width: 350px;
-        height: 350px;
-    }
-    .box img, .box-1 img{
+    .ent-left img, .ent-right img {
         width: 350px;
         height: 350px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .title-sec {
+    .ent-section{
         margin: 20px;
     }
-    .title {
+    .ent-title {
         margin: 20px;
     }
-    .container img, .container-1 img {
+    .ent-left img, .ent-right img{
         width: 300px;
         height: 300px;
     }
-    .box img, .box-1 img{
-        width: 300px;
-        height: 300px
-    }
-    .title h1 {
+    .ent-title h1{
         font-size: 1.2rem;
     }
 }
 
 @media screen and (max-width: 480px){
-    .title h1{
+    .ent-title h1{
         font-size: 1rem;
         padding: 8px;
     }
-    .box, .box-1{
+    .ent-box-left, .ent-box-right{
         padding: 20px 5px;
     }
-    .container img, .container-1 img{
-        width: 250px;
-        height: 250px;
-    }
-    .box img, .box-1 img{
+    .ent-left img, .ent-right img{
         width: 250px;
         height: 250px;
     }
 }
 
+/* Animations */
 @keyframes pulse{
-    0%,100%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.2);
-    }
+    0%,100%{ transform: scale(1);}
+    50%{ transform: scale(1.2);}
 }
 
 @keyframes bounce{
-    0%,100%{
-        transform: translateY(0); 
-    }
-    50%{
-        transform: translateY(-50px);
-    }
-    100%{
-        transform: translateY(0);
-    }
+    0%,100%{ transform: translateY(0);}
+    50%{ transform: translateY(-50px);}
 }
 
 @keyframes highlight{
-      0%   
-      { 
-        background-color: yellow; 
-        color: navy; 
-        border-radius: 20px; 
-        padding: 20px; 
-      }
-      50%  
-      { 
-        background-color: transparent; 
-        color: blue; 
-        border-radius: 20px; 
-        padding: 20px; 
-      }
-      100% 
-      { 
-        background-color: yellow; 
-        color: darkblue; 
-        border-radius: 20px; 
-        padding: 20px; 
-      }
-    }
-
-
-
+  0% { background-color: yellow; color: navy; border-radius: 20px; padding: 20px;}
+  50% { background-color: transparent; color: blue; border-radius: 20px; padding: 20px;}
+  100% { background-color: yellow; color: darkblue; border-radius: 20px; padding: 20px;}
+}

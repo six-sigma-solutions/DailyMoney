@@ -32,14 +32,19 @@ section:hover { transform: translateY(-2px); }
 img { transition: transform 0.4s ease; }
 img:hover { transform: scale(1.05); }
 
-.solutions-cards-title{
+.health-page{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  
+}
 
-  padding: 20px 0;
-  margin-bottom: 20px;
-  border-radius: 16px;
-  padding: 50px 20px;
-  color :#c00606;
 
+.health-heading {
+  text-align: center;
+  color: #002770;
+  font-style: italic;
+  margin-top: 15px;
 }
 
 /* ---------------- HERO SECTION ---------------- */
@@ -168,6 +173,15 @@ html {
   filter: brightness(1.15) contrast(1.1) saturate(130%);
 }
 
+.health-order-img {
+  order: 2; 
+}
+
+.health-order-heading {
+  order: 1; 
+}
+
+
 
 
 
@@ -181,6 +195,8 @@ html {
     flex-wrap: wrap;
     gap: 40px;
 }
+
+
 
 .box h1{
     text-align: center;
@@ -320,7 +336,7 @@ html {
 .container img,
 .container-1 img {
   width: 500px;
-  height: 500px;
+  height: 700px;
   border-radius: 20px;
   object-fit: cover;
   cursor: pointer;
@@ -370,6 +386,22 @@ html {
   .box h1, .box-1 h1 {
     font-size: 1.4rem;
   }
+
+  .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.health-order-heading{
+  order: 2;
+}
+.health-order-img{
+  order: 1;
+}
 }
 
 /* ---------------- SMALL MOBILE (≤480px) ---------------- */
@@ -427,7 +459,7 @@ html {
   font-size: 3rem;
   font-weight: 900;    /* 🔥 makes it bold */
   line-height: 1.2;
- 
+  
 }
 
 
@@ -475,4 +507,33 @@ html {
   footer .footer { max-width: 90%; padding: 20px 15px; }
   footer .footer h1 { font-size: 1.2rem; }
   footer .footer h2 { font-size: 0.95rem; }
+}
+
+ .view-more {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  width: 150px;
+  height: 50px;
+ 
+ }
+
+ .view-more-link{
+    align-self: center;
+ }
+
+ @media (max-width: 768px) {
+  .view-more {
+    width: 120px;
+    height: 50px;
+    padding: 14px 0;
+    font-size: 1.1rem;
+  }  
+
 }

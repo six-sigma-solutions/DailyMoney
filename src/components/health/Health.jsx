@@ -1,15 +1,15 @@
 import React from "react";
 import "./Health.css";
+import { Link } from "react-router-dom";
 
 
-const OurHealth = () => {
+const Health = () => {
   return (
-    <div>
-      <section className="solutions-cards-title">
-        <h1 className="text-2xl font-semibold mb-6 text-center">
+    <div className="health-page">
+        <h1 className="health-heading">
           Our Health
         </h1>
-      </section>
+      
 
       {/* Hero Section */}
       <section className="hero">
@@ -50,49 +50,52 @@ const OurHealth = () => {
 
       {/* Container Sections */}
       <div className="container left-image">
-        <img src="image11.jpeg" alt="Styled" className="styled-img" />
-        <div className="box">
+        <img src="image11.jpeg" alt="Styled" className="styled-img health-order-img" />
+        <div className="box health-order-heading">
           <h1>“I am committed to wellness for life.”</h1>
         </div>
       </div>
 
       <div className="container-1 right-image">
+        <img src="image1.jpeg" alt="Styled" className="styled-img" />
         <div className="box-1">
           <h1>“Health and fitness are not temporary they are my lifetime goal.”</h1>
         </div>
-        <img src="image1.jpeg" alt="Styled" className="styled-img" />
       </div>
 
       <div className="container left-image">
-        <img src="image3.jpeg" alt="Styled" className="styled-img" />
-        <div className="box">
+        <img src="image3.jpeg" alt="Styled" className="styled-img health-order-img" />
+        <div className="box health-order-heading">
           <h1>“I need lifelong health and fitness.”</h1>
         </div>
       </div>
 
       <div className="container-1 right-image">
+        <img src="image4.jpeg" alt="Styled" className="styled-img" />
         <div className="box-1">
           <h1>“I want to be fit, strong, and energetic for my entire life.”</h1>
         </div>
-        <img src="image4.jpeg" alt="Styled" className="styled-img" />
       </div>
 
       {/* Footer */}
       <footer id="footer" className="footer">
 
         <h2 className="english">
-          "No need of medicine if you eat mindfully allow for proper digestion between meals and eat mindfully,
-          your body will not require any other medicine."
+          "No need of medicine if you allow proper digestion between meals."
         </h2>
         <h1>“மருந்தென வேண்டாவாம் யாக்கைக்கு அருந்தியது<br></br>
           அற்றது போற்றி உணின்.”</h1>
         <h2>
-          முன் உண்டது செரித்ததைத் தெளிவாக அறிந்து, அதன் பின்னரே உண்பானானால்,
-          அவனுடைய உடலுக்கு ‘மருந்து’ என்னும் எதுவுமே வேண்டாம்.
+          முன் உண்டது செரித்ததைத் தெளிவாக அறிந்து, அதன் பின்னரே உண்பானால்,
+          அவனுடைய உடலுக்கு ‘மருந்து’ வேண்டாம்.
         </h2>
+
       </footer>
+      <Link className="view-more-link" to="/wealth">
+      <button className="view-more" type="button">View More</button>
+      </Link>
     </div>
   );
 };
 
-export default OurHealth;
+export default Health;
