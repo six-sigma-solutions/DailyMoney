@@ -26,6 +26,8 @@
 .dm-eldr-header {
   text-align: center;
   padding: 20px;
+  margin:40px;
+  border-radius: 12px;
   background: #1a3ef5; /* Blue background from original header */
   color: white;
   font-weight: bold;
