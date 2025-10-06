@@ -5,7 +5,7 @@ import Health from "./components/health/Health";
 import Family from "./components/family/Family";
 import Wealth from "./components/wealth/Wealth";
 import Contact from "./components/contact/Contact";
-import Entrepreneur from "./components/entrepreneur/entrepreneur";
+import Entrepreneur from "./components/entrepreneur/Entrepreneur";
 import Visionmission from "./components/visionmission/Visionmission";
 import Solution from "./components/solution/Solution";
 import Gratitude from "./components/gratitude/Gratitude";
@@ -16,6 +16,11 @@ import PresidentMsg from "./components/presidentMsg/PresidentMsg";
 import CoreTeam from "./components/coreTeam/CoreTeam";
 import Income from "./components/income/Income"
 import Students from "./components/students/Students";
+
+import Elder from "./components/elder/Elder";
+
+
+
 export default function App() {
   return (
     <>
@@ -38,8 +43,10 @@ export default function App() {
         <Route path="/core-Team" element={<CoreTeam/>} />
         <Route path="/entrepreneur" element={<Entrepreneur />} />
         <Route path="/income" element={<Income />} />
-        <Route path="/students" element={<Students/>} />
-        
+        <Route path="/students" element={<Students/>} />   
+        <Route path="/income" element={<Income />}/>
+        <Route path="/students" element={<Students />} />
+        <Route path="/elder" element={<Elder />} />
       </Routes>
     </>
   );
