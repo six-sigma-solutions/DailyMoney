@@ -7,7 +7,7 @@
   --dm-eldr-muted: #6b7280;
   --dm-eldr-text: #0f172a;
   --dm-eldr-bg: #ffffff;
-  --dm-eldr-accent: #16a34a; /* Using the original green accent */
+  --dm-eldr-accent: #1a3ef5; /* Using the original green accent */
   
   /* Global Reset & Base for the component wrapper */
   box-sizing: border-box;
