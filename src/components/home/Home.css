@@ -158,17 +158,18 @@ body {
 */
 
 .hero-promo-image {
-  width: 115%;
-  height: 115%;
-  margin: 0px 35px 38px 0;
+  width: 79%;
+  height: 100%;
+   margin: 90px 80px 50px 0px;
   position: relative;
   transform: scale(1);
 
   /* Set the default (grayscale) image */
-  background-image: url('/top-logo.png');
+  background-image: url('/budhhaa1.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  filter: grayscale(100%);
   
   /* Add a transition for the zoom effect */
   transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -177,10 +178,11 @@ body {
 /* This DIRECTLY changes the background image on hover */
 .cutout-shape:hover .hero-promo-image {
   /* Set the hover (color) image */
-  background-image: url('/logo5.png');
+  background-image: url('/budhhaa1.jpg');
   
   /* Apply the zoom effect */
-  transform: scale(1.09);
+  transform: scale(1.07);
+  filter: grayscale(0%);
 }
 /* ======================================================= */
 /* SOLUTIONS SECTION                                     */
