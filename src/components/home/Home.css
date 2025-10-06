@@ -91,12 +91,13 @@ body {
 
 .hero-actions {
   margin-top: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .see-work-btn {
   background-color: #b71c1c;
   color: #fff;
-  padding: 14px 32px;
   border-radius: 10px;
   font-weight: 500;
   font-size: 20px;
@@ -104,13 +105,20 @@ body {
   margin-right: 20px;
   text-decoration: none;
   display: inline-block;
+  height: 50px;
+  width: 180px;
 }
 
 .get-started-btn {
   color: #0b0a0a;
   font-size: 22px;
-  text-decoration: none;
   font-weight: bold;
+  background-color: transparent;
+  width: auto;
+  height: 50px;
+}
+.get-started-btn:hover {
+  background-color: transparent;
 }
 
 .hero-image-container {
@@ -818,6 +826,10 @@ body {
      height: 50px;
   }
 
+  .hero-actions{
+     justify-content: center;
+  }
+
   /* Text first, image below */
   .hero-content {
     order: 2;
@@ -1049,6 +1061,10 @@ body {
     object-fit: contain;
     border-radius: 20px;
   }
+}
+
+.link {
+  text-decoration: none;
 }
 
 

@@ -3,6 +3,7 @@
 import React from "react";
 import "./Home.css";
 import videoFile from "../../assets/gif.mp4";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -33,12 +34,16 @@ export default function Home() {
             </strong>
           </p>
           <div className="hero-actions">
-            <a href="/overview" className="see-work-btn">
+            <Link className="link" to="/overview" >
+             <button type="button" className="see-work-btn">
               See our work
-            </a>
-            <a href="/health" className="get-started-btn">
+            </button>
+            </Link>
+            <Link className="link" to="/health" >
+            <button type="button" className="get-started-btn">
               Get started →
-            </a>
+            </button>
+            </Link>
           </div>
         </div>
 

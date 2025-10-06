@@ -1,5 +1,6 @@
 import React from "react";
 import "./Overview.css"; // Import the renamed styling file
+import { Link } from "react-router-dom";
 
 const Overview = () => {
   const getStarted = () => {
@@ -65,9 +66,11 @@ const Overview = () => {
 
       {/* Get Started Button (RENAMED from .btn-container, .btn) */}
       <div className="overview-btn-container fade-in">
-        <a className="overview-btn" href="/health">
+        <Link className="link" to="/health" >
+        <button type="button" className="overview-btn">
           Get Started
-        </a>
+        </button>
+        </Link>
       </div>
 
       {/* Our Promise (RENAMED from .promise) */}
