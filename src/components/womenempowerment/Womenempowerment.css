@@ -20,7 +20,7 @@
 
 /* Hero Section */
 .women-hero {
- background: url("grp.png") no-repeat center center/cover; /* Background image */
+ background: url("https://res.cloudinary.com/dgay8ba3o/image/upload/v1759735299/grp_vjrnq7.png") no-repeat center center/cover; /* Background image */
   height: 100vh; /* Full screen */
   display: flex;
   align-items: center;
