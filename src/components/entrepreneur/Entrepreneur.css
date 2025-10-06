@@ -1,115 +1,109 @@
-*{
+/* Entrepreneur.css */
+/* By adding .entrepreneur-container before each rule, we isolate these styles. */
+
+.entrepreneur-container *{
     margin: 0;
     padding: 0;
 }
 
-body{
+.entrepreneur-container body{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: light;
-    height: 100vh;
-    flex-wrap: wrap;
+    margin: 30px;
 } 
 
-.ent-section{
-    margin: 30px 40px;
-    padding: 0 20px;
+.entrepreneur-container .ent-section{
+    margin: 30px;
+    padding: 20px;
     border-radius: 20px;
     border: 5px solid white;
     box-shadow: 0px 10px 15px rgba(0.5,0,0,0.5);
-    background-image: url("img-2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
 }
 
-.ent-title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    margin: 40px;
+.entrepreneur-container .ent-section span{
+    font-size: 30px; 
+    color: white; 
+    background-color: red; 
+    border-radius: 20px; 
+    padding: 15px;
 }
 
-.ent-title h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    flex: 1;
-    text-align: center;
-    font-weight: 400;
-    padding: 10px;
-    background-color: navy;
-    border-radius: 10px;
-    cursor: pointer;
-    color: white;
-}
-
-.ent-title img{
-    margin: 0 auto;
-    border-radius: 80px;
-    padding: 20px;
+.entrepreneur-container .ent-title img{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 2px;
+    border-radius: 60px;
     display: block;
-    border: 3px solid blue;
-    width: 300px;
-    height: 300px;  
+    border: 3px solid green;
+    width: 92%;
+    height: 400px; 
     z-index: 1;
-    box-shadow: 0px 4px 8px rgba(0.5,0,0,0.5);
+    box-shadow: 0px 4px 8px rgba(229, 10, 10, 0.5);
+    flex-wrap: wrap;
 }
 
-.ent-title img:hover{
+.entrepreneur-container .ent-title img:hover{
     cursor: pointer;
-    width: 28%;
-    height: 300px;
-    animation: pulse 2s infinite;
+    animation: pulse 1s infinite;
+    height: 400px;
 }
 
-/* Left Image - Right Text */
-.ent-left{
+.entrepreneur-container .ent-left{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px;
+    padding: 50px 0px 0px 10px;
 }
 
-.ent-box-left h1:hover{
+.entrepreneur-container .ent-box-left h1:hover{
     font-size: 30px;
     font-weight: bold;
     animation: highlight 3s infinite;
     cursor: pointer; 
 }
 
-.ent-box-left h1{
-    text-align: center;
+.entrepreneur-container .ent-box-left h1{
+    text-align: start;
+    font-size: 24px; 
+    font-weight: 600; 
+    line-height: 3.6rem;
+    flex-wrap: wrap;
+    padding-right: 20px;
 }
 
-.ent-left img{
-    margin: 50px 0;
+.entrepreneur-container .ent-left img{
+    margin: 30px;
     width: 400px;
     height: 400px;
     border-radius: 20px;
     cursor: pointer;
-    box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
+    box-shadow: 0 0 15px rgba(0, 255, 76, 0.6);
+    flex-wrap: wrap;
 }
 
-.ent-left img:hover{
+.entrepreneur-container .ent-left img:hover{
     animation: bounce 2s infinite;
 }
 
-.ent-box-left{
-    font-weight: bold;
+.entrepreneur-container .ent-box-left{
+    font-weight: 900;
     margin: 0 20px;
     text-align: right;
     padding: 100px 10px 100px 100px;
+    font-size: 28px;
 }
 
-/* Right Image - Left Text */
-.ent-right{
+.entrepreneur-container .ent-right{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 39px;
+    padding: 50px 0px 0px 50px;
 }
 
-.ent-box-right img{
+.entrepreneur-container .ent-box-right img{
     width: 400px;
     height: 400px;
     border-radius: 20px;
@@ -118,80 +112,104 @@ body{
     margin-right: 20px;
 }
 
-.ent-right h1:hover{
+.entrepreneur-container .ent-right h1:hover{
     font-size: 30px;
     font-weight: bold;
     animation: highlight 3s infinite;
     cursor: pointer; 
 }
 
-.ent-box-right img:hover{
+.entrepreneur-container .ent-right h1{
+    font-weight: 600;
+    text-align: start;
+    font-size: 24px; 
+    line-height: 3.6rem;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+.entrepreneur-container .ent-box-right img:hover{
     animation: bounce 2s infinite;
 }
 
-.ent-box-right{
+.entrepreneur-container .ent-box-right{
     font-weight: bold;
     margin: 0 20px;
     padding: 100px 10px 100px 100px;
 }
 
-/* Media Queries (unchanged except for class names) */
+/* Media queries with the parent class */
 @media screen and (max-width: 1024px) {
-    .ent-title h1 {
+    .entrepreneur-container .ent-title h1 {
         font-size: 1.5rem;
     }
-    .ent-box-left, .ent-box-right {
+    .entrepreneur-container .ent-box-left, .entrepreneur-container .ent-box-right {
         padding: 40px 10px;
     }
-    .ent-left img, .ent-right img {
+    .entrepreneur-container .ent-left img, .entrepreneur-container .ent-right img {
         width: 350px;
         height: 350px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .ent-section{
+    .entrepreneur-container .ent-section{
         margin: 20px;
     }
-    .ent-title {
+    .entrepreneur-container .ent-title {
         margin: 20px;
     }
-    .ent-left img, .ent-right img{
+    .entrepreneur-container .ent-left img, .entrepreneur-container .ent-right img {
         width: 300px;
         height: 300px;
     }
-    .ent-title h1{
+    .entrepreneur-container .ent-title h1{
         font-size: 1.2rem;
     }
 }
 
 @media screen and (max-width: 480px){
-    .ent-title h1{
+    .entrepreneur-container .ent-title h1{
         font-size: 1rem;
         padding: 8px;
     }
-    .ent-box-left, .ent-box-right{
+    .entrepreneur-container .ent-box-left, .entrepreneur-container .ent-box-right{
         padding: 20px 5px;
     }
-    .ent-left img, .ent-right img{
+    .entrepreneur-container .ent-left img, .entrepreneur-container .ent-right img {
         width: 250px;
         height: 250px;
     }
 }
 
-/* Animations */
+/* Animations do not need the parent class as they are just definitions */
 @keyframes pulse{
-    0%,100%{ transform: scale(1);}
-    50%{ transform: scale(1.2);}
+    0%,100%{ transform: scale(1); }
+    50%{ transform: scale(0.9); }
 }
 
 @keyframes bounce{
-    0%,100%{ transform: translateY(0);}
-    50%{ transform: translateY(-50px);}
+    0%,100%{ transform: translateY(0); }
+    50%{ transform: translateY(-50px); }
 }
 
 @keyframes highlight{
-  0% { background-color: yellow; color: navy; border-radius: 20px; padding: 20px;}
-  50% { background-color: transparent; color: blue; border-radius: 20px; padding: 20px;}
-  100% { background-color: yellow; color: darkblue; border-radius: 20px; padding: 20px;}
+  0% { 
+    background-color: yellow; 
+    color: navy; 
+    border-radius: 20px; 
+    padding: 20px;
+  }
+  50% { 
+    background-color: transparent; 
+    color: blue; 
+    border-radius: 20px; 
+    padding: 20px;
+  }
+  100% { 
+    background-color: yellow; 
+    color: darkblue; 
+    border-radius: 20px; 
+    padding: 20px;
+  }
 }
