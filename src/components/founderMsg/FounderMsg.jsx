@@ -46,18 +46,10 @@ export default function FounderMsg() {
                     </p>
 
                     <div className="message-section">
-                        <img src="message1.jpeg" alt="Welcome" className="message-image" />
+                        <img src="message3.jpeg" alt="Welcome" className="message-image" />
                     </div>
                     
-                    {/* Signature style closing */}
-                    <div className="signature-block">
-                        <p className="signature-name">
-                            {founder.name}
-                        </p>
-                        <p className="signature-title">
-                            Founder, DailyMoney
-                        </p>
-                    </div>
+                   
                 </div>
 
                 {/* Footer/Tagline Section */}
