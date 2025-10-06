@@ -6,6 +6,10 @@ const Family = () => {
     const handleScroll = () => {
       const steps = document.querySelectorAll(".step");
       steps.forEach((step) => {
+        // Skip the first step since it's already visible
+        if (step.classList.contains("visible")) {
+          return;
+        }
         const rect = step.getBoundingClientRect();
         if (rect.top < window.innerHeight - 120) {
           step.classList.add("visible");
@@ -19,9 +23,6 @@ const Family = () => {
 
   return (
     <div className="family-page">
-      {/* Header */}
-     
-
       {/* Process Section */}
       <section className="process">
         <h2 style={{ color: "#d40000" }}>
@@ -46,8 +47,8 @@ const Family = () => {
           </span>
         </p>
 
-        {/* Step 1 */}
-        <div className="step">
+        {/* Step 1 - Now visible by default */}
+        <div className="step visible">
           <div className="step-img">
             <img src="f1.jpg" alt="Discover" />
           </div>
@@ -120,9 +121,6 @@ const Family = () => {
           <a href="#">Read more →</a>
         </div>
       </section>
-
-      {/* Footer */}
-      
     </div>
   );
 };
