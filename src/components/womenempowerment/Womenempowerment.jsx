@@ -5,7 +5,10 @@ export default function Womenempowerment() {
   return (
     <div className="women-container">
       {/* Header */}
-      <h2 className="women-header">Women Empowerment - A Deeper Vision</h2>
+      <div className="women-dm-header-wrap">
+        <h1 className="women-header-1">Women Empowerment - A Deeper Vision</h1>
+      </div>
+      
 
       {/* Hero Section */}
      <section className="women-hero">
