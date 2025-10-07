@@ -82,4 +82,5 @@ const ZigzagLayout = () => {
   );
 };
 
+
 export default ZigzagLayout;
