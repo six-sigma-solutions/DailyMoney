@@ -1,124 +1,130 @@
-/* src/components/overview/Overview.css */
-
-/* Global Reset for this component's container */
-.overview-page-container * {
-    box-sizing: border-box;
-}
-.overview-page-container {
-    background-color: #fff;
-    color: #222;
-    line-height: 1.6;
-    overflow-x: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Heading 1 (RENAMED from h1) */
-.overview-h1 {
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  line-height: 1.6;
+  padding: 20px;
+  margin: 0 20px 0 20px;
+}
+
+.ove span{
+  background-color: darkgreen;
+  color: white;
+  justify-content: center;
+  line-height: 3.6rem;
+  text-align: left;
+  font-size: 32px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 5px;
+}
+
+section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 60px 0; 
+}
+
+section.reverse {
+  flex-direction: row-reverse;
+}
+
+.fade-in img {
+  width: 45%;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0.5, 0, 0, 0.5);
+  padding: 10px 10px 10px 10px;
+  margin: 20px 20px 20px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  width: 100%;
+}
+
+.text h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: black;
+  text-align: center;
+  margin-top: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.text p,
+.text ul {
+  font-size: 19px;
+  color: #fff;
+  line-height: 2.6rem;
+  text-align: justify;
+  font-weight: 800;
+  padding: 20px;
+  margin: 20px;
+}
+
+.text ul {
+  list-style: none;
+}
+
+.text strong{
+  font-weight: bold;
+}
+
+.btn-container {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.btn {
+  background: #4caf50;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #43a047;
+}
+
+@media (max-width: 900px) {
+  section,
+  section.reverse {
+    flex-direction: column;
     text-align: center;
-    font-size: 3rem;
-    margin: 60px 40px 60px 40px;
-    color: white;
-    background-color: red;
-    border-radius: 20px;
-    border: 7px solid orangered;
-    padding: 10px;
+  }
+
+  .fade-in img,
+  .text {
+    width: 500px;
+  }
+
+  .fade-in img{
+    max-width: 90%;
+    margin: 30px 30px 30px 30px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-/* Section Container (RENAMED from section) */
-.overview-section {
-    max-width: 1000px;
-    margin: 60px auto;
-    text-align: center;
-    padding: 0 20px;
-}
-
-/* Heading 2 (RENAMED from h2) */
-.overview-h2 {
-    color: #023e8a;
-    font-size: 2.2rem;
-    margin-bottom: 20px;
-}
-
-/* Paragraph (RENAMED from p) */
-.overview-p {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 25px;
-}
-
-/* Unordered List (RENAMED from ul) */
-.overview-ul {
-    list-style-type: none;
-    padding: 0;
-    max-width: 800px;
-    margin: 0 auto 30px;
-    text-align: left;
-}
-
-/* List Item (RENAMED from ul li) */
-.overview-ul li {
-    font-size: 1.1rem;
-    padding: 10px 50px;
-    border-bottom: 1px dashed #ccc;
-    color: #333;
-}
-
-/* Image (RENAMED from .image) */
-.overview-image {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
-    margin: 30px 0;
-}
-
-.overview-image:hover {
-    transform: scale(1.03);
-}
-
-/* Button Container (RENAMED from .btn-container) */
-.overview-btn-container {
-    text-align: center;
-    margin: 40px 0;
-}
-
-/* Button (RENAMED from .btn) */
-.overview-btn {
-    background-color: red;
-    color: white;
-    text-decoration: none;
-    border: none;
-    height: 50px;
-    width: 160px;
-    font-size: 1.2rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.overview-btn:hover {
-    background-color: #023e8a;
-    transform: scale(1.05);
-}
-
-/* Promise Section (RENAMED from .promise) */
-.overview-promise {
-    background-color: #0d1b2a;
-    color: #fff;
-    border-radius: 16px;
-    padding: 60px 30px;
-    text-align: center;
-    margin-top: 80px;
-}
-
-.overview-promise .overview-h2 { /* Scoped h2 */
-    color: #fff;
-}
-
-.overview-promise .overview-p { /* Scoped p */
-    color: #dbe2ef;
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto 25px;
+@keyframes fadeIn{
+  form{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
