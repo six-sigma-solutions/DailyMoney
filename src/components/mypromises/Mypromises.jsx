@@ -2,7 +2,7 @@ import React from "react";
 import "./Mypromises.css"; // Import the new styling file
 
 
-const MyPromises = () => {
+const Mypromises = () => {
 // Action from the original HTML: navigate to the external link
   const handleGetStarted = (e) => {
     e.preventDefault();
@@ -29,4 +29,4 @@ const MyPromises = () => {
   );
 };
 
-export default MyPromises;
+export default Mypromises;
