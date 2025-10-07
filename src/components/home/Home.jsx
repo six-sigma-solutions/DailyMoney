@@ -270,17 +270,14 @@ export default function Home() {
           <div className="footer-bottom-content1">
             {/* Changed class name below */}
             <div className="footer-logo-block1">
-              <img
-                src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png"
-                alt="DailyMoney Logo"
-              />
+            <img
+              src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png"
+              alt="DailyMoney Logo"
+            />
               {/* Changed class name below */}
               <span className="footer-logo-text1">Daily Money</span>
               {/* Changed class name below */}
-              <span className="footer-subtext1">
-                Imagine a world where nature's abundance powers your financial
-                future. fresh leaves and fruits dance in the dark.
-              </span>
+              <span className="footer-subtext1">Imagine a world where nature's abundance powers your financial future. fresh leaves and fruits dance in the dark.</span>
               {/* Changed class name below */}
               <span className="footer-copyright1">
                 © 2025. All rights reserved.
@@ -292,33 +289,19 @@ export default function Home() {
               <div className="footer-links-col1">
                 <h4>Company</h4>
                 <ul>
-                  <li>
-                    <a href="#">Work</a>
-                  </li>
-                  <li>
-                    <a href="#">Process</a>
-                  </li>
-                  <li>
-                    <a href="#">About</a>
-                  </li>
-                  <li>
-                    <a href="#">Blog</a>
-                  </li>
+                  <li><a href="#">Work</a></li>
+                  <li><a href="#">Process</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Blog</a></li>
                 </ul>
               </div>
               {/* Changed class name below */}
               <div className="footer-links-col1">
                 <h4>Connect</h4>
                 <ul>
-                  <li>
-                    <a href="#">Follow on X</a>
-                  </li>
-                  <li>
-                    <a href="#">Book a call</a>
-                  </li>
-                  <li>
-                    <a href="#">Get in touch</a>
-                  </li>
+                  <li><a href="#">Follow on X</a></li>
+                  <li><a href="#">Book a call</a></li>
+                  <li><a href="#">Get in touch</a></li>
                 </ul>
               </div>
             </div>

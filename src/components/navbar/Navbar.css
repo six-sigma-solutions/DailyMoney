@@ -120,6 +120,10 @@
   cursor: pointer;
   font-family: "Poppins", Arial, sans-serif;
   transition: background 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 480px) {

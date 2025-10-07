@@ -103,7 +103,7 @@ export default function Navbar() {
         {/* RIGHT SECTION DESKTOP */}
         {/* RIGHT SECTION (Contact + Hamburger together) */}
         <div className="right-section">
-          <button className="contact-btn">Contact</button>
+          <Link to="/contact" className="contact-btn">Contact</Link>
           <button
             className="menu-btn"
             onClick={() => setMenuOpen((prev) => !prev)}
@@ -129,7 +129,7 @@ export default function Navbar() {
             />
           </Link>
           <div className="mobile-actions">
-            <button type="button" className="contact-btn">Contact</button>
+            <Link to="/contact" className="contact-btn" onClick={() => setMenuOpen(false)}>Contact</Link>
             <button type="button" className="mobile-close" onClick={() => setMenuOpen(false)}>
               <FaTimes />
             </button>
