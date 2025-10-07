@@ -84,16 +84,19 @@ const Health = () => {
           "No need of medicine if you allow proper digestion between meals."
         </h2>
         <h1>“மருந்தென வேண்டாவாம் யாக்கைக்கு அருந்தியது<br></br>
-          அற்றது போற்றி உணின்.”</h1>
+          <span className="car">"</span>அற்றது போற்றி உணின்.”</h1>
+          <h3 className="author">- திருக்குறள்.</h3>
         <h2>
           முன் உண்டது செரித்ததைத் தெளிவாக அறிந்து, அதன் பின்னரே உண்பானால்,
           அவனுடைய உடலுக்கு ‘மருந்து’ வேண்டாம்.
         </h2>
 
-      </footer>
-      <Link className="view-more-link" to="/wealth">
+        <Link className="view-more-link" to="/wealth">
       <button className="view-more" type="button">View More</button>
       </Link>
+
+      </footer>
+      
     </div>
   );
 };

@@ -318,6 +318,16 @@ html {
   line-height: 1.2;
 }
 
+.author{
+  font-weight: bold;
+  text-align: end;
+  color: #fffb2c;
+  margin-right:180px;
+  font-size:27px;
+}
+.car{
+  color:black;
+}
 
 
 
@@ -467,10 +477,33 @@ html {
 
 .footer h1 { font-size: 1.7rem; font-weight: 900; margin-bottom: 13px; 
   padding: 20px;
-  color: #fffb2c; }
-.footer h2 { font-size: 1.5rem; font-weight: 900; margin-bottom: 13px; color: #cdefff }
+  color: #fffb2c; 
+  text-align:start;
+  padding: 0 150PX;
+}
+.footer h2 { font-size: 1.5rem; font-weight: 900; padding: 20px; margin-bottom: 13px; color: #cdefff }
 
 .footer .english { font-size: 1.8rem; font-weight: 900; margin-bottom: 13px; color: #ffffff; }
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .author {
+    font-size: 1.1rem;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .author {
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 0;
+  }
+}
+
+
 
 
 /* Tablet (≤1024px) */
@@ -500,6 +533,46 @@ html {
   .hero-content h1 { font-size: 1.6rem; }
   .hero-content p { font-size: 0.9rem; }
   .btn-primary { padding: 10px 20px; font-size: 0.85rem; }
+
+
+/* For tablets */
+@media (max-width: 768px) {
+  .footer h1 {
+    text-align: center;
+    padding: 0 50px;
+    font-size: 1.5rem;
+  }
+
+  .footer h2 {
+    font-size: 1.3rem;
+  }
+
+  .footer .english {
+    font-size: 1.4rem;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .footer h1 {
+    padding: 0;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .footer h2 {
+    font-size: 1.1rem;
+  }
+
+  .footer .english {
+    font-size: 1.2rem;
+  }
+}
+
 
 
 

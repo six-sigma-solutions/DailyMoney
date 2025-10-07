@@ -31,9 +31,10 @@ const Visionmission = () => {
 
   return (
     <main className="dm-vsn-main-content">
-      
+      <div className="dm-title">Our Vision</div>
       {/* HERO: centered rounded card with full-width image inside and left text */}
       <section className="dm-vsn-hero-card">
+        
         <div className="dm-vsn-card-inner">
           {/* FIX: Corrected image path to use public assets */}
           <img className="dm-vsn-card-media" src="/vision1.jpg" alt="Vision" />

@@ -19,6 +19,8 @@
     padding: 20px;
     background: var(--stu-page-accent);
     color: white;
+    margin: 30px 40px;
+    border-radius: 12px;
     font-weight: bold;
 }
 
@@ -74,7 +76,7 @@
 }
 
 .stu-page-tagline-text {
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     line-height: 1.8;
     color: var(--stu-page-text);
 }
@@ -86,6 +88,7 @@
 .stu-page-highlight-text {
     color: var(--stu-page-accent); /* Green color accent */
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .stu-page-tick-icon {

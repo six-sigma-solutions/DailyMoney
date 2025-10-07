@@ -17,7 +17,7 @@ export default function Entrepreneur () {
     
     <div className="entrepreneur-container">
       <div className="ent-section">
-        <span>Entrepreneur </span>
+        <h1 className="entre-title">Entrepreneur </h1>
         <div className="ent-title">
           <img src={img1} alt="Entrepreneur" />
         </div>

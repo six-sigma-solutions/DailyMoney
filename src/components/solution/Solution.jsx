@@ -37,12 +37,7 @@ const Solution = () => {
             src="/solution.jpg"
             alt="Solution"
           />
-          <div className="dm-sol-card-info">
-            <h1 className="dm-sol-h1">The Solution: Daily Money</h1>
-            <p className="dm-sol-lead">
-              Unlocking financial, physical, and spiritual independence through a proven daily system.
-            </p>
-          </div>
+          
         </div>
 
         {/* The button's onClick now triggers the navigation */}

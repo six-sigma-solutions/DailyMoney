@@ -35,7 +35,7 @@ const WealthPage = () => {
             <div className="wealthy-col wealthy-image-col">
               <img src="mo.jpg" alt="Wealth concept 1" />
             </div>
-            <div className="wealthy-col wealthy-text-col">
+            <div className="wealthy-col wealthy-text-col row1">
               <h2>
                 <span style={{ color: "red" }}>✔️</span> Wealth is more than
                 numbers in a bank account. It is the freedom to choose our path,
@@ -49,7 +49,7 @@ const WealthPage = () => {
             <div className="wealthy-col wealthy-image-col">
               <img src="w2.jpg" alt="Wealth concept 2" />
             </div>
-            <div className="wealthy-col wealthy-text-col">
+            <div className="wealthy-col wealthy-text-col row2">
               <h2>
                 <span style={{ color: "red" }}>✔️</span> True wealth begins with
                 discipline — living with intention, saving with wisdom, and
@@ -64,7 +64,7 @@ const WealthPage = () => {
             <div className="wealthy-col wealthy-image-col">
               <img src="w1.jpg" alt="Wealth concept 3" />
             </div>
-            <div className="wealthy-col wealthy-text-col">
+            <div className="wealthy-col wealthy-text-col row3">
               <h2>
                 <span style={{ color: "red" }}>✔️</span> Our wealth is not just
                 about what we accumulate, but about what we enable. With wealth,
@@ -79,7 +79,7 @@ const WealthPage = () => {
             <div className="wealthy-col wealthy-image-col">
               <img src="w4.jpg" alt="Wealth concept 4" />
             </div>
-            <div className="wealthy-col wealthy-text-col">
+            <div className="wealthy-col wealthy-text-col row4">
               <h2>
                 <span style={{ color: "red" }}>✔️</span> Wealth is not
                 greed—it is growth. It is not selfishness—it is stewardship.
