@@ -1,94 +1,85 @@
 import React from "react";
-import "./Overview.css"; // Import the renamed styling file
-import { Link } from "react-router-dom";
+import "./style.css";
 
-const Overview = () => {
+const ZigzagLayout = () => {
   const getStarted = () => {
-    alert("Welcome to Daily Money! Let's get started 🚀");
+    alert("Get Started clicked!"); // Replace with your actual function
   };
 
   return (
-    // Top-level container to apply base styles (RENAMED from div)
-    <div className="overview-page-container">
-      
-
-      {/* Our Purpose (RENAMED from section) */}
-      <section className="overview-section fade-in">
-        <h2 className="overview-h2">Our Purpose</h2>
-        <p className="overview-p">
-          Daily Money exists to make the world healthier, happier, and
-          wealthier—one person, one family, and one community at a time. We
-          believe health and wealth are inseparable foundations of a fulfilling
-          life.
-        </p>
-        <img
-          className="overview-image"
-          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
-          alt="People smiling and collaborating with joy"
-        />
-      </section>
-
-      {/* Our Approach (RENAMED from section) */}
-      <section className="overview-section fade-in">
-        <h2 className="overview-h2">Our Approach</h2>
-        <ul className="overview-ul">
-          <li className="overview-ul li">
-            <strong>Clarity –</strong> Simplifying money so everyone understands
-            it.
-          </li>
-          <li className="overview-ul li">
-            <strong>Discipline –</strong> Encouraging consistent daily habits
-            that build lasting wealth.
-          </li>
-          <li className="overview-ul li">
-            <strong>Integration –</strong> Connecting health, wealth, and peace
-            as parts of the same journey.
-          </li>
-          <li className="overview-ul li">
-            <strong>Health is Wealth –</strong> Without wellness, money loses
-            its meaning.
-          </li>
-          <li className="overview-ul li">
-            <strong>Peace is Success –</strong> A balanced life is the ultimate
-            achievement.
-          </li>
-          <li className="overview-ul li">
-            <strong>Legacy Matters –</strong> True prosperity is measured in
-            impact that outlives us.
-          </li>
-        </ul>
-        <img
-          className="overview-image"
-          src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80"
-          alt="Generational family together symbolizing legacy"
-        />
-      </section>
-
-      {/* Get Started Button (RENAMED from .btn-container, .btn) */}
-      <div className="overview-btn-container fade-in">
-        <Link className="link" onClick={getStarted} >
-        <button type="button" className="overview-btn">
-          Get Started
-        </button>
-        </Link>
+    <div>
+      <div className="ove">
+        <span>Overview</span>
       </div>
 
-      {/* Our Promise (RENAMED from .promise) */}
-      <section className="overview-promise overview-section fade-in">
-        <h2 className="overview-h2">Our Promise</h2>
-        <p className="overview-p">
-          Daily Money is not just about income today, but about wealth for life
-          and beyond. We help build strong foundations so every generation
-          thrives—financially, physically, and spiritually.
-        </p>
-        <img
-          className="overview-image"
-          src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&"
-          alt="Two people shaking hands over a business deal"
-        />
+      {/* Section 1: Image Left / Text Right */}
+      <section
+        className="fade-in"
+        style={{ backgroundImage: "linear-gradient(45deg, blue, red)", borderRadius: "25px" }}
+      >
+        <img src="image-1.jpg" alt="People smiling and collaborating" />
+        <div className="text">
+          <h2 style={{ color: "burlywood", textAlign: "center" }}>Our Purpose</h2>
+          <p>
+            Daily Money exists to make the world healthier, happier, wealthier, one person, one family, and one community at a time.
+          </p>
+        </div>
       </section>
+
+      {/* Section 2: Image Right / Text Left */}
+      <section
+        className="fade-in reverse"
+        style={{ backgroundImage: "linear-gradient(45deg, red, blue)", borderRadius: "25px" }}
+      >
+        <img src="image-2.jpg" alt="People planning together" />
+        <div className="text">
+          <h2 style={{ color: "yellow", textAlign: "center" }}>Our Approach</h2>
+          <ul>
+            <li><strong>Clarity –</strong> Simplifying money so everyone understands it.</li>
+            <li><strong>Discipline –</strong> Encouraging consistent daily habits that build lasting wealth.</li>
+            <li><strong>Integration –</strong> Connecting health, wealth, and peace as parts of the same journey.</li>
+            <li><strong>Generational Growth –</strong> Ensuring prosperity passes forward, sustaining families across generations.</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Section 3: Image Left / Text Right */}
+      <section
+        className="fade-in"
+        style={{ backgroundImage: "linear-gradient(45deg, blue, red)", borderRadius: "25px" }}
+      >
+        <img src="image-3.jpg" alt="Generational family together" />
+        <div className="text">
+          <h2 style={{ textAlign: "center", color: "orchid" }}>Our Core Beliefs</h2>
+          <ul>
+            <li><strong>Wealth is Freedom –</strong> The ability to choose your path without limits.</li>
+            <li><strong>Health is Wealth –</strong> Without wellness, money loses its meaning.</li>
+            <li><strong>Peace is Success –</strong> A balanced life is the ultimate achievement.</li>
+            <li><strong>Legacy Matters –</strong> True prosperity is measured in impact that outlives us.</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Section 4: Image Right / Text Left */}
+      <section
+        className="fade-in reverse"
+        style={{ backgroundImage: "linear-gradient(45deg, red, blue)", borderRadius: "25px" }}
+      >
+        <img src="image-4.jpg" alt="People celebrating success together" />
+        <div className="text">
+          <h2 style={{ textAlign: "center", color: "cyan" }}>Our Promise</h2>
+          <p>
+            Daily Money is not just about income today, but about wealth for life and beyond. We help build strong foundations so every generation thrives—financially, physically, and spiritually.
+          </p>
+        </div>
+      </section>
+
+      {/* Button */}
+      <div className="btn-container fade-in">
+        <button className="btn" onClick={getStarted}>Get Started</button>
+      </div>
     </div>
   );
 };
 
-export default Overview;
+export default ZigzagLayout;
