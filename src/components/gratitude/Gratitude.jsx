@@ -6,7 +6,7 @@ const Gratitude = () => {
   // Action from the original HTML: navigate to the external link
   const handleGetStarted = (e) => {
     e.preventDefault();
-    window.location.href = 'https://cpdian.goherbalife.com/Catalog/Home/Index/en-IN/'; 
+    window.location.href = '/mypromises'; 
   };
   
   return (
@@ -32,7 +32,7 @@ const Gratitude = () => {
             Together with millions of people across the globe who are already experiencing these blessings, we too now step forward on this journey—to live healthier, love deeper, and prosper greater.
           </p>
           <button id="dm-grt-get-started" className="dm-grt-button" onClick={handleGetStarted}>
-            GET STARTED
+            NEED MORE
           </button>
         </div>
       </section>
