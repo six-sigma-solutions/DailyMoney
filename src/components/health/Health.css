@@ -197,10 +197,21 @@ html {
     box-shadow: 0px 10px 15px rgba(0.5,0,0,0.5);
 }
 
-.container img:hover{
+/* .container img:hover{
     animation: bounce 2s infinite;
-}
+} */
 
+
+.author{
+  font-weight: bold;
+  text-align: end;
+  color: #fffb2c;
+  margin-right:180px;
+  font-size:27px;
+}
+.car{
+  color:black;
+}
 .box{
     font-weight: bold;
     margin-left: 20px;
@@ -435,7 +446,10 @@ html {
 
 .footer h1 { font-size: 1.7rem; font-weight: 900; margin-bottom: 13px; 
   padding: 20px;
-  color: #fffb2c; }
+  color: #fffb2c;
+text-align:start;
+padding: 0 150PX;
+ }
 .footer h2 { font-size: 1.5rem; font-weight: 900; margin-bottom: 13px; color: #cdefff }
 
 .footer .english { font-size: 1.8rem; font-weight: 900; margin-bottom: 13px; color: #ffffff; }

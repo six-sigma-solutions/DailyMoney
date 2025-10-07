@@ -4,30 +4,28 @@
 }
 
 body{
-    font-family: poppins, sans-serif;
+    font-family: "poppins", sans-serif;
     font-weight: 400;
+    margin: 30px 30px 30px 30px;
 }
 
 .contact{
     display: block;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     padding-top: 20px;
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: 110px;
+    padding-right: 60px;
+    margin-left: 5px;
 }
 
-.contact h1{
-    display: block;
+.contact-1 h1{
     font-size: 30px; 
-    font-weight: 100;
-    margin-top: 10px;
     font-weight: 200;
-}
-
-.contact h2{ 
-    margin-top: 10px;
-    font-size: 20px; 
-    font-weight: 300;
+    margin-left: 5px;
+    padding-left: 110px;
+    padding-right: 60px;
+    padding-bottom: 5px;
+    padding-top: 10px;
 }
 
 .container{
@@ -37,16 +35,20 @@ body{
     margin: auto;
 }
 
-.office-info h3 
-    {
+.office-info h3 {
     font-size: 18px;
     margin-bottom: 4px;
     margin-top: 3px;
+    padding-top: 40px;
 }
 
 .office-info p {
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 4px;
+    line-height: 1.8rem;
+    padding: 1px;
+    margin-top: 2px;
+    font-weight: 300;
 }
 
 .office-info a {
@@ -56,15 +58,27 @@ body{
 
 .office-info i{
     display: inline;
-    margin-right: 70px;
-    font-size: 20px;
+    font-size: 22px;
     padding-bottom: 20px;
     padding-top: 10px;
+    padding-right: 40px;
+}
+
+.office-info i:hover{
+    color: red;
+    cursor: pointer;
 }
 
 .office-info strong{
     display: block;
     margin-bottom: 4px;
+    padding-bottom: 20px; 
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.form-section{
+    padding-top: 40px;
 }
 
 .form-section h3{
@@ -77,9 +91,10 @@ body{
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 6px;
     font-size: 14px;
+    box-shadow: 0px 8px 16px rgba(0.1, 0.1, 0.1, 0.1);
 }
 
 textarea {
@@ -87,32 +102,14 @@ textarea {
     min-height: 100px;
 }
 
-.budget-options {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px 20px;
-    margin-bottom: 20px;
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0;
 }
 
-.budget-options label {
-    display: flex;
-    font-size: 16px;
-    cursor: pointer;
-    padding: 10px;
-    align-items: center;
-    border: 1px solid white ;
-    border-radius: 6px;
-}
-
-.budget-options label:hover {
-    background: #f7f7f7;
-}
-
-.budget-options input {
-    margin-right: 8px;
-}
-
-button {
+.send-btn {
     width: 20%;
     height: 30%;
     padding: 14px;
@@ -122,16 +119,18 @@ button {
     border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
-    transition: background 0.3s;
+    animation: pulse 2s infinite;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-button:hover {
-    background: #c92c3b;
+.send-btn:hover {
+  background-color: #ff704d;
+  box-shadow: 0 0 20px rgba(255, 92, 51, 1);
 }
 
 .footer-main {
     max-width: 1700px;
-    margin: 20px 20px;
+    margin: 30px 30px 30px 30px;
     padding: 48px 32px;
     border-radius: 28px;
     background: #111;
@@ -242,13 +241,84 @@ button:hover {
     margin-top: 20px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1024px){
     .container{
       grid-template-columns: 1fr;
-      padding: 0 20px;
+      padding: 40px 20px 20px 20px;
    }
     .contact{
       padding-left: 20px;
       padding-right: 20px;
    }
+   .contact-1 h1{
+      padding-left: 20px;
+      padding-right: 20px;
+      break-after: auto;
+   }
+   .form-section{
+      padding-top: 60px;
+   }
+   .send-btn i{
+    display: none;
+   }
 }
+
+@media (max-width: 768px) {
+    .container{
+      grid-template-columns: 1fr;
+      padding: 40px 20px 20px 20px;
+   }
+    .contact{
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+   .contact-1 h1{
+      padding-left: 20px;
+      padding-right: 20px;
+      break-after: auto;
+   }
+   .form-section{
+      padding-top: 60px;
+   }
+   .send-btn i{
+    display: none;
+   }
+}
+
+@media screen and (max-width: 468px){
+    .container{
+      grid-template-columns: 1fr;
+      padding: 40px 20px 20px 20px;
+   }
+   .form-section{
+      padding-top: 60px;
+   }
+    .contact{
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+   .contact-1 h1{
+      padding-left: 20px;
+      padding-right: 20px;
+      break-after: auto;
+   }
+   .send-btn i{
+    display: none;
+   }
+}
+
+@keyframes pulseShadow {
+  0% {
+    box-shadow: 0 0 40px rgba(255, 92, 51, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 92, 51, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 92, 51, 0.6);
+  }
+}
+
+
+
+

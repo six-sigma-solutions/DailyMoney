@@ -1,104 +1,124 @@
 import React from "react";
-import "./Entrepreneur.css"; 
+// !! IMPORTANT: Make sure these paths are correct for your project !!
+import img1 from "../../assets/images/img-1.jpg";
+import img3 from "../../assets/images/img-3.jpg";
+import img4 from "../../assets/images/img-4.jpg";
+import img5 from "../../assets/images/img-5.jpg";
+import img6 from "../../assets/images/img-6.jpg";
+import img7 from "../../assets/images/img-7.jpg";
+import img8 from "../../assets/images/img-8.jpg";
+import img9 from "../../assets/images/img-9.jpg";
+import img10 from "../../assets/images/img-10.jpg";
 
-import img1 from "../../assets/Entrepreneur/img-1.jpg"
-import img2 from "../../assets/Entrepreneur/img-2.jpg"
-import img3 from "../../assets/Entrepreneur/img-3.jpg"
-// eslint-disable-next-line no-unused-vars
-import img4 from "../../assets/Entrepreneur/img-4.jpg"
-import img5 from "../../assets/Entrepreneur/img-5.jpg"
-import img6 from "../../assets/Entrepreneur/img-6.jpg"
-import img7 from "../../assets/Entrepreneur/img-7.jpg"
-import img8 from "../../assets/Entrepreneur/img-8.jpg"
-import img9 from "../../assets/Entrepreneur/img-9.jpg"
-import img10 from "../../assets/Entrepreneur/img-10.jpg"
+// Import your regular CSS file
+import "./Entrepreneur.css";
 
-export default function Entrepreneur() {
+const Entrepreneur = () => {
   return (
-    <div>
-      {/* Title Section */}
-      <div className="title-sec">
-        <div className="title">
-          <h1>I'm my Own Boss</h1>
+    // This parent div with a unique class name isolates all the styles within it
+    <div className="entrepreneur-container">
+      <div className="ent-section">
+        <span>Entrepreneur </span>
+        <div className="ent-title">
           <img src={img1} alt="Entrepreneur" />
-          <h1>Freedom and Financial Independence</h1>
         </div>
       </div>
 
-      {/* Section 1 */}
-      <div className="container">
-        <img src={img3} alt="Be my own boss" />
-        <div className="box">
-          <h1 className="text-lg">"I Want to be my Own Boss".</h1>
-        </div>
-      </div>
-
-      {/* Section 2 */}
-      <div className="container-1">
-        <h1 className="text-xl">
-          I'm ready to start, build, and grow something of my own.
-        </h1>
-        <div className="box-1">
-          <img src={img2} alt="Start and grow" />
-        </div>
-      </div>
-
-      {/* Section 3 */}
-      <div className="container">
-        <img src={img5} alt="Entrepreneurship freedom" />
-        <div className="box">
-          <h1 className="text-xl">
-            "Entrepreneurship is for freedom and financial independence".
+      <div className="ent-left">
+        <img src={img3} alt="Left" />
+        <div className="ent-box-left">
+          <h1>
+            "I want to be my own boss".<br />
+            "Freedom is my first goal, purpose is my next".<br />
+            "Self-leadership is my success story".<br />
+            "I want to build a life that reflects my values".
           </h1>
         </div>
       </div>
 
-      {/* Section 4 */}
-      <div className="container-1">
-        <h1 className="text-xl">
-          "I'm looking for entrepreneurship to create opportunities, not just
-          take them".
+      <div className="ent-right">
+        <h1>
+          "I'm ready to start, build, and grow something of my own".<br />
+          "I’m ready to take my first step toward independence".<br />
+          "I’m ready to shape my own success".<br />
         </h1>
-        <div className="box-1">
-          <img src={img6} alt="Create opportunities" />
+        <div className="ent-box-right">
+          <img src={img4} alt="Right" />
         </div>
       </div>
 
-      {/* Section 5 */}
-      <div className="container">
-        <img src={img7} alt="Dreams into reality" />
-        <div className="box">
-          <h1 className="text-xl">
-            "Yes, I believe in building dreams into reality".
+      <div className="ent-left">
+        <img src={img5} alt="Left" />
+        <div className="ent-box-left">
+          <h1>
+            "Entrepreneurship is for freedom and financial independence".<br />
+            "I choose independence over comfort".<br />
+            "I’m ready to create my own future".<br />
+            "I’m ready to launch my own vision".<br />
           </h1>
         </div>
       </div>
 
-      {/* Section 6 */}
-      <div className="container-1">
-        <h1 className="text-xl">"I want to lead instead of follow".</h1>
-        <div className="box-1">
-          <img src={img8} alt="Leadership" />
-        </div>
-      </div>
-
-      {/* Section 7 */}
-      <div className="container">
-        <img src={img9} alt="Take risks" />
-        <div className="box">
-          <h1 className="text-xl">"I am ready to take risk for success".</h1>
-        </div>
-      </div>
-
-      {/* Section 8 */}
-      <div className="container-1">
-        <h1 className="text-xl">
-          "I have dreams of financial freedom and impact".
+      <div className="ent-right">
+        <h1>
+          "I'm looking for entrepreneurship to create opportunities, not just take them".<br />
+          "I’m drawn to entrepreneurship to make opportunities, not just grab them".<br />
+          "I choose entrepreneurship to shape opportunities, not just follow them".<br />
         </h1>
-        <div className="box-1">
-          <img src={img10} alt="Financial freedom" />
+        <div className="ent-box-right">
+          <img src={img6} alt="Right" />
+        </div>
+      </div>
+
+      <div className="ent-left">
+        <img src={img7} alt="Left" />
+        <div className="ent-box-left">
+          <h1>
+            "Yes, I believe in building dreams into reality".<br />
+            "I believe in making dreams come true through action".<br />
+            "I’m committed to turning vision into reality".<br />
+            "I believe that dreams are meant to be built, not just imagined".<br />
+          </h1>
+        </div>
+      </div>
+
+      <div className="ent-right">
+        <h1>
+          "I want to lead instead of follow".<br />
+          "I choose to lead rather than follow".<br />
+          "I aim to set the direction, not just follow it".<br />
+          "Leadership is my choice, not conformity".
+        </h1>
+        <div className="ent-box-right">
+          <img src={img8} alt="Right" />
+        </div>
+      </div>
+
+      <div className="ent-left">
+        <img src={img9} alt="Left" />
+        <div className="ent-box-left">
+          <h1>
+            "I am ready to take risk for success".<br />
+            "I’m willing to take chances for success".<br />
+            "I’m ready to embrace challenges".<br />
+            "I’m not afraid to take bold steps toward my goals".
+          </h1>
+        </div>
+      </div>
+
+      <div className="ent-right">
+        <h1>
+          "I have dreams of financial freedom and impact".<br />
+          "I dream of creating wealth and making a difference".<br />
+          "My goal is to build financial freedom and inspire change".<br />
+          "My vision combines financial success with social impact".
+        </h1>
+        <div className="ent-box-right">
+          <img src={img10} alt="Right" />
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default Entrepreneur;
