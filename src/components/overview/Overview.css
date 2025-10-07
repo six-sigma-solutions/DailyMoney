@@ -1,91 +1,97 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Overview.css */
 
-body {
+/* Global styles for this specific component, if needed */
+.overview-page-container {
   font-family: "Poppins", sans-serif;
-  background: #fff;
   line-height: 1.6;
   padding: 20px;
-  margin: 0 20px 0 20px;
+  margin: 0 20px;
 }
 
-.ove span{
+.overview-header-title {
+  margin-bottom: 40px; /* Added margin for spacing */
+}
+
+.overview-header-title span {
   background-color: darkgreen;
   color: white;
-  justify-content: center;
+  display: inline-block; /* Better for spacing and alignment */
   line-height: 3.6rem;
-  text-align: left;
   font-size: 32px;
-  padding-left: 7px;
-  padding-right: 7px;
+  padding: 0 15px; /* Simplified padding */
   border-radius: 5px;
 }
 
-section{
+.zigzag-layout-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  margin: 60px 0; 
-}
-
-section.reverse {
-  flex-direction: row-reverse;
-}
-
-.fade-in img {
-  width: 45%;
+  margin: 60px 0;
+  background-image: linear-gradient(45deg, blue, red);
   border-radius: 25px;
-  box-shadow: 0 8px 20px rgba(0.5, 0, 0, 0.5);
-  padding: 10px 10px 10px 10px;
-  margin: 20px 20px 20px 20px;
-  justify-content: center;
-  align-items: center;
+  padding: 20px; /* Add padding to the container */
+  animation: overview-fade-in 1s ease-in-out;
 }
 
-.text {
+.zigzag-layout-section.reverse-layout {
+  flex-direction: row-reverse;
+  background-image: linear-gradient(45deg, red, blue);
+}
+
+.zigzag-image-container {
+  flex: 1; /* Use flexbox for better scaling */
+  text-align: center; /* Center the image */
+}
+
+.zigzag-image-container img {
   width: 100%;
+  max-width: 450px; /* Control max image size */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.text h2 {
+.zigzag-text-content {
+  flex: 1; /* Use flexbox for better scaling */
+  color: #fff;
+  padding: 20px;
+}
+
+.zigzag-text-content h2 {
   font-size: 28px;
   font-weight: 700;
-  margin-bottom: 15px;
-  color: black;
+  margin-bottom: 25px;
   text-align: center;
-  margin-top: center;
-  padding-bottom: 20px;
-  padding-top: 20px;
 }
 
-.text p,
-.text ul {
+.zigzag-text-content p,
+.zigzag-text-content ul {
   font-size: 19px;
-  color: #fff;
-  line-height: 2.6rem;
+  line-height: 2.2rem; /* Adjusted for readability */
   text-align: justify;
-  font-weight: 800;
-  padding: 20px;
-  margin: 20px;
+  font-weight: 500; /* Slightly reduced for better readability */
 }
 
-.text ul {
+.zigzag-text-content ul{
   list-style: none;
+  padding: 0;
 }
 
-.text strong{
-  font-weight: bold;
+.zigzag-text-content li {
+  margin-bottom: 15px; /* Add space between list items */
 }
 
-.btn-container {
+.zigzag-text-content strong {
+  font-weight: 700; /* Keep bold text distinct */
+}
+
+.overview-button-wrapper {
   text-align: center;
   margin: 50px 0;
+  animation: overview-fade-in 1s ease-in-out;
 }
 
-.btn {
+.overview-action-btn {
   background: #4caf50;
   color: white;
   padding: 12px 28px;
@@ -93,38 +99,38 @@ section.reverse {
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
-  transition: 0.3s;
+  transition: background-color 0.3s;
 }
 
-.btn:hover {
+.overview-action-btn:hover {
   background: #43a047;
 }
 
 @media (max-width: 900px) {
-  section,
-  section.reverse {
+  .zigzag-layout-section,
+  .zigzag-layout-section.reverse-layout {
     flex-direction: column;
     text-align: center;
   }
 
-  .fade-in img,
-  .text {
-    width: 500px;
+  .zigzag-image-container,
+  .zigzag-text-content {
+    width: 100%;
+    max-width: 500px;
   }
 
-  .fade-in img{
-    max-width: 90%;
-    margin: 30px 30px 30px 30px;
-    justify-content: center;
-    align-items: center;
+  .zigzag-image-container img {
+    margin-bottom: 20px;
   }
 }
 
-@keyframes fadeIn{
-  form{
+@keyframes overview-fade-in {
+  from {
     opacity: 0;
+    transform: translateY(20px);
   }
-  to{
+  to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
