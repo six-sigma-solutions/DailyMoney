@@ -602,14 +602,13 @@ body {
 .footer-main1 {
   max-width: 1700px;
   margin: 30px 60px;
-  padding: 48px 32px;
+  padding: 0px 0px 48px;
   border-radius: 28px;
-  background: #faf9f7; /* lighter background instead of black */
+  background: #111;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  color: #111; /* dark text for contrast on light bg */
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  color: #fff;
 }
 
 .footer-cta1 {
@@ -621,26 +620,17 @@ body {
   font-size: 2.4em;
   font-weight: 400;
   margin-bottom: 15px;
-  color: #111;
 }
 
 .footer-cta1 .say-hello-btn1 {
-  background: #e63946;
+  background: #d32a2a;
   color: #fff;
   padding: 10px 30px;
   border-radius: 32px;
   font-size: 1em;
   font-weight: 500;
   cursor: pointer;
-  transition: background 0.2s, transform 0.12s ease;
-  width: 160px;
-  height: 40px;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  box-shadow: 0 6px 18px rgba(230,57,70,0.12);
+  transition: background 0.2s;
 }
 
 .footer-cta1 .say-hello-btn1:hover {
@@ -649,15 +639,22 @@ body {
 
 .footer-divider1 {
   border: none;
-  border-top: 1px solid #e6e2df; /* lighter divider */
+  border-top: 1px solid #333;
   margin: 24px 0;
 }
 
 .footer-bottom-content1 {
   display: flex;
+  padding: 0 40px;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px;
+}
+
+.img-fluid{
+  border-radius: 28px;
+  animation:none;
+  width: 100%;
 }
 
 .footer-logo-block1 {
@@ -675,18 +672,17 @@ body {
 .footer-logo-text1 {
   font-size: 2em;
   font-weight: 400;
-  color: #111;
 }
 
 .footer-subtext1 {
   font-size: 1.1em;
-  color: #666;
+  color: #bdbdbd;
 }
 
 .footer-links-block1 {
   display: flex;
   margin-right: 150px;
-  gap: 80px;
+  gap: 200px;
   flex-wrap: wrap;
 }
 
@@ -706,7 +702,7 @@ body {
 }
 
 .footer-links-col1 ul li a {
-  color: #333;
+  color: #949090;
   line-height: 25px;
   font-weight: 600;
   text-decoration: none;
@@ -718,12 +714,10 @@ body {
 }
 
 .footer-copyright1 {
-  color: #777;
+  color: #bdbdbd;
   font-size: 0.9em;
   margin-top: 20px;
-}
-
-/* ======================================================= */
+}/* ======================================================= */
 /* RESPONSIVE STYLES                                     */
 /* ======================================================= */
 @media (max-width: 1200px) {
