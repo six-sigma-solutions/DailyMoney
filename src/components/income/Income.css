@@ -1,191 +1,161 @@
-/* Reset for Income Component - Only targets elements INSIDE the component's container */
-.inc-dm-page-container * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .inc-dm-page-container {
-    /* This prevents the generic body styles from interfering with the component background */
-    background-color: #ffffff;
-    color: #222;
-    line-height: 1.6;
-    overflow-x: hidden; 
-    font-family: "Poppins", sans-serif;
-    padding: 20px; 
-  }
-  
-  .inc-dm-header-wrap {
-    /* Styles specific to the h1 container */
-    margin: 60px 40px;
-  }
-  
-  .inc-dm-h1 {
-    text-align: center;
-    font-size: 3rem;
-    color:#032657;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-radius: 20px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    padding: 10px;
-  }
-  
-  .inc-dm-section {
-    max-width: 1000px;
-    margin: 60px auto;
+body{
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+  line-height: 3.2rem;
+  font-weight: 400;
+}
+
+.income-header{
+  background: forestgreen;
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+  color: white;
+}
+
+.income-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.income-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  gap: 50px;
+}
+
+.income-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.income-text {
+  flex: 1;
+  font-size: 1.1rem;
+}
+
+.income-text ul {
+  margin-top: 10px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.income-text li {
+  margin-bottom: 8px;
+}
+
+.income-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.income-image img {
+  width: 450px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.income-image img:hover {
+  transform: scale(1.05);
+}
+
+.income-btn-container {
+  text-align: center;
+  padding: 50px 20px 80px;
+}
+
+.income-btn {
+  background-color: #4caf50;
+  color: white;
+  font-size: 1.1rem;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.income-btn:hover {
+  background-color: #2e7d32;
+}
+
+.income-btn a{
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.inc1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 0 20px;
-  }
-  
-  .inc-dm-p {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 25px;
-  }
-  
-  .inc-dm-ul {
-    list-style: none;
-    padding: 0;
-    max-width: 800px;
-    margin: 0 auto 30px auto; 
-  }
-  
-  .inc-dm-li {
-    background: #f0fff4; 
-    padding: 15px 20px;
-    margin: 12px 0;
-    border-left: 6px solid #0d9488;
-    border-radius: 8px;
-    font-size: 1.05rem;
-    text-align: left;
-  }
-  .inc-dm-li strong {
-    color: #047871; 
-  }
-  
-  .inc-dm-image {
-    width: 100%;
-    max-width: 500px;
-    height: 500px;
-    object-fit:fill;
-    border-radius: 12px;
-    margin: 25px auto; 
-    display: block; 
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.4s;
-  }
-  .inc-dm-image:hover {
-    transform: scale(1.03);
-  }
-  
-  .inc-dm-btn-container {
+    background-color: forestgreen;
+    padding-top: 10px;
+    color: white;
+}
+
+.inc1-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+
+.inc1-img img{
+    width: 475px;
+    height: 475px;
+    border: 3px solid black;
+    border-radius: 20px;
+    animation: bounce 2s infinite;;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(20px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+
+@media (max-width: 900px) {
+  .income-section {
+    flex-direction: column;
     text-align: center;
-    margin: 50px 0;
+    padding: 40px 20px;
   }
-  .inc-dm-btn {
-    background: #0d9488;
-    color: #fff;
-    border: none;
-    padding: 14px 36px;
-    font-size: 1.2rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
+  .income-section.reverse {
+    flex-direction: column;
   }
-  .inc-dm-btn:hover {
-    background: #047871;
-    transform: scale(1.05);
+  .income-image img {
+    max-width: 100%;
   }
-  
-  /* FADE-IN ANIMATION CLASSES */
-  .inc-dm-fade-in {
-    opacity: 1; 
-    transform: translateY(0);
+  .income-text {
+    margin-bottom: 20px;
   }
-  
-  /* === Info Section (List of Checks) === */
-  .inc-dm-info-flex {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      padding: 0 80px; 
-      max-width: 1200px;
-      margin: 60px auto;
+  .income-header h1 {
+    font-size: 2rem;
   }
-  .inc-dm-info-image {
-      width: 500px; 
-      height: 500px; 
-      object-fit: fill;
-      border-radius: 15px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+  .income-header {
+    padding: 40px 10px;
   }
-  .inc-dm-info-list {
-      flex: 1;
-      max-width: 500px;
-      margin-left: 20px;
+  .income-btn {
+    width: 80%;
   }
-  .inc-dm-list-row {
-    line-height: 2.5; 
-    font-weight: 500;
-    color: #1f2937;
-    display: block; 
-  }
-  .inc-dm-list-item {
-      font-size: 20px;
-      font-weight: 500;
-      color: #1f2937;
-      display: inline-block;
-      margin-left: 10px;
-  }
-  .inc-dm-tick {
-      color: #d32a2a; 
-      font-size: 26px;
-      font-weight: bold;
-      display: inline-block;
-      vertical-align: middle;
-  }
-  
-  /* === Responsive Styles === */
-  @media screen and (max-width: 1024px) {
-    .inc-dm-h1 {
-      font-size: 2.4rem;
-      margin: 40px 20px;
-    }
-    .inc-dm-info-flex {
-      padding: 0 20px;
-      flex-direction: column;
-      text-align: center;
-    }
-    .inc-dm-info-image {
-      width: 80%;
-      max-width: 450px;
-      height: auto;
-      margin: 20px auto;
-      display: block;
-    }
-    .inc-dm-info-list {
-      margin: 0 auto;
-      max-width: 100%;
-      text-align: left; 
-    }
-    .inc-dm-image { 
-      height: auto; 
-      max-width: 100%;
-    }
-  }
-  
-  @media screen and (max-width: 640px) {
-      .inc-dm-h1 {
-          font-size: 1.8rem;
-          margin: 30px 10px;
-      }
-      .inc-dm-li {
-          font-size: 0.95rem;
-      }
-      .inc-dm-list-item {
-          font-size: 16px;
-      }
-      .inc-dm-tick {
-          font-size: 20px;
-      }
-  }
+}
