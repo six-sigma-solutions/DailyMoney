@@ -3,9 +3,14 @@
 import React from "react";
 import "./Home.css";
 import videoFile from "../../assets/gif.mp4";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
+
+  const handleSayHelloClick = () => {
+    navigate("/contact");
+  };
   return (
     <div className="home-page">
       {/* Hero Section */}
