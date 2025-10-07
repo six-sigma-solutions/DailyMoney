@@ -1,5 +1,6 @@
 import React from "react";
 import "./Income.css";
+import { Link } from "react-router-dom";
 
 const Income = () => {
   return (
@@ -93,6 +94,14 @@ const Income = () => {
           />
         </div>
       </section>
+
+      <div className="view-more-link-my-life">
+      <Link className="view-more-link" to="/women-empowerment">
+        <button className="view-more" type="button">
+          View More
+        </button>
+      </Link>
+      </div>
     </div>
   );
 };
