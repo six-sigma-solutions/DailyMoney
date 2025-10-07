@@ -23,7 +23,7 @@ const WealthPage = () => {
            
             <div className="wealthy-hero-image" aria-hidden="true">
               <div className="wealthy-portrait-card">
-                <img className="wealth-hero-image" src="healt-welt.jpeg" alt="Portrait" />
+                <img src="healt-welt.jpeg" alt="Portrait" />
               </div>
             </div>
           </div>
