@@ -14,7 +14,7 @@
 
 /* ---------------- CSS VARIABLES ---------------- */
 .dm-vsn-main-content {
-  --dm-vsn-accent: #c92a2a;
+  
   --dm-vsn-muted: #9aa0a6;
   --dm-vsn-bg: #ffffff;
   --dm-vsn-dark: #0b0b0b;
@@ -35,7 +35,8 @@
   padding: 10px;
   margin: 20px 60px;
   border-radius: 12px;
-  color: #fff;
+  color: #c92a2a;
+  font-weight: 900;
   font-weight: bold;
   font-size: 2.5rem;
 }
@@ -252,4 +253,138 @@
   .dm-vsn-hero-card {
     padding-top: 60px;
   }
+}
+
+
+/* ===================================================== */
+/* Vision Page Styles - Clean Modular CSS */
+/* ===================================================== */
+
+/* Main section wrapper */
+.vision-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 16px;
+    background: #ffffff;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+/* Row for image and text */
+.vision-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+}
+
+/* Column styling */
+.vision-col {
+    flex: 1;
+}
+
+/* Image column */
+.vision-image-col img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Image hover effect */
+.vision-image-col img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Reverse layout for zig-zag */
+.vision-reverse {
+    flex-direction: row-reverse;
+}
+
+/* Text column */
+.vision-text-col {
+    flex: 2;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #0f172a;
+}
+
+/* Tick icon style */
+.vision-tick-icon {
+    color: red;
+    font-size: 1.3em;
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .vision-row,
+    .vision-reverse {
+        flex-direction: column;
+    }
+
+    .vision-image-col img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .vision-text-col {
+        text-align: center;
+    }
+}
+
+
+/* Section wrapper */
+.dm-vsn-action-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 16px;
+   
+}
+
+/* Animated button */
+.dm-vsn-animated-btn {
+    background-color: #ef4444; /* red accent */
+  
+    border: none;
+    border-radius: 12px;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(239, 68, 68, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover animation */
+.dm-vsn-animated-btn:hover {
+    background-color: #dc2626; /* darker red on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(220, 38, 38, 0.4);
+}
+
+/* Optional: ripple effect when clicked */
+.dm-vsn-animated-btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-20deg);
+    transition: all 0.5s ease;
+}
+
+.dm-vsn-animated-btn:active::after {
+    left: 100%;
+    transition: 0s;
 }
