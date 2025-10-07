@@ -6,7 +6,7 @@ const Gratitude = () => {
   // Action from the original HTML: navigate to the external link
   const handleGetStarted = (e) => {
     e.preventDefault();
-    window.location.href = '/sloution'; 
+    window.location.href = '/mypromises'; 
   };
   
   return (
