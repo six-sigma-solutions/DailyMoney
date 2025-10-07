@@ -1,39 +1,39 @@
 import React from "react";
+// Import the newly named CSS file
 import "./Overview.css";
 
-const ZigzagLayout = () => {
+// Renamed the component for clarity
+const Overview = () => {
   const getStarted = () => {
-    alert("Get Started clicked!"); // Replace with your actual function
+    alert("Get Started clicked!");
   };
 
   return (
-    <div>
-      <div className="ove">
+    <div className="overview-page-container">
+      <div className="overview-header-title">
         <span>Overview</span>
       </div>
 
-      {/* Section 1: Image Left / Text Right */}
-      <section
-        className="fade-in"
-        style={{ backgroundImage: "linear-gradient(45deg, blue, red)", borderRadius: "25px" }}
-      >
-        <img src="image-1.jpg" alt="People smiling and collaborating" />
-        <div className="text">
-          <h2 style={{ color: "burlywood", textAlign: "center" }}>Our Purpose</h2>
+      {/* Section 1 */}
+      <section className="zigzag-layout-section">
+        <div className="zigzag-image-container">
+          <img src="image-1.jpg" alt="People smiling and collaborating" />
+        </div>
+        <div className="zigzag-text-content">
+          <h2 style={{ color: "burlywood" }}>Our Purpose</h2>
           <p>
             Daily Money exists to make the world healthier, happier, wealthier, one person, one family, and one community at a time.
           </p>
         </div>
       </section>
 
-      {/* Section 2: Image Right / Text Left */}
-      <section
-        className="fade-in reverse"
-        style={{ backgroundImage: "linear-gradient(45deg, red, blue)", borderRadius: "25px" }}
-      >
-        <img src="image-2.jpg" alt="People planning together" />
-        <div className="text">
-          <h2 style={{ color: "yellow", textAlign: "center" }}>Our Approach</h2>
+      {/* Section 2 */}
+      <section className="zigzag-layout-section reverse-layout">
+        <div className="zigzag-image-container">
+          <img src="image-2.jpg" alt="People planning together" />
+        </div>
+        <div className="zigzag-text-content">
+          <h2 style={{ color: "yellow" }}>Our Approach</h2>
           <ul>
             <li><strong>Clarity –</strong> Simplifying money so everyone understands it.</li>
             <li><strong>Discipline –</strong> Encouraging consistent daily habits that build lasting wealth.</li>
@@ -43,14 +43,13 @@ const ZigzagLayout = () => {
         </div>
       </section>
 
-      {/* Section 3: Image Left / Text Right */}
-      <section
-        className="fade-in"
-        style={{ backgroundImage: "linear-gradient(45deg, blue, red)", borderRadius: "25px" }}
-      >
-        <img src="image-3.jpg" alt="Generational family together" />
-        <div className="text">
-          <h2 style={{ textAlign: "center", color: "orchid" }}>Our Core Beliefs</h2>
+      {/* Section 3 */}
+      <section className="zigzag-layout-section">
+        <div className="zigzag-image-container">
+          <img src="image-3.jpg" alt="Generational family together" />
+        </div>
+        <div className="zigzag-text-content">
+          <h2 style={{ color: "orchid" }}>Our Core Beliefs</h2>
           <ul>
             <li><strong>Wealth is Freedom –</strong> The ability to choose your path without limits.</li>
             <li><strong>Health is Wealth –</strong> Without wellness, money loses its meaning.</li>
@@ -60,14 +59,13 @@ const ZigzagLayout = () => {
         </div>
       </section>
 
-      {/* Section 4: Image Right / Text Left */}
-      <section
-        className="fade-in reverse"
-        style={{ backgroundImage: "linear-gradient(45deg, red, blue)", borderRadius: "25px" }}
-      >
-        <img src="image-4.jpg" alt="People celebrating success together" />
-        <div className="text">
-          <h2 style={{ textAlign: "center", color: "cyan" }}>Our Promise</h2>
+      {/* Section 4 */}
+      <section className="zigzag-layout-section reverse-layout">
+        <div className="zigzag-image-container">
+          <img src="image-4.jpg" alt="People celebrating success together" />
+        </div>
+        <div className="zigzag-text-content">
+          <h2 style={{ color: "cyan" }}>Our Promise</h2>
           <p>
             Daily Money is not just about income today, but about wealth for life and beyond. We help build strong foundations so every generation thrives—financially, physically, and spiritually.
           </p>
@@ -75,12 +73,11 @@ const ZigzagLayout = () => {
       </section>
 
       {/* Button */}
-      <div className="btn-container fade-in">
-        <button className="btn" onClick={getStarted}>Get Started</button>
+      <div className="overview-button-wrapper">
+        <button className="overview-action-btn" onClick={getStarted}>Get Started</button>
       </div>
     </div>
   );
 };
 
-
-export default ZigzagLayout;
+export default Overview;
