@@ -96,7 +96,7 @@ const Income = () => {
       </section>
 
       <div className="view-more-link-my-life">
-      <Link className="view-more-link" to="/women-empowerment">
+      <Link className="view-more-link" to="/womenempowerment">
         <button className="view-more" type="button">
           View More
         </button>
