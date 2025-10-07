@@ -1,109 +1,98 @@
 import React from "react";
-import "./Income.css"; 
-import { Link } from "react-router-dom";
-// Renamed the import to the standard file path if you are moving the CSS file.
+import "./Income.css";
 
 const Income = () => {
-  // Switched alert to console.log for safe execution in Canvas environment
-  const learnMore = () => {
-    console.log("Learn more about how income empowers your growth!");
-  };
-
   return (
-    // Top-level container with unique class
-    <div className="inc-dm-page-container">
-      
-      <div className="inc-dm-header-wrap">
-        <h1 className="inc-dm-h1">Income: The Fuel of Growth</h1>
-      </div>
+    <div>
+      <header className="income-header">
+        <h1>Income: The Fuel of Growth</h1>
+      </header>
 
-      {/* Section 1 - Income definition */}
-      <section className="inc-dm-section inc-dm-fade-in">
-        <p className="inc-dm-p">
-          Income is more than just money earned — it is the reward of effort,
-          time, and value created. Whether through wages, salaries, profits, or
-          investments, **income provides the foundation for stability and growth.**
-        </p>
-        <img className="inc-dm-image" src="incomeimg-1.png" alt="Income concept" />
-      </section>
-
-      {/* Section 2 - Holistic income */}
-      <section className="inc-dm-section inc-dm-fade-in">
-        <p className="inc-dm-p">
-          True income, however, is not just financial. It is about the returns
-          you gain from life itself — **the knowledge you acquire, the
-          relationships you nurture, and the health you sustain.**
-        </p>
-        <img
-          className="inc-dm-image"
-          src="incomeimg-2.jpg"
-          alt="Personal growth and learning"
-        />
-      </section>
-
-      {/* Section 3 - Empowerment goals */}
-      <section className="inc-dm-section inc-dm-fade-in">
-        <p className="inc-dm-p">At Daily Money, we believe income should empower you to:</p>
-        <ul className="inc-dm-ul">
-          <li className="inc-dm-li">
-            <strong>Secure your family's future</strong>
-          </li>
-          <li className="inc-dm-li">
-            <strong>Build lasting wealth and assets</strong>
-          </li>
-          <li className="inc-dm-li">
-            <strong>
-              Create the freedom to travel, explore, and experience the world
-            </strong>
-          </li>
-          <li className="inc-dm-li">
-            <strong>Live with peace of mind and purpose</strong>
-          </li>
-        </ul>
-        <img className="inc-dm-image" src="incomeimg-3.avif" alt="Financial freedom" />
-      </section>
-
-      {/* Left + Right Section - Benefits List */}
-      <div className="inc-dm-info-flex">
-        <img className="inc-dm-info-image" src="incomeimg-4.jpg" alt="Growth illustration" />
-        <div className="inc-dm-info-list">
-          <p className="inc-dm-list-row">
-            <span className="inc-dm-tick">✔</span>
-            <span className="inc-dm-list-item"> Income powers growth, not greed.</span>
-          </p>
-          <p className="inc-dm-list-row">
-            <span className="inc-dm-tick">✔</span>
-            <span className="inc-dm-list-item"> Energy creates opportunity.</span>
-          </p>
-          <p className="inc-dm-list-row">
-            <span className="inc-dm-tick">✔</span>
-            <span className="inc-dm-list-item"> Wealth begins with wisdom.</span>
-          </p>
-          <p className="inc-dm-list-row">
-            <span className="inc-dm-tick">✔</span>
-            <span className="inc-dm-list-item"> Freedom follows discipline.</span>
-          </p>
-          <p className="inc-dm-list-row">
-            <span className="inc-dm-tick">✔</span>
-            <span className="inc-dm-list-item"> Balance builds true success.</span>
+      {/* Section 1 */}
+      <section className="income-section">
+        <div className="income-text">
+          <p>
+            Income is more than just money earned — it is the reward of effort,
+            time, and value created. Whether through wages, salaries, profits,
+            or investments, income provides the foundation for stability and
+            growth.
           </p>
         </div>
-      </div>
+        <div className="income-image">
+          <img
+            style={{ width: "450px", height: "450px", borderRadius: "20px" }}
+            src="incomeimg-1.png"
+            alt="Income concept"
+          />
+        </div>
+      </section>
 
-      {/* 
-      <div className="inc-dm-btn-container inc-dm-fade-in">
-        <button className="inc-dm-btn" onClick={learnMore}>
-          Learn More About Income
-        </button>
-      </div> Button */}
+      {/* Section 2 */}
+      <section className="income-section reverse">
+        <div className="income-text">
+          <p>
+            True income, however, is not just financial. It is about the returns
+            you gain from life itself — the knowledge you acquire, the
+            relationships you nurture, and the health you sustain.
+          </p>
+        </div>
+        <div className="income-image">
+          <img
+            style={{ width: "450px", height: "450px", borderRadius: "20px" }}
+            src="incomeimg-2.jpg"
+            alt="Personal growth and learning"
+          />
+        </div>
+      </section>
 
-      <div className="view-more-link-my-life">
-      <Link className="view-more-link" to="/womenempowerment">
-        <button className="view-more" type="button">
-          View More
-        </button>
-      </Link>
-      </div>
+      {/* Section 3 */}
+      <section className="income-section">
+        <div className="income-text">
+          
+          <ul>
+            <p>
+              Secure your family's future.
+              <br />
+              Build lasting wealth and assets.
+              <br />
+              Create the freedom to travel, explore, and experience the world.
+              <br />
+              Live with peace of mind and purpose.
+            </p>
+          </ul>
+        </div>
+        <div className="income-image">
+          <img
+            style={{ width: "450px", height: "450px", borderRadius: "20px" }}
+            src="incomeimg-3.avif"
+            alt="Financial freedom"
+          />
+        </div>
+      </section>
+
+      {/* Section 4 */}
+      <section className="income-section reverse">
+        <div className="income-text">
+          <p>
+            Income powers growth, not greed.
+            <br />
+            Energy creates opportunity.
+            <br />
+            Wealth begins with wisdom.
+            <br />
+            Freedom follows discipline.
+            <br />
+            Balance builds true success.
+          </p>
+        </div>
+        <div className="income-image">
+          <img
+            style={{ width: "450px", height: "450px", borderRadius: "20px" }}
+            src="incomeimg-4.jpg"
+            alt="Growth and Balance"
+          />
+        </div>
+      </section>
     </div>
   );
 };
