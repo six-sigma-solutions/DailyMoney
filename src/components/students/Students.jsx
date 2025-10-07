@@ -1,6 +1,7 @@
 // UpdatedStudent.jsx
 import React, { useEffect, useRef } from 'react';
 import './Students.css';
+import { Link } from 'react-router-dom';
 
 export default function Students() {
   const animatedRef = useRef(null);
@@ -115,6 +116,14 @@ export default function Students() {
           </div>
         </section>
       </main>
+
+      <div className="view-more-link-my-life">
+      <Link className="view-more-link" to="/elder">
+        <button className="view-more" type="button">
+          View More
+        </button>
+      </Link>
+      </div>
 
       <footer className="stu-page-footer">© 2023 DailyMoney</footer>
     </div>

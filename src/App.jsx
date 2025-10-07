@@ -1,4 +1,6 @@
 import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
+
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
 import Health from "./components/health/Health";
@@ -24,6 +26,7 @@ export default function App() {
   return (
     <div id="app">
       <Navbar />
+      <ScrollToTop />
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -36,7 +39,7 @@ export default function App() {
         <Route path="/gratitude" element={<Gratitude />} />
         <Route path="/overview" element={<Overview />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/women-empowerment" element={<Womenempowerment />} />
+        <Route path="/womenempowerment" element={<Womenempowerment />} />
         <Route path="/founders-msg" element={<FounderMsg />} />
         <Route path="/presidents-msg" element={<PresidentMsg />} />
         <Route path="/core-Team" element={<CoreTeam />} />

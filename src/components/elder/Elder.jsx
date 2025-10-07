@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './Elder.css';
+import { Link } from 'react-router-dom';
 
 export default function Elder() {
   const animatedRef = useRef(null);
@@ -130,6 +131,14 @@ export default function Elder() {
           </div>
         </section>
       </main>
+
+      <div className="view-more-link-my-life">
+      <Link className="view-more-link" to="/visionmission">
+        <button className="view-more" type="button">
+          View More
+        </button>
+      </Link>
+      </div>
     </div>
   );
 }

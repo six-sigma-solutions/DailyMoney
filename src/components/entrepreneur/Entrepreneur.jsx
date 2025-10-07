@@ -12,12 +12,13 @@ import img10 from "/img-10.jpg";
 
 // Import your regular CSS file
 import "./Entrepreneur.css";
+import { Link } from "react-router-dom";
 export default function Entrepreneur () {
   return (
     
     <div className="entrepreneur-container">
       <div className="ent-section">
-        <h1 className="entre-title">Entrepreneur </h1>
+        <h1 className="entre-title">Empowering You to Lead, Build, and Grow</h1>
         <div className="ent-title">
           <img src={img1} alt="Entrepreneur" />
         </div>
@@ -115,6 +116,13 @@ export default function Entrepreneur () {
         <div className="ent-box-right">
           <img src={img10} alt="Right" />
         </div>
+      </div>
+     <div className="view-more-link-my-life">
+      <Link className="view-more-link" to="/income">
+        <button className="view-more" type="button">
+          View More
+        </button>
+      </Link>
       </div>
     </div>
   );

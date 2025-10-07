@@ -9,177 +9,97 @@
   --container-w: 1100px;
 }
 
-/* Base styles */
+/* ---------- Base Styles ---------- */
 * {
   box-sizing: border-box;
-}
-html,
-body {
-  height: 100%;
 }
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.5;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  line-height: 1.5;
 }
 
-.wealthy-check {
-  color: red;
-  font-weight: bold;
-  margin-right: 8px;
-  font-size: 22px;
-  vertical-align: middle;
-}
-
-/* Text column styling */
-.wealthy-text-col {
+/* ---------- Page Wrapper ---------- */
+.wealthy-page {
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background: #ffffff;
-  padding: 28px;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.wealthy-text-col:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+/* Center on big screens */
+@media (min-width: 1500px) {
+  .wealthy-page {
+    width: 70%; /* 15% side space */
+  }
+}
+@media (min-width: 2000px) {
+  .wealthy-page {
+    width: 60%; /* 20% side space */
+  }
 }
 
-.wealthy-text-col h2 {
-  font-size: 20px;
-  line-height: 1.6;
-  color: var(--text);
-  font-weight: 500;
-  margin: 0;
+/* ---------- Header ---------- */
+.wealthy-header {
+  background: transparent;
+  padding: 20px 0;
+  text-align: center;
+}
+.wealthy-logo {
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: var(--accent);
+  font-style: italic;
 }
 
-/* Container */
+/* ---------- Containers ---------- */
 .wealthy-container {
   max-width: var(--container-w);
   margin: 0 auto;
   padding: 28px;
 }
 
-/* Header */
-.wealthy-header {
-  background: transparent;
-  padding: 16px 0;
-}
-.wealthy-header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.wealthy-logo {
-  font-weight: 700;
-  letter-spacing: 2px;
-  font-size: 30px;
-}
-.wealthy-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: var(--muted);
-  font-weight: 600;
-}
-
-/* Hero card */
+/* ---------- Hero Section ---------- */
 .wealthy-hero-card {
-  margin-top: 18px;
-  margin-bottom: 22px;
-  margin-left: auto;
-  margin-right: auto;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.95),
-    rgba(255, 255, 255, 0.98)
-  );
+  background: linear-gradient(180deg, #ffffff 95%, #f9f9f9);
   border-radius: var(--radius);
   box-shadow: 0 10px 30px rgba(15, 20, 25, 0.06);
+  padding: 40px 20px;
+  margin: 20px auto;
 }
-
 .wealthy-hero-grid {
   display: grid;
-  gap: 32px;
-  height: fit-content;
-  padding: 0 28px;
-}
-
-.wealthy-hero-text h1 {
-  margin: 0;
-  font-size: 64px;
-  line-height: 0.95;
-  font-weight: 700;
-  color: var(--text);
-}
-.wealthy-hero-text .wealthy-accent {
-  color: var(--accent);
-}
-
-.wealthy-lead {
-  margin-top: 18px;
-  color: var(--muted);
-  font-size: 18px;
-  max-width: 520px;
-}
-
-.wealthy-btn {
-  margin-top: 22px;
-  background: var(--btn-bg);
-  color: white;
-  border: none;
-  padding: 12px 22px;
-  font-weight: 700;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 6px 18px rgba(11, 58, 85, 0.18);
-}
-.wealthy-btn:active {
-  transform: translateY(1px);
-}
-
-/* Portrait */
-.wealthy-hero-image {
-  display: flex;
-  justify-content: center;
+  place-items: center;
 }
 .wealthy-portrait-card {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 18px 40px rgba(11, 20, 25, 0.09);
   background: linear-gradient(180deg, #ffffff, #fbfcfc);
-  display: flex;
-  height: fit-content;
-  justify-content: center;
+  width: 100%;
+  max-width: 800px;
 }
 .wealthy-portrait-card img {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
+  object-fit: cover;
 }
 
-/* Zig-zag section */
+/* ---------- Zigzag Section ---------- */
 .wealthy-zigzag {
   padding: 48px 0;
 }
 .wealthy-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* This single 'gap' property creates consistent spacing for all rows */
   gap: 40px;
   align-items: center;
-  margin-bottom: 40px; /* This controls the vertical space between each row */
+  margin-bottom: 40px;
 }
-
-/* No change needed here */
 .wealthy-row.wealthy-reverse .wealthy-image-col {
   order: 2;
 }
@@ -187,113 +107,108 @@ body {
   order: 1;
 }
 
-.row1{
-  background-color:green;
-}
-
-.row1 h2{
-  color:white
-}
-
-.row2{
-  background-color:rgb(53, 34, 0);
-}
-
-.row2 h2{
-  color:white
-}
-
-.row3{
-  background-color:rgb(255, 251, 0);
-}
-
-.row3 h2{
-  color:darkgreen;
-}
-
-.row4{
-  background-color:rgb(255, 123, 0);
-}
-
-.row4 h2{
-  color:navyblue;
-}
-
+/* ---------- Image & Text ---------- */
 .wealthy-image-col {
   display: flex;
-  justify-content: flex-end; /* Pushes the image to the right edge of its column */
+  justify-content: flex-end;
 }
-
-.wealthy-row.wealthy-reverse .wealthy-image-col {
-  justify-content: flex-start; /* Pushes the image to the left edge of its column */
-}
-
-/* Update image styles to be responsive */
 .wealthy-image-col img {
-  width: 350px; /* Makes image fill its column */
-  height: 100%; /* Keeps a consistent height */
-  object-fit: cover; /* Prevents image from being distorted */
-  display: block; /* Removes extra bottom space */
+  width: 350px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(11, 20, 25, 0.06);
 }
-
-.wealthy-text-col h3 {
-  margin: 0 0 10px 0;
+.wealthy-text-col {
+  background: var(--card);
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+.wealthy-text-col:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+.wealthy-check {
+  color: red;
+  font-weight: bold;
   font-size: 22px;
-}
-.wealthy-text-col p {
-  margin: 0;
-  color: var(--muted);
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
-/* Footer */
+/* ---------- Row Colors ---------- */
+.row1 {
+  background-color: green;
+  color: white;
+}
+.row2 {
+  background-color: rgb(53, 34, 0);
+  color: white;
+}
+.row3 {
+  background-color: rgb(255, 251, 0);
+  color: darkgreen;
+}
+.row4 {
+  background-color: rgb(255, 123, 0);
+  color: navy;
+}
+
+/* ---------- Footer ---------- */
 .wealthy-footer {
-  margin-top: 40px;
-  padding: 20px 0;
-  color: var(--muted);
   text-align: center;
+  color: var(--muted);
+  padding: 20px 0;
+  margin-top: 50px;
+  border-top: 1px solid #e0e0e0;
+  font-size: 14px;
 }
 
-/* Responsive */
+/* ---------- Responsive Layout ---------- */
 @media (max-width: 1000px) {
-  .wealthy-hero-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .wealthy-hero-text h1 {
-    font-size: 44px;
-  }
-  .wealthy-portrait-card {
-    width: 320px;
-    height: 220px;
-    margin: 0 auto;
-  }
   .wealthy-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Stack vertically */
     text-align: left;
   }
-  .wealthy-row.wealthy-reverse .wealthy-image-col,
+
+  /* Always show image first */
+  .wealthy-image-col {
+    order: 1;
+    justify-content: center;
+  }
+
+  .wealthy-text-col {
+    order: 2;
+    margin-top: 20px;
+    padding: 24px;
+  }
+
+  /* Even reversed rows show image first */
+  .wealthy-row.wealthy-reverse .wealthy-image-col {
+    order: 1;
+  }
   .wealthy-row.wealthy-reverse .wealthy-text-col {
-    order: initial;
+    order: 2;
+  }
+
+  .wealthy-image-col img {
+    width: 90%;
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
   }
 }
 
+/* ---------- Extra Small Devices ---------- */
 @media (max-width: 520px) {
   .wealthy-container {
-    padding: 18px;
+    padding: 16px;
   }
-  .wealthy-hero-text h1 {
-    font-size: 34px;
-  }
-  .wealthy-portrait-card {
-    width: 100%;
-    height: 200px;
+  .wealthy-text-col h2 {
+    font-size: 16px;
+    line-height: 1.4;
   }
   .wealthy-image-col img {
-    height: 180px;
-  }
-  .wealthy-nav a {
-    display: none;
+    width: 100%;
   }
 }

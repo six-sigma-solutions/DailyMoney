@@ -1,5 +1,6 @@
 import React from "react";
 import "./Income.css"; 
+import { Link } from "react-router-dom";
 // Renamed the import to the standard file path if you are moving the CSS file.
 
 const Income = () => {
@@ -89,11 +90,19 @@ const Income = () => {
         </div>
       </div>
 
-      {/* Button */}
+      {/* 
       <div className="inc-dm-btn-container inc-dm-fade-in">
         <button className="inc-dm-btn" onClick={learnMore}>
           Learn More About Income
         </button>
+      </div> Button */}
+
+      <div className="view-more-link-my-life">
+      <Link className="view-more-link" to="/womenempowerment">
+        <button className="view-more" type="button">
+          View More
+        </button>
+      </Link>
       </div>
     </div>
   );

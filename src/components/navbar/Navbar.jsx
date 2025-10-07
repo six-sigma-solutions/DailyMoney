@@ -86,7 +86,7 @@ export default function Navbar() {
                 <Link id="tab-name" to="/income">
                   ▾ Income
                 </Link>
-                <Link id="tab-name" to="/women-empowerment">
+                <Link id="tab-name" to="/womenempowerment">
                   ▾ Women Empowerment
                 </Link>
                 <Link id="tab-name" to="/students">
@@ -205,7 +205,7 @@ export default function Navbar() {
                   Income
                 </Link>
                 <Link
-                  to="/women-empowerment"
+                  to="/womenempowerment"
                   onClick={() => setMenuOpen(false)}
                 >
                   Women Empowerment

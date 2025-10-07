@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./Family.css"; // Your CSS file
+import { Link } from "react-router-dom";
 
 const Family = () => {
   useEffect(() => {
@@ -118,7 +119,8 @@ const Family = () => {
         <h2>From the blog</h2>
         <p className="subtitle">Insights and updates from our team</p>
         <div className="blog-posts">
-          <a href="#">Read more →</a>
+          <Link to="/entrepreneur" className="link">Read more →</Link>
+          
         </div>
       </section>
     </div>

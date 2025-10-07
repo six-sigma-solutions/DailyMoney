@@ -1,5 +1,6 @@
 import React from "react";
 import "./Womenempowerment.css";
+import { Link } from "react-router-dom";
 
 export default function Womenempowerment() {
   return (
@@ -121,6 +122,14 @@ export default function Womenempowerment() {
           </div>
         </div>
       </section>
+
+      <div className="view-more-link-my-life">
+      <Link className="view-more-link" to="/students">
+        <button className="view-more" type="button">
+          View More
+        </button>
+      </Link>
+      </div>
     </div>
   );
 }

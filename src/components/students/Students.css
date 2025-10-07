@@ -17,11 +17,17 @@
 .stu-page-header {
     text-align: center;
     padding: 20px;
-    background: var(--stu-page-accent);
-    color: white;
+    color: rgb(77, 37, 37);
     margin: 30px 40px;
     border-radius: 12px;
     font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.stu-page-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
 }
 
 .stu-page-header h1 {

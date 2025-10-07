@@ -23,10 +23,10 @@
   .inc-dm-h1 {
     text-align: center;
     font-size: 3rem;
-    color: white;
-    background-color: #0d9488; /* Teal color for brand consistency */
+    color:#032657;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 20px;
-    border: 7px solid #14b8a6; /* A lighter teal border */
+
     padding: 10px;
   }
   
