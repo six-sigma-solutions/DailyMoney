@@ -1,0 +1,836 @@
+/* ======================================================= */
+/* GLOBAL RESET & BODY STYLES                            */
+/* ======================================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+.container1 {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/* ======================================================= */
+/* HERO SECTION                                          */
+/* ======================================================= */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 60px 60px 60px;
+  background: linear-gradient(120deg, #fff 80%, #fbeaec 100%);
+  flex-wrap: wrap;
+  gap: 40px;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin-top: 50px;
+}
+
+.hero-content h1 {
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: 2px;
+  margin-bottom: 0.1em;
+}
+
+.hero-red {
+  color: #d32a2a;
+  font-weight: 400;
+  font-size: 70px;
+  font-family: "Poppins", sans-serif;
+}
+
+.money {
+  color: #817676;
+}
+
+.hero-content h2 {
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  margin-bottom: 0.2em;
+  font-family: Poppins, sans-serif;
+}
+
+#hero-subtitle {
+  color: green;
+  font-size: 20px;
+  font-family: 'sans-serif';
+}
+
+.hero-desc {
+  font-size: 1.3em;
+  color: #7c7272;
+  margin-bottom: 1.5em;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+.daily-money {
+  color: chocolate;
+}
+
+.hero-actions {
+  margin-top: 10px;
+}
+
+.see-work-btn {
+  background-color: #b71c1c;
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.get-started-btn {
+  color: #0b0a0a;
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-image-container {
+  flex: 1;
+  min-width: 320px;
+  max-width: 500px;
+  height: 450px;
+}
+
+.cutout-shape {
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  position: relative;
+  overflow: hidden;
+  mask-image: url('/cutout-mask.jpg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-image: url('/cutout-mask.jpg');
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-promo-image {
+  width: 100%;
+  height: 100%;
+  padding: 30px 40px 0 0;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+  filter: grayscale(100%);
+  transform: scale(1);
+  transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.5s ease;
+}
+
+.cutout-shape:hover .hero-promo-image {
+  filter: grayscale(0%);
+  transform: scale(1.09);
+}
+
+/* ======================================================= */
+/* SOLUTIONS SECTION                                     */
+/* ======================================================= */
+.solution-container {
+  display: flex;
+  align-items: center;
+  gap: 60px; /* Space between text and image */
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+
+.solution-text-content {
+  flex: 1; /* Takes up half the space */
+  min-width: 300px;
+  display:flex;
+}
+
+.solution-image-container {
+  flex: 1; /* Takes up the other half */
+  align-items:flex-end;
+  min-width: 300px;
+}
+
+.solution-text-content {
+  flex: 1; /* Takes up half the space */
+  min-width: 300px;
+  /* The extra 'display:flex' was removed from here */
+}
+
+.solution-image-container {
+  flex: 1; /* Takes up the other half */
+  min-width: 300px;
+}
+/* Replace with this rule */
+.solution-image-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Reusing the bullet point styles from before */
+.solution-bullets {
+  list-style: none;
+  padding: 0;
+  margin-top: 24px;
+}
+
+.solution-bullets li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 18px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #070707;
+}
+
+.ar-vr-nested-card .solution-bullets li {
+  font-size: 1.4em;
+}
+
+/* --- Add this to Home.css --- */
+
+.nested-card-title {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #d32a2a;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee; /* Adds a subtle line below the heading */
+}
+
+.solution-bullets li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  color: #d32a2a;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .solution-container {
+    flex-direction: column-reverse; /* Puts image on top on mobile */
+  }
+}
+
+.solutions-tagline {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.solutions-section h2 {
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: #111;
+}
+
+.solutions-section .red-text {
+  color: #d32a2a;
+}
+
+.solutions-description {
+  font-size: 1.2em;
+  color: #666;
+  line-height: 1.6;
+}
+
+.solutions-grid {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.solution-card1 {
+  flex: 1 1 350px;
+  min-width: 320px;
+  max-width: 420px;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.solution-card-content {
+  padding: 32px;
+}
+
+.solution-card-title1 {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 1.2em;
+}
+
+.solution-card-title1 span{
+  color: #b71c1c;
+}
+
+.solution-card-desc1 {
+  color: #666;
+  font-size: 1.08em;
+  line-height: 1.4;
+}
+
+.solution-card-img1 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top: 1px solid #e0e0e0;
+}
+
+.solution-card-img1 {
+  transition: filter 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+/* 2. On hover of the card, change the image back to its original color */
+.solution-card1:hover .solution-card-img1 {
+  transform: scale(1.04) translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Part 3: AR/VR Layout */
+.ar-vr-container {
+  display: flex;
+  gap: 50px;
+  align-items: stretch;
+  margin-top: 80px;
+}
+
+.ar-vr-image-column {
+  /* This sets a fixed width similar to the cards above */
+  flex: 0 0 395px;
+  position: relative;
+  min-height: 500px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ar-vr-image-column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ar-vr-image-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 1.2em;
+}
+
+.ar-vr-content-column {
+  /* This makes the column take up the rest of the space */
+  flex: 1;
+  display: flex;
+  /* This will vertically center the card inside the column */
+  justify-content: center; 
+}
+
+.ar-vr-content-column h3 {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.ar-vr-content-column p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+.ar-vr-nested-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 32px;
+  width: 100%; /* Ensure it fills the column width */
+}
+
+/* ======================================================= */
+/* TESTIMONIAL SECTION                                   */
+/* ======================================================= */
+.testimonial-section {
+  padding: 100px 60px;
+  background-color: #fafafa;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-section::before {
+  content: '“';
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25em;
+  font-family: serif;
+  color: #e9e9e9;
+}
+
+.testimonial-content {
+  max-width: 900px;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-quote {
+  font-size: 2.2em;
+  font-weight: 450;
+  line-height: 1.3;
+  color: #000000;
+  margin: 0 0 30px 0;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.author-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.author-details {
+  text-align: left;
+}
+
+.author-name {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #111;
+  margin: 0;
+}
+
+.author-title {
+  font-size: 1em;
+  color: #666;
+  margin: 0;
+}
+/* ======================================================= */
+/* CORE TEAM SECTION STYLES (HIERARCHICAL LAYOUT)        */
+/* ======================================================= */
+.clients-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  text-align: center;
+  /* New styles to stack the founder and the grid */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clients-title {
+  font-size: 2.4em;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+/* New style for the Founder's card */
+.founder-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px; /* Space between founder and the team */
+}
+
+/* Larger image for the founder */
+.founder-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* This is the grid for the rest of the team */
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.team-member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+}
+
+.team-member-card img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* This style applies to both founder and team member names */
+.team-member-name {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* This style applies to both founder and team member roles */
+.team-member-role {
+  font-size: 1em;
+  color: #777;
+}
+/* ======================================================= */
+/* FOOTER                                                */
+/* ======================================================= */
+.footer-main1 {
+  max-width: 1700px;
+  margin: 30px 60px;
+  padding: 48px 32px;
+  border-radius: 28px;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+}
+
+.footer-cta1 {
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.footer-cta1 h2 {
+  font-size: 2.4em;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.footer-cta1 .say-hello-btn1 {
+  background: #d32a2a;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 32px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.footer-cta1 .say-hello-btn1:hover {
+  background: #b71c1c;
+}
+
+.footer-divider1 {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 24px 0;
+}
+
+.footer-bottom-content1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-logo-block1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 340px;
+  gap: 12px;
+}
+
+.footer-logo-block1 img {
+  width: 50px;
+}
+
+.footer-logo-text1 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.footer-subtext1 {
+  font-size: 1.1em;
+  color: #bdbdbd;
+}
+
+.footer-links-block1 {
+  display: flex;
+  margin-right: 150px;
+  gap: 200px;
+  flex-wrap: wrap;
+}
+
+.footer-links-col1 h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.footer-links-col1 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links-col1 ul li {
+  margin-bottom: 12px;
+}
+
+.footer-links-col1 ul li a {
+  color: #949090;
+  line-height: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.footer-links-col1 ul li a:hover {
+  color: #d32a2a;
+}
+
+.footer-copyright1 {
+  color: #bdbdbd;
+  font-size: 0.9em;
+  margin-top: 20px;
+}
+
+/* ======================================================= */
+/* RESPONSIVE STYLES                                     */
+/* ======================================================= */
+@media (max-width: 1200px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 30px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .hero-image-container {
+    width: 80%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .container1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .hero-image-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .solutions-grid,
+  .ar-vr-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .clients-logos {
+    gap: 40px;
+  }
+
+  .footer-bottom-content1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .container1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero-image-container {
+    order: 1;
+  }
+  
+  .hero-content {
+    order: 2;
+  }
+
+  .hero-red {
+    font-size: 42px;
+  }
+
+  .hero-content h2 {
+    font-size: 28px;
+  }
+
+  #hero-subtitle {
+    font-size: 22px;
+  }
+
+  .hero-desc {
+    font-size: 1em;
+  }
+
+  .see-work-btn, .get-started-btn {
+    font-size: 18px;
+  }
+
+  .solutions-section h2 {
+    font-size: 2.2em;
+  }
+
+  .testimonial-section {
+    padding: 80px 20px;
+  }
+
+  .testimonial-quote {
+    font-size: 1.5em;
+  }
+
+  .testimonial-section::before {
+    font-size: 15em;
+    opacity: 0.5;
+  }
+
+  .clients-title {
+    font-size: 1.8em;
+  }
+  
+  .footer-main1 {
+    padding: 32px 20px;
+  }
+
+  .footer-cta1 h2 {
+    font-size: 1.8em;
+  }
+  
+  .footer-logo-text1 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .container1 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero-section {
+    padding: 30px 16px;
+    gap: 24px;
+  }
+  
+  .hero-red {
+    font-size: 32px;
+  }
+  
+  .hero-content h2 {
+    font-size: 22px;
+  }
+  
+  #hero-subtitle {
+    font-size: 18px;
+  }
+  
+  .hero-desc {
+    font-size: 0.95em;
+  }
+  
+  .hero-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .see-work-btn, .get-started-btn {
+    font-size: 16px;
+  }
+  
+  .see-work-btn {
+    padding: 10px 18px;
+  }
+  
+  .get-started-btn {
+    margin-top: 10px;
+  }
+
+  .solutions-section h2 {
+    font-size: 1.8em;
+  }
+
+  .testimonial-quote {
+    font-size: 1.2em;
+  }
+
+  .clients-title {
+    font-size: 1.5em;
+  }
+  
+  .client-logo-block {
+    width: 100px;
+  }
+
+  .footer-cta1 h2 {
+    font-size: 1.5em;
+  }
+}
