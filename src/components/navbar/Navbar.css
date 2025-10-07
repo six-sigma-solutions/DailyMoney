@@ -6,11 +6,9 @@
   font-family: "Poppins", Arial, sans-serif;
 }
 
-
 /* NAVBAR */
 #navbar {
   width: 100%;
-  background-color: #fff;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -21,9 +19,8 @@
   align-items: center;
   justify-content: space-between;
   height: 72px;
-  padding: 0 50px;   /* was 40px → give more room */
+  padding: 0 50px; /* was 40px → give more room */
 }
-
 
 /* Logo */
 .logo img {
@@ -31,26 +28,24 @@
   display: block;
 }
 
-
 /* DESKTOP MENU */
 .desktop-menu {
   display: flex;
   gap: 32px;
   list-style: none;
   flex: 1;
-  justify-content: center;   /* Menu centered */
+  justify-content: center; /* Menu centered */
   align-items: center;
-  
 }
 
 #tab-name {
-   font-weight: 600;
-   color: #000000a5;
-   font-size: 18px;
-   font-family: "Poppins", Arial, sans-serif;
+  font-weight: 600;
+  color: #000000a5;
+  font-size: 18px;
+  font-family: "Poppins", Arial, sans-serif;
 }
 
-#tab-name:hover{
+#tab-name:hover {
   color: #110b03;
 }
 
@@ -128,13 +123,11 @@
   transition: background 0.3s ease;
 }
 
-@media (max-width:480px){
-  .contact-btn{
-     display: none;
+@media (max-width: 480px) {
+  .contact-btn {
+    display: none;
   }
 }
-
-
 
 .contact-btn:hover {
   background: #a00;
@@ -145,10 +138,8 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-left: auto;   /* push to right end */
+  margin-left: auto; /* push to right end */
 }
-
-
 
 /* Menu button */
 .menu-btn {
@@ -320,10 +311,9 @@
 }
 
 /* Keep icon color fixed (no hover effect) */
-.menu-bar{
-   color: #000;
+.menu-bar {
+  color: #000;
 }
 .mobile-close {
-  color: #fff !important;   /* desktop icons */
+  color: #fff !important; /* desktop icons */
 }
-

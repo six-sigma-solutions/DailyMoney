@@ -23,7 +23,7 @@ import Elder from "./components/elder/Elder";
 
 export default function App() {
   return (
-    <>
+    <div id="app">
       <Navbar />
 
       <Routes>
@@ -48,6 +48,6 @@ export default function App() {
         <Route path="/students" element={<Students />} />
         <Route path="/elder" element={<Elder />} />
       </Routes>
-    </>
+    </div>
   );
 }
