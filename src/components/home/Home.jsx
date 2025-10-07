@@ -259,52 +259,50 @@ export default function Home() {
 
       <footer1>
         <div className="footer-main1">
+          
           <div className="footer-cta1">
-            <h2>Tell us about your project</h2>
-            {/* Changed class name below */}
-            <button className="say-hello-btn1">Say Hello</button>
-          </div>
-          {/* Changed class name below */}
+            <img className="img-fluid" src="/footer1.jpg"></img>
+<button className="say-hello-btn1" onClick={handleSayHelloClick}>
+              Say Hello
+            </button>          </div>
           <hr className="footer-divider1" />
-          {/* Changed class name below */}
           <div className="footer-bottom-content1">
-            {/* Changed class name below */}
             <div className="footer-logo-block1">
-            <img
-              src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png"
-              alt="DailyMoney Logo"
-            />
-              {/* Changed class name below */}
+              <img
+                src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png"
+                alt="DailyMoney Logo"
+              />
               <span className="footer-logo-text1">Daily Money</span>
-              {/* Changed class name below */}
-              <span className="footer-subtext1">Imagine a world where nature's abundance powers your financial future. fresh leaves and fruits dance in the dark.</span>
-              {/* Changed class name below */}
+              <span className="footer-subtext1">Six Sigma Solution, NKC Towers 1st Floor, Opp to Government Engineering College, Kottagoundampatti, Karuppur, Salem-636011. TamilNadu, India.</span>
               <span className="footer-copyright1">
                 © 2025. All rights reserved.
               </span>
             </div>
-            {/* Changed class name below */}
+            {/* START: UPDATED LINKS SECTION */}
             <div className="footer-links-block1">
-              {/* Changed class name below */}
               <div className="footer-links-col1">
                 <h4>Company</h4>
+                {/* 2. Replace <a> tags with <Link> tags */}
                 <ul>
-                  <li><a href="#">Work</a></li>
-                  <li><a href="#">Process</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Blog</a></li>
+                  <li><Link to="/">Home</Link></li>
+                  <li><Link to="/health">Health</Link></li>
+                  <li><Link to="/wealth">Wealth</Link></li>
+                  <li><Link to="/family">Family</Link></li>
+                  <li><Link to="/overview">About</Link></li>
+                  <li><Link to="/entrepreneur">My Life</Link></li>
                 </ul>
               </div>
-              {/* Changed class name below */}
               <div className="footer-links-col1">
                 <h4>Connect</h4>
                 <ul>
-                  <li><a href="#">Follow on X</a></li>
-                  <li><a href="#">Book a call</a></li>
-                  <li><a href="#">Get in touch</a></li>
+                  {/* These can remain <a> tags as they link to external sites */}
+                  <li><a href="https://x.com/?lang=en">Follow on X</a></li>
+                  <li><a href="https://facebook.com">Follow on Facebook</a></li>
+                  <li><a href="">Follow on Instagram</a></li>
                 </ul>
               </div>
             </div>
+            {/* END: UPDATED LINKS SECTION */}
           </div>
         </div>
       </footer1>
