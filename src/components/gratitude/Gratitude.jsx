@@ -11,13 +11,7 @@ const Gratitude = () => {
   
   return (
     <div className="dm-grt-wrapper">
-      <header className="dm-grt-header">
-        <div className="dm-grt-logo">
-          Daily Money
-        </div>
-        {/* Navbar is provided by the parent App.jsx, but the original HTML had a simplified header */}
-      </header>
-
+     
       {/* Hero Section */}
       <section className="dm-grt-hero" id="dm-grt-home">
         <div className="dm-grt-hero-content">
