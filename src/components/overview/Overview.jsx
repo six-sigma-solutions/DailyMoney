@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./Overview.css";
 
 const ZigzagLayout = () => {
   const getStarted = () => {
