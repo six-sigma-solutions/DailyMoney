@@ -1,17 +1,18 @@
-/* Reset & base - Scoped to the component */
+/* ---------------- RESET & BASE ---------------- */
 .dm-vsn-main-content * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 .dm-vsn-main-content {
-  background: var(--dm-vsn-bg, #ffffff); 
+  background: var(--dm-vsn-bg, #ffffff);
   font-family: 'Montserrat', Arial, sans-serif;
   color: #111;
   min-height: 100vh;
 }
 
-/* Custom CSS Variables for this component */
+/* ---------------- CSS VARIABLES ---------------- */
 .dm-vsn-main-content {
   --dm-vsn-accent: #c92a2a;
   --dm-vsn-muted: #9aa0a6;
@@ -20,19 +21,31 @@
   --dm-vsn-max-width: 1320px;
 }
 
+/* ---------------- CONTAINER ---------------- */
 .dm-vsn-container {
   max-width: var(--dm-vsn-max-width);
   margin: 0 auto;
   padding: 28px;
 }
 
-/* HERO CARD STYLES */
+/* ---------------- TITLE ---------------- */
+.dm-title {
+  background-color: var(--dm-vsn-accent);
+  text-align: center;
+  padding: 10px;
+  margin: 20px 60px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+/* ---------------- HERO CARD ---------------- */
 .dm-vsn-hero-card {
   display: flex;
-  width:100%;
   justify-content: center;
   align-items: center;
-  padding:18px 0px; 
+  padding: 18px 0;
 }
 
 .dm-vsn-card-inner {
@@ -44,30 +57,22 @@
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.21);
   cursor: pointer;
   overflow: hidden;
-  transition: box-shadow 0.35s ease;
   position: relative;
+  transition: box-shadow 0.35s ease;
 }
-
-.dm-title{
-  background-color: #d32a2a;
-  text-align: center;
-  padding: 5px ;
-  margin: 5px 60px 0 60px;
-  border-radius: 12px;
-  color: white;
-  font-weight: bold;
-  font-size: 2.5rem;
-}
-
-
 
 .dm-vsn-card-media {
-  display: block;
   width: 100%;
   height: auto;
   min-height: 300px;
   object-fit: cover;
   opacity: 0.65;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.dm-vsn-card-media:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
 }
 
 .dm-vsn-card-overlay {
@@ -77,7 +82,7 @@
   width: 100%;
   height: 100%;
   padding: 40px 30px;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
   display: flex;
   align-items: center;
 }
@@ -85,8 +90,7 @@
 .dm-vsn-card-text {
   max-width: 50%;
   color: #fff;
-  /* FIX: Ensure content starts properly inside the overlay */
-  text-align: left; 
+  text-align: left;
 }
 
 .dm-vsn-card-text h1 {
@@ -94,7 +98,7 @@
   line-height: 1.2;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #fff; 
+  color: #fff;
 }
 
 .dm-vsn-kicker {
@@ -111,30 +115,49 @@
   color: #ccc;
 }
 
-.dm-vsn-tagline {
-  font-size: 0.9rem;
-  color: #fff;
-  padding: 10px;
-  border-left: 3px solid var(--dm-vsn-accent);
+/* ---------------- CARD FEATURES ---------------- */
+.card-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
 }
 
-/* STANDARDS SECTION STYLES */
+.col {
+  background: rgba(0,0,0,0.05);
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.col:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(201, 42, 42, 0.3);
+}
+
+/* ---------------- STANDARDS ---------------- */
 .dm-vsn-standards {
   background: #f4f4f4;
-  padding: 40px 40px;
+  padding: 40px;
 }
 
 .dm-vsn-standards .dm-vsn-h2 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: var(--dm-vsn-dark);
-    margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--dm-vsn-dark);
+  margin-bottom: 10px;
 }
+
 .dm-vsn-standards .dm-vsn-muted {
-    color: var(--dm-vsn-muted);
+  color: var(--dm-vsn-muted);
 }
+
 .dm-vsn-standards .dm-vsn-small {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 .dm-vsn-grid-features {
@@ -148,61 +171,70 @@
   background: var(--dm-vsn-bg);
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   border-top: 4px solid var(--dm-vsn-accent);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dm-vsn-feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(201, 42, 42, 0.3);
 }
 
 .dm-vsn-feature h4 {
   font-size: 1rem;
   font-weight: 600;
   color: var(--dm-vsn-dark);
-  margin: 0;
   line-height: 1.4;
 }
 
-/* ACTION BUTTON STYLES */
+/* ---------------- ACTION BUTTON ---------------- */
 .dm-vsn-action-section {
-    padding: 30px 1rem;
-    text-align: center;
+  padding: 30px 1rem;
+  text-align: center;
 }
+
 .dm-vsn-animated-btn {
-  background: var(--dm-vsn-accent); 
-  color: white;
+  background: var(--dm-vsn-accent);
+  color: #fff;
   border: none;
   padding: 12px 24px;
   font-size: 1rem;
   font-weight: 600;
   border-radius: 6px;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
 }
+
 .dm-vsn-animated-btn:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
+  transform: scale(1.05);
+  opacity: 0.9;
 }
+
+/* ---------------- SPACER ---------------- */
 .dm-vsn-spacer {
-    display: block;
-    height: 60px;
+  display: block;
+  height: 60px;
 }
 
-
-/* Media Queries */
+/* ---------------- MEDIA QUERIES ---------------- */
 @media (max-width: 900px) {
   .dm-vsn-card-overlay {
-    /* Change gradient direction to be bottom-up for mobile stack */
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.1) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.1) 100%);
     padding: 20px;
     align-items: flex-end;
   }
+
   .dm-vsn-card-text {
     max-width: 100%;
-    /* FIX: Center text block when it takes full width */
-    text-align: center; 
+    text-align: center;
   }
+
   .dm-vsn-card-text h1 {
     font-size: 1.8rem;
   }
+
   .dm-vsn-grid-features {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -212,10 +244,12 @@
   .dm-vsn-grid-features {
     grid-template-columns: 1fr;
   }
-  .dm-vsn-hero-card {
-    padding-top: 60px;
-  }
+
   .dm-vsn-card-text h1 {
     font-size: 1.5rem;
+  }
+
+  .dm-vsn-hero-card {
+    padding-top: 60px;
   }
 }
