@@ -18,6 +18,7 @@ import Income from "./components/income/Income";
 import Students from "./components/students/Students";
 
 import Elder from "./components/elder/Elder";
+import MyPromises from "./components/mypromises/Mypromises";
 
 export default function App() {
   return (
@@ -45,6 +46,8 @@ export default function App() {
         <Route path="/income" element={<Income />} />
         <Route path="/students" element={<Students />} />
         <Route path="/elder" element={<Elder />} />
+        <Route path="/mypromises" element={<MyPromises />} />
+
       </Routes>
     </div>
   );
