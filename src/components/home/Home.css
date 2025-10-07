@@ -33,7 +33,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 50px 60px 60px 60px;
-  background: linear-gradient(120deg, #fcfafa 80%, #fbeaec 100%);
   flex-wrap: wrap;
   gap: 40px;
   overflow: hidden;

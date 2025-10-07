@@ -14,12 +14,10 @@ import Womenempowerment from "./components/womenempowerment/Womenempowerment";
 import FounderMsg from "./components/founderMsg/FounderMsg";
 import PresidentMsg from "./components/presidentMsg/PresidentMsg";
 import CoreTeam from "./components/coreTeam/CoreTeam";
-import Income from "./components/income/Income"
+import Income from "./components/income/Income";
 import Students from "./components/students/Students";
 
 import Elder from "./components/elder/Elder";
-
-
 
 export default function App() {
   return (
@@ -40,11 +38,11 @@ export default function App() {
         <Route path="/women-empowerment" element={<Womenempowerment />} />
         <Route path="/founders-msg" element={<FounderMsg />} />
         <Route path="/presidents-msg" element={<PresidentMsg />} />
-        <Route path="/core-Team" element={<CoreTeam/>} />
+        <Route path="/core-Team" element={<CoreTeam />} />
         <Route path="/entrepreneur" element={<Entrepreneur />} />
         <Route path="/income" element={<Income />} />
-        <Route path="/students" element={<Students/>} />   
-        <Route path="/income" element={<Income />}/>
+        <Route path="/students" element={<Students />} />
+        <Route path="/income" element={<Income />} />
         <Route path="/students" element={<Students />} />
         <Route path="/elder" element={<Elder />} />
       </Routes>
