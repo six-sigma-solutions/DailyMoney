@@ -4,7 +4,7 @@ import "./Mypromises.css"; // Import the new styling file
 
 const Mypromises = () => {
 // Action from the original HTML: navigate to the external link
-  const handleGetStarted = (e) => {
+  const handleGetMove = (e) => {
     e.preventDefault();
     window.location.href = 'https://cpdian.goherbalife.com/Catalog/Home/Index/en-IN/';
   };
@@ -21,7 +21,7 @@ const Mypromises = () => {
         </div>
 
         {/* The button's onClick now triggers the navigation */}
-        <button className="mypromises-btn" onClick={handleGetStarted}>
+        <button className="mypromises-btn" onClick={handleGetMove}>
           GET STARTED
         </button>
       </div>
