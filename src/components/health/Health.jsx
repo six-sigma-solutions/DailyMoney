@@ -49,54 +49,52 @@ const Health = () => {
       </section>
 
       {/* Container Sections */}
-      <div className="container left-image">
-        <img src="image11.jpeg" alt="Styled" className="styled-img health-order-img" />
-        <div className="box health-order-heading">
-          <h1>“I am committed to wellness for life.”</h1>
-        </div>
-      </div>
 
       <div className="container-1 right-image">
         <img src="image1.jpeg" alt="Styled" className="styled-img" />
-        <div className="box-1">
+        <div className="box-1 color1">
           <h1>“Health and fitness are not temporary they are my lifetime goal.”</h1>
         </div>
       </div>
 
       <div className="container left-image">
-        <img src="image3.jpeg" alt="Styled" className="styled-img health-order-img" />
-        <div className="box health-order-heading">
-          <h1>“I need lifelong health and fitness.”</h1>
+        <img src="image11.jpeg" alt="Styled" className="styled-img health-order-img" />
+        <div className="box health-order-heading color2">
+          <h1>“I am committed to wellness for life.”</h1>
         </div>
       </div>
 
-      <div className="container-1 right-image">
+      <div className="container right-image">
+        <div className="box health-order-heading color3">
+          <h1>“I need lifelong health and fitness.”</h1>
+        </div>
+        <img src="image3.jpeg" alt="Styled" className="styled-img health-order-img" />
+      </div>
+
+      <div className="container-1 left-image">
         <img src="image4.jpeg" alt="Styled" className="styled-img" />
-        <div className="box-1">
+        <div className="box-1 color4">
           <h1>“I want to be fit, strong, and energetic for my entire life.”</h1>
         </div>
       </div>
 
+
       {/* Footer */}
       <footer id="footer" className="footer">
-
         <h2 className="english">
           "No need of medicine if you allow proper digestion between meals."
         </h2>
         <h1>“மருந்தென வேண்டாவாம் யாக்கைக்கு அருந்தியது<br></br>
           <span className="car">"</span>அற்றது போற்றி உணின்.”</h1>
-          <h3 className="author">- திருக்குறள்.</h3>
+        <h3 className="author">- திருக்குறள்.</h3>
         <h2>
           முன் உண்டது செரித்ததைத் தெளிவாக அறிந்து, அதன் பின்னரே உண்பானால்,
           அவனுடைய உடலுக்கு ‘மருந்து’ வேண்டாம்.
         </h2>
-
         <Link className="view-more-link" to="/wealth">
-      <button className="view-more" type="button">View More</button>
-      </Link>
-
+          <button className="view-more" type="button">View More</button>
+        </Link>
       </footer>
-      
       <Footer />
     </div>
   );

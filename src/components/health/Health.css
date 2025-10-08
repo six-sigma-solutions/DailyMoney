@@ -1,3 +1,8 @@
+/* Zigzag content color classes */
+.color1 h1 { color: #d32a2a; }
+.color2 h1 { color: #0a7c5c; }
+.color3 h1 { color: #1a3a8a; }
+.color4 h1 { color: #b11597; }
 /* ---------------- VARIABLES ---------------- */
 :root {
   --font-primary: 'Poppins', sans-serif;
@@ -122,7 +127,7 @@ img:hover { transform: scale(1.05); }
   background: #0f766e;
   color: #fff;
   font-weight: 500;
-  margin-top:3px;
+  margin-top: 40px;
   padding: 8px 32px;
   border-radius: 32px;
   text-decoration: none;
@@ -225,11 +230,11 @@ html {
 }
 
 .health-order-img {
-  order: 2; 
+  order: initial; /* allow flex-direction to determine placement */
 }
 
 .health-order-heading {
-  order: 1; 
+  order: initial; /* allow flex-direction to determine placement */
 }
 
 
@@ -326,6 +331,33 @@ html {
     margin-right: 20px;
 }
 
+/* Move the right-image box down slightly so the text appears lower on the page */
+.container-1.right-image .box-1 {
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .container-1.right-image .box-1 {
+    margin-top: 20px;
+    padding: 40px; /* reduce padding on small screens */
+  }
+}
+
+
+/* Shift left-image containers further left on wide screens */
+.container.left-image {
+  justify-content: flex-start; /* keep items aligned to left */
+  padding-left: 20px; /* reduce default container padding */
+}
+.container.left-image .box {
+  margin-left: 28px; /* spacing between image and text */
+  text-align: left;
+}
+
+@media (max-width: 992px) {
+  .container.left-image { padding-left: 16px; }
+  .container.left-image .box { margin-left: 18px; }
+}
 .box-1 img:hover{
     animation: bounce 2s infinite;
 }
@@ -383,6 +415,76 @@ html {
 
 
 /* ---------------- RESPONSIVE ---------------- */
+
+/* Zig-zag layout helpers: force row / row-reverse so left-image/right-image
+   reliably render as alternating blocks. Also set spacing and text alignment
+   per side; mobile will stack vertically below. */
+.container.left-image,
+.container-1.left-image {
+  flex-direction: row; /* image left, text right */
+}
+
+.container.right-image,
+.container-1.right-image {
+  flex-direction: row-reverse; /* image right, text left */
+}
+
+.container.left-image .styled-img,
+.container-1.left-image .styled-img {
+  margin-right: 30px;
+  margin-left: 0;
+}
+
+.container.right-image .styled-img,
+.container-1.right-image .styled-img {
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+.container.left-image .box,
+.container-1.left-image .box-1 {
+  text-align: left;
+}
+
+.container.right-image .box,
+.container-1.right-image .box-1 {
+  text-align: right;
+}
+
+/* ensure any ordering helpers don't clash with flex-direction */
+.health-order-img { order: 0; }
+.health-order-heading { order: 0; }
+
+/* Mobile override: stack vertically and center content */
+@media (max-width: 768px) {
+  .container, .container-1 {
+    flex-direction: column !important;
+    align-items: center;
+    padding: 24px;
+  }
+  .container .styled-img, .container-1 .styled-img {
+    width: 320px;
+    height: 320px;
+    margin: 0 0 18px 0;
+  }
+  .container .box, .container-1 .box-1 {
+    text-align: center !important;
+    padding: 32px 20px;
+  }
+}
+
+/* Targeted rule: force only the .force-right container to show image on right */
+.container.force-right {
+  flex-direction: row-reverse !important;
+}
+.container.force-right .styled-img {
+  margin-left: 30px !important;
+  margin-right: 0 !important;
+}
+.container.force-right .box {
+  text-align: right !important;
+}
+
 /* ---------------- CONTAINERS (desktop first) ---------------- */
 .container,
 .container-1 {
@@ -396,8 +498,8 @@ html {
 
 .container img,
 .container-1 img {
-  width: 500px;
-  height: 700px;
+  width: 420px; /* reduced from 500px */
+  height: 580px; /* reduced from 700px */
   border-radius: 20px;
   object-fit: cover;
   cursor: pointer;
@@ -415,8 +517,8 @@ html {
 @media (max-width: 1024px) {
   .container img,
   .container-1 img {
-    width: 400px;
-    height: 400px;
+    width: 360px; /* slightly smaller on tablet */
+    height: 360px;
     margin: 0 auto;
   }
   .box, .box-1 {
@@ -458,10 +560,10 @@ html {
 }
 
 .health-order-heading{
-  order: 2;
+  order: initial;
 }
 .health-order-img{
-  order: 1;
+  order: initial;
 }
 }
 
@@ -487,26 +589,22 @@ html {
 
 /* Health Section Header */
 .health-section {
-  max-width: 1200px;
-  margin: 6rem auto 3rem auto;
-  padding: 0 1.5rem;
-  
+  max-width: 1100px;
+  margin: 4rem auto 2rem auto; /* reduce top spacing so heading sits closer to content */
+  padding: 0 1rem;
 }
 .health-section h1 {
-  color :#c00606; /* Tailwind green-500 */
-  font-size: 1.875rem; /* 30px for md:text-3xl */
+  color: #c00606;
+  font-size: 1.6rem; /* slightly smaller on default */
   font-weight: 900;
   text-align: center;
-  margin-bottom: 1.5rem; /* 24px */
-}
-
-.health-section h1 {
-  padding: 20px 40px;
+  margin-bottom: 1rem;
+  padding: 12px 20px;
 }
 
 @media (min-width: 768px) {
   .health-section h1 {
-    font-size: 2.5rem;
+    font-size: 2rem; /* moderate desktop size */
   }
 }
 
