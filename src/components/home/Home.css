@@ -1685,6 +1685,7 @@ body {
   padding-top: 80px;
   z-index: 9999;
   backdrop-filter: blur(3px); /* keeps page visible but soft behind */
+  
 }
 
 .popup-container {
@@ -1697,7 +1698,11 @@ body {
   width: 90%;
   text-align: center;
   animation: fadeIn 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 .popup-title {
   font-size: 1.8em;
@@ -1707,9 +1712,13 @@ body {
 }
 
 .popup-text {
-  font-size: 1.1em;
-  color: #333;
+  
   margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #070552 ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
 .popup-close-btn {
@@ -1739,12 +1748,20 @@ body {
   }
 }
 
+@media (max-width: 900px) {
+  .popup-container {
+    background-color: aliceblue;
+  }
+
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .popup-container {
     width: 90%;
     padding: 20px;
     text-align: left;
+    
   }
 
   .popup-title {
@@ -1752,7 +1769,8 @@ body {
   }
 
   .popup-text {
-    font-size: 1em;
+    font-size: 22p;
+    color: #070552 ;
   }
 
   .popup-close-btn {

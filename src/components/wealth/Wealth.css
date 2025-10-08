@@ -45,7 +45,7 @@ body {
 .wealthy-header {
   background: transparent;
   padding: 20px 0;
-  text-align: center;
+  text-align: left;
 }
 .wealthy-logo {
   font-weight: 700;
@@ -80,7 +80,7 @@ body {
   box-shadow: 0 18px 40px rgba(11, 20, 25, 0.09);
   background: linear-gradient(180deg, #ffffff, #fbfcfc);
   width: 100%;
-  max-width: 800px;
+  
 }
 .wealthy-portrait-card img {
   width: 100%;
