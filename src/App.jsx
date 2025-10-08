@@ -5,6 +5,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
+import { useLocation } from 'react-router-dom';
 
 // Authentication Components
 import Login from "./components/auth/Login";
@@ -12,10 +13,13 @@ import Register from "./components/auth/Register";
 import ForgotPassword from "./components/auth/ForgotPassword";
 
 export default function App() {
+  const location = useLocation();
+  const hideNavbarPaths = ['/login', '/register', '/forgot-password'];
+  const hideNavbar = hideNavbarPaths.includes(location.pathname);
   return (
     <AuthProvider>
       <div id="app">
-        <Navbar />
+        {!hideNavbar && <Navbar />}
         <ScrollToTop />
 
         <Routes>

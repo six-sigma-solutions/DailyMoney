@@ -121,7 +121,7 @@ export default function Navbar() {
             <div className="auth-placeholder" />
           ) : isAuthenticated ? (
             <>
-              <Link to="/profile" className="auth-btn">Profile</Link>
+              <Link to="/" className="auth-btn">Home</Link>
               <button onClick={handleLogout} className="logout-btn">Logout</button>
             </>
           ) : (
@@ -163,7 +163,7 @@ export default function Navbar() {
               <div className="mobile-auth-placeholder" />
             ) : isAuthenticated ? (
               <>
-                <Link to="/profile" className="mobile-auth-btn" onClick={() => setMenuOpen(false)}>Profile</Link>
+                <Link to="/" className="mobile-auth-btn" onClick={() => setMenuOpen(false)}>Home</Link>
                 <button className="mobile-auth-btn logout" onClick={handleLogout}>Logout</button>
               </>
             ) : (

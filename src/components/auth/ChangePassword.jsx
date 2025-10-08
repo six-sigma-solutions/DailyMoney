@@ -184,11 +184,7 @@ const ChangePassword = () => {
               ← Back to Home
             </Link>
           </p>
-          <p>
-            <Link to="/profile" className="auth-link">
-              Update Profile
-            </Link>
-          </p>
+          {/* Profile page removed */}
         </div>
       </div>
     </div>
