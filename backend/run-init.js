@@ -2,6 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const mysql = require('mysql2/promise');
 
+require('dotenv').config();
+
 (async () => {
   try {
     const sqlPath = path.join(__dirname, 'init.sql');

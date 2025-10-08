@@ -148,6 +148,76 @@
   margin-left: auto; /* push to right end */
 }
 
+/* Authentication Section */
+.auth-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-btn,
+.register-btn,
+.logout-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.user-welcome {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Poppins", Arial, sans-serif;
+  background: #28a745;
+  color: white;
+  border: 2px solid #28a745;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.login-btn {
+  background: transparent;
+  color: #333;
+  border: 2px solid #333;
+}
+
+.login-btn:hover {
+  background: #333;
+  color: white;
+}
+
+.register-btn {
+  background: #667eea;
+  color: white;
+  border: 2px solid #667eea;
+}
+
+.register-btn:hover {
+  background: #5a6fd8;
+  border-color: #5a6fd8;
+}
+
+
+
+.logout-btn {
+  background: #dc3545;
+  color: white;
+  border: 2px solid #dc3545;
+}
+
+.logout-btn:hover {
+  background: #c82333;
+  border-color: #c82333;
+}
+
 /* Menu button */
 .menu-btn {
   background: transparent;
@@ -206,7 +276,8 @@
 .mobile-actions {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .mobile-close {
@@ -215,6 +286,67 @@
   color: #fff;
   font-size: 22px;
   cursor: pointer;
+}
+
+/* Mobile Authentication Buttons */
+.mobile-auth-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.mobile-auth-btn.login {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.mobile-auth-btn.login:hover {
+  background: white;
+  color: #333;
+}
+
+.mobile-auth-btn.register {
+  background: #667eea;
+  color: white;
+  border: 1px solid #667eea;
+}
+
+.mobile-auth-btn.register:hover {
+  background: #5a6fd8;
+  border-color: #5a6fd8;
+}
+
+.mobile-user-welcome {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  text-align: center;
+  cursor: default;
+  background: #28a745;
+  color: white;
+  border: 1px solid #28a745;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.mobile-auth-btn.logout {
+  background: #dc3545;
+  color: white;
+  border: 1px solid #dc3545;
+}
+
+.mobile-auth-btn.logout:hover {
+  background: #c82333;
+  border-color: #c82333;
 }
 
 /* Menu list stacked */
