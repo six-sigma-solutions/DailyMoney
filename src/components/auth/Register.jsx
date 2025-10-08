@@ -5,7 +5,7 @@ import './Auth.css';
 
 const Register = () => {
   const navigate = useNavigate();
-  const { register, loading } = useAuth();
+  const { register, loading, login } = useAuth();
   const [formData, setFormData] = useState({
     username: '',
     email: '',
@@ -17,6 +17,7 @@ const Register = () => {
   const [message, setMessage] = useState({ type: '', text: '' });
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -54,6 +55,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setMessage({ type: '', text: '' });
+    setSubmitting(true);
 
     const validationError = validateForm();
     if (validationError) {
@@ -62,15 +64,41 @@ const Register = () => {
     }
 
     const { confirmPassword, ...registrationData } = formData;
-    const result = await register(registrationData);
-    
-    if (result.success) {
-      setMessage({ type: 'success', text: result.message });
-      setTimeout(() => {
-        navigate('/login');
-      }, 2000);
-    } else {
-      setMessage({ type: 'error', text: result.message });
+
+    try {
+      const result = await register(registrationData);
+
+      if (result.success) {
+        setMessage({ type: 'success', text: result.message || 'Registration successful' });
+
+        // Try to auto-login to improve UX. Use email if provided otherwise username.
+        try {
+          const loginPayload = {
+            username: registrationData.email || registrationData.username,
+            password: registrationData.password
+          };
+
+          const loginResult = await login(loginPayload);
+          if (loginResult && loginResult.success) {
+            // navigate into the protected app
+            navigate('/');
+            return;
+          }
+        } catch (err) {
+          // ignore auto-login errors and fall back to manual login flow
+        }
+
+        // If auto-login didn't work, send user to login page
+        setTimeout(() => {
+          navigate('/login');
+        }, 1200);
+      } else {
+        setMessage({ type: 'error', text: result.message || 'Registration failed' });
+      }
+    } catch (err) {
+      setMessage({ type: 'error', text: 'Registration failed. Please try again.' });
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -181,9 +209,9 @@ const Register = () => {
           <button 
             type="submit" 
             className="simple-submit-btn"
-            disabled={loading}
+            disabled={loading || submitting}
           >
-            {loading ? 'Creating Account...' : 'Signup'}
+            {loading || submitting ? 'Creating Account...' : 'Signup'}
           </button>
 
           <div className="signup-link">
