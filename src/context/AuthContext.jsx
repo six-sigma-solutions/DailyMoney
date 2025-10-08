@@ -50,14 +50,19 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  const login = async (email, password) => {
+  const login = async (loginData) => {
     try {
+      // Handle both username/email login
+      const loginPayload = loginData.email ? 
+        { email: loginData.email, password: loginData.password } : 
+        { username: loginData.username, password: loginData.password };
+
       const response = await fetch('http://localhost:4000/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ email, password })
+        body: JSON.stringify(loginPayload)
       });
 
       const data = await response.json();
@@ -66,9 +71,9 @@ export const AuthProvider = ({ children }) => {
         setUser(data.user);
         setToken(data.token);
         localStorage.setItem('token', data.token);
-        return { success: true };
+        return { success: true, message: data.message || 'Login successful' };
       } else {
-        return { success: false, error: data.message || 'Login failed' };
+        return { success: false, message: data.error || 'Login failed' };
       }
     } catch (error) {
       return { success: false, error: 'Network error. Please try again.' };
@@ -88,12 +93,10 @@ export const AuthProvider = ({ children }) => {
       const data = await response.json();
 
       if (response.ok) {
-        setUser(data.user);
-        setToken(data.token);
-        localStorage.setItem('token', data.token);
-        return { success: true };
+        // Registration successful but doesn't return user data immediately
+        return { success: true, message: data.message || 'Registration successful' };
       } else {
-        return { success: false, error: data.message || 'Registration failed' };
+        return { success: false, message: data.error || 'Registration failed' };
       }
     } catch (error) {
       return { success: false, error: 'Network error. Please try again.' };
@@ -121,10 +124,10 @@ export const AuthProvider = ({ children }) => {
       if (response.ok) {
         return { success: true, message: 'Password reset email sent' };
       } else {
-        return { success: false, error: data.message || 'Failed to send reset email' };
+        return { success: false, message: data.error || 'Failed to send reset email' };
       }
     } catch (error) {
-      return { success: false, error: 'Network error. Please try again.' };
+      return { success: false, message: 'Network error. Please try again.' };
     }
   };
 
