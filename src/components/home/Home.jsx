@@ -1,20 +1,57 @@
 // Home.jsx
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
 import videoFile from "../../assets/gif.mp4";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Home() {
   const navigate = useNavigate();
+  const [showPopup, setShowPopup] = useState(false);
+
 
   const handleSayHelloClick = () => {
     navigate("/contact");
   };
+
+   useEffect(() => {
+    const isLoggedIn = localStorage.getItem("isLoggedIn"); // check login status
+    const popupShown = localStorage.getItem("popupShown"); // check if popup already shown for this login 
+
+    // ✅ Show popup only once after login and never again until logout
+    if (isLoggedIn && !popupShown) {
+      setShowPopup(true);
+      localStorage.setItem("popupShown", "true"); // mark popup as shown
+
+      // Auto-hide after 10 seconds
+      const timer = setTimeout(() => {
+        setShowPopup(false);
+      }, 10000);
+
+      return () => clearTimeout(timer);
+    }else {
+    setShowPopup(false); // 👈 Ensures popup stays hidden when not logged in
+  }
+  }, []);
   return (
+
     <div className="home-page">
-      {/* Hero Section */}
-      {/* Hero Section */}
+      {showPopup && (
+        <div className="popup-overlay">
+          <div className="popup-container">
+            <h2 className="popup-title">Welcome to Daily Money 💰</h2>
+            <p className="popup-text">
+              Empowering your journey toward health, wealth, and freedom.
+            </p>
+            <button
+              className="popup-close-btn"
+              onClick={() => setShowPopup(false)}
+            >
+              Got it →
+            </button>
+          </div>
+        </div>
+      )}
       <section className="hero-section">
         <div className="hero-content">
           <h1>
@@ -262,55 +299,74 @@ export default function Home() {
         </div>
       </section>
 
-      <footer1>
-        <div className="footer-main1">
-          
+      <footer className="footer-main1">
+        <div >
           <div className="footer-cta1">
             <img className="img-fluid" src="/footer1.jpg"></img>
-<button className="say-hello-btn1" onClick={handleSayHelloClick}>
+            <button className="say-hello-btn1" onClick={handleSayHelloClick}>
               Say Hello
-            </button>          </div>
+            </button>{" "}
+          </div>
           <hr className="footer-divider1" />
           <div className="footer-bottom-content1">
             <div className="footer-logo-block1">
               <img
                 src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png"
                 alt="DailyMoney Logo"
+
               />
               <span className="footer-logo-text1">Daily Money</span>
-              <span className="footer-subtext1">Six Sigma Solution, NKC Towers 1st Floor, Opp to Government Engineering College, Kottagoundampatti, Karuppur, Salem-636011. TamilNadu, India.</span>
+              <span className="footer-subtext1">
+                Six Sigma Solution, NKC Towers 1st Floor, Opp to Government
+                Engineering College, Kottagoundampatti, Karuppur, Salem-636011.
+                TamilNadu, India.
+              </span>
               <span className="footer-copyright1">
                 © 2025. All rights reserved.
               </span>
             </div>
-            {/* START: UPDATED LINKS SECTION */}
             <div className="footer-links-block1">
               <div className="footer-links-col1">
                 <h4>Company</h4>
-                {/* 2. Replace <a> tags with <Link> tags */}
                 <ul>
-                  <li><Link to="/">Home</Link></li>
-                  <li><Link to="/health">Health</Link></li>
-                  <li><Link to="/wealth">Wealth</Link></li>
-                  <li><Link to="/family">Family</Link></li>
-                  <li><Link to="/overview">About</Link></li>
-                  <li><Link to="/entrepreneur">My Life</Link></li>
+                  <li>
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li>
+                    <Link to="/health">Health</Link>
+                  </li>
+                  <li>
+                    <Link to="/wealth">Wealth</Link>
+                  </li>
+                  <li>
+                    <Link to="/family">Family</Link>
+                  </li>
+                  <li>
+                    <Link to="/overview">About</Link>
+                  </li>
+                  <li>
+                    <Link to="/entrepreneur">My Life</Link>
+                  </li>
                 </ul>
               </div>
               <div className="footer-links-col1">
                 <h4>Connect</h4>
                 <ul>
-                  {/* These can remain <a> tags as they link to external sites */}
-                  <li><a href="https://x.com/?lang=en">Follow on X</a></li>
-                  <li><a href="https://facebook.com">Follow on Facebook</a></li>
-                  <li><a href="">Follow on Instagram</a></li>
+                  <li>
+                    <a href="https://x.com/?lang=en">Follow on X</a>
+                  </li>
+                  <li>
+                    <a href="https://facebook.com">Follow on Facebook</a>
+                  </li>
+                  <li>
+                    <a href="">Follow on Instagram</a>
+                  </li>
                 </ul>
               </div>
             </div>
-            {/* END: UPDATED LINKS SECTION */}
           </div>
         </div>
-      </footer1>
+      </footer>
     </div>
   );
 }
