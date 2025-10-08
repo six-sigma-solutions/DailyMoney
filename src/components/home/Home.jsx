@@ -4,16 +4,17 @@ import React from "react";
 import "./Home.css";
 import videoFile from "../../assets/gif.mp4";
 import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
 
 export default function Home() {
   const navigate = useNavigate();
+  const { user } = useAuth();
 
   const handleSayHelloClick = () => {
     navigate("/contact");
   };
   return (
     <div className="home-page">
-      {/* Hero Section */}
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-content">
