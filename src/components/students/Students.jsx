@@ -126,7 +126,6 @@ export default function Students() {
       </Link>
       </div>
 
-      <footer className="stu-page-footer">© 2023 DailyMoney</footer>
       <Footer />
     </div>
   );
