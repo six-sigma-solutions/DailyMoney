@@ -67,7 +67,7 @@ body {
   background: linear-gradient(180deg, #ffffff 95%, #f9f9f9);
   border-radius: var(--radius);
   box-shadow: 0 10px 30px rgba(15, 20, 25, 0.06);
-  padding: 40px 20px;
+  padding: 10px 20px;
   margin: 20px auto;
 }
 .wealthy-hero-grid {
@@ -80,11 +80,11 @@ body {
   box-shadow: 0 18px 40px rgba(11, 20, 25, 0.09);
   background: linear-gradient(180deg, #ffffff, #fbfcfc);
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
 }
 .wealthy-portrait-card img {
   width: 100%;
-  height: auto;
+  height: 400px;
   display: block;
   object-fit: cover;
 }
@@ -98,7 +98,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 .wealthy-row.wealthy-reverse .wealthy-image-col {
   order: 2;
