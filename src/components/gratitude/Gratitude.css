@@ -26,11 +26,12 @@
   
   /* Hero Section */
   .dm-grt-hero {
-    height: 100vh; 
+    min-height: 60vh; 
+    padding: 60px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Assuming the cosmos.jpg file exists in your public directory */
+    /* Keep the universe background image */
     background-image: url('https://res.cloudinary.com/dgay8ba3o/image/upload/v1759742468/universe_bzez8f.png'); 
     background-size: cover;
     background-position: center;
@@ -39,12 +40,12 @@
   }
   
   .dm-grt-hero-content {
-    max-width: 800px;
-    padding: 40px;
-    /* Adding a subtle overlay for text readability over the image */
-    background: rgba(0, 0, 0, 0.75); 
+    max-width: 600px;
+    padding: 20px;
+    /* Remove black background for clean display */
+    background: transparent; 
     border-radius: 15px;
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    text-align: center;
   }
   
   .dm-grt-h1 {
@@ -76,6 +77,19 @@
     background: #fff;
     transform: scale(1.05);
   }
+
+  .dm-grt-universe-image {
+    width: 100%;
+    max-width: 550px;
+    height: 600px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
   /* Media Queries */
   @media (max-width: 768px) {
@@ -87,5 +101,10 @@
       }
       .dm-grt-hero-content {
           padding: 20px;
+      }
+      .dm-grt-universe-image {
+          width: 95%;
+          max-width: 400px;
+          margin-bottom: 20px;
       }
   }
