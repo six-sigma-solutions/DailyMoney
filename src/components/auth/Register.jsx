@@ -73,19 +73,26 @@ const Register = () => {
 
         // Try to auto-login to improve UX. Use email if provided otherwise username.
         try {
-          const loginPayload = {
-            username: registrationData.email || registrationData.username,
-            password: registrationData.password
-          };
+          // Try email first (many backends accept email), then username as fallback
+          const attempts = [
+            { username: registrationData.email, password: registrationData.password },
+            { username: registrationData.username, password: registrationData.password }
+          ];
 
-          const loginResult = await login(loginPayload);
-          if (loginResult && loginResult.success) {
-            // navigate into the protected app
-            navigate('/');
-            return;
+          for (const payload of attempts) {
+            if (!payload.username) continue;
+            try {
+              const loginResult = await login(payload);
+              if (loginResult && loginResult.success) {
+                navigate('/');
+                return;
+              }
+            } catch (e) {
+              // keep trying other payloads
+            }
           }
         } catch (err) {
-          // ignore auto-login errors and fall back to manual login flow
+          // ignore and fall back to manual login
         }
 
         // If auto-login didn't work, send user to login page

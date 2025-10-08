@@ -122,19 +122,34 @@ export const AuthProvider = ({ children }) => {
         body: JSON.stringify(userData)
       });
 
-      const data = await response.json();
+      const dataText = await response.text();
+      let data;
+      try { data = JSON.parse(dataText); } catch (e) { data = { message: dataText }; }
 
       if (response.ok) {
         // Registration successful but doesn't return user data immediately
         return { success: true, message: data.message || 'Registration successful' };
       } else {
+        // Prepare a helpful error message: look for common structures
+        let message = data.error || data.message || 'Registration failed';
+        if (!message && data.errors) {
+          if (Array.isArray(data.errors)) {
+            message = data.errors.map(err => err.msg || err.message || JSON.stringify(err)).join(', ');
+          } else if (typeof data.errors === 'object') {
+            message = Object.values(data.errors).map(v => v.msg || v.message || JSON.stringify(v)).join(', ');
+          }
+        }
+
         if (devFallback) {
           // Pretend registration succeeded in dev so flows continue
           return { success: true, message: 'Registration successful (dev fallback)' };
         }
-        return { success: false, message: data.error || 'Registration failed' };
+
+        console.debug('Register failed response:', response.status, data);
+        return { success: false, message };
       }
     } catch (error) {
+      console.error('Register network error:', error);
       if (devFallback) {
         return { success: true, message: 'Registration successful (dev fallback)' };
       }
