@@ -101,11 +101,7 @@ const Wealth = () => {
         </button>
       </Link>
 
-      {/* Footer */}
-      <footer className="wealthy-footer">
-        <p>© 2025 Daily Money | Empowering Wealth & Purpose</p>
-      </footer>
-      <Footer />
+      
     </div>
   );
 };
