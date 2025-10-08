@@ -60,8 +60,6 @@ export default function App() {
           <Route path="/students" element={<ProtectedRoute><Students /></ProtectedRoute>} />
           <Route path="/elder" element={<ProtectedRoute><Elder /></ProtectedRoute>} />
           <Route path="/mypromises" element={<ProtectedRoute><Mypromises /></ProtectedRoute>} />
-
-
         </Routes>
       </div>
     </AuthProvider>
