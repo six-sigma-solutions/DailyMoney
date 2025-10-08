@@ -25,7 +25,7 @@ export const AuthProvider = ({ children }) => {
 
   const validateToken = async () => {
     try {
-      const response = await fetch('http://localhost:4000/api/auth/validate', {
+      const response = await fetch('http://localhost:4000/api/auth/profile', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -52,10 +52,11 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (loginData) => {
     try {
-      // Handle both username/email login
-      const loginPayload = loginData.email ? 
-        { email: loginData.email, password: loginData.password } : 
-        { username: loginData.username, password: loginData.password };
+      // Always send 'username' field (backend accepts username or email via this field)
+      const loginPayload = {
+        username: loginData.email || loginData.username,
+        password: loginData.password
+      };
 
       const response = await fetch('http://localhost:4000/api/auth/login', {
         method: 'POST',
@@ -71,6 +72,8 @@ export const AuthProvider = ({ children }) => {
         setUser(data.user);
         setToken(data.token);
         localStorage.setItem('token', data.token);
+        // Make sure loading is false after a successful login so protected routes render
+        setLoading(false);
         return { success: true, message: data.message || 'Login successful' };
       } else {
         return { success: false, message: data.error || 'Login failed' };
@@ -107,6 +110,7 @@ export const AuthProvider = ({ children }) => {
     setUser(null);
     setToken(null);
     localStorage.removeItem('token');
+    setLoading(false);
   };
 
   const forgotPassword = async (email) => {
@@ -122,7 +126,8 @@ export const AuthProvider = ({ children }) => {
       const data = await response.json();
 
       if (response.ok) {
-        return { success: true, message: 'Password reset email sent' };
+        // In development the backend may include the reset token to aid testing
+        return { success: true, message: data.message || 'Password reset email sent', resetToken: data.resetToken };
       } else {
         return { success: false, message: data.error || 'Failed to send reset email' };
       }

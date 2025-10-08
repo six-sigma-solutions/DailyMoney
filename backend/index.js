@@ -160,8 +160,14 @@ app.post('/api/auth/forgot-password', async (req, res) => {
 
     // In a real application, you would send an email here
     console.log(`Password reset token for ${email}: ${resetToken}`);
-    
-    res.json({ message: 'If your email is registered, you will receive a password reset link.' });
+
+    // For development/testing, include the reset token in the response so the frontend can show it
+    const payload = { message: 'If your email is registered, you will receive a password reset link.' };
+    if (process.env.NODE_ENV !== 'production') {
+      payload.resetToken = resetToken;
+    }
+
+    res.json(payload);
   } catch (error) {
     console.error('Forgot password error:', error);
     res.status(500).json({ error: 'Server error processing password reset' });
