@@ -4,10 +4,11 @@ import React, { useEffect, useState } from "react";
 import "./Home.css";
 import videoFile from "../../assets/gif.mp4";
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../../context/AuthContext";
 
 export default function Home() {
   const navigate = useNavigate();
+  const [showPopup, setShowPopup] = useState(false);
+
 
   const handleSayHelloClick = () => {
     navigate("/contact");
@@ -35,8 +36,22 @@ export default function Home() {
   return (
 
     <div className="home-page">
-      {/* Hero Section */}
-      {/* Hero Section */}
+      {showPopup && (
+        <div className="popup-overlay">
+          <div className="popup-container">
+            <h2 className="popup-title">Welcome to Daily Money 💰</h2>
+            <p className="popup-text">
+               Deticated to the global IT Industry
+            </p>
+            <button
+              className="popup-close-btn"
+              onClick={() => setShowPopup(false)}
+            >
+              Got it →
+            </button>
+          </div>
+        </div>
+      )}
       <section className="hero-section">
         <div className="hero-content">
           <h1>
