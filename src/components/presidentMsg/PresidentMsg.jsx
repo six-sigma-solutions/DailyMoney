@@ -40,7 +40,7 @@ export default function PresidentMsg() {
                 {/* Message Content Section (SHARED classes) */}
                 <div className="message-content">
                     <p className="message-quote">
-                        "It is my honor to lead the DailyMoney community. We are dedicated to translating our founder's vision into tangible success for every individual. Our focus remains steadfast on the balance of "Health, Wealth, and Family".
+                        "It is my Honor to lead the DailyMoney community. We are dedicated to translating our Founder's vision into tangible success for every individual. Our focus remains steadfast on the balance of "Health, Wealth, and Family".
                     </p>
 
                     <p className="message-paragraph">
