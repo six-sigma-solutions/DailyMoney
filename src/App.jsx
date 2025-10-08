@@ -17,6 +17,9 @@ import Income from "./components/income/Income";
 import Womenempowerment from "./components/womenempowerment/Womenempowerment";
 import Students from "./components/students/Students";
 import Elder from "./components/elder/Elder";
+import Solution from "./components/solution/Solution";
+import Gratitude from "./components/gratitude/Gratitude";
+import Mypromises from "./components/mypromises/Mypromises";
 export default function App() {
   return (
     <AuthProvider>
@@ -42,6 +45,9 @@ export default function App() {
         <Route path="/womenempowerment" element={<Womenempowerment />} />
         <Route path="/students" element={<Students />} />
         <Route path="/elder" element={<Elder />} />
+        <Route path="/solution" element={<Solution />} />
+        <Route path="/gratitude" element={<Gratitude />} />
+        <Route path="/mypromises" element={<Mypromises />} />
 
         {/* fallback to home */}
         <Route path="*" element={<Navigate to="/" replace />} />

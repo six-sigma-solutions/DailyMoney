@@ -3,7 +3,7 @@ import './Gratitude.css';
 
 const Gratitude = () => {
 
-  // Action from the original HTML: navigate to the external link
+  // Action from the original HTML: navigate to the internal link
   const handleGetStarted = (e) => {
     e.preventDefault();
     window.location.href = '/mypromises'; 
