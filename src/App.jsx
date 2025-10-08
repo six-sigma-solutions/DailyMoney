@@ -35,30 +35,6 @@ export default function App() {
         <Navbar />
         <ScrollToTop />
 
-<<<<<<< HEAD
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/health" element={<Health />} />
-        <Route path="/family" element={<Family />} />
-        <Route path="/wealth" element={<Wealth />} />
-        <Route path="/visionmission" element={<Visionmission />} />
-        <Route path="/solution" element={<Solution />} />
-        <Route path="/gratitude" element={<Gratitude />} />
-        <Route path="/overview" element={<Overview />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/womenempowerment" element={<Womenempowerment />} />
-        <Route path="/founders-msg" element={<FounderMsg />} />
-        <Route path="/presidents-msg" element={<PresidentMsg />} />
-        <Route path="/core-Team" element={<CoreTeam />} />
-        <Route path="/entrepreneur" element={<Entrepreneur />} />
-        <Route path="/income" element={<Income />} />
-        <Route path="/students" element={<Students />} />
-        <Route path="/income" element={<Income />} />
-        <Route path="/students" element={<Students />} />
-        <Route path="/elder" element={<Elder />} />
-        <Route path="/mypromises" element={<Mypromises />} />
-     
-=======
         <Routes>
           {/* Authentication Routes - Only these are public */}
           <Route path="/login" element={<Login />} />
@@ -84,7 +60,6 @@ export default function App() {
           <Route path="/students" element={<ProtectedRoute><Students /></ProtectedRoute>} />
           <Route path="/elder" element={<ProtectedRoute><Elder /></ProtectedRoute>} />
           <Route path="/mypromises" element={<ProtectedRoute><Mypromises /></ProtectedRoute>} />
->>>>>>> c2c17eab9f4f568412c86c6866bb8c355edfeee7
 
 
         </Routes>
