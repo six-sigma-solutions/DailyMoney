@@ -53,7 +53,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -4rem; /* -mt-16 to pull it over the header background */
+    margin-top: 4rem; /* -mt-16 to pull it over the header background */
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
