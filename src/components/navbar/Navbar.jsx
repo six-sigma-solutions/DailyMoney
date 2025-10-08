@@ -1,17 +1,23 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { useAuth } from '../../context/AuthContext';
 import "./Navbar.css";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null); // for desktop
   const [openMobileDropdown, setOpenMobileDropdown] = useState(null); // for mobile
-  
+  const { isAuthenticated, logout } = useAuth();
+  const navigate = useNavigate();
 
-  
-
-
+  const handleLogout = async () => {
+    if (window.confirm('Are you sure you want to logout?')) {
+      await logout();
+      setMenuOpen(false);
+      navigate('/login');
+    }
+  };
 
   return (
     <nav id="navbar">
@@ -108,7 +114,19 @@ export default function Navbar() {
         {/* RIGHT SECTION DESKTOP */}
         <div className="right-section">
           <Link to="/contact" className="contact-btn">Contact</Link>
-          
+
+          {/* Authentication actions */}
+          {isAuthenticated ? (
+            <>
+              <Link to="/dashboard" className="auth-btn">Dashboard</Link>
+              <button onClick={handleLogout} className="logout-btn">Logout</button>
+            </>
+          ) : (
+            <>
+              <Link to="/login" className="auth-btn">Login</Link>
+              <Link to="/register" className="auth-btn">Signup</Link>
+            </>
+          )}
 
           <button
             className="menu-btn"
@@ -136,9 +154,20 @@ export default function Navbar() {
           </Link>
           <div className="mobile-actions">
             <Link to="/contact" className="contact-btn" onClick={() => setMenuOpen(false)}>Contact</Link>
-            
+
             {/* Mobile Authentication */}
-            
+            {isAuthenticated ? (
+              <>
+                <Link to="/dashboard" className="mobile-auth-btn" onClick={() => setMenuOpen(false)}>Dashboard</Link>
+                <button className="mobile-auth-btn logout" onClick={handleLogout}>Logout</button>
+              </>
+            ) : (
+              <>
+                <Link to="/login" className="mobile-auth-btn" onClick={() => setMenuOpen(false)}>Login</Link>
+                <Link to="/register" className="mobile-auth-btn" onClick={() => setMenuOpen(false)}>Signup</Link>
+              </>
+            )}
+
             <button type="button" className="mobile-close" onClick={() => setMenuOpen(false)}>
               <FaTimes />
             </button>
