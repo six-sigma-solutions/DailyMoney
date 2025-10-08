@@ -8,7 +8,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null); // for desktop
   const [openMobileDropdown, setOpenMobileDropdown] = useState(null); // for mobile
-  const { isAuthenticated, logout } = useAuth();
+  const { isAuthenticated, logout, loading } = useAuth();
   const navigate = useNavigate();
 
   const handleLogout = async () => {
@@ -116,9 +116,12 @@ export default function Navbar() {
           <Link to="/contact" className="contact-btn">Contact</Link>
 
           {/* Authentication actions */}
-          {isAuthenticated ? (
+          {loading ? (
+            // while auth is initializing, don't flash login/signup
+            <div className="auth-placeholder" />
+          ) : isAuthenticated ? (
             <>
-              <Link to="/dashboard" className="auth-btn">Dashboard</Link>
+              <Link to="/profile" className="auth-btn">Profile</Link>
               <button onClick={handleLogout} className="logout-btn">Logout</button>
             </>
           ) : (
@@ -156,9 +159,11 @@ export default function Navbar() {
             <Link to="/contact" className="contact-btn" onClick={() => setMenuOpen(false)}>Contact</Link>
 
             {/* Mobile Authentication */}
-            {isAuthenticated ? (
+            {loading ? (
+              <div className="mobile-auth-placeholder" />
+            ) : isAuthenticated ? (
               <>
-                <Link to="/dashboard" className="mobile-auth-btn" onClick={() => setMenuOpen(false)}>Dashboard</Link>
+                <Link to="/profile" className="mobile-auth-btn" onClick={() => setMenuOpen(false)}>Profile</Link>
                 <button className="mobile-auth-btn logout" onClick={handleLogout}>Logout</button>
               </>
             ) : (

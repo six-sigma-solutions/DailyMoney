@@ -180,8 +180,8 @@ const ChangePassword = () => {
 
         <div className="auth-footer">
           <p>
-            <Link to="/dashboard" className="auth-link">
-              ← Back to Dashboard
+            <Link to="/" className="auth-link">
+              ← Back to Home
             </Link>
           </p>
           <p>
