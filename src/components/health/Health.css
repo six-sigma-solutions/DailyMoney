@@ -60,17 +60,16 @@ img:hover { transform: scale(1.05); }
   flex-wrap: wrap;
   gap: 20px;
   /* tighten vertical padding so hero title is closer to the section heading */
-  padding: 12px 70px;
+  padding: 0px 70px;
 }
 
 
 .hero-content {
   max-width: 600px;
-  /* reduce top padding so title and heading are closer */
-  padding-top: 6px;
+  padding-top: 2px;
   text-align: left;
   position: relative;
-  
+  margin-top:0px;
 }
 
 .hero-content h1 {
