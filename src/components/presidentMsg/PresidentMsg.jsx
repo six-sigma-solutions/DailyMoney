@@ -2,7 +2,7 @@ import React from "react";
 import "./PresidentMsg.css"; // Import the new styling file
 
 const president = {
-    name: "A. Rajalakshmi", // Placeholder Name
+    name: "XXXXXX", // Placeholder Name
     role: "President", 
     // Placeholder image URL 
     image: "https://via.placeholder.com/150/0d9488/ffffff?text=President", 
@@ -28,7 +28,7 @@ export default function PresidentMsg() {
                 <div className="president-profile-area">
                     <img
                         src={president.image}
-                        alt={president.name}
+                        alt="XXXX"
                         className="president-image" // Renamed
                     />
                     
