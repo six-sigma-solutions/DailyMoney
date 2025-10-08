@@ -1,40 +1,51 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import { AuthProvider } from "./context/AuthContext";
-import ProtectedRoute from "./components/ProtectedRoute";
-
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
-import { useLocation } from 'react-router-dom';
-
-// Authentication Components
-import Login from "./components/auth/Login";
-import Register from "./components/auth/Register";
-import ForgotPassword from "./components/auth/ForgotPassword";
-
+import Health from "./components/health/Health";
+import Wealth from "./components/wealth/Wealth";
+import Family from "./components/family/Family";
+import Contact from "./components/contact/Contact";
+import Overview from "./components/overview/Overview";
+import Visionmission from "./components/visionmission/Visionmission";
+import FounderMsg from "./components/founderMsg/FounderMsg";
+import PresidentMsg from "./components/presidentMsg/PresidentMsg";
+import CoreTeam from "./components/coreTeam/CoreTeam";
+import Entrepreneur from "./components/entrepreneur/Entrepreneur";
+import Income from "./components/income/Income";
+import Womenempowerment from "./components/womenempowerment/Womenempowerment";
+import Students from "./components/students/Students";
+import Elder from "./components/elder/Elder";
 export default function App() {
-  const location = useLocation();
-  const hideNavbarPaths = ['/login', '/register', '/forgot-password'];
-  const hideNavbar = hideNavbarPaths.includes(location.pathname);
   return (
     <AuthProvider>
-      <div id="app">
-        {!hideNavbar && <Navbar />}
-        <ScrollToTop />
+      <ScrollToTop />
+      <Navbar />
 
-        <Routes>
-          {/* Authentication Routes - public */}
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/forgot-password" element={<ForgotPassword />} />
+      <Routes>
+        {/* Home as root */}
+        <Route path="/" element={<Home />} />
 
-          {/* Protected home route - user lands here after login */}
-          <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
+        {/* Public pages */}
+        <Route path="/health" element={<Health />} />
+        <Route path="/wealth" element={<Wealth />} />
+        <Route path="/family" element={<Family />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/overview" element={<Overview />} />
+        <Route path="/visionmission" element={<Visionmission />} />
+        <Route path="/founders-msg" element={<FounderMsg />} />
+        <Route path="/presidents-msg" element={<PresidentMsg />} />
+        <Route path="/core-team" element={<CoreTeam />} />
+        <Route path="/entrepreneur" element={<Entrepreneur />} />
+        <Route path="/income" element={<Income />} />
+        <Route path="/womenempowerment" element={<Womenempowerment />} />
+        <Route path="/students" element={<Students />} />
+        <Route path="/elder" element={<Elder />} />
 
-          {/* Catch-all redirect to home (ProtectedRoute will send to login if needed) */}
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
-      </div>
+        {/* fallback to home */}
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
     </AuthProvider>
   );
 }

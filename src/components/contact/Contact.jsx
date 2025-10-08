@@ -175,8 +175,9 @@ export default function Contact() {
     
     console.log('Submitting form:', formData);
     try {
-      console.log('Sending request to backend...');
-      const res = await fetch('http://localhost:4000/api/enquiries', {
+      const API_BASE = import.meta.env.VITE_API_URL || '';
+      console.log('Sending request to backend...', API_BASE || '(same-origin)');
+      const res = await fetch(`${API_BASE}/api/enquiries`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

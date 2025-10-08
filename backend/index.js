@@ -317,8 +317,13 @@ app.post('/api/enquiries', async (req, res) => {
   } catch (err) {
     // Provide clearer error when the database hasn't been selected/created
     console.error('DB error inserting enquiry:', err.message || err);
+    const isDev = process.env.NODE_ENV !== 'production';
     if (err && err.code === 'ER_NO_DB_ERROR') {
       return res.status(500).json({ error: 'No database selected. Run the init.sql to create the database or set DB_NAME in backend/.env' });
+    }
+    // In development return detailed error to help debugging
+    if (isDev) {
+      return res.status(500).json({ error: err.message || err });
     }
     res.status(500).json({ error: 'Database error' });
   }
@@ -336,3 +341,16 @@ app.get('/api/enquiries/recent', async (req, res) => {
 });
 
 app.listen(port, () => console.log(`Server listening on port ${port}`));
+
+// Optional: serve built frontend from backend in production
+const path = require('path');
+const fs = require('fs');
+const distPath = path.join(__dirname, '..', 'dist');
+
+if (process.env.NODE_ENV === 'production' && fs.existsSync(distPath)) {
+  app.use(express.static(distPath));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(distPath, 'index.html'));
+  });
+  console.log('Serving frontend from backend dist folder');
+}

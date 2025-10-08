@@ -15,7 +15,6 @@ export default function Navbar() {
     if (window.confirm('Are you sure you want to logout?')) {
       await logout();
       setMenuOpen(false);
-      navigate('/login');
     }
   };
 
@@ -115,20 +114,8 @@ export default function Navbar() {
         <div className="right-section">
           <Link to="/contact" className="contact-btn">Contact</Link>
 
-          {/* Authentication actions */}
-          {loading ? (
-            // while auth is initializing, don't flash login/signup
-            <div className="auth-placeholder" />
-          ) : isAuthenticated ? (
-            <>
-              <button onClick={handleLogout} className="logout-btn">Logout</button>
-            </>
-          ) : (
-            <>
-              <Link to="/login" className="auth-btn">Login</Link>
-              <Link to="/register" className="auth-btn">Signup</Link>
-            </>
-          )}
+          {/* Authentication actions hidden for public site */}
+          <div className="auth-placeholder" />
 
           <button
             className="menu-btn"
@@ -157,20 +144,8 @@ export default function Navbar() {
           <div className="mobile-actions">
             <Link to="/contact" className="contact-btn" onClick={() => setMenuOpen(false)}>Contact</Link>
 
-            {/* Mobile Authentication */}
-            {loading ? (
-              <div className="mobile-auth-placeholder" />
-            ) : isAuthenticated ? (
-              <>
-                <Link to="/" className="mobile-auth-btn" onClick={() => setMenuOpen(false)}>Home</Link>
-                <button className="mobile-auth-btn logout" onClick={handleLogout}>Logout</button>
-              </>
-            ) : (
-              <>
-                <Link to="/login" className="mobile-auth-btn" onClick={() => setMenuOpen(false)}>Login</Link>
-                <Link to="/register" className="mobile-auth-btn" onClick={() => setMenuOpen(false)}>Signup</Link>
-              </>
-            )}
+            {/* Mobile Authentication hidden for public site */}
+            <div className="mobile-auth-placeholder" />
 
             <button type="button" className="mobile-close" onClick={() => setMenuOpen(false)}>
               <FaTimes />

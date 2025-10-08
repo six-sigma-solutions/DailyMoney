@@ -36,16 +36,20 @@ img:hover { transform: scale(1.05); }
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
+  /* bring page content up a bit */
+  padding-top: 8px;
   
 }
 
 
 .health-heading {
-  text-align: center;
-  color: #002770;
-  font-style: italic;
-  margin-top: 15px;
+    text-align: left;
+    color: #002770;
+    font-style: italic;
+    margin: 6px 0 4px 60px;
+    padding-right: 20px;
 }
+
 
 /* ---------------- HERO SECTION ---------------- */
 .hero {
@@ -55,13 +59,15 @@ img:hover { transform: scale(1.05); }
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px 70px;
+  /* tighten vertical padding so hero title is closer to the section heading */
+  padding: 12px 70px;
 }
 
 
 .hero-content {
   max-width: 600px;
-  padding-top: 25px;
+  /* reduce top padding so title and heading are closer */
+  padding-top: 6px;
   text-align: left;
   position: relative;
   

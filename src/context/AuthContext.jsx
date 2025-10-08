@@ -14,7 +14,8 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [token, setToken] = useState(localStorage.getItem('token'));
-  const devFallback = process.env.NODE_ENV !== 'production'; // enable mock fallback in dev
+  const API_BASE = import.meta.env.VITE_API_URL || '';
+  const devFallback = true; // keep open access by default so site can be used without signing in
 
   useEffect(() => {
     if (token) {
@@ -26,7 +27,7 @@ export const AuthProvider = ({ children }) => {
 
   const validateToken = async () => {
     try {
-      const response = await fetch('http://localhost:4000/api/auth/profile', {
+  const response = await fetch(`${API_BASE}/api/auth/profile`, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -69,7 +70,7 @@ export const AuthProvider = ({ children }) => {
         password: loginData.password
       };
 
-      const response = await fetch('http://localhost:4000/api/auth/login', {
+  const response = await fetch(`${API_BASE}/api/auth/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -114,7 +115,7 @@ export const AuthProvider = ({ children }) => {
 
   const register = async (userData) => {
     try {
-      const response = await fetch('http://localhost:4000/api/auth/register', {
+  const response = await fetch(`${API_BASE}/api/auth/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -166,7 +167,7 @@ export const AuthProvider = ({ children }) => {
 
   const forgotPassword = async (email) => {
     try {
-      const response = await fetch('http://localhost:4000/api/auth/forgot-password', {
+  const response = await fetch(`${API_BASE}/api/auth/forgot-password`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
