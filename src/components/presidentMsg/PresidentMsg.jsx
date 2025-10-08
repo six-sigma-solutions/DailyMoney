@@ -2,7 +2,7 @@ import React from "react";
 import "./PresidentMsg.css"; // Import the new styling file
 
 const president = {
-    name: "A. Rajalakshmi", // Placeholder Name
+    name: "XXXXXX", // Placeholder Name
     role: "President", 
     // Placeholder image URL 
     image: "https://via.placeholder.com/150/0d9488/ffffff?text=President", 
@@ -28,7 +28,7 @@ export default function PresidentMsg() {
                 <div className="president-profile-area">
                     <img
                         src={president.image}
-                        alt={president.name}
+                        alt="XXXX"
                         className="president-image" // Renamed
                     />
                     
@@ -40,7 +40,7 @@ export default function PresidentMsg() {
                 {/* Message Content Section (SHARED classes) */}
                 <div className="message-content">
                     <p className="message-quote">
-                        "It is my honor to lead the DailyMoney community. We are dedicated to translating our founder's vision into tangible success for every individual. Our focus remains steadfast on the balance of "Health, Wealth, and Family".
+                        "It is my Honor to lead the DailyMoney community. We are dedicated to translating our Founder's Vision into tangible success for every individual. Our focus remains steadfast on the balance of "Health, Wealth, and Family".
                     </p>
 
                     <p className="message-paragraph">

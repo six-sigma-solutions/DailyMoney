@@ -1,6 +1,6 @@
 // Home.jsx
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Home.css";
 import videoFile from "../../assets/gif.mp4";
 import { Link, useNavigate } from "react-router-dom";
@@ -8,46 +8,36 @@ import { Link, useNavigate } from "react-router-dom";
 export default function Home() {
   const navigate = useNavigate();
   const [showPopup, setShowPopup] = useState(false);
-
+  const popupShownRef = useRef(false); 
 
   const handleSayHelloClick = () => {
     navigate("/contact");
   };
 
-   useEffect(() => {
-    const isLoggedIn = localStorage.getItem("isLoggedIn"); // check login status
-    const popupShown = localStorage.getItem("popupShown"); // check if popup already shown for this login 
-
-    // ✅ Show popup only once after login and never again until logout
-    if (isLoggedIn && !popupShown) {
+  useEffect(() => {
+    if (!popupShownRef.current) {
       setShowPopup(true);
-      localStorage.setItem("popupShown", "true"); // mark popup as shown
+      popupShownRef.current = true;
 
-      // Auto-hide after 10 seconds
       const timer = setTimeout(() => {
         setShowPopup(false);
-      }, 10000);
+      }, 10000); // auto-hide after 10 sec
 
       return () => clearTimeout(timer);
-    }else {
-    setShowPopup(false); // 👈 Ensures popup stays hidden when not logged in
-  }
+    }
   }, []);
   return (
-
     <div className="home-page">
       {showPopup && (
         <div className="popup-overlay">
           <div className="popup-container">
             <h2 className="popup-title">Welcome to Daily Money 💰</h2>
-            <p className="popup-text">
-               Deticated to the global IT Industry
-            </p>
+            <p className="popup-text">Dedicated to the global IT Industry</p>
             <button
               className="popup-close-btn"
               onClick={() => setShowPopup(false)}
             >
-              Got it →
+              Get in →
             </button>
           </div>
         </div>
@@ -66,9 +56,13 @@ export default function Home() {
             <p id="hero-subtitle">Independent for Entire life.</p>
           </strong>
           <p className="hero-desc">
-            Daily Money stands for discipline, unity and freedom. </p>
-            <p className="hero-desc">Together, we are shaping a future of health, wealth, and limitless opportunities.</p>
-            <p className="hero-desc">
+            Daily Money stands for discipline, unity and freedom.{" "}
+          </p>
+          <p className="hero-desc">
+            Together, we are shaping a future of health, wealth, and limitless
+            opportunities.
+          </p>
+          <p className="hero-desc">
             With Daily Money, every step forward is a step toward freedom,
             prosperity, and a life without limits.
             <br /> Welcome to{" "}
@@ -77,15 +71,15 @@ export default function Home() {
             </strong>
           </p>
           <div className="hero-actions">
-            <Link className="link" to="/overview" >
-             <button type="button" className="see-work-btn">
-              See our work
-            </button>
+            <Link className="link" to="/overview">
+              <button type="button" className="see-work-btn">
+                See our work
+              </button>
             </Link>
-            <Link className="link" to="/health" >
-            <button type="button" className="get-started-btn">
-              Get started →
-            </button>
+            <Link className="link" to="/health">
+              <button type="button" className="get-started-btn">
+                Get started →
+              </button>
             </Link>
           </div>
         </div>
@@ -300,7 +294,7 @@ export default function Home() {
       </section>
 
       <footer className="footer-main1">
-        <div >
+        <div>
           <div className="footer-cta1">
             <img className="img-fluid" src="/footer1.jpg"></img>
             <button className="say-hello-btn1" onClick={handleSayHelloClick}>
@@ -313,7 +307,6 @@ export default function Home() {
               <img
                 src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png"
                 alt="DailyMoney Logo"
-
               />
               <span className="footer-logo-text1">Daily Money</span>
               <span className="footer-subtext1">
