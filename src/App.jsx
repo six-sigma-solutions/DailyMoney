@@ -1,27 +1,5 @@
-import { Routes, Route } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
-import ProtectedRoute from "./components/ProtectedRoute";
-
-import Navbar from "./components/navbar/Navbar";
-import Home from "./components/home/Home";
-import Health from "./components/health/Health";
-import Family from "./components/family/Family";
-import Wealth from "./components/wealth/Wealth";
-import Contact from "./components/contact/Contact";
-import Entrepreneur from "./components/entrepreneur/Entrepreneur";
-import Visionmission from "./components/visionmission/Visionmission";
-import Solution from "./components/solution/Solution";
-import Gratitude from "./components/gratitude/Gratitude";
-import Overview from "./components/overview/Overview";
-import Womenempowerment from "./components/womenempowerment/Womenempowerment";
-import FounderMsg from "./components/founderMsg/FounderMsg";
-import PresidentMsg from "./components/presidentMsg/PresidentMsg";
-import CoreTeam from "./components/coreTeam/CoreTeam";
-import Income from "./components/income/Income";
-import Students from "./components/students/Students";
-import Elder from "./components/elder/Elder";
-import Mypromises from "./components/mypromises/Mypromises";
 
 // Authentication Components
 import Login from "./components/auth/Login";
@@ -32,34 +10,14 @@ export default function App() {
   return (
     <AuthProvider>
       <div id="app">
-        <Navbar />
-        <ScrollToTop />
-
         <Routes>
-          {/* Authentication Routes - Only these are public */}
+          {/* Only authentication pages are available - root redirects to login */}
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
-
-          {/* All Website Content - Protected Routes (Login Required) */}
-          <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
-          <Route path="/health" element={<ProtectedRoute><Health /></ProtectedRoute>} />
-          <Route path="/family" element={<ProtectedRoute><Family /></ProtectedRoute>} />
-          <Route path="/wealth" element={<ProtectedRoute><Wealth /></ProtectedRoute>} />
-          <Route path="/visionmission" element={<ProtectedRoute><Visionmission /></ProtectedRoute>} />
-          <Route path="/solution" element={<ProtectedRoute><Solution /></ProtectedRoute>} />
-          <Route path="/gratitude" element={<ProtectedRoute><Gratitude /></ProtectedRoute>} />
-          <Route path="/overview" element={<ProtectedRoute><Overview /></ProtectedRoute>} />
-          <Route path="/contact" element={<ProtectedRoute><Contact /></ProtectedRoute>} />
-          <Route path="/womenempowerment" element={<ProtectedRoute><Womenempowerment /></ProtectedRoute>} />
-          <Route path="/founders-msg" element={<ProtectedRoute><FounderMsg /></ProtectedRoute>} />
-          <Route path="/presidents-msg" element={<ProtectedRoute><PresidentMsg /></ProtectedRoute>} />
-          <Route path="/core-Team" element={<ProtectedRoute><CoreTeam /></ProtectedRoute>} />
-          <Route path="/entrepreneur" element={<ProtectedRoute><Entrepreneur /></ProtectedRoute>} />
-          <Route path="/income" element={<ProtectedRoute><Income /></ProtectedRoute>} />
-          <Route path="/students" element={<ProtectedRoute><Students /></ProtectedRoute>} />
-          <Route path="/elder" element={<ProtectedRoute><Elder /></ProtectedRoute>} />
-          <Route path="/mypromises" element={<ProtectedRoute><Mypromises /></ProtectedRoute>} />
+          <Route path="/" element={<Navigate to="/login" replace />} />
+          {/* Catch-all: redirect to login */}
+          <Route path="*" element={<Navigate to="/login" replace />} />
         </Routes>
       </div>
     </AuthProvider>
