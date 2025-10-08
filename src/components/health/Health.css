@@ -470,13 +470,14 @@ html {
 /* ---------------- FOOTER ---------------- */
 .footer {
   background:  #000000;
-  padding: 25px 45ppx;
+  padding: 25px 40px;
   text-align: center;
   border-top: 2px solid #e5e7eb;
   font-size: 3rem;
   font-weight: 900;    /* 🔥 makes it bold */
   line-height: 1.2; 
-  
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 
@@ -486,7 +487,7 @@ html {
   padding: 20px;
   color: #fffb2c; 
   text-align:start;
-  padding: 0 150PX;
+  padding: 0 80px;
 }
 .footer h2 { font-size: 1.5rem; font-weight: 900; padding: 20px; margin-bottom: 13px; color: #cdefff }
 

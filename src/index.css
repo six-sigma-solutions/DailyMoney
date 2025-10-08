@@ -11,6 +11,7 @@ body {
   padding: 0;
   height: 100vh;
   width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -19,7 +20,7 @@ body {
 /* Big screens (TVs, large monitors) */
 @media (min-width: 1500px) {
   body {
-    width: 90%;           /* gives ~15% space left & right */
+    width: 80%;           /* gives more space left & right */
     margin: 0 auto;       /* centers content */
   }
 }
@@ -27,7 +28,7 @@ body {
 /* Ultra wide monitors */
 @media (min-width: 2000px) {
   body {
-    width: 70%;    
+    width: 60%;    
     margin: 0 auto;       /* more side space for ultra-wide */
   }
 }
