@@ -44,8 +44,8 @@ body {
 /* ---------- Header ---------- */
 .wealthy-header {
   background: transparent;
-  padding: 20px 0;
-  text-align: center;
+  padding: 0px 0;
+  text-align: left;
 }
 .wealthy-logo {
   font-weight: 700;
@@ -58,8 +58,8 @@ body {
 /* ---------- Containers ---------- */
 .wealthy-container {
   max-width: var(--container-w);
-  margin: 0 auto;
-  padding: 28px;
+  margin: 0 0 0 60px;
+  padding: 0px;
 }
 
 /* ---------- Hero Section ---------- */
