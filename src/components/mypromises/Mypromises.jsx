@@ -1,5 +1,6 @@
 import React from "react";
 import "./Mypromises.css"; // Import the new styling file
+import Footer from '../footer/Footer';
 
 
 const Mypromises = () => {
@@ -25,6 +26,7 @@ const Mypromises = () => {
           GET STARTED
         </button>
       </div>
+      <Footer />
     </>
   );
 };

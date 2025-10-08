@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import './Visionmission.css';
+import Footer from '../footer/Footer';
 
 const Visionmission = () => {
   const navigate = useNavigate();
@@ -135,6 +136,7 @@ const Visionmission = () => {
       </section>
 
       <br className="dm-vsn-spacer" />
+      <Footer />
     </main>
   );
 };

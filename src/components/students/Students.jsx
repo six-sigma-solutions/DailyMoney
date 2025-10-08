@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import './Students.css';
 import { Link } from 'react-router-dom';
+import Footer from '../footer/Footer';
 
 export default function Students() {
   const animatedRef = useRef(null);
@@ -126,6 +127,7 @@ export default function Students() {
       </div>
 
       <footer className="stu-page-footer">© 2023 DailyMoney</footer>
+      <Footer />
     </div>
   );
 }

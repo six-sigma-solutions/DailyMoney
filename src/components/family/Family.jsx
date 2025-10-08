@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./Family.css"; // Your CSS file
 import { Link } from "react-router-dom";
+import Footer from '../footer/Footer';
 
 const Family = () => {
   useEffect(() => {
@@ -123,6 +124,7 @@ const Family = () => {
           
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

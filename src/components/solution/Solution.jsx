@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Solution.css"; // Import the new styling file
 import { useNavigate } from 'react-router-dom'; // Step 1: Import the hook
+import Footer from '../footer/Footer';
 
 
 const Solution = () => {
@@ -29,6 +30,7 @@ const Solution = () => {
           Click to Transform Your Life
         </button>
       </div>
+      <Footer />
     </>
   );
 };

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Contact.css";
+import Footer from '../footer/Footer';
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", phone: "", company: "", message: "", countryCode: "+91" });
@@ -334,66 +335,7 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* Footer */}
-      <footer>
-        <div className="footer-main">
-          <div className="footer-cta">
-            <h2>Tell us about your project</h2>
-                        <Link to="/" className="say-hello-btn">Say Hello</Link>
-          </div>
-          <hr className="footer-divider" />
-          <div className="footer-bottom-content">
-            <div className="footer-logo-block">
-              <img
-                src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png"
-                alt="DailyMoney Logo"
-              />
-              <span className="footer-logo-text">Daily Money</span>
-              <span className="footer-subtext">
-                imagine a world where nature's bounty fuels your financial
-                future. fresh leaves and fruits dance in the dark. welcome to
-                daily money!
-              </span>
-              <span className="footer-copyright">
-                © 2025. All rights reserved.
-              </span>
-            </div>
-            <div className="footer-links-block">
-              <div className="footer-links-col">
-                <h4>Company</h4>
-                <ul>
-                  <li>
-                    <a href="#">Work</a>
-                  </li>
-                  <li>
-                    <a href="#">Process</a>
-                  </li>
-                  <li>
-                    <a href="#">About</a>
-                  </li>
-                  <li>
-                    <a href="#">Blog</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="footer-links-col">
-                <h4>Connect</h4>
-                <ul>
-                  <li>
-                    <a href="#">Follow on X</a>
-                  </li>
-                  <li>
-                    <a href="#">Book a call</a>
-                  </li>
-                  <li>
-                    <a href="#">Get in touch</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "./CoreTeam.css";
+import Footer from '../footer/Footer';
 
 
 
@@ -67,6 +68,7 @@ export default function CoreTeam() {
         <h1>DAILY MONEY</h1>
         <h1>INDEPENDENT FOR ENTIRE LIFE </h1>
       </div>
+      <Footer />
     </section>
   );
 }

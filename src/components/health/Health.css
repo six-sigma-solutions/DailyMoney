@@ -37,7 +37,7 @@ img:hover { transform: scale(1.05); }
   flex-direction: column;
   padding-bottom: 20px;
   /* bring page content up a bit */
-  padding-top: 8px;
+  padding-top: 20px;
   
 }
 
@@ -46,8 +46,10 @@ img:hover { transform: scale(1.05); }
     text-align: left;
     color: #002770;
     font-style: italic;
-    margin: 6px 0 4px 60pxgit;
+    margin: 0 0 5px 60px;
     padding-right: 20px;
+    font-size: 3em;
+    font-weight: 600;
 }
 
 
@@ -59,7 +61,7 @@ img:hover { transform: scale(1.05); }
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
-  /* tighten vertical padding so hero title is closer to the section heading */
+  min-height: calc(100vh - 120px);
   padding: 0px 70px;
 }
 
@@ -69,11 +71,11 @@ img:hover { transform: scale(1.05); }
   padding-top: 2px;
   text-align: left;
   position: relative;
-  margin-top:0px;
+  margin-top: -30px;
 }
 
 .hero-content h1 {
-  font-size: 3em;
+  font-size: 3.5em;
   font-weight: 400;
   line-height: 1.1;
   margin-bottom: 0.4em;
@@ -86,9 +88,9 @@ img:hover { transform: scale(1.05); }
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 900;    /* 🔥 makes it bold */
-  line-height: 1.2;
+  line-height: 1.1;
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -130,6 +132,49 @@ img:hover { transform: scale(1.05); }
 .btn-primary:hover {
   background: #115e59;
   transform: translateY(-2px);
+}
+
+/* Mobile responsive styles for health page */
+@media (max-width: 768px) {
+  .health-page {
+    padding-top: 10px;
+  }
+  
+  .health-heading {
+    font-size: 2.2em;
+    text-align: center;
+    margin: 0 0 10px 0;
+    padding: 0 20px;
+  }
+  
+  .hero {
+    flex-direction: column;
+    min-height: calc(100vh - 80px);
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+    margin-top: -20px;
+  }
+  
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-content p {
+    font-size: 1em;
+    padding: 0 10px;
+  }
+  
+  .image-health-container {
+    width: 280px;
+    height: 320px;
+    margin: 30px auto;
+  }
 }
 
 /* ---------------- SMOOTH SCROLL ---------------- */
@@ -443,7 +488,7 @@ html {
 /* Health Section Header */
 .health-section {
   max-width: 1200px;
-  margin: 3rem auto;
+  margin: 6rem auto 3rem auto;
   padding: 0 1.5rem;
   
 }

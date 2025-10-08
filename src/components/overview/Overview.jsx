@@ -2,6 +2,7 @@ import React from "react";
 // Import the newly named CSS file
 import "./Overview.css";
 import { Link } from "react-router-dom";
+import Footer from '../footer/Footer';
 
 // Renamed the component for clarity
 const Overview = () => {
@@ -104,6 +105,7 @@ const Overview = () => {
           </button>
         </Link>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -1,0 +1,71 @@
+/* Footer Component Styles */
+.card-footer-bg {
+  background-color: #1f2937; /* Dark gray background */
+  padding: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  border-radius: 0;
+  width: 100%;
+}
+
+.footer-logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.footer-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.footer-title2 {
+  color: #facc15; /* Yellow color */
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 1rem 0 0.5rem 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-subtitle2 {
+  color: #fde047; /* Light yellow color */
+  font-size: 1.25rem;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-footer-bg {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer-title2 {
+    font-size: 2rem;
+  }
+
+  .footer-subtitle2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-title2 {
+    font-size: 1.5rem;
+  }
+
+  .footer-subtitle2 {
+    font-size: 0.9rem;
+  }
+}

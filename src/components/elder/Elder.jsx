@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './Elder.css';
 import { Link } from 'react-router-dom';
+import Footer from '../footer/Footer';
 
 export default function Elder() {
   const animatedRef = useRef(null);
@@ -139,6 +140,7 @@ export default function Elder() {
         </button>
       </Link>
       </div>
+      <Footer />
     </div>
   );
 }

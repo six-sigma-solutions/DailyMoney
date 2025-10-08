@@ -13,6 +13,7 @@ import img10 from "/img-10.jpg";
 // Import your regular CSS file
 import "./Entrepreneur.css";
 import { Link } from "react-router-dom";
+import Footer from '../footer/Footer';
 export default function Entrepreneur () {
   return (
     
@@ -124,6 +125,7 @@ export default function Entrepreneur () {
         </button>
       </Link>
       </div>
+      <Footer />
     </div>
   );
 };

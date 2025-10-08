@@ -1,16 +1,16 @@
 import React from "react";
 import "./Health.css";
 import { Link } from "react-router-dom";
+import Footer from '../footer/Footer';
 
 
 const Health = () => {
   return (
     <div className="health-page">
-        <h1 className="health-heading">
-          Our Health
-        </h1>
+      <h1 className="health-heading">
+        Our Health
+      </h1>
       
-
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
@@ -97,6 +97,7 @@ const Health = () => {
 
       </footer>
       
+      <Footer />
     </div>
   );
 };

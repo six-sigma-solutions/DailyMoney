@@ -1,6 +1,7 @@
 import React from "react";
 import "./Wealth.css";
 import { Link } from "react-router-dom";
+import Footer from '../footer/Footer';
 
 const Wealth = () => {
   return (
@@ -104,6 +105,7 @@ const Wealth = () => {
       <footer className="wealthy-footer">
         <p>© 2025 Daily Money | Empowering Wealth & Purpose</p>
       </footer>
+      <Footer />
     </div>
   );
 };

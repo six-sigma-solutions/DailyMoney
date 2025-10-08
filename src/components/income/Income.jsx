@@ -1,6 +1,7 @@
 import React from "react";
 import "./Income.css";
 import { Link } from "react-router-dom";
+import Footer from '../footer/Footer';
 
 const Income = () => {
   return (
@@ -102,6 +103,7 @@ const Income = () => {
         </button>
       </Link>
       </div>
+      <Footer />
     </div>
   );
 };
