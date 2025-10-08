@@ -1,13 +1,10 @@
 import React from "react";
 // Import the newly named CSS file
 import "./Overview.css";
+import { Link } from "react-router-dom";
 
 // Renamed the component for clarity
 const Overview = () => {
-  const getStarted = () => {
-    alert("Get Started clicked!");
-  };
-
   return (
     <div className="overview-page-container">
       <div className="overview-header-title">
@@ -22,7 +19,8 @@ const Overview = () => {
         <div className="zigzag-text-content">
           <h2 style={{ color: "burlywood" }}>Our Purpose</h2>
           <p>
-            Daily Money exists to make the world healthier, happier, wealthier, one person, one family, and one community at a time.
+            Daily Money exists to make the world healthier, happier, wealthier,
+            one person, one family, and one community at a time.
           </p>
         </div>
       </section>
@@ -35,10 +33,22 @@ const Overview = () => {
         <div className="zigzag-text-content">
           <h2 style={{ color: "yellow" }}>Our Approach</h2>
           <ul>
-            <li><strong>Clarity –</strong> Simplifying money so everyone understands it.</li>
-            <li><strong>Discipline –</strong> Encouraging consistent daily habits that build lasting wealth.</li>
-            <li><strong>Integration –</strong> Connecting health, wealth, and peace as parts of the same journey.</li>
-            <li><strong>Generational Growth –</strong> Ensuring prosperity passes forward, sustaining families across generations.</li>
+            <li>
+              <strong>Clarity –</strong> Simplifying money so everyone
+              understands it.
+            </li>
+            <li>
+              <strong>Discipline –</strong> Encouraging consistent daily habits
+              that build lasting wealth.
+            </li>
+            <li>
+              <strong>Integration –</strong> Connecting health, wealth, and
+              peace as parts of the same journey.
+            </li>
+            <li>
+              <strong>Generational Growth –</strong> Ensuring prosperity passes
+              forward, sustaining families across generations.
+            </li>
           </ul>
         </div>
       </section>
@@ -51,10 +61,22 @@ const Overview = () => {
         <div className="zigzag-text-content">
           <h2 style={{ color: "orchid" }}>Our Core Beliefs</h2>
           <ul>
-            <li><strong>Wealth is Freedom –</strong> The ability to choose your path without limits.</li>
-            <li><strong>Health is Wealth –</strong> Without wellness, money loses its meaning.</li>
-            <li><strong>Peace is Success –</strong> A balanced life is the ultimate achievement.</li>
-            <li><strong>Legacy Matters –</strong> True prosperity is measured in impact that outlives us.</li>
+            <li>
+              <strong>Wealth is Freedom –</strong> The ability to choose your
+              path without limits.
+            </li>
+            <li>
+              <strong>Health is Wealth –</strong> Without wellness, money loses
+              its meaning.
+            </li>
+            <li>
+              <strong>Peace is Success –</strong> A balanced life is the
+              ultimate achievement.
+            </li>
+            <li>
+              <strong>Legacy Matters –</strong> True prosperity is measured in
+              impact that outlives us.
+            </li>
           </ul>
         </div>
       </section>
@@ -67,14 +89,20 @@ const Overview = () => {
         <div className="zigzag-text-content">
           <h2 style={{ color: "cyan" }}>Our Promise</h2>
           <p>
-            Daily Money is not just about income today, but about wealth for life and beyond. We help build strong foundations so every generation thrives—financially, physically, and spiritually.
+            Daily Money is not just about income today, but about wealth for
+            life and beyond. We help build strong foundations so every
+            generation thrives—financially, physically, and spiritually.
           </p>
         </div>
       </section>
 
       {/* Button */}
       <div className="overview-button-wrapper">
-        <button className="overview-action-btn" onClick={getStarted}>Get Started</button>
+        <Link className="view-more-link" to="/founders-msg">
+          <button className="view-more" type="button">
+            View More
+          </button>
+        </Link>
       </div>
     </div>
   );
