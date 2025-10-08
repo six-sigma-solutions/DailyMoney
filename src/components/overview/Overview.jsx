@@ -59,7 +59,7 @@ const Overview = () => {
           <img src="image-3.jpg" alt="Generational family together" />
         </div>
         <div className="zigzag-text-content">
-          <h2 style={{ color: "blue" }}Our Core Beliefs</h2>
+          <h2 style={{ color: "blue" }}>Our Core Beliefs</h2>
           <ul>
             <li>
               <strong>Wealth is Freedom –</strong> The ability to choose your
