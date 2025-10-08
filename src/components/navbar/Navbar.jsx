@@ -121,7 +121,6 @@ export default function Navbar() {
             <div className="auth-placeholder" />
           ) : isAuthenticated ? (
             <>
-              <Link to="/" className="auth-btn">Home</Link>
               <button onClick={handleLogout} className="logout-btn">Logout</button>
             </>
           ) : (
