@@ -41,13 +41,13 @@ export default function Home() {
           <div className="popup-container">
             <h2 className="popup-title">Welcome to Daily Money 💰</h2>
             <p className="popup-text">
-              Empowering your journey toward health, wealth, and freedom.
+              Dedicated to the global IT Industry
             </p>
             <button
               className="popup-close-btn"
               onClick={() => setShowPopup(false)}
             >
-              Got it →
+              Get in →
             </button>
           </div>
         </div>
