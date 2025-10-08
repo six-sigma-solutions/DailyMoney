@@ -18,13 +18,17 @@
   align-items: center;
   justify-content: space-between;
   height: 72px;
-  padding: 0 50px; /* was 40px → give more room */
+  padding: 0 40px 0 40px;
+  /* was 40px → give more room */
 }
+
+
 
 /* Logo */
 .logo img {
   height: 55px;
   display: block;
+  margin-left: 15px;
 }
 
 /* DESKTOP MENU */
@@ -150,6 +154,7 @@
   border: none;
   cursor: pointer;
   padding: 6px;
+  margin-right: 15px;
 }
 
 .menu-bar {

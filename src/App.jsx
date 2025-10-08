@@ -35,7 +35,6 @@ export default function App() {
         <Route path="/wealth" element={<Wealth />} />
         <Route path="/visionmission" element={<Visionmission />} />
         <Route path="/solution" element={<Solution />} />
-
         <Route path="/gratitude" element={<Gratitude />} />
         <Route path="/overview" element={<Overview />} />
         <Route path="/contact" element={<Contact />} />
