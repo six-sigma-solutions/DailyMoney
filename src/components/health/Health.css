@@ -38,13 +38,8 @@ img:hover { transform: scale(1.05); }
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
-  /* move page content down slightly for better spacing */
-  padding-top: 60px;
-}
-
-/* Keep smaller top padding on mobile to avoid extra scroll */
-@media (max-width: 768px) {
-  .health-page { padding-top: 20px; }
+  /* bring page content up a bit */
+  padding-top: 20px;
 }
 
 
@@ -68,7 +63,7 @@ img:hover { transform: scale(1.05); }
   flex-wrap: wrap;
   gap: 20px;
   min-height: calc(100vh - 120px);
-  padding: 0px 70px;
+  padding: 3rem 70px;
 }
 
 
@@ -311,7 +306,7 @@ html {
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
-    padding: 100px;
+    padding: 10px;
     padding-left: 10px;
 }
 
@@ -320,32 +315,12 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 39px;
-}
-
-/* Make a single health section take up the full viewport height without
-   affecting other pages. Applied via the `full-screen` class on the
-   specific container in Health.jsx. */
-.full-screen {
-  min-height: 100vh; /* cover full viewport height */
-  align-items: center;
-  display: flex;
-  padding: 6rem 60px; /* breathing room */
-  box-sizing: border-box;
-}
-
-/* On small screens, allow normal stacking so it doesn't force extra scroll */
-@media (max-width: 768px) {
-  .full-screen {
-    min-height: auto;
-    padding: 2.5rem 20px;
-    flex-direction: column;
-  }
+    padding: 10px;
 }
 
 .container-1 img{
     width: 500px;
-    height: 500px;
+    height: 50%;
     border-radius: 20px;
     cursor: pointer;
     box-shadow: 0px 10px 15px rgba(0.5,0,0,0.5);
@@ -633,21 +608,12 @@ html {
 /* Health Section Header */
 .health-section {
   max-width: 1100px;
-  margin: 4rem auto 1px auto; /* slightly increased top margin to move heading down */
-  padding: 0 1rem;
-}
-
-/* Keep the heading spacing smaller on mobile so it doesn't push content too far */
-@media (max-width: 768px) {
-  .health-section { margin: 3rem auto 1.5rem auto; }
+  margin: 4rem auto 1px auto; 
 }
 .health-section h1 {
   color: #c00606;
-  font-size: 1.6rem; /* slightly smaller on default */
+  font-size: 1.2rem; /* slightly smaller on default */
   font-weight: 900;
-  text-align: center;
-  margin-bottom: 1rem;
-  padding: 12px 20px;
 }
 
 @media (min-width: 768px) {
@@ -655,8 +621,6 @@ html {
     font-size: 2rem; /* moderate desktop size */
   }
 }
-
-
 
 /* ---------------- FOOTER ---------------- */
 .footer {
