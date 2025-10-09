@@ -72,7 +72,7 @@ img:hover { transform: scale(1.05); }
   padding-top: 2px;
   text-align: left;
   position: relative;
-  margin-top: -30px;
+  margin-top: 7px;
 }
 
 .hero-content h1 {
@@ -186,8 +186,8 @@ html {
 /* ---------------- HERO IMAGE ---------------- */
 .image-health-container {
   position: relative;
-  width: 350px;
-  height: 400px;
+  width: 340px;
+  height: 370px;
   margin: 50px auto;
   overflow: hidden;
   display: flex;
