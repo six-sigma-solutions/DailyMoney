@@ -68,8 +68,8 @@
 
 .stu-page-image-box img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 400px;
+  object-fit: fill;
   border-radius: 20px;
   cursor: pointer;
 }
