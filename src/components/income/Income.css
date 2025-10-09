@@ -43,7 +43,7 @@ body{
   border-radius:20px;
   margin:0 10px 0 30px;
 }
-p:hover{
+.income-text p:hover{
   animation:highlight 3s infinite;
 
 .income-text ul {
