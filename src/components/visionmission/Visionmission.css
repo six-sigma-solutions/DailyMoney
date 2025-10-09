@@ -397,3 +397,170 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ---------- Horizontal 4-Image Gallery ---------- */
+.vision-gallery-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+ 
+}
+
+.vision-gallery-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #f10a0a;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+/* Optional decorative underline */
+.vision-gallery-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 12px auto 0 auto;
+  border-radius: 2px;
+}
+
+.vision-gallery {
+  display: flex;
+
+  gap: 20px;
+  justify-content: left;
+  
+  flex-wrap: wrap;
+
+  
+}
+
+.vision-gallery img {
+  width: 10%;
+  min-width: 312.7px;
+  border-image: auto;
+  
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vision-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- Responsive Adjustments ---------- */
+
+/* ✅ For screens BETWEEN 600px and 900px (tablets) */
+@media (min-width: 600px) and (max-width: 900px) {
+  .vision-gallery {
+    gap: 16px;
+  }
+
+  .vision-gallery img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .vision-gallery-title {
+    font-size: 1.8rem;
+  }
+
+  .vision-gallery-title::after {
+    width: 70px;
+  }
+}
+
+/* ✅ For screens BELOW 600px (mobiles) */
+@media (max-width: 600px) {
+  .vision-gallery {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .vision-gallery img {
+    width: 90%;
+    height: auto;
+  }
+
+  .vision-gallery-title {
+    font-size: 1.6rem;
+    margin-bottom: 28px;
+  }
+
+  .vision-gallery-title::after {
+    width: 60px;
+    height: 3px;
+  }
+}
+
+
+
+/* Tablets / Medium Screens */
+
+
+
+@media (max-width: 900px) {
+  .vision-gallery {
+    gap: 16px;
+  }
+
+  .vision-gallery img {
+    width: 10%;
+    height: 200px;
+  }
+
+  .vision-gallery-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 600px) {
+  .vision-gallery {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .vision-gallery img {
+    width: 10%;
+    height: auto;
+  }
+
+  .vision-gallery-title {
+    font-size: 1.6rem;
+    margin-bottom: 28px;
+  }
+
+  .vision-gallery-title::after {
+    width: 60px;
+    height: 3px;
+  }
+}
+
+/* Extra Small Devices (e.g. old phones) */
+@media (max-width: 400px) {
+  .vision-gallery-section {
+    padding: 40px 10px;
+  }
+
+  .vision-gallery-title {
+    font-size: 1.4rem;
+  }
+
+  .vision-gallery img {
+    width: 10%;
+    height: auto;
+  }
+}
