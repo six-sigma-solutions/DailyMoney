@@ -633,7 +633,7 @@ html {
 /* Health Section Header */
 .health-section {
   max-width: 1100px;
-  margin: 6rem auto 2rem auto; /* slightly increased top margin to move heading down */
+  margin: 4rem auto 1px auto; /* slightly increased top margin to move heading down */
   padding: 0 1rem;
 }
 
