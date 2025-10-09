@@ -38,6 +38,12 @@ body{
 .income-text {
   flex: 1;
   font-size: 1.1rem;
+  color:blue;
+  background-color:yellow;
+  text-align:start;
+  padding:20px;
+  border-radius:20px;
+  margin:0 10px 0 30px;
 }
 
 .income-text ul {
@@ -54,13 +60,14 @@ body{
   flex: 1;
   display: flex;
   justify-content: center;
+  
 }
 
 
 .income-image img,
 .responsive-income-img {
-  max-width: 100%;
-  height: auto;
+  width: 450px;
+  height: 450px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
