@@ -38,8 +38,6 @@ body{
 .income-text {
   flex: 1;
   font-size: 1.1rem;
-  color:blue;
-  background-color:yellow;
   text-align:start;
   padding:20px;
   border-radius:20px;
