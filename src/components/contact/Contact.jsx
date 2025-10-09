@@ -176,8 +176,9 @@ export default function Contact() {
     
     console.log('Submitting form:', formData);
     try {
-    // Default to backend dev server on 4001 when VITE_API_URL isn't provided
-    const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:4001';
+  // In production we want to use the same-origin API by default.
+  // Leave VITE_API_URL empty for same-origin (/api) and set it when the backend is at a different host.
+  const API_BASE = import.meta.env.VITE_API_URL || '';
       console.log('Sending request to backend...', API_BASE || '(same-origin)');
       const res = await fetch(`${API_BASE}/api/enquiries`, {
         method: 'POST',
