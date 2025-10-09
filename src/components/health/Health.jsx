@@ -68,14 +68,14 @@ const Health = () => {
         </div>
       </div>
 
-            <div className="container-1 right-image">
-        <img src="image3.jpeg" alt="Styled" className="styled-img" />
-        <div className="box color3">
-          <h1>“I need lifelong health and fitness.”</h1>
-          <h1>“I’m powered by purpose — strong for life.”</h1>
-          <h1>“Wellness is not a goal — it’s my lifetime mission.”</h1>
-        </div>
-      </div>
+            <div className="container-1 right-image full-screen">
+              <img src="image3.jpeg" alt="Styled" className="styled-img" />
+              <div className="box color3">
+                <h1>“I need lifelong health and fitness.”</h1>
+                <h1>“I’m powered by purpose — strong for life.”</h1>
+                <h1>“Wellness is not a goal — it’s my lifetime mission.”</h1>
+              </div>
+            </div>
 
     
 

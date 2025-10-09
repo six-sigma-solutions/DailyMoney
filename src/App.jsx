@@ -20,6 +20,7 @@ import Elder from "./components/elder/Elder";
 import Solution from "./components/solution/Solution";
 import Gratitude from "./components/gratitude/Gratitude";
 import Mypromises from "./components/mypromises/Mypromises";
+import FullFooter from "./components/footer/FullFooter";
 export default function App() {
   return (
     <AuthProvider>
@@ -48,6 +49,7 @@ export default function App() {
         <Route path="/solution" element={<Solution />} />
         <Route path="/gratitude" element={<Gratitude />} />
         <Route path="/mypromises" element={<Mypromises />} />
+  <Route path="/full-footer" element={<FullFooter />} />
 
         {/* fallback to home */}
         <Route path="*" element={<Navigate to="/" replace />} />

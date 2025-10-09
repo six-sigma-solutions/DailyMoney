@@ -38,8 +38,13 @@ img:hover { transform: scale(1.05); }
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
-  /* bring page content up a bit */
-  padding-top: 20px;
+  /* move page content down slightly for better spacing */
+  padding-top: 60px;
+}
+
+/* Keep smaller top padding on mobile to avoid extra scroll */
+@media (max-width: 768px) {
+  .health-page { padding-top: 20px; }
 }
 
 
@@ -316,6 +321,26 @@ html {
     align-items: center;
     justify-content: space-between;
     padding: 39px;
+}
+
+/* Make a single health section take up the full viewport height without
+   affecting other pages. Applied via the `full-screen` class on the
+   specific container in Health.jsx. */
+.full-screen {
+  min-height: 100vh; /* cover full viewport height */
+  align-items: center;
+  display: flex;
+  padding: 6rem 60px; /* breathing room */
+  box-sizing: border-box;
+}
+
+/* On small screens, allow normal stacking so it doesn't force extra scroll */
+@media (max-width: 768px) {
+  .full-screen {
+    min-height: auto;
+    padding: 2.5rem 20px;
+    flex-direction: column;
+  }
 }
 
 .container-1 img{
@@ -608,8 +633,13 @@ html {
 /* Health Section Header */
 .health-section {
   max-width: 1100px;
-  margin: 5rem auto 2rem auto; /* slightly increased top margin to move heading down */
+  margin: 6rem auto 2rem auto; /* slightly increased top margin to move heading down */
   padding: 0 1rem;
+}
+
+/* Keep the heading spacing smaller on mobile so it doesn't push content too far */
+@media (max-width: 768px) {
+  .health-section { margin: 3rem auto 1.5rem auto; }
 }
 .health-section h1 {
   color: #c00606;
