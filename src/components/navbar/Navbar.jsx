@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { useAuth } from '../../context/AuthContext';
+import { useAuth } from "../../context/AuthContext";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -12,7 +12,7 @@ export default function Navbar() {
   const navigate = useNavigate();
 
   const handleLogout = async () => {
-    if (window.confirm('Are you sure you want to logout?')) {
+    if (window.confirm("Are you sure you want to logout?")) {
       await logout();
       setMenuOpen(false);
     }
@@ -52,34 +52,6 @@ export default function Navbar() {
             </Link>
           </li>
 
-          <li
-            onMouseEnter={() => setOpenDropdown("about")}
-            onMouseLeave={() => setOpenDropdown(null)}
-          >
-            <span id="tab-name" className="dropdown-label">
-              About ▾
-            </span>
-            {openDropdown === "about" && (
-              <div className="submenu">
-                <Link id="tab-name" to="/overview">
-                  ▾ Overview
-                </Link>
-                <Link id="tab-name" to="/visionmission">
-                  ▾ Vision & Mission
-                </Link>
-                <Link id="tab-name" to="/founders-msg">
-                  ▾ Founder's Message
-                </Link>
-                <Link id="tab-name" to="/presidents-msg">
-                  ▾ President's Message
-                </Link>
-                <Link id="tab-name" to="/core-team">
-                  ▾ Core Team
-                </Link>
-              </div>
-            )}
-          </li>
-
           {/* Entrepreneur Dropdown */}
           <li
             onMouseEnter={() => setOpenDropdown("my-life")}
@@ -108,11 +80,40 @@ export default function Navbar() {
               </div>
             )}
           </li>
+          <li
+            onMouseEnter={() => setOpenDropdown("about")}
+            onMouseLeave={() => setOpenDropdown(null)}
+          >
+            <span id="tab-name" className="dropdown-label">
+              About ▾
+            </span>
+            {openDropdown === "about" && (
+              <div className="submenu">
+                <Link id="tab-name" to="/overview">
+                  ▾ Overview
+                </Link>
+                <Link id="tab-name" to="/visionmission">
+                  ▾ Vision & Mission
+                </Link>
+                <Link id="tab-name" to="/founders-msg">
+                  ▾ Founder's Message
+                </Link>
+                <Link id="tab-name" to="/presidents-msg">
+                  ▾ President's Message
+                </Link>
+                <Link id="tab-name" to="/core-team">
+                  ▾ Core Team
+                </Link>
+              </div>
+            )}
+          </li>
         </ul>
 
         {/* RIGHT SECTION DESKTOP */}
         <div className="right-section">
-          <Link to="/contact" className="contact-btn">Contact</Link>
+          <Link to="/contact" className="contact-btn">
+            Contact
+          </Link>
 
           {/* Authentication actions hidden for public site */}
           <div className="auth-placeholder" />
@@ -142,18 +143,27 @@ export default function Navbar() {
             />
           </Link>
           <div className="mobile-actions">
-            <Link to="/contact" className="contact-btn" onClick={() => setMenuOpen(false)}>Contact</Link>
+            <Link
+              to="/contact"
+              className="contact-btn"
+              onClick={() => setMenuOpen(false)}
+            >
+              Contact
+            </Link>
 
             {/* Mobile Authentication hidden for public site */}
             <div className="mobile-auth-placeholder" />
 
-            <button type="button" className="mobile-close" onClick={() => setMenuOpen(false)}>
+            <button
+              type="button"
+              className="mobile-close"
+              onClick={() => setMenuOpen(false)}
+            >
               <FaTimes />
             </button>
           </div>
         </div>
 
-        
         <div className="mobile-grid">
           <Link to="/" onClick={() => setMenuOpen(false)}>
             Home
@@ -183,10 +193,7 @@ export default function Navbar() {
                 <Link to="/overview" onClick={() => setMenuOpen(false)}>
                   Overview
                 </Link>
-                <Link
-                  to="/visionmission"
-                  onClick={() => setMenuOpen(false)}
-                >
+                <Link to="/visionmission" onClick={() => setMenuOpen(false)}>
                   Vision & Mission
                 </Link>
                 <Link to="/founders-msg" onClick={() => setMenuOpen(false)}>
@@ -196,7 +203,7 @@ export default function Navbar() {
                   President's Message
                 </Link>
                 <Link to="/core-team" onClick={() => setMenuOpen(false)}>
-                   Core Team
+                  Core Team
                 </Link>
               </div>
             )}
@@ -221,10 +228,7 @@ export default function Navbar() {
                 <Link to="/income" onClick={() => setMenuOpen(false)}>
                   Income
                 </Link>
-                <Link
-                  to="/womenempowerment"
-                  onClick={() => setMenuOpen(false)}
-                >
+                <Link to="/womenempowerment" onClick={() => setMenuOpen(false)}>
                   Women Empowerment
                 </Link>
                 <Link to="/students" onClick={() => setMenuOpen(false)}>

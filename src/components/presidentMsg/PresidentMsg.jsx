@@ -1,5 +1,6 @@
 import React from "react";
 import "./PresidentMsg.css"; // Import the new styling file
+import { Link } from "react-router-dom";
 
 const president = {
     name: "XXXXXX", // Placeholder Name
@@ -61,6 +62,14 @@ export default function PresidentMsg() {
                         </p>
                     </div>
                 </div>
+
+                <div className="view-more-link-my-life">
+              <Link className="view-more-link" to="/visionmission">
+                <button className="view-more" type="button">
+                  View More
+                </button>
+              </Link>
+              </div>
 
                  {/* Footer/Tagline Section */}
                  <div className="card-footer-bg">

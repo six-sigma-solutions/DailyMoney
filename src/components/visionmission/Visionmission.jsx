@@ -32,7 +32,7 @@ const Visionmission = () => {
 
   return (
     <main className="dm-vsn-main-content">
-      <div className="dm-title">Dailay Money Vision & Mission</div>
+      <div className="dm-title">Daily Money Vision & Mission</div>
       {/* HERO: centered rounded card with full-width image inside and left text */}
       <section className="dm-vsn-hero-card">
         
@@ -68,12 +68,15 @@ const Visionmission = () => {
       </div>
       <div className="vision-col vision-text-col">
         <h2>
-          <span >✔️</span>  Transforming the way the world lives — healthier in body, 
-          happier in heart, and richer in spirit.<br></br>
+          <div className='vision-paragraph-container'>
+          <p style={{ color: "red", marginRight: "15px" }}>✔️</p><p>  Transforming the way the world lives — healthier in body, 
+          happier in heart, and richer in spirit.</p>
+          </div>
 
-
-          <span style={{ color: "red" }}>✔️</span>  To inspire a world where well-being, joy, 
-          and prosperity thrive together.<br></br>
+          <div className='vision-paragraph-container'> 
+          <p style={{ color: "red", marginRight: "15px" }}>✔️</p>  <p>To inspire a world where well-being, joy, 
+          and prosperity thrive together.</p>
+          </div>
         </h2>
       </div>
     </div>
@@ -85,14 +88,23 @@ const Visionmission = () => {
       </div>
       <div className="vision-col vision-text-col">
         <h2>
-          <span style={{ color: "red" }}>✔️</span>  To nurture global wellness and wealth 
-          through mindful living and empowered growth.<br></br>
+          <div className='vision-paragraph-container'> 
+          <p style={{ color: "red", marginRight: "15px" }}>✔️</p>  <p>To nurture global wellness and wealth 
+          through mindful living and empowered growth.</p>
+          </div>
           
-          <span style={{ color: "red" }}>✔️</span>   To harmonize body, mind, and prosperity through conscious, 
-          nature-powered living.
+          <div className='vision-paragraph-container'> 
+          <p style={{ color: "red", marginRight: "15px" }}>✔️</p>  <p>To harmonize body, mind, and prosperity through conscious, 
+          nature-powered living.</p>
+          </div>
+          
         </h2>
       </div>
     </div>
+
+    
+
+    
 
     {/* Section 3: Image Left, Text Right */}
     <div className="vision-row">
@@ -101,10 +113,19 @@ const Visionmission = () => {
       </div>
       <div className="vision-col vision-text-col">
         <h2>
-          <span style={{ color: "red" }}>✔️</span>  A world of harmony — where health, happiness, 
-          and wealth coexist in balance.<br></br>
-          <span style={{ color: "red" }}>✔️</span>  To redefine success by aligning health, happiness, 
-          and financial growth.
+          <div className='vision-paragraph-container'> 
+          <p style={{ color: "red", marginRight: "15px" }}>✔️</p>  <p>A world of harmony — where health, happiness, 
+          and wealth coexist in balance.
+</p>
+          </div>
+          
+          <div className='vision-paragraph-container'> 
+          <p style={{ color: "red", marginRight: "15px" }}>✔️</p>  <p> To redefine success by aligning health, happiness, 
+          and financial growth.</p>
+          </div>
+
+
+
 
 
         </h2>
@@ -118,16 +139,29 @@ const Visionmission = () => {
       </div>
       <div className="vision-col vision-text-col">
         <h2>
-          <span style={{ color: "red" }}>✔️</span> To create a global movement that connects well-being 
-          with wealth-building for a better tomorrow.<br></br>
-
-          <span style={{ color: "red" }}>✔️</span> Empower every individual to live healthier, 
-          happier, and more abundant lives through balance and purpose.
+          <div className='vision-paragraph-container'> 
+          <p style={{ color: "red", marginRight: "15px" }}>✔️</p>  <p>To create a global movement that connects well-being 
+          with wealth-building for a better tomorrow.
+</p>
+          </div>
+          
+          <div className='vision-paragraph-container'> 
+          <p style={{ color: "red", marginRight: "15px" }}>✔️</p>  <p> Empower every individual to live healthier, 
+          happier, and more abundant lives through balance and purpose.</p>
+          </div>
         </h2>
       </div>
     </div>
   </div>
+
+
+
 </section>
+
+
+
+
+          
 
       <section className="dm-vsn-action-section">
         <button id="dm-vsn-solution-btn" className="dm-vsn-animated-btn" onClick={handleSolutionClick}>

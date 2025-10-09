@@ -1,6 +1,9 @@
 /* ======================================================= */
 /* GLOBAL RESET & BODY STYLES                            */
 /* ======================================================= */
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,80 +17,11 @@ body {
   color: #111;
 }
 
-/* ======================================================= */
-/* WELCOME BANNER FOR AUTHENTICATED USERS                */
-/* ======================================================= */
-.welcome-banner {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.welcome-content h2 {
-  font-size: 1.8rem;
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-
-.welcome-content p {
-  font-size: 1rem;
-  margin-bottom: 15px;
-  opacity: 0.9;
-}
-
-.quick-links {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.quick-link {
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  padding: 8px 16px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.quick-link:hover {
-  background: white;
-  color: #667eea;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 768px) {
-  .welcome-content h2 {
-    font-size: 1.4rem;
-  }
-  
-  .welcome-content p {
-    font-size: 0.9rem;
-  }
-  
-  .quick-links {
-    gap: 10px;
-  }
-  
-  .quick-link {
-    font-size: 0.8rem;
-    padding: 6px 12px;
-  }
-}
-
 .container1 {
-  max-width: 1400px;
+  max-width: 1700px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 60px;
-  padding-right: 60px;
+  
 }
 
 /* ======================================================= */
@@ -116,9 +50,15 @@ body {
 .hero-content h1 {
   font-weight: 400;
   line-height: 0.9;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin-bottom: 0.1em;
+ 
   
+}
+
+.daily-money{
+   margin-left: 0;
+  padding-left: 0;
 }
 
 .hero-red {
@@ -237,6 +177,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 @media (max-width:768px){
@@ -257,6 +199,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 30px;
 }
 }
 /* --- NEW CSS FOR TWO-IMAGE HOVER EFFECT --- */
@@ -277,7 +220,7 @@ body {
   transform: scale(1);
 
   /* Set the default (grayscale) image */
-  background-image: url('/budhhaa1.jpg');
+  background-image: url('https://res.cloudinary.com/dq9zq6ubg/image/upload/v1759986933/Gemini_Generated_Image_lagp5klagp5klagp_zf5c03.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -290,7 +233,7 @@ body {
 /* This DIRECTLY changes the background image on hover */
 .cutout-shape:hover .hero-promo-image {
   /* Set the hover (color) image */
-  background-image: url('/budhhaa1.jpg');
+  background-image: url('https://res.cloudinary.com/dq9zq6ubg/image/upload/v1759986933/Gemini_Generated_Image_lagp5klagp5klagp_zf5c03.png');
   
   /* Apply the zoom effect */
   transform: scale(1.07);
@@ -310,6 +253,7 @@ body {
   .hero-content {
     max-width: 100%;
     margin-top: 20px;
+    
   }
   
   .hero-red {
@@ -764,12 +708,17 @@ body {
 .footer-cta1 .say-hello-btn1 {
   background: #d32a2a;
   color: #fff;
-  padding: 10px 30px;
+  padding: 10px 20px;
   border-radius: 32px;
   font-size: 1em;
   font-weight: 500;
   cursor: pointer;
   transition: background 0.2s;
+}
+
+.say-hello-btn1{
+   padding-left: 0;
+   margin-left: 0;
 }
 
 .footer-cta1 .say-hello-btn1:hover {
@@ -785,6 +734,7 @@ body {
 .footer-bottom-content1 {
   display: flex;
   padding: 0 20px;
+  margin-left: 10px;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
@@ -816,6 +766,7 @@ body {
 .footer-subtext1 {
   font-size: 1.1em;
   color: #bdbdbd;
+  padding-left: 10px;
 }
 
 .footer-links-block1 {
@@ -867,13 +818,13 @@ body {
   }
 
   .hero-content {
-    order: 1;
+    order: 2;
     max-width: 100%;
     padding: 0;
   }
 
   .hero-image-container {
-    order: 2;
+    order: 1;
     width: 100%;
     max-width: 450px;
     height: auto;
@@ -982,7 +933,7 @@ body {
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column;
-    padding: 30px 50px;
+    padding: 30px 50px 30px 50px;
     gap: 24px;
     text-align: left !important;
     align-items: flex-start !important;
@@ -1017,14 +968,25 @@ body {
 
   .hero-content h2 {
     font-size: 26px;
+    padding-left: 0;
+    margin-left: 0;
   }
 
   #hero-subtitle {
     font-size: 20px;
+    padding-left: 0;
+    margin-left: 0;
   }
 
   .hero-desc {
     font-size: 1em;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  #hero-desc {
+     padding-left: 0;
+     margin-left: 0;
   }
 
   .see-work-btn,
@@ -1225,6 +1187,10 @@ body {
   .hero-section {
     padding: 30px 40px;
     gap: 24px;
+  }
+
+  .hero-content{
+     padding-left: 0px;
   }
   
   .hero-red {
@@ -1767,7 +1733,7 @@ body {
   margin-bottom: 20px;
   font-size: 25px;
   font-weight: 600;
-  color: #070552 ;
+  color: #0f02f5 ;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
@@ -1799,9 +1765,9 @@ body {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .popup-container {
-    background-color: aliceblue;
+    background-color: lightblue;
   }
 
 }
