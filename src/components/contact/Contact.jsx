@@ -198,8 +198,15 @@ export default function Contact() {
         {/* Left Section */}
         <div className="office-info">
           <h3>Our offices</h3>
+           <p style={{ paddingTop: "20px" }}>
+            SIX SIGMA SOLUTIONS,<br />
+            F-1,No 13,Breeze Enclave,Noombal<br />
+            Main Road,Noombal,Chennai,<br />
+            Tamil Nadu-600077,INDIA
+           
+          </p>
           <p style={{ paddingTop: "20px" }}>
-            Six Sigma Solution,<br />
+            SIX SIGMA SOLUTIONS,<br />
             NKC Towers 1st Floor,<br />
             Opp to Government Engineering College,<br />
             Kottagoundampatti, Karuppur, Salem-636011.<br />
