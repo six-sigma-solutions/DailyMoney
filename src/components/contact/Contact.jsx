@@ -176,7 +176,8 @@ export default function Contact() {
     
     console.log('Submitting form:', formData);
     try {
-      const API_BASE = import.meta.env.VITE_API_URL || '';
+    // Default to backend dev server on 4001 when VITE_API_URL isn't provided
+    const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:4001';
       console.log('Sending request to backend...', API_BASE || '(same-origin)');
       const res = await fetch(`${API_BASE}/api/enquiries`, {
         method: 'POST',

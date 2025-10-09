@@ -3,17 +3,17 @@ console.log('Testing API endpoints...');
 const testAPI = async () => {
   try {
     // Simple health check
-    const response = await fetch('http://localhost:4000/');
+  const response = await fetch('http://localhost:4001/');
     const data = await response.json();
     console.log('✅ Health check:', data);
     
     // Test recent enquiries
-    const recentResponse = await fetch('http://localhost:4000/api/enquiries/recent');
+  const recentResponse = await fetch('http://localhost:4001/api/enquiries/recent');
     const recentData = await recentResponse.json();
     console.log('✅ Recent enquiries:', recentData);
     
     // Test create enquiry
-    const createResponse = await fetch('http://localhost:4000/api/enquiries', {
+  const createResponse = await fetch('http://localhost:4001/api/enquiries', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

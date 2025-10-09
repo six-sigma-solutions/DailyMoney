@@ -332,6 +332,11 @@ html {
   margin-top: 40px;
 }
 
+/* Center the specific heading in the first right-image container so it reads cleanly */
+.container-1.right-image:first-of-type .box-1 h1 {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .container-1.right-image .box-1 {
     margin-top: 20px;
