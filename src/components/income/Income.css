@@ -45,6 +45,8 @@ body{
   border-radius:20px;
   margin:0 10px 0 30px;
 }
+.income-text p:hover{
+  animation:highlight 3s infinite;
 
 .income-text ul {
   margin-top: 10px;
@@ -168,4 +170,28 @@ body{
   .income-btn {
     width: 80%;
   }
+}
+
+@keyframes highlight{
+  0% 
+  { 
+    background-color: yellow; 
+    color: navy; 
+    border-radius: 20px; 
+    padding: 20px;
+  }
+  50% 
+  { 
+    background-color: transparent; 
+    color: blue; 
+    border-radius: 20px; 
+    padding: 20px;
+  }
+  100%
+  { 
+    background-color: yellow; 
+    color: darkblue; 
+    border-radius: 20px; 
+    padding: 20px;
+  }
 }
