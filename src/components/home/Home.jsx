@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 // Home.jsx
 
 import React, { useEffect, useRef, useState } from "react";
@@ -64,6 +65,7 @@ export default function Home() {
           </p>
           <p className="hero-desc">
             With Daily Money, every step forward is a step toward freedom,
+            // eslint-disable-next-line no-irregular-whitespace
             prosperity, and a life without limits.
             <br /> Welcome to{" "}
             <strong>

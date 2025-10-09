@@ -52,29 +52,39 @@ const Health = () => {
 
       <div className="container-1 right-image">
         <img src="image1.jpeg" alt="Styled" className="styled-img" />
-        <div className="box-1 color1">
+        <div className="box color1">
           <h1>“Health and fitness are not temporary they are my lifetime goal.”</h1>
+          <h1>“Health is not a destination — it’s a lifelong evolution.”</h1>
+          <h1>“Fitness is the art I practice for life.”</h1>
         </div>
       </div>
 
       <div className="container left-image">
-        <img src="image11.jpeg" alt="Styled" className="styled-img health-order-img" />
-        <div className="box health-order-heading color2">
+        <img src="image11.jpeg" alt="Styled" className="styled-img " />
+        <div className="box-1 color2">
           <h1>“I am committed to wellness for life.”</h1>
+          <h1>“Wellness is not a season — it’s my soul’s commitment.”</h1>
+          <h1>“Wellness isn’t a goal — it’s my lifestyle.”</h1>
         </div>
       </div>
 
-      <div className="container right-image">
-        <div className="box health-order-heading color3">
+            <div className="container-1 right-image">
+        <img src="image3.jpeg" alt="Styled" className="styled-img" />
+        <div className="box color3">
           <h1>“I need lifelong health and fitness.”</h1>
+          <h1>“I’m powered by purpose — strong for life.”</h1>
+          <h1>“Wellness is not a goal — it’s my lifetime mission.”</h1>
         </div>
-        <img src="image3.jpeg" alt="Styled" className="styled-img health-order-img" />
       </div>
 
-      <div className="container-1 left-image">
+    
+
+      <div className="container left-image">
         <img src="image4.jpeg" alt="Styled" className="styled-img" />
         <div className="box-1 color4">
           <h1>“I want to be fit, strong, and energetic for my entire life.”</h1>
+          <h1>“Forever active, forever alive, forever me.”</h1>
+          <h1>“I live strong. I stay fit. I grow limitless.”</h1>
         </div>
       </div>
 

@@ -68,7 +68,7 @@ const Visionmission = () => {
       </div>
       <div className="vision-col vision-text-col">
         <h2>
-          <span style={{ color: "red" }}>✔️</span>  Transforming the way the world lives — healthier in body, 
+          <span >✔️</span>  Transforming the way the world lives — healthier in body, 
           happier in heart, and richer in spirit.<br></br>
 
 

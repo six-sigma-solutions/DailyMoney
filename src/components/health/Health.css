@@ -1,8 +1,4 @@
-/* Zigzag content color classes */
-.color1 h1 { color: #d32a2a; }
-.color2 h1 { color: #0a7c5c; }
-.color3 h1 { color: #1a3a8a; }
-.color4 h1 { color: #b11597; }
+
 /* ---------------- VARIABLES ---------------- */
 :root {
   --font-primary: 'Poppins', sans-serif;
@@ -373,35 +369,43 @@ html {
 
 
 /* Different colors for each block */
-.container.left-image:nth-of-type(1) .box h1 {
-  color: #036600;
-  font-weight: 900; 
+
+/* Zigzag content color classes */
+
+.color1 h1 { 
+    color: #036600;
+  font-weight: 600; 
   font-size: 2.5rem;
   line-height: 1.2;
+  padding: 20px;
+
 }
 
-.container-1.right-image:nth-of-type(2) .box-1 h1 {
-  color: #b11597;
-  font-weight: 900; 
+
+.color2 h1 { 
+    color: #b11597;
+  font-weight: 600; 
   font-size: 2.5rem;
   line-height: 1.2;
-}
-
-.container.left-image:nth-of-type(3) .box h1 {
-  color:  #34004d; 
-  font-weight: 900;
+  padding: 20px;
+ }
+.color3 h1 { 
+    color:  #34004d; 
+  font-weight: 600;
   font-size: 2.5rem;
   line-height: 1.2;
-}
-
-.container-1.right-image:nth-of-type(4) .box-1 h1 {
+  padding: 20px;
+ }
+.color4 h1 {   
   color: #002770; 
-  font-weight: 900;
+  font-weight: 600;
   font-size: 2.5rem;
   line-height: 1.2;
+  padding: 20px;
 }
 
-.author{
+
+  .author{
   font-weight: bold;
   text-align: end;
   color: #fffb2c;
@@ -411,7 +415,6 @@ html {
 .car{
   color:black;
 }
-
 
 
 /* ---------------- RESPONSIVE ---------------- */
@@ -761,5 +764,3 @@ html {
   }  
 
 }
-
-
