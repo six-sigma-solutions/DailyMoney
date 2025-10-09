@@ -12,13 +12,19 @@ export default function Womenempowerment() {
       </div>
       
 
-      {/* Hero Section */}
-     <section className="women-hero">
-      <div className="women-content">
-        <h1>Empowered Women Empower Women</h1>
-        
-      </div>
-    </section>
+      {/* Hero Section: Image Left, Text Right */}
+      <section className="women-hero">
+        <div className="women-image">
+          <img src="https://res.cloudinary.com/dgay8ba3o/image/upload/v1759735299/grp_vjrnq7.png" alt="Empowered women" />
+        </div>
+
+        <div className="women-content">
+          <h1>Empowered Women Empower Women</h1>
+          <p>
+            Empowered women create waves of change — inspiring others, strengthening communities, and redefining leadership for a brighter tomorrow.
+          </p>
+        </div>
+      </section>
 
 
       {/* Mission Section */}
