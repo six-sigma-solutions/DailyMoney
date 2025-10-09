@@ -100,8 +100,24 @@ const Wealth = () => {
           View More
         </button>
   </Link>
-
-      
+     
+      <div className="card-footer-bg">
+                    {/* START: ADDED LOGO SECTION */}
+                    <div className="footer-logo-container">
+                        <img
+                            // This logo URL is consistent with your Navbar.jsx
+                            src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png" 
+                            alt="DailyMoney Logo"
+                            className="footer-logo"
+                        />
+                    </div>
+                    <h1 className="footer-title2">
+                        DAILY MONEY
+                    </h1>
+                    <p className="footer-subtitle2">
+                        Independent for Entire Life
+                    </p>
+                </div>
     </div>
   );
 };

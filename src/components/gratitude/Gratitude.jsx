@@ -1,5 +1,6 @@
 ﻿import React from 'react';
 import './Gratitude.css';
+import thanksImg from "../../assets/thanksforuniverse-img.jpg"
 
 const Gratitude = () => {
 
@@ -16,7 +17,7 @@ const Gratitude = () => {
       <section className="dm-grt-hero" id="dm-grt-home">
         <div className="dm-grt-hero-content">
           <img 
-            src="/thanksunivers.jpg" 
+            src={thanksImg}
             alt="Thanks to the Universe" 
             className="dm-grt-universe-image"
           />

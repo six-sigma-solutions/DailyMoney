@@ -27,12 +27,12 @@ export default function Home() {
     }
   }, []);
   return (
-    <div className="home-page">
+    <div className="container1">
       {showPopup && (
         <div className="popup-overlay">
           <div className="popup-container">
             <h2 className="popup-title">Welcome to Daily Money 💰</h2>
-            <p className="popup-text">Dedicated to the global IT Industry</p>
+            <p className="popup-text">Daily Money is deticated to people across the world! Especially to global IT community.</p>
             <button
               className="popup-close-btn"
               onClick={() => setShowPopup(false)}
@@ -44,7 +44,7 @@ export default function Home() {
       )}
       <section className="hero-section">
         <div className="hero-content">
-          <h1>
+          <h1 id="daily-money">
             <span className="hero-red">
               Daily <span className="money">Money</span>
             </span>
@@ -55,14 +55,15 @@ export default function Home() {
           <strong>
             <p id="hero-subtitle">Independent for Entire life.</p>
           </strong>
-          <p className="hero-desc">
-            Daily Money stands for discipline, unity and freedom.{" "}
+          <p id="hero-desc" className="hero-desc">
+            Daily Money stands for discipline, unity and freedom.Together, we are shaping a future of health, wealth, and limitless
+            opportunities.
           </p>
-          <p className="hero-desc">
+          <p id="hero-desc" className="hero-desc">
             Together, we are shaping a future of health, wealth, and limitless
             opportunities.
           </p>
-          <p className="hero-desc">
+          <p id="hero-desc" className="hero-desc">
             With Daily Money, every step forward is a step toward freedom,
             prosperity, and a life without limits.
             <br /> Welcome to{" "}

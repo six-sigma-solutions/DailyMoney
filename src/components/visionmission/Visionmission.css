@@ -14,11 +14,11 @@
 
 /* ---------------- CSS VARIABLES ---------------- */
 .dm-vsn-main-content {
-  
   --dm-vsn-muted: #9aa0a6;
   --dm-vsn-bg: #ffffff;
   --dm-vsn-dark: #0b0b0b;
   --dm-vsn-max-width: 1320px;
+  
 }
 
 /* ---------------- CONTAINER ---------------- */
@@ -35,10 +35,10 @@
   padding: 10px;
   margin: 20px 60px;
   border-radius: 12px;
-  color: #c92a2a;
+  color: #f10a0a;
   font-weight: 900;
-  font-weight: bold;
   font-size: 2.5rem;
+  letter-spacing: 1px;
 }
 
 /* ---------------- HERO CARD ---------------- */
@@ -94,26 +94,24 @@
   text-align: left;
 }
 
+.vision-paragraph-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .dm-vsn-card-text h1 {
   font-size: 2.2rem;
-  line-height: 1.2;
+  line-height: 1.3;
   font-weight: 700;
   margin-bottom: 20px;
   color: #fff;
-}
-
-.dm-vsn-kicker {
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--dm-vsn-accent);
-  margin-bottom: 6px;
 }
 
 .dm-vsn-lead {
   font-size: 1.1rem;
   margin-bottom: 20px;
   color: #ccc;
+  line-height: 1.6;
 }
 
 /* ---------------- CARD FEATURES ---------------- */
@@ -126,7 +124,7 @@
 }
 
 .col {
-  background: rgba(0,0,0,0.05);
+  background: rgba(0, 0, 0, 0.05);
   padding: 20px;
   border-radius: 12px;
   font-weight: 600;
@@ -144,21 +142,6 @@
 .dm-vsn-standards {
   background: #f4f4f4;
   padding: 40px;
-}
-
-.dm-vsn-standards .dm-vsn-h2 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: var(--dm-vsn-dark);
-  margin-bottom: 10px;
-}
-
-.dm-vsn-standards .dm-vsn-muted {
-  color: var(--dm-vsn-muted);
-}
-
-.dm-vsn-standards .dm-vsn-small {
-  font-size: 0.9rem;
 }
 
 .dm-vsn-grid-features {
@@ -192,25 +175,46 @@
 
 /* ---------------- ACTION BUTTON ---------------- */
 .dm-vsn-action-section {
-  padding: 30px 1rem;
+  padding: 40px 1rem;
   text-align: center;
 }
 
 .dm-vsn-animated-btn {
-  background: var(--dm-vsn-accent);
+  background: #f10a0a;
   color: #fff;
   border: none;
-  padding: 12px 24px;
-  font-size: 1rem;
+  padding: 14px 32px;
+  font-size: 1.1rem;
   font-weight: 600;
-  border-radius: 6px;
+  border-radius: 12px;
+  height: 50px;
+  width: 150px;
   cursor: pointer;
-  transition: transform 0.2s, opacity 0.2s;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(239, 68, 68, 0.3);
+  position: relative;
+  overflow: hidden;
 }
 
 .dm-vsn-animated-btn:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
+  background-color: #b71c1c;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(220, 38, 38, 0.4);
+}
+
+.dm-vsn-animated-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-20deg);
+  transition: all 0.5s ease;
+}
+
+.dm-vsn-animated-btn:active::after {
+  left: 100%;
+  transition: 0s;
 }
 
 /* ---------------- SPACER ---------------- */
@@ -219,172 +223,177 @@
   height: 60px;
 }
 
-/* ---------------- MEDIA QUERIES ---------------- */
-@media (max-width: 900px) {
-  .dm-vsn-card-overlay {
-    background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.1) 100%);
-    padding: 20px;
-    align-items: flex-end;
-  }
+/* ===================================================== */
+/* Vision Page Layout Styles */
+/* ===================================================== */
+.vision-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 16px;
+  background: #ffffff;
+  font-family: "Inter", Arial, sans-serif;
+}
 
-  .dm-vsn-card-text {
-    max-width: 100%;
-    text-align: center;
-  }
+.vision-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 4rem 0;
+}
 
+.vision-col {
+  flex: 1;
+}
+
+.vision-image-col img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.vision-image-col img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.vision-reverse {
+  flex-direction: row-reverse;
+}
+
+.vision-text-col {
+  flex: 2;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #0f172a;
+}
+
+.vision-tick-icon {
+  color: red;
+  font-size: 1.3em;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* ===================================================== */
+/* RESPONSIVE ALIGNMENT FIXES */
+/* ===================================================== */
+
+/* ---------- Large Screens (≥1200px) ---------- */
+@media (min-width: 1200px) {
+  .dm-title {
+    margin: 40px auto;
+    width: 80%;
+  }
+  .dm-vsn-card-inner {
+    width: 90%;
+  }
+  .vision-text-col {
+    max-width: 600px;
+  }
+}
+
+/* ---------- Tablets (≤1024px) ---------- */
+@media (max-width: 1024px) {
+  .dm-vsn-card-inner {
+    width: 95%;
+  }
   .dm-vsn-card-text h1 {
     font-size: 1.8rem;
+    line-height: 1.4;
+    text-align: center;
   }
-
+  .dm-vsn-card-overlay {
+    padding: 24px;
+    justify-content: center;
+  }
+  .dm-vsn-card-text {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .vision-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .vision-image-col img {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .vision-paragraph-container {
+    justify-content: center;
+  }
   .dm-vsn-grid-features {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 600px) {
+/* ---------- Mobile (≤768px) ---------- */
+@media (max-width: 768px) {
+  .dm-title {
+    font-size: 1.8rem;
+    padding: 8px;
+    width: 90%;
+    margin: 16px auto;
+  }
+  .dm-vsn-card-text h1 {
+    font-size: 1.4rem;
+  }
+  .dm-vsn-lead {
+    font-size: 0.95rem;
+  }
+  .dm-vsn-card-media {
+    height: 280px;
+    object-fit: cover;
+  }
+  .vision-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .vision-text-col {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 5px;
+    text-align: center;
+  }
+  .vision-image-col img {
+    max-width: 400px;
+  }
+  .dm-vsn-animated-btn {
+    width: 50%;
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+}
+
+/* ---------- Small Mobiles (≤480px) ---------- */
+@media (max-width: 480px) {
+  .dm-title {
+    font-size: 1.4rem;
+    padding: 6px;
+  }
+  .dm-vsn-card-text h1 {
+    font-size: 1.2rem;
+  }
+  .dm-vsn-lead {
+    font-size: 0.9rem;
+  }
+  .vision-section {
+    padding: 16px;
+  }
+  .vision-text-col {
+    font-size: 0.95rem;
+  }
+  .dm-vsn-animated-btn {
+    width: 50%;
+    padding: 10px;
+  }
   .dm-vsn-grid-features {
     grid-template-columns: 1fr;
   }
-
-  .dm-vsn-card-text h1 {
-    font-size: 1.5rem;
-  }
-
-  .dm-vsn-hero-card {
-    padding-top: 60px;
-  }
-}
-
-
-/* ===================================================== */
-/* Vision Page Styles - Clean Modular CSS */
-/* ===================================================== */
-
-/* Main section wrapper */
-.vision-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    padding: 40px 16px;
-    background: #ffffff;
-    font-family: "Inter", Arial, sans-serif;
-}
-
-/* Row for image and text */
-.vision-row {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin: 4rem 0;
-}
-
-/* Column styling */
-.vision-col {
-    flex: 1;
-}
-
-/* Image column */
-.vision-image-col img {
-    width: 100%;
-    border-radius: 12px;
-    object-fit: cover;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-/* Image hover effect */
-.vision-image-col img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-/* Reverse layout for zig-zag */
-.vision-reverse {
-    flex-direction: row-reverse;
-}
-
-/* Text column */
-.vision-text-col {
-    flex: 2;
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #0f172a;
-}
-
-/* Tick icon style */
-.vision-tick-icon {
-    color: red;
-    font-size: 1.3em;
-    margin-right: 8px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-/* Responsive adjustments for mobile */
-@media (max-width: 768px) {
-    .vision-row,
-    .vision-reverse {
-        flex-direction: column;
-    }
-
-    .vision-image-col img {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .vision-text-col {
-        text-align: center;
-    }
-}
-
-
-/* Section wrapper */
-.dm-vsn-action-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 16px;
-   
-}
-
-/* Animated button */
-.dm-vsn-animated-btn {
-    background-color: #ef4444; /* red accent */
-  
-    border: none;
-    border-radius: 12px;
-    padding: 14px 32px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 6px 15px rgba(239, 68, 68, 0.3);
-    position: relative;
-    overflow: hidden;
-}
-
-/* Hover animation */
-.dm-vsn-animated-btn:hover {
-    background-color: #dc2626; /* darker red on hover */
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(220, 38, 38, 0.4);
-}
-
-/* Optional: ripple effect when clicked */
-.dm-vsn-animated-btn::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: -100%;
-    background: rgba(255, 255, 255, 0.2);
-    transform: skewX(-20deg);
-    transition: all 0.5s ease;
-}
-
-.dm-vsn-animated-btn:active::after {
-    left: 100%;
-    transition: 0s;
 }
