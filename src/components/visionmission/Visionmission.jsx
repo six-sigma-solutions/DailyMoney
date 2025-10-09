@@ -159,7 +159,7 @@ const Visionmission = () => {
           <img src="vmd-1-g.jpeg" alt="Vision gallery 1" />
           <img src="vmd-22-g.jpeg" alt="Vision gallery 2" />
           <img src="vmd-3-g.jpeg" alt="Vision gallery 3" />
-          <img src="vmd-4-g.jpeg" alt="Vision gallery 4" />
+          <img src="vmd-44-g.jpeg" alt="Vision gallery 4" />
         </div>
       </section>
 
