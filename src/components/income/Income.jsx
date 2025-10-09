@@ -22,7 +22,7 @@ const Income = () => {
         </div>
         <div className="income-image">
           <img
-            style={{ width: "450px", height: "450px", borderRadius: "20px" }}
+            className="responsive-income-img"
             src="incomeimg-1.png"
             alt="Income concept"
           />
@@ -40,7 +40,7 @@ const Income = () => {
         </div>
         <div className="income-image">
           <img
-            style={{ width: "450px", height: "450px", borderRadius: "20px" }}
+            className="responsive-income-img"
             src="incomeimg-2.jpg"
             alt="Personal growth and learning"
           />
@@ -65,7 +65,7 @@ const Income = () => {
         </div>
         <div className="income-image">
           <img
-            style={{ width: "450px", height: "450px", borderRadius: "20px" }}
+            className="responsive-income-img"
             src="incomeimg-3.avif"
             alt="Financial freedom"
           />
@@ -89,7 +89,7 @@ const Income = () => {
         </div>
         <div className="income-image">
           <img
-            style={{ width: "450px", height: "450px", borderRadius: "20px" }}
+            className="responsive-income-img"
             src="incomeimg-4.jpg"
             alt="Growth and Balance"
           />

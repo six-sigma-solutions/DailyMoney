@@ -18,7 +18,7 @@ const Overview = () => {
           <img src="image-1.jpg" alt="People smiling and collaborating" />
         </div>
         <div className="zigzag-text-content">
-          <h2 style={{ color: "burlywood" }}>Our Purpose</h2>
+          <h2 style={{ color: "#80EF80" }}>Our Purpose</h2>
           <p>
             Daily Money exists to make the world healthier, happier, wealthier,
             one person, one family, and one community at a time.
@@ -60,7 +60,7 @@ const Overview = () => {
           <img src="image-3.jpg" alt="Generational family together" />
         </div>
         <div className="zigzag-text-content">
-          <h2 style={{ color: "blue" }}>Our Core Beliefs</h2>
+          <h2 style={{ color: "#89BFF8" }}>Our Core Beliefs</h2>
           <ul>
             <li>
               <strong>Wealth is Freedom –</strong> The ability to choose your

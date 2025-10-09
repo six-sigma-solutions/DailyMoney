@@ -99,7 +99,7 @@ const Wealth = () => {
         <button className="view-more" type="button">
           View More
         </button>
-      </Link>
+  </Link>
 
       
     </div>
