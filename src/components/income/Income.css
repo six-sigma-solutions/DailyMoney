@@ -56,8 +56,11 @@ body{
   justify-content: center;
 }
 
-.income-image img {
-  width: 450px;
+
+.income-image img,
+.responsive-income-img {
+  max-width: 100%;
+  height: auto;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
