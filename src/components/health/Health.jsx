@@ -51,7 +51,7 @@ const Health = () => {
       {/* Container Sections */}
 
       <div className="container-1 right-image">
-        <img src="image1.jpeg" alt="Styled" className="styled-img" />
+        <img src="image12.jpeg" alt="Styled" className="styled-img" />
         <div className="box color1">
           <h1>“Health and fitness are not temporary they are my lifetime goal.”</h1>
           <h1>“Health is not a destination — it’s a lifelong evolution.”</h1>
