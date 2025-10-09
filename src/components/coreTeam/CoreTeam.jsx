@@ -59,15 +59,7 @@ export default function CoreTeam() {
         ))}
       </div>
 
-      {/* Logo and Tagline */}
-      <div className="logo-section-1">
-        <img
-          src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png"
-          alt="Logo"
-        />
-        <h1>DAILY MONEY</h1>
-        <h1>INDEPENDENT FOR ENTIRE LIFE </h1>
-      </div>
+  
       <Footer />
     </section>
   );
