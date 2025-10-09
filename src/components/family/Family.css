@@ -1,3 +1,20 @@
+@media (max-width: 768px) {
+  .step,
+  .step.reverse {
+    flex-direction: column !important;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .step-img img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  .highlight-text {
+    font-size: 1.1rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
 /* Reset + Base */
 * {
   margin: 0;

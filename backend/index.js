@@ -15,7 +15,14 @@ const port = process.env.PORT || 4000;
 
 require('dotenv').config();
 
-app.use(cors());
+// Allow configurable frontend origin in production to reduce CORS surprises.
+// If FRONTEND_URL is not set we fall back to permissive behavior (same as before).
+const corsOptions = {};
+if (process.env.FRONTEND_URL) {
+  corsOptions.origin = process.env.FRONTEND_URL;
+  corsOptions.credentials = true;
+}
+app.use(cors(Object.keys(corsOptions).length ? corsOptions : {}));
 app.use(express.json());
 
 const pool = mysql.createPool({
@@ -308,7 +315,15 @@ app.post('/api/auth/logout', authenticateToken, async (req, res) => {
 // create enquiry
 app.post('/api/enquiries', async (req, res) => {
   const { name, email, phone, company, message } = req.body;
+  // Log incoming enquiries to help debug production issues (origin, IP and payload)
   try {
+    console.log('Enquiry request received from origin:', req.headers.origin, 'ip:', req.ip, 'body:', req.body);
+
+    // Basic validation to avoid empty rows and to provide clearer client feedback
+    if (!name || !email) {
+      return res.status(400).json({ error: 'Name and email are required' });
+    }
+
     const [result] = await pool.query(
       'INSERT INTO enquiries (name, email, phone, company, message) VALUES (?, ?, ?, ?, ?)',
       [name, email, phone, company, message]

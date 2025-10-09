@@ -1,8 +1,4 @@
-/* Zigzag content color classes */
-.color1 h1 { color: #d32a2a; }
-.color2 h1 { color: #0a7c5c; }
-.color3 h1 { color: #1a3a8a; }
-.color4 h1 { color: #b11597; }
+
 /* ---------------- VARIABLES ---------------- */
 :root {
   --font-primary: 'Poppins', sans-serif;
@@ -336,6 +332,11 @@ html {
   margin-top: 40px;
 }
 
+/* Center the specific heading in the first right-image container so it reads cleanly */
+.container-1.right-image:first-of-type .box-1 h1 {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .container-1.right-image .box-1 {
     margin-top: 20px;
@@ -373,35 +374,43 @@ html {
 
 
 /* Different colors for each block */
-.container.left-image:nth-of-type(1) .box h1 {
-  color: #036600;
-  font-weight: 900; 
+
+/* Zigzag content color classes */
+
+.color1 h1 { 
+    color: #036600;
+  font-weight: 600; 
   font-size: 2.5rem;
   line-height: 1.2;
+  padding: 20px;
+
 }
 
-.container-1.right-image:nth-of-type(2) .box-1 h1 {
-  color: #b11597;
-  font-weight: 900; 
+
+.color2 h1 { 
+    color: #b11597;
+  font-weight: 600; 
   font-size: 2.5rem;
   line-height: 1.2;
-}
-
-.container.left-image:nth-of-type(3) .box h1 {
-  color:  #34004d; 
-  font-weight: 900;
+  padding: 20px;
+ }
+.color3 h1 { 
+    color:  #34004d; 
+  font-weight: 600;
   font-size: 2.5rem;
   line-height: 1.2;
-}
-
-.container-1.right-image:nth-of-type(4) .box-1 h1 {
+  padding: 20px;
+ }
+.color4 h1 {   
   color: #002770; 
-  font-weight: 900;
+  font-weight: 600;
   font-size: 2.5rem;
   line-height: 1.2;
+  padding: 20px;
 }
 
-.author{
+
+  .author{
   font-weight: bold;
   text-align: end;
   color: #fffb2c;
@@ -411,7 +420,6 @@ html {
 .car{
   color:black;
 }
-
 
 
 /* ---------------- RESPONSIVE ---------------- */
@@ -762,4 +770,36 @@ html {
 
 }
 
+/* ---------------- MOBILE FIXES (final overrides) ---------------- */
+/* These enforce safe sizing and wrapping to avoid horizontal scroll on phones */
+@media (max-width: 768px) {
+  /* Make sure the page doesn't overflow on small devices */
+  html, .health-page { box-sizing: border-box; overflow-x: hidden; }
 
+  /* Allow hero title to wrap and scale down a bit */
+  .hero { min-height: auto !important; padding: 20px !important; }
+  .hero-title { white-space: normal !important; font-size: 1.9rem !important; line-height: 1.2 !important; }
+  .hero-content h1, .hero-content p { text-align: center !important; }
+
+  /* Constrain images so they never exceed the viewport width */
+  .container img, .container-1 img, .container .styled-img, .container-1 .styled-img {
+    width: 100% !important;
+    max-width: 340px !important;
+    height: auto !important;
+    margin: 0 auto 18px auto !important;
+  }
+
+  /* Reduce heavy paddings that cause overflow */
+  .box, .box-1 { padding: 20px 12px !important; text-align: center !important; }
+  .container, .container-1 { padding: 16px !important; gap: 18px !important; }
+
+  /* Health heading tweaks on mobile */
+  .health-heading { font-size: 1.8rem !important; margin: 0 0 8px 0 !important; padding: 0 12px !important; text-align: center !important; }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 1.6rem !important; }
+  .container img, .container-1 img, .container .styled-img, .container-1 .styled-img { max-width: 260px !important; }
+  .box h1, .box-1 h1 { font-size: 1.1rem !important; }
+  .author { margin-right: 0 !important; text-align: center !important; }
+}

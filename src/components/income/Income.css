@@ -38,8 +38,14 @@ body{
 .income-text {
   flex: 1;
   font-size: 1.1rem;
+  text-align:start;
+  padding:20px;
+  border-radius:20px;
+  margin:0 10px 0 30px;
 }
-
+.income-text p:hover{
+  animation:highlight 3s infinite;
+}
 .income-text ul {
   margin-top: 10px;
   list-style-type: disc;
@@ -54,10 +60,14 @@ body{
   flex: 1;
   display: flex;
   justify-content: center;
+  
 }
 
-.income-image img {
+
+.income-image img,
+.responsive-income-img {
   width: 450px;
+  height: 450px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
@@ -157,5 +167,26 @@ body{
   }
   .income-btn {
     width: 80%;
+  }
+}
+
+@keyframes highlight {
+  0% {
+    background-color: yellow;
+    color: navy;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  50% {
+    background-color: transparent;
+    color: blue;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  100% {
+    background-color: yellow;
+    color: darkblue;
+    border-radius: 20px;
+    padding: 20px;
   }
 }
