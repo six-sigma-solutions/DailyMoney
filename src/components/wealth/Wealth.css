@@ -1,3 +1,4 @@
+/* Wealth component styles - cleaned and fixed */
 :root {
   --bg: #f7f5f2;
   --card: #ffffff;
@@ -23,16 +24,22 @@ body {
 
 /* ---------- Page Wrapper ---------- */
 .wealthy-page {
-  width: 100%;
-  margin: 0 auto;
+  min-height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: var(--bg);
+  margin: 0;
+  padding: 2rem 0;
 }
 
-/* Center on big screens */
+/* Centered container on very large screens */
 @media (min-width: 1500px) {
   .wealthy-page {
     width: 70%; /* 15% side space */
+    margin: 0 auto;
   }
 }
 @media (min-width: 2000px) {
@@ -43,9 +50,17 @@ body {
 
 /* ---------- Header ---------- */
 .wealthy-header {
+  /* match hero width and align to its right edge so the title appears above the photo */
+  width: 70vw;
+  max-width: 900px;
+  margin: 0 auto 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px 0 0 0;
   background: transparent;
-    padding: 20px 0;
-  text-align: left;
+  position: relative;
+  z-index: 30;
 }
 .wealthy-logo {
   font-weight: 700;
@@ -53,162 +68,228 @@ body {
   letter-spacing: 2px;
   color: var(--accent);
   font-style: italic;
+  background: transparent; /* remove large navy pill */
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  display: inline-block; /* size to content only */
 }
 
 /* ---------- Containers ---------- */
 .wealthy-container {
+  width: 100%;
   max-width: var(--container-w);
-  margin: 0 0 0 60px;
-  padding: 0px;
+  margin: 0;
+  padding: 0 1rem;
 }
 
 /* ---------- Hero Section ---------- */
-.wealthy-hero-card {
-  background: linear-gradient(180deg, #ffffff 95%, #f9f9f9);
-  border-radius: var(--radius);
-  box-shadow: 0 10px 30px rgba(15, 20, 25, 0.06);
-  padding: 10px 20px;
-  margin: 20px auto;
-}
-.wealthy-hero-grid {
-  display: grid;
-  place-items: center;
-}
-.wealthy-portrait-card {
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 18px 40px rgba(11, 20, 25, 0.09);
-  background: linear-gradient(180deg, #ffffff, #fbfcfc);
+.wealthy-container.wealthy-hero-card {
   width: 100%;
-  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* slight overlap so title reads over the image without a large bar */
+  margin: -2px 0 1.5rem 0;
 }
+
+.wealthy-hero-grid {
+  display: flex;
+  width: 70vw;
+  max-width: 850px;
+  min-height: 385px; /* shortened another -5px as requested */
+  background: var(--card);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.wealthy-hero-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #f5e9d7 50%, #f7f7f7 50%);
+}
+
+.wealthy-portrait-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
 .wealthy-portrait-card img {
   width: 100%;
-  height: 400px;
-  display: block;
+  height: 100%;
   object-fit: cover;
+}
+
+/* Ensure images fill their column fully and have proper corner rounding */
+.wealthy-col.wealthy-image-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Rounded corners depending on which side the image is on */
+.wealthy-row .wealthy-col.wealthy-image-col img {
+  border-radius: 18px 0 0 18px;
+}
+.wealthy-row.wealthy-reverse .wealthy-col.wealthy-image-col img {
+  border-radius: 0 18px 18px 0;
+}
+
+/* Hero left/right halves rounding */
+.wealthy-hero-grid .wealthy-hero-image img {
+  border-radius: 18px 0 0 18px;
+}
+.wealthy-hero-grid .wealthy-portrait-card img {
+  border-radius: 0 18px 18px 0;
 }
 
 /* ---------- Zigzag Section ---------- */
 .wealthy-zigzag {
-  padding: 48px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0 4rem 0;
 }
+
+/* push the first zigzag row a bit lower under the hero card */
+.wealthy-container.wealthy-hero-card + .wealthy-zigzag .wealthy-row:first-child {
+  margin-top: 2.5rem;
+}
+
 .wealthy-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  display: flex;
+  width: 70vw;
+  max-width: 900px;
+  background: var(--card);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  overflow: hidden;
   align-items: center;
-  margin-bottom: 100px;
 }
-.wealthy-row.wealthy-reverse .wealthy-image-col {
-  order: 2;
-}
-.wealthy-row.wealthy-reverse .wealthy-text-col {
-  order: 1;
+
+.wealthy-row.wealthy-reverse {
+  flex-direction: row-reverse;
 }
 
 /* ---------- Image & Text ---------- */
-.wealthy-image-col {
+.wealthy-col.wealthy-image-col {
+  flex: 1;
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
+  background: #f5e9d7;
+  min-height: 270px; /* slightly shorter image column (-5px) */
 }
-.wealthy-image-col img {
-  width: 350px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(11, 20, 25, 0.06);
+
+.wealthy-col.wealthy-image-col img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 355px; /* reduced so images fit a shorter card (-5px) */
 }
-.wealthy-text-col {
-  background: var(--card);
-  padding: 28px;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+
+.wealthy-col.wealthy-text-col {
+  flex: 2;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f7f7;
+  font-size: 1rem;
+  text-align: left;
+  color: var(--text); /* ensure readable text color */
 }
-.wealthy-text-col:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+
+.wealthy-text-col h2 {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.4;
+  color: inherit; /* inherit the readable text color */
 }
+
 .wealthy-check {
-  color: red;
+  color: var(--btn-bg);
   font-weight: bold;
   font-size: 22px;
   vertical-align: middle;
   margin-right: 8px;
 }
 
-/* ---------- Row Colors ---------- */
-.row1 {
-  background-color: green;
-  color: white;
-}
-.row2 {
-  background-color: rgb(53, 34, 0);
-  color: white;
-}
-.row3 {
-  background-color: rgb(255, 251, 0);
-  color: darkgreen;
-}
-.row4 {
-  background-color: rgb(255, 123, 0);
-  color: navy;
-}
-
-/* ---------- Footer ---------- */
-.wealthy-footer {
-  text-align: center;
-  color: var(--muted);
-  padding: 20px 0;
-  margin-top: 50px;
-  border-top: 1px solid #e0e0e0;
-  font-size: 14px;
-}
+/* ---------- Row Colors (example) ---------- */
+.row1 { background-color: green; color: white; }
+.row2 { background-color: rgb(53, 34, 0); color: white; }
+.row3 { background-color: rgb(255, 251, 0); color: darkgreen; }
+.row4 { background-color: rgb(255, 123, 0); color: navy; }
 
 /* ---------- Responsive Layout ---------- */
-@media (max-width: 1000px) {
-  .wealthy-row {
-    grid-template-columns: 1fr; /* Stack vertically */
-    text-align: left;
+@media (max-width: 900px) {
+  .wealthy-hero-grid, .wealthy-row {
+    flex-direction: column;
+    width: 95vw;
+    max-width: 95vw;
   }
-
-  /* Always show image first */
-  .wealthy-image-col {
-    order: 1;
-    justify-content: center;
+  /* Make hero image behave well on small screens */
+  .wealthy-hero-grid {
+    min-height: auto; /* allow the grid to shrink to content */
+    background: transparent; /* remove desktop gradient behind image */
   }
-
-  .wealthy-text-col {
-    order: 2;
-    margin-top: 20px;
-    padding: 24px;
+  .wealthy-hero-image {
+    background: transparent; /* ensure no dark gradient shows through */
+    align-items: flex-start;
   }
-
-  /* Even reversed rows show image first */
-  .wealthy-row.wealthy-reverse .wealthy-image-col {
-    order: 1;
-  }
-  .wealthy-row.wealthy-reverse .wealthy-text-col {
-    order: 2;
-  }
-
-  .wealthy-image-col img {
-    width: 90%;
-    max-width: 350px;
-    margin: 0 auto;
+  .wealthy-portrait-card,
+  .wealthy-col.wealthy-image-col {
+    width: 100%;
+    height: auto;
     display: block;
+  }
+  .wealthy-col.wealthy-image-col img,
+  .wealthy-portrait-card img {
+    width: 100%;
+    height: auto; /* let browser size naturally on small screens */
+    object-fit: contain; /* show the whole image without awkward cropping */
+    object-position: center top; /* focus on the image top/center */
+    border-radius: 12px 12px 0 0;
+    display: block;
+  }
+  .wealthy-col.wealthy-text-col {
+    padding: 1.25rem;
+  }
+  /* On small screens keep title centered above the card */
+  .wealthy-header {
+    width: 95vw;
+    justify-content: center;
+    padding-top: 0.5rem;
+  }
+  .wealthy-container.wealthy-hero-card {
+    margin: 0.5rem 0 1.5rem 0;
   }
 }
 
 /* ---------- Extra Small Devices ---------- */
 @media (max-width: 520px) {
-  .wealthy-container {
-    padding: 16px;
-  }
-  .wealthy-text-col h2 {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-  .wealthy-image-col img {
-    width: 100%;
-  }
+  .wealthy-container { padding: 16px; }
+  .wealthy-text-col h2 { font-size: 16px; line-height: 1.4; }
+  .wealthy-col.wealthy-image-col img { width: 100%; }
 }
+
+/* ---------- Utility (our-wealth fallback styles) ---------- */
+.our-wealth-section {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #d3d4d7;
+}
+.our-wealth-title { font-size: 2.5rem; font-style: italic; font-weight: 700; color: #0a2233; margin-bottom: 1rem; }
+.our-wealth-card { display: flex; width: 70vw; max-width: 900px; min-height: 345px; background: #fff; border-radius: 18px; box-shadow: 0 8px 32px rgba(0,0,0,0.08); overflow: hidden; }
