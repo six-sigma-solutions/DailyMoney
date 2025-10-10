@@ -49,7 +49,7 @@ export default function Entrepreneur () {
       </div>
 
       <div className="ent-left">
-        <img src={img5} alt="Left" />
+        <img src={img670} alt="Left" />
         <div className="ent-box-left">
           <h1>
             "Entrepreneurship is for freedom and financial independence".<br />
@@ -67,7 +67,7 @@ export default function Entrepreneur () {
           "I choose entrepreneurship to shape opportunities, not just follow them".<br />
         </h1>
         <div className="ent-box-right">
-          <img src={img670} alt="Right" />
+          <img src={img5} alt="Right" />
         </div>
       </div>
 
