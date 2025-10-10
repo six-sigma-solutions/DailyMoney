@@ -92,12 +92,12 @@ export default function Home() {
                   </li>
                   <li>
                     <strong>
-                      Daily Money Made Easy, Health & Wealth Made Possible.
+                      Made Easy, Health & Wealth Made Possible.
                     </strong>
                   </li>
                   <li>
                     <strong>
-                      Smart Choices for Daily Money, Smarter Future in Health &
+                      Smart Choices for, Smarter Future in Health &
                       Wealth.
                     </strong>
                   </li>
