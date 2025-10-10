@@ -84,6 +84,7 @@ body {
 .wealthy-hero-grid {
   display: grid;
   place-items: center;
+  background-color: darkorange;
 }
 
 .wealthy-portrait-card {
