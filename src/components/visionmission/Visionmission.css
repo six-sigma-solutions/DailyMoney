@@ -86,6 +86,8 @@
   background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
   display: flex;
   align-items: center;
+  animation:none;
+  transform:none;
 }
 
 .dm-vsn-card-text {
