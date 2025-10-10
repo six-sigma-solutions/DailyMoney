@@ -131,7 +131,7 @@ const Visionmission = () => {
           {/* Section 4: Image Right, Text Left */}
           <div className="vision-row vision-reverse">
             <div className="vision-col vision-image-col">
-              <img src="vmd-4.jpeg" alt="Wealth concept 4" />
+              <img src="vm-143.jpeg" alt="Wealth concept 4" />
             </div>
             <div className="vision-col vision-text-col">
               <h2>
@@ -158,7 +158,7 @@ const Visionmission = () => {
         <div className="vision-gallery">
           <img src="vmd-1-g.jpeg" alt="Vision gallery 1" />
           <img src="vmd-22-g.jpeg" alt="Vision gallery 2" />
-          <img src="vmd-3-g.jpeg" alt="Vision gallery 3" />
+          <img src="cv-58.jpg" alt="Vision gallery 3" />
           <img src="vmd-44-g.jpeg" alt="Vision gallery 4" />
         </div>
       </section>
