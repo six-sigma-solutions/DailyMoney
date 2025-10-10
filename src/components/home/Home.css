@@ -220,7 +220,7 @@ body {
   transform: scale(1);
 
   /* Set the default (grayscale) image */
-  background-image: url('https://res.cloudinary.com/dq9zq6ubg/image/upload/v1759986933/Gemini_Generated_Image_lagp5klagp5klagp_zf5c03.png');
+  background-image: url('budhaa-567.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -233,7 +233,7 @@ body {
 /* This DIRECTLY changes the background image on hover */
 .cutout-shape:hover .hero-promo-image {
   /* Set the hover (color) image */
-  background-image: url('https://res.cloudinary.com/dq9zq6ubg/image/upload/v1759986933/Gemini_Generated_Image_lagp5klagp5klagp_zf5c03.png');
+  background-image: url('budhaa-567.jpg');
   
   /* Apply the zoom effect */
   transform: scale(1.07);
