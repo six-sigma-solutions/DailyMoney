@@ -35,8 +35,8 @@ const Overview = () => {
           <h2 style={{ color: "yellow" }}>Our Approach</h2>
           <ul>
             <li>
-              <strong>Clarity –</strong> Simplifying money so everyone
-              understands it.
+              <strong>Clarity –</strong> Simplifying money so everyone can
+              understand it.
             </li>
             <li>
               <strong>Discipline –</strong> Encouraging consistent daily habits
@@ -44,7 +44,7 @@ const Overview = () => {
             </li>
             <li>
               <strong>Integration –</strong> Connecting health, wealth, and
-              peace as parts of the same journey.
+              peace as part of the same journey.
             </li>
             <li>
               <strong>Generational Growth –</strong> Ensuring prosperity passes
