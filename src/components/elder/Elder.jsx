@@ -59,7 +59,7 @@ export default function Elder() {
               <strong>
                 <span className="dm-eldr-tick">✔</span>
                 <span className="dm-eldr-highlight">    DailyMoney</span> represents a <span className="dm-eldr-highlight">rebirth</span> 
-                a movement where elders <span className="dm-eldr-highlight">earn daily</span>, 
+                 a movement where elders <span className="dm-eldr-highlight">earn daily</span>, 
                 <span className="dm-eldr-highlight">share wisdom</span>, and feel <span className="dm-eldr-highlight">valuable</span> again. 
                 Live with <span className="dm-eldr-highlight">financial confidence</span>. 
                 Feel <span className="dm-eldr-highlight">valued</span> and <span className="dm-eldr-highlight">included</span>. 
