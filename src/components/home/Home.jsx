@@ -130,7 +130,7 @@ export default function Home() {
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                  Vision & Mission is <br />your <span>Future</span>
+                  Vision & Mission is <br />Your <span>Future</span>
                 </div>
               </div>
               <img
@@ -142,7 +142,7 @@ export default function Home() {
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                  Vision & Mission is <br /> your <span>future generation</span>
+                  Vision & Mission is <br /> Your <span>future generation</span>
                 </div>
               </div>
               <img
@@ -154,7 +154,7 @@ export default function Home() {
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                 Vision & Mission is <br /> your <span>generation after generations</span>
+                 Vision & Mission is <br /> Your <span>generation after generations</span>
                 </div>
               </div>
               <img
