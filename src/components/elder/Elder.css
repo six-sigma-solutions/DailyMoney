@@ -188,13 +188,61 @@
   }
 
   .dm-eldr-tagline {
-    flex-direction: row;
-    text-align: left;
+    flex-direction: column;
+    text-align: center;
     font-size: 1.2rem;
     line-height: 1.6;
   }
 
   .dm-eldr-highlight {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+/* ---------- MOBILE STYLES (768px) ---------- */
+@media (max-width: 768px) {
+  .dm-eldr-container {
+    padding: 0 15px;
+    gap: 40px;
+    margin: 20px auto;
+  }
+
+  .dm-eldr-header {
+    margin: 15px 15px;
+    padding: 15px;
+  }
+
+  .dm-eldr-header h1 {
+    font-size: 2rem;
+  }
+
+  .dm-eldr-row {
+    gap: 25px;
+  }
+
+  .dm-eldr-poster {
+    max-width: 350px;
+    margin: 0 auto 15px;
+  }
+
+  .dm-eldr-poster img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .dm-eldr-tagline {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+
+  .dm-eldr-highlight {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+
+  .dm-eldr-tick {
     font-size: 1.2rem;
   }
 }

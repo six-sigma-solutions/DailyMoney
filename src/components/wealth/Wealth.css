@@ -199,11 +199,12 @@ body {
 
 
 
-/* ---------- Responsive ---------- */
+/* ---------- Tablet Responsive ---------- */
 @media (max-width: 1000px) {
   .wealthy-row {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 30px;
   }
 
   .wealthy-image-col {
@@ -212,7 +213,7 @@ body {
 
   .wealthy-text-col {
     order: 2;
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   .wealthy-row.wealthy-reverse .wealthy-image-col {
@@ -225,7 +226,7 @@ body {
 
   .wealthy-image-col img {
     width: 90%;
-    max-width: 350px;
+    max-width: 400px;
     margin: 0 auto;
   }
 
@@ -233,21 +234,69 @@ body {
     justify-content: center;
     text-align: center;
   }
-
-
 }
 
-/* ---------- Small Screens ---------- */
-@media (max-width: 520px) {
+/* ---------- Mobile Responsive (768px) ---------- */
+@media (max-width: 768px) {
+  .wealthy-page {
+    padding: 1rem 0.5rem;
+  }
+
   .wealthy-container {
-    padding: 1rem;
+    padding: 0 15px;
+    gap: 30px;
+  }
+
+  .wealthy-header h1 {
+    font-size: 2rem;
+    padding: 15px;
+  }
+
+  .wealthy-row {
+    gap: 25px;
+  }
+
+  .wealthy-text-col {
+    padding: 15px;
+  }
+
+  .wealthy-text-col h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .wealthy-text-col p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .wealthy-image-col img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+  }
+}
+
+/* ---------- Small Mobile (480px) ---------- */
+@media (max-width: 480px) {
+  .wealthy-container {
+    padding: 0 10px;
+  }
+
+  .wealthy-header h1 {
+    font-size: 1.8rem;
+    padding: 12px;
   }
 
   .wealthy-text-col h2 {
     font-size: 1.1rem;
   }
 
+  .wealthy-text-col p {
+    font-size: 0.95rem;
+  }
+
   .wealthy-image-col img {
-    width: 100%;
+    max-width: 300px;
   }
 }
