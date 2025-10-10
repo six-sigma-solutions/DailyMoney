@@ -130,36 +130,36 @@ export default function Home() {
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                  Daily Money is your <span>Future</span>
+                  Vision & Mission is your <span>Future</span>
                 </div>
               </div>
               <img
                 className="solution-card-img1"
-                src="/phone-1.png"
+                src="/gen-1.jpg"
                 alt="Custom Apps"
               />
             </div>
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                  Daily Money is your <span>future generation</span>
+                  Vision & Mission is your <span>future generation</span>
                 </div>
               </div>
               <img
                 className="solution-card-img1"
-                src="/phone-2.png"
+                src="/gen-2.jpg"
                 alt="Design Systems"
               />
             </div>
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                  Daily Money is your <span>generation after generations</span>
+                 Vision & Mission is your <span>generation after generations</span>
                 </div>
               </div>
               <img
                 className="solution-card-img1"
-                src="./phone-3.png"
+                src="./gen-3.png"
                 alt="AI Tools"
               />
             </div>
