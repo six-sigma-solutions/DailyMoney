@@ -99,7 +99,7 @@ export default function Entrepreneur () {
         <img src={img9} alt="Left" />
         <div className="ent-box-left">
           <h1>
-            "I am ready to take risk for success".<br />
+            "I am ready to take risk a for success".<br />
             "I’m willing to take chances for success".<br />
             "I’m ready to embrace challenges".<br />
             "I’m not afraid to take bold steps toward my goals".
