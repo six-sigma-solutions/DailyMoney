@@ -58,8 +58,8 @@ export default function Elder() {
             <p className="dm-eldr-animate dm-eldr-tagline">
               <strong>
                 <span className="dm-eldr-tick">✔</span>
-                <span className="dm-eldr-highlight">    DailyMoney</span> represents a <span className="dm-eldr-highlight">rebirth</span> — 
-                a movement where elders <span className="dm-eldr-highlight">earn daily</span>, 
+                <span className="dm-eldr-highlight">    DailyMoney</span> represents a <span className="dm-eldr-highlight">rebirth</span> 
+                 a movement where elders <span className="dm-eldr-highlight">earn daily</span>, 
                 <span className="dm-eldr-highlight">share wisdom</span>, and feel <span className="dm-eldr-highlight">valuable</span> again. 
                 Live with <span className="dm-eldr-highlight">financial confidence</span>. 
                 Feel <span className="dm-eldr-highlight">valued</span> and <span className="dm-eldr-highlight">included</span>. 
@@ -101,9 +101,9 @@ export default function Elder() {
             <p className="dm-eldr-animate dm-eldr-tagline">
               <strong>
                 <span className="dm-eldr-tick">✔</span><span> Retirement means living life on your own</span> <span className="dm-eldr-highlight">schedule</span> and enjoying inner <span className="dm-eldr-highlight">peace</span>. 
-                It’s not the end of <span className="dm-eldr-highlight">possibilities</span> — 
+                It’s not the end of <span className="dm-eldr-highlight">possibilities</span> 
                 it’s the start of living life on your own <span className="dm-eldr-highlight">terms</span>. 
-                That’s the <span className="dm-eldr-highlight">DailyMoney</span> way — 
+                That’s the <span className="dm-eldr-highlight">DailyMoney</span> way
                 freedom with <span className="dm-eldr-highlight">purpose</span> and dignity in every stage of life.
               </strong>
             </p>
@@ -119,12 +119,12 @@ export default function Elder() {
             <p className="dm-eldr-animate dm-eldr-tagline">
               <strong>
                 <span className="dm-eldr-tick">✔</span><span>  When</span>
-                 <span className="dm-eldr-highlight">elders</span> thrive, <span className="dm-eldr-highlight">families</span> become stronger. 
+                 <span className="dm-eldr-highlight"> elders</span> thrive, <span className="dm-eldr-highlight">families</span> become stronger. 
                 When their <span className="dm-eldr-highlight">voices</span> are valued, <span className="dm-eldr-highlight">communities</span> become wiser. 
                 When they live <span className="dm-eldr-highlight">freely</span> and <span className="dm-eldr-highlight">confidently</span>, 
-                the whole <span className="dm-eldr-highlight">society</span> grows richer — 
+                the whole <span className="dm-eldr-highlight">society</span> grows richer  
                 in <span className="dm-eldr-highlight">humanity</span>, not just <span className="dm-eldr-highlight">wealth</span>. 
-                That’s the <span className="dm-eldr-highlight">DailyMoney</span> way — where every generation 
+                That’s the <span className="dm-eldr-highlight">DailyMoney</span> way where every generation 
                 learns, earns, and lives with <span className="dm-eldr-highlight">purpose</span>.
               </strong>
             </p>
