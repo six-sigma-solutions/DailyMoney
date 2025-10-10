@@ -37,16 +37,7 @@ export default function FounderMsg() {
         {/* Message Content Section */}
         <div className="message-content">
           <p className="message-quote">
-            “I’m <span className="signature">Chellapondy Vellaiswamy</span>,
-            with 35+ years of experience across Media, Finance, and Wellness.
-            From launching Kailash Cable Network in 1990 to serving as Deputy
-            Director - Distribution in Tamilthirai Tv and AVP at India Infoline
-            Ltd, I’ve built expertise in leadership and business growth. Since
-            2010, I’ve been a wellness consultant, helping over 1 lakh people
-            transform their health and wealth while building an organization of
-            5000+ associates. My global learning across 15+ countries and a
-            Doctorate in Social Work reflect my passion for holistic well-being
-            and community impact.”
+           “I’m <span className="signature">Chellapondy Vellaiswamy,</span> with over 35 years of experience across Media, Finance, and Wellness. From launching Kailash Cable Network in 1990 to serving as Deputy Director – Distribution at Tamilthirai TV and AVP at India Infoline Ltd, I have developed extensive expertise in leadership and business growth. Since 2010, I’ve been a wellness consultant, helping over 100,000 people transform their health and wealth while building an organization of 5,000+ associates. My global learning across 15+ countries, combined with a Doctorate in Social Work, reflects my passion for holistic well-being and community impact.”
           </p>
 
           <div className="message-section">
