@@ -14,8 +14,34 @@ const Solution = () => {
 
   return (
     <>
-      
       <div className="dm-sol-wrapper">
+      <div className="dm-sol-img-card">
+          <img
+            className="dm-sol-card-media"
+            src="/solution-7.jpg"
+            alt="Solution"
+          />
+         
+        </div>
+
+      <div className="dm-sol-img-card">
+          <img
+            className="dm-sol-card-media"
+            src="/solution-18.jpg"
+            alt="Solution"
+          />
+         
+        </div>
+
+          <div className="dm-sol-img-card">
+          <img
+            className="dm-sol-card-media"
+            src="/solution-45.jpg"
+            alt="Solution"
+          />
+         
+        </div>
+
         <div className="dm-sol-img-card">
           <img
             className="dm-sol-card-media"
