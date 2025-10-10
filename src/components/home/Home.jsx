@@ -34,8 +34,7 @@ export default function Home() {
           </p>
           <p id="hero-desc" className="hero-desc">
             With Daily Money, every step forward is a step toward freedom,
-            // eslint-disable-next-line no-irregular-whitespace
-            prosperity, and a life without limits.
+            and a life without limits.
             <br /> Welcome to{" "}
             <strong>
               <span className="daily-money">daily money!</span>
