@@ -33,10 +33,6 @@ export default function Home() {
             opportunities.
           </p>
           <p id="hero-desc" className="hero-desc">
-            Together, we are shaping a future of health, wealth, and limitless
-            opportunities.
-          </p>
-          <p id="hero-desc" className="hero-desc">
             With Daily Money, every step forward is a step toward freedom,
             // eslint-disable-next-line no-irregular-whitespace
             prosperity, and a life without limits.
