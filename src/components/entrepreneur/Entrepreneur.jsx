@@ -62,9 +62,9 @@ export default function Entrepreneur () {
 
       <div className="ent-right">
         <h1>
-          "I'm looking for entrepreneurship to create opportunities, not just take them".<br />
-          "I’m drawn to entrepreneurship to make opportunities, not just grab them".<br />
-          "I choose entrepreneurship to shape opportunities, not just follow them".<br />
+          "I'm looking for entrepreneurship to create opportunities".<br />
+          "I’m drawn to entrepreneurship to make opportunities".<br />
+          "I choose entrepreneurship to shape opportunities".<br />
         </h1>
         <div className="ent-box-right">
           <img src={img5} alt="Right" />
