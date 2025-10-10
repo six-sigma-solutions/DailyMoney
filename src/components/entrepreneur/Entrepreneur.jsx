@@ -4,7 +4,7 @@ import img1 from "/Enter1.jpeg";
 import img3 from "/img-3.jpg";
 import img4 from "/img-4.jpg";
 import img5 from "/img-5.jpg";
-import img6 from "/img-6.jpg";
+import img670 from "/img-670.jpg";
 import img7 from "/img-7.jpg";
 import img8 from "/img-8.jpg";
 import img9 from "/img-9.jpg";
@@ -67,7 +67,7 @@ export default function Entrepreneur () {
           "I choose entrepreneurship to shape opportunities, not just follow them".<br />
         </h1>
         <div className="ent-box-right">
-          <img src={img6} alt="Right" />
+          <img src={img670} alt="Right" />
         </div>
       </div>
 
