@@ -52,7 +52,7 @@ export default function Students() {
                 <span className="stu-page-tick-icon">✔ </span>
                 <span className="stu-page-highlight-text">Our future</span> starts with today's <span className="stu-page-highlight-text">discipline</span>.
                 We help turn <span className="stu-page-highlight-text">student loans</span> into <span className="stu-page-highlight-text">student gains</span>.
-                Your <span className="stu-page-highlight-text">degree</span> gets you a job. your <span className="stu-page-highlight-text"> DailyMoney skills</span> get you <span className="stu-page-highlight-text">freedom</span>.
+                Your <span className="stu-page-highlight-text">degree</span> gets you a job; your <span className="stu-page-highlight-text"> DailyMoney skills</span> get you <span className="stu-page-highlight-text">freedom</span>.
                 Build <span className="stu-page-highlight-text">wealth</span> while you <span className="stu-page-highlight-text">learn</span>.
                 Don't just chase <span className="stu-page-highlight-text">grades</span>,chase <span className="stu-page-highlight-text">growth</span>.
               </strong>
