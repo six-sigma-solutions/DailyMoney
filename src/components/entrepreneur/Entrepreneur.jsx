@@ -21,7 +21,7 @@ export default function Entrepreneur () {
       <div className="ent-section">
         <h1 className="entre-title">Empowering You to Lead, Build, and Grow</h1>
         <div className="ent-title">
-          <img src={img11} alt="Entrepreneur" />
+          <img src={img1} alt="Entrepreneur" />
         </div>
       </div>
 
