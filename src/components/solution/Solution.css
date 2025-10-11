@@ -22,7 +22,8 @@
 
 .dm-sol-card-media {
   width: 800px;
-  height: 600px;
+  height: 500px;
+  margin:20px 20px 20px 20px;
   border-radius: 20px;
   transition: transform 0.4s ease;
   box-shadow: 0 8px 16px rgba(0.4,0,0,0.4);
@@ -88,5 +89,6 @@
     padding: 10px 25px;
   }
 }
+
 
 
