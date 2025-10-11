@@ -120,7 +120,7 @@ const Visionmission = () => {
                 </div>
 
                 <div className='vision-paragraph-container'>
-                  <p style={{ color: "red", marginRight: "15px" }}>✔️</p>  <p> To redefine success by aligning health, happiness,
+                  <p style={{ color: "red", marginRight: "15px" }}>✔️</p>  <p> To redefine success by aligning well being, joy, happiness,
                     and financial growth.</p>
                 </div>
 
