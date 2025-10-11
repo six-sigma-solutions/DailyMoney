@@ -39,9 +39,8 @@ const Family = () => {
             style={{
               backgroundColor: "#d4edda",
               color: "green",
-              padding: "10px 20px",
               borderRadius: "8px",
-              fontSize: "1.5rem",
+              fontSize: "20px",
               fontWeight: "bold",
             }}
           >
