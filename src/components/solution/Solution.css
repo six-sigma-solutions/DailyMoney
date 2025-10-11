@@ -8,6 +8,12 @@
   min-height: 100vh;
 }
 
+@media (max-width: 768px) {
+  html, body { overflow-x: hidden !important; }
+  .solutions-grid, .solution-card1 { padding-left: 12px !important; padding-right: 12px !important; width: 100% !important; }
+  .solution-card-img1 { max-width: 100% !important; height: auto !important; }
+}
+
 /* ---------------- IMAGE CARD ---------------- */
 .dm-sol-img-card {
   width: 70%;

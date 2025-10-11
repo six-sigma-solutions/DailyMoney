@@ -69,3 +69,9 @@
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 768px) {
+  html, body { overflow-x: hidden !important; }
+  .footer-main1, .footer-bottom-content1 { padding-left: 12px !important; padding-right: 12px !important; }
+  .footer-logo-block1 img { max-width: 100% !important; height: auto !important; }
+}

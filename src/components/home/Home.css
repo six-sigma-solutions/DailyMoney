@@ -213,9 +213,10 @@ body {
 */
 
 .hero-promo-image {
-  width: 79%;
+  width: 100%;
+  max-width: 520px;
   height: 100%;
-   margin: 90px 80px 50px 0px;
+  margin: 0; /* removed large fixed margins that caused overflow on small screens */
   position: relative;
   transform: scale(1);
 
@@ -238,6 +239,28 @@ body {
   /* Apply the zoom effect */
   transform: scale(1.07);
   filter: grayscale(0%);
+}
+
+/* Mobile override: ensure promo image fits and doesn't introduce horizontal scroll */
+@media (max-width: 768px) {
+  .hero-promo-image {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    background-size: contain;
+    background-position: center;
+    transform: scale(1.03);
+  }
+
+  .cutout-shape {
+    padding-left: 0;
+    padding-top: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* Mobile responsive styles for hero section */
@@ -1340,6 +1363,101 @@ body {
 }
 
 
+/* ======================================================= */
+/* ADDITIONAL MOBILE OVERRIDES: tighten spacing and remove
+   fixed widths/min-widths that cause horizontal overflow      */
+/* ======================================================= */
+@media (max-width: 768px) {
+  /* Narrow the main container padding for mobile */
+  .container1 {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    max-width: 100%;
+  }
+
+  /* Hero: remove large left padding and ensure content centers */
+  .hero-section {
+    padding: 16px 12px !important;
+    gap: 16px !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  /* Ensure image container doesn't force a min width */
+  .hero-image-container {
+    min-width: auto !important;
+    max-width: 360px !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    order: 1 !important;
+  }
+
+  /* Buttons should size naturally */
+  .see-work-btn,
+  .get-started-btn,
+  .say-hello-btn1 {
+    width: auto !important;
+    max-width: 240px !important;
+    display: inline-block !important;
+    margin: 0 auto !important;
+  }
+
+  /* Remove forcing min-widths in solution layout so things stack */
+  .solution-container,
+  .solution-text-content,
+  .solution-image-container {
+    min-width: auto !important;
+    width: 100% !important;
+  }
+
+  .solutions-grid {
+    padding: 0 10px !important;
+    gap: 20px !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Footer adjustments */
+  .footer-bottom-content1 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 18px !important;
+  }
+
+  /* Make sure large images scale down */
+  .img-fluid,
+  .solution-card-img1,
+  .author-icon,
+  .founder-card img,
+  .team-member-card img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Cutout shape & promo image tweaks to avoid overflow */
+  .cutout-shape {
+    padding-left: 0 !important;
+    padding-top: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .hero-promo-image {
+    max-width: 360px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    background-size: contain !important;
+  }
+
+  /* General safeguard against horizontal scrolling */
+  html, body {
+    overflow-x: hidden !important;
+  }
+}
+
+
 @media (min-width: 737px) and (max-width: 900px) {
   /* --- TOP SOLUTION SECTION --- */
   .solution-container {
@@ -1859,7 +1977,7 @@ body {
   }
 
   .popup-text {
-    font-size: 22p;
+    font-size: 22px;
     color: #070552 ;
   }
 

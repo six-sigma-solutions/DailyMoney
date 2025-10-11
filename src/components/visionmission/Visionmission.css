@@ -5,6 +5,12 @@
   padding: 0;
 }
 
+@media (max-width: 768px) {
+  html, body { overflow-x: hidden !important; }
+  .container, .vision-mission { padding-left: 12px !important; padding-right: 12px !important; }
+  .vm-image, .vm-card img { max-width: 100% !important; height: auto !important; }
+}
+
 .dm-vsn-main-content {
   background: var(--dm-vsn-bg, #ffffff);
   font-family: 'Montserrat', Arial, sans-serif;

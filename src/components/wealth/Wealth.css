@@ -13,6 +13,12 @@
   --container-w: 1100px;
 }
 
+@media (max-width: 768px) {
+  html, body { overflow-x: hidden !important; }
+  .container, .wealth-hero, .wealth-content { padding-left: 12px !important; padding-right: 12px !important; }
+  .wealth-image, .wealth-img { max-width: 100% !important; height: auto !important; }
+}
+
 /* ---------- Base ---------- */
 * {
   box-sizing: border-box;

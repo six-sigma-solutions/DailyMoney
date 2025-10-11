@@ -8,6 +8,12 @@
   margin: 0 20px;
 }
 
+@media (max-width: 768px) {
+  html, body { overflow-x: hidden !important; }
+  .overview-container { padding-left: 12px !important; padding-right: 12px !important; }
+  .overview-image { max-width: 100% !important; height: auto !important; }
+}
+
 .overview-header-title {
   margin-bottom: 40px; /* Added margin for spacing */
 }
