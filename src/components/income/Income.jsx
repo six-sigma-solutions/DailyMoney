@@ -14,7 +14,7 @@ const Income = () => {
       <section className="income-section">
         <div className="income-text">
           <p>
-            Income is more than just money earned — it is the reward of effort,
+            Income is more than just money earned — it is the reward for effort,
             time, and value created. Whether through wages, salaries, profits,
             or investments, income provides the foundation for stability and
             growth.
