@@ -69,7 +69,7 @@ const Wealth = () => {
               <h2>
                 <span className="wealthy-check">✔️</span>
                 Our wealth is not just about what we accumulate, but about what
-                we enable. With wealth, we gain the ability to support our
+                we enable. With it, we gain the ability to support our
                 families, nurture dreams, create opportunities, and contribute
                 to causes that uplift society.
               </h2>
