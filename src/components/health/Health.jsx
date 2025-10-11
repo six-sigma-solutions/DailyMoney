@@ -83,7 +83,7 @@ const Health = () => {
         <img src="image4.jpeg" alt="Styled" className="styled-img" />
         <div className="box-1 color4">
           <h1>“I want to be fit, strong, and energetic for my entire life.”</h1>
-          <h1>“Forever active, forever alive, forever me.”</h1>
+          <h1>“Forever active, forever alive,<br /> forever me.”</h1>
           <h1>“I live strong, I stay fit, I grow limitless.”</h1>
         </div>
       </div>
