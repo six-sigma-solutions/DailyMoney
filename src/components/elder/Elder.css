@@ -103,9 +103,10 @@
 }
 
 .dm-eldr-tagline strong {
-  font-weight: 600;
-  display: inline;
-  text-align: left;
+    font-weight: 600;
+    display: inline;
+    text-align: start;
+    font-size: 24px;
 }
 
 /* ✅ Tick Icon Alignment */
@@ -190,13 +191,14 @@
   .dm-eldr-tagline {
     flex-direction: column;
     text-align: center;
-    font-size: 1.2rem;
-    line-height: 1.6;
+    font-size: 24px;
+    line-height: 1.5;
   }
 
   .dm-eldr-highlight {
-    font-size: 1.2rem;
     text-align: center;
+    font-size: 24px;
+    line-height: 1.5;
   }
 }
 
@@ -214,7 +216,7 @@
   }
 
   .dm-eldr-header h1 {
-    font-size: 2rem;
+    font-size: 24px;
   }
 
   .dm-eldr-row {
@@ -233,13 +235,13 @@
   }
 
   .dm-eldr-tagline {
-    font-size: 1.1rem;
-    padding: 0 10px;
+    font-size: 24px;
+    line-height: 1.5;
   }
 
   .dm-eldr-highlight {
-    font-size: 1.1rem;
-    padding: 0 10px;
+      font-size: 24px;
+      line-height: 1.5;
   }
 
   .dm-eldr-tick {
@@ -250,16 +252,17 @@
 /* ---------- EXTRA SMALL DEVICES ---------- */
 @media (max-width: 520px) {
   .dm-eldr-header h1 {
-    font-size: 1.8rem;
+    font-size: 20px;
   }
 
   .dm-eldr-tagline {
-    font-size: 1.1rem;
+    font-size: 24px;
     line-height: 1.5;
   }
 
   .dm-eldr-highlight {
-    font-size: 1.1rem;
+    font-size: 24px;
+    line-height: 1.5;
   }
 
   .dm-eldr-tick {

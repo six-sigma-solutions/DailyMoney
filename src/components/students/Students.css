@@ -100,10 +100,15 @@
 }
 
 .stu-page-tagline-text strong {
-  font-weight: 600;
-  display: inline;
-  text-align: left;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.5;
+    padding: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
+    align-content: space-around;
+    font-size: 24px;
 }
+
 
 /* ✅ Tick icon alignment fix */
 .stu-page-tick-icon {
@@ -209,13 +214,13 @@
   }
 
   .stu-page-tagline-text {
-    font-size: 1.1rem;
-    padding: 0 10px;
+    font-size: 24px;
+    line-height: 1.5;
   }
 
   .stu-page-highlight-text {
-    font-size: 1.1rem;
-    padding: 0 10px;
+    font-size: 24px;
+    line-height: 1.5;
   }
 
   .view-more {
@@ -237,7 +242,9 @@
   }
 
   .stu-page-highlight-text {
-    font-size: 1.1rem;
+      font-size: 24px;
+      align-content: center;
+      line-height: 1.5;
   }
 
   .view-more {
