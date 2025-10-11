@@ -57,7 +57,7 @@ const Income = () => {
               <br />
               Build lasting wealth and assets.
               <br />
-              Create the freedom to travel, explore, and experience the world.
+              Create the freedom to travel, explore, and experience the life.
               <br />
               Live with peace of mind and purpose.
             </p>
