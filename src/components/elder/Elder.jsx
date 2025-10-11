@@ -120,9 +120,9 @@ export default function Elder() {
                  <span className="dm-eldr-highlight"> elders</span> thrive, <span className="dm-eldr-highlight">families</span> become stronger. 
                 When their <span className="dm-eldr-highlight">voices</span> are valued, <span className="dm-eldr-highlight">communities</span> become wiser. 
                 When they live <span className="dm-eldr-highlight">freely</span> and <span className="dm-eldr-highlight">confidently</span>, 
-                the whole <span className="dm-eldr-highlight">society</span> grows richer  
-                in <span className="dm-eldr-highlight">humanity</span>, not just <span className="dm-eldr-highlight">wealth</span>. 
-                That’s the <span className="dm-eldr-highlight">DailyMoney</span> way where every generation 
+                the <span className="dm-eldr-highlight">society</span> grows richer  
+                in <span className="dm-eldr-highlight">humanity</span>, not just in <span className="dm-eldr-highlight">wealth</span>. 
+                That’s the <span className="dm-eldr-highlight">DailyMoney,</span> way where every generation 
                 learns, earns, and lives with <span className="dm-eldr-highlight">purpose</span>.
               </strong>
             </p>
