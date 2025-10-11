@@ -44,8 +44,8 @@
 }
 
 .zigzag-image-container img {
-  width: 100%;
-  max-width: 450px; /* Control max image size */
+  width: 375px;
+  height:300px; /* Control max image size */
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
