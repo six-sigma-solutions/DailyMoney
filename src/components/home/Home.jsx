@@ -266,7 +266,7 @@ export default function Home() {
       <footer className="footer-main1">
         <div>
           <div className="footer-cta1">
-            <img className="img-fluid" src="/footer1.jpg"></img>
+            <img className="img-fluid" src="/xxx.jpg"></img>
             <button className="say-hello-btn1" onClick={handleSayHelloClick}>
               Say Hello
             </button>{" "}
