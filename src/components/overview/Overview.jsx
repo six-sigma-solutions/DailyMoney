@@ -90,7 +90,7 @@ const Overview = () => {
         <div className="zigzag-text-content">
           <h2 style={{ color: "cyan" }}>Our Promise</h2>
           <p>
-            Daily Money is not just about income today, but about wealth for
+            Daily Money is not about just today's income, but about wealth for
             life and beyond. We help build strong foundations so every
             generation thrives—financially, physically, and spiritually.
           </p>
