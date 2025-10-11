@@ -74,7 +74,7 @@ const Visionmission = () => {
                 </div>
 
                 <div className='vision-paragraph-container'>
-                  <p style={{ color: "red", marginRight: "15px" }}>✔️</p>  <p>To inspire a world where well-being, joy,
+                  <p style={{ color: "red", marginRight: "15px" }}>✔️</p>  <p> Inspire in world where well-being, joy,
                     and prosperity thrive together.</p>
                 </div>
               </h2>
