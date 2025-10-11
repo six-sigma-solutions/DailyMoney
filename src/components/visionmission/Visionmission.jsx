@@ -156,7 +156,7 @@ const Visionmission = () => {
       <section className="vision-gallery-section">
         <h2 className="vision-gallery-title">Core Values</h2>
         <div className="vision-gallery">
-          <img src="vmd-1-g.jpeg" alt="Vision gallery 1" />
+          <img src="test1a.jpg" alt="Vision gallery 1" />
           <img src="vmd-22-g.jpeg" alt="Vision gallery 2" />
           <img src="cv-58.jpg" alt="Vision gallery 3" />
           <img src="vmd-44-g.jpeg" alt="Vision gallery 4" />
