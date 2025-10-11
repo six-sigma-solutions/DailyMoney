@@ -79,6 +79,7 @@
   .highlight-text {
     font-size: 1rem;
     padding: 0 5px;
+    text-align: center;
   }
 
   .view-more-btn {
@@ -145,8 +146,12 @@ p {
 }
 
 .process h2 {
-  font-size: 2rem;
+  font-size: 20px;
   margin-bottom: 1rem;
+  color: green;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .subtitle {
@@ -223,7 +228,7 @@ p {
 
 /* Highlight Text */
 .highlight-text {
-  text-align: justify;
+  text-align: center;
   font-weight: bold;
   line-height: 1.5;
   font-size: 1.5rem;
@@ -251,7 +256,6 @@ p {
   font-weight: bold;
 }
 
-/* Footer */
 footer {
   background: #111;
   color: #fff;
@@ -260,5 +264,5 @@ footer {
 }
 
 footer .btn {
-  margin: 1rem 0;
+  margin: 1rem 0;
 }
