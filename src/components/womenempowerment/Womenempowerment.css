@@ -257,7 +257,7 @@
   }
 
   .women-content p {
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.5;
   }
 
@@ -268,7 +268,7 @@
   }
 
   .women-section h2 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 15px;
   }
 
@@ -281,16 +281,13 @@
 
   /* Image Row */
   .women-image-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    gap: 10px;
     margin-top: 30px;
   }
 
   .women-image-row img {
-    width: 200px;
-    height: 240px;
-    padding: 0;
+    width: 100px;
+    height: 80px;
   }
 
   /* Stats Section */
@@ -340,14 +337,14 @@
   }
 }
 
-  /* Extra Small Mobile */
+/* Extra Small Mobile */
 @media (max-width: 480px) {
   .women-container {
     padding: 10px;
   }
 
   .women-header-1 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .women-hero {
@@ -359,18 +356,17 @@
   }
 
   .women-content p {
-    font-size: 13px;
+    font-size: 17px;
   }
 
   .women-points li {
-    font-size: 13px;
+    font-size: 17px;
     margin: 10px 0;
   }
 
   .women-image-row img {
-    width: 150px;
-    height: 180px;
-    padding: 0;
+    width: 80px;
+    height: 65px;
   }
 
   .stat-box h3 {
