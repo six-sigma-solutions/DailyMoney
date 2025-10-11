@@ -286,8 +286,9 @@
   }
 
   .women-image-row img {
-    width: 100px;
-    height: 80px;
+    width: 250px;
+    height: 250px;
+    margin:20px 0 20px 0;
   }
 
   /* Stats Section */
