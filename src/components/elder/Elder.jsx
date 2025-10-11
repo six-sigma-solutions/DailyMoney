@@ -101,7 +101,7 @@ export default function Elder() {
               <strong>
                 <span className="dm-eldr-tick">✔</span><span> Retirement means living life on your own</span> <span className="dm-eldr-highlight">schedule</span> and enjoying inner <span className="dm-eldr-highlight">peace</span>. 
                 It’s not the end of <span className="dm-eldr-highlight">possibilities</span> it’s the start of living life on your own <span className="dm-eldr-highlight">terms</span>. 
-                That’s the <span className="dm-eldr-highlight">DailyMoney</span> way
+                That’s the <span className="dm-eldr-highlight">DailyMoney</span> way:
                 freedom with <span className="dm-eldr-highlight">purpose</span> and dignity at every stage of life.
               </strong>
             </p>
