@@ -114,18 +114,18 @@ const Family = () => {
           </div>
         </div>
       </section>
-
-      {/* Blog Section */}
       <section className="blog">
-        <h2>From the blog</h2>
-        <p className="subtitle">Insights and updates from our team</p>
-        <div className="blog-posts">
-          <Link to="/entrepreneur" className="link">Read more →</Link>
-          
+        <div className="view-more-link-my-life">
+        <Link className="view-more-link" to="/entrepreneur">
+        <button className="view-more" type="button">View More</button>
+        </Link> 
         </div>
       </section>
       <Footer />
     </div>
+      
+
+ 
   );
 };
 
