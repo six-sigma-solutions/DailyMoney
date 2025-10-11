@@ -28,7 +28,7 @@ const Health = () => {
             Every choice - what we eat, how we move, how we rest shapes our future.
             When we care for our health, we care for our dreams, our families, and our world.
             Strong bodies. Clear minds. Happy hearts.
-            Together, we build a healthier tomorrow.
+            Together, we build a healthier tomorrow -
             Our health, our strength, our future.</p>
 
           <a href="#footer" className="btn-primary">
