@@ -76,9 +76,9 @@ export default function Entrepreneur () {
         <div className="ent-box-left">
           <h1>
             "Yes, I believe in building dreams into reality".<br />
-            "I believe in making dreams come true through action".<br />
+            "Yes, I turn dreams into reality through  my action".<br />
             "I’m committed to turning vision into reality".<br />
-            "I believe that dreams are meant to be built, not just imagined".<br />
+            "Dreams are meant to be built, not just dreamed".<br />
           </h1>
         </div>
       </div>
