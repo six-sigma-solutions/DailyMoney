@@ -168,7 +168,7 @@ export default function Home() {
           <div className="ar-vr-container">
             {/* Left Column with the Image */}
             <div className="ar-vr-image-column">
-              <img src="./wealth1.jpg" alt="AR/VR Experiences" />
+              <img src="./www.jpg" alt="AR/VR Experiences" />
               {/* The title overlay was removed from the previous design,
                   but you can add it back here if you want: 
                   <h3 className="ar-vr-image-title">AR/VR Experiences</h3> 
