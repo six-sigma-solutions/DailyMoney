@@ -84,9 +84,9 @@ const Wealth = () => {
             <div className="wealthy-col wealthy-text-col row4">
               <h2>
                 <span className="wealthy-check">✔️</span>
-                Wealth is not greed—it is growth. It is not selfishness—it is
+                Wealth is not greed — it is growth. It is not selfishness—it is
                 stewardship. When guided by purpose, wealth becomes a force for
-                freedom, for impact, and for legacy. Our wealth is our power to
+                freedom, impact, and legacy. Our wealth is our power to
                 live with dignity, give with generosity, and build a future that
                 outlives us.
               </h2>
