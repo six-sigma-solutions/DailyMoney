@@ -1098,7 +1098,7 @@ body {
 } 
 
 .img-fluid {
-   border-radius: 0px;
+   border-radius: 20px;
    width: 100%;
    border-bottom-left-radius: 30px;
    border-bottom-right-radius: 30px;
@@ -1591,7 +1591,7 @@ body {
 @media (max-width: 1024px) {
   .footer-main1 {
     margin: 20px;
-    padding: 24px 30px;
+    padding: 0;
     border-radius: 16px;
     color: #fff;
     text-align: left;
