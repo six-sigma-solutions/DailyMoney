@@ -364,7 +364,7 @@
     text-align: center;
   }
   .vision-image-col img {
-    max-width: 400px;
+    width: 100%;
   }
   .dm-vsn-animated-btn {
     width: 50%;
