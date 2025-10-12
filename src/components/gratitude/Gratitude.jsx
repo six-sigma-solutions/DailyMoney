@@ -25,7 +25,7 @@ const Gratitude = () => {
                 From this moment, my family and I choose to give first priority to health and to live a joyful and prosperous life.
               </p>
               <p className="dm-grt-paragraph">
-                I thank the Universe for blessing us with health, wealth, happiness, our children's future, abundance, opportunities to travel, and above all, virtue (good karma).
+                I thank the Universe for blessing us with health, wealth, happiness, our children's future, abundance opportunities to travel, and above all, virtue (good karma).
               </p>
               <p className="dm-grt-paragraph">
                 Together with the millions of people around the world benefiting, from today we too begin our journey —
