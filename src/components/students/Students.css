@@ -102,8 +102,6 @@
     font-weight: 600;
     text-align: left;
     line-height: 1.5;
-    padding: 20px 20px 20px 20px;
-    margin: 20px 20px 20px 20px;
     align-content: space-around;
     font-size: 24px;
 }
@@ -122,7 +120,7 @@
 .stu-page-highlight-text {
   color: var(--stu-page-accent);
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 24px;
 }
 
 /* ---------- Footer ---------- */
