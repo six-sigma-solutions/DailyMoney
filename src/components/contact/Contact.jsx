@@ -128,6 +128,12 @@ export default function Contact() {
           <h3>Our offices</h3>
           <p style={{ paddingTop: "20px" }}>
             Six Sigma Solution,<br />
+            F-1, No 13, Breeze Enclave,Noombal Main Road, Noombal, Chennai, <br />
+            Tamil Nad - 600077 INDIA
+          </p>
+          
+          <p style={{ paddingTop: "20px" }}>
+            Six Sigma Solution,<br />
             NKC Towers 1st Floor,<br />
             Opp to Government Engineering College,<br />
             Kottagoundampatti, Karuppur, Salem-636011.<br />
