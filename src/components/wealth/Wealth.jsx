@@ -32,7 +32,7 @@ const Wealth = () => {
           {/* Row 1 */}
           <div className="wealthy-row">
             <div className="wealthy-col wealthy-image-col">
-              <img src="mo.jpg" alt="Wealth concept 1" />
+              <img src="hhh.jpg" alt="Wealth concept 1" />
             </div>
             <div className="wealthy-col wealthy-text-col row1">
               <h2>
