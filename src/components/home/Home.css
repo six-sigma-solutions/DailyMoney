@@ -689,7 +689,7 @@ body {
 .footer-main1 {
   max-width: 800px;
   margin: 10px auto;
-  padding: 0px 40px 0px;
+  padding: 0px;
   border-radius: 20px;
   background: #931616;
   display: flex;
