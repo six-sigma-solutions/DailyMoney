@@ -1,16 +1,15 @@
 /* WomenEmpowerment.css */
 
+/* Base Container */
 .women-container {
   font-family: "Inter", Arial, sans-serif;
   line-height: 1.6;
-  
   margin: 0;
   padding: 0;
 }
 
 /* Header */
 .women-header {
-  
   text-align: center;
   padding: 10px;
   font-size: 1.5rem;
@@ -18,17 +17,18 @@
 }
 
 .women-dm-header-wrap {
-     margin: 5px 20px 15px 20px;
-  }
- .women-header-1 {
-    text-align: center;
-    font-size: 3rem;
-    color: #800000;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-radius: 20px;
-    
-    padding: 10px;
-  }
+  margin: 5px 20px 15px 20px;
+}
+
+.women-header-1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #800000;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 20px;
+  padding: 10px;
+}
+
 /* Hero Section - Image Left, Text Right */
 .women-hero {
   display: flex;
@@ -74,21 +74,13 @@
 
 .front-image {
   width: 250px;
-  
- 
- 
 }
-
-
-
-
-
 
 /* Mission Section */
 .women-section {
   margin-top: 30px;
   background: #fff;
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
   border-radius: 10px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
 }
@@ -123,10 +115,9 @@
 /* Image Row */
 .women-image-row {
   display: flex;
-  width: 100%;
-  height: 100%;
   justify-content: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
+  width: 100%;
   margin-top: 60px;
   gap: 15px;
 }
@@ -137,7 +128,7 @@
   object-fit: fill;
   border-radius: 25px;
   transition: transform 0.3s ease;
-  padding: 0px 30px 0px 30px;
+  padding: 0 30px;
 }
 
 .women-image-row img:hover {
@@ -207,17 +198,13 @@
   margin-top: 10px;
 }
 
-
-
 /* Responsive Layout */
 @media (max-width: 768px) {
-  /* Container */
   .women-container {
     margin: 20px auto;
     padding: 15px;
   }
 
-  /* Header */
   .women-dm-header-wrap {
     margin-bottom: 20px;
   }
@@ -227,6 +214,10 @@
     padding: 15px 10px;
   }
 
+  .women-hero {
+    flex-direction: column;
+  }
+
   .women-stats {
     flex-direction: column;
     padding: 30px 15px;
@@ -234,37 +225,37 @@
 
   .stat-box {
     margin: 10px 0;
-    min-width: auto;
   }
 
   .stat-box h3 {
     font-size: 1.5rem;
   }
 
-  /* Programs Section */
   .women-programs {
     flex-direction: column;
     align-items: center;
   }
-  .women-image img{
-    width:100%;
-    height:200px;
-    border-radius:10px;
+
+  .women-image img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+  }
 }
-}
-@media (max-width: 468px){
-  .women-image img{
+
+@media (max-width: 468px) {
+  .women-image img {
     width: 100%;
     height: 216px;
     border-radius: 10px;
     object-fit: fill;
   }
+
   .women-container {
     margin: 20px auto;
     padding: 15px;
   }
 
-  /* Header */
   .women-dm-header-wrap {
     margin-bottom: 20px;
   }
@@ -281,16 +272,21 @@
 
   .stat-box {
     margin: 10px 0;
-    min-width: auto;
   }
 
   .stat-box h3 {
     font-size: 1.5rem;
   }
 
-  /* Programs Section */
   .women-programs {
     flex-direction: column;
-    align-items: center;
-  }
+    align-items: center;
+  }
 }
+
+
+
+
+
+
+
