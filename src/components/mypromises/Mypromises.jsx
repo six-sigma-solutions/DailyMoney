@@ -7,7 +7,7 @@ const Mypromises = () => {
 // Action from the original HTML: navigate to the external link
   const handleGetMove = (e) => {
     e.preventDefault();
-    window.location.href = 'https://cpdian.goherbalife.com/Catalog/Home/Index/en-IN/';
+    window.location.href = '/bio';
   };
 
   return (
