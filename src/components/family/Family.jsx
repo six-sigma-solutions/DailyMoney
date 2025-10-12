@@ -28,7 +28,10 @@ const Family = () => {
       {/* Process Section */}
       <section className="process">
         <h2 style={{ color: "#d40000" }}>
-          “Protect. Grow. Prosper — For You and Your Family.”
+           Our Family
+        </h2>
+        <h2 style={{ color: "#d40000" }}>
+          “Protect. Grow. Prosper.”
         </h2>
         <p className="subtitle">
           True prosperity comes from both good health and financial security.
