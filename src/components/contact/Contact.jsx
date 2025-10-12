@@ -127,9 +127,10 @@ export default function Contact() {
         <div className="office-info">
           <h3>Our offices</h3>
           <p style={{ paddingTop: "20px" }}>
-            Six Sigma Solution,<br />
-            F-1, No 13, Breeze Enclave,Noombal Main Road, Noombal, Chennai, <br />
-            Tamil Nadu- 600077 India.
+            Six Sigma Solutions,<br />
+            F-1, No 13, Breeze Enclave,Noombal <br/> 
+            Main Road, Noombal, Chennai, <br />
+            Tamil Nadu- 600077, India.
           </p>
           
           <p style={{ paddingTop: "20px" }}>
