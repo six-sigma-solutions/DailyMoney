@@ -20,7 +20,7 @@ const Overview = () => {
         <div className="zigzag-text-content">
           <h2 style={{ color: "#80EF80" }}>Our Purpose</h2>
           <p>
-            Daily Money exists to make the world healthier, happier, wealthier,
+            Daily Money exists to make the world healthier, happier, wealthier -
             one person, one family, and one community at a time.
           </p>
         </div>
@@ -29,14 +29,14 @@ const Overview = () => {
       {/* Section 2 */}
       <section className="zigzag-layout-section reverse-layout">
         <div className="zigzag-image-container">
-          <img src="image-2.jpg" alt="People planning together" />
+          <img src="image-2.jpeg" alt="People planning together" />
         </div>
         <div className="zigzag-text-content">
           <h2 style={{ color: "yellow" }}>Our Approach</h2>
           <ul>
             <li>
-              <strong>Clarity –</strong> Simplifying money so everyone
-              understands it.
+              <strong>Clarity –</strong> Simplifying money so everyone can
+              understand it.
             </li>
             <li>
               <strong>Discipline –</strong> Encouraging consistent daily habits
@@ -44,7 +44,7 @@ const Overview = () => {
             </li>
             <li>
               <strong>Integration –</strong> Connecting health, wealth, and
-              peace as parts of the same journey.
+              peace as part of the same journey.
             </li>
             <li>
               <strong>Generational Growth –</strong> Ensuring prosperity passes
@@ -90,7 +90,7 @@ const Overview = () => {
         <div className="zigzag-text-content">
           <h2 style={{ color: "cyan" }}>Our Promise</h2>
           <p>
-            Daily Money is not just about income today, but about wealth for
+            Daily Money is not about just today's income, but about wealth for
             life and beyond. We help build strong foundations so every
             generation thrives—financially, physically, and spiritually.
           </p>

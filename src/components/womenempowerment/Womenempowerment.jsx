@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"; 
 import "./Womenempowerment.css";
 import { Link } from "react-router-dom";
 import Footer from '../footer/Footer';
@@ -33,21 +33,21 @@ export default function Womenempowerment() {
         <ul className="women-points">
           <li className="red-text">
             <b>
-              Women empowerment is not just about equality — it is about
+              Women's empowerment is not just about equality — it is about
               unlocking the full potential of humanity.
             </b>
           </li>
           <li className="blue-text">
             <b>
-              Women empowerment is not a charity — it is justice, progress, and
+              Women's empowerment is not a charity — it is justice, progress, and
               the future.
             </b>
           </li>
           <li className="green-text">
             <b>
-              Empowerment means women stand <span className="highlight-yellow">shoulder to shoulder</span> equal in strength and purpose.
-             
-              
+              Empowerment is the recognition that women are not behind, not
+              ahead, but standing{" "}
+              <span className="highlight-yellow">shoulder to shoulder</span>.
             </b>
           </li>
         </ul>

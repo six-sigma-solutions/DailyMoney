@@ -26,7 +26,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
   margin: 150px 0 120px 0;
   background-image: linear-gradient(45deg, blue, red);
   border-radius: 25px;
@@ -45,8 +44,8 @@
 }
 
 .zigzag-image-container img {
-  width: 100%;
-  max-width: 450px; /* Control max image size */
+  width: 375px;
+  height:300px; /* Control max image size */
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
@@ -111,16 +110,98 @@
   .zigzag-layout-section.reverse-layout {
     flex-direction: column;
     text-align: center;
+    margin: 80px 0 60px 0;
+    gap: 30px;
   }
 
   .zigzag-image-container,
   .zigzag-text-content {
     width: 100%;
     max-width: 500px;
+    margin: 0 auto;
   }
 
   .zigzag-image-container img {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+/* Mobile Responsive (768px) */
+@media (max-width: 768px) {
+  .overview-page-container {
+    padding: 15px;
+    margin: 0 10px;
+  }
+
+  .overview-header-title span {
+    font-size: 24px;
+    line-height: 2.8rem;
+    padding: 0 12px;
+  }
+
+  .zigzag-layout-section,
+  .zigzag-layout-section.reverse-layout {
+    margin: 60px 0 40px 0;
+    padding: 15px;
+    gap: 25px;
+  }
+
+  .zigzag-text-content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+
+  .zigzag-text-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .zigzag-image-container img {
+    max-width: 350px;
+    border-radius: 12px;
+  }
+
+  .overview-action-btn {
+    width: 200px;
+    font-size: 15px;
+    padding: 12px 20px;
+  }
+}
+
+/* Small Mobile (480px) */
+@media (max-width: 480px) {
+  .overview-page-container {
+    padding: 10px;
+    margin: 0 5px;
+  }
+
+  .overview-header-title span {
+    font-size: 20px;
+    line-height: 2.4rem;
+  }
+
+  .zigzag-layout-section,
+  .zigzag-layout-section.reverse-layout {
+    margin: 40px 0 30px 0;
+    padding: 12px;
+  }
+
+  .zigzag-text-content h2 {
+    font-size: 1.1rem;
+  }
+
+  .zigzag-text-content p {
+    font-size: 0.95rem;
+  }
+
+  .zigzag-image-container img {
+    max-width: 300px;
+  }
+
+  .overview-action-btn {
+    width: 180px;
+    font-size: 14px;
+    padding: 10px 16px;
   }
 }
 

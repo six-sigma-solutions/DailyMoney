@@ -1,8 +1,9 @@
-CREATE DATABASE IF NOT EXISTS dailymoney_contacts;
+-- Railway database already exists as 'railway'
+-- CREATE DATABASE IF NOT EXISTS railway;
 
-USE dailymoney_contacts;
+USE railway;
 
-CREATE TABLE IF NOT EXISTS enquiries (
+CREATE TABLE IF NOT EXISTS enquiry (
   id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(100),
   email VARCHAR(100),
@@ -39,5 +40,5 @@ CREATE TABLE IF NOT EXISTS user_sessions (
 );
 
 -- show recent 3
-USE dailymoney_contacts;
-SELECT * FROM enquiries ORDER BY created_at DESC LIMIT 3;
+USE railway;
+SELECT * FROM enquiry ORDER BY created_at DESC LIMIT 3;

@@ -146,27 +146,71 @@ body{
     flex-direction: column;
     text-align: center;
     padding: 40px 20px;
+    gap: 30px;
   }
   .income-section.reverse {
     flex-direction: column;
   }
   .income-image img {
     max-width: 100%;
+    height: auto;
   }
   .income-text {
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    padding: 15px;
   }
   .income-header h1 {
     font-size: 2rem;
   }
 }
 
-@media (max-width: 600px) {
-  .income-header {
-    padding: 40px 10px;
+@media (max-width: 768px) {
+  .income-section {
+    padding: 30px 15px;
+    gap: 25px;
   }
+  
+  .income-text {
+    margin: 0 10px;
+    padding: 15px;
+    font-size: 1rem;
+  }
+  
+  .income-image {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
+  .income-image img {
+    width: 100%;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .income-header {
+    padding: 25px 10px;
+  }
+  
+  .income-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .income-section {
+    padding: 20px 10px;
+    gap: 20px;
+  }
+  
+  .income-text {
+    font-size: 0.95rem;
+    padding: 12px;
+    margin: 0 5px;
+  }
+  
   .income-btn {
-    width: 80%;
+    width: 90%;
+    padding: 12px 20px;
+    font-size: 0.95rem;
   }
 }
 

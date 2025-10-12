@@ -62,9 +62,9 @@ export default function Entrepreneur () {
 
       <div className="ent-right">
         <h1>
-          "I'm looking for entrepreneurship to create opportunities, not just take them".<br />
-          "I’m drawn to entrepreneurship to make opportunities, not just grab them".<br />
-          "I choose entrepreneurship to shape opportunities, not just follow them".<br />
+          "I'm looking for entrepreneurship to create opportunities".<br />
+          "I’m drawn to entrepreneurship to make opportunities".<br />
+          "I choose entrepreneurship to shape opportunities".<br />
         </h1>
         <div className="ent-box-right">
           <img src={img5} alt="Right" />
@@ -76,9 +76,9 @@ export default function Entrepreneur () {
         <div className="ent-box-left">
           <h1>
             "Yes, I believe in building dreams into reality".<br />
-            "I believe in making dreams come true through action".<br />
+            "Yes, I turn dreams into reality through  my action".<br />
             "I’m committed to turning vision into reality".<br />
-            "I believe that dreams are meant to be built, not just imagined".<br />
+            "Dreams are meant to be built, not just dreamed".<br />
           </h1>
         </div>
       </div>
@@ -99,7 +99,7 @@ export default function Entrepreneur () {
         <img src={img9} alt="Left" />
         <div className="ent-box-left">
           <h1>
-            "I am ready to take risk for success".<br />
+            "I am ready to take a risk for success".<br />
             "I’m willing to take chances for success".<br />
             "I’m ready to embrace challenges".<br />
             "I’m not afraid to take bold steps toward my goals".

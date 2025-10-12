@@ -100,10 +100,15 @@
 }
 
 .stu-page-tagline-text strong {
-  font-weight: 600;
-  display: inline;
-  text-align: left;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.5;
+    padding: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
+    align-content: space-around;
+    font-size: 24px;
 }
+
 
 /* ✅ Tick icon alignment fix */
 .stu-page-tick-icon {
@@ -147,11 +152,12 @@
 
 
 
-/* ---------- Responsive Layout ---------- */
+/* ---------- Tablet Layout ---------- */
 @media (max-width: 1000px) {
   .stu-page-section {
     flex-direction: column;
     text-align: center;
+    gap: 40px;
   }
 
   .stu-page-reverse-section {
@@ -164,14 +170,63 @@
   }
 
   .stu-page-tagline-text {
-    flex-direction: row;
-    text-align: left;
+    flex-direction: column;
+    text-align: center;
     font-size: 1.2rem;
     line-height: 1.6;
   }
 
   .stu-page-highlight-text {
     font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+/* ---------- Mobile Layout (768px) ---------- */
+@media (max-width: 768px) {
+  .stu-page-container {
+    padding: 0 15px;
+    gap: 40px;
+    margin: 20px auto;
+  }
+
+  .stu-page-header {
+    margin: 15px 15px;
+    padding: 15px;
+  }
+
+  .stu-page-header h1 {
+    font-size: 2rem;
+  }
+
+  .stu-page-section {
+    gap: 30px;
+  }
+
+  .stu-page-image-box {
+    max-width: 350px;
+    margin: 0 auto 15px;
+  }
+
+  .stu-page-image-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .stu-page-tagline-text {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .stu-page-highlight-text {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .view-more {
+    width: 200px;
+    font-size: 1rem;
+    padding: 12px 20px;
   }
 }
 
@@ -187,7 +242,9 @@
   }
 
   .stu-page-highlight-text {
-    font-size: 1.1rem;
+      font-size: 24px;
+      align-content: center;
+      line-height: 1.5;
   }
 
   .view-more {

@@ -15,31 +15,62 @@ const port = process.env.PORT || 4000;
 
 require('dotenv').config();
 
-// Allow configurable frontend origin in production to reduce CORS surprises.
-// If FRONTEND_URL is not set we fall back to permissive behavior (same as before).
-const corsOptions = {};
-if (process.env.FRONTEND_URL) {
-  corsOptions.origin = process.env.FRONTEND_URL;
-  corsOptions.credentials = true;
-}
-app.use(cors(Object.keys(corsOptions).length ? corsOptions : {}));
+// CORS configuration for production deployment
+const corsOptions = {
+  origin: process.env.FRONTEND_URL || [
+    "http://localhost:5173", 
+    "http://localhost:3000",
+    "https://daily-money.vercel.app", // Add your frontend domain here
+    "https://*.vercel.app" // Allow all vercel apps during development
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true,
+  allowedHeaders: ["Content-Type", "Authorization"]
+};
+app.use(cors(corsOptions));
 app.use(express.json());
 
 const pool = mysql.createPool({
   host: process.env.DB_HOST || 'localhost',
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASS || '',
-  // default to the init.sql database so queries succeed when .env isn't configured
-  database: process.env.DB_NAME || 'dailymoney_contacts',
+  database: process.env.DB_NAME || 'railway',
+  port: process.env.DB_PORT || 3306,
+  ssl: process.env.NODE_ENV === 'production' ? {
+    rejectUnauthorized: false  // Changed for better cloud database compatibility
+  } : false,
   waitForConnections: true,
   connectionLimit: 10,
-  queueLimit: 0
+  queueLimit: 0,
+  acquireTimeout: 60000,
+  timeout: 60000,
+  reconnect: true
 });
 
 // Make pool available to auth middleware
 app.locals.pool = pool;
 
-app.get('/', (req, res) => res.json({ status: 'ok' }));
+// Test database connection on startup
+pool.getConnection()
+  .then(connection => {
+    console.log('✅ Database connected successfully');
+    connection.release();
+  })
+  .catch(error => {
+    console.error('❌ Database connection failed:', error.message);
+    if (process.env.NODE_ENV === 'production') {
+      console.error('🔧 Please check your production database configuration');
+    }
+  });
+
+app.get('/', (req, res) => {
+  res.json({ 
+    status: 'ok',
+    message: 'DailyMoney Backend API is running',
+    environment: process.env.NODE_ENV || 'development',
+    timestamp: new Date().toISOString()
+  });
+});
 
 // ===== AUTHENTICATION ROUTES =====
 
@@ -325,7 +356,7 @@ app.post('/api/enquiries', async (req, res) => {
     }
 
     const [result] = await pool.query(
-      'INSERT INTO enquiries (name, email, phone, company, message) VALUES (?, ?, ?, ?, ?)',
+      'INSERT INTO enquiry (name, email, phone, company, message) VALUES (?, ?, ?, ?, ?)',
       [name, email, phone, company, message]
     );
     res.json({ id: result.insertId });
@@ -344,10 +375,10 @@ app.post('/api/enquiries', async (req, res) => {
   }
 });
 
-// recent 3 enquiries
+// recent 3 enquiry
 app.get('/api/enquiries/recent', async (req, res) => {
   try {
-    const [rows] = await pool.query('SELECT * FROM enquiries ORDER BY created_at DESC LIMIT 3');
+    const [rows] = await pool.query('SELECT * FROM enquiry ORDER BY created_at DESC LIMIT 3');
     res.json(rows);
   } catch (err) {
     console.error(err);

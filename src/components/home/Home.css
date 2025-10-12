@@ -220,7 +220,7 @@ body {
   transform: scale(1);
 
   /* Set the default (grayscale) image */
-  background-image: url('https://res.cloudinary.com/dq9zq6ubg/image/upload/v1759986933/Gemini_Generated_Image_lagp5klagp5klagp_zf5c03.png');
+  background-image: url('https://res.cloudinary.com/dgay8ba3o/image/upload/v1760079374/WhatsApp_Image_2025-10-10_at_11.40.02_AM_j9nm5z.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -233,7 +233,7 @@ body {
 /* This DIRECTLY changes the background image on hover */
 .cutout-shape:hover .hero-promo-image {
   /* Set the hover (color) image */
-  background-image: url('https://res.cloudinary.com/dq9zq6ubg/image/upload/v1759986933/Gemini_Generated_Image_lagp5klagp5klagp_zf5c03.png');
+  background-image: url('https://res.cloudinary.com/dgay8ba3o/image/upload/v1760079374/WhatsApp_Image_2025-10-10_at_11.40.02_AM_j9nm5z.jpg');
   
   /* Apply the zoom effect */
   transform: scale(1.07);
@@ -426,6 +426,8 @@ body {
   width: 100%;
   max-width: 400px;
   text-align: center;
+  height: auto;
+  min-height: 450px;
 }
 
 .solution-card-content {
@@ -457,6 +459,8 @@ body {
   border-top: 1px solid #e0e0e0;
   transition: transform 0.3s ease;
   border-radius: 20px;
+  display: block;
+  margin: 0 auto;
 }
 
 .solution-card-img1 {
@@ -865,11 +869,48 @@ body {
   .solutions-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
-    flex-wrap: wrap;
+    padding: 0 20px;
   }
 
   .solution-card1 {
     max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .solutions-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 0 15px;
+    justify-items: center;
+  }
+
+  .solution-card1 {
+    max-width: 100%;
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .solution-card-img1 {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+    margin: 15px auto;
+  }
+
+  .solution-card-content {
+    padding: 20px 15px;
+  }
+
+  .solution-card-title1 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+
+  .solution-card-desc1 {
+    font-size: 1em;
+    line-height: 1.5;
   }
 }
 
@@ -933,47 +974,51 @@ body {
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column;
-    padding: 30px 50px 30px 50px;
-    gap: 24px;
-    text-align: left !important;
-    align-items: flex-start !important;
-
+    padding: 20px 15px;
+    gap: 20px;
+    text-align: center !important;
+    align-items: center !important;
   }
 
   .say-hello-btn1 {
-     width: 100px;
-     height: 50px;
+     width: 120px;
+     height: 45px;
   }
 
   .hero-actions{
-     justify-content: flex-start !important;
+     justify-content: center !important;
+     flex-direction: column;
+     gap: 15px;
   }
 
-  /* Text first, image below */
+  /* Image first, text below */
   .hero-content {
     order: 2;
-    text-align: left !important;
+    text-align: center !important;
+    width: 100%;
   }
 
   .hero-image-container {
     order: 1;
-    margin-top: 20px;
+    margin-top: 0;
     width: 100%;
-    max-width: 380px;
+    max-width: 320px;
+    display: flex;
+    justify-content: center;
   }
 
   .hero-red {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .hero-content h2 {
-    font-size: 26px;
+    font-size: 24px;
     padding-left: 0;
     margin-left: 0;
   }
 
   #hero-subtitle {
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 0;
     margin-left: 0;
   }
@@ -1179,40 +1224,68 @@ body {
 
 @media (max-width: 480px) {
   .container1 {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-
   .hero-section {
-    padding: 30px 40px;
-    gap: 24px;
+    padding: 15px 10px;
+    gap: 20px;
   }
 
   .hero-content{
      padding-left: 0px;
+     text-align: center;
   }
   
   .hero-red {
-    font-size: 32px;
+    font-size: 28px;
   }
   
   .hero-content h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
   
   #hero-subtitle {
-    font-size: 18px;
+    font-size: 16px;
   }
   
   .hero-desc {
-    font-size: 0.95em;
+    font-size: 0.9em;
   }
   
   .hero-actions {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 12px;
+  }
+
+  .hero-image-container {
+    max-width: 280px;
+  }
+
+  .solutions-grid {
+    padding: 0 10px;
+    gap: 20px;
+  }
+
+  .solution-card1 {
+    padding: 15px;
+    min-height: 350px;
+  }
+
+  .solution-card-img1 {
+    width: 150px;
+    margin: 10px auto;
+  }
+
+  .solution-card-title1 {
+    font-size: 1.2em;
+  }
+
+  .solution-card-desc1 {
+    font-size: 0.95em;
   }
   
   .see-work-btn, .get-started-btn {

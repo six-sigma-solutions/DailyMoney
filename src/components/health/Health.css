@@ -424,8 +424,8 @@ html {
   font-weight: 700;
   text-align: end;
   color: #fffb2c;
-  margin-right:60px; /* slightly larger offset for balance */
-  font-size:1.5rem; /* increased author size slightly more */
+  margin-right:180px;
+  font-size:27px;
 }
 .car{
   color:black;
@@ -513,7 +513,15 @@ html {
   flex-wrap: wrap; /* allow wrapping on smaller screens */
   gap: 40px;
 }
-
+.tamil{
+  color:yellow;
+}
+.footer .tamil-1{
+  color:white;
+  line-height:1.5;
+  font-size:1.6rem;
+  font-weight:800;
+}
 .container img,
 .container-1 img {
   width: 420px; /* reduced from 500px */
@@ -639,29 +647,15 @@ html {
 
 .footer:hover { transform: translateY(-3px); }
 
-.footer h1 {
-  font-size: 1.8rem; /* slightly larger headline */
-  font-weight: 900;
-  margin: 8px 0;
-  padding: 8px 40px; /* more horizontal padding so text aligns with wider footer */
-  color: #fffb2c;
-  text-align: start;
+.footer h1 { font-size: 1.7rem; font-weight: 900; margin-bottom: 13px; 
+  padding: 20px;
+  color: #fffb2c; 
+  text-align:start;
+  padding: 0 80px;
 }
-.footer h2 {
-  font-size: 1.25rem; /* a touch larger */
-  font-weight: 700;
-  padding: 6px 12px;
-  margin-bottom: 6px;
-  color: #cdefff;
-}
-.footer .english {
-  font-size: 1.6rem; /* increase English quote size slightly */
-  font-weight: 800;
-  margin-bottom: 6px;
-  color: #ffffff;
-  display: block;
-  width: 100%;
-}
+.footer h2 { font-size: 1.5rem; font-weight: 900; padding: 20px; margin-bottom: 13px; color: #cdefff }
+
+.footer .english { font-size: 1.8rem; font-weight: 900; margin-bottom: 13px; color: #ffffff; }
 
 
 

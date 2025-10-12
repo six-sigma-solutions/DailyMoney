@@ -1,18 +1,91 @@
+/* Mobile Responsive Styles */
 @media (max-width: 768px) {
+  .family-container {
+    padding: 0 15px;
+  }
+
+  .family-header {
+    margin: 20px 15px;
+    padding: 15px;
+  }
+
+  .family-header h1 {
+    font-size: 2rem;
+  }
+
   .step,
   .step.reverse {
     flex-direction: column !important;
-    gap: 1.5rem;
+    gap: 25px;
     text-align: center;
+    padding: 20px 15px;
   }
+  
+  .step-img {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
   .step-img img {
     max-width: 100%;
-    margin-bottom: 1rem;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 15px;
   }
+  
+  .step-content {
+    padding: 0 10px;
+  }
+  
   .highlight-text {
     font-size: 1.1rem;
     max-width: 100%;
     margin: 0 auto;
+    line-height: 1.5;
+  }
+
+  .view-more-btn {
+    width: 200px;
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .family-container {
+    padding: 0 10px;
+  }
+
+  .family-header {
+    margin: 15px 10px;
+    padding: 12px;
+  }
+
+  .family-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .step,
+  .step.reverse {
+    gap: 20px;
+    padding: 15px 10px;
+  }
+
+  .step-img {
+    max-width: 300px;
+  }
+
+  .highlight-text {
+    font-size: 1rem;
+    padding: 0 5px;
+    text-align: center;
+  }
+
+  .view-more-btn {
+    width: 180px;
+    font-size: 0.95rem;
+    padding: 10px 16px;
   }
 }
 /* Reset + Base */
@@ -73,8 +146,12 @@ p {
 }
 
 .process h2 {
-  font-size: 2rem;
+  font-size: 20px;
   margin-bottom: 1rem;
+  color: green;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .subtitle {
@@ -151,7 +228,7 @@ p {
 
 /* Highlight Text */
 .highlight-text {
-  text-align: justify;
+  text-align: center;
   font-weight: bold;
   line-height: 1.5;
   font-size: 1.5rem;
@@ -179,7 +256,6 @@ p {
   font-weight: bold;
 }
 
-/* Footer */
 footer {
   background: #111;
   color: #fff;
@@ -188,5 +264,5 @@ footer {
 }
 
 footer .btn {
-  margin: 1rem 0;
+  margin: 1rem 0;
 }

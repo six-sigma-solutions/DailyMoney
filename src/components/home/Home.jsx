@@ -3,7 +3,7 @@
 
 import React from "react";
 import "./Home.css";
-import videoFile from "../../assets/gif.mp4";
+import videoFile from "../../assets/glo.mp4";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Home() {
@@ -33,13 +33,8 @@ export default function Home() {
             opportunities.
           </p>
           <p id="hero-desc" className="hero-desc">
-            Together, we are shaping a future of health, wealth, and limitless
-            opportunities.
-          </p>
-          <p id="hero-desc" className="hero-desc">
             With Daily Money, every step forward is a step toward freedom,
-            // eslint-disable-next-line no-irregular-whitespace
-            prosperity, and a life without limits.
+            and a life without limits.
             <br /> Welcome to{" "}
             <strong>
               <span className="daily-money">daily money!</span>
@@ -97,12 +92,12 @@ export default function Home() {
                   </li>
                   <li>
                     <strong>
-                      Daily Money Made Easy, Health & Wealth Made Possible.
+                      Made Easy, Health & Wealth Made Possible.
                     </strong>
                   </li>
                   <li>
                     <strong>
-                      Smart Choices for Daily Money, Smarter Future in Health &
+                      Smart Choices for, Smarter Future in Health &
                       Wealth.
                     </strong>
                   </li>
@@ -135,36 +130,36 @@ export default function Home() {
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                  Daily Money is your <span>Future</span>
+                  Vision & Mission  <br />Your <span>Future</span>
                 </div>
               </div>
               <img
                 className="solution-card-img1"
-                src="/phone-1.png"
+                src="/gen-1.jpg"
                 alt="Custom Apps"
               />
             </div>
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                  Daily Money is your <span>future generation</span>
+                  Vision & Mission  <br /> Your <span>future generation</span>
                 </div>
               </div>
               <img
                 className="solution-card-img1"
-                src="/phone-2.png"
+                src="/gen-2.jpg"
                 alt="Design Systems"
               />
             </div>
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                  Daily Money is your <span>generation after generations</span>
+                 Vision & Mission  <br /> Your <span>generation after generations</span>
                 </div>
               </div>
               <img
                 className="solution-card-img1"
-                src="./phone-3.png"
+                src="./gen-3.png"
                 alt="AI Tools"
               />
             </div>
@@ -173,7 +168,7 @@ export default function Home() {
           <div className="ar-vr-container">
             {/* Left Column with the Image */}
             <div className="ar-vr-image-column">
-              <img src="./wealth1.jpg" alt="AR/VR Experiences" />
+              <img src="./www.jpg" alt="AR/VR Experiences" />
               {/* The title overlay was removed from the previous design,
                   but you can add it back here if you want: 
                   <h3 className="ar-vr-image-title">AR/VR Experiences</h3> 
@@ -271,7 +266,7 @@ export default function Home() {
       <footer className="footer-main1">
         <div>
           <div className="footer-cta1">
-            <img className="img-fluid" src="/footer1.jpg"></img>
+            <img className="img-fluid" src="/xxx.jpg"></img>
             <button className="say-hello-btn1" onClick={handleSayHelloClick}>
               Say Hello
             </button>{" "}

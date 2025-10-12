@@ -25,10 +25,10 @@ const Health = () => {
 
             Our health is our true wealth.
             It gives us energy, focus, and freedom to live fully.
-            Every choice what we eat, how we move, how we rest shapes our future.
+            Every choice - what we eat, how we move, how we rest shapes our future.
             When we care for our health, we care for our dreams, our families, and our world.
             Strong bodies. Clear minds. Happy hearts.
-            Together, we build a healthier tomorrow.
+            Together, we build a healthier tomorrow -
             Our health, our strength, our future.</p>
 
           <a href="#footer" className="btn-primary">
@@ -53,7 +53,7 @@ const Health = () => {
       <div className="container-1 right-image">
         <img src="image12.jpeg" alt="Styled" className="styled-img" />
         <div className="box color1">
-          <h1>“Health and fitness are not temporary they are my lifetime goal.”</h1>
+          <h1>“Health and fitness are not temporary - they are my lifetime goal.”</h1>
           <h1>“Health is not a destination — it’s a lifelong evolution.”</h1>
           <h1>“Fitness is the art I practice for life.”</h1>
         </div>
@@ -83,8 +83,8 @@ const Health = () => {
         <img src="image4.jpeg" alt="Styled" className="styled-img" />
         <div className="box-1 color4">
           <h1>“I want to be fit, strong, and energetic for my entire life.”</h1>
-          <h1>“Forever active, forever alive, forever me.”</h1>
-          <h1>“I live strong. I stay fit. I grow limitless.”</h1>
+          <h1>“Forever active, forever alive,<br /> forever me.”</h1>
+          <h1>“I live strong, I stay fit, I grow limitless.”</h1>
         </div>
       </div>
 
@@ -101,6 +101,10 @@ const Health = () => {
           முன் உண்டது செரித்ததைத் தெளிவாக அறிந்து, அதன் பின்னரே உண்பானால்,
           அவனுடைய உடலுக்கு ‘மருந்து’ வேண்டாம்.
         </h2>
+        <div>
+        <h1 className="tamil"> “நீரை சாப்பிட கற்றுக்கொள், உணவை அருந்த கற்றுக்கொள்  அதுவே உண்மையான ஆரோக்கியம்."</h1>
+        <h2 className="tamil-1">💧 “Eat your water. Drink your food. The secret of true health."</h2>
+        </div>
         <Link className="view-more-link" to="/wealth">
           <button className="view-more" type="button">View More</button>
         </Link>
