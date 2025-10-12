@@ -74,9 +74,15 @@ export default function Contact() {
     e.preventDefault();
     setStatus({ state: "sending" });
 
+    // Fixed: Properly use a template literal (backticks) for the combined phone number string
+    const combinedPhoneNumber = form.phone ? `${form.countryCode} ${form.phone}` : "";
+
     const formData = {
       ...form,
-      phone: form.phone ? `${form.countryCode} ${form.phone}` : "",
+      // Overwrite the 'phone' property with the combined string
+      phone: combinedPhoneNumber,
+      // Optional: You can remove the separate countryCode field from the payload
+      countryCode: undefined, 
     };
 
     emailjs
