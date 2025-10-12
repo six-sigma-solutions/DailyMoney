@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
   text-align: center;
   min-height: 100vh;
 }
@@ -12,8 +12,7 @@
 .dm-sol-img-card {
   width: 70%;
   height: 50%;
-  padding-bottom: 35px;
-  padding-top:35px;
+  padding: 35px 0;    /* combined top & bottom padding */
 }
 
 .dm-sol-img-card:hover {
@@ -24,10 +23,10 @@
 .dm-sol-card-media {
   width: 800px;
   height: 600px;
-  margin:20px 20px 20px 20px;
+  margin: 20px;
   border-radius: 20px;
   transition: transform 0.4s ease;
-  box-shadow: 0 8px 16px rgba(0.4,0,0,0.4);
+  box-shadow: 0 8px 16px rgba(0.4, 0, 0, 0.4);
 }
 
 .dm-sol-card-media:hover {
@@ -56,19 +55,17 @@
 }
 
 /* ---------------- RESPONSIVE DESIGN ---------------- */
-
 @media (max-width: 768px) {
-
   .dm-sol-img-card {
     max-width: 800px;
     margin: 30px;
     padding: 0;
   }
 
-  .dm-sol-img-card img{
+  .dm-sol-img-card img {
     height: 400px;
     width: 400px;
-    margin: 50px 0 50px 0;
+    margin: 50px 0;
   }
 
   .dm-sol-cta-button {
@@ -79,25 +76,19 @@
 
 /* Mobile view */
 @media (max-width: 480px) {
-
   .dm-sol-img-card {
     width: 100%;
     margin: -15px;
     padding: 0;
   }
 
-  .dm-sol-img-card img{
+  .dm-sol-img-card img {
     height: 250px;
     width: 325px;
   }
 
   .dm-sol-cta-button {
     font-size: 0.95rem;
-    padding: 10px 25px;
-  }
+    padding: 10px 25px;
+  }
 }
-
-
-
-
-
