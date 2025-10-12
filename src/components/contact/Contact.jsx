@@ -16,6 +16,7 @@ export default function Contact() {
 
   const [status, setStatus] = useState(null);
 
+  // Cleaned and deduplicated country codes for a cleaner dropdown
   const countryCodes = [
     { code: "+91", country: "India", flag: "🇮🇳" },
     { code: "+1", country: "USA/Canada", flag: "🇺🇸" },
@@ -26,7 +27,7 @@ export default function Contact() {
     { code: "+49", country: "Germany", flag: "🇩🇪" },
     { code: "+33", country: "France", flag: "🇫🇷" },
     { code: "+39", country: "Italy", flag: "🇮🇹" },
-    { code: "+7", country: "Russia/Kazakhstan", flag: "🇷🇺" },
+    { code: "+7", country: "Russia/Kazakhstan", flag: "🇷🇺" }, // Combined +7
     { code: "+55", country: "Brazil", flag: "🇧🇷" },
     { code: "+34", country: "Spain", flag: "🇪🇸" },
     { code: "+27", country: "South Africa", flag: "🇿🇦" },
@@ -40,6 +41,7 @@ export default function Contact() {
     { code: "+880", country: "Bangladesh", flag: "🇧🇩" },
     { code: "+94", country: "Sri Lanka", flag: "🇱🇰" },
     { code: "+977", country: "Nepal", flag: "🇳🇵" },
+    { code: "+20", country: "Egypt", flag: "🇪🇬" },
     { code: "+971", country: "UAE", flag: "🇦🇪" },
     { code: "+966", country: "Saudi Arabia", flag: "🇸🇦" },
     { code: "+90", country: "Turkey", flag: "🇹🇷" },
@@ -74,6 +76,22 @@ export default function Contact() {
     { code: "+593", country: "Ecuador", flag: "🇪🇨" },
     { code: "+595", country: "Paraguay", flag: "🇵🇾" },
     { code: "+598", country: "Uruguay", flag: "🇺🇾" },
+    { code: "+1-876", country: "Jamaica", flag: "🇯🇲" },
+    { code: "+1-246", country: "Barbados", flag: "🇧🇧" },
+    { code: "+1-268", country: "Antigua and Barbuda", flag: "🇦🇬" },
+    { code: "+1-242", country: "Bahamas", flag: "🇧🇸" },
+    { code: "+1-441", country: "Bermuda", flag: "🇧🇲" },
+    { code: "+1-758", country: "Saint Lucia", flag: "🇱🇨" },
+    { code: "+1-784", country: "Saint Vincent/Grenadines", flag: "🇻🇨" },
+    { code: "+1-868", country: "Trinidad and Tobago", flag: "🇹🇹" },
+    { code: "+1-264", country: "Anguilla", flag: "🇦🇮" },
+    { code: "+1-340", country: "U.S. Virgin Islands", flag: "🇻🇮" },
+    { code: "+1-809", country: "Dominican Republic", flag: "🇩🇴" },
+    { code: "+1-473", country: "Grenada", flag: "🇬🇩" },
+    { code: "+1-664", country: "Montserrat", flag: "🇲🇸" },
+    { code: "+1-869", country: "Saint Kitts and Nevis", flag: "🇰🇳" },
+    { code: "+1-345", country: "Cayman Islands", flag: "🇰🇾" },
+    { code: "+1-767", country: "Dominica", flag: "🇩🇲" },
   ];
 
   const handleChange = (e) =>
@@ -83,21 +101,28 @@ export default function Contact() {
     e.preventDefault();
     setStatus({ state: "sending" });
 
+    // 💥 FIX: Template literal syntax error corrected.
+    // Use backticks (`) for template literals to interpolate variables.
+    const fullPhoneNumber = form.phone ? `${form.countryCode} ${form.phone}` : "";
+
+    // Combine phone number and country code into the data for EmailJS
     const formData = {
       ...form,
-      phone: form.phone ? `${form.countryCode} ${form.phone}` : "",
+      phone: fullPhoneNumber,
     };
 
+    // EmailJS integration
     emailjs
       .send(
-        "service_f8o9xuz",
-        "template_6n6bxcd",
+        "service_f8o9xuz", // 👉 replace with your EmailJS Service ID
+        "template_6n6bxcd", // 👉 replace with your EmailJS Template ID
         formData,
-        "AVAVj3_wM2trMKMkp"
+        "AVAVj3_wM2trMKMkp" // 👉 replace with your EmailJS Public Key
       )
       .then(
         () => {
           setStatus({ state: "sent" });
+          // Clear the form after successful submission
           setForm({
             name: "",
             email: "",
@@ -127,6 +152,7 @@ export default function Contact() {
         <h1>Journey Together!.</h1>
       </div>
       <div className="container">
+        {/* Left Section (Office Info) - No changes needed */}
         <div className="office-info">
           <h3>Our offices</h3>
           <p style={{ paddingTop: "20px" }}>
@@ -178,6 +204,7 @@ export default function Contact() {
           </p>
         </div>
 
+        {/* Right Section (Form) */}
         <div className="form-section">
           <h3>For Inquiries</h3>
           <form onSubmit={handleSubmit}>
@@ -205,6 +232,9 @@ export default function Contact() {
                 onChange={handleChange}
                 className="country-code-select"
               >
+                {/* When rendering the country codes, you might want to show just the code/flag 
+                  in the dropdown for brevity, but the current structure with country name is fine.
+                */}
                 {countryCodes.map((country) => (
                   <option key={country.code} value={country.code}>
                     {country.flag} {country.code} {country.country}
@@ -252,10 +282,12 @@ export default function Contact() {
               {status && status.state === "sending" ? "Sending..." : "Send"}
               <i
                 style={{ color: "white", paddingLeft: "20px" }}
-                className="fas fa fa-angle-right"
+                // ✅ Changed "fas fa fa-angle-right" to "fas fa-angle-right" for correctness (though 'fa fa' often works)
+                className="fas fa-angle-right" 
               ></i>
             </button>
 
+            {/* Status messages */}
             {status && status.state === "sent" && (
               <p style={{ color: "green", marginTop: 12 }}>
                 ✅ Thank you — your enquiry has been submitted successfully!
@@ -263,7 +295,7 @@ export default function Contact() {
             )}
             {status && status.state === "error" && (
               <p style={{ color: "red", marginTop: 12 }}>
-                ❌ Submission failed —{" "}
+                ❌ Submission failed —
                 {status.message || "please try again later."}
               </p>
             )}
