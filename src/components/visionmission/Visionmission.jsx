@@ -131,7 +131,7 @@ const Visionmission = () => {
     {/* Section 4: Image Right, Text Left */}
     <div className="vision-row vision-reverse">
       <div className="vision-col vision-image-col">
-        <img src="vmd-4.jpeg" alt="Wealth concept 4" />
+        <img src="vm-143.jpeg" alt="Wealth concept 4" />
       </div>
       <div className="vision-col vision-text-col">
         <h2>
