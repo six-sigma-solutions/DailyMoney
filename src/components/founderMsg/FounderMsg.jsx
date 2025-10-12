@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const founder = {
   name: "Dr.V.Chellapondy",
-  role: "Founder & Financial Advisor",
+  role: "Founder & CEO",
   // Use the image URL you intend to use for the founder
   image: "/sir.png",
 };
