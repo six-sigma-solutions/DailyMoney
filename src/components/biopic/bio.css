@@ -4,13 +4,13 @@
   color: inherit;       /* Makes the text use the parent's color (not blue) */
 }
 
-.team-member-link .team-member:hover {
+.team-member:hover { /* Applied directly to the member card */
   transform: scale(1.03);
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
   transition: all 0.2s ease-in-out;
 }
 
-/* --- PREVIOUS CSS (Keep all of this) --- */
+/* --- PREVIOUS CSS (All of this is kept) --- */
 .bio-page-container {
     padding: 20px;
     font-family: Arial, sans-serif;
@@ -69,18 +69,12 @@
     position: relative; 
 }
 
-/* --- CHANGES START HERE --- */
-
 .team-member .profile {
     display: flex;
     align-items: center;    /* Keeps image and name vertically centered */
     gap: 15px;
     margin-bottom: 15px;
-
-    /* 1. Define a fixed width for the profile area */
-    width: 320px; /* Adjust if needed */
-
-    /* 2. Center this fixed-width container within the card */
+    width: 320px; /* This width will be adjusted for mobile */
     margin-left: auto;
     margin-right: auto;
 }
@@ -97,12 +91,8 @@
     font-size: 1.8em;
     margin: 0;
     color: #333;
-    
-    /* 3. Make the name left-aligned for a cleaner look */
     text-align: left;
 }
-
-/* --- CHANGES END HERE --- */
 
 .team-member .slogan {
     position: absolute;
@@ -156,24 +146,106 @@
   }
 }
 
-/* 2. Style the icon itself */
 .pointing-icon {
   position: absolute;
-  bottom: 2px; /* Position it at the very bottom */
+  bottom: 2px;
   left: 0;
   right: 0;
-  margin: 0 auto; /* Center horizontally */
-  font-size: 1.5rem; /* Make the emoji bigger */
-  animation: point-animation 1.2s infinite ease-in-out; /* Apply the animation */
+  margin: 0 auto;
+  font-size: 1.5rem;
+  animation: point-animation 1.2s infinite ease-in-out;
 }
 
 .founder-section .team-member-link {
-  position: relative; /* 1. This makes the link a positioning container */
-  display: inline-block; /* 2. Ensures it wraps the content properly */
-  padding-bottom: 35px; /* 3. Creates space at the bottom for the icon */
+  position: relative;
+  display: inline-block;
+  padding-bottom: 35px;
 }
 
-/* This positions the founder's icon correctly inside its new container */
 .founder-section .pointing-icon {
-  bottom: 0; /* Position at the very bottom of the link's padding area */
+  bottom: 0;
+}
+
+
+/* =============================================================== */
+/* ================== RESPONSIVE STYLES (NEW CODE) ================== */
+/* =============================================================== */
+
+/* --- For Tablets (e.g., iPads) --- */
+@media (max-width: 992px) {
+    .founder-header h1 {
+        /* Reduce the large side margins on the main title */
+        margin: 0 40px 20px;
+    }
+
+    .team-container {
+        /* Reduce the gap between cards */
+        gap: 25px;
+    }
+}
+
+
+/* --- For Mobile Phones --- */
+@media (max-width: 768px) {
+    .founder-header h1 {
+        /* Remove side margins and slightly reduce text size */
+        margin: 0 10px 20px;
+        font-size: 1.3em;
+        padding: 15px; /* Add padding for better spacing */
+    }
+
+    .founder-profile {
+        /* Stack the founder's image on top of their name */
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .founder-profile h1 {
+        font-size: 2em; /* Make founder name slightly smaller */
+    }
+
+    .team-container {
+        gap: 20px; /* Further reduce gap for mobile */
+    }
+
+    .team-member {
+        /* Make each card take up most of the screen width */
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .team-member .profile {
+        /* CRITICAL: Allow the profile section to fit the screen */
+        width: 100%;
+        justify-content: center; /* Center the profile content */
+    }
+
+    .founder-slogan {
+        font-size: 1.2em; /* Reduce slogan font size */
+    }
+}
+
+
+/* --- For Very Small Phones --- */
+@media (max-width: 480px) {
+    .bio-page-container {
+        padding: 10px; /* Reduce overall page padding */
+    }
+
+    .team-member .profile {
+        /* On very small screens, stack the image and name */
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .team-member h2 {
+        /* Center the name below the image */
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .team-member {
+        /* Adjust padding for smaller cards */
+        padding: 20px 20px 60px;
+    }
 }
