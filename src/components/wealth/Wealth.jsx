@@ -21,7 +21,7 @@ const Wealth = () => {
           <div className="wealthy-hero-grid">
             <div className="wealthy-hero-image" aria-hidden="true">
               <div className="wealthy-portrait-card">
-                <img src="qqq.jpg" alt="Portrait" />
+                <img src="lll.jpg" alt="Portrait" />
               </div>
             </div>
           </div>
