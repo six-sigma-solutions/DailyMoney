@@ -7,7 +7,7 @@ const founder = {
   name: "Dr.V.Chellapondy",
   role: "Founder & Financial Advisor",
   // Use the image URL you intend to use for the founder
-  image: "/sir1.jpg",
+  image: "/sir.png",
 };
 
 export default function FounderMsg() {

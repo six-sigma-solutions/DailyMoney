@@ -19,7 +19,7 @@
 .stu-page-header {
   text-align: center;
   padding: 20px;
-  color: rgb(77, 37, 37);
+  color: darkgreen;
   margin: 30px 40px;
   border-radius: 12px;
   font-weight: bold;
@@ -47,7 +47,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 90px;
+  margin: 20px 40px 120px 40px;
 }
 
 .stu-page-reverse-section {
@@ -67,8 +68,8 @@
 
 .stu-page-image-box img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 400px;
+  object-fit: fill;
   border-radius: 20px;
   cursor: pointer;
 }

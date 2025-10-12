@@ -355,7 +355,7 @@ app.get('/api/enquiries/recent', async (req, res) => {
   }
 });
 
-app.listen(port, () => console.log(`Server listening on port ${port}`));
+app.listen(port, '0.0.0.0', () => console.log(`Server listening on port ${port}`));
 
 // Optional: serve built frontend from backend in production
 const path = require('path');

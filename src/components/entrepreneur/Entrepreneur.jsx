@@ -4,7 +4,7 @@ import img1 from "/Enter1.jpeg";
 import img3 from "/img-3.jpg";
 import img4 from "/img-4.jpg";
 import img5 from "/img-5.jpg";
-import img6 from "/img-6.jpg";
+import img670 from "/img-670.jpg";
 import img7 from "/img-7.jpg";
 import img8 from "/img-8.jpg";
 import img9 from "/img-9.jpg";
@@ -49,7 +49,7 @@ export default function Entrepreneur () {
       </div>
 
       <div className="ent-left">
-        <img src={img5} alt="Left" />
+        <img src={img670} alt="Left" />
         <div className="ent-box-left">
           <h1>
             "Entrepreneurship is for freedom and financial independence".<br />
@@ -67,7 +67,7 @@ export default function Entrepreneur () {
           "I choose entrepreneurship to shape opportunities, not just follow them".<br />
         </h1>
         <div className="ent-box-right">
-          <img src={img6} alt="Right" />
+          <img src={img5} alt="Right" />
         </div>
       </div>
 

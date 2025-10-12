@@ -1,48 +1,20 @@
 /* eslint-disable no-irregular-whitespace */
 // Home.jsx
 
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import "./Home.css";
 import videoFile from "../../assets/gif.mp4";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Home() {
   const navigate = useNavigate();
-  const [showPopup, setShowPopup] = useState(false);
-  const popupShownRef = useRef(false); 
-
   const handleSayHelloClick = () => {
     navigate("/contact");
   };
 
-  useEffect(() => {
-    if (!popupShownRef.current) {
-      setShowPopup(true);
-      popupShownRef.current = true;
-
-      const timer = setTimeout(() => {
-        setShowPopup(false);
-      }, 10000); // auto-hide after 10 sec
-
-      return () => clearTimeout(timer);
-    }
-  }, []);
   return (
     <div className="container1">
-      {showPopup && (
-        <div className="popup-overlay">
-          <div className="popup-container">
-            <h2 className="popup-title">Welcome to Daily Money 💰</h2>
-            <p className="popup-text">Daily Money is deticated to people across the world! Especially to global IT community.</p>
-            <button
-              className="popup-close-btn"
-              onClick={() => setShowPopup(false)}
-            >
-              Get in →
-            </button>
-          </div>
-        </div>
-      )}
+      {/* popup removed */}
       <section className="hero-section">
         <div className="hero-content">
           <h1 id="daily-money">

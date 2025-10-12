@@ -1,0 +1,56 @@
+.full-footer-root{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#000;
+  color:#fff;
+  padding:40px;
+  box-sizing:border-box;
+}
+
+.full-footer-inner{
+  max-width:1100px;
+  text-align:center;
+}
+
+.full-footer-inner .english{
+  font-size:2rem;
+  font-weight:800;
+  color:#fff;
+  margin-bottom:24px;
+}
+
+.full-footer-inner .tamil-quote{
+  color:#ffea00;
+  font-size:2.4rem;
+  font-weight:900;
+  margin-bottom:12px;
+}
+
+.full-footer-inner .author{
+  color:#ffea00;
+  font-weight:700;
+  margin-bottom:16px;
+}
+
+.full-footer-inner .desc{
+  color:#cdefff;
+  font-size:1.05rem;
+  margin-bottom:28px;
+}
+
+.actions .btn-link{
+  display:inline-block;
+  padding:12px 28px;
+  background:#0f766e;
+  color:#fff;
+  border-radius:24px;
+  text-decoration:none;
+  font-weight:700;
+}
+
+@media (max-width:768px){
+  .full-footer-inner .english{font-size:1.3rem}
+  .full-footer-inner .tamil-quote{font-size:1.5rem}
+}

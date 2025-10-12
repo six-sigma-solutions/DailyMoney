@@ -397,3 +397,117 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ---------- Horizontal 4-Image Gallery ---------- */
+
+.vision-gallery-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+ 
+}
+
+.vision-gallery-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #f10a0a;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+/* Optional decorative underline */
+.vision-gallery-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 12px auto 0 auto;
+  border-radius: 2px;
+}
+
+.vision-gallery {
+  display: flex;
+  gap: 20px;
+
+}
+
+.vision-gallery img {
+  width: 10%;
+  min-width: 280px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vision-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- Responsive Adjustments ---------- */
+
+/* Tablets & small desktops: 600px – 1080px */
+@media (min-width: 600px) and (max-width: 1080px) {
+  .vision-gallery {
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .vision-gallery img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .vision-gallery-title {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile portrait: 400px – 600px */
+@media (max-width: 600px) {
+  .vision-gallery {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .vision-gallery img {
+    width: 90%;
+    height: auto;
+  }
+
+  .vision-gallery-title {
+    font-size: 1.6rem;
+    margin-bottom: 28px;
+  }
+
+  .vision-gallery-title::after {
+    width: 60px;
+    height: 3px;
+  }
+}
+
+/* Extra small mobile screens: <400px */
+@media (max-width: 400px) {
+  .vision-gallery-section {
+    padding: 40px 10px;
+  }
+
+  .vision-gallery-title {
+    font-size: 1.4rem;
+  }
+
+  .vision-gallery img {
+    width: 100%;
+    height: auto;
+  }
+}
