@@ -1098,10 +1098,8 @@ body {
 } 
 
 .img-fluid {
-   border-radius: 20px;
+   border-radius: 20px 20px 0 0;
    width: 100%;
-   border-bottom-left-radius: 30px;
-   border-bottom-right-radius: 30px;
 }
 
 .img-fluid:hover{
