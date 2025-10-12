@@ -51,7 +51,7 @@ const Family = () => {
         {/* Step 1 - Now visible by default */}
         <div className="step visible">
           <div className="step-img">
-            <img src="f1.jpg" alt="Discover" />
+            <img src="fff.jpg" alt="Discover" />
           </div>
           <div className="step-content">
             <h3 className="highlight-text">
@@ -67,7 +67,7 @@ const Family = () => {
         {/* Step 2 */}
         <div className="step reverse">
           <div className="step-img">
-            <img src="img8.jpg" alt="Develop" />
+            <img src="dddd.jpg" alt="Develop" />
           </div>
           <div className="step-content">
             <h3 className="highlight-text">
