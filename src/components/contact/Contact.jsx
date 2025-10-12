@@ -18,7 +18,7 @@ export default function Contact() {
   const [status, setStatus] = useState(null);
 
   const countryCodes = [
-     { code: "+91", country: "India", flag: "🇮🇳" },
+    { code: "+91", country: "India", flag: "🇮🇳" },
     { code: "+1", country: "USA/Canada", flag: "🇺🇸" },
     { code: "+44", country: "United Kingdom", flag: "🇬🇧" },
     { code: "+61", country: "Australia", flag: "🇦🇺" },
@@ -151,8 +151,7 @@ export default function Contact() {
     { code: "+1-876", country: "Jamaica", flag: "🇯🇲" },
     { code: "+1-809", country: "Dominican Republic", flag: "🇩🇴" },
     { code: "+1-829", country: "Dominican Republic", flag: "🇩🇴" },
-    { code: "+1-849", country: "Dominican Republic", flag: "🇩🇴" }
-    
+    { code: "+1-849", country: "Dominican Republic", flag: "🇩🇴" },
   ];
 
   const handleChange = (e) =>
