@@ -21,6 +21,7 @@ import Solution from "./components/solution/Solution";
 import Gratitude from "./components/gratitude/Gratitude";
 import Mypromises from "./components/mypromises/Mypromises";
 import FullFooter from "./components/footer/FullFooter";
+import Bio from "./components/biopic/bio";
 export default function App() {
   return (
     <AuthProvider>
@@ -50,6 +51,7 @@ export default function App() {
         <Route path="/gratitude" element={<Gratitude />} />
         <Route path="/mypromises" element={<Mypromises />} />
   <Route path="/full-footer" element={<FullFooter />} />
+        <Route path="/bio" element={<Bio />} />
 
         {/* fallback to home */}
         <Route path="*" element={<Navigate to="/" replace />} />
