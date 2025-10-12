@@ -246,4 +246,51 @@
     flex-direction: column;
     align-items: center;
   }
+  .women-image img{
+    width:100%;
+    height:200px;
+    border-radius:10px;
+}
+}
+@media (max-width: 468px){
+  .women-image img{
+    width: 100%;
+    height: 216px;
+    border-radius: 10px;
+    object-fit: fill;
+  }
+  .women-container {
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  /* Header */
+  .women-dm-header-wrap {
+    margin-bottom: 20px;
+  }
+
+  .women-header-1 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    padding: 15px 10px;
+  }
+
+  .women-stats {
+    flex-direction: column;
+    padding: 30px 15px;
+  }
+
+  .stat-box {
+    margin: 10px 0;
+    min-width: auto;
+  }
+
+  .stat-box h3 {
+    font-size: 1.5rem;
+  }
+
+  /* Programs Section */
+  .women-programs {
+    flex-direction: column;
+    align-items: center;
+  }
 }
