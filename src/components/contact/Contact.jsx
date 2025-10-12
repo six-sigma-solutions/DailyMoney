@@ -129,7 +129,7 @@ export default function Contact() {
           <p style={{ paddingTop: "20px" }}>
             Six Sigma Solution,<br />
             F-1, No 13, Breeze Enclave,Noombal Main Road, Noombal, Chennai, <br />
-            Tamil Nad - 600077 INDIA
+            Tamil Nadu- 600077 India.
           </p>
           
           <p style={{ paddingTop: "20px" }}>
