@@ -8,13 +8,31 @@ import { Link, useNavigate } from "react-router-dom";
 
 export default function Home() {
   const navigate = useNavigate();
+
+   //  Define popup state
+  const[showPopup,setShowPopup] = useState(true);
+
   const handleSayHelloClick = () => {
     navigate("/contact");
   };
 
   return (
     <div className="container1">
-      {/* popup removed */}
+      {/* popup section  */}
+      {showPopup && (
+        <div className="popup-overlay">
+          <div className="popup-container">
+            <h2 className="popup-title">Welcome to Daily Money 💰</h2>
+            <p className="popup-text">Dedicated to the global IT Industry</p>
+            <button
+              className="popup-close-btn"
+              onClick={() => setShowPopup(false)}
+            >
+              Get in →
+            </button>
+          </div>
+        </div>
+      )}
       <section className="hero-section">
         <div className="hero-content">
           <h1 id="daily-money">
