@@ -13,6 +13,13 @@ export default function Home() {
   //  Define popup state
   const[showPopup,setShowPopup] = useState(true);
 
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopup(false);
+    }, 10000); // hide after 10 seconds
+    return () => clearTimeout(timer);
+  }, []);
+
   const handleSayHelloClick = () => {
     navigate("/contact");
   };
