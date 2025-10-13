@@ -1,15 +1,16 @@
-/* eslint-disable no-irregular-whitespace */
+
 // Home.jsx
 
 import React from "react";
 import "./Home.css";
 import videoFile from "../../assets/gif7.mp4";
 import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 export default function Home() {
   const navigate = useNavigate();
 
-   //  Define popup state
+  //  Define popup state
   const[showPopup,setShowPopup] = useState(true);
 
   const handleSayHelloClick = () => {
@@ -18,7 +19,7 @@ export default function Home() {
 
   return (
     <div className="container1">
-      {/* popup section  */}
+      {/* Popup Section */}
       {showPopup && (
         <div className="popup-overlay">
           <div className="popup-container">
@@ -33,6 +34,7 @@ export default function Home() {
           </div>
         </div>
       )}
+      
       <section className="hero-section">
         <div className="hero-content">
           <h1 id="daily-money">
@@ -52,7 +54,8 @@ export default function Home() {
           </p>
           <p id="hero-desc" className="hero-desc">
             With Daily Money, every step forward is a step toward freedom,
-            and a life without limits.
+            // eslint-disable-next-line no-irregular-whitespace
+            prosperity, and a life without limits.
             <br /> Welcome to{" "}
             <strong>
               <span className="daily-money">daily money!</span>
@@ -110,12 +113,12 @@ export default function Home() {
                   </li>
                   <li>
                     <strong>
-                      Made Easy, Health & Wealth Made Possible.
+                      Daily Money Made Easy, Health & Wealth Made Possible.
                     </strong>
                   </li>
                   <li>
                     <strong>
-                      Smart Choices for, Smarter Future in Health &
+                      Smart Choices for Daily Money, Smarter Future in Health &
                       Wealth.
                     </strong>
                   </li>
@@ -148,19 +151,19 @@ export default function Home() {
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                  Vision & Mission  <br />Your <span>Future</span>
+                  Vision & Mission is your <span>Future</span>
                 </div>
               </div>
               <img
                 className="solution-card-img1"
-                src="/gen-1.jpg"
+                src="gen-1.jpg"
                 alt="Custom Apps"
               />
             </div>
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                  Vision & Mission  <br /> Your <span>future generation</span>
+                  Vision & Mission is your <span>future generation</span>
                 </div>
               </div>
               <img
@@ -172,12 +175,12 @@ export default function Home() {
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                 Vision & Mission  <br /> Your <span>generation after generations</span>
+                  Vision & Mission is your <span>generation after generations</span>
                 </div>
               </div>
               <img
                 className="solution-card-img1"
-                src="./gen-3.png"
+                src="/gen-3.png"
                 alt="AI Tools"
               />
             </div>
@@ -298,7 +301,7 @@ export default function Home() {
               />
               <span className="footer-logo-text1">Daily Money</span>
               <span className="footer-subtext1">
-                Six Sigma Solution, NKC Towers <br /> 1st Floor, Opp to Government
+                Six Sigma Solution, NKC Towers 1st Floor, Opp to Government
                 Engineering College, Kottagoundampatti, Karuppur, Salem-636011.
                 TamilNadu, India.
               </span>
@@ -351,3 +354,5 @@ export default function Home() {
     </div>
   );
 }
+
+
