@@ -54,8 +54,7 @@ export default function Home() {
           </p>
           <p id="hero-desc" className="hero-desc">
             With Daily Money, every step forward is a step toward freedom,
-            // eslint-disable-next-line no-irregular-whitespace
-            prosperity, and a life without limits.
+            and a life without limits.
             <br /> Welcome to{" "}
             <strong>
               <span className="daily-money">daily money!</span>
@@ -113,12 +112,12 @@ export default function Home() {
                   </li>
                   <li>
                     <strong>
-                      Daily Money Made Easy, Health & Wealth Made Possible.
+                       Made Easy, Health & Wealth Made Possible.
                     </strong>
                   </li>
                   <li>
                     <strong>
-                      Smart Choices for Daily Money, Smarter Future in Health &
+                      Smart Choices, Smarter Future in Health &
                       Wealth.
                     </strong>
                   </li>
@@ -301,7 +300,7 @@ export default function Home() {
               />
               <span className="footer-logo-text1">Daily Money</span>
               <span className="footer-subtext1">
-                Six Sigma Solution, NKC Towers 1st Floor, Opp to Government
+                Six Sigma Solution, NKC Towers </br>1st Floor, Opp to Government
                 Engineering College, Kottagoundampatti, Karuppur, Salem-636011.
                 TamilNadu, India.
               </span>
