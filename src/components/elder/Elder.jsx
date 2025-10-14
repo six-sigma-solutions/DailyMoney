@@ -52,7 +52,7 @@ export default function Elder() {
         {/* Row 1 */}
         <section className="dm-eldr-row">
           <div className="dm-eldr-poster">
-            <img src="/elder1.jpg" alt="Poster 1" />
+            <img src="/ef1.jpg" alt="Poster 1" />
           </div>
           <div className="dm-eldr-content">
             <p className="dm-eldr-animate dm-eldr-tagline">
@@ -73,7 +73,7 @@ export default function Elder() {
         {/* Row 2 */}
         <section className="dm-eldr-row reverse">
           <div className="dm-eldr-poster">
-            <img src="/elder2.png" alt="Poster 2" />
+            <img src="/elder2.jpg" alt="Poster 2" />
           </div>
           <div className="dm-eldr-content">
             <p className="dm-eldr-animate dm-eldr-tagline">
@@ -94,7 +94,7 @@ export default function Elder() {
         {/* Row 3 */}
         <section className="dm-eldr-row">
           <div className="dm-eldr-poster">
-            <img src="/e3.jpg" alt="Poster 3" />
+            <img src="/elder3.png" alt="Poster 3" />
           </div>
           <div className="dm-eldr-content">
             <p className="dm-eldr-animate dm-eldr-tagline">
@@ -111,7 +111,7 @@ export default function Elder() {
         {/* Row 4 */}
         <section className="dm-eldr-row reverse">
           <div className="dm-eldr-poster">
-            <img src="/elder3.jpg" alt="Poster 4" />
+            <img src="/elder4.jpg" alt="Poster 4" />
           </div>
           <div className="dm-eldr-content">
             <p className="dm-eldr-animate dm-eldr-tagline">
