@@ -303,7 +303,7 @@ export default function Home() {
               />
               <span className="footer-logo-text1">Daily Money</span>
               <span className="footer-subtext1">
-                Six Sigma Solution, NKC Towers 1st Floor, Opp to Government
+                Six Sigma Solution, NKC Towers </br>1st Floor, Opp to Government
                 Engineering College, Kottagoundampatti, Karuppur, Salem-636011.
                 TamilNadu, India.
               </span>
