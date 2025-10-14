@@ -102,7 +102,7 @@ const Family = () => {
         <div className="step reverse">
           <div className="step-img">
             <img
-              src="family4.png"
+              src="family401.png"
               alt="Support"
             />
           </div>
