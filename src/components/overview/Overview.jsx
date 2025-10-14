@@ -15,7 +15,7 @@ const Overview = () => {
       {/* Section 1 */}
       <section className="zigzag-layout-section">
         <div className="zigzag-image-container">
-          <img src="image-1.jpg" alt="People smiling and collaborating" />
+          <img src="8000.jpg" alt="People smiling and collaborating" />
         </div>
         <div className="zigzag-text-content">
           <h2 style={{ color: "#80EF80" }}>Our Purpose</h2>
