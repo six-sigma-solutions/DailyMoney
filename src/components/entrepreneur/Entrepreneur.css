@@ -60,9 +60,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  max-width: 1200px;
-  margin: 190px 10px 190px 10px;
-  padding: 20px 40px;
+  margin: 200px 20px 200px 20px;
+  padding:40px;
   color: #ffffffe0;
   background-image: linear-gradient(to right, #2868a9, #648585);
   border-radius: 15px;
@@ -78,9 +77,9 @@
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  max-width: 1200px;
-  margin:  190px 10px 190px 10px;
-  padding: 20px 40px;
+
+  margin:  200px 20px 200px 20px;
+  padding: 40px;
   color: #ffffffe0;
   background-image: linear-gradient(to left, #cedb1c, #79d8d8);
   border-radius: 15px;
