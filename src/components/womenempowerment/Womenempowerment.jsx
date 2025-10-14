@@ -87,7 +87,7 @@ export default function Womenempowerment() {
               initiatives for women.
             </p>
             <img
-              src="em1.jpg"
+              src="women-5.jpg"
               alt="Education Program"
               onError={(e) =>
                 (e.target.src =
@@ -119,7 +119,7 @@ export default function Womenempowerment() {
               community programs.
             </p>
             <img
-              src="em3.jpg"
+              src="women-7.jpg"
               alt="Advocacy Program"
               onError={(e) =>
                 (e.target.src =
