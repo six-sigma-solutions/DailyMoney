@@ -74,7 +74,7 @@
 }
 
 .stu-page-image-box:hover {
-  transform: scale(1.02);
+  transform: scale(1.0);
   box-shadow: 0 12px 35px rgba(22, 163, 74, 0.35); /* Green glow */
 }
 
