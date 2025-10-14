@@ -693,7 +693,7 @@ html {
   .hero-title { font-size: 2.2rem; white-space: normal; }
   .hero-content h1 { font-size: 2em; }
   .hero-content p { font-size: 1em; }
-  .btn-primary { padding: 12px 24px; font-size: 0.95rem; }
+  .btn-primary { padding: 12px 24px; font-size: 0.95rem; margin:20px 160px 20px 160px; }
 
 
 }
@@ -704,7 +704,7 @@ html {
   .hero-title { font-size: 1.8rem; }
   .hero-content h1 { font-size: 1.6rem; }
   .hero-content p { font-size: 0.9rem; }
-  .btn-primary { padding: 10px 20px; font-size: 0.85rem; }
+  .btn-primary { padding: 10px 20px; font-size: 0.85rem; margin:20px 120px 20px 120px; }
 
 
 /* For tablets */
