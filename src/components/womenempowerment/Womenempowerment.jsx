@@ -15,7 +15,7 @@ export default function Womenempowerment() {
       {/* Hero Section: Image Left, Text Right */}
       <section className="women-hero">
         <div className="women-image">
-          <img src="https://res.cloudinary.com/dgay8ba3o/image/upload/v1759735299/grp_vjrnq7.png" alt="Empowered women" />
+          <img src="women-1.jpg" alt="Empowered women" />
         </div>
 
         <div className="women-content">
@@ -53,9 +53,9 @@ export default function Womenempowerment() {
         </ul>
 
         <div className="women-image-row">
-          <img src="smile.png" alt="Women Smiling" />
-          <img src="talk.png" alt="Women Talking" />
-          <img src="hpy.png" alt="Women Laughing" />
+          <img src="women-2.jpg" alt="Women Smiling" />
+          <img src="women-3.jpg" alt="Women Talking" />
+          <img src="women-4.jpg" alt="Women Laughing" />
         </div>
       </section>
 
