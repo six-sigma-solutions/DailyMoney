@@ -69,7 +69,7 @@ const Health = () => {
       </div>
 
             <div className="container-1 right-image full-screen">
-              <img src="sun(h).jpg" alt="Styled" className="styled-img" />
+              <img src="sunday.jpg" alt="Styled" className="styled-img" />
               <div className="box color3">
                 <h1>“I need lifelong health and fitness.”</h1>
                 <h1>“I’m powered by purpose — strong for life.”</h1>
