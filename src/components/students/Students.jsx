@@ -43,7 +43,7 @@ export default function Students() {
         {/* Section 1 */}
         <section className="stu-page-section">
           <div className="stu-page-image-box">
-            <img src="ssss.jpg" alt="Poster 1" />
+            <img src="student-1.jpg" alt="Poster 1" />
           </div>
 
           <div className="stu-page-text-block">
@@ -58,7 +58,7 @@ export default function Students() {
         {/* Section 2 */}
         <section className="stu-page-section stu-page-reverse-section">
           <div className="stu-page-image-box">
-            <img src="student555.jpg" alt="Poster 2" />
+            <img src="student-2.jpg" alt="Poster 2" />
           </div>
 
           <div className="stu-page-text-block">
@@ -74,7 +74,7 @@ export default function Students() {
         {/* Section 3 */}
         <section className="stu-page-section">
           <div className="stu-page-image-box">
-            <img src="stu3.jpg" alt="Poster 3" />
+            <img src="student-3.jpg" alt="Poster 3" />
           </div>
 
           <div className="stu-page-text-block">
@@ -92,7 +92,7 @@ export default function Students() {
         {/* Section 4 */}
         <section className="stu-page-section stu-page-reverse-section">
           <div className="stu-page-image-box">
-            <img src="stu4.jpg" alt="Poster 4" />
+            <img src="student-4.jpg" alt="Poster 4" />
           </div>
 
           <div className="stu-page-text-block">
