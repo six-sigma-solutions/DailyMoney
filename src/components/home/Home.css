@@ -1588,7 +1588,6 @@ body {
 
   .footer-cta1 {
     text-align: left;
-    padding-left: 10px;
   }
 
   .footer-bottom-content1 {
@@ -1702,10 +1701,6 @@ body {
 
 /* ---------- EXTRA SMALL DEVICES (<=480px) ---------- */
 @media (max-width: 480px) {
-  .footer-main1 {
-    text-align: left;
-  }
-
   .img-fluid{
      width: 100%;
      height: 80px;
