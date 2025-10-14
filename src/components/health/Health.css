@@ -704,7 +704,7 @@ html {
   .hero-title { font-size: 1.8rem; }
   .hero-content h1 { font-size: 1.6rem; }
   .hero-content p { font-size: 0.9rem; }
-  .btn-primary { padding: 10px 20px; font-size: 0.85rem; margin:20px 120px 20px 120px; }
+  .btn-primary { padding: 10px 20px; font-size: 13px; margin:20px 120px 20px 120px; }
 
 
 /* For tablets */
