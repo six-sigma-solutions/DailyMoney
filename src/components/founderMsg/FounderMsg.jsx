@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const founder = {
   name: "Dr.V.Chellapondy",
-  role: "Founder & CEO",
+  role: "Founder & Financial Advisor",
   // Use the image URL you intend to use for the founder
   image: "/sir.png",
 };
@@ -36,9 +36,7 @@ export default function FounderMsg() {
 
         {/* Message Content Section */}
         <div className="message-content">
-          <p className="message-quote">
-           “I’m <span className="signature">Chellapondy Vellaiswamy,</span> with over 35 years of experience across Media, Finance, and Wellness. From launching Kailash Cable Network in 1990 to serving as Deputy Director – Distribution at Tamilthirai TV and AVP at India Infoline Ltd, I have developed extensive expertise in leadership and business growth. Since 2010, I’ve been a wellness consultant, helping over 100,000 people transform their health and wealth while building an organization of 5,000+ associates. My global learning across 15+ countries, combined with a Doctorate in Social Work, reflects my passion for holistic well-being and community impact.”
-          </p>
+          <img src="founders123.jpg" className="message-image" />
 
           <div className="message-section">
             <img src="mainhead.jpg" alt="Welcome" className="message-image" />
