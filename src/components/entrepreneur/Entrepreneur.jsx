@@ -1,14 +1,14 @@
 import React from "react";
 // !! IMPORTANT: Make sure these paths are correct for your project !!
 import img1 from "/Enter1.jpeg";
-import img3 from "/img-3.jpg";
-import img4 from "/img-4.jpg";
-import img5 from "/img-5.jpg";
-import img670 from "/img-670.jpg";
-import img7 from "/img-7.jpg";
-import img8 from "/img-8.jpg";
+import img3 from "/entp1.jpg";
+import img4 from "/entp2.jpg";
+import img5 from "/entp4.jpg";
+import img670 from "/entp3.jpg";
+import img7 from "/entp5.jpg";
+import img8 from "/entp6.jpg";
 import img9 from "/img-9.jpg";
-import img10 from "/img-10.jpg";
+import img10 from "/entp8.jpg";
 
 // Import your regular CSS file
 import "./Entrepreneur.css";
@@ -76,7 +76,7 @@ export default function Entrepreneur () {
         <div className="ent-box-left">
           <h1>
             "Yes, I believe in building dreams into reality".<br />
-            "Yes, I turn dreams into reality through  my action".<br />
+            "Yes, I turn dreams into reality through  my action".<br />
             "I’m committed to turning vision into reality".<br />
             "Dreams are meant to be built, not just dreamed".<br />
           </h1>
@@ -129,4 +129,3 @@ export default function Entrepreneur () {
     </div>
   );
 };
-
