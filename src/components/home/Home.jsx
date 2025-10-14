@@ -1,4 +1,4 @@
-
+/* eslint-disable no-irregular-whitespace */
 // Home.jsx
 
 import React from "react";
@@ -12,13 +12,6 @@ export default function Home() {
 
   //  Define popup state
   const[showPopup,setShowPopup] = useState(true);
-
-  React.useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowPopup(false);
-    }, 10000); // hide after 10 seconds
-    return () => clearTimeout(timer);
-  }, []);
 
   const handleSayHelloClick = () => {
     navigate("/contact");
@@ -40,8 +33,9 @@ export default function Home() {
             </button>
           </div>
         </div>
-      )}
+       )}
       
+
       <section className="hero-section">
         <div className="hero-content">
           <h1 id="daily-money">
@@ -54,16 +48,16 @@ export default function Home() {
           </strong>
           <strong>
             <p id="hero-subtitle">Independent for Entire life.</p>
-          </strong
-          <p className="hero-desc">
-            Daily Money stands for discipline, unity and freedom.  
+          </strong>
+          <p id="hero-desc" className="hero-desc">
+            Daily Money stands for discipline, unity and freedom.
           </p>
-            <p  id="hero-desc" className= "hero-desc">
-            Together,we are shaping a future of health,wealth,and limitless opportunities.
+          <p  id="hero-desc" className= "hero-desc">
+            Together,we are shaping a future of health,wealth,and limitless opportunities
           </p>
-          <p className="hero-desc">
+          <p id="hero-desc" className="hero-desc">
             With Daily Money, every step forward is a step toward freedom,
-            and a life without limits.
+            and a life without limits.
             <br /> Welcome to{" "}
             <strong>
               <span className="daily-money">daily money!</span>
@@ -121,12 +115,12 @@ export default function Home() {
                   </li>
                   <li>
                     <strong>
-                       Made Easy, Health & Wealth Made Possible.
+                      Daily Money Made Easy, Health & Wealth Made Possible.
                     </strong>
                   </li>
                   <li>
                     <strong>
-                      Smart Choices, Smarter Future in Health &
+                      Smart Choices for Daily Money, Smarter Future in Health &
                       Wealth.
                     </strong>
                   </li>
@@ -309,7 +303,7 @@ export default function Home() {
               />
               <span className="footer-logo-text1">Daily Money</span>
               <span className="footer-subtext1">
-                Six Sigma Solution, NKC Towers </br>1st Floor, Opp to Government
+                Six Sigma Solution, NKC Towers 1st Floor, Opp to Government
                 Engineering College, Kottagoundampatti, Karuppur, Salem-636011.
                 TamilNadu, India.
               </span>
