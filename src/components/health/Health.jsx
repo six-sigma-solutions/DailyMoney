@@ -60,7 +60,7 @@ const Health = () => {
       </div>
 
       <div className="container left-image">
-        <img src="image11.jpeg" alt="Styled" className="styled-img " />
+        <img src="jokk(h).jpg" alt="Styled" className="styled-img " />
         <div className="box-1 color2">
           <h1>“I am committed to wellness for life.”</h1>
           <h1>“Wellness is not a season — it’s my soul’s commitment.”</h1>
@@ -69,7 +69,7 @@ const Health = () => {
       </div>
 
             <div className="container-1 right-image full-screen">
-              <img src="image3.jpeg" alt="Styled" className="styled-img" />
+              <img src="sun(h).jpg" alt="Styled" className="styled-img" />
               <div className="box color3">
                 <h1>“I need lifelong health and fitness.”</h1>
                 <h1>“I’m powered by purpose — strong for life.”</h1>
@@ -80,7 +80,7 @@ const Health = () => {
     
 
       <div className="container left-image">
-        <img src="image4.jpeg" alt="Styled" className="styled-img" />
+        <img src="healthcopy.jpg" alt="Styled" className="styled-img" />
         <div className="box-1 color4">
           <h1>“I want to be fit, strong, and energetic for my entire life.”</h1>
           <h1>“Forever active, forever alive,<br /> forever me.”</h1>
