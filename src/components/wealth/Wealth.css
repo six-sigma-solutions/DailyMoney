@@ -174,7 +174,7 @@ body {
 }
 
 .wealthy-check {
-  color: var(--btn-bg);
+  color: yellow;
   font-weight: bold;
   font-size: 22px;
   margin-right: 8px;
