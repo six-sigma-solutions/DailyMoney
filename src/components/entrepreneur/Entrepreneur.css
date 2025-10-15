@@ -69,7 +69,8 @@
 
 .ent-left * {
   color: #ffffffe0;
-  font-size: 25px;
+  font-size: 22px;
+  text-align: start;
 }
 
 .ent-right {
@@ -87,7 +88,8 @@
 
 .ent-right * {
   color: black;
-  font-size: 25px;
+  font-size: 22px;
+  text-align: start;
 }
 
 .entrepreneur-container .ent-left img,
