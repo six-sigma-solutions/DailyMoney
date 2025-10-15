@@ -36,7 +36,7 @@ const Wealth = () => {
             </div>
             <div className="wealthy-col wealthy-text-col row1">
               <h2>
-                <span className="wealthy-check">✔️</span>
+                <span className="wealthy-check">  ✓  </span>
                 Wealth is more than numbers in a bank account. It is the freedom
                 to choose our path, the security to protect what matters, and
                 the power to create a lasting impact.
@@ -51,7 +51,7 @@ const Wealth = () => {
             </div>
             <div className="wealthy-col wealthy-text-col row2">
               <h2>
-                <span className="wealthy-check">✔️</span>
+                <span className="wealthy-check">  ✓  </span>
                 True wealth begins with discipline — living with intention,
                 saving with wisdom, and investing with vision. It grows not only
                 through money but also through knowledge, relationships, and the
@@ -67,7 +67,7 @@ const Wealth = () => {
             </div>
             <div className="wealthy-col wealthy-text-col row3">
               <h2>
-                <span className="wealthy-check">✔️</span>
+                <span className="wealthy-check">  ✓  </span>
                 Our wealth is not just about what we accumulate, but about what
                 we enable. With it, we gain the ability to support our
                 families, nurture dreams, create opportunities, and contribute
@@ -83,7 +83,7 @@ const Wealth = () => {
             </div>
             <div className="wealthy-col wealthy-text-col row4">
               <h2>
-                <span className="wealthy-check">✔️</span>
+                <span className="wealthy-check">  ✓  </span>
                 Wealth is not greed — it is growth. It is not selfishness—it is
                 stewardship. When guided by purpose, wealth becomes a force for
                 freedom, impact, and legacy. Our wealth is our power to
