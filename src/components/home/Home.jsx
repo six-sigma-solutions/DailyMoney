@@ -50,17 +50,17 @@ export default function Home() {
             <p id="hero-subtitle">Independent for Entire life.</p>
           </strong>
           <p id="hero-desc" className="hero-desc">
-            Daily Money stands for discipline, unity and freedom.
+            Daily Money stands for discipline unity, and freedom.
           </p>
           <p  id="hero-desc" className= "hero-desc">
-            Together,we are shaping a future of health,wealth,and limitless opportunities.
+            Together, we are shaping a future of health,wealth,and limitless opportunities.
           </p>
           <p id="hero-desc" className="hero-desc">
             With Daily Money, every step forward is a step toward freedom,
             and a life without limits.
             <br /> Welcome to{" "}
             <strong>
-              <span className="daily-money">daily money!</span>
+              <span className="daily-money">Daily Money!</span>
             </strong>
           </p>
           <div className="hero-actions">
