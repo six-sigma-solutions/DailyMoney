@@ -50,7 +50,7 @@ export default function Home() {
             <p id="hero-subtitle">Independent for Entire life.</p>
           </strong>
           <p id="hero-desc" className="hero-desc">
-            Daily Money stands for discipline unity, and freedom.
+            Daily Money stands for discipline, unity, and freedom.
           </p>
           <p  id="hero-desc" className= "hero-desc">
             Together, we are shaping a future of health,wealth,and limitless opportunities.
