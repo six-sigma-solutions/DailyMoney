@@ -53,7 +53,7 @@ const Health = () => {
       <div className="container-1 right-image">
         <img src="healthpc.jpg" alt="Styled" className="styled-img" />
         <div className="box color1">
-          <h1>“Health and fitness are not temporary - they are my lifetime goal.”</h1>
+          <h1>“Health and fitness are not temporary — they are my lifetime goal.”</h1>
           <h1>“Health is not a destination — it’s a lifelong evolution.”</h1>
           <h1>“Fitness is the art I practice for life.”</h1>
         </div>
@@ -92,7 +92,7 @@ const Health = () => {
       {/* Footer */}
       <footer id="footer" className="footer">
         <h2 className="english">
-          "No need of medicine if you allow proper digestion between meals."
+          "No need for medicine if you allow proper digestion between meals."
         </h2>
         <h1>“மருந்தென வேண்டாவாம் யாக்கைக்கு அருந்தியது<br></br>
           <span className="car">"</span>அற்றது போற்றி உணின்.”</h1>
