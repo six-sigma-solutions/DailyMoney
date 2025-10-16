@@ -54,7 +54,7 @@ const Wealth = () => {
                 <span className="wealthy-check">  ✓  </span>
                 True wealth begins with discipline — living with intention,
                 saving with wisdom, and investing with vision. It grows not only
-                through money but also through knowledge, relationships, and the
+                through money, but also through knowledge, relationships, and the
                 values we pass on to the next generation.
               </h2>
             </div>
@@ -84,7 +84,7 @@ const Wealth = () => {
             <div className="wealthy-col wealthy-text-col row4">
               <h2>
                 <span className="wealthy-check">  ✓  </span>
-                Wealth is not greed — it is growth. It is not selfishness—it is
+                Wealth is not greed — it is growth. It is not selfishness — it is
                 stewardship. When guided by purpose, wealth becomes a force for
                 freedom, impact, and legacy. Our wealth is our power to
                 live with dignity, give with generosity, and build a future that
