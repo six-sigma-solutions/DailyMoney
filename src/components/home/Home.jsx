@@ -213,7 +213,7 @@ export default function Home() {
                   </li>
                   <li>
                     <strong>
-                      Every Stage, Every Step Money, Health & Wealth Solutions.
+                      Every Stage - Every Step Money - Health & Wealth Solutions.
                     </strong>
                   </li>
                   <li>
@@ -245,7 +245,7 @@ export default function Home() {
                     </strong>
                   </li>
                   <li>
-                    <strong>Live Well, Live Wealthy, Every Single Day.</strong>
+                    <strong>Live Well - Live Wealthy - Every Single Day.</strong>
                   </li>
                 </ul>
               </div>
