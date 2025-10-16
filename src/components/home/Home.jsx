@@ -158,7 +158,7 @@ export default function Home() {
               </div>
               <img
                 className="solution-card-img1"
-                src="mo-1.png"
+                src="original1st.png"
                 alt="Custom Apps"
               />
             </div>
