@@ -154,6 +154,17 @@ const Visionmission = () => {
 
 </section>
 
+      {/* Horizontal 4-Image Section */}
+      <section className="vision-gallery-section">
+        <h2 className="vision-gallery-title">Core Values</h2>
+        <div className="vision-gallery">
+          <img src="test1a.jpg" alt="Vision gallery 1" />
+          <img src="test22.jpg" alt="Vision gallery 2" />
+          <img src="test3.jpg" alt="Vision gallery 3" />
+          <img src="test4.jpg" alt="Vision gallery 4" />
+        </div>
+      </section>
+
 
 
 
