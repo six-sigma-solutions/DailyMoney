@@ -82,7 +82,7 @@ function Bio() {
             <img src="person3.jpg" alt="Team Member 2" />
             <h2>C.Arvind</h2>
           </div>
-          <a href="https://cpdian.goherbalife.com/Catalog/Home/Index/en-IN/" target="_blank" rel="noopener noreferrer" className="team-member-link">
+          <a href="https://arvindc.herbalife.com/en-us/u" target="_blank" rel="noopener noreferrer" className="team-member-link">
             <span className="slogan">I want to became Entrepreneur.</span>
             <div className="pointing-icon">👆</div>
           </a>
