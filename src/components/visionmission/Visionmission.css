@@ -263,6 +263,33 @@
   vertical-align: top;
 }
 
+.vision-gallery-title{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: #f10a0a;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+    gap: 20px;
+}
+
+.vision-gallery img {
+    width: 10%;
+    min-width: 280px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px #00000026;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.vision-gallery{
+  justify-content: space-around;
+  gap: 20px;
+  display: flex;
+}
 /* ===================================================== */
 /* RESPONSIVE ALIGNMENT FIXES */
 /* ===================================================== */
@@ -355,8 +382,7 @@
 
   .vision-gallery img {
     width: 80%;
-    height: 200px;
-    object-fit: fill;
+    margin: 40px;
   }
 }
 
@@ -389,7 +415,7 @@
   }
 
   .vision-image-col img {
-    width: 400px;
+    width: 90%;
     height: 200px;
     object-fit: fill;
   }
