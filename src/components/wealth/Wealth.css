@@ -264,6 +264,9 @@ body {
     padding: 0;
     box-shadow: none;
   }
+   .view-more{
+      font-size:0.95rem;
+   }
 
   .wealthy-hero-card img {
     width: 100%;
