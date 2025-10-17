@@ -28,10 +28,10 @@ const Wealth = () => {
         </section>
 
         {/* Zigzag Section */}
-        <section className="wealthy-container wealthy-zigzag">
+        <section className="wealthy-container wealthy-zigzag" >
           {/* Row 1 */}
-          <div className="wealthy-row">
-            <div className="wealthy-col wealthy-image-col">
+          <div className="wealthy-row" style={{ background: "#3d6663" }}>
+            <div className="wealthy-col wealthy-image-col" >
               <img src="hhh.jpg" alt="Wealth concept 1" />
             </div> 
             <div className="wealthy-col wealthy-text-col row1">
@@ -45,11 +45,11 @@ const Wealth = () => {
           </div>
 
           {/* Row 2 */}
-          <div className="wealthy-row wealthy-reverse">
-            <div className="wealthy-col wealthy-image-col">
+          <div className="wealthy-row wealthy-reverse" style={{ background: "linear-gradient(45deg,chocolate,#6f4e37)" }}>
+            <div className="wealthy-col wealthy-image-col" >
               <img src="w2.jpg" alt="Wealth concept 2" />
             </div>
-            <div className="wealthy-col wealthy-text-col row2">
+            <div className="wealthy-col wealthy-text-col row2" >
               <h2>
                 <span className="wealthy-check">  ✓  </span>
                 True wealth begins with discipline — living with intention,
@@ -61,7 +61,7 @@ const Wealth = () => {
           </div>
 
           {/* Row 3 */}
-          <div className="wealthy-row">
+          <div className="wealthy-row" style={{ background: "linear-Gradient(45deg,green,darkgreen)" }}>
             <div className="wealthy-col wealthy-image-col">
               <img src="w1.jpg" alt="Wealth concept 3" />
             </div>
@@ -77,7 +77,7 @@ const Wealth = () => {
           </div>
 
           {/* Row 4 */}
-          <div className="wealthy-row wealthy-reverse">
+          <div className="wealthy-row wealthy-reverse" style={{ background: "#002147" }}>
             <div className="wealthy-col wealthy-image-col">
               <img src="wealth4.jpg" alt="Wealth concept 4" />
             </div>
