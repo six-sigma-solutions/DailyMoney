@@ -1,53 +1,47 @@
-/* ===================================================== */
-/* RESET + BASE */
-/* ===================================================== */
-* {
+/* ---------------- RESET & BASE ---------------- */
+.dm-vsn-main-content * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
+.dm-vsn-main-content {
+  background: var(--dm-vsn-bg, #ffffff);
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #111;
+  min-height: 100vh;
+}
+
+/* ---------------- CSS VARIABLES ---------------- */
 .dm-vsn-main-content {
   --dm-vsn-muted: #9aa0a6;
   --dm-vsn-bg: #ffffff;
   --dm-vsn-dark: #0b0b0b;
-  --dm-vsn-accent: #f10a0a;
   --dm-vsn-max-width: 1320px;
-
-  background: var(--dm-vsn-bg);
-  font-family: 'Montserrat', Arial, sans-serif;
-  color: var(--dm-vsn-dark);
-  min-height: 100vh;
-  overflow-x: hidden;
+  
 }
 
-/* ===================================================== */
-/* CONTAINER */
-/* ===================================================== */
+/* ---------------- CONTAINER ---------------- */
 .dm-vsn-container {
   max-width: var(--dm-vsn-max-width);
   margin: 0 auto;
-  padding: 28px 20px;
+  padding: 28px;
 }
 
-/* ===================================================== */
-/* TITLE */
-/* ===================================================== */
+/* ---------------- TITLE ---------------- */
 .dm-title {
+  background-color: var(--dm-vsn-accent);
   text-align: center;
   padding: 10px;
-  margin: 30px auto;
+  margin: 20px 60px;
   border-radius: 12px;
-  color: var(--dm-vsn-accent);
+  color: #f10a0a;
   font-weight: 900;
   font-size: 2.5rem;
   letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
-/* ===================================================== */
-/* HERO CARD */
-/* ===================================================== */
+/* ---------------- HERO CARD ---------------- */
 .dm-vsn-hero-card {
   display: flex;
   justify-content: center;
@@ -56,8 +50,9 @@
 }
 
 .dm-vsn-card-inner {
-  width: 90%;
-  max-width: 1200px;
+  width: 90vw;
+  max-width: 100%;
+  max-height: 80vh;
   background: var(--dm-vsn-dark);
   border-radius: 16px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.21);
@@ -69,8 +64,10 @@
 
 .dm-vsn-card-media {
   width: 100%;
-  height: 600px;
+  height: auto;
+  min-height: 300px;
   object-fit: cover;
+  opacity: 0.65;
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
@@ -97,27 +94,32 @@
   text-align: left;
 }
 
+.vision-paragraph-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .dm-vsn-card-text h1 {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
+  line-height: 1.3;
   font-weight: 700;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .dm-vsn-lead {
   font-size: 1.1rem;
   margin-bottom: 20px;
-  color: #fff;
+  color: #ccc;
   line-height: 1.6;
 }
 
-/* ===================================================== */
-/* CARD FEATURES */
-/* ===================================================== */
+/* ---------------- CARD FEATURES ---------------- */
 .card-features {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 30px;
   gap: 20px;
 }
 
@@ -136,23 +138,22 @@
   box-shadow: 0 8px 25px rgba(201, 42, 42, 0.3);
 }
 
-/* ===================================================== */
-/* STANDARDS */
-/* ===================================================== */
+/* ---------------- STANDARDS ---------------- */
 .dm-vsn-standards {
   background: #f4f4f4;
-  padding: 60px 20px;
+  padding: 40px;
 }
 
 .dm-vsn-grid-features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  margin-top: 30px;
 }
 
 .dm-vsn-feature {
   background: var(--dm-vsn-bg);
-  padding: 24px;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   border-top: 4px solid var(--dm-vsn-accent);
@@ -162,127 +163,289 @@
 
 .dm-vsn-feature:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(241, 10, 10, 0.3);
+  box-shadow: 0 8px 25px rgba(201, 42, 42, 0.3);
 }
 
 .dm-vsn-feature h4 {
   font-size: 1rem;
   font-weight: 600;
+  color: var(--dm-vsn-dark);
   line-height: 1.4;
 }
 
-/* ===================================================== */
-/* BUTTON */
-/* ===================================================== */
+/* ---------------- ACTION BUTTON ---------------- */
 .dm-vsn-action-section {
   padding: 40px 1rem;
   text-align: center;
 }
 
 .dm-vsn-animated-btn {
-  background: var(--dm-vsn-accent);
+  background: #f10a0a;
   color: #fff;
   border: none;
   padding: 14px 32px;
   font-size: 1.1rem;
   font-weight: 600;
   border-radius: 12px;
+  height: 50px;
+  width: 150px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 6px 15px rgba(239, 68, 68, 0.3);
+  position: relative;
+  overflow: hidden;
 }
 
 .dm-vsn-animated-btn:hover {
   background-color: #b71c1c;
   transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(220, 38, 38, 0.4);
+}
+
+.dm-vsn-animated-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-20deg);
+  transition: all 0.5s ease;
+}
+
+.dm-vsn-animated-btn:active::after {
+  left: 100%;
+  transition: 0s;
+}
+
+/* ---------------- SPACER ---------------- */
+.dm-vsn-spacer {
+  display: block;
+  height: 60px;
 }
 
 /* ===================================================== */
-/* VISION SECTION */
+/* Vision Page Layout Styles */
 /* ===================================================== */
 .vision-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  padding: 60px 20px;
+  padding: 40px 16px;
   background: #ffffff;
+  font-family: "Inter", Arial, sans-serif;
 }
 
 .vision-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
+  margin: 4rem 0;
+}
+
+.vision-col {
+  flex: 1;
+}
+
+.vision-image-col img {
   width: 100%;
-  max-width: 1200px;
+  height: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.vision-image-col img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .vision-reverse {
   flex-direction: row-reverse;
 }
 
-.vision-col {
-  flex: 1 1 400px;
-}
-
-.vision-image-col img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.vision-image-col img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
 .vision-text-col {
-  flex: 1 1 400px;
-  font-size: 1.1rem;
+  flex: 2;
+  font-size: 1.2rem;
   line-height: 1.8;
   color: #0f172a;
 }
 
 .vision-tick-icon {
-  color: var(--dm-vsn-accent);
+  color: red;
   font-size: 1.3em;
   margin-right: 8px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 /* ===================================================== */
-/* GALLERY */
+/* RESPONSIVE ALIGNMENT FIXES */
 /* ===================================================== */
+
+/* ---------- Large Screens (≥1200px) ---------- */
+@media (min-width: 1200px) {
+  .dm-title {
+    margin: 40px auto;
+    width: 80%;
+  }
+  .dm-vsn-card-inner {
+    width: 90%;
+  }
+  .vision-text-col {
+    max-width: 600px;
+  }
+}
+
+/* ---------- Tablets (≤1024px) ---------- */
+@media (max-width: 1024px) {
+  .dm-vsn-card-inner {
+    width: 95%;
+  }
+  .dm-vsn-card-text h1 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+  .dm-vsn-card-overlay {
+    padding: 24px;
+    justify-content: center;
+  }
+  .dm-vsn-card-text {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .vision-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .vision-image-col img {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .vision-paragraph-container {
+    justify-content: center;
+  }
+  .dm-vsn-grid-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- Mobile (≤768px) ---------- */
+@media (max-width: 768px) {
+  .dm-title {
+    font-size: 1.8rem;
+    padding: 8px;
+    width: 90%;
+    margin: 16px auto;
+  }
+  .dm-vsn-card-text h1 {
+    font-size: 1.4rem;
+  }
+  .dm-vsn-lead {
+    font-size: 0.95rem;
+  }
+  .dm-vsn-card-media {
+    height: 280px;
+    object-fit: cover;
+  }
+  .vision-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .vision-text-col {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 5px;
+    text-align: center;
+  }
+  .vision-image-col img {
+    max-width: 400px;
+  }
+  .dm-vsn-animated-btn {
+    width: 50%;
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+}
+
+/* ---------- Small Mobiles (≤480px) ---------- */
+@media (max-width: 480px) {
+  .dm-title {
+    font-size: 1.4rem;
+    padding: 6px;
+  }
+  .dm-vsn-card-text h1 {
+    font-size: 1.2rem;
+  }
+  .dm-vsn-lead {
+    font-size: 0.9rem;
+  }
+  .vision-section {
+    padding: 16px;
+  }
+  .vision-text-col {
+    font-size: 0.95rem;
+  }
+  .dm-vsn-animated-btn {
+    width: 50%;
+    padding: 10px;
+  }
+  .dm-vsn-grid-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ---------- Horizontal 4-Image Gallery ---------- */
+
 .vision-gallery-section {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 80px 20px;
+  padding: 60px 20px;
+ 
 }
 
 .vision-gallery-title {
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 40px;
-  color: var(--dm-vsn-accent);
+  color: #f10a0a;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+  position: relative;
+}
+
+/* Optional decorative underline */
+.vision-gallery-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 12px auto 0 auto;
+  border-radius: 2px;
 }
 
 .vision-gallery {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 20px;
+
 }
 
 .vision-gallery img {
-  width: 100%;
-  max-width: 280px;
-  border-radius: 20px;
+  width: 10%;
+  min-width: 280px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -292,61 +455,61 @@
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
-/* ===================================================== */
-/* MEDIA QUERIES */
-/* ===================================================== */
+/* ---------- Responsive Adjustments ---------- */
 
-/* ---------- Large Screens (≥1200px) ---------- */
-@media (min-width: 1200px) {
-  .dm-title {
-    font-size: 3rem;
+/* Tablets & small desktops: 600px – 1080px */
+@media (min-width: 600px) and (max-width: 1080px) {
+  .vision-gallery {
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .vision-gallery img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .vision-gallery-title {
+    font-size: 2rem;
   }
 }
 
-/* ---------- Tablets (≤1024px) ---------- */
-@media (max-width: 1024px) {
-  .dm-vsn-card-text {
-    max-width: 90%;
-    text-align: center;
-  }
-  .dm-vsn-card-text h1 {
-    font-size: 1.8rem;
-  }
-  .vision-row {
+/* Mobile portrait: 400px – 600px */
+@media (max-width: 600px) {
+  .vision-gallery {
     flex-direction: column;
-    text-align: center;
+    gap: 16px;
+  }
+
+  .vision-gallery img {
+    width: 90%;
+    height: auto;
+  }
+
+  .vision-gallery-title {
+    font-size: 1.6rem;
+    margin-bottom: 28px;
+  }
+
+  .vision-gallery-title::after {
+    width: 60px;
+    height: 3px;
   }
 }
 
-/* ---------- Mobiles (≤768px) ---------- */
-@media (max-width: 768px) {
-  .dm-title {
-    font-size: 1.8rem;
+/* Extra small mobile screens: <400px */
+@media (max-width: 400px) {
+  .vision-gallery-section {
+    padding: 40px 10px;
   }
-  .dm-vsn-card-media {
-    height: 280px;
-  }
-  .vision-text-col {
-    font-size: 1rem;
-    text-align: center;
-  }
-  .dm-vsn-animated-btn {
-    width: 70%;
-  }
-}
 
-/* ---------- Small Mobiles (≤480px) ---------- */
-@media (max-width: 480px) {
-  .dm-title {
+  .vision-gallery-title {
     font-size: 1.4rem;
   }
-  .dm-vsn-card-text h1 {
-    font-size: 1.2rem;
-  }
-  .vision-text-col {
-    font-size: 0.9rem;
-  }
+
   .vision-gallery img {
-    max-width: 220px;
+    width: 100%;
+    height: auto;
   }
 }
+
