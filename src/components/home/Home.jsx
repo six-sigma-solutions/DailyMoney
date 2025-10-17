@@ -182,7 +182,7 @@ export default function Home() {
               </div>
               <img
                 className="solution-card-img1"
-                src="/mo-3.jpg"
+                src="/gengold2.jpg"
                 alt="AI Tools"
               />
             </div>
