@@ -122,7 +122,7 @@
 
 .entrepreneur-container .ent-box-right {
   text-align: left;
-  padding-left: 20px;
+  padding-right:40px;
 }
 
 /* ======================== */
@@ -164,7 +164,7 @@
     text-align: center;
     margin: 60px auto;
     gap: 30px;
-    padding: 10px 20px;
+    padding: 20px;
   }
 
   /* Force image first on all sections */
@@ -183,7 +183,6 @@
     font-size: 18px;
     line-height: 2.2rem;
     font-weight: 500;
-    padding: 0 10px;
   }
 
   .entrepreneur-container .ent-section {
@@ -218,9 +217,10 @@
 
   .entrepreneur-container .ent-left img,
   .entrepreneur-container .ent-right img {
-    height:300px;
+    height:250px;
     margin:20px;
     border-radius:30px;
+    width:275px;
   }
 
   .entrepreneur-container .ent-box-left h1,
