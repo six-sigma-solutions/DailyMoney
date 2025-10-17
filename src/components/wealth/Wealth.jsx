@@ -33,7 +33,7 @@ const Wealth = () => {
           <div className="wealthy-row">
             <div className="wealthy-col wealthy-image-col">
               <img src="hhh.jpg" alt="Wealth concept 1" />
-            </div>
+            </div> 
             <div className="wealthy-col wealthy-text-col row1">
               <h2>
                 <span className="wealthy-check">  ✓  </span>
@@ -54,7 +54,7 @@ const Wealth = () => {
                 <span className="wealthy-check">  ✓  </span>
                 True wealth begins with discipline — living with intention,
                 saving with wisdom, and investing with vision. It grows not only
-                through money, but also through knowledge, relationships, and the
+                through money but also through knowledge, relationships, and the
                 values we pass on to the next generation.
               </h2>
             </div>
@@ -84,7 +84,7 @@ const Wealth = () => {
             <div className="wealthy-col wealthy-text-col row4">
               <h2>
                 <span className="wealthy-check">  ✓  </span>
-                Wealth is not greed — it is growth. It is not selfishness — it is
+                Wealth is not greed — it is growth. It is not selfishness—it is
                 stewardship. When guided by purpose, wealth becomes a force for
                 freedom, impact, and legacy. Our wealth is our power to
                 live with dignity, give with generosity, and build a future that
@@ -95,11 +95,13 @@ const Wealth = () => {
         </section>
       </main>
 
-      <Link className="view-more-link" to="/family">
-        <button className="view-more" type="button">
-          View More
-        </button>
-  </Link>
+      <section className="blog">
+              <div className="view-more-link-my-life">
+              <Link className="view-more-link" to="/family">
+              <button className="view-more" type="button" style={{ width: "200px" }}>View More</button>
+              </Link> 
+              </div>
+            </section>
      
       <div className="card-footer-bg">
                     {/* START: ADDED LOGO SECTION */}
