@@ -195,7 +195,8 @@
   }
 
   .zigzag-image-container img {
-    max-width: 300px;
+    width: 250px;
+    height:250px;
   }
 
   .overview-action-btn {
