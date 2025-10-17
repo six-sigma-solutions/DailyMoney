@@ -158,7 +158,7 @@ export default function Home() {
               </div>
               <img
                 className="solution-card-img1"
-                src="genbolt.jpg"
+                src="gengold3.png"
                 alt="Custom Apps"
               />
             </div>
