@@ -157,7 +157,9 @@ body {
   font-size: 1.4rem;
   color: var(--accent);
   margin-bottom: 0.8rem;
+  text-align: start;
 }
+
 
 .wealthy-text-col p {
   color: var(--muted);
@@ -232,11 +234,10 @@ body {
     text-align: center;
   }
   .view-more {
+    width: 200px;
     font-size: 0.95rem;
     padding: 10px 16px;
   }
-
-
 }
 
 /* ---------- Extra Small Devices ---------- */
@@ -268,5 +269,6 @@ body {
   .view-more {
     font-size: 0.95rem;
     padding: 10px 16px;
+    width: 200px;
   }
 }
