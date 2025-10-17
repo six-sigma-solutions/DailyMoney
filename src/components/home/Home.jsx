@@ -158,7 +158,7 @@ export default function Home() {
               </div>
               <img
                 className="solution-card-img1"
-                src="gengold3.png"
+                src="rohit.png"
                 alt="Custom Apps"
               />
             </div>
@@ -182,7 +182,7 @@ export default function Home() {
               </div>
               <img
                 className="solution-card-img1"
-                src="/gengold2.jpg"
+                src="/virat.jpg"
                 alt="AI Tools"
               />
             </div>
