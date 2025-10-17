@@ -1,19 +1,10 @@
-/* =========================================================
-   Wealth Component - Cleaned, Modern & Responsive CSS
-   ========================================================= */
-
-/* ---------- Root Theme Variables ---------- */
 :root {
   --bg: #f7f5f2;
   --card: #ffffff;
-
-
-
   --radius: 20px;
   --container-w: 1100px;
 }
 
-/* ---------- Base ---------- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -174,7 +165,7 @@ body {
 }
 
 .wealthy-check {
-  color: yellow;
+  color: rgb(172, 251, 2);
   font-weight: bold;
   font-size: 22px;
   margin-right: 8px;
@@ -240,6 +231,10 @@ body {
     justify-content: center;
     text-align: center;
   }
+  .view-more {
+    font-size: 0.95rem;
+    padding: 10px 16px;
+  }
 
 
 }
@@ -264,13 +259,14 @@ body {
     padding: 0;
     box-shadow: none;
   }
-   .view-more{
-      font-size:0.95rem;
-   }
 
   .wealthy-hero-card img {
     width: 100%;
     height: auto;
     border-radius: 0;
+  }
+  .view-more {
+    font-size: 0.95rem;
+    padding: 10px 16px;
   }
 }
