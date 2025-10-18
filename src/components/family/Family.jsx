@@ -109,7 +109,7 @@ const Family = () => {
           <div className="step-content">
             <h3 className="highlight-text">
               <i>
-                "I providing my family, ensuring their financial security and
+                "I prioritize my family, ensuring their financial security and providing 
                 emotional support for the long term."
               </i>
             </h3>
