@@ -37,7 +37,7 @@ const Family = () => {
           True prosperity comes from both good health and financial security.
           With our transparent, collaborative approach, we bring your vision to
           life. Guided by our three-phase methodology, we consistently deliver
-          value and adapt to change — building the best world:{" "}
+          value and adapt to change — building the best world:<br />{" "}
           <span
             style={{
               backgroundColor: "#d4edda",
