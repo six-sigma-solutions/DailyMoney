@@ -110,7 +110,7 @@ const Family = () => {
             <h3 className="highlight-text">
               <i>
                 "I prioritize my family, ensuring their financial security and providing 
-                emotional support for even after me."
+                emotional support even after me."
               </i>
             </h3>
           </div>
