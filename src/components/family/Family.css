@@ -159,6 +159,8 @@ p {
   color: rgb(3, 3, 88);
   font-weight: bold;
   line-height: 1.6;
+  font-size: 16px;
+  text-align: start;
 }
 
 /* Steps */
