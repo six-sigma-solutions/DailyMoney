@@ -384,7 +384,7 @@ body {
 }
 /* Replace with this rule */
 .solution-image-container video {
-  width: 100%;
+  width: 90%;
   height: auto;
   border-radius: 20px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
