@@ -1759,7 +1759,7 @@ body {
 }
 
 .popup-container {
-  background-color: transparent;
+  background-color: rgba(0,0,0,0.3);
   color: #111;
   padding: 24px 36px;
   border-radius: 18px;
