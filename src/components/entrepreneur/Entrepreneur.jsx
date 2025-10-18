@@ -62,7 +62,7 @@ export default function Entrepreneur () {
 
       <div className="ent-right">
         <h1>
-          "I'm looking for entrepreneurship to create opportunities".<br />
+          "I'm looking into entrepreneurship to create opportunities".<br />
           "I’m drawn to entrepreneurship to make opportunities".<br />
           "I choose entrepreneurship to shape opportunities".<br />
         </h1>
@@ -76,7 +76,7 @@ export default function Entrepreneur () {
         <div className="ent-box-left">
           <h1>
             "Yes, I believe in building dreams into reality".<br />
-            "Yes, I turn dreams into reality through  my action".<br />
+            "Yes, I turn dreams into reality through  my action's".<br />
             "I’m committed to turning vision into reality".<br />
             "Dreams are meant to be built, not just dreamed".<br />
           </h1>
