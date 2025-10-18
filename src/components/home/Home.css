@@ -1820,7 +1820,7 @@ body {
 
 @media (max-width: 1200px) {
   .popup-container {
-    background-color: lightblue;
+    background-color: rgba(0,0,0,0.3);
   }
 
 }
