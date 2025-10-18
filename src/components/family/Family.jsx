@@ -37,7 +37,7 @@ const Family = () => {
           True prosperity comes from both good health and financial security.
           With our transparent, collaborative approach, we bring your vision to
           life. Guided by our three-phase methodology, we consistently deliver
-          value and adapt to change—building the best world:{" "}
+          value and adapt to change — building the best world:{" "}
           <span
             style={{
               backgroundColor: "#d4edda",
@@ -60,7 +60,7 @@ const Family = () => {
             <h3 className="highlight-text">
               <i>
                 "I have secured my family's health, education, and finances, and
-                aim to ensure long-term security, growth, and happiness for
+                aim to ensure long - term security, growth, and happiness for
                 future generations."
               </i>
             </h3>
@@ -75,8 +75,8 @@ const Family = () => {
           <div className="step-content">
             <h3 className="highlight-text">
               <i>
-                "I've secured my family's well-being and plan to expand their
-                opportunities, investing in their safety, education, and
+                "I've secured my family's well - being and plan to expand their
+                opportunities, by investing in their safety, education, and
                 lifestyle."
               </i>
             </h3>
@@ -91,8 +91,8 @@ const Family = () => {
           <div className="step-content">
             <h3 className="highlight-text">
               <i>
-                "I've secured my children's future with education, savings, and
-                guidance, aiming for long-term financial freedom."
+                "I've secured my children's future through education, savings, and
+                guidance, aiming for long - term financial freedom."
               </i>
             </h3>
           </div>
@@ -109,7 +109,7 @@ const Family = () => {
           <div className="step-content">
             <h3 className="highlight-text">
               <i>
-                "I prioritize my family, ensuring their financial security and
+                "I providing my family, ensuring their financial security and
                 emotional support for the long term."
               </i>
             </h3>
