@@ -12,12 +12,12 @@
   align-items: flex-start;
   padding-top: 80px;
   z-index: 9999;
-  backdrop-filter: blur(5px); /* keeps page visible but soft behind */
-  
+  backdrop-filter: blur(5px);
+  /* keeps page visible but soft behind */
 }
 
 .popup-container {
-  background-color:rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.3);
   color: #111;
   padding: 24px 36px;
   border-radius: 18px;
@@ -25,13 +25,14 @@
   max-width: 500px;
   width: 90%;
   text-align: center;
-  opacity:2;
+  opacity: 2;
   animation: fadeIn 0.5s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
-  backdrop-filter:blur(5px);
+  backdrop-filter: blur(5px);
 }
+
 
 .popup-title {
   font-size: 1.8em;
@@ -45,7 +46,7 @@
   margin-bottom: 20px;
   font-size: 25px;
   font-weight: 600;
-  color: #070552 ;
+  color: #0f02f5 ;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: start;
 }
@@ -62,8 +63,9 @@
 }
 
 .popup-close-btn:hover {
-  background: #a41414;
+  background: #a41414;
 }
+
 
 * {
   box-sizing: border-box;
