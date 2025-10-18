@@ -43,7 +43,7 @@ const Family = () => {
               backgroundColor: "#d4edda",
               color: "green",
               borderRadius: "8px",
-              fontSize: "16px",
+              fontSize: "23px",
               fontWeight: "bold",
             }}
           >
