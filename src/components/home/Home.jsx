@@ -182,7 +182,7 @@ export default function Home() {
               </div>
               <img
                 className="solution-card-img1"
-                src="/virat22.png"
+                src="/phone3.png"
                 alt="AI Tools"
               />
             </div>
