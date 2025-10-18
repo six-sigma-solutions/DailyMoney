@@ -165,7 +165,7 @@ export default function Home() {
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                  Vision & Mission is your <span>future generation</span>
+                  Vision & Mission is your <span> <br />future generation</span>
                 </div>
               </div>
               <img
@@ -177,7 +177,7 @@ export default function Home() {
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                  Vision & Mission is your <span>generation after generations</span>
+                  Vision & Mission is your <span> <br />generation after generations</span>
                 </div>
               </div>
               <img
