@@ -109,9 +109,9 @@ export default function Entrepreneur () {
 
       <div className="ent-right">
         <h1>
-          "I have dreams of financial freedom and impact".<br />
+          "I have dreams of financial support and impact".<br />
           "I dream of creating wealth and making a difference".<br />
-          "My goal is to build financial freedom and inspire change".<br />
+          "My goal is to build financial support and inspire change".<br />
           "My vision combines financial success with social impact".
         </h1>
         <div className="ent-box-right">
