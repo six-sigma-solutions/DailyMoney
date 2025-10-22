@@ -3,7 +3,7 @@
 
 import React from "react";
 import "./Home.css";
-import videoFile from "../../assets/gif7.mp4";
+import videoFile from "../../assets/gif7 (online-video-cutter.com).mp4";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
