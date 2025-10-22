@@ -302,7 +302,7 @@ export default function Home() {
           <div className="footer-bottom-content1">
             <div className="footer-logo-block1">
               <img
-                src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png"
+                src="DM.png"
                 alt="DailyMoney Logo"
               />
               <span className="footer-logo-text1">DM</span>
