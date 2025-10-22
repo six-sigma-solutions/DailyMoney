@@ -8,7 +8,7 @@ const Footer = () => {
         <img 
           alt="DailyMoney Logo" 
           className="footer-logo" 
-          src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png"
+          src="DM.png"
         />
       </div>
       <h1 className="footer-title2">DM</h1>
