@@ -20,7 +20,7 @@ const Overview = () => {
         <div className="zigzag-text-content">
           <h2 style={{ color: "#80EF80" }}>Our Purpose</h2>
           <p>
-            Daily Money exists to make the world healthier, happier, wealthier -
+            DM exists to make the world healthier, happier, wealthier -
             one person, one family, and one community at a time.
           </p>
         </div>
@@ -90,7 +90,7 @@ const Overview = () => {
         <div className="zigzag-text-content">
           <h2 style={{ color: "cyan" }}>Our Promise</h2>
           <p>
-            Daily Money is not about just today's income, but about wealth for
+            DM is not about just today's income, but about wealth for
             life and beyond. We help build strong foundations so every
             generation thrives—financially, physically, and spiritually.
           </p>
