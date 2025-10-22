@@ -23,7 +23,7 @@ export default function Home() {
       {showPopup && (
         <div className="popup-overlay">
           <div className="popup-container">
-            <h2 className="popup-title">Welcome to DM 💰</h2>
+            <h2 className="popup-title">Welcome to DM </h2>
          <p className="popup-text">"For the betterment of all people worldwide — Especially those driving innovation in the Global IT Industry."</p>
             <button
               className="popup-close-btn"
