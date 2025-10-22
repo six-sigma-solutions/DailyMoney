@@ -23,7 +23,7 @@ export default function Home() {
       {showPopup && (
         <div className="popup-overlay">
           <div className="popup-container">
-            <h2 className="popup-title">Welcome to Daily Money 💰</h2>
+            <h2 className="popup-title">Welcome to DM 💰</h2>
          <p className="popup-text">"For the betterment of all people worldwide — Especially those driving innovation in the Global IT Industry."</p>
             <button
               className="popup-close-btn"
@@ -40,7 +40,7 @@ export default function Home() {
         <div className="hero-content">
           <h1 id="daily-money">
             <span className="hero-red">
-              Daily <span className="money">Money</span>
+              D<span className="money">M</span>
             </span>
           </h1>
           <strong>
@@ -50,17 +50,17 @@ export default function Home() {
             <p id="hero-subtitle">Independent for Entire life.</p>
           </strong>
           <p id="hero-desc" className="hero-desc">
-            Daily Money stands for discipline, unity, and freedom.
+            DM stands for discipline, unity, and freedom.
           </p>
           <p  id="hero-desc" className= "hero-desc">
             Together, we are shaping a future of health, wealth, and limitless opportunities.
           </p>
           <p id="hero-desc" className="hero-desc">
-            With Daily Money, every step forward is a step toward freedom,
+            With DM, every step forward is a step toward freedom,
             and a life without limits.
             <br /> Welcome to{" "}
             <strong>
-              <span className="daily-money">Daily Money!</span>
+              <span className="daily-money">DM!</span>
             </strong>
           </p>
           <div className="hero-actions">
@@ -104,7 +104,7 @@ export default function Home() {
                   <span className="red-text">
                     Solutions for every
                     <br />
-                    stage of Daily Money
+                    stage of DM
                   </span>
                 </h2>
                 <ul className="solution-bullets">
@@ -115,12 +115,12 @@ export default function Home() {
                   </li>
                   <li>
                     <strong>
-                      Daily Money Made Easy, Health & Wealth Made Possible.
+                      DM Made Easy, Health & Wealth Made Possible.
                     </strong>
                   </li>
                   <li>
                     <strong>
-                      Smart Choices for Daily Money, Smarter Future in Health &
+                      Smart Choices for DM, Smarter Future in Health &
                       Wealth.
                     </strong>
                   </li>
@@ -203,33 +203,33 @@ export default function Home() {
 
               <div className="ar-vr-nested-card">
                 <h4 className="nested-card-title">
-                  The Daily Money Philosophy
+                  The DM Philosophy
                 </h4>
                 <ul className="solution-bullets">
                   <li>
                     <strong>
-                      Your Partner in Daily Money, Health, and Wealth for Life.
+                      Your Partner in DM, Health, and Wealth for Life.
                     </strong>
                   </li>
                   <li>
                     <strong>
-                      Every Stage - Every Step Money - Health & Wealth Solutions.
+                      Every Stage - Every Step - Health & Wealth Solutions.
                     </strong>
                   </li>
                   <li>
                     <strong>
-                      Balance Your Daily Money. Build Your Health. Grow Your
+                      Balance Your DM. Build Your Health. Grow Your
                       Wealth.
                     </strong>
                   </li>
                   <li>
                     <strong>
-                      Small Daily Money Wins, Big Health & Wealth Gains.
+                      Small DM Wins, Big Health & Wealth Gains.
                     </strong>
                   </li>
                   <li>
                     <strong>
-                      Simplify Daily Money. Strengthen Health. Secure Wealth.
+                      Simplify DM. Strengthen Health. Secure Wealth.
                     </strong>
                   </li>
                   <li>
@@ -261,7 +261,7 @@ export default function Home() {
         <div className="founder-card">
           <img src="/sir.png" alt="Dr.V.Chellapondy DSW" />
           <h4 className="team-member-name">Dr.V.Chellapondy</h4>
-          <p className="team-member-role founder">Founder & CEO</p>
+          
         </div>
 
         {/* The other team members remain in the grid below */}
@@ -269,19 +269,19 @@ export default function Home() {
           <div className="team-member-card">
             <img src="https://via.placeholder.com/120" alt="S.Vasu" />
             <h4 className="team-member-name">S.Vasu</h4>
-            <p className="team-member-role">Technocrat & Media Industry</p>
+            
           </div>
 
           <div className="team-member-card">
             <img src="https://via.placeholder.com/120" alt="Dr. KP Kosygan" />
             <h4 className="team-member-name">Dr. KP Kosygan</h4>
-            <p className="team-member-role">Senior Orthopaedic Consultant</p>
+            
           </div>
 
           <div className="team-member-card">
             <img src="https://via.placeholder.com/120" alt="R.K.Selvamani" />
             <h4 className="team-member-name">R.K.Selvamani</h4>
-            <p className="team-member-role">Film Director & Producer</p>
+            
           </div>
         </div>
       </section>
@@ -301,7 +301,7 @@ export default function Home() {
                 src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png"
                 alt="DailyMoney Logo"
               />
-              <span className="footer-logo-text1">Daily Money</span>
+              <span className="footer-logo-text1">DM</span>
               <span className="footer-subtext1">
                 Six Sigma Solution, NKC Towers <br />1st Floor, Opp to Government
                 Engineering College, Kottagoundampatti, Karuppur, Salem-636011.
