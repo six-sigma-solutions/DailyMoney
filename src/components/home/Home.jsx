@@ -35,8 +35,12 @@ export default function Home() {
         </div>
        )}
       
+      
 
       <section className="hero-section">
+        <div className="dm">
+          <p>DM - Daily Message - Total Health and Freedom — where discipline builds wealth, unity creates strength, and freedom becomes a lifestyle.</p>
+        </div>
         <div className="hero-content">
           <h1 id="daily-money">
             <span className="hero-red">
