@@ -162,7 +162,7 @@ export default function Home() {
               </div>
               <img
                 className="solution-card-img1"
-                src="chahal.png"
+                src="dev1.jpg"
                 alt="Custom Apps"
               />
             </div>
