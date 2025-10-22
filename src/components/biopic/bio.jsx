@@ -301,7 +301,7 @@ function Bio() {
         <div className="card-footer-bg">
             <div className="footer-logo-container">
                 <img
-                    src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png" 
+                    src="DM.png" 
                     alt="DailyMoney Logo"
                     className="footer-logo"
                 />
