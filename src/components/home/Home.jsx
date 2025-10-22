@@ -126,12 +126,12 @@ export default function Home() {
                   </li>
                   <li>
                     <strong>
-                      From Today’s Money to Tomorrow’s Wealth & Wellness.
+                      From Today’s Health &  Wellness to Tomorrow’s Wealth & Wellness.
                     </strong>
                   </li>
                   <li>
                     <strong>
-                      Empowering You Every Day with Money, Health, and Wealth.
+                      Empowering You Every Day with Health, and Wealth.
                     </strong>
                   </li>
                 </ul>
