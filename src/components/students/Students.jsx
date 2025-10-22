@@ -43,7 +43,7 @@ export default function Students() {
         {/* Section 1 */}
         <section className="stu-page-section">
           <div className="stu-page-image-box">
-            <img src="student11(1).png" alt="Poster 1" />
+            <img src="student12.png" alt="Poster 1" />
           </div>
 
           <div className="stu-page-text-block">
