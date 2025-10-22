@@ -24,7 +24,7 @@ export default function Navbar() {
         {/* LEFT: Logo */}
         <Link to="/" className="logo">
           <img
-            src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png"
+            src="https://res.cloudinary.com/dgay8ba3o/image/upload/v1761126944/DailyMoney_wzp9zh.png" 
             alt="DailyMoney Logo"
           />
         </Link>
