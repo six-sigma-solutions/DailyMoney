@@ -44,7 +44,7 @@ export default function Elder() {
     // Top-level container with unique wrapper class and ref for animation
     <div className="dm-eldr-wrapper" ref={animatedRef}>
       <header className="dm-eldr-header">
-        <h1>Daily Money – Empower Elders</h1>
+        <h1>DM – Empower Elders</h1>
       </header>
 
       <main className="dm-eldr-container">
@@ -58,13 +58,13 @@ export default function Elder() {
             <p className="dm-eldr-animate dm-eldr-tagline">
               <strong>
                 <span className="dm-eldr-tick">✔</span>
-                <span className="dm-eldr-highlight">    DailyMoney</span> represents a <span className="dm-eldr-highlight">rebirth</span> a movement where elders <span className="dm-eldr-highlight">earn daily</span>, 
+                <span className="dm-eldr-highlight">DM</span> represents a <span className="dm-eldr-highlight">rebirth</span> a movement where elders <span className="dm-eldr-highlight">earn daily</span>, 
                 <span className="dm-eldr-highlight"> share wisdom</span>, and feel <span className="dm-eldr-highlight">valuable</span> again. 
                 Live with <span className="dm-eldr-highlight">financial confidence</span>. 
                 Feel <span className="dm-eldr-highlight">valued</span> and <span className="dm-eldr-highlight">included</span>. 
                 Share your <span className="dm-eldr-highlight">wisdom</span>, not your worries. 
                 Enjoy <span className="dm-eldr-highlight">peace</span>, <span className="dm-eldr-highlight">purpose</span>, 
-                and <span className="dm-eldr-highlight">pride</span> in your <span className="dm-eldr-highlight">DailyMoney</span> life.
+                and <span className="dm-eldr-highlight">pride</span> in your <span className="dm-eldr-highlight">DM</span> life.
               </strong>
             </p>
           </div>
@@ -85,7 +85,7 @@ export default function Elder() {
                 we help you turn it into <span className="dm-eldr-highlight">income</span>. 
                 It's time to invest in your <span className="dm-eldr-highlight">health</span>, 
                 reclaim your <span className="dm-eldr-highlight">wealth</span>, and cherish your <span className="dm-eldr-highlight">family</span>. 
-                That's the <span className="dm-eldr-highlight">DailyMoney</span> way.
+                That's the <span className="dm-eldr-highlight">DM</span> way.
               </strong>
             </p>
           </div>
@@ -101,7 +101,7 @@ export default function Elder() {
               <strong>
                 <span className="dm-eldr-tick">✔</span><span> Retirement means living life on your own</span> <span className="dm-eldr-highlight">schedule</span> and enjoying inner <span className="dm-eldr-highlight">peace</span>. 
                 It’s not the end of <span className="dm-eldr-highlight">possibilities</span> it’s the start of living life on your own <span className="dm-eldr-highlight">terms</span>. 
-                That’s the <span className="dm-eldr-highlight">DailyMoney</span> way:
+                That’s the <span className="dm-eldr-highlight">DM</span> way:
                 freedom with <span className="dm-eldr-highlight">purpose</span> and dignity at every stage of life.
               </strong>
             </p>
@@ -122,7 +122,7 @@ export default function Elder() {
                 When they live <span className="dm-eldr-highlight">freely</span> and <span className="dm-eldr-highlight">confidently</span>, 
                 the <span className="dm-eldr-highlight">society</span> grows richer  
                 in <span className="dm-eldr-highlight">humanity</span>, not just in <span className="dm-eldr-highlight">wealth</span>. 
-                That’s the <span className="dm-eldr-highlight">DailyMoney,</span> way where every generation 
+                That’s the <span className="dm-eldr-highlight">DM,</span> way where every generation 
                 learns, earns, and lives with <span className="dm-eldr-highlight">purpose</span>.
               </strong>
             </p>
