@@ -174,7 +174,7 @@ export default function Home() {
               </div>
               <img
                 className="solution-card-img1"
-                src="/dhoni.png"
+                src="/phonecenter.png"
                 alt="Design Systems"
               />
             </div>
