@@ -307,7 +307,7 @@ function Bio() {
                 />
             </div>
             <h1 className="footer-title2">
-                DAILY MONEY
+                DM
             </h1>
             <p className="footer-subtitle2">
                 Independent for Entire Life
