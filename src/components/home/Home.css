@@ -1276,6 +1276,12 @@ body {
         -webkit-mask-size: cover;
         margin-right: 15px;
     }
+  .hero-promo-image {
+        width: 90%;
+        height: 90%;
+        background-size: cover;
+        background-position: center;
+    }
 
   .hero-section {
     padding: 30px 40px;
