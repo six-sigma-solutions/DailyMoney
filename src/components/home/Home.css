@@ -1345,6 +1345,10 @@ body {
     font-size: 1.5em;
   }
 
+  .ar-vr-nested-card{
+    padding: 20px;
+  }
+
   .solutions-grid {
     gap: 22px;
   }
