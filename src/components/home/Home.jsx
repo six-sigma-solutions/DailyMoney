@@ -305,7 +305,6 @@ export default function Home() {
                 src="DM.png"
                 alt="DailyMoney Logo"
               />
-              <span className="footer-logo-text1">DM</span>
               <span className="footer-subtext1">
                 Six Sigma Solution, NKC Towers <br />1st Floor, Opp to Government
                 Engineering College, Kottagoundampatti, Karuppur, Salem-636011.
