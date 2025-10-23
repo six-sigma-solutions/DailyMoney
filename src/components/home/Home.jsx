@@ -186,7 +186,7 @@ export default function Home() {
               </div>
               <img
                 className="solution-card-img1"
-                src="/phone33.png"
+                src="/phone45.jpg"
                 alt="AI Tools"
               />
             </div>
