@@ -82,9 +82,7 @@ export default function PresidentMsg() {
                             className="footer-logo"
                         />
                     </div>
-                    <h1 className="footer-title2">
-                        DM
-                    </h1>
+              
                     <p className="footer-subtitle2">
                         Independent for Entire Life
                     </p>
