@@ -47,7 +47,7 @@ const Wealth = () => {
           {/* Row 2 */}
           <div className="wealthy-row wealthy-reverse" style={{ background: "linear-gradient(45deg,chocolate,#6f4e37)" }}>
             <div className="wealthy-col wealthy-image-col" >
-              <img src="w2.jpg" alt="Wealth concept 2" />
+              <img src="wealth99.png" alt="Wealth concept 2" />
             </div>
             <div className="wealthy-col wealthy-text-col row2" >
               <h2>
