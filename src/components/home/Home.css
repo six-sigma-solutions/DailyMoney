@@ -136,6 +136,10 @@ body {
     width: 95%;
     margin-top: 20px;
   }
+  .dm p{
+    font-size: 22px;
+    text-align: start;
+  }
 }
 .daily-money{
    margin-left: 0;
