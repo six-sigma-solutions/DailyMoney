@@ -67,7 +67,7 @@ const Overview = () => {
               path without limits.
             </li>
             <li>
-              <strong>Health is Wealth –</strong> Without wellness, money loses
+              <strong>Health is Wealth –</strong> Without wellness, income loses
               its meaning.
             </li>
             <li>
