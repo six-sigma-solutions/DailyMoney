@@ -1117,7 +1117,7 @@ body {
 /* Footer (footer-main1 and related) - exact styles provided by user */
 .footer-main1 {
   max-width: 1700px;
-  margin: 0;
+  margin: 10px 60px;
   background: #000;
   display: flex;
   flex-direction: column;
