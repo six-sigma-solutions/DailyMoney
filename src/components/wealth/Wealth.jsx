@@ -79,7 +79,7 @@ const Wealth = () => {
           {/* Row 4 */}
           <div className="wealthy-row wealthy-reverse" style={{ background: "#002147" }}>
             <div className="wealthy-col wealthy-image-col">
-              <img src="wealth4.jpg" alt="Wealth concept 4" />
+              <img src="wealth44.png" alt="Wealth concept 4" />
             </div>
             <div className="wealthy-col wealthy-text-col row4">
               <h2>
