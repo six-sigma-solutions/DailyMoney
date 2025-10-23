@@ -311,7 +311,7 @@ export default function Home() {
                 TamilNadu, India.
               </span>
               <span className="footer-copyright1">
-                © 2025. All rights reserved.
+                © 2025. All right reserved.
               </span>
             </div>
             <div className="footer-links-block1">
