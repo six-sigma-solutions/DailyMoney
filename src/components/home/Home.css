@@ -1282,6 +1282,7 @@ body {
   
   .hero-content h2 {
     font-size: 22px;
+    text-align: center;
   }
   
   #hero-subtitle {
