@@ -1306,6 +1306,12 @@ body {
     margin-top: 10px;
   }
 
+  .solution-image-container video{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+
   .solution-container{
     padding: 20px 0 20px 0;
     gap: 30px;
