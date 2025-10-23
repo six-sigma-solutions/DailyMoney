@@ -363,7 +363,7 @@ body {
 /* SOLUTIONS SECTION                                     */
 /* ======================================================= */
 .solutions-section {
-  margin-top: 40px;
+  margin: 40px 60px 0px;
 }
 
 .solution-container {
