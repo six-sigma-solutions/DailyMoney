@@ -39,7 +39,7 @@ export default function FounderMsg() {
           <img src="header200.jpg" className="message-image" />
 
           <div className="message-section">
-            <img src="mainhead.jpg" alt="Welcome" className="message-image" />
+            <img src="f100.png" alt="Welcome" className="message-image" />
           </div>
         </div>
 
