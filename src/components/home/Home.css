@@ -307,7 +307,7 @@ body {
 /* This DIRECTLY changes the background image on hover */
 .cutout-shape:hover .hero-promo-image {
   /* Set the hover (color) image */
-  background-image: url('https://res.cloudinary.com/dgay8ba3o/image/upload/v1760079374/WhatsApp_Image_2025-10-10_at_11.40.02_AM_j9nm5z.jpg');
+  background-image: url('god.jpg');
   
   /* Apply the zoom effect */
   transform: scale(1.07);
