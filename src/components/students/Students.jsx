@@ -74,7 +74,7 @@ export default function Students() {
         {/* Section 3 */}
         <section className="stu-page-section">
           <div className="stu-page-image-box">
-            <img src="student4.png" alt="Poster 3" />
+            <img src="3001.png" alt="Poster 3" />
           </div>
 
           <div className="stu-page-text-block">
