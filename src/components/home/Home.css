@@ -1266,22 +1266,23 @@ body {
     padding-right: 16px;
   }
  .cutout-shape {
-        width: 100%;
-        height: 100%;
-        aspect-ratio: 1 / 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        mask-size: cover;
-        -webkit-mask-size: cover;
-        margin-right: 40px;
-    }
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    margin-right: 40px;
+  }
   .hero-promo-image {
-        width: 90%;
-        height: 90%;
-        background-size: cover;
-        background-position: center;
-    }
+    width: 90%;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+  }
 
   .hero-section {
     padding: 30px 40px;
