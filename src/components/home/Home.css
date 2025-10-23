@@ -129,7 +129,14 @@ body {
  
   
 }
-
+@media (max-width: 480px) {
+  .dm {
+    font-size: 0.95rem;
+    padding: 0.8rem;
+    width: 95%;
+    margin-top: 20px;
+  }
+}
 .daily-money{
    margin-left: 0;
   padding-left: 0;
