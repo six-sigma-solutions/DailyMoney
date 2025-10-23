@@ -138,7 +138,7 @@ export default function Navbar() {
         <div className="mobile-topbar">
           <Link to="/" className="logo">
             <img
-              src="https://res.cloudinary.com/dq9zq6ubg/image/upload/v1758609670/daily-money_fbjvzk.png"
+              src="DM.png"
               alt="DailyMoney Logo"
             />
           </Link>
