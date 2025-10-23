@@ -18,7 +18,7 @@ const Solution = () => {
       <div className="dm-sol-img-card">
           <img
             className="dm-sol-card-media"
-            src="/solution-1st.jpg"
+            src="/WM.png"
             alt="Solution"
           />
          
