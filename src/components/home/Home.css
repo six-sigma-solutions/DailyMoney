@@ -294,7 +294,7 @@ body {
   transform: scale(1);
 
   /* Set the default (grayscale) image */
-  background-image: url('god.jpg');
+  background-image: url('https://res.cloudinary.com/dgay8ba3o/image/upload/v1761197011/god_ve0ifl.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -307,7 +307,7 @@ body {
 /* This DIRECTLY changes the background image on hover */
 .cutout-shape:hover .hero-promo-image {
   /* Set the hover (color) image */
-  background-image: url('god.jpg');
+  background-image: url('https://res.cloudinary.com/dgay8ba3o/image/upload/v1761197011/god_ve0ifl.jpg');
   
   /* Apply the zoom effect */
   transform: scale(1.07);
