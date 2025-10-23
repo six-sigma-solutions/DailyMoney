@@ -113,8 +113,7 @@ const Wealth = () => {
                             className="footer-logo"
                         />
                     </div>
-                 
-                    </h1>
+              
                     <p className="footer-subtitle2">
                         Independent for Entire Life
                     </p>
