@@ -66,7 +66,7 @@ const Income = () => {
         <div className="income-image">
           <img
             className="responsive-income-img"
-            src="incomeimg-3.avif"
+            src="income3.png"
             alt="Financial freedom"
           />
         </div>
