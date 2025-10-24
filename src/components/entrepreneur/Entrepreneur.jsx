@@ -1,6 +1,6 @@
 import React from "react";
 // !! IMPORTANT: Make sure these paths are correct for your project !!
-import img1 from "/firstlogo.png";
+import img1 from "/fin55.png";
 import img3 from "/entp1.jpg";
 import img4 from "/entp2.jpg";
 import img5 from "/img-5.jpg";
