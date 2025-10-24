@@ -29,6 +29,7 @@ body{
   justify-content: space-between;
   padding: 60px 10%;
   gap: 50px;
+  margin-bottom:60px;
 }
 
 .income-section.reverse {
