@@ -33,7 +33,7 @@ const Overview = () => {
         </div>
         <div className="zigzag-text-content">
           <h2 style={{ color: "yellow" }}>Our Approach</h2>
-          <ul>
+          <ul className="zigzag">
             <li>
               <strong>Clarity –</strong> Simplifying money so everyone can
               understand it.
@@ -61,7 +61,7 @@ const Overview = () => {
         </div>
         <div className="zigzag-text-content">
           <h2 style={{ color: "#89BFF8" }}>Our Core Beliefs</h2>
-          <ul>
+          <ul className="zigzag">
             <li>
               <strong>Wealth is Freedom –</strong> The ability to choose your
               path without limits.
@@ -90,7 +90,8 @@ const Overview = () => {
         <div className="zigzag-text-content">
           <h2 style={{ color: "cyan" }}>Our Promise</h2>
           <p>
-          DM stands for more than health, it represents lifelong prosperity. We help create strong foundations for generations to flourish — in wealth, wellness, and spirit.</p>
+            DM stands for more than health, it represents lifelong prosperity. We help create strong foundations for generations to flourish — in wealth, wellness, and spirit.
+          </p>
         </div>
       </section>
 
