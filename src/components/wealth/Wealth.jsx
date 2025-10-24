@@ -9,9 +9,9 @@ const Wealth = () => {
       {/* Header */}
       <header className="wealthy-header">
         <div className="wealthy-container wealthy-header-inner">
-          <div className="wealthy-logo" style={{ color: "#0b3550" }}>
-            OUR WEALTH
-          </div>
+          <div className="wealth-heading">
+      <span>Our Wealth</span>
+      </div>
         </div>
       </header>
 
