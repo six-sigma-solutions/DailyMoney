@@ -37,7 +37,7 @@ const Health = () => {
         </div>
         <div className="hero-image">
           <div className="image-health-container">
-            <img src="health123.jpg" alt="Styled" className="styled-img" />
+            <img src="healthlogo2.jpg" alt="Styled" className="styled-img" />
           </div>
         </div>
       </section>
