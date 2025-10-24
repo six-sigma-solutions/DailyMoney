@@ -8,7 +8,7 @@ const Footer = () => {
         <img 
           alt="DailyMoney Logo" 
           className="footer-logo" 
-          src="DM.png"
+          src="DM1.jpg"
         />
       </div>
       <p className="footer-subtitle2">Independent for Entire Life</p>
