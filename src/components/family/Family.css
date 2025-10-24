@@ -1,128 +1,46 @@
-/* Mobile Responsive Styles */
-@media (max-width: 768px) {
-  .family-container {
-    padding: 0 15px;
-  }
-
-  .family-header {
-    margin: 20px 15px;
-    padding: 15px;
-  }
-
-  .family-header h1 {
-    font-size: 2rem;
-  }
-
-  .step,
-  .step.reverse {
-    flex-direction: column !important;
-    gap: 25px;
-    text-align: center;
-    padding: 20px 15px;
-  }
-  
-  .step-img {
-    width: 100%;
-    max-width: 350px;
-    margin: 0 auto;
-  }
-  
-  .step-img img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-    border-radius: 15px;
-  }
-  
-  .step-content {
-    padding: 0 10px;
-  }
-  
-  .highlight-text {
-    font-size: 1.1rem;
-    max-width: 100%;
-    margin: 0 auto;
-    line-height: 1.5;
-  }
-
-  .view-more-btn {
-    width: 200px;
-    font-size: 1rem;
-    padding: 12px 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .family-container {
-    padding: 0 10px;
-  }
-
-  .family-header {
-    margin: 15px 10px;
-    padding: 12px;
-  }
-
-  .family-header h1 {
-    font-size: 1.8rem;
-  }
-
-  .step,
-  .step.reverse {
-    gap: 20px;
-    padding: 15px 10px;
-  }
-
-  .step-img {
-    max-width: 300px;
-  }
-
-  .highlight-text {
-    font-size: 1rem;
-    padding: 0 5px;
-    text-align: center;
-  }
-
-  .view-more-btn {
-    width: 180px;
-    font-size: 0.95rem;
-    padding: 10px 16px;
-  }
-}
-/* Reset + Base */
+/* ======================================================= */
+/* RESET + BASE STYLES                                     */
+/* ======================================================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', 'Arial', sans-serif;
 }
 
 body {
   color: #222;
   background: #fff;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 li {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 p {
-  font-size: 25px;
+  font-size: 20px;
 }
 
-/* Navbar */
+/* ======================================================= */
+/* NAVBAR                                                  */
+/* ======================================================= */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 8%;
+  padding: 1rem 6%;
   background: #fff;
   border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: 700;
   color: #d40000;
 }
 
@@ -130,50 +48,57 @@ p {
   background: #d40000;
   color: #fff;
   border: none;
-  padding: 10px 18px;
+  padding: 10px 20px;
   border-radius: 6px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
   background: #a80000;
+  transform: translateY(-2px);
 }
 
-/* Process Section */
+/* ======================================================= */
+/* PROCESS SECTION                                         */
+/* ======================================================= */
 .process {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
-.health-heading span{
-    background-color: darkgreen;
-    color: white;
-    display: inline-block;
-    line-height: 3.6rem;
-    font-size: 32px;
-    padding: 0 15px;
-    border-radius: 5px;
+.health-heading span {
+  background-color: darkgreen;
+  color: white;
+  display: inline-block;
+  line-height: 3.6rem;
+  font-size: 32px;
+  padding: 0 15px;
+  border-radius: 5px;
 }
 
-.grow{
+.grow {
   margin-left: 60px;
 }
 
 .subtitle {
   margin-left: 60px;
   color: rgb(3, 3, 88);
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.6;
-  font-size: 24px;
+  font-size: 22px;
   text-align: start;
 }
 
-/* Steps */
+/* ======================================================= */
+/* STEP SECTIONS                                           */
+/* ======================================================= */
 .step {
   display: flex;
   align-items: center;
-  margin-bottom: 4rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 2rem;
+  margin: 4rem 0;
   opacity: 0;
   transform: translateY(60px);
   transition: all 0.9s ease-in-out;
@@ -188,39 +113,41 @@ p {
   flex-direction: row-reverse;
 }
 
-/* Step Image */
+/* ======================================================= */
+/* STEP IMAGE                                              */
+/* ======================================================= */
+.step-img {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .step-img img {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  max-width: 400px;
+  height: 290px;
   border-radius: 18px;
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
   object-fit: fill;
   transition: transform 0.5s ease;
   cursor: pointer;
-  margin-left: 60px;
-  margin-top: 20px;
-}
-
-/* Hover Zoom */
-@keyframes zoomIn {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 
 .step-img img:hover {
-  animation: zoomIn 0.6s ease-in-out forwards;
+  transform: scale(1.08);
 }
 
-/* Step Content */
+/* ======================================================= */
+/* STEP CONTENT                                            */
+/* ======================================================= */
+.step-content {
+  flex: 1 1 50%;
+  padding: 10px 20px;
+}
+
 .step-content h3 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
@@ -230,21 +157,24 @@ p {
 }
 
 .step-content ul {
-  list-style: disc inside;
+  list-style: disc;
+  padding-left: 20px;
   color: #444;
   margin-top: 1rem;
+  line-height: 1.6;
 }
 
-/* Highlight Text */
+/* ======================================================= */
+/* HIGHLIGHT TEXT                                          */
+/* ======================================================= */
 .highlight-text {
   text-align: center;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   display: block;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: 0;
+  max-width: 750px;
+  margin: 2rem auto;
   transition: transform 0.3s ease;
 }
 
@@ -252,7 +182,9 @@ p {
   transform: scale(1.05);
 }
 
-/* Blog */
+/* ======================================================= */
+/* BLOG + FOOTER                                           */
+/* ======================================================= */
 .blog {
   padding: 3rem 8%;
   border-top: 1px solid #eee;
@@ -262,6 +194,11 @@ p {
   color: #d40000;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.blog a:hover {
+  color: #a80000;
 }
 
 footer {
@@ -273,4 +210,110 @@ footer {
 
 footer .btn {
   margin: 1rem 0;
+}
+
+/* ======================================================= */
+/* RESPONSIVE DESIGN                                       */
+/* ======================================================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .step {
+    gap: 1.5rem;
+  }
+
+  .step-content h3 {
+    font-size: 1.6rem;
+  }
+
+  .highlight-text {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile - General */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem 4%;
+  }
+
+  .process {
+    padding: 0 4%;
+  }
+
+  .step,
+  .step.reverse {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .step-img {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .step-content {
+    padding: 0 10px;
+  }
+
+  .highlight-text {
+    font-size: 1.1rem;
+    max-width: 100%;
+  }
+
+  .view-more-btn {
+    width: 200px;
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+
+  .subtitle,
+  .grow {
+    margin-left: 30px;
+    text-align: left;
+    font-size: 20px;
+  }
+}
+
+/* Mobile - Small Devices */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.8rem 5%;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .step {
+    gap: 20px;
+  }
+
+  .step-img {
+    max-width: 300px;
+  }
+
+  .step-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .highlight-text {
+    font-size: 1rem;
+    padding: 0 5px;
+  }
+
+  .btn,
+  .view-more-btn {
+    width: 180px;
+    font-size: 0.95rem;
+    padding: 10px 16px;
+  }
 }
