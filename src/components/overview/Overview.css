@@ -39,8 +39,8 @@
 }
 
 .zigzag-image-container {
-  flex: 1; /* Use flexbox for better scaling */
-  text-align: center; /* Center the image */
+  padding: 20px; /* Use flexbox for better scaling */
+  text-align: left ; /* Center the image */
 }
 
 .zigzag-image-container img {
