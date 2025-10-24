@@ -32,7 +32,7 @@ const Visionmission = () => {
 
   return (
     <main className="dm-vsn-main-content">
-      <div className="dm-title">Daily Money Vision & Mission</div>
+      <div className="dm-title">DM Vision & Mission</div>
       {/* HERO: centered rounded card with full-width image inside and left text */}
       <section className="dm-vsn-hero-card">
 
