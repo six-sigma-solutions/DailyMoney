@@ -238,7 +238,7 @@ export default function Home() {
                   </li>
                   <li>
                     <strong>
-                      Master Your Day, Master Your Money, Master Your
+                      Master Your Day, Master Your Health, Master Your
                       Well-being.
                     </strong>
                   </li>
