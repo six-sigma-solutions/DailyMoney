@@ -58,7 +58,7 @@ export default function Elder() {
             <p className="dm-eldr-animate dm-eldr-tagline">
               <strong>
                 <span className="dm-eldr-tick">✔</span>
-                <span className="dm-eldr-highlight">DM</span> represents a <span className="dm-eldr-highlight">rebirth</span> a movement where elders <span className="dm-eldr-highlight">earn daily</span>, 
+                <span className="dm-eldr-highlight">DM</span> represents a <span className="dm-eldr-highlight">rebirth</span> a movement where elders independent and <span className="dm-eldr-highlight">earn daily</span>, 
                 <span className="dm-eldr-highlight"> share wisdom</span>, and feel <span className="dm-eldr-highlight">valuable</span> again. 
                 Live with <span className="dm-eldr-highlight">financial confidence</span>. 
                 Feel <span className="dm-eldr-highlight">valued</span> and <span className="dm-eldr-highlight">included</span>. 
@@ -101,8 +101,8 @@ export default function Elder() {
               <strong>
                 <span className="dm-eldr-tick">✔</span><span> Retirement means living life on your own</span> <span className="dm-eldr-highlight">schedule</span> and enjoying inner <span className="dm-eldr-highlight">peace</span>. 
                 It’s not the end of <span className="dm-eldr-highlight">possibilities</span> it’s the start of living life on your own <span className="dm-eldr-highlight">terms</span>. 
-                That’s the <span className="dm-eldr-highlight">DM</span> way:
-                freedom with <span className="dm-eldr-highlight">purpose</span> and dignity at every stage of life.
+                That’s the <span className="dm-eldr-highlight">DM</span> way.
+                Freedom with <span className="dm-eldr-highlight">purpose</span> and dignity at every stage of life.
               </strong>
             </p>
           </div>
