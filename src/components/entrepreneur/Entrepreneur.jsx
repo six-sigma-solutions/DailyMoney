@@ -8,7 +8,7 @@ import img670 from "/img-670.jpg";
 import img7 from "/entp5.jpg";
 import img8 from "/entp6.jpg";
 import img9 from "/img-9.jpg";
-import img10 from "/entp8.jpg";
+import img10 from "/tree.png";
 
 // Import your regular CSS file
 import "./Entrepreneur.css";
