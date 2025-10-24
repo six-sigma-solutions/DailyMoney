@@ -137,10 +137,10 @@ body {
     font-size: 0.95rem;
     padding: 0.8rem;
     width: 95%;
-    margin-top: 20px;
+    margin-left: 10px;
   }
   .dm span{
-    font-size: 22px;
+    font-size: 18px;
     text-align: start;
   }
 }
