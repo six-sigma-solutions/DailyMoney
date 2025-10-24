@@ -90,9 +90,9 @@ const Overview = () => {
         <div className="zigzag-text-content">
           <h2 style={{ color: "cyan" }}>Our Promise</h2>
           <p>
-            DM is not about just today's income, but about wealth for
+            DM is not define about just Health, but about wealth for
             life and beyond. We help build strong foundations so every
-            generation thrives—financially, physically, and spiritually.
+            generation thrives — Healthy, financially, physically, and spiritually.
           </p>
         </div>
       </section>
