@@ -7,9 +7,9 @@ import Footer from '../footer/Footer';
 const Health = () => {
   return (
     <div className="health-page">
-      <h1 className="health-heading">
-        Our Health
-      </h1>
+    <div className="health-heading">
+        <span>Our Health</span>
+      </div>
       
       {/* Hero Section */}
       <section className="hero">
