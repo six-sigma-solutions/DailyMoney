@@ -90,8 +90,7 @@ const Overview = () => {
         <div className="zigzag-text-content">
           <h2 style={{ color: "cyan" }}>Our Promise</h2>
           <p>
-           DM defines not only good health but lasting prosperity — helping every generation live fully, grow stronger, and flourish in all dimensions of life.
-          </p>
+          DM stands for more than health, it represents lifelong prosperity. We help create strong foundations for generations to flourish — in wealth, wellness, and spirit.</p>
         </div>
       </section>
 
