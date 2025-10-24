@@ -17,9 +17,8 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background: var(--bg);
-  padding: 2rem 1rem;
+  align-items: left;
+  padding: 30px;
 }
 
 .wealth-heading {
@@ -28,7 +27,6 @@ body {
   display: inline;
   margin-bottom: 50px;
   border-radius: 20px;
-  margin-top: 50px;
 }
 
 .wealth-heading span{
@@ -47,6 +45,9 @@ body {
   .wealthy-page {
     width: 75%;
     margin: 0 auto;
+  }
+  .wealth-heading{
+    margin-right: 200px;
   }
 }
 
@@ -226,6 +227,10 @@ body {
     gap: 30px;
   }
 
+  .wealth-heading{
+    margin-right: 600px;
+  }
+
   .wealthy-image-col {
     order: 1;
   }
@@ -263,6 +268,10 @@ body {
   .wealthy-text-col h2 {
     font-size: 16px;
     line-height: 1.4;
+  }
+
+  .wealth-heading{
+    margin-right: 60px;
   }
 
   .wealthy-image-col img {
