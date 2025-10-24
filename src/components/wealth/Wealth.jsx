@@ -54,7 +54,7 @@ const Wealth = () => {
                 <span className="wealthy-check">  ✓  </span>
                 True wealth begins with discipline — living with intention,
                 saving with wisdom, and investing with vision. It grows not only
-                through money but also through knowledge, relationships, and the
+                through income but also through knowledge, relationships, and the
                 values we pass on to the next generation.
               </h2>
             </div>
