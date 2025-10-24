@@ -52,7 +52,7 @@ export default function Elder() {
         {/* Row 1 */}
         <section className="dm-eldr-row">
           <div className="dm-eldr-poster">
-            <img src="/ef1.jpg" alt="Poster 1" />
+            <img src="/elder22.png" alt="Poster 1" />
           </div>
           <div className="dm-eldr-content">
             <p className="dm-eldr-animate dm-eldr-tagline">
