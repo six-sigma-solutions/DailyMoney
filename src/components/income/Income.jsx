@@ -41,7 +41,7 @@ const Income = () => {
         <div className="income-image">
           <img
             className="responsive-income-img"
-            src="income-12.png"
+            src="bot.jpg"
             alt="Personal growth and learning"
           />
         </div>
