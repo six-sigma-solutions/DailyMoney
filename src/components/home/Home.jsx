@@ -36,11 +36,11 @@ export default function Home() {
        )}
       
       
-
-      <section className="hero-section">
-        <div className="dm">
-          <p>DM - Daily Message - Health and Freedom.</p>
+   <div className="dm">
+          <span>DM - Daily Message - Health and Freedom.</span>
         </div>
+      <section className="hero-section">
+     
         <div className="hero-content">
           <h1 id="daily-money">
             <span className="hero-red">
