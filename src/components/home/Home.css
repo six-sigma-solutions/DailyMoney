@@ -105,6 +105,33 @@ body {
 /* ======================================================= */
 /* HERO SECTION                                          */
 /* ======================================================= */
+.hero-promo-video {
+  width: 79%;
+  height: 100%;
+  margin: 90px 80px 50px 0px;
+  position: relative;
+  transform: scale(1);
+
+  /* Use object-fit for video, similar to background-size: contain */
+  object-fit: contain; 
+  
+  /* Initial grayscale state */
+  filter: grayscale(100%);
+  
+  /* Add transitions for filter and transform */
+  transition: filter 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+              transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* This changes the video style on hover of the parent shape */
+.cutout-shape:hover .hero-promo-video {
+  /* Apply the zoom effect */
+  transform: scale(1.07);
+  
+  /* Remove grayscale */
+  filter: grayscale(0%);
+}
+
 .hero-section {
   display: flex;
   align-items: center;
