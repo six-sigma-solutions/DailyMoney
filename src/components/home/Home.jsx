@@ -1,16 +1,18 @@
 /* eslint-disable no-irregular-whitespace */
 // Home.jsx
 
-import React from "react";
+// FIXED: Added 'useRef' to the import from "react"
+import React, { useState, useRef } from "react";
 import "./Home.css";
-import videoFile from "../../assets/gif7 (online-video-cutter.com).mp4";
+import videoFile from "../../assets/gif7.mp4";
 import heroVideo from "/buddha-video.mp4";
 import { Link, useNavigate } from "react-router-dom";
-import { useState } from "react";
+// FIXED: Removed redundant 'useState' import
 
 export default function Home() {
   const navigate = useNavigate();
   const [showPopup, setShowPopup] = useState(true);
+
   // --- ADDED THIS ---
   // Create a ref to target the video element
   const videoRef = useRef(null);
@@ -34,12 +36,8 @@ export default function Home() {
     }
   };
 
-  //  Define popup state
-  const[showPopup,setShowPopup] = useState(true);
-
-  const handleSayHelloClick = () => {
-    navigate("/contact");
-  };
+  // FIXED: Removed duplicate state and function declarations
+  // that were here.
 
   return (
     <div className="container1">
@@ -48,7 +46,10 @@ export default function Home() {
         <div className="popup-overlay">
           <div className="popup-container">
             <h2 className="popup-title">Welcome to DM </h2>
-         <p className="popup-text">"For the betterment of all people across the world — Especially those driving innovation in the Global IT Community."</p>
+            <p className="popup-text">
+              "For the betterment of all people across the world — Especially
+              those driving innovation in the Global IT Community."
+            </p>
             <button
               className="popup-close-btn"
               onClick={() => setShowPopup(false)}
@@ -56,15 +57,16 @@ export default function Home() {
               Get in →
             </button>
           </div>
-        </div>
-       )}
-      
-      
-   <div className="dm">
-          <span>DM - Daily Message - Health and Freedom - The World Premium Healthy and Happy Community.</span>
-        </div>
+        </div>
+      )}
+
+      <div className="dm">
+        <span>
+          DM - Daily Message - Health and Freedom - The World Premium Healthy and
+          Happy Community.
+        </span>
+      </div>
       <section className="hero-section">
-     
         <div className="hero-content">
           <h1 id="daily-money">
             <span className="hero-red">
@@ -80,12 +82,13 @@ export default function Home() {
           <p id="hero-desc" className="hero-desc">
             DM stands for discipline, unity, and freedom.
           </p>
-          <p  id="hero-desc" className= "hero-desc">
-            Together, we are shaping a future of health, wealth, and limitless opportunities.
+          <p id="hero-desc" className="hero-desc">
+            Together, we are shaping a future of health, wealth, and limitless
+            opportunities.
           </p>
           <p id="hero-desc" className="hero-desc">
-            With DM, every step forward is a step toward freedom,
-            and a life without limits.
+            With DM, every step forward is a step toward freedom, and a life
+            without limits.
             <br /> Welcome to{" "}
             <strong>
               <span className="daily-money">DM!</span>
@@ -150,14 +153,11 @@ export default function Home() {
                     </strong>
                   </li>
                   <li>
-                    <strong>
-                      DM Made Easy, Health & Wealth Made Possible.
-                    </strong>
+                    <strong>DM Made Easy, Health & Wealth Made Possible.</strong>
                   </li>
                   <li>
                     <strong>
-                      Smart Choices for DM, Smarter Future in Health &
-                      Wealth.
+                      Smart Choices for DM, Smarter Future in Health & Wealth.
                     </strong>
                   </li>
                   <li>
@@ -181,7 +181,7 @@ export default function Home() {
                 autoPlay
                 loop
                 muted
-                alt="Daily Money Solutions"
+                // FIXED: Removed invalid 'alt' prop
               ></video>
             </div>
           </div>
@@ -189,7 +189,11 @@ export default function Home() {
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                  Vision & Mission is your <span><br/>Future</span>
+                  Vision & Mission is your{" "}
+                  <span>
+                    <br />
+                    Future
+                  </span>
                 </div>
               </div>
               <img
@@ -201,7 +205,12 @@ export default function Home() {
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                  Vision & Mission is your <span> <br />Future Generation</span>
+                  Vision & Mission is your{" "}
+                  <span>
+                    {" "}
+                    <br />
+                    Future Generation
+                  </span>
                 </div>
               </div>
               <img
@@ -213,7 +222,12 @@ export default function Home() {
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                  Vision & Mission is your <span> <br />Generation After Generations</span>
+                  Vision & Mission is your{" "}
+                  <span>
+                    {" "}
+                    <br />
+                    Generation After Generations
+                  </span>
                 </div>
               </div>
               <img
@@ -229,18 +243,16 @@ export default function Home() {
             <div className="ar-vr-image-column">
               <img src="./nature.png" alt="AR/VR Experiences" />
               {/* The title overlay was removed from the previous design,
-                  but you can add it back here if you want: 
-                  <h3 className="ar-vr-image-title">AR/VR Experiences</h3> 
-              */}
+                  but you can add it back here if you want: 
+                  <h3 className="ar-vr-image-title">AR/VR Experiences</h3> 
+              */}
             </div>
             {/* Right Column with Content */}
             <div className="ar-vr-content-column">
               {/* The H3 and P tags have been REMOVED from here */}
 
               <div className="ar-vr-nested-card">
-                <h4 className="nested-card-title">
-                  The DM Philosophy
-                </h4>
+                <h4 className="nested-card-title">The DM Philosophy</h4>
                 <ul className="solution-bullets">
                   <li>
                     <strong>
@@ -254,8 +266,7 @@ export default function Home() {
                   </li>
                   <li>
                     <strong>
-                      Balance Your DM. Build Your Health. Grow Your
-                      Wealth.
+                      Balance Your DM. Build Your Health. Grow Your Wealth.
                     </strong>
                   </li>
                   <li>
@@ -297,7 +308,6 @@ export default function Home() {
         <div className="founder-card">
           <img src="/sir.png" alt="Dr.V.Chellapondy DSW" />
           <h4 className="team-member-name">Dr.V.Chellapondy</h4>
-          
         </div>
 
         {/* The other team members remain in the grid below */}
@@ -305,19 +315,16 @@ export default function Home() {
           <div className="team-member-card">
             <img src="https://via.placeholder.com/120" alt="S.Vasu" />
             <h4 className="team-member-name">S.Vasu</h4>
-            
           </div>
 
           <div className="team-member-card">
             <img src="https://via.placeholder.com/120" alt="Dr. KP Kosygan" />
             <h4 className="team-member-name">Dr. KP Kosygan</h4>
-            
           </div>
 
           <div className="team-member-card">
             <img src="https://via.placeholder.com/120" alt="R.K.Selvamani" />
             <h4 className="team-member-name">R.K.Selvamani</h4>
-            
           </div>
         </div>
       </section>
@@ -333,14 +340,11 @@ export default function Home() {
           <hr className="footer-divider1" />
           <div className="footer-bottom-content1">
             <div className="footer-logo-block1">
-              <img
-                src="DM.png"
-                alt="DailyMoney Logo"
-              />
+              <img src="DM.png" alt="DailyMoney Logo" />
               <span className="footer-subtext1">
-                Six Sigma Solution, NKC Towers <br />1st Floor, Opp to Government
-                Engineering College, Kottagoundampatti, Karuppur, Salem-636011.
-                TamilNadu, India.
+                Six Sigma Solution, NKC Towers <br />
+                1st Floor, Opp to Government Engineering College,
+                Kottagoundampatti, Karuppur, Salem-636011. TamilNadu, India.
               </span>
               <span className="footer-copyright1">
                 © 2025. All rights reserved.
@@ -391,5 +395,3 @@ export default function Home() {
     </div>
   );
 }
-
-
