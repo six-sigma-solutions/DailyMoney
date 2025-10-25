@@ -1,5 +1,5 @@
 /* ======================================================= */
-/* GLOBAL RESET & BODY STYLES                            */
+/* GLOBAL RESET & BODY STYLES                            */
 /* ======================================================= */
 .popup-overlay {
   position: fixed;
@@ -17,8 +17,8 @@
 }
 
 .popup-container {
-  background-color: rgba(255,255,255,0.01);
-  border:4px solid white;
+  background-color: rgba(255, 255, 255, 0.01);
+  border: 4px solid white;
   padding: 24px 36px;
   border-radius: 18px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
@@ -33,7 +33,6 @@
   backdrop-filter: blur(5px);
 }
 
-
 .popup-title {
   font-size: 1.8em;
   color: #fc0000;
@@ -42,12 +41,11 @@
 }
 
 .popup-text {
-  
   margin-bottom: 20px;
   font-size: 25px;
   font-weight: 600;
-  color: navy ;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: navy;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: start;
 }
 
@@ -66,17 +64,15 @@
   background: #a41414;
 }
 
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-
 body {
   margin: 0;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   background: #fff;
   color: #111;
 }
@@ -85,25 +81,24 @@ body {
   max-width: 1700px;
   margin-left: auto;
   margin-right: auto;
-  
 }
-.dm{
-    background: Linear-gradient(45deg, rgb(206,219,28), rgb(121,216,216));
-    color: black;
-    display: inline-block;
-    font-size: 22px;
-    padding: 0 15px;
-    border-radius: 15px;
-    margin-top: 30px;
-    margin-left: 50px;
-    font-weight:600;
+.dm {
+  background: Linear-gradient(45deg, rgb(206, 219, 28), rgb(121, 216, 216));
+  color: black;
+  display: inline-block;
+  font-size: 22px;
+  padding: 0 15px;
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-left: 50px;
+  font-weight: 600;
 }
 
 /* ======================================================= */
-/* HERO SECTION                                          */
+/* HERO SECTION                                          */
 /* ======================================================= */
 /* ======================================================= */
-/* HERO SECTION                                          */
+/* HERO SECTION                                          */
 /* ======================================================= */
 .hero-promo-video {
   width: 79%;
@@ -113,21 +108,21 @@ body {
   transform: scale(1);
 
   /* Use object-fit for video, similar to background-size: contain */
-  object-fit: contain; 
-  
+  object-fit: contain;
+
   /* Initial grayscale state */
   filter: grayscale(100%);
-  
+
   /* Add transitions for filter and transform */
-  transition: filter 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
-              transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: filter 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /* This changes the video style on hover of the parent shape */
 .cutout-shape:hover .hero-promo-video {
   /* Apply the zoom effect */
   transform: scale(1.07);
-  
+
   /* Remove grayscale */
   filter: grayscale(0%);
 }
@@ -143,8 +138,8 @@ body {
   overflow: hidden;
   position: relative;
 }
-.money{
-  font-size:65px;
+.money {
+  font-size: 65px;
 }
 
 .hero-content {
@@ -157,8 +152,6 @@ body {
   line-height: 0.9;
   letter-spacing: 1px;
   margin-bottom: 0.1em;
- 
-  
 }
 @media (max-width: 480px) {
   .dm {
@@ -167,13 +160,13 @@ body {
     width: 95%;
     margin-left: 10px;
   }
-  .dm span{
+  .dm span {
     font-size: 18px;
     text-align: start;
   }
 }
-.daily-money{
-   margin-left: 0;
+.daily-money {
+  margin-left: 0;
   padding-left: 0;
 }
 
@@ -186,7 +179,6 @@ body {
 
 .money {
   color: #817676;
-  
 }
 
 .hero-content h2 {
@@ -201,7 +193,7 @@ body {
 #hero-subtitle {
   color: green;
   font-size: 20px;
-  font-family: 'sans-serif';
+  font-family: "sans-serif";
 }
 
 .hero-desc {
@@ -283,11 +275,11 @@ body {
   background-color: #07080a;
   position: relative;
   overflow: hidden;
-  mask-image: url('/cutout-mask.jpg');
+  mask-image: url("/cutout-mask.jpg");
   mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center;
-  -webkit-mask-image: url('/cutout-mask.jpg');
+  -webkit-mask-image: url("/cutout-mask.jpg");
   -webkit-mask-size: contain;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -298,51 +290,51 @@ body {
   padding-top: 10px;
 }
 
-@media (max-width:768px){
+@media (max-width: 768px) {
   .cutout-shape {
-  width: 80%;
-  height: 80%;
-  background-color: #07080a;
-  position: relative;
-  overflow: hidden;
-  mask-image: url('/cutout-mask.jpg');
-  mask-size: contain;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  -webkit-mask-image: url('/cutout-mask.jpg');
-  -webkit-mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 30px;
-}
+    width: 80%;
+    height: 80%;
+    background-color: #07080a;
+    position: relative;
+    overflow: hidden;
+    mask-image: url("/cutout-mask.jpg");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-image: url("/cutout-mask.jpg");
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+  }
 }
 /* --- NEW CSS FOR TWO-IMAGE HOVER EFFECT --- */
 /*
-  This replaces your old .hero-promo-image rule
+  This replaces your old .hero-promo-image rule
 */
 /* --- NEW, SIMPLER CSS FOR HOVER EFFECT --- */
 /*
-  Delete all old .hero-promo-image and .hero-promo-image::before rules
-  and replace them with this block.
+  Delete all old .hero-promo-image and .hero-promo-image::before rules
+  and replace them with this block.
 */
 
 .hero-promo-image {
   width: 79%;
   height: 100%;
-   margin: 90px 80px 50px 0px;
+  margin: 90px 80px 50px 0px;
   position: relative;
   transform: scale(1);
 
   /* Set the default (grayscale) image */
-  background-image: url('https://res.cloudinary.com/dgay8ba3o/image/upload/v1761197011/god_ve0ifl.jpg');
+  background-image: url("https://res.cloudinary.com/dgay8ba3o/image/upload/v1761197011/god_ve0ifl.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   filter: grayscale(100%);
-  
+
   /* Add a transition for the zoom effect */
   transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -350,8 +342,8 @@ body {
 /* This DIRECTLY changes the background image on hover */
 .cutout-shape:hover .hero-promo-image {
   /* Set the hover (color) image */
-  background-image: url('https://res.cloudinary.com/dgay8ba3o/image/upload/v1761197011/god_ve0ifl.jpg');
-  
+  background-image: url("https://res.cloudinary.com/dgay8ba3o/image/upload/v1761197011/god_ve0ifl.jpg");
+
   /* Apply the zoom effect */
   transform: scale(1.07);
   filter: grayscale(0%);
@@ -366,36 +358,36 @@ body {
     text-align: center;
     justify-content: center;
   }
-  
+
   .hero-content {
     max-width: 100%;
     margin-top: 20px;
-    
   }
-  
+
   .hero-red {
     font-size: 50px;
   }
-  
+
   .hero-content h2 {
     font-size: 24px;
   }
-  
+
   .hero-desc {
     font-size: 1.1em;
   }
-  
+
   .hero-actions {
     flex-direction: column;
     gap: 15px;
     align-items: center;
   }
-  
-  .see-work-btn, .get-started-btn {
+
+  .see-work-btn,
+  .get-started-btn {
     width: 200px;
     margin-right: 0;
   }
-  
+
   .hero-image-container {
     max-width: 300px;
     height: 300px;
@@ -403,7 +395,7 @@ body {
 }
 
 /* ======================================================= */
-/* SOLUTIONS SECTION                                     */
+/* SOLUTIONS SECTION                                     */
 /* ======================================================= */
 .solutions-section {
   margin: 40px 60px 0px;
@@ -420,12 +412,12 @@ body {
 .solution-text-content {
   flex: 1; /* Takes up half the space */
   min-width: 300px;
-  display:flex;
+  display: flex;
 }
 
 .solution-image-container {
   flex: 1; /* Takes up the other half */
-  align-items:flex-end;
+  align-items: flex-end;
   min-width: 300px;
 }
 
@@ -479,7 +471,7 @@ body {
 }
 
 .solution-bullets li::before {
-  content: '✔';
+  content: "✔";
   position: absolute;
   left: 0;
   top: 4px;
@@ -573,7 +565,7 @@ body {
   border-top: 1px solid #e0e0e0;
   transition: transform 0.3s ease;
   border-radius: 20px;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 .solution-card-img1 {
@@ -626,7 +618,7 @@ body {
   flex: 1;
   display: flex;
   /* This will vertically center the card inside the column */
-  justify-content: center; 
+  justify-content: center;
 }
 
 .ar-vr-content-column h3 {
@@ -649,7 +641,7 @@ body {
 }
 
 /* ======================================================= */
-/* TESTIMONIAL SECTION                                   */
+/* TESTIMONIAL SECTION                                   */
 /* ======================================================= */
 .testimonial-section {
   padding: 100px 60px;
@@ -662,7 +654,7 @@ body {
 }
 
 .testimonial-section::before {
-  content: '“';
+  content: "“";
   position: absolute;
   z-index: 0;
   top: 50%;
@@ -718,7 +710,7 @@ body {
   margin: 0;
 }
 /* ======================================================= */
-/* CORE TEAM SECTION STYLES (HIERARCHICAL LAYOUT)        */
+/* CORE TEAM SECTION STYLES (HIERARCHICAL LAYOUT)        */
 /* ======================================================= */
 .clients-container {
   max-width: 1500px;
@@ -751,7 +743,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* This is the grid for the rest of the team */
@@ -776,7 +768,7 @@ body {
   object-fit: cover;
   margin-bottom: 20px;
   border: 3px solid #f0f0f0;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 /* This style applies to both founder and team member names */
@@ -793,17 +785,17 @@ body {
   color: #777;
 }
 
-.founder{
-  font-size:18px;
+.founder {
+  font-size: 18px;
 }
 /* ======================================================= */
-/* FOOTER                                                */
+/* FOOTER                       _                        */
 /* ======================================================= */
 .footer-main1 {
   max-width: 800px;
   margin: 10px 60px;
   border-radius: 20px;
-  padding:0;
+  padding: 0;
   background: #931616;
   display: flex;
   flex-direction: column;
@@ -833,9 +825,9 @@ body {
   transition: background 0.2s;
 }
 
-.say-hello-btn1{
-   padding-left: 0;
-   margin-left: 0;
+.say-hello-btn1 {
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .footer-cta1 .say-hello-btn1:hover {
@@ -857,9 +849,9 @@ body {
   gap: 30px;
 }
 
-.img-fluid{
-  animation:none;
-  border-radius:20px;
+.img-fluid {
+  animation: none;
+  border-radius: 20px;
   width: 100%;
 }
 
@@ -924,11 +916,11 @@ body {
   color: #bdbdbd;
   font-size: 0.9em;
   margin-top: 20px;
-}/* ======================================================= */
-/* RESPONSIVE STYLES                                     */
+} /* ======================================================= */
+/* RESPONSIVE STYLES                                     */
 /* ======================================================= */
 @media (max-width: 1200px) {
-    .hero-section {
+  .hero-section {
     flex-direction: column;
     text-align: center;
     padding: 40px 30px;
@@ -973,9 +965,6 @@ body {
     padding-left: 30px;
     padding-right: 30px;
   }
-
-
- 
 }
 
 @media (max-width: 1024px) {
@@ -997,7 +986,7 @@ body {
     gap: 30px;
   }
 
-  .solution-card1{
+  .solution-card1 {
     padding-bottom: 0px;
   }
 
@@ -1014,17 +1003,16 @@ body {
     background-position: center;
   }
 
-
   .solution-card-img1 {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-top: 1px solid #e0e0e0;
-}
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top: 1px solid #e0e0e0;
+  }
 
-.hero-content{
-  order: 2;
-}
+  .hero-content {
+    order: 2;
+  }
 
   .solutions-grid,
   .ar-vr-container {
@@ -1033,9 +1021,9 @@ body {
   }
 
   .solution-card-img1 {
-  width: 100%;
-  border-top: 1px solid #e0e0e0;
-}
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+  }
 
   .clients-logos {
     gap: 40px;
@@ -1054,16 +1042,15 @@ body {
     gap: 24px;
     text-align: left !important;
     align-items: flex-start !important;
-
   }
 
   .say-hello-btn1 {
-     width: 100px;
-     height: 50px;
+    width: 100px;
+    height: 50px;
   }
 
-  .hero-actions{
-     justify-content: flex-start !important;
+  .hero-actions {
+    justify-content: flex-start !important;
   }
 
   /* Text first, image below */
@@ -1102,8 +1089,8 @@ body {
   }
 
   #hero-desc {
-     padding-left: 0;
-     margin-left: 0;
+    padding-left: 0;
+    margin-left: 0;
   }
 
   .see-work-btn,
@@ -1130,13 +1117,11 @@ body {
   .clients-title {
     font-size: 1.8em;
   }
-  
-
 
   .footer-cta1 h2 {
     font-size: 1.8em;
   }
-  
+
   .footer-logo-text1 {
     font-size: 1.5em;
   }
@@ -1166,23 +1151,20 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   color: #fff;
-} 
-
-.img-fluid {
-   border-radius: 20px 20px 0 0;
-   width: 100%;
-
 }
 
-.img-fluid:hover{
+.img-fluid {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+
+.img-fluid:hover {
   transform: none;
   animation: none;
 }
 
-
 .footer-cta1 {
   text-align: start;
-  
 }
 
 .footer-cta1 h2 {
@@ -1255,8 +1237,8 @@ body {
   flex-wrap: wrap;
 }
 
-.footer-links-col1{
-   text-align: left !important;
+.footer-links-col1 {
+  text-align: left !important;
 }
 
 .footer-links-col1 h4 {
@@ -1297,7 +1279,7 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
- .cutout-shape {
+  .cutout-shape {
     width: 100%;
     height: 100%;
     aspect-ratio: 1 / 1;
@@ -1321,58 +1303,59 @@ body {
     gap: 24px;
   }
 
-  .hero-content{
-     padding-left: 0px;
+  .hero-content {
+    padding-left: 0px;
   }
-  
+
   .hero-red {
     font-size: 68px;
   }
-  
+
   .hero-content h2 {
     font-size: 22px;
     text-align: center;
   }
-  
+
   #hero-subtitle {
     font-size: 18px;
   }
-  
+
   .hero-desc {
     font-size: 0.95em;
   }
-  
+
   .hero-actions {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
-  .see-work-btn, .get-started-btn {
+
+  .see-work-btn,
+  .get-started-btn {
     font-size: 16px;
   }
-  
+
   .see-work-btn {
     padding: 10px 18px;
   }
-  
+
   .get-started-btn {
     margin-top: 10px;
   }
 
-  .solution-image-container video{
+  .solution-image-container video {
     width: 100%;
     height: auto;
     border-radius: 15px;
   }
 
-  .solution-container{
+  .solution-container {
     padding: 20px 0 20px 0;
     gap: 30px;
   }
 
-  .solutions-section{
-    margin:0;
+  .solutions-section {
+    margin: 0;
   }
 
   .solutions-section h2 {
@@ -1386,7 +1369,7 @@ body {
   .clients-title {
     font-size: 1.5em;
   }
-  
+
   .client-logo-block {
     width: 100px;
   }
@@ -1395,7 +1378,7 @@ body {
     font-size: 1.5em;
   }
 
-  .ar-vr-nested-card{
+  .ar-vr-nested-card {
     padding: 20px;
   }
 
@@ -1416,7 +1399,6 @@ body {
     font-size: 1em;
   }
 }
-
 
 @media (min-width: 737px) and (max-width: 900px) {
   /* --- TOP SOLUTION SECTION --- */
@@ -1487,7 +1469,7 @@ body {
 }
 
 /* ======================================================= */
-/* CONTACT CTA SECTION                                    */
+/* CONTACT CTA SECTION                                    */
 /* ======================================================= */
 .contact-cta-section {
   padding: 80px 60px;
@@ -1607,7 +1589,7 @@ body {
     gap: 40px;
     text-align: center;
   }
-  
+
   .contact-cta-stats {
     flex-direction: row;
     justify-content: center;
@@ -1619,21 +1601,21 @@ body {
   .contact-cta-section {
     padding: 60px 30px;
   }
-  
+
   .contact-cta-content h2 {
     font-size: 2.2rem;
   }
-  
+
   .contact-cta-buttons {
     justify-content: center;
   }
-  
+
   .contact-primary-btn,
   .contact-secondary-btn {
     min-width: 160px;
     padding: 14px 24px;
   }
-  
+
   .stat-item {
     min-width: 120px;
   }
@@ -1643,19 +1625,19 @@ body {
   .contact-cta-content h2 {
     font-size: 1.8rem;
   }
-  
+
   .contact-cta-buttons {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .contact-cta-stats {
     flex-direction: column;
   }
 }
 
 /* ======================================================= */
-/* FOOTER RESPONSIVE STYLING                              */
+/* FOOTER RESPONSIVE STYLING                              */
 /* ======================================================= */
 
 /* ---------- MEDIUM DEVICES (Tablets / <=1024px) ---------- */
@@ -1667,7 +1649,7 @@ body {
 @media (max-width: 1024px) {
   .footer-main1 {
     margin: 20px;
-    padding:0px;
+    padding: 0px;
     border-radius: 16px;
     color: #fff;
     text-align: left;
@@ -1716,15 +1698,12 @@ body {
   }
 
   .footer-logo-text1 {
-  font-size: 2em;
-  font-weight: 400;
-  margin-left: 10px;
-}
+    font-size: 2em;
+    font-weight: 400;
+    margin-left: 10px;
+  }
 
-  
-
-
-  .img-fluid{
+  .img-fluid {
     border-radius: 0;
   }
   .footer-cta1 {
@@ -1781,8 +1760,8 @@ body {
     font-size: 0.85em;
     padding-left: 10px;
   }
-  .say-hello-btn1{
-    margin-left: 20px ;
+  .say-hello-btn1 {
+    margin-left: 20px;
     height: 40px;
     width: 160px;
     text-align: center;
@@ -1791,13 +1770,13 @@ body {
 
 /* ---------- EXTRA SMALL DEVICES (<=480px) ---------- */
 @media (max-width: 480px) {
-  .img-fluid{
-     width: 100%;
-     height: 80px;
+  .img-fluid {
+    width: 100%;
+    height: 80px;
   }
 
-  .say-hello-btn1{
-    margin-left: 20px ;
+  .say-hello-btn1 {
+    margin-left: 20px;
     height: 40px;
     width: 160px;
     text-align: center;
@@ -1830,9 +1809,6 @@ body {
   }
 }
 
-
-
-
 /* Fade-in animation */
 @keyframes fadeIn {
   from {
@@ -1847,9 +1823,8 @@ body {
 
 @media (max-width: 1200px) {
   .popup-container {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
   }
-
 }
 
 /* Mobile Responsive */
@@ -1858,7 +1833,6 @@ body {
     width: 90%;
     padding: 20px;
     text-align: left;
-    
   }
 
   .popup-title {
@@ -1867,7 +1841,7 @@ body {
 
   .popup-text {
     font-size: 22p;
-    color: #070552 ;
+    color: #070552;
   }
 
   .popup-close-btn {
@@ -1875,5 +1849,3 @@ body {
     padding: 8px 16px;
   }
 }
-
-
