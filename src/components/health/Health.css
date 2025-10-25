@@ -36,7 +36,6 @@ img:hover { transform: scale(1.05); }
 .health-page{
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
   /* bring page content up a bit */
   padding-top: 20px;
 }
