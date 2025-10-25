@@ -28,16 +28,6 @@ export default function Home() {
     }
   };
 
-  // Function to pause the video on mouse leave
-  const handleVideoPause = () => {
-    if (videoRef.current) {
-      videoRef.current.pause();
-    }
-  };
-
-  // FIXED: Removed duplicate state and function declarations
-  // that were here.
-
   return (
     <div className="container1">
       {/* Popup Section */}
@@ -112,7 +102,6 @@ export default function Home() {
           <div
             className="cutout-shape"
             onMouseEnter={handleVideoPlay}
-            onMouseLeave={handleVideoPause}
           >
             {/* Replaced the div with a video element */}
             <video
