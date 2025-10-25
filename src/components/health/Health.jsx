@@ -28,7 +28,7 @@ const Health = () => {
             Every choice - what we eat, how we move, how we rest shapes our future.
             When we care for our health, we care for our dreams, our families, and our world.
             Strong bodies, Clear minds and Happy hearts.
-            Together, we build a healthier tomorrow -
+            Together, we build a healthier tomorrow.<br />
             Our health, our strength, our future.</p>
 
           <a href="#footer" className="btn-primary">
@@ -103,7 +103,7 @@ const Health = () => {
         </h2>
         <div>
         <h1 className="tamil"> “நீரை சாப்பிட கற்றுக்கொள், உணவை அருந்த கற்றுக்கொள்.  அதுவே உண்மையான ஆரோக்கியம்."</h1>
-        <h2 className="tamil-1">💧 “Eat your water. Drink your food. The secret of true health."</h2>
+        <h2 className="tamil-1">💧 “Eat your water. Sip your meals. The secret of true healthy life."</h2>
         </div>
         <Link className="view-more-link" to="/wealth">
           <button className="view-more" type="button">View More</button>
