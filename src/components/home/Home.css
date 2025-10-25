@@ -432,7 +432,7 @@ body {
   min-width: 300px;
 }
 /* Replace with this rule */
-.solution-image-container video {
+.solution-image-container img.solution-image {
   width: 90%;
   height: auto;
   border-radius: 20px;
@@ -1343,7 +1343,7 @@ body {
     margin-top: 10px;
   }
 
-  .solution-image-container video {
+  .solution-image-container img.solution-image {
     width: 100%;
     height: auto;
     border-radius: 15px;
@@ -1428,7 +1428,7 @@ body {
     justify-content: center;
   }
 
-  .solution-image-container video,
+  .solution-image-container img.solution-image,
   .solution-image-container img {
     width: 100%;
     height: auto;
