@@ -9,6 +9,29 @@ import { useState } from "react";
 
 export default function Home() {
   const navigate = useNavigate();
+  const [showPopup, setShowPopup] = useState(true);
+  // --- ADDED THIS ---
+  // Create a ref to target the video element
+  const videoRef = useRef(null);
+
+  const handleSayHelloClick = () => {
+    navigate("/contact");
+  };
+
+  // --- ADDED THESE FUNCTIONS ---
+  // Function to play the video on hover
+  const handleVideoPlay = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  };
+
+  // Function to pause the video on mouse leave
+  const handleVideoPause = () => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+    }
+  };
 
   //  Define popup state
   const[showPopup,setShowPopup] = useState(true);
@@ -83,13 +106,21 @@ export default function Home() {
 
         {/* === START: HERO IMAGE SECTION (UPDATED) === */}
         <div className="hero-image-container">
-          <div className="cutout-shape">
-            {/* This is now a div for the two-image effect */}
-            <div
-              className="hero-promo-image"
-              role="img"
-              aria-label="Daily Money app on phone"
-            ></div>
+          <div
+            className="cutout-shape"
+            onMouseEnter={handleVideoPlay}
+            onMouseLeave={handleVideoPause}
+          >
+            {/* Replaced the div with a video element */}
+            <video
+              ref={videoRef}
+              className="hero-promo-video"
+              src={heroVideo}
+              loop
+              muted
+              playsInline
+              aria-label="Daily Money app video"
+            ></video>
           </div>
         </div>
         {/* === END: HERO IMAGE SECTION === */}
