@@ -27,7 +27,7 @@ const Health = () => {
             It gives us energy, focus, and freedom to live fully.
             Every choice - what we eat, how we move, how we rest shapes our future.
             When we care for our health, we care for our dreams, our families, and our world.
-            Strong bodies. Clear minds. Happy hearts.
+            Strong bodies, Clear minds and Happy hearts.
             Together, we build a healthier tomorrow -
             Our health, our strength, our future.</p>
 
@@ -55,7 +55,7 @@ const Health = () => {
         <div className="box color1">
           <h1>“Health and fitness are not temporary — they are my lifetime goal.”</h1>
           <h1>“Health is not a destination — it’s a lifelong evolution.”</h1>
-          <h1>“Fitness is the art I practice for life.”</h1>
+          <h1>“Fitness is the art <br />I practice for life.”</h1>
         </div>
       </div>
 
