@@ -1299,24 +1299,26 @@ body {
   }
 
   .hero-content {
-    padding-left: 0px;
+    padding-left: 0px; 
   }
 
   .hero-red {
     font-size: 68px;
   }
 
-  .hero-content h2 {
+  .hero-content h1 {
     font-size: 22px;
     text-align: center;
   }
 
   #hero-subtitle {
     font-size: 18px;
+    text-align: center;
   }
 
   .hero-desc {
     font-size: 0.95em;
+    text-align: center;
   }
 
   .hero-actions {
