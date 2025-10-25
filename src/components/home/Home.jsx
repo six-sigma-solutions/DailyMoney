@@ -101,6 +101,7 @@ export default function Home() {
               ref={videoRef}
               className="hero-promo-video"
               src={heroVideo}
+              autoPlay
               loop
               muted
               playsInline
