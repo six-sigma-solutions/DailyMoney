@@ -58,7 +58,7 @@ export default function PresidentMsg() {
                             {president.name}
                         </p>
                         <p className="signature-title">
-                            President, DailyMoney
+                            President, DM
                         </p>
                     </div>
                 </div>
