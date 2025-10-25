@@ -4,7 +4,6 @@
 // FIXED: Added 'useRef' to the import from "react"
 import React, { useState, useRef } from "react";
 import "./Home.css";
-import videoFile from "../../assets/gif7.mp4";
 import heroVideo from "/buddha-video.mp4";
 import { Link, useNavigate } from "react-router-dom";
 // FIXED: Removed redundant 'useState' import
@@ -176,13 +175,11 @@ export default function Home() {
 
             {/* Right Column: Contains the image */}
             <div className="solution-image-container">
-              <video
-                src={videoFile}
-                autoPlay
-                loop
-                muted
+              <img
+                className="solution-image"
+                src="/gif777.png"
                 // FIXED: Removed invalid 'alt' prop
-              ></video>
+              ></img>
             </div>
           </div>
           <div className="solutions-grid">
