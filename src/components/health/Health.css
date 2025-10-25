@@ -347,6 +347,7 @@ html {
 /* Avoid negative offset on small screens where stacking occurs */
 @media (max-width: 768px) {
   .container-1.right-image:first-of-type { margin-top: 0; }
+
 }
 
 @media (max-width: 768px) {
@@ -517,12 +518,16 @@ html {
 }
 .tamil{
   color:yellow;
+  padding-right: 5px;
+  line-height: 1.5;
 }
+
 .footer .tamil-1{
   color:white;
   line-height:1.5;
   font-size:1.6rem;
   font-weight:800;
+  
 }
 .container img,
 .container-1 img {
@@ -622,7 +627,7 @@ html {
 }
 .health-section h1 {
   color: #c00606;
-  font-size: 1.2rem; /* slightly smaller on default */
+  font-size: 24px; /* slightly smaller on default */
   font-weight: 900;
 }
 
@@ -706,7 +711,7 @@ html {
   .hero-title { font-size: 1.8rem; }
   .hero-content h1 { font-size: 1.6rem; }
   .hero-content p { font-size: 0.9rem; }
-  .btn-primary { padding: 10px 20px; font-size: 11px; margin:20px 120px 20px 120px; }
+  .btn-primary { padding: 10px 20px; font-size: 18px; margin:20px; }
 
 
 /* For tablets */
@@ -785,36 +790,110 @@ html {
 
 }
 
-/* ---------------- MOBILE FIXES (final overrides) ---------------- */
-/* These enforce safe sizing and wrapping to avoid horizontal scroll on phones */
-@media (max-width: 768px) {
-  /* Make sure the page doesn't overflow on small devices */
-  html, .health-page { box-sizing: border-box; overflow-x: hidden; }
-
-  /* Allow hero title to wrap and scale down a bit */
-  .hero { min-height: auto !important; padding: 20px !important; }
-  .hero-title { white-space: normal !important; font-size: 1.9rem !important; line-height: 1.2 !important; }
-  .hero-content h1, .hero-content p { text-align: center !important; }
-
-  /* Constrain images so they never exceed the viewport width */
-  .container img, .container-1 img, .container .styled-img, .container-1 .styled-img {
-    width: 100% !important;
-    max-width: 340px !important;
-    height: auto !important;
-    margin: 0 auto 18px auto !important;
+@media (max-width: 1024px) {
+  .hero {
+    padding: 40px 30px;
   }
-
-  /* Reduce heavy paddings that cause overflow */
-  .box, .box-1 { padding: 20px 12px !important; text-align: center !important; }
-  .container, .container-1 { padding: 16px !important; gap: 18px !important; }
-
-  /* Health heading tweaks on mobile */
-  .health-heading { font-size: 1.8rem !important; margin: 0 0 8px 0 !important; padding: 0 12px !important; text-align: center !important; }
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  .container img,
+  .container-1 img {
+    width: 360px;
+    height: 360px;
+  }
+  .box, .box-1 {
+    padding: 60px 15px;
+  }
+  .tamil {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 25px 20px;
+  }
+  .tamil span {
+    font-size: 1.8rem;
+    padding: 5px 10px;
+  }
 }
 
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+    white-space: normal;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .container, .container-1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .container img,
+  .container-1 img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+  .box, .box-1 {
+    padding: 20px 10px;
+  }
+  .box h1, .box-1 h1 {
+    font-size: 1.6rem;
+  }
+  .tamil {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px 15px;
+  }
+  .tamil span {
+    font-size: 1.5rem;
+    padding: 4px 8px;
+    display: inline-block;
+  }
+  .footer {
+    padding: 20px;
+  }
+  .footer h1, .footer h2, .footer .english {
+    text-align: center;
+  }
+}
+
+/* Small Mobile (≤480px) */
 @media (max-width: 480px) {
-  .hero-title { font-size: 1.6rem !important; }
-  .container img, .container-1 img, .container .styled-img, .container-1 .styled-img { max-width: 260px !important; }
-  .box h1, .box-1 h1 { font-size: 1.1rem !important; }
-  .author { margin-right: 0 !important; text-align: center !important; }
+  .hero {
+    padding: 15px;
+  }
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  .container img,
+  .container-1 img {
+    max-width: 240px;
+  }
+  .box h1, .box-1 h1 {
+    font-size: 1.2rem;
+  }
+  .tamil {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    padding: 15px 10px;
+  }
+  .tamil span {
+    font-size: 1.2rem;
+    padding: 3px 6px;
+    margin: 10px;
+  }
+  .footer h1 {
+    font-size: 1.2rem;
+  }
+  .footer h2, .footer .english {
+    font-size: 1rem;
+  }
 }
