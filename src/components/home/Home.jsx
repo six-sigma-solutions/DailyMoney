@@ -22,11 +22,7 @@ export default function Home() {
 
   // --- ADDED THESE FUNCTIONS ---
   // Function to play the video on hover
-  const handleVideoPlay = () => {
-    if (videoRef.current) {
-      videoRef.current.play();
-    }
-  };
+
 
   return (
     <div className="container1">
@@ -99,10 +95,7 @@ export default function Home() {
 
         {/* === START: HERO IMAGE SECTION (UPDATED) === */}
         <div className="hero-image-container">
-          <div
-            className="cutout-shape"
-            onMouseEnter={handleVideoPlay}
-          >
+          <div className="cutout-shape">
             {/* Replaced the div with a video element */}
             <video
               ref={videoRef}
