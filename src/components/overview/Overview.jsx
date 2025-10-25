@@ -63,20 +63,19 @@ const Overview = () => {
           <h2 style={{ color: "#89BFF8" }}>Our Core Beliefs</h2>
           <ul className="zigzag">
             <li>
-              <strong>Wealth is Freedom –</strong> The ability to choose your
-              path without limits.
-            </li>
-            <li>
-              <strong>Health is Wealth –</strong> Without wellness, income loses
+               <strong>Health is Wealth –</strong> Without wellness, income loses
               its meaning.
             </li>
             <li>
-              <strong>Peace is Success –</strong> A balanced life is the
-              ultimate achievement.
+               <strong>Wealth is Freedom –</strong> The ability to choose your
+              path without limits.
             </li>
             <li>
-              <strong>Legacy Matters –</strong> True prosperity is measured in
-              impact that outlives us.
+              <strong>Legacy Matters –</strong> True prosperity is measured in impact that outlives us.
+                </li>
+            <li>
+                <strong>Peace is Success –</strong> A balanced life is the
+              ultimate achievement.
             </li>
           </ul>
         </div>
