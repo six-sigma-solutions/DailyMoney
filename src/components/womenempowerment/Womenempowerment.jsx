@@ -15,7 +15,7 @@ export default function Womenempowerment() {
       {/* Hero Section: Image Left, Text Right */}
       <section className="women-hero">
         <div className="women-image">
-          <img src="women-1.jpg" alt="Empowered women" />
+          <img src="women-5.jpg" alt="Empowered women" />
         </div>
 
         <div className="women-content">
@@ -87,7 +87,7 @@ export default function Womenempowerment() {
               initiatives for women.
             </p>
             <img
-              src="women-5.jpg"
+              src="em2.jpg"
               alt="Education Program"
               onError={(e) =>
                 (e.target.src =
@@ -103,7 +103,7 @@ export default function Womenempowerment() {
               independence.
             </p>
             <img
-              src="em2.jpg"
+              src="women-1.jpg"
               alt="Economic Empowerment Program"
               onError={(e) =>
                 (e.target.src =
