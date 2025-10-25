@@ -64,7 +64,7 @@ const Visionmission = () => {
     {/* Section 1: Image Left, Text Right */}
     <div className="vision-row">
       <div className="vision-col vision-image-col">
-        <img src="vm-1.jpg" alt="Wealth concept 1" />
+        <img src="vee.png" alt="Wealth concept 1" />
       </div>
       <div className="vision-col vision-text-col">
         <h2>
@@ -131,7 +131,7 @@ const Visionmission = () => {
     {/* Section 4: Image Right, Text Left */}
     <div className="vision-row vision-reverse">
       <div className="vision-col vision-image-col">
-        <img src="miss.jpg" alt="Wealth concept 4" />
+        <img src="veetech.png" alt="Wealth concept 4" />
       </div>
       <div className="vision-col vision-text-col">
         <h2>
