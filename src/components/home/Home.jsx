@@ -130,7 +130,7 @@ export default function Home() {
                   </li>
                   <li>
                     <strong>
-                      From Today’s Health &  Wellness to Tomorrow’s Wealth & Wellness.
+                      From Today’s Health to Tomorrow’s Wealth & Wellness.
                     </strong>
                   </li>
                   <li>
