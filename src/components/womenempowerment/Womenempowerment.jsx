@@ -47,7 +47,7 @@ export default function Womenempowerment() {
             <b>
               Empowerment is the recognition that women are not behind, not
               ahead, but standing{" "}
-              <span className="highlight-yellow">shoulder to shoulder</span>.
+              <span className="highlight-yellow">shoulder to shoulder.</span>
             </b>
           </li>
         </ul>
