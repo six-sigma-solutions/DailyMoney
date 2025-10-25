@@ -110,8 +110,6 @@ body {
   /* Use object-fit for video, similar to background-size: contain */
   object-fit: contain;
 
-  /* Initial grayscale state */
-  filter: grayscale(100%);
 
   /* Add transitions for filter and transform */
   transition: filter 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275),
@@ -122,9 +120,6 @@ body {
 .cutout-shape:hover .hero-promo-video {
   /* Apply the zoom effect */
   transform: scale(1.07);
-
-  /* Remove grayscale */
-  filter: grayscale(0%);
 }
 
 .hero-section {
