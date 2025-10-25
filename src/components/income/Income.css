@@ -12,10 +12,9 @@ body{
 }
 
 .income-header{
-  background: forestgreen;
   text-align: center;
   padding: 15px 15px 15px 15px;
-  color: white;
+  color: forestgreen;
 }
 
 .income-header h1 {
