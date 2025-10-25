@@ -35,8 +35,8 @@ const Overview = () => {
           <h2 style={{ color: "yellow" }}>Our Approach</h2>
           <ul className="zigzag">
             <li>
-              <strong>Clarity –</strong> Simplifying money so everyone can
-              understand it.
+              <strong>Clarity –</strong> Simplifying finance so everyone feels confident.
+             
             </li>
             <li>
               <strong>Discipline –</strong> Encouraging consistent daily habits
