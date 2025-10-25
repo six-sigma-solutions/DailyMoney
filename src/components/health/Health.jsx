@@ -20,7 +20,7 @@ const Health = () => {
             <span className="color-wealthy">Live Wealthy</span>
           </h1>
 
-          <p>Your journey to wellness and financial freedom starts here.</p>
+          <p>Your journey to wellness and financial support starts here.</p>
           <p>
 
             Our health is our true wealth.
