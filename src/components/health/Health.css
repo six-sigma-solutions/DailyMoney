@@ -86,7 +86,8 @@ img:hover { transform: scale(1.05); }
 .hero-content p {
   font-size: 1.2em;
   line-height:1.5;
-  color:#030303
+  color:#030303;
+  text-align:justify;
 }
 
 .hero-title {
