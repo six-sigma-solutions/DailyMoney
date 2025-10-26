@@ -46,7 +46,7 @@ const Visionmission = () => {
               <p className="dm-vsn-lead">
                 A brighter world — healthy in spirit, joyful in living, and abundant in growth.<br></br>
                 Living in flow with nature — where wellness nourishes wealth and joy sustains growth.<br></br>
-                Building a future where vitality, happiness, and financial freedom flow as one.<br></br>
+                Building a future where vitality, happiness, and financial support flow as one.<br></br>
                 To enrich every life with balance, energy, and prosperity.
 
               </p>
