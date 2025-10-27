@@ -75,7 +75,7 @@ export default function Navbar() {
                   ▾ Students
                 </Link>
                 <Link id="tab-name" to="/elder">
-                  ▾ Elder
+                  ▾ Elders
                 </Link>
               </div>
             )}
@@ -234,7 +234,7 @@ export default function Navbar() {
                 <Link to="/students" onClick={() => setMenuOpen(false)}>
                   Students
                 </Link>
-                <Link to="/elder" onClick={() => setMenuOpen(false)}>
+                <Link to="/elders" onClick={() => setMenuOpen(false)}>
                   Elder
                 </Link>
               </div>
