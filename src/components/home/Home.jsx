@@ -72,7 +72,7 @@ export default function Home() {
             opportunities.
           </p>
           <p id="hero-desc" className="hero-desc">
-            With DM, every step forward is a step toward freedom, and a life
+            With DM, every step forward is a step towards freedom, and a life
             without limits.
             <br /> Welcome to{" "}
             <strong>
