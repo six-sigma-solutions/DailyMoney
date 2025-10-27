@@ -59,7 +59,7 @@ export default function Home() {
             </span>
           </h1>
           <strong>
-            <h2 className="hero-sub">Health & wealth.</h2>
+            <h2 className="hero-sub">Health & Wealth.</h2>
           </strong>
           <strong>
             <p id="hero-subtitle">Independent for Entire life.</p>
