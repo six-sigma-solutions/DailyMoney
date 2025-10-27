@@ -246,12 +246,12 @@ export default function Home() {
                   </li>
                   <li>
                     <strong>
-                      Balance Your DM. Build Your Health. Grow Your Wealth.
+                      DM Balance Your Life. Build Your Health. Grow Your Wealth.
                     </strong>
                   </li>
                   <li>
                     <strong>
-                      Small DM Wins, Big Health & Wealth Gains.
+                      Small income Wins, Big Health & Wealth Gains.
                     </strong>
                   </li>
                   <li>
