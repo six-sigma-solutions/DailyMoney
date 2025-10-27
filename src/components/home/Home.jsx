@@ -160,7 +160,7 @@ export default function Home() {
             <div className="solution-image-container">
               <img
                 className="solution-image"
-                src="/gif777.png"
+                src="/DM123.png"
                 // FIXED: Removed invalid 'alt' prop
               ></img>
             </div>
