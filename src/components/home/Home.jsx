@@ -251,7 +251,7 @@ export default function Home() {
                   </li>
                   <li>
                     <strong>
-                      Small income Wins, Big Health & Wealth Gains.
+                      Small Income Wins, Big Health & Wealth Gains.
                     </strong>
                   </li>
                   <li>
