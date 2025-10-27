@@ -52,7 +52,7 @@
   max-width: 400px;
   height: 300px;
   border-radius: 10px;
-  object-fit: cover; /* changed from fill */
+  object-fit: fill; /* changed from fill */
 }
 
 .women-content {
