@@ -67,30 +67,27 @@ export default function Contact() {
     { code: "+52", country: "Mexico", flag: "🇲🇽" },
   ];
 
-  const handleChange = (e) =>
-    setForm({ ...form, [e.target.name]: e.target.value });
+  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setStatus({ state: "sending" });
 
-    // Fixed: Properly use a template literal (backticks) for the combined phone number string
+    // ✅ Fixed template literal syntax
     const combinedPhoneNumber = form.phone ? `${form.countryCode} ${form.phone}` : "";
 
     const formData = {
       ...form,
-      // Overwrite the 'phone' property with the combined string
       phone: combinedPhoneNumber,
-      // Optional: You can remove the separate countryCode field from the payload
-      countryCode: undefined, 
+      countryCode: undefined,
     };
 
     emailjs
       .send(
-        "service_f8o9xuz", // replace with your Service ID
-        "template_6n6bxcd", // replace with your Template ID
+        "service_f8o9xuz", // Your EmailJS Service ID
+        "template_6n6bxcd", // Your Template ID
         formData,
-        "AVAVj3_wM2trMKMkp" // replace with your Public Key
+        "AVAVj3_wM2trMKMkp" // Your Public Key
       )
       .then(
         () => {
@@ -119,38 +116,42 @@ export default function Contact() {
       <div className="contact">
         <h3>Contact us</h3>
       </div>
+
       <div className="contact-1">
         <h1>Join Together!.</h1>
         <h1>Journey Together!.</h1>
       </div>
+
       <div className="container">
+        {/* Office Info Section */}
         <div className="office-info">
-          <h3>Our offices</h3>
-          <p style={{ paddingTop: "20px" }}>
-            Six Sigma Solutions,<br />
-            F-1, No 13, Breeze Enclave,Noombal <br/> 
-            Main Road, Noombal, Chennai, <br />
-            Tamil Nadu- 600077, India.
+          <h1 style={{ color: "red" }}>Six Sigma Solutions</h1>
+          <h2 style={{ paddingTop: "10px" }}>Our offices</h2>
+
+          <p style={{ paddingTop: "10px" }}>
+            India <br />
+            No 13, Breeze Enclave, Noombal Main Road, <br />
+            Chennai, TN-600077. <br />
           </p>
-          
+
           <p style={{ paddingTop: "20px" }}>
-            Six Sigma Solution,<br />
-            NKC Towers 1st Floor,<br />
-            Opp to Government Engineering College,<br />
-            Kottagoundampatti, Karuppur, Salem-636011.<br />
-            TamilNadu, India.
+            NKC Towers 1st Floor, Karuppur, <br />
+            Salem, TN-636011.
           </p>
-          <h3 style={{ paddingTop: "80px" }}>Email us</h3>
-          <strong>Get in touch</strong>
+
+          <strong style={{ paddingTop: "80px" }}>Get in touch</strong>
+          <h3 style={{ paddingTop: "0px" }}>Email us</h3>
           <p>
             <a href="mailto:cpdian@gmail.com">cpdian@gmail.com</a>
           </p>
+
           <strong>Call us</strong>
           <p>
             <a href="tel:+919884590009">+91 9884590009</a>
           </p>
+
           <strong style={{ paddingTop: "80px" }}>Get in Touch</strong>
-          <p>
+          <p className="social-links">
             <a href="https://x.com/cpdian?s=11">
               <i className="fa-brands fa-x-twitter"></i>
             </a>
@@ -166,6 +167,7 @@ export default function Contact() {
           </p>
         </div>
 
+        {/* Form Section */}
         <div className="form-section">
           <h3>For Inquiries</h3>
           <form onSubmit={handleSubmit}>
@@ -227,6 +229,7 @@ export default function Contact() {
               onChange={handleChange}
               placeholder="Message"
             ></textarea>
+
             <button
               className="send-btn"
               type="submit"
@@ -238,6 +241,7 @@ export default function Contact() {
                 className="fas fa-angle-right"
               ></i>
             </button>
+
             {status && status.state === "sent" && (
               <p style={{ color: "green", marginTop: 12 }}>
                 ✅ Thank you — your enquiry has been submitted successfully!
@@ -251,6 +255,7 @@ export default function Contact() {
           </form>
         </div>
       </div>
+
       <Footer />
     </div>
   );
