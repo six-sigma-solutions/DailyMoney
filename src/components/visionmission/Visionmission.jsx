@@ -42,7 +42,7 @@ const Visionmission = () => {
           <div className="dm-vsn-card-overlay">
             <div className="dm-vsn-card-text">
               <p className="dm-vsn-kicker"> </p>
-              <h1>Improving the world's health, happiness, and prosperity<br />Deliver with precision.</h1>
+              <h1>Improving the world's health, happiness, and prosperity<br />deliver with precision.</h1>
               <p className="dm-vsn-lead">
                 A brighter world — healthy in spirit, joyful in living, and abundant in growth.<br></br>
                 Living in flow with nature — where wellness nourishes wealth and joy sustains growth.<br></br>
@@ -84,7 +84,7 @@ const Visionmission = () => {
           {/* Section 2: Image Right, Text Left */}
           <div className="vision-row vision-reverse">
             <div className="vision-col vision-image-col">
-              <img src="life.png" alt="Wealth concept 2" />
+              <img src="missionrate.png" alt="Wealth concept 2" />
             </div>
             <div className="vision-col vision-text-col">
               <h2>
