@@ -84,7 +84,7 @@ body {
 }
 .dm {
   background: Linear-gradient(45deg, rgb(206, 219, 28), rgb(121, 216, 216));
-  color: black;
+  color: navy;
   display: inline-block;
   font-size: 22px;
   padding: 0 15px;
