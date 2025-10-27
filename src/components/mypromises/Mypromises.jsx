@@ -16,7 +16,7 @@ const Mypromises = () => {
         <div className="mypromises-img-card">
           <img
             className="mypromises-card-media"
-            src="/pro9.png"
+            src="/pro11.png"
             alt="My Promises"
           />
         </div>
