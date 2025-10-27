@@ -102,7 +102,7 @@ export default function Students() {
                 <span className="stu-page-highlight-text">DM</span> empowered to <span className="stu-page-highlight-text">learn</span>, inspired to <span className="stu-page-highlight-text">earn</span>.
                 Earn with <span className="stu-page-highlight-text">pride</span>, learn with <span className="stu-page-highlight-text">purpose</span>.
                 Students <span className="stu-page-highlight-text">earn</span>, and the world learns the value of <span className="stu-page-highlight-text">determination</span>.
-                Self-earned income builds more than <span className="stu-page-highlight-text">wealth</span>,it builds <span className="stu-page-highlight-text">wisdom</span>.
+                Self-earned income builds more than <span className="stu-page-highlight-text">wealth</span>, it builds <span className="stu-page-highlight-text">wisdom</span>.
               </strong>
             </p>
           </div>
