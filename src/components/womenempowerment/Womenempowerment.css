@@ -40,11 +40,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  padding: 30px;
+  padding: 20px;
   flex-wrap: wrap;
 }
 
@@ -56,12 +55,11 @@
 }
 
 .women-image img {
-  width: 100%;
+  width: 60%;
   max-width: 400px;
-  height: auto;
-  aspect-ratio: 4 / 3;
+  height: 300px;
   border-radius: 12px;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .women-content {
