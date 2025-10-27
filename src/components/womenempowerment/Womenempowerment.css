@@ -222,8 +222,10 @@
     text-align: center;
   }
 
-  .women-image img {
-    max-width: 90%;
+  .women-image img,
+  .women-image-row img {
+    width: 275px;
+    height: 300px;
   }
 
   .women-header-1 {
@@ -252,8 +254,10 @@
     align-items: center;
   }
 
+  .women-image img,
   .women-image-row img {
-    max-width: 90%;
+    width: 275px;
+    height: 300px;
   }
 }
 
@@ -266,8 +270,8 @@
 
   .women-image img,
   .women-image-row img {
-    max-width: 100%;
-    height: auto;
+    width: 275px;
+    height: 300px;
   }
 
   .women-program {
