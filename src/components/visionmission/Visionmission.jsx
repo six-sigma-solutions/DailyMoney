@@ -109,7 +109,7 @@ const Visionmission = () => {
     {/* Section 3: Image Left, Text Right */}
     <div className="vision-row">
       <div className="vision-col vision-image-col">
-        <img src="vision65.png" alt="Wealth concept 3" />
+        <img src="vision420.png" alt="Wealth concept 3" />
       </div>
       <div className="vision-col vision-text-col">
         <h2>
