@@ -40,7 +40,7 @@ export default function Entrepreneur () {
       <div className="ent-right">
         <h1>
           "I'm ready to start, build, and grow something of my own".<br />
-          "I’m ready to take my first step toward independence".<br />
+          "I’m ready to take my first step towards independence".<br />
           "I’m ready to shape my own success".<br />
         </h1>
         <div className="ent-box-right">
