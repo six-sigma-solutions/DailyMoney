@@ -1,3 +1,7 @@
+/* ========================================================= */
+/* GLOBAL RESET & BASE STYLES                                */
+/* ========================================================= */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,15 +15,22 @@ body {
   color: var(--text);
 }
 
-/* ---------- Page Wrapper ---------- */
+/* ========================================================= */
+/* PAGE WRAPPER                                              */
+/* ========================================================= */
+
 .wealthy-page {
   min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: left;
- 
+  padding: 30px;
 }
+
+/* ========================================================= */
+/* HEADING STYLES                                            */
+/* ========================================================= */
 
 .wealth-heading {
   text-align: left;
@@ -29,16 +40,15 @@ body {
   border-radius: 20px;
 }
 
-.wealth-heading span{
-    background-color: darkgreen;
-    color: white;
-    display: inline-block;
-    line-height: 3.6rem;
-    font-size: 32px;
-    padding: 0 15px;
-    border-radius: 5px;
+.wealth-heading span {
+  background-color: darkgreen;
+  color: white;
+  display: inline-block;
+  line-height: 3.6rem;
+  font-size: 32px;
+  padding: 0 15px;
+  border-radius: 5px;
 }
-
 
 /* Center page content on ultra-wide screens */
 @media (min-width: 1500px) {
@@ -46,12 +56,15 @@ body {
     width: 75%;
     margin: 0 auto;
   }
-  .wealth-heading{
+
+  .wealth-heading {
     margin-right: 200px;
   }
 }
 
-/* ---------- Header ---------- */
+/* ========================================================= */
+/* HEADER                                                    */
+/* ========================================================= */
 
 .wealthy-logo {
   width: 100%;
@@ -64,20 +77,23 @@ body {
   font-size: 3em;
   font-weight: 600;
   padding: 20px 40px;
-
 }
 
-/* ---------- Container ---------- */
+/* ========================================================= */
+/* CONTAINER                                                 */
+/* ========================================================= */
+
 .wealthy-container {
   width: 100%;
-
   max-width: var(--container-w);
   margin: 0 auto;
   padding: auto 40px;
 }
 
-/* ---------- Hero Section ---------- */
-/* ---------- Hero Section ---------- */
+/* ========================================================= */
+/* HERO SECTION                                              */
+/* ========================================================= */
+
 .wealthy-hero-card {
   background: linear-gradient(180deg, #ffffff 95%, #f9f9f9);
   border-radius: var(--radius);
@@ -95,7 +111,10 @@ body {
   border-radius: 12px;
 }
 
-/* ---------- Portrait Card ---------- */
+/* ========================================================= */
+/* PORTRAIT CARD                                             */
+/* ========================================================= */
+
 .wealthy-portrait-card {
   width: 100%;
   height: 100%;
@@ -104,7 +123,6 @@ body {
   justify-content: center;
   box-shadow: 0 18px 40px rgba(11, 20, 25, 0.09);
   background: linear-gradient(180deg, #ffffff, #fbfcfc);
-  width: 100%;
 }
 
 .wealthy-portrait-card img {
@@ -113,7 +131,10 @@ body {
   object-fit: fill;
 }
 
-/* ---------- Zigzag Section ---------- */
+/* ========================================================= */
+/* ZIGZAG SECTION                                            */
+/* ========================================================= */
+
 .wealthy-zigzag {
   width: 100%;
   height: 100%;
@@ -128,8 +149,8 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 2rem;
-  padding:40px;
-  border-radius:40px;
+  padding: 40px;
+  border-radius: 40px;
 }
 
 .wealthy-row.wealthy-reverse .wealthy-image-col {
@@ -140,7 +161,10 @@ body {
   order: 1;
 }
 
-/* ---------- Image ---------- */
+/* ========================================================= */
+/* IMAGE COLUMN                                              */
+/* ========================================================= */
+
 .wealthy-image-col {
   display: flex;
   justify-content: center;
@@ -154,13 +178,17 @@ body {
   object-fit: cover;
 }
 
-/* ---------- Text Box ---------- */
+/* ========================================================= */
+/* TEXT COLUMN                                               */
+/* ========================================================= */
+
 .wealthy-text-col {
   background: var(--card);
   padding: 28px;
   border-radius: var(--radius);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
+  text-align: justify; /* ✅ Justified text by default */
 }
 
 .wealthy-text-col:hover {
@@ -169,16 +197,16 @@ body {
 }
 
 .wealthy-text-col h2 {
-  font-size: 21.2px;
+  font-size: 18px;
   color: var(--accent);
   margin-bottom: 0.8rem;
-  text-align: justify;
+  text-align: start;
 }
-
 
 .wealthy-text-col p {
   color: var(--muted);
   font-size: 1rem;
+  text-align: justify; /* ✅ Ensure paragraphs are justified */
 }
 
 .wealthy-check {
@@ -188,7 +216,10 @@ body {
   margin-right: 8px;
 }
 
-/* ---------- Optional Row Colors ---------- */
+/* ========================================================= */
+/* OPTIONAL ROW COLORS                                       */
+/* ========================================================= */
+
 .row1 {
   background: #2b9348;
   color: #f9f9f9;
@@ -209,7 +240,10 @@ body {
   color: white;
 }
 
-/* ---------- Footer ---------- */
+/* ========================================================= */
+/* FOOTER                                                    */
+/* ========================================================= */
+
 .wealthy-footer {
   text-align: center;
   color: var(--muted);
@@ -219,15 +253,19 @@ body {
   font-size: 14px;
 }
 
-/* ---------- Responsive Layout ---------- */
+/* ========================================================= */
+/* RESPONSIVE DESIGN                                         */
+/* ========================================================= */
+
+/* ---------- Medium Devices (Tablets) ---------- */
 @media (max-width: 1000px) {
   .wealthy-row {
     grid-template-columns: 1fr;
-    text-align: center;
+    text-align: justify;
     gap: 30px;
   }
 
-  .wealth-heading{
+  .wealth-heading {
     margin-right: 600px;
   }
 
@@ -252,6 +290,7 @@ body {
     justify-content: center;
     text-align: center;
   }
+
   .view-more {
     width: 200px;
     font-size: 0.95rem;
@@ -259,7 +298,7 @@ body {
   }
 }
 
-/* ---------- Extra Small Devices ---------- */
+/* ---------- Small Devices (Phones) ---------- */
 @media (max-width: 520px) {
   .wealthy-container {
     padding: 16px;
@@ -270,8 +309,12 @@ body {
     line-height: 1.4;
   }
 
-  .wealth-heading{
+  .wealth-heading {
     margin-right: 60px;
+  }
+
+  .wealthy-text-col {
+    text-align: justify; /* ✅ Ensures justified on small screens */
   }
 
   .wealthy-image-col img {
@@ -289,6 +332,7 @@ body {
     height: auto;
     border-radius: 0;
   }
+
   .view-more {
     font-size: 0.95rem;
     padding: 10px 16px;
