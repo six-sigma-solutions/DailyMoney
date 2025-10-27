@@ -1317,6 +1317,9 @@ cubic-bezier(.175, .885, .32, 1.275);
   .hero-red {
     font-size: 68px;
   }
+  .hero-content h2{
+    text-align: center;
+  }
 
   .hero-content h1 {
     font-size: 22px;
