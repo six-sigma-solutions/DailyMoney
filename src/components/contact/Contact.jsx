@@ -140,7 +140,7 @@ export default function Contact() {
             Salem, TN-636011.
           </p>
 
-          <strong style={{ paddingTop: "80px" }}>Get in touch</strong>
+          <strong style={{ paddingTop: "80px" }}>Get in Touch</strong>
           <h3 style={{ paddingTop: "0px" }}>Email us</h3>
           <p>
             <a href="mailto:cpdian@gmail.com">cpdian@gmail.com</a>
