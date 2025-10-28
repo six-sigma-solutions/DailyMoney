@@ -256,7 +256,7 @@ export default function Home() {
                   </li>
                   <li>
                     <strong>
-                      Simplify DM. Strengthen Health. Secure Wealth.
+                      Simplify with DM. Strengthen Health. Secure Wealth.
                     </strong>
                   </li>
                   <li>
