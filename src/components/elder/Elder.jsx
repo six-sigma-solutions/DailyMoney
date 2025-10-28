@@ -122,7 +122,7 @@ export default function Elder() {
                 When they live <span className="dm-eldr-highlight">freely</span> and <span className="dm-eldr-highlight">confidently</span>, 
                 the <span className="dm-eldr-highlight">society</span> grows richer  
                 in <span className="dm-eldr-highlight">humanity</span>, not just in <span className="dm-eldr-highlight">wealth</span>. 
-                That’s the <span className="dm-eldr-highlight">DM,</span> way where every generation 
+                That’s the <span className="dm-eldr-highlight">DM </span> way where every generation 
                 learns, earns, and lives with <span className="dm-eldr-highlight">purpose</span>.
               </strong>
             </p>
