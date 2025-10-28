@@ -7,7 +7,7 @@ import Footer from '../footer/Footer';
 const topMember = {
     name: "Dr.V.Chellapondy",
     role: "Financial & Business Advisor",
-    image: "cpsp.jpg",
+    image: "cpvps.png",
 
 };
 
