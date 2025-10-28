@@ -11,7 +11,7 @@ function Bio() {
       <div className="founder-section">
         <div className="founder-profile">
           <img 
-            src="sir.png" 
+            src="cpvps.png" 
             alt="Founder's Photo" 
           />
           <h1>Dr.V.Chellapondy</h1>
