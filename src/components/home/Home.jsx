@@ -358,13 +358,13 @@ export default function Home() {
                 <h4>Connect</h4>
                 <ul>
                   <li>
-                    <a href="https://x.com/?lang=en">Follow on X</a>
+                    <a href="https://x.com/dailymsghealthy">Follow on X</a>
                   </li>
                   <li>
-                    <a href="https://facebook.com">Follow on Facebook</a>
+                    <a href="https://www.facebook.com/Daily.Message.Healthy">Follow on Facebook</a>
                   </li>
                   <li>
-                    <a href="">Follow on Instagram</a>
+                    <a href="https://www.instagram.com/daily_message_healthy/">Follow on Instagram</a>
                   </li>
                 </ul>
               </div>
