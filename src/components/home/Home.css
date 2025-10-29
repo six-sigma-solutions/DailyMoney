@@ -1296,7 +1296,7 @@ body {
   .hero-promo-video {
     width: 500%;
     height: 140%;
-    margin: 90px 80px 50px 60px;
+    margin: 90px 80px 100px 60px;
     position: relative;
     transform: scale(1);
     object-fit: contain;
