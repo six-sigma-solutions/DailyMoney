@@ -143,8 +143,8 @@ export default function Contact() {
           <strong style={{ paddingTop: "80px" }}>Get in Touch</strong>
           <h3 style={{ paddingTop: "0px" }}>Email us</h3>
           <p>
-            <a href="mailto:support@dmhealthy.com">cpdian@gmail.com</a>
-            <a href="mailto:service@dmhealthy.com">cpdian@gmail.com</a>
+            <a href="mailto:support@dmhealthy.com">support@dmhealthy.com</a><br />
+            <a href="mailto:service@dmhealthy.com">service@dmhealthy.com</a>
           </p>
 
           <strong>Call us</strong>
