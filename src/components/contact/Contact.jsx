@@ -143,26 +143,27 @@ export default function Contact() {
           <strong style={{ paddingTop: "80px" }}>Get in Touch</strong>
           <h3 style={{ paddingTop: "0px" }}>Email us</h3>
           <p>
-            <a href="mailto:cpdian@gmail.com">cpdian@gmail.com</a>
+            <a href="mailto:support@dmhealthy.com">cpdian@gmail.com</a>
+            <a href="mailto:service@dmhealthy.com">cpdian@gmail.com</a>
           </p>
 
           <strong>Call us</strong>
           <p>
-            <a href="tel:+919884590009">+91 9884590009</a>
+            <a href="tel:+919884590009">+91 7904373255</a>
           </p>
 
           <strong style={{ paddingTop: "80px" }}>Get in Touch</strong>
           <p className="social-links">
-            <a href="https://x.com/cpdian?s=11">
+            <a href="https://x.com/dailymsghealthy">
               <i className="fa-brands fa-x-twitter"></i>
             </a>
-            <a href="https://www.facebook.com/share/1Cx1RDAMqQ/?mibextid=wwXIfr">
+            <a href="https://www.facebook.com/Daily.Message.Healthy">
               <i className="fa-brands fa-facebook"></i>
             </a>
-            <a href="https://www.instagram.com/chellapondyvellaiswamy">
+            <a href="https://www.instagram.com/daily_message_healthy/">
               <i className="fa-brands fa-instagram"></i>
             </a>
-            <a href="tel:+919884590009">
+            <a href="tel:+91 7904373255">
               <i className="fa-solid fa-phone"></i>
             </a>
           </p>
