@@ -36,7 +36,7 @@ const Solution = () => {
           <div className="dm-sol-img-card">
           <img
             className="dm-sol-card-media"
-            src="/tictat.png"
+            src="/billion-3.png"
             alt="Solution"
           />
          
