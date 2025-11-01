@@ -32,7 +32,7 @@ export default function Home() {
           <div className="popup-container">
             <h2 className="popup-title">Welcome to DM </h2>
             <p className="popup-text">
-              "For the betterment of all people across the world — Especially
+              "For the betterment of all people across the world. Especially
               those driving innovation in the Global IT Community."
             </p>
             <button
@@ -241,7 +241,7 @@ export default function Home() {
                   </li>
                   <li>
                     <strong>
-                      Every Stage - Every Step - Health & Wealth Solutions.
+                      Every Stage, Every Step, Health & Wealth Solutions.
                     </strong>
                   </li>
                   <li>
@@ -272,7 +272,7 @@ export default function Home() {
                     </strong>
                   </li>
                   <li>
-                    <strong>Live Well - Live Wealthy - Every Single Day.</strong>
+                    <strong>Live Well, Live Wealthy, Every Single Day.</strong>
                   </li>
                 </ul>
               </div>
