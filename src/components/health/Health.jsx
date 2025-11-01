@@ -21,7 +21,7 @@ const Health = () => {
           </h1>
 
          <p>
-            Your journey to wellness and financial support starts here.<br /> Our health is our true wealth. It gives us energy, focus, and freedom to live fully. Every choice - what we eat, how we move, how we rest shapes our future. When we care for our health, we care for our dreams, our families, and our world. Strong bodies, Clear minds and Happy hearts. Together, we build a healthier tomorrow. Our health - our strength & our future.
+            Your journey to wellness and financial support starts here.<br /> Our health is our true wealth. It gives us energy, focus, and freedom to live fully. Every choice what we eat, how we move, how we rest shapes our future. When we care for our health, we care for our dreams, our families, and our world. Strong bodies, Clear minds and Happy hearts. Together, we build a healthier tomorrow. Our health  our strength & our future.
           </p>
 
           <a href="#footer" className="btn-primary">
@@ -46,8 +46,8 @@ const Health = () => {
       <div className="container-1 right-image">
         <img src="healthpc.jpg" alt="Styled" className="styled-img" />
         <div className="box color1">
-          <h1>“Health and fitness are not temporary — they are my lifetime goal.”</h1>
-          <h1>“Health is not a destination — it’s a lifelong evolution.”</h1>
+          <h1>“Health and fitness are not temporary they are my lifetime goal.”</h1>
+          <h1>“Health is not a destination it’s a lifelong evolution.”</h1>
           <h1>“Fitness is the art <br />I practice for life.”</h1>
         </div>
       </div>
@@ -56,8 +56,8 @@ const Health = () => {
         <img src="jokk(h).jpg" alt="Styled" className="styled-img " />
         <div className="box-1 color2">
           <h1>“I am committed to wellness for life.”</h1>
-          <h1>“Wellness is not a season — it’s my soul’s commitment.”</h1>
-          <h1>“Wellness isn’t a goal — it’s my lifestyle.”</h1>
+          <h1>“Wellness is not a season it’s my soul’s commitment.”</h1>
+          <h1>“Wellness isn’t a goal it’s my lifestyle.”</h1>
         </div>
       </div>
 
@@ -65,8 +65,8 @@ const Health = () => {
               <img src="sunday.jpg" alt="Styled" className="styled-img" />
               <div className="box color3">
                 <h1>“I need lifelong health and fitness.”</h1>
-                <h1>“I’m powered by purpose — strong for life.”</h1>
-                <h1>“Wellness is not a goal — it’s my lifetime mission.”</h1>
+                <h1>“I’m powered by purpose strong for life.”</h1>
+                <h1>“Wellness is not a goal it’s my lifetime mission.”</h1>
               </div>
             </div>
 
