@@ -45,7 +45,7 @@ export default function PresidentMsg() {
                     </p>
 
                     <p className="message-paragraph">
-                        As President, I oversee the strategic implementation of our programs and ensure that our solutions remain cutting-edge, ethical, and highly effective. We are committed to fostering an environment where growth is not only expected, but also supported by robust educational tools and a network of passionate associates.
+                        As President, I oversee the strategic implementation of our programs and ensure that our solutions remain cutting edge, ethical, and highly effective. We are committed to fostering an environment where growth is not only expected, but also supported by robust educational tools and a network of passionate associates.
                     </p>
 
                     <p className="message-paragraph">
