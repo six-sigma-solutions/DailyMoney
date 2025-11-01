@@ -20,7 +20,7 @@ const Overview = () => {
         <div className="zigzag-text-content">
           <h2 style={{ color: "#80EF80" }}>Our Purpose</h2>
           <p>
-            DM exists to make the world healthier, happier, wealthier -
+            DM exists to make the world healthier, happier, wealthier
             one person, one family, and one community at a time.
           </p>
         </div>
@@ -89,7 +89,7 @@ const Overview = () => {
         <div className="zigzag-text-content">
           <h2 style={{ color: "cyan" }}>Our Promise</h2>
           <p>
-            DM stands for more than health, it represents lifelong prosperity. We help create strong foundations for generations to flourish — in wealth, wellness, and spirit.
+            DM stands for more than health, it represents lifelong prosperity. We help create strong foundations for generations to flourish in wealth, wellness, and spirit.
           </p>
         </div>
       </section>
