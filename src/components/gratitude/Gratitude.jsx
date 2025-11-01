@@ -28,7 +28,7 @@ const Gratitude = () => {
                 I thank the Universe for blessing us with health, wealth, happiness, our children's future, abundant opportunities to travel, and above all, virtue (good karma).
               </p>
               <p className="dm-grt-paragraph">
-                Together with the millions of people around the world benefiting, from today we too begin our journey —
+                Together with the millions of people around the world benefiting, from today we too begin our journey.
               </p>
               <p className="dm-grt-highlight">
                 Guided by the wisdom, discipline and spirit of the world's greatest Legends.
