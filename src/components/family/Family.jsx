@@ -37,7 +37,7 @@ const Family = () => {
           True prosperity comes from both good health and financial security.
           With our transparent, collaborative approach, we bring your vision to
           life. Guided by our three-phase methodology, we consistently deliver
-          value and adapt to change — building the best world:<br />{" "}
+          value and adapt to change building the best world:<br />{" "}
           <span
             style={{
               backgroundColor: "#d4edda",
@@ -60,7 +60,7 @@ const Family = () => {
             <h3 className="highlight-text">
               <i>
                 "I have secured my family's health, education, and finances, and
-                aim to ensure long - term security, growth, and happiness for
+                aim to ensure long term security, growth, and happiness for
                 future generations."
               </i>
             </h3>
@@ -75,7 +75,7 @@ const Family = () => {
           <div className="step-content">
             <h3 className="highlight-text">
               <i>
-                "I've secured my family's well - being and plan to expand their
+                "I've secured my family's well being and plan to expand their
                 opportunities, by investing in their safety, education, and
                 lifestyle."
               </i>
@@ -92,7 +92,7 @@ const Family = () => {
             <h3 className="highlight-text">
               <i>
                 "I've secured my children's future through education, savings, and
-                guidance, aiming for long - term financial support."
+                guidance, aiming for long term financial support."
               </i>
             </h3>
           </div>
