@@ -36,9 +36,6 @@ img:hover { transform: scale(1.05); }
 .health-page{
   display: flex;
   flex-direction: column;
-  
- position: absolute;
- left: 42px;
   /* bring page content up a bit */
   padding-top: 20px;
 }
@@ -50,7 +47,7 @@ img:hover { transform: scale(1.05); }
 }
 .health-heading span{
     background-color: darkgreen;
-    margin: 0 25px;
+    margin: 0 50px;
     color: white;
     display: inline-block;
     line-height: 3.6rem;
@@ -68,7 +65,7 @@ img:hover { transform: scale(1.05); }
   flex-wrap: wrap;
   gap: 20px;
   min-height: calc(100vh - 120px);
-  padding: 3rem 70px;
+  padding: 3rem -40px;
 }
 
 
