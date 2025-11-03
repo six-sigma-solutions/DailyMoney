@@ -3,10 +3,10 @@ import "./PresidentMsg.css"; // Import the new styling file
 import { Link } from "react-router-dom";
 
 const president = {
-    name: "XXXXXX", // Placeholder Name
+    name: "C.Valarmathi", // Placeholder Name
     role: "President", 
     // Placeholder image URL 
-    image: "https://via.placeholder.com/150/0d9488/ffffff?text=President", 
+    image: "C.Valarmathi.png", 
 };
 
 export default function PresidentMsg() {
