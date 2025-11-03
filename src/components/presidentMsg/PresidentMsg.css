@@ -82,13 +82,13 @@
 .president-name { 
     font-size: 1.875rem;
     font-weight: 700;
-    color: #1f2937; /* text-gray-800 */
+    color: #fff; /* text-gray-800 */
     margin-top: 1rem;
 }
 
 .president-role { 
     font-size: 1.25rem;
-    color: #0d9488; /* text-teal-600 */
+    color: rgb(153, 246, 228);/* text-teal-600 */
     font-weight: 600;
 }
 
@@ -124,7 +124,7 @@
 /* General Paragraphs */
 .message-paragraph {
     font-size: 1.24rem;
-    color: #3a3f46; /* text-gray-600 */
+    color: #fff; /* text-gray-600 */
     line-height: 1.8; 
     margin-bottom: 1.5rem;
 }
@@ -140,12 +140,12 @@
 .signature-name {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #1f2937; /* text-gray-800 */
+    color: #fff; /* text-gray-800 */
 }
 
 .signature-title {
     font-size: 1rem;
-    color: #0d9488; /* text-teal-600 */
+    color: #fff; /* text-teal-600 */
 }
 
 .signature {
