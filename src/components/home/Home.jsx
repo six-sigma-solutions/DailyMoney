@@ -286,7 +286,7 @@ export default function Home() {
 
         {/* Founder is now in a separate div at the top */}
         <div className="founder-card">
-          <img src="/CPSIR.png" alt="Dr.V.Chellapondy DSW" />
+          <img src="/cpdian12.png" alt="Dr.V.Chellapondy DSW" />
           <h4 className="team-member-name">Dr.V.Chellapondy</h4>
         </div>
 
