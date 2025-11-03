@@ -1,5 +1,5 @@
 /* ======================================================= */
-/* GLOBAL RESET & BODY STYLES                            */
+/* GLOBAL RESET & BODY STYLES                            */
 /* ======================================================= */
 .popup-overlay {
   position: fixed;
@@ -95,10 +95,10 @@ body {
 }
 
 /* ======================================================= */
-/* HERO SECTION                                          */
+/* HERO SECTION                                          */
 /* ======================================================= */
 /* ======================================================= */
-/* HERO SECTION                                          */
+/* HERO SECTION                                          */
 /* ======================================================= */
 .hero-promo-video {
   width: 120%;
@@ -127,11 +127,12 @@ body {
   align-items: center;
   justify-content: space-between;
   min-height: 80vh;
-  padding: 0px 30px 0px 60px;
+  padding: 10px;
   flex-wrap: wrap;
   gap: 40px;
   overflow: hidden;
   position: relative;
+  margin: 40px -60px;
 }
 .money {
   font-size: 65px;
@@ -308,12 +309,12 @@ body {
 }
 /* --- NEW CSS FOR TWO-IMAGE HOVER EFFECT --- */
 /*
-  This replaces your old .hero-promo-image rule
+  This replaces your old .hero-promo-image rule
 */
 /* --- NEW, SIMPLER CSS FOR HOVER EFFECT --- */
 /*
-  Delete all old .hero-promo-image and .hero-promo-image::before rules
-  and replace them with this block.
+  Delete all old .hero-promo-image and .hero-promo-image::before rules
+  and replace them with this block.
 */
 
 .hero-promo-image {
@@ -390,10 +391,10 @@ body {
 }
 
 /* ======================================================= */
-/* SOLUTIONS SECTION                                     */
+/* SOLUTIONS SECTION                                     */
 /* ======================================================= */
 .solutions-section {
-  margin: 40px 60px 0px;
+  margin: 40px -40px 0px;
 }
 
 .solution-container {
@@ -636,7 +637,7 @@ body {
 }
 
 /* ======================================================= */
-/* TESTIMONIAL SECTION                                   */
+/* TESTIMONIAL SECTION                                   */
 /* ======================================================= */
 .testimonial-section {
   padding: 100px 60px;
@@ -705,7 +706,7 @@ body {
   margin: 0;
 }
 /* ======================================================= */
-/* CORE TEAM SECTION STYLES (HIERARCHICAL LAYOUT)        */
+/* CORE TEAM SECTION STYLES (HIERARCHICAL LAYOUT)        */
 /* ======================================================= */
 .clients-container {
   max-width: 1500px;
@@ -739,7 +740,7 @@ body {
   object-fit: cover;
   margin-bottom: 15px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  border:2.5px solid black;
+  border: 2.5px solid black;
 }
 
 /* This is the grid for the rest of the team */
@@ -785,7 +786,7 @@ body {
   font-size: 18px;
 }
 /* ======================================================= */
-/* FOOTER                       _                        */
+/* FOOTER                       _                        */
 /* ======================================================= */
 .footer-main1 {
   max-width: 800px;
@@ -913,7 +914,7 @@ body {
   font-size: 0.9em;
   margin-top: 20px;
 } /* ======================================================= */
-/* RESPONSIVE STYLES                                     */
+/* RESPONSIVE STYLES                                     */
 /* ======================================================= */
 @media (max-width: 1200px) {
   .hero-section {
@@ -958,6 +959,7 @@ body {
   }
 
   .container1 {
+    
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -1007,6 +1009,7 @@ body {
   }
 
   .hero-content {
+    
     order: 2;
   }
 
@@ -1482,7 +1485,7 @@ cubic-bezier(.175, .885, .32, 1.275);
 }
 
 /* ======================================================= */
-/* CONTACT CTA SECTION                                    */
+/* CONTACT CTA SECTION                                    */
 /* ======================================================= */
 .contact-cta-section {
   padding: 80px 60px;
@@ -1650,7 +1653,7 @@ cubic-bezier(.175, .885, .32, 1.275);
 }
 
 /* ======================================================= */
-/* FOOTER RESPONSIVE STYLING                              */
+/* FOOTER RESPONSIVE STYLING                              */
 /* ======================================================= */
 
 /* ---------- MEDIUM DEVICES (Tablets / <=1024px) ---------- */
