@@ -6,7 +6,7 @@ const president = {
     name: "C.Valarmathi", // Placeholder Name
     role: "President", 
     // Placeholder image URL 
-    image: "C.Valarmathi.png", 
+    image: "pres.png", 
 };
 
 export default function PresidentMsg() {
