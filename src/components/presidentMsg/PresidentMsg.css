@@ -62,10 +62,10 @@
 .president-image { 
     width: 10rem;
     height: 10rem;
-    object-fit: cover;
+    object-fit: contain;
     margin-top: 25px;
     z-index: 50;
-    border-radius: 9999px; /* rounded-full */
+    border-radius: 50%; /* rounded-full */
     border-width: 8px;
     border-color: white;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
