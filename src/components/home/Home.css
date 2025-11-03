@@ -739,6 +739,7 @@ body {
   object-fit: cover;
   margin-bottom: 15px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border:2.5px solid black;
 }
 
 /* This is the grid for the rest of the team */
