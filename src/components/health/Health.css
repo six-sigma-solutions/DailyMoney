@@ -777,8 +777,10 @@ html {
  }
 
  .view-more-link{
-    align-self: center;
- }
+display: flex;
+justify-content: center; 
+text-decoration: none;
+}
 
  @media (max-width: 768px) {
   .view-more {
