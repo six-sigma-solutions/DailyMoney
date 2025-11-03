@@ -36,7 +36,7 @@ const Wealth = () => {
             </div> 
             <div className="wealthy-col wealthy-text-col row1">
               <h2>
-                <span className="wealthy-check">  ✓  </span>
+                <span className="wealthy-check" >  ✓  </span>
                 Wealth is more than numbers in a bank account. It is the freedom
                 to choose our path, the security to protect what matters, and
                 the power to create a lasting impact.
@@ -50,9 +50,9 @@ const Wealth = () => {
               <img src="wealth99.png" alt="Wealth concept 2" />
             </div>
             <div className="wealthy-col wealthy-text-col row2" >
-              <h2>
+              <h2 style={{ backgroundColor: "#382813"}}>
                 <span className="wealthy-check">  ✓  </span>
-                True wealth begins with discipline living with intention,
+                True wealth begins with discipline — living with intention,
                 saving with wisdom, and investing with vision. It grows not only
                 through income but also through knowledge, relationships, and the
                 values we pass on to the next generation.
@@ -66,7 +66,7 @@ const Wealth = () => {
               <img src="w1.jpg" alt="Wealth concept 3" />
             </div>
             <div className="wealthy-col wealthy-text-col row3">
-              <h2>
+              <h2 style={{ backgroundColor: "#910000"}}>
                 <span className="wealthy-check">  ✓  </span>
                 Our wealth is not just about what we accumulate, but about what
                 we enable. With it, we gain the ability to support our
@@ -82,9 +82,9 @@ const Wealth = () => {
               <img src="wealth44.png" alt="Wealth concept 4" />
             </div>
             <div className="wealthy-col wealthy-text-col row4">
-              <h2>
+              <h2 style={{ backgroundColor: "navy"}}>
                 <span className="wealthy-check">  ✓  </span>
-                Wealth is not greed it is growth. It is not selfishness it is
+                Wealth is not greed — it is growth. It is not selfishness—it is
                 stewardship. When guided by purpose, wealth becomes a force for
                 freedom, impact, and legacy. Our wealth is our power to
                 live with dignity, give with generosity, and build a future that
