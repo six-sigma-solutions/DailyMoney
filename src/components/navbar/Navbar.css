@@ -8,26 +8,30 @@
 
 /* NAVBAR */
 #navbar {
+  margin-left: -50px;
   width: 100%;
   top: 0;
-  left: 0;
   z-index: 100;
-  background: #fff; /* solid background */
-  border-bottom: 1px solid #eee;
 }
 
-/* Navbar container */
 .nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 72px;
+  padding: 0 -100px; /* increased gap inside navbar */
+  width: 110%;
+  background-color: #fff; /* optional */
 }
+
+
+
 
 /* Logo */
 .logo img {
   height: 55px;
   display: block;
+  margin-left: 15px;
 }
 
 /* DESKTOP MENU */
@@ -36,7 +40,7 @@
   gap: 32px;
   list-style: none;
   flex: 1;
-  justify-content: center;
+  justify-content: center; /* Menu centered */
   align-items: center;
 }
 
@@ -44,6 +48,7 @@
   font-weight: 600;
   color: #000000a5;
   font-size: 18px;
+  font-family: "Poppins", Arial, sans-serif;
 }
 
 #tab-name:hover {
@@ -89,7 +94,8 @@
   transition: all 0.25s ease-in-out;
 }
 
-.desktop-menu li:hover > .submenu {
+.desktop-menu li:hover > .submenu,
+.submenu.open {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -115,19 +121,16 @@
   width: 110px;
   height: 40px;
   border-radius: 23px;
-  padding: 8px 16px;
+  padding: 8px 16px 8px 16px;
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
+  font-family: "Poppins", Arial, sans-serif;
   transition: background 0.3s ease;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-}
-
-.contact-btn:hover {
-  background: #a00;
 }
 
 @media (max-width: 480px) {
@@ -136,12 +139,16 @@
   }
 }
 
-/* Right section */
+.contact-btn:hover {
+  background: #a00;
+}
+
+/* Right section (Contact + Hamburger aligned right) */
 .right-section {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-left: auto;
+  margin-left: auto; /* push to right end */
 }
 
 /* Authentication Section */
@@ -162,6 +169,7 @@
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
+  font-family: "Poppins", Arial, sans-serif;
 }
 
 .user-welcome {
@@ -169,6 +177,7 @@
   border-radius: 6px;
   font-weight: 500;
   font-size: 14px;
+  font-family: "Poppins", Arial, sans-serif;
   background: #28a745;
   color: white;
   border: 2px solid #28a745;
@@ -196,7 +205,10 @@
 
 .register-btn:hover {
   background: #5a6fd8;
+  border-color: #5a6fd8;
 }
+
+
 
 .logout-btn {
   background: #dc3545;
@@ -206,6 +218,7 @@
 
 .logout-btn:hover {
   background: #c82333;
+  border-color: #c82333;
 }
 
 /* Menu button */
@@ -222,7 +235,9 @@
   color: #111;
 }
 
-/* MOBILE MENU */
+/* ========================================================= */
+/* ========== MOBILE MENU (SLIDE + STACKED ITEMS) ========== */
+/* ========================================================= */
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -234,6 +249,7 @@
   display: flex;
   flex-direction: column;
   z-index: 9999;
+
   transform: translateY(-100%);
   opacity: 0;
   pointer-events: none;
@@ -247,13 +263,13 @@
   pointer-events: auto;
 }
 
-/* Mobile top bar */
+/* Top bar */
 .mobile-topbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 72px;
-  padding: 0 20px;
+  padding: 30px 30px;
 }
 
 .mobile-topbar .logo img {
@@ -285,6 +301,7 @@
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
+  font-family: "Poppins", Arial, sans-serif;
 }
 
 .mobile-auth-btn.login {
@@ -306,17 +323,22 @@
 
 .mobile-auth-btn.register:hover {
   background: #5a6fd8;
+  border-color: #5a6fd8;
 }
 
 .mobile-user-welcome {
   padding: 12px 20px;
+  text-decoration: none;
   font-weight: 500;
   font-size: 16px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  text-align: center;
+  cursor: default;
   background: #28a745;
   color: white;
   border: 1px solid #28a745;
-  border-radius: 8px;
-  text-align: center;
+  font-family: "Poppins", Arial, sans-serif;
 }
 
 .mobile-auth-btn.logout {
@@ -327,6 +349,7 @@
 
 .mobile-auth-btn.logout:hover {
   background: #c82333;
+  border-color: #c82333;
 }
 
 /* Menu list stacked */
@@ -337,7 +360,8 @@
 }
 
 .mobile-grid a,
-.mobile-grid span {
+.mobile-grid span,
+.mobile-grid .mobile-dropdown {
   width: 100%;
   color: #fff;
   text-decoration: none;
@@ -348,7 +372,9 @@
   transition: background 0.3s, color 0.3s;
 }
 
-.mobile-grid a:hover {
+.mobile-grid a:hover,
+.mobile-grid span:hover,
+.mobile-grid .mobile-dropdown:hover {
   background: #111;
   color: #c00;
 }
@@ -399,6 +425,11 @@
   color: #fff;
 }
 
+.footer-icons span {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
 .footer-icons span:hover {
   color: #c00;
 }
@@ -410,10 +441,22 @@
   }
 }
 
-/* Remove hover/focus background for Menu and Close buttons */
+/* Remove hover/focus background for Menu (☰) and Cancel (✖) */
 .menu-btn,
-.mobile-close {
+.menu-btn:hover,
+.menu-btn:focus,
+.mobile-close,
+.mobile-close:hover,
+.mobile-close:focus {
   background: transparent !important;
   outline: none !important;
   box-shadow: none !important;
+}
+
+/* Keep icon color fixed (no hover effect) */
+.menu-bar {
+  color: #000;
+}
+.mobile-close {
+  color: #fff !important; /* desktop icons */
 }
