@@ -87,6 +87,7 @@ footer .btn { margin: 0.6rem 0; }
 .view-more-link{
   display: flex;
   justify-content: center;
+  padding: 60px 120px;
 }
 
 
