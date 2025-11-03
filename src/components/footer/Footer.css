@@ -4,6 +4,7 @@
   padding: 2rem;
   text-align: center;
   margin-top: 3rem;
+  margin-left: -12px;
   border-radius: 0;
   width: 100%;
 }
@@ -45,7 +46,6 @@
   .card-footer-bg {
     padding: 1.5rem 1rem;
   }
-
   .footer-logo {
     width: 60px;
     height: 60px;
