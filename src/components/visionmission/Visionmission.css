@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.dm-vsn-main-content * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.dm-vsn-main-content {
+  background: var(--dm-vsn-bg, #ffffff);
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #111;
+  min-height: 100vh;
+}
+
+.dm-vsn-main-content {
+  --dm-vsn-muted: #9aa0a6;
+  --dm-vsn-bg: #ffffff;
+  --dm-vsn-dark: #0b0b0b;
+  --dm-vsn-max-width: 1320px;
+}
+
+/* ---------------- CONTAINER ---------------- */
+.dm-vsn-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 28px;
+}
+
+/* ---------------- TITLE ---------------- */
+.dm-title {
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 12px;
+  color: #f10a0a;
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+/* ---------------- HERO CARD ---------------- */
+.dm-vsn-hero-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.dm-vsn-card-inner {
+  width: 90vw;
+  background: var(--dm-vsn-dark);
+  border-radius: 16px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.21);
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow 0.35s ease;
+}
+
+.dm-vsn-card-media {
+  width: 100%;
+  height: 600px;
+  object-fit: fill;
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.dm-vsn-card-media:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+.dm-vsn-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 30px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  display: flex;
+  align-items: center;
+}
+
+.dm-vsn-card-text {
+  width: 50%;
+  color: #fff;
+  text-align: left;
+}
+
+.vision-paragraph-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.dm-vsn-card-text h1 {
+  font-size: 2.2rem;
+  line-height: 1.3;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.dm-vsn-lead {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* ---------------- CARD FEATURES ---------------- */
+.card-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.col {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.col:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(201, 42, 42, 0.3);
+}
+
+/* ---------------- STANDARDS ---------------- */
+.dm-vsn-standards {
+  background: #f4f4f4;
+  padding: 40px;
+}
+
+.dm-vsn-grid-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 30px;
+}
+
+.dm-vsn-feature {
+  background: var(--dm-vsn-bg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid var(--dm-vsn-accent);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dm-vsn-feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(201, 42, 42, 0.3);
+}
+
+.dm-vsn-feature h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dm-vsn-dark);
+  line-height: 1.4;
+}
+
+/* ---------------- ACTION BUTTON ---------------- */
+.dm-vsn-action-section {
+  padding: 40px 1rem;
+  text-align: center;
+}
+
+.dm-vsn-animated-btn {
+  background: #f10a0a;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(239, 68, 68, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.dm-vsn-animated-btn:hover {
+  background-color: #b71c1c;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(220, 38, 38, 0.4);
+}
+
+/* ---------------- SPACER ---------------- */
+.dm-vsn-spacer {
+  display: block;
+  height: 60px;
+}
+
+/* ===================================================== */
+/* Vision Page Layout Styles */
+/* ===================================================== */
+.vision-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 16px;
+  background: #ffffff;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.vision-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 4rem 0;
+}
+
+.vision-col {
+  flex: 1;
+}
+
+.vision-image-col img {
+  width: 90%;
+  height: 300px;
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  object-fit: fill;
+}
+
+.vision-image-col img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.vision-reverse {
+  flex-direction: row-reverse;
+}
+
+.vision-text-col {
+  flex: 2;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #0f172a;
+}
+
+.vision-tick-icon {
+  color: red;
+  font-size: 1.3em;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.vision-gallery-title{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: #f10a0a;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+    gap: 20px;
+}
+
+.vision-gallery img {
+    width: 10%;
+    min-width: 280px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px #00000026;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.vision-gallery{
+  justify-content: space-around;
+  gap: 20px;
+  display: flex;
+}
+/* ===================================================== */
+/* RESPONSIVE ALIGNMENT FIXES */
+/* ===================================================== */
+
+/* ---------- Tablets (≤1024px) ---------- */
+@media (max-width: 1024px) {
+  .dm-vsn-card-inner {
+    width: 95%;
+  }
+
+  .dm-vsn-card-text h1 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .dm-vsn-card-overlay {
+    padding: 24px;
+    justify-content: center;
+  }
+
+  .dm-vsn-card-text {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .vision-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .vision-image-col img {
+    width: 80%;
+    height: 260px;
+    object-fit: fill;
+    margin: 0 auto;
+  }
+
+  .dm-vsn-grid-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- Mobile (≤768px) ---------- */
+@media (max-width: 768px) {
+  .dm-title {
+    font-size: 1.8rem;
+    padding: 8px;
+    margin: 16px auto;
+  }
+
+  .dm-vsn-card-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .dm-vsn-lead {
+    font-size: 0.95rem;
+  }
+
+  .dm-vsn-card-media {
+    height: 280px;
+    object-fit: fill;
+  }
+
+  .vision-text-col {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 5px;
+    text-align: center;
+  }
+
+  .vision-image-col img {
+    width: 70%;
+    height: 220px;
+    object-fit: fill;
+  }
+
+  .dm-vsn-animated-btn {
+    width: 60%;
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+
+  .vision-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vision-gallery img {
+    width: 80%;
+    margin: 40px;
+  }
+}
+
+/* ---------- Small Mobiles (≤480px) ---------- */
+@media (max-width: 480px) {
+  .dm-title {
+    font-size: 1.4rem;
+    padding: 6px;
+  }
+
+  .dm-vsn-card-text h1 {
+    font-size: 1.2rem;
+  }
+
+  .dm-vsn-lead {
+    font-size: 0.9rem;
+  }
+
+  .vision-section {
+    padding: 16px;
+  }
+
+  .vision-text-col {
+    font-size: 0.95rem;
+  }
+
+  .dm-vsn-card-media {
+    height: 450px;
+    object-fit: fill;
+  }
+
+  .vision-image-col img {
+    width: 90%;
+    height: 200px;
+    object-fit: fill;
+  }
+
+  .dm-vsn-animated-btn {
+    width: 70%;
+    padding: 10px;
+  }
+
+  .dm-vsn-grid-features {
+    grid-template-columns: 1fr;
+  }
+}

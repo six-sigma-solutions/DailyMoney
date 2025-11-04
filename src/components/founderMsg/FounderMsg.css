@@ -1,0 +1,275 @@
+/* src/components/founderMsg/FounderMsg.css */
+
+/* ----------------------------------
+ * General Structure & Layout
+ * ---------------------------------- */
+
+/* Outer section - light background */
+.founder-page-section {
+    /* @apply py-20 px-4 bg-gray-50 min-h-screen; */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #f9fafb;
+    /* bg-gray-50 */
+    min-height: 100vh;
+}
+
+/* Main Content Card */
+.founder-message-card {
+    /* @apply max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden; */
+    max-width: 56rem;
+    /* max-w-4xl */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #047871;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    /* shadow-2xl */
+    border-radius: 0.75rem;
+    /* rounded-xl */
+    overflow: hidden;
+}
+
+/* ----------------------------------
+ * Header & Profile
+ * ---------------------------------- */
+
+/* Top Branding Section */
+.card-header-bg {
+    /* @apply bg-teal-700 py-12 flex flex-col items-center relative; */
+    background-color: #047871;
+    /* bg-teal-700 */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header-title {
+    /* @apply text-4xl font-extrabold text-white uppercase tracking-wider mb-2; */
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.header-subtitle {
+    /* @apply text-teal-200 text-lg font-medium; */
+    color: #99f6e4;
+    /* text-teal-200 */
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+/* Founder Profile Area */
+.founder-profile-area {
+    /* @apply flex flex-col items-center -mt-16 mb-8 px-6; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -4rem;
+    /* -mt-16 */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* Founder Image Styling */
+.founder-image {
+    /* @apply w-40 h-40 object-cover rounded-full border-8 border-white shadow-lg ring-4 ring-teal-500 transition duration-300 hover:scale-105; */
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    margin-top: 25px;
+    z-index: 50;
+    border-radius: 9999px;
+    /* rounded-full */
+    border-width: 8px;
+    border-color: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    /* shadow-lg */
+    --tw-ring-color: #14b8a6;
+    /* ring-teal-500 */
+    --tw-ring-opacity: 1;
+    --tw-ring-width: 4px;
+    transition-duration: 300ms;
+    transition-property: transform;
+}
+
+.founder-image:hover {
+    transform: scale(1.05);
+    /* hover:scale-105 */
+}
+
+.founder-name {
+    /* @apply text-3xl font-bold text-gray-800 mt-4; */
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: white;
+    /* text-gray-800 */
+    margin-top: 1rem;
+}
+
+.founder-role {
+    /* @apply text-xl text-teal-600 font-semibold mb-6; */
+    font-size: 1.25rem;
+    color: rgb(153,246,228);
+    /* text-teal-600 */
+    font-weight: 600;
+}
+
+/* ----------------------------------
+ * Message Content & Signature
+ * ---------------------------------- */
+
+.message-content {
+    /* @apply p-8 md:p-12 text-left; */
+    padding: 2rem;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .message-content {
+        padding: 3rem;
+    }
+}
+
+/* Blockquote/Italic Style */
+.message-quote {
+    /* @apply text-xl text-gray-800 leading-relaxed mb-8 border-l-4 border-teal-500 pl-6 italic font-serif; */
+    font-size: 1.2rem;
+    color: #1f2937;
+    /* text-gray-800 */
+    line-height: 1.625;
+    /* leading-relaxed */
+    margin-bottom: 2rem;
+    text-align: center;
+    border-left-width: 4px;
+    border-color: #14b8a6;
+    /* border-teal-500 */
+    padding-left: 0.6rem;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+/* General Paragraphs */
+.message-paragraph {
+    /* @apply text-base text-gray-600 leading-relaxed mb-6; */
+    font-size: 1rem;
+    color: #4b5563;
+    /* text-gray-600 */
+    line-height: 1.625;
+    /* leading-relaxed */
+    margin-bottom: 1.5rem;
+}
+
+/* Message Image Styling */
+.message-section {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.message-image {
+    width: 100%;
+    max-width: 900px;
+    height: 100%;
+    border-radius: 20px;
+    border: 4px solid #14b8a6;
+    
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .message-section {
+        margin: 2rem 0;
+    }
+
+    .message-image {
+        max-width: 90%;
+        border-radius: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .message-image {
+        max-width: 100%;
+        border-width: 3px;
+        border-radius: 12px;
+    }
+}
+
+
+/* Signature Block */
+.signature-block {
+    /* @apply text-right mt-10 pt-4 border-t border-gray-200; */
+    text-align: right;
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top-width: 1px;
+    border-color: #e5e7eb;
+    /* border-gray-200 */
+}
+
+.signature-name {
+    /* @apply text-xl font-bold text-gray-800; */
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+    /* text-gray-800 */
+}
+
+.signature-title {
+    /* @apply text-md text-teal-600; */
+    font-size: 1rem;
+    color: #0d9488;
+    /* text-teal-600 */
+}
+
+.signature {
+    color: #0d9488;
+    font-size: 1.3em;
+}
+
+/* ----------------------------------
+ * Footer Branding
+ * ---------------------------------- */
+
+
+.card-footer-bg {
+    /* @apply bg-gray-800 p-6 text-center; */
+    background-color: #1f2937;
+    /* bg-gray-800 */
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.footer-title2 {
+    /* @apply text-yellow-400 text-3xl font-bold tracking-wider uppercase; */
+    color: #facc15;
+    /* text-yellow-400 */
+    font-size: 1.875rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.footer-subtitle2 {
+    /* @apply text-yellow-200 text-xl mt-1; */
+    color: #fde047;
+    /* text-yellow-200 */
+    font-size: 1.25rem;
+    margin-top: 0.25rem;
+}
+
+.footer-logo {
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+}
+
+
