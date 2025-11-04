@@ -773,7 +773,11 @@ html {
   width: 200px;
 }
 
-.view-more a{
+.view-more-btn a{
+  text-decoration: none;
+}
+
+.view-more-btn a:hover{
   text-decoration: none;
 }
 
