@@ -83,7 +83,6 @@
     /* @apply w-40 h-40 object-cover rounded-full border-8 border-white shadow-lg ring-4 ring-teal-500 transition duration-300 hover:scale-105; */
     width: 10rem;
     height: 10rem;
-    object-fit: cover;
     margin-top: 25px;
     z-index: 50;
     border-radius: 9999px;
