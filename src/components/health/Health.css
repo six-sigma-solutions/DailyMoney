@@ -773,6 +773,10 @@ html {
   width: 200px;
 }
 
+.view-more a{
+  text-decoration: none;
+}
+
 .view-more-btn:hover {
   background-color: #087d9e;
   transform: scale(1.05);
