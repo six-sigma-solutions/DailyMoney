@@ -182,7 +182,6 @@
 }
 
 .view-more {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -221,12 +220,12 @@
   }
 
   .view-more-btn {
-    width: 80%;
+    width: 100% !important;
   }
 }
 
 @media (max-width: 480px) {
   .view-more-btn {
-    width: 100%;
+    width: 200px;
   }
 }
