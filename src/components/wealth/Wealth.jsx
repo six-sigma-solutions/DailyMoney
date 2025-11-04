@@ -95,13 +95,13 @@ const Wealth = () => {
         </section>
       </main>
 
-      <section className="blog">
-              <div className="view-more-link-my-life">
-              <Link className="view-more-link" to="/family">
-              <button className="view-more" type="button" style={{ width: "200px" }}>View More</button>
-              </Link> 
-              </div>
-            </section>
+    <section className="blog">
+        <div className="view-more-link-my-life">
+          <Link className="view-more-link" to="/family">
+            <button className="view-more" type="button">View More</button>
+          </Link>
+        </div>
+      </section>
      
       <div className="card-footer-bg">
                     {/* START: ADDED LOGO SECTION */}
