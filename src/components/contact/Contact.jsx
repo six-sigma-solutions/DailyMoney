@@ -195,23 +195,24 @@ export default function Contact() {
           <strong style={{ paddingTop: "80px" }}>Get in touch</strong>
           <h3 style={{ paddingTop: "0px" }}>Email us</h3>
           <p>
-            <a href="mailto:cpdian@gmail.com">cpdian@gmail.com</a>
+            <a href="support@dmhealthy.com">support@dmhealthy.com</a><br/ >
+            <a href="service@dmhealthy.com">service@dmhealthy.com</a>
           </p>
 
           <strong>Call us</strong>
           <p>
-            <a href="tel:+919884590009">+91 9884590009</a>
+            <a href="tel:+91 7904373255">+91 7904373255</a>
           </p>
 
           <strong style={{ paddingTop: "80px" }}>Get in Touch</strong>
           <p className="social-links">
-            <a href="https://x.com/cpdian?s=11">
+            <a href="https://x.com/dailymsghealthy">
               <i className="fa-brands fa-x-twitter"></i>
             </a>
-            <a href="https://www.facebook.com/share/1Cx1RDAMqQ/?mibextid=wwXIfr">
+            <a href="https://www.facebook.com/Daily.Message.Healthy">
               <i className="fa-brands fa-facebook"></i>
             </a>
-            <a href="https://www.instagram.com/chellapondyvellaiswamy">
+            <a href="https://www.instagram.com/daily_message_healthy/">
               <i className="fa-brands fa-instagram"></i>
             </a>
             <a href="tel:+919884590009">
@@ -241,15 +242,19 @@ export default function Contact() {
               required
             />
             <div className="phone-input-container">
+
+              </div>
+            <div className="phone-input-container">
               <select
-                name="Select a country"
+                // --- FIX: Changed name to "countryCode" to match the state key ---
+                name="countryCode" 
                 value={form.countryCode}
                 onChange={handleChange}
                 className="country-code-select"
               >
                 {countryCodes.map((country) => (
                   <option key={country.code} value={country.code}>
-                    {country.flag} {country.code} {country.country}
+                    {country.code}  {country.country}
                   </option>
                 ))}
               </select>
