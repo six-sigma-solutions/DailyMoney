@@ -247,21 +247,127 @@ html { scroll-behavior: smooth; }
 
 /* ---------------- FOOTER ---------------- */
 .footer {
+ 
   background: #000000;
-  padding: 20px 60px;
+  padding: 20px 60px; /* more horizontal padding so content breathes on wide screens */
   text-align: center;
   border-top: 2px solid #e5e7eb;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.15;
-  width: 100%;
+  width: 100%; /* allow footer to span full width */
+  max-width: none; /* remove previous cap */
   box-sizing: border-box;
 }
 
-.footer h1 { font-size: 1.7rem; font-weight: 900; color: #fffb2c; text-align: start; padding: 0 80px; }
-.footer h2 { font-size: 1.5rem; font-weight: 900; color: #cdefff; }
-.footer .english { font-size: 1.8rem; font-weight: 900; color: #ffffff; }
+.footer:hover { transform: translateY(-3px); }
 
+.footer h1 { font-size: 1.7rem; font-weight: 900; margin-bottom: 13px; 
+  padding: 20px;
+  color: #fffb2c; 
+  text-align:start;
+  padding: 0 80px;
+}
+.footer h2 { font-size: 1.5rem; font-weight: 900; padding: 20px; margin-bottom: 13px; color: #cdefff }
+
+.footer .english { font-size: 1.8rem; font-weight: 900; margin-bottom: 13px; color: #ffffff; }
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .author {
+    font-size: 1.1rem;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .author {
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 0;
+  }
+}
+
+
+
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  .hero { padding: 40px 30px; }
+  .hero-title { font-size: 2.5rem; }
+  .hero-content h1 { font-size: 2.2em; }
+  .hero-content p { font-size: 1.1em; }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .hero { flex-direction: column; text-align: center; padding: 30px 20px; }
+  .hero-content { max-width: 100%; padding-top: 20px; text-align: center; }
+  .hero-title { font-size: 2.2rem; white-space: normal; }
+  .hero-content h1 { font-size: 2em; }
+  .hero-content p { font-size: 1em; }
+  .btn-primary { padding: 12px 24px; font-size: 0.95rem; margin:20px 160px 20px 160px; }
+
+
+}
+
+/* Small Mobile (≤480px) */
+@media (max-width: 480px) {
+  .hero { padding: 20px 15px; gap: 20px; }
+  .hero-title { font-size: 1.8rem; }
+  .hero-content h1 { font-size: 1.6rem; }
+  .hero-content p { font-size: 0.9rem; }
+  .btn-primary { padding: 10px 20px; font-size: 11px; margin: 20px 120px 20px 120px; }
+
+
+/* For tablets */
+@media (max-width: 768px) {
+  .footer h1 {
+    text-align: center;
+    padding: 0 50px;
+    font-size: 1.5rem;
+  }
+
+  .footer h2 {
+    font-size: 1.3rem;
+  }
+
+  .footer .english {
+    font-size: 1.4rem;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .footer h1 {
+    padding: 0;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .footer h2 {
+    font-size: 1.1rem;
+  }
+
+  .footer .english {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+  footer { padding: 30px 15px; }
+  footer .footer { max-width: 90%; padding: 20px 15px; }
+  footer .footer h1 { font-size: 1.2rem; }
+  footer .footer h2 { font-size: 0.95rem; }
+}
 /* ---------------- TABLET ---------------- */
 @media (max-width: 1024px) {
   .hero { padding: 40px 30px; }
@@ -279,7 +385,7 @@ html { scroll-behavior: smooth; }
   .container, .container-1 { flex-direction: column; text-align: center; padding: 20px; }
   .container img, .container-1 img { width: 300px; height: auto; margin: 0 auto; }
   .box, .box-1 { padding: 20px; text-align: center; }
-  .footer { padding: 20px; }
+  
 }
 
 /* ---------------- SMALL PHONE ---------------- */
@@ -287,7 +393,7 @@ html { scroll-behavior: smooth; }
   .hero-title { font-size: 1.8rem; }
   .container img, .container-1 img { max-width: 220px; }
   .box h1, .box-1 h1 { font-size: 1.2rem; }
-  .footer h1 { font-size: 1.2rem; }
+  
 }
 
 /* ------------------- MOBILE RESPONSIVE ZIGZAG FIX ------------------- */
@@ -345,10 +451,7 @@ html { scroll-behavior: smooth; }
     margin: 0 auto !important;
   }
 
-  .footer {
-    padding: 20px 10px !important;
-    text-align: center !important;
-  }
+  
 }
 
 /* ---------------- SMALLER PHONES ---------------- */
