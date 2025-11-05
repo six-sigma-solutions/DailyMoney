@@ -118,7 +118,34 @@ img:hover { transform: scale(1.05); }
   max-width: 700px;          
   font-size: 18px;          
 }
+.blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0;
+  /* gives some space above/below */
+}
 
+
+.view-more {
+  width: 200px;
+  text-align: center;
+}
+
+.view-more-link {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.view-more-link-my-life {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
 
 .btn-primary {
