@@ -675,7 +675,7 @@ html {
   width: 100%; /* allow footer to span full width */
   max-width: none; /* remove previous cap */
   box-sizing: border-box;
-  margin: 10px -14px;
+  margin: 10px -1px;
 }
 
 .footer:hover { transform: translateY(-3px); }
