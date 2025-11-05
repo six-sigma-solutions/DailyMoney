@@ -717,13 +717,14 @@ body {
 /* ======================================================= */
 .clients-container {
   max-width: 1500px;
-  margin: 50px auto;
+  margin:100px auto 158px auto;
   text-align: center;
   /* New styles to stack the founder and the grid */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 
 .clients-title {
   font-size: 2.4em;
