@@ -27,37 +27,39 @@ img {
   height: auto;
 }
 
-/* Mobile viewport fixes */
+:root {
+  --global-space: 0 40px;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --global-space: 0 20px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1800px) { 
+  :root {
+    --global-space: 5px 45px;
+    margin: 0 auto;
+  }
+} 
+
 @media (max-width: 768px) {
-  body {
-    max-width: 100%;
-    font-size: 16px; /* Prevent zoom on iOS */
+  :root {
+    --global-space: 0 10px;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 480px) {
-  body {
-    padding: 0;
+  :root {
+    --global-space: 0 5px;
+    margin: 0 auto;
   }
 }
 
-
-
-/* Big screens (TVs, large monitors) */
-@media (min-width: 1500px) {
-  body {
-    width: 80%;           /* gives more space left & right */
-    margin: 0 auto;       /* centers content */
-  }
+body, .container, .section {
+  padding: var(--global-space);
+  margin: var(--global-space);
 }
-
-/* Ultra wide monitors */
-@media (min-width: 2000px) {
-  body {
-    width: 60%;    
-    margin: 0 auto;       /* more side space for ultra-wide */
-  }
-}
-
-
-
