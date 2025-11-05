@@ -58,11 +58,11 @@ const Family = () => {
           </div>
           <div className="step-content">
             <h3 className="highlight-text">
-              <i>
+              <p>
                 I have secured my family's health, education, and finances, and
                 aim to ensure long term security, growth, and happiness for
                 future generations.
-              </i>
+              </p>
             </h3>
           </div>
         </div>
@@ -74,11 +74,11 @@ const Family = () => {
           </div>
           <div className="step-content">
             <h3 className="highlight-text">
-              <i>
+              <p>
                 I've secured my family's well being and plan to expand their
                 opportunities, by investing in their safety, education, and
                 lifestyle.
-              </i>
+              </p>
             </h3>
           </div>
         </div>
@@ -90,10 +90,10 @@ const Family = () => {
           </div>
           <div className="step-content">
             <h3 className="highlight-text">
-              <i>
+              <p>
                 I've secured my children's future through education, savings, and
                 guidance, aiming for long term financial support.
-              </i>
+              </p>
             </h3>
           </div>
         </div>
@@ -108,10 +108,10 @@ const Family = () => {
           </div>
           <div className="step-content">
             <h3 className="highlight-text">
-              <i>
+              <p>
                 I prioritize my family, ensuring their financial security and providing 
                 emotional support even after me.
-              </i>
+              </p>
             </h3>
           </div>
         </div>
