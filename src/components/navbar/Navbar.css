@@ -19,8 +19,11 @@
   align-items: center;
   justify-content: space-between;
   height: 72px;
-  padding: 0 -100px; /* increased gap inside navbar */
-  background-color: #fff; /* optional */
+  padding: 0 -100px;
+  /* increased gap inside navbar */
+  margin-right: -70px;
+  background-color: #fff;
+  /* optional */
 }
 
 
