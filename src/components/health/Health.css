@@ -42,8 +42,8 @@ img:hover { transform: scale(1.05); }
 }
 
 .health-heading {
-  text-align: left;
-  margin: 0 20px;
+    text-align: center;
+    padding-left: 18px;
 }
 .health-heading span{
     background-color: darkgreen;
