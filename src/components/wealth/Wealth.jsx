@@ -10,8 +10,8 @@ const Wealth = () => {
       <header className="wealthy-header">
         <div className="wealthy-container wealthy-header-inner">
           <div className="wealth-heading">
-      <span>Our Wealth</span>
-      </div>
+            <span>Our Wealth</span>
+          </div>
         </div>
       </header>
 
@@ -33,7 +33,7 @@ const Wealth = () => {
           <div className="wealthy-row" style={{ background: "#3d6663" }}>
             <div className="wealthy-col wealthy-image-col" >
               <img src="wealth85.png" alt="Wealth concept 1" />
-            </div> 
+            </div>
             <div className="wealthy-col wealthy-text-col row1">
               <h2>
                 <span className="wealthy-check" >  ✓  </span>
@@ -50,9 +50,9 @@ const Wealth = () => {
               <img src="wealth99.png" alt="Wealth concept 2" />
             </div>
             <div className="wealthy-col wealthy-text-col row2" >
-              <h2 style={{ backgroundColor: "#382813"}}>
+              <h2 style={{ backgroundColor: "#382813" }}>
                 <span className="wealthy-check">  ✓  </span>
-                True wealth begins with discipline — living with intention,
+                True wealth begins with discipline living with intention,
                 saving with wisdom, and investing with vision. It grows not only
                 through income but also through knowledge, relationships, and the
                 values we pass on to the next generation.
@@ -66,7 +66,7 @@ const Wealth = () => {
               <img src="w1.jpg" alt="Wealth concept 3" />
             </div>
             <div className="wealthy-col wealthy-text-col row3">
-              <h2 style={{ backgroundColor: "#910000"}}>
+              <h2 style={{ backgroundColor: "#910000" }}>
                 <span className="wealthy-check">  ✓  </span>
                 Our wealth is not just about what we accumulate, but about what
                 we enable. With it, we gain the ability to support our
@@ -82,9 +82,9 @@ const Wealth = () => {
               <img src="wealth44.png" alt="Wealth concept 4" />
             </div>
             <div className="wealthy-col wealthy-text-col row4">
-              <h2 style={{ backgroundColor: "navy"}}>
+              <h2 style={{ backgroundColor: "navy" }}>
                 <span className="wealthy-check">  ✓  </span>
-                Wealth is not greed — it is growth. It is not selfishness—it is
+                Wealth is not greed it is growth. It is not selfishness it is
                 stewardship. When guided by purpose, wealth becomes a force for
                 freedom, impact, and legacy. Our wealth is our power to
                 live with dignity, give with generosity, and build a future that
@@ -95,29 +95,29 @@ const Wealth = () => {
         </section>
       </main>
 
-    <section className="blog">
+      <section className="blog">
         <div className="view-more-link-my-life">
           <Link className="view-more-link" to="/family">
             <button className="view-more" type="button">View More</button>
           </Link>
         </div>
       </section>
-     
+
       <div className="card-footer-bg">
-                    {/* START: ADDED LOGO SECTION */}
-                    <div className="footer-logo-container">
-                        <img
-                            // This logo URL is consistent with your Navbar.jsx
-                            src="DM.png" 
-                            alt="DailyMoney Logo"
-                            className="footer-logo"
-                        />
-                    </div>
-              
-                    <p className="footer-subtitle2">
-                        Independent for Entire Life
-                    </p>
-                </div>
+        {/* START: ADDED LOGO SECTION */}
+        <div className="footer-logo-container">
+          <img
+            // This logo URL is consistent with your Navbar.jsx
+            src="DM.png"
+            alt="DailyMoney Logo"
+            className="footer-logo"
+          />
+        </div>
+
+        <p className="footer-subtitle2">
+          Independent for Entire Life
+        </p>
+      </div>
     </div>
   );
 };
