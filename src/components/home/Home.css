@@ -1236,7 +1236,6 @@ body {
 
 .footer-links-block1 {
   display: flex;
-  margin-right: 150px;
   gap: 200px;
   flex-wrap: wrap;
 }
