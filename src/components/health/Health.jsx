@@ -46,7 +46,7 @@ const Health = () => {
       <div className="container-1 right-image">
         <img src="healthpc.jpg" alt="Styled" className="styled-img" />
         <div className="box color1">
-          <h1>Health and fitness are not temporary they are my lifetime goal.</h1>
+          <h1>Health and fitness are not temporary they are my <br /> lifetime goal.</h1>
           <h1>Health is not a destination it’s a lifelong evolution.</h1>
           <h1>Fitness is the art <br />I practice for life.</h1>
         </div>
@@ -65,7 +65,7 @@ const Health = () => {
               <img src="sunday.jpg" alt="Styled" className="styled-img" />
               <div className="box color3">
                 <h1>I need lifelong health and fitness.</h1>
-                <h1>I’m powered by purpose strong for life.</h1>
+                <h1>I’m powered by purpose strong <br /> for life.</h1>
                 <h1>Wellness is not a goal it’s my lifetime mission.</h1>
               </div>
             </div>
@@ -76,7 +76,7 @@ const Health = () => {
         <img src="healthcopy.jpg" alt="Styled" className="styled-img" />
         <div className="box-1 color4">
           <h1>I want to be fit, strong, and energetic for my entire life.</h1>
-          <h1>Forever active, forever alive,<br /> forever me.</h1>
+          <h1>Forever active, <br /> forever alive,<br /> forever me.</h1>
           <h1>I live strong, I stay fit, I grow limitless.</h1>
         </div>
       </div>
