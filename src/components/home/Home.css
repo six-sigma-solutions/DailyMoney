@@ -87,13 +87,13 @@ body {
   background: Linear-gradient(45deg, rgb(206, 219, 28), rgb(121, 216, 216));
   color: navy;
   display: inline-block;
-  font-size: 19px;
-  padding: 10px 120px;
+  font-size: 22px;
+  padding: 20px;
   border-radius: 15px;
   margin-top: 30px;
   margin-left: -50px;
   font-weight: 600;
-  width: 1210px;
+  width: 105%;
 }
 
 .dm span{
