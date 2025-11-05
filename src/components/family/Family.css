@@ -7,7 +7,7 @@
 body { color: #222; background: #fff; line-height: 1.5; overflow-x: hidden; padding: 0 20px; }
 
 /* Base text */
-li, p { font-size: 17px; margin-bottom: 5px; }
+li, p { font-size: 24px; margin-bottom: 5px; }
 
 /* ======================================================= */
 /* NAVBAR                                                   */
@@ -47,7 +47,7 @@ li, p { font-size: 17px; margin-bottom: 5px; }
 /* ======================================================= */
 .step-img {  display: flex; justify-content: center; align-items: center; }
 
-.step-img img { width: 100%; max-width: 350px; height: 250px; border-radius: 12px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12); object-fit: fill; transition: transform 0.4s ease; cursor: pointer; }
+.step-img img { width: 300px; height: 250px; border-radius: 12px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12); object-fit: fill; transition: transform 0.4s ease; cursor: pointer; }
 
 .step-img img:hover { transform: scale(1.05); }
 
