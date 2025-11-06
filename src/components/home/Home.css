@@ -410,6 +410,7 @@ body {
   gap: 60px; /* Space between text and image */
   padding: 40px 0 170px 0;
   flex-wrap: wrap;
+  margin: 120px 0 0;
 }
 
 .solution-text-content {
