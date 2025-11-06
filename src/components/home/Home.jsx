@@ -320,7 +320,7 @@ export default function Home() {
           <hr className="footer-divider1" />
           <div className="footer-bottom-content1">
             <div className="footer-logo-block1">
-              <img src="DM.png" alt="DailyMoney Logo" />
+              <img src="DM-100.jpg" alt="DailyMoney Logo" />
              <p className="footer-address">
                 Six Sigma Solutions,<br />
                 NKC Towers 1st Floor,<br />
