@@ -108,7 +108,7 @@ const Wealth = () => {
         <div className="footer-logo-container">
           <img
             // This logo URL is consistent with your Navbar.jsx
-            src="DM.png"
+            src="DM-100.jpg"
             alt="DailyMoney Logo"
             className="footer-logo"
           />
