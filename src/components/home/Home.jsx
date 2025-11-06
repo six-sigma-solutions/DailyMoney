@@ -358,7 +358,7 @@ export default function Home() {
                 <h4>Connect</h4>
                 <ul>
                   <li>
-                    <a href="https://x.com/dailymsghealthy"><i class="fa-brands fa-x-twitter"></i> X</a>
+                    <a href="https://x.com/dailymsghealthy"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
                   </li>
                   <li>
                     <a href="https://www.facebook.com/Daily.Message.Healthy"><i class="fa-brands fa-facebook"></i> Facebook</a>
