@@ -321,11 +321,13 @@ export default function Home() {
           <div className="footer-bottom-content1">
             <div className="footer-logo-block1">
               <img src="DM.png" alt="DailyMoney Logo" />
-              <span className="footer-subtext1">
-                Six Sigma Solutions,<br /> NKC Towers 
-                1st Floor,<br /> Opp to Government Engineering College,<br />
-                Kottagoundampatti, Karuppur,<br /> Salem-636011. TamilNadu, India.
-              </span>
+             <p className="footer-address">
+                Six Sigma Solutions,<br />
+                NKC Towers 1st Floor,<br />
+                <span className="no-wrap">Opp to Government Engineering College,</span><br />
+                Kottagoundampatti, Karuppur,<br />
+                Salem-636011. TamilNadu, India.
+              </p>
               <span className="footer-copyright1">
                 © 2025. All rights reserved.
               </span>
