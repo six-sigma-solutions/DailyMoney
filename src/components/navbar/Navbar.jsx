@@ -24,7 +24,7 @@ export default function Navbar() {
         {/* LEFT: Logo */}
         <Link to="/" className="logo">
           <img
-            src="DM-99.jpg" 
+            src="DM-100.jpg" 
             alt="DailyMoney Logo"
           />
         </Link>
