@@ -809,6 +809,15 @@ body {
   justify-content: flex-end;
   color: #fff;
 }
+.footer-address {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+.footer-address .no-wrap {
+  white-space: nowrap;
+}
 
 .footer-cta1 {
   text-align: start;
