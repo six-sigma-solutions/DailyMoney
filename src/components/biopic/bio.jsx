@@ -148,8 +148,8 @@ function Bio() {
         </div>
         <div className="team-member">
           <div className="profile">
-            <img src="" alt="XXXX"/>
-            <h2>X X X X</h2>
+            <img src="raju.jpg" alt="Team Member 2"/>
+            <h2>Ilayaraju C</h2>
           </div>
           <a href="Contact" rel="noopener noreferrer" className="team-member-link">
             <span className="slogan">Choosing health and happiness every day.</span>
@@ -158,8 +158,8 @@ function Bio() {
         </div>
         <div className="team-member">
           <div className="profile">
-            <img src="raju.jpg" alt="Team Member 2"/>
-            <h2>Ilayaraju C</h2>
+            <img src="" alt="XXXX"/>
+            <h2>X X X X</h2>
           </div>
           <a href="Contact"  rel="noopener noreferrer" className="team-member-link">
             <span className="slogan">Small steps lead to big changes.</span>
