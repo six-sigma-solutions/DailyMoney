@@ -33,6 +33,7 @@
 .logo img {
   height: 55px;
   display: block;
+  border-radius:10px;
 }
 
 /* DESKTOP MENU */
