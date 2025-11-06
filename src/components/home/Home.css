@@ -718,7 +718,7 @@ body {
 /* ======================================================= */
 .clients-container {
   max-width: 1500px;
-  margin:100px auto 158px auto;
+  margin: 80px auto;
   text-align: center;
   /* New styles to stack the founder and the grid */
   display: flex;
