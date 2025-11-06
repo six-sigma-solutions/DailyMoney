@@ -5,7 +5,7 @@
 /* Reduce general page padding and spacing */
 .wealthy-page {
   min-height: 100vh;
-  width: 105%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -35,7 +35,8 @@
 /* Hero section tightened */
 .wealthy-hero-card {
   box-shadow: 0 6px 20px rgba(15, 20, 25, 0.06);
-  margin: 20px auto 0;
+  padding: 5px;
+  margin: 10px auto 0;
 }
 
 .wealthy-hero-card img {
@@ -54,10 +55,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 60px;
-  /* reduced from 3rem */
-  padding: 100px 0;
-  /* reduced from 7rem */
+  gap: 60px; /* reduced from 3rem */
+  padding: 100px 0; /* reduced from 7rem */
 }
 
 /* Row spacing reduced */
@@ -68,13 +67,11 @@
   gap: 2rem;
   padding: 40px;
   border-radius: 40px;
-
 }
 
 .wealthy-row.wealthy-reverse .wealthy-image-col {
   order: 2;
 }
-
 .wealthy-row.wealthy-reverse .wealthy-text-col {
   order: 1;
 }
@@ -84,7 +81,6 @@
   display: flex;
   justify-content: center;
 }
-
 .wealthy-image-col img {
   width: 100%;
   max-width: 360px;
@@ -101,20 +97,18 @@
   transition: all 0.3s ease;
   text-align: justify;
 }
-
 .wealthy-text-col:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
 }
-
 .wealthy-text-col h2 {
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 0.6rem;
   text-align: start;
   color: white;
   background-color: green;
   border-radius: 25px;
-  padding: 30px;
+  padding: 20px;
 }
 
 .wealthy-text-col p {
@@ -156,7 +150,6 @@
 }
 
 @media (max-width: 520px) {
-
   .wealth-heading span {
     font-size: 22px;
     line-height: 2.8rem;
@@ -233,5 +226,105 @@
 @media (max-width: 480px) {
   .view-more-btn {
     width: 200px;
+  }
+}
+
+/* ========================================================= */
+/* EXTRA RESPONSIVE ENHANCEMENTS (Without changing original)  */
+/* ========================================================= */
+
+/* Tablet screens (max-width: 992px) */
+@media (max-width: 992px) {
+  .wealthy-row {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 25px;
+  }
+
+  .wealthy-image-col img {
+    max-width: 80%;
+  }
+
+  .wealthy-text-col {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .wealthy-text-col h2 {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .wealthy-text-col p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .wealth-heading span {
+    font-size: 24px;
+    line-height: 2.6rem;
+    margin: 0 20%;
+  }
+
+  .wealthy-hero-card img {
+    height: auto;
+    max-height: 350px;
+  }
+
+  .wealthy-zigzag {
+    padding: 60px 0;
+    gap: 40px;
+  }
+
+  .wealthy-text-col {
+    padding: 16px;
+    box-shadow: none;
+  }
+
+  .wealthy-text-col h2 {
+    font-size: 18px;
+  }
+
+  .view-more-btn {
+    width: 80%;
+    font-size: 15px;
+  }
+}
+
+/* Small mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .wealth-heading span {
+    font-size: 20px;
+    line-height: 2.4rem;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  .wealthy-hero-card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 0;
+  }
+
+  .wealthy-text-col h2 {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .wealthy-text-col p {
+    font-size: 0.9rem;
+  }
+
+  .wealthy-footer {
+    font-size: 12px;
+  }
+
+  .view-more-btn {
+    width: 180px;
+    font-size: 14px;
+    padding: 10px 20px;
   }
 }
