@@ -55,7 +55,7 @@ export default function Home() {
         <div className="hero-content">
           <h1 id="daily-money">
             <span className="hero-red">
-              D<span className="money">M</span>
+              Daily<span className="money">Message</span>
             </span>
           </h1>
           <strong>
