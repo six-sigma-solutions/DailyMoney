@@ -33,15 +33,15 @@ img {
 
 @media (max-width: 1200px) {
   :root {
-    --global-space: 0 20px;
+    --global-space: 0 20px 30px;
     margin: 0 auto;
   }
 }
 
 @media (max-width: 1800px) { 
   :root {
-    --global-space: 0px 40px;
-    margin: 0 ;
+    --global-space: 0px 45px 30px;
+    margin: 0 auto;
   }
 } 
 
