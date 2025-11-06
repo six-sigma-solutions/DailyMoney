@@ -1882,3 +1882,25 @@ cubic-bezier(.175, .885, .32, 1.275);
     padding: 8px 16px;
   }
 }
+
+@media (max-width: 480px) {
+  .footer-address {
+    font-size: 13px;
+    width: fit-content;
+    text-align: left;
+    padding: 10px 4px;
+    word-break: break-word;
+    line-height: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-address {
+    font-size: 16px;
+    width: fit-content;
+    text-align: left;
+    padding: 10px 4px;
+    word-break: break-word;
+    line-height: 1.8;
+  }
+}
