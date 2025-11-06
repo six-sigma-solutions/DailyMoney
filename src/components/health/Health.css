@@ -267,8 +267,9 @@ html { scroll-behavior: smooth; }
   color: #fffb2c; 
   text-align:start;
   padding: 0 80px;
+  line-height:1.6;          
 }
-.footer h2 { font-size: 1.5rem; font-weight: 900; padding: 20px; margin-bottom: 13px; color: #cdefff }
+.footer h2 { font-size: 1.5rem; font-weight: 900; padding: 20px; margin-bottom: 13px;  line-height:1.6;  color: #cdefff }
 
 .footer .english { font-size: 1.8rem; font-weight: 900; margin-bottom: 13px; color: #ffffff; }
 
