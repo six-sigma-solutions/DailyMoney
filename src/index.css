@@ -40,8 +40,8 @@ img {
 
 @media (max-width: 1800px) { 
   :root {
-    --global-space: 0px 30px;
-    margin: 0 auto;
+    --global-space: 0px 50px;
+    margin: 0 ;
   }
 } 
 
