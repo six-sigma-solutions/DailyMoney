@@ -1234,6 +1234,7 @@ body {
   width: 90px;
   margin-left: 0 !important;
   padding: 0 !important;
+  border-radius:25px;
 }
 
 .footer-logo-text1 {
