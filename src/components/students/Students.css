@@ -1,0 +1,251 @@
+/* ===================================================== */
+/* Students Page Styles - ALL CLASSES ARE ISOLATED WITH stu-page- PREFIX */
+/* ===================================================== */
+
+/* ---------- Root & Base ---------- */
+.stu-page-wrapper {
+  --stu-page-muted: #6b7280;
+  --stu-page-text: #0f172a;
+  --stu-page-bg: #ffffff;
+  --stu-page-accent: #16a34a; /* Vibrant green */
+  
+  font-family: "Inter", Arial, sans-serif;
+  background: var(--stu-page-bg);
+  color: var(--stu-page-text);
+  line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+.stu-page-header {
+  text-align: center;
+  padding: 20px;
+  color: darkgreen;
+  margin: 30px 40px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.stu-page-header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+
+/* ---------- Container ---------- */
+.stu-page-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* ---------- Sections ---------- */
+.stu-page-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 90px;
+  margin: 20px 40px 120px 40px;
+}
+
+.stu-page-reverse-section {
+  flex-direction: row-reverse;
+}
+
+/* ---------- Image Box ---------- */
+.stu-page-image-box {
+  position: relative;
+  flex: 1;
+  max-width: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.stu-page-image-box img {
+  width: 320px;
+  height: 520px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.stu-page-image-box:hover {
+  transform: scale(1.0);
+  box-shadow: 0 12px 35px rgba(22, 163, 74, 0.35); /* Green glow */
+}
+
+/* ---------- Text Block ---------- */
+.stu-page-text-block {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ✅ FIXED tick + text alignment */
+.stu-page-tagline-text {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 1.4rem;
+  color: var(--stu-page-text);
+  line-height: 1.8;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.stu-page-tagline-text strong {
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.5;
+    align-content: space-around;
+    font-size: 24px;
+}
+
+
+/* ✅ Tick icon alignment fix */
+.stu-page-tick-icon {
+  color: var(--stu-page-accent);
+  font-size: 1.4em;
+  line-height: 1.4;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+/* ✅ Highlighted words styling */
+.stu-page-highlight-text {
+  color: var(--stu-page-accent);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* ---------- Footer ---------- */
+.stu-page-footer {
+  text-align: center;
+  padding: 15px;
+  background: #f1f1f1;
+  color: var(--stu-page-muted);
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* ---------- Visibility Animations ---------- */
+.stu-page-animate-block {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.stu-page-animate-block.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Button & View More Link ---------- */
+
+
+
+
+/* ---------- Tablet Layout ---------- */
+@media (max-width: 1000px) {
+  .stu-page-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .stu-page-reverse-section {
+    flex-direction: column;
+  }
+
+  .stu-page-image-box {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .stu-page-tagline-text {
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .stu-page-highlight-text {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+/* ---------- Mobile Layout (768px) ---------- */
+@media (max-width: 768px) {
+  .stu-page-container {
+    padding: 0 15px;
+    gap: 40px;
+    margin: 20px auto;
+  }
+
+  .stu-page-header {
+    margin: 15px 15px;
+    padding: 15px;
+  }
+
+  .stu-page-header h1 {
+    font-size: 2rem;
+  }
+
+  .stu-page-section {
+    gap: 30px;
+  }
+
+  .stu-page-image-box {
+    max-width: 350px;
+    margin: 0 auto 15px;
+  }
+
+  .stu-page-image-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .stu-page-tagline-text {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .stu-page-highlight-text {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .view-more {
+    width: 200px;
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+}
+
+/* ---------- Extra Small Devices ---------- */
+@media (max-width: 520px) {
+  .stu-page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .stu-page-tagline-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .stu-page-highlight-text {
+      font-size: 24px;
+      align-content: center;
+      line-height: 1.5;
+  }
+
+  .view-more {
+    width: 80%;
+    font-size: 0.95rem;
+  }
+}

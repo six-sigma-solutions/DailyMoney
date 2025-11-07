@@ -1,0 +1,132 @@
+/* ======================================================= */
+/* RESET + BASE STYLES (TIGHT SPACING VERSION)              */
+/* ======================================================= */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', 'Arial', sans-serif; }
+
+/* Changed padding: 0 10px; (from prior) or removed it (from last block) to padding: 0 20px; */
+body { color: #222; background: #fff; line-height: 1.5; overflow-x: hidden; padding: 0 20px; }
+
+/* Base text */
+li, p { font-size: 17px; margin-bottom: 5px; }
+
+/* ======================================================= */
+/* NAVBAR                                                   */
+/* ======================================================= */
+/* Changed padding from 0.4rem 4% to 0.4rem 20px */
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 0.4rem 20px; background: #fff; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 1000; }
+
+.logo { font-size: 1.4rem; font-weight: 700; color: #d40000; }
+
+.btn { background: #d40000; color: #fff; border: none; padding: 6px 14px; border-radius: 5px; cursor: pointer; transition: all 0.3s ease; }
+
+.btn:hover { background: #a80000; transform: translateY(-1px); }
+
+/* ======================================================= */
+/* PROCESS SECTION                                          */
+/* ======================================================= */
+.process { margin-top: 5px; padding: 5px 0; }
+.health-heading{
+  margin: 0 40px;
+}
+.health-heading span { margin: 0 -70px; background-color: darkgreen; color: white; display: inline-block; line-height: 2.6rem; font-size: 24px; padding: 0 10px; border-radius: 5px; }
+
+.grow,
+.subtitle { margin: 0 -25px; color: rgb(3, 3, 88); font-weight: 600; font-size: 18px; text-align: start; line-height: 1.4; }
+
+/* ======================================================= */
+/* STEP SECTIONS                                            */
+/* ======================================================= */
+.step { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;     margin: 20px -30px; opacity: 0; transform: translateY(40px); transition: all 0.8s ease-in-out; padding: 5px 0; }
+
+.step.visible { opacity: 1; transform: translateY(0); }
+
+.step.reverse { flex-direction: row-reverse; }
+
+/* ======================================================= */
+/* STEP IMAGE                                               */
+/* ======================================================= */
+.step-img {  display: flex; justify-content: center; align-items: center; }
+
+.step-img img { width: 100%; max-width: 350px; height: 250px; border-radius: 12px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12); object-fit: fill; transition: transform 0.4s ease; cursor: pointer; }
+
+.step-img img:hover { transform: scale(1.05); }
+
+/* ======================================================= */
+/* STEP CONTENT                                             */
+/* ======================================================= */
+.step-content { flex: 1 1 50%; padding: 6px 10px; }
+
+.step-content h3 { font-size: 1.4rem; margin-bottom: 0.6rem; }
+
+.step-content span { color: #d40000; font-weight: bold; }
+
+.step-content ul { list-style: disc; padding-left: 15px; color: #444; margin-top: 0.5rem; line-height: 1.4; }
+
+/* ======================================================= */
+/* HIGHLIGHT TEXT                                           */
+/* ======================================================= */
+.highlight-text { text-align: center; font-weight: 600; line-height: 1.3; font-size: 1.15rem; max-width: 700px; margin: 1rem auto; transition: transform 0.3s ease; padding: 0 8px; }
+
+.highlight-text:hover { transform: scale(1.03); }
+
+/* ======================================================= */
+/* BLOG + FOOTER                                            */
+/* ======================================================= */
+/* Changed padding from 1.5rem 5% to 1.5rem 20px */
+.blog { padding: 1.5rem 20px; border-top: 1px solid #eee; margin-top: 5px; }
+
+.blog a { color: #d40000; text-decoration: none; font-weight: bold; transition: color 0.3s ease; }
+
+.blog a:hover { color: #a80000; }
+
+/* Changed padding from 1rem 5% to 1rem 20px */
+footer { background: #111; color: #fff; text-align: center; padding: 1rem 20px; }
+
+footer .btn { margin: 0.6rem 0; }
+
+.view-more-link{
+  display: flex;
+  justify-content: center;
+  padding: 60px 120px;
+}
+
+
+
+/* ======================================================= */
+/* RESPONSIVE DESIGN (TIGHT)                               */
+/* ======================================================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .step { gap: 0.8rem; }
+  .step-content h3 { font-size: 1.3rem; }
+  .highlight-text { font-size: 1.05rem; }
+  .logo { font-size: 1.2rem; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  /* Changed navbar padding from 0.6rem 3% to 0.6rem 20px */
+  .navbar { flex-direction: column; gap: 6px; padding: 0.6rem 20px; }
+  /* Changed process padding from 0 3% to 0 20px */
+  .process { padding: 0 20px; }
+  .step,
+  .step.reverse { flex-direction: column !important; text-align: center; gap: 20px; }
+  .step-img { width: 100%; max-width: 300px; margin: 0 auto; }
+  .step-content { padding: 0 6px; }
+  .highlight-text { font-size: 1rem; max-width: 95%; }
+  .subtitle,
+  .grow { margin-left: 15px; text-align: left; font-size: 17px; }
+}
+
+/* Small Devices */
+@media (max-width: 480px) {
+  /* Changed navbar padding from 0.5rem 4% to 0.5rem 20px */
+  .navbar { padding: 0.5rem 20px; }
+  .logo { font-size: 1.2rem; }
+  .step { gap: 15px; }
+  .step-img { max-width: 260px; }
+  .step-content h3 { font-size: 1.2rem; }
+  .highlight-text { font-size: 0.95rem; padding: 0 4px; }
+  .btn { width: auto; font-size: 0.85rem; padding: 6px 12px; }
+}
