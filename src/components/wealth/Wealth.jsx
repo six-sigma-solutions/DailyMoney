@@ -52,7 +52,7 @@ const Wealth = () => {
             <div className="wealthy-col wealthy-text-col row2" >
               <h2 style={{ backgroundColor: "#382813"}}>
                 <span className="wealthy-check">  ✓  </span>
-                True wealth begins with discipline — living with intention,
+                True wealth begins with discipline living with intention,
                 saving with wisdom, and investing with vision. It grows not only
                 through income but also through knowledge, relationships, and the
                 values we pass on to the next generation.
@@ -84,7 +84,7 @@ const Wealth = () => {
             <div className="wealthy-col wealthy-text-col row4">
               <h2 style={{ backgroundColor: "navy"}}>
                 <span className="wealthy-check">  ✓  </span>
-                Wealth is not greed — it is growth. It is not selfishness—it is
+                Wealth is not greed it is growth. It is not selfishness, it is
                 stewardship. When guided by purpose, wealth becomes a force for
                 freedom, impact, and legacy. Our wealth is our power to
                 live with dignity, give with generosity, and build a future that
@@ -95,13 +95,13 @@ const Wealth = () => {
         </section>
       </main>
 
-      <section className="blog">
-              <div className="view-more-link-my-life">
-              <Link className="view-more-link" to="/family">
-              <button className="view-more" type="button" style={{ width: "200px" }}>View More</button>
-              </Link> 
-              </div>
-            </section>
+    <section className="blog">
+         <div className="view-more-link-my-life">
+            <Link className="view-more-link" to="/family">
+              <button className="view-more" type="button">View More</button>
+            </Link>
+        </div>
+      </section>
      
       <div className="card-footer-bg">
                     {/* START: ADDED LOGO SECTION */}
