@@ -32,12 +32,12 @@ const Family = () => {
       </div>
         <h2 className="grow" style={{ color: "#d40000"}}>
           “Protect. Grow. Prosper.”
-        </h2>
+        </h2>
         <p className="subtitle">
-          True prosperity comes from both good health and financial security.
+          True prosperity begins with good health and grows with financial freedom.
           With our transparent, collaborative approach, we bring your vision to
           life. Guided by our three-phase methodology, we consistently deliver
-          value and adapt to change building the best world:<br />{" "}
+          value and adapt to change building the best world:{" "}
           <span
             style={{
               backgroundColor: "#d4edda",
@@ -58,11 +58,11 @@ const Family = () => {
           </div>
           <div className="step-content">
             <h3 className="highlight-text">
-              <i>
-                "I have secured my family's health, education, and finances, and
-                aim to ensure long term security, growth, and happiness for
-                future generations."
-              </i>
+              <p>
+                I have secured my family's health, education and finances, and
+                aim to ensure long term security, growth and happiness for
+                future generations.
+              </p>
             </h3>
           </div>
         </div>
@@ -74,11 +74,11 @@ const Family = () => {
           </div>
           <div className="step-content">
             <h3 className="highlight-text">
-              <i>
-                "I've secured my family's well being and plan to expand their
-                opportunities, by investing in their safety, education, and
-                lifestyle."
-              </i>
+              <p>
+                I've secured my family's well being and plan to expand their
+                opportunities, by investing in their safety, education and
+                lifestyle.
+              </p>
             </h3>
           </div>
         </div>
@@ -90,10 +90,10 @@ const Family = () => {
           </div>
           <div className="step-content">
             <h3 className="highlight-text">
-              <i>
-                "I've secured my children's future through education, savings, and
-                guidance, aiming for long term financial support."
-              </i>
+              <p>
+                I've secured my children's future through education, savings and
+                guidance, aiming for long term financial independance.
+              </p>
             </h3>
           </div>
         </div>
@@ -108,19 +108,19 @@ const Family = () => {
           </div>
           <div className="step-content">
             <h3 className="highlight-text">
-              <i>
-                "I prioritize my family, ensuring their financial security and providing 
-                emotional support even after me."
-              </i>
+              <p>
+                I prioritize my family, ensuring their financial security and providing 
+                emotional support even after me.
+              </p>
             </h3>
           </div>
         </div>
       </section>
-      <section className="blog">
+   <section className="blog">
         <div className="view-more-link-my-life">
-        <Link className="view-more-link" to="/entrepreneur">
-        <button className="view-more" type="button">View More</button>
-        </Link> 
+          <Link className="view-more-link" to="/entrepreneur">
+            <button className="view-more" type="button">View More</button>
+          </Link>
         </div>
       </section>
       <Footer />
