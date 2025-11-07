@@ -5,11 +5,12 @@
 /* Reduce general page padding and spacing */
 .wealthy-page {
   min-height: 100vh;
-  width: 100%;
+  width: 105%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-top: 20px;
+  margin-left: -50px;
 }
 
 /* Heading closer to content */
@@ -34,8 +35,7 @@
 /* Hero section tightened */
 .wealthy-hero-card {
   box-shadow: 0 6px 20px rgba(15, 20, 25, 0.06);
-  padding: 5px;
-  margin: 10px auto 0;
+  margin: 20px auto 0;
 }
 
 .wealthy-hero-card img {
@@ -54,8 +54,10 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 60px; /* reduced from 3rem */
-  padding: 100px 0; /* reduced from 7rem */
+  gap: 60px;
+  /* reduced from 3rem */
+  padding: 100px 0;
+  /* reduced from 7rem */
 }
 
 /* Row spacing reduced */
@@ -72,6 +74,7 @@
 .wealthy-row.wealthy-reverse .wealthy-image-col {
   order: 2;
 }
+
 .wealthy-row.wealthy-reverse .wealthy-text-col {
   order: 1;
 }
@@ -81,6 +84,7 @@
   display: flex;
   justify-content: center;
 }
+
 .wealthy-image-col img {
   width: 100%;
   max-width: 360px;
@@ -97,18 +101,20 @@
   transition: all 0.3s ease;
   text-align: justify;
 }
+
 .wealthy-text-col:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
 }
+
 .wealthy-text-col h2 {
-  font-size: 18px;
+  font-size: 24px;
   margin-bottom: 0.6rem;
   text-align: start;
   color: white;
   background-color: green;
   border-radius: 25px;
-  padding: 20px;
+  padding: 30px;
 }
 
 .wealthy-text-col p {
@@ -154,6 +160,7 @@
   .wealth-heading span {
     font-size: 22px;
     line-height: 2.8rem;
+    margin: 0 25%;
   }
 
   .wealthy-text-col {
@@ -171,16 +178,60 @@
   }
 }
 
+/* Main button */
+.blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0;
+}
+
 .view-more {
-  display: block;
-  margin: 0 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.view-more-link,
+.view-more-link-my-life {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button style */
+.view-more-btn {
+  background-color: #0a9396;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
   text-align: center;
 }
 
-/* Responsive fix for smaller screens */
+/* Hover effect */
+.view-more-btn:hover {
+  background-color: #087d9e;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive centering */
 @media (max-width: 768px) {
   .view-more {
-    margin: 0 50px; /* auto centers */
-    width: fit-content; /* keeps it compact */
+    justify-content: center;
+  }
+
+  .view-more-btn {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .view-more-btn {
+    width: 200px;
   }
 }
