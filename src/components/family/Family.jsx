@@ -37,7 +37,7 @@ const Family = () => {
           True prosperity begins with good health and grows with financial freedom.
           With our transparent, collaborative approach, we bring your vision to
           life. Guided by our three-phase methodology, we consistently deliver
-          value and adapt to change building the best world:{" "}
+          value and adapt to change building the best world:{" "}<br />
           <span
             style={{
               backgroundColor: "#d4edda",
@@ -45,6 +45,7 @@ const Family = () => {
               borderRadius: "8px",
               fontSize: "23px",
               fontWeight: "bold",
+              margin:0 auto;
             }}
           >
             Healthier, Happier, and Wealthier
