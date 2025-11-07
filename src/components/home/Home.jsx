@@ -65,14 +65,14 @@ export default function Home() {
             <p id="hero-subtitle">Independent for Entire life.</p>
           </strong>
           <p id="hero-desc" className="hero-desc">
-            DM stands for discipline, unity, and independance.
+            DM stands for discipline, unity and independance.
           </p>
           <p id="hero-desc" className="hero-desc">
-            Together, we are shaping a future of health, wealth, and limitless
+            Together, we are shaping a future of health, wealth and limitless
             opportunities.
           </p>
           <p id="hero-desc" className="hero-desc">
-            With DM, every step forward is a step towards  economic freedom, and a life
+            With DM, every step forward is a step towards  economic freedom and a life
             without limits.
             <br /> Welcome to{" "}
             <strong>
@@ -149,7 +149,7 @@ export default function Home() {
                   </li>
                   <li>
                     <strong>
-                      Empowering You Every Day with Health, and Wealth.
+                      Empowering You Every Day with Health and Wealth.
                     </strong>
                   </li>
                 </ul>
@@ -236,7 +236,7 @@ export default function Home() {
                 <ul className="solution-bullets">
                   <li>
                     <strong>
-                      Your Partner in DM, Health, and Wealth for Life.
+                      Your Partner in DM, Health and Wealth for Life.
                     </strong>
                   </li>
                   <li>
@@ -293,18 +293,18 @@ export default function Home() {
         {/* The other team members remain in the grid below */}
         <div className="team-grid">
           <div className="team-member-card">
-            <img src="https://via.placeholder.com/120" alt="S.Vasu" />
+            <img src="person-1.jpg" alt="S.Vasu" />
             <h4 className="team-member-name">S.Vasu</h4>
           </div>
 
           <div className="team-member-card">
-            <img src="https://via.placeholder.com/120" alt="Dr. KP Kosygan" />
-            <h4 className="team-member-name">Dr. KP Kosygan</h4>
+            <img src="https://via.placeholder.com/120" alt="XXXX" />
+            <h4 className="team-member-name">XXXX</h4>
           </div>
 
           <div className="team-member-card">
-            <img src="https://via.placeholder.com/120" alt="R.K.Selvamani" />
-            <h4 className="team-member-name">R.K.Selvamani</h4>
+            <img src="https://via.placeholder.com/120" alt="XXXX" />
+            <h4 className="team-member-name">XXXX</h4>
           </div>
         </div>
       </section>
@@ -320,11 +320,11 @@ export default function Home() {
           <hr className="footer-divider1" />
           <div className="footer-bottom-content1">
             <div className="footer-logo-block1">
-              <img src="DM.png" alt="DailyMoney Logo" />
+              <img src="DM-100.jpg" alt="DailyMoney Logo" />
               <span className="footer-subtext1">
-                Six Sigma Solutions, NKC Towers <br />
-                1st Floor, Opp to Government Engineering College,
-                Kottagoundampatti, Karuppur, Salem-636011. TamilNadu, India.
+                Six Sigma Solutions,<br /> NKC Towers 
+                1st Floor,<br /> Opp to Government Engineering College,<br />
+                Kottagoundampatti, Karuppur,<br /> Salem-636011. TamilNadu, India.
               </span>
               <span className="footer-copyright1">
                 © 2025. All rights reserved.
@@ -358,13 +358,13 @@ export default function Home() {
                 <h4>Connect</h4>
                 <ul>
                   <li>
-                    <a href="https://x.com/dailymsghealthy">Follow on X</a>
+                    <a href="https://x.com/dailymsghealthy"><i class="fa-brands fa-x-twitter"></i>Twitter</a>
                   </li>
                   <li>
-                    <a href="https://www.facebook.com/Daily.Message.Healthy">Follow on Facebook</a>
+                    <a href="https://www.facebook.com/Daily.Message.Healthy"><i class="fa-brands fa-facebook"></i>Facebook</a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/daily_message_healthy/">Follow on Instagram</a>
+                    <a href="https://www.instagram.com/daily_message_healthy/"><i class="fa-brands fa-instagram"></i>Instagram</a>
                   </li>
                 </ul>
               </div>
