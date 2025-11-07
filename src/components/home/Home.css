@@ -87,7 +87,7 @@ body {
   background: Linear-gradient(45deg, rgb(206, 219, 28), rgb(121, 216, 216));
   color: navy;
   display: inline-block;
-  font-size: 22px;
+  font-size: 25px;
   padding: 0 120px;
   border-radius: 15px;
   margin-top: 30px;
@@ -409,6 +409,7 @@ body {
   gap: 60px; /* Space between text and image */
   padding: 40px 0 170px 0;
   flex-wrap: wrap;
+  margin:120px 0;
 }
 
 .solution-text-content {
@@ -770,7 +771,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
-  border: 3px solid #f0f0f0;
+  border: 3px solid black;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
@@ -868,6 +869,7 @@ body {
 
 .footer-logo-block1 img {
   width: 50px;
+  border-radius:25px;
 }
 
 .footer-logo-text1 {
@@ -876,7 +878,7 @@ body {
 }
 
 .footer-subtext1 {
-  font-size: 1.1em;
+  font-size: 16px;
   color: #bdbdbd;
   padding-left: 10px;
 }
@@ -1222,6 +1224,7 @@ body {
   width: 90px;
   margin-left: 0 !important;
   padding: 0 !important;
+  border-radius:25px;
 }
 
 .footer-logo-text1 {
@@ -1231,7 +1234,7 @@ body {
 }
 
 .footer-subtext1 {
-  font-size: 1.1em;
+  font-size: 16px;
   color: #bdbdbd;
 }
 
