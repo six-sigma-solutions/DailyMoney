@@ -73,7 +73,7 @@ li, p { font-size: 24px; margin-bottom: 5px; }
 /* BLOG + FOOTER                                            */
 /* ======================================================= */
 /* Changed padding from 1.5rem 5% to 1.5rem 20px */
-.blog { padding: 1.5rem 20px; margin-top: 5px; }
+
 
 .blog a { color: #d40000; text-decoration: none; font-weight: bold; transition: color 0.3s ease; }
 
