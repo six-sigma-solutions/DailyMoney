@@ -36,7 +36,7 @@ export default function FounderMsg() {
 
         {/* Message Content Section */}
         <div className="message-content">
-          <img src="bluecopy.png" className="message-image" />
+          <img src="founder.png" className="message-image" />
 
           <div className="message-section">
             <img src="founders0.png" alt="Welcome" className="message-image" />
@@ -57,7 +57,7 @@ export default function FounderMsg() {
           <div className="footer-logo-container">
             <img
               // This logo URL is consistent with your Navbar.jsx
-              src="DM.png"
+              src="DM-100.jpg"
               alt="DailyMoney Logo"
               className="footer-logo"
             />

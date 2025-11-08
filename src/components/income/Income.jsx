@@ -14,8 +14,8 @@ const Income = () => {
       <section className="income-section">
         <div className="income-text">
           <p>
-            Income is more than just money earned it is the reward for effort,
-            time, and value created. Whether through wages, salaries, profits,
+            Income is more than just money earned, it is the reward for effort,
+            time and value created. Whether through wages, salaries, profits
             or investments, income provides the foundation for stability and
             growth.
           </p>
@@ -33,9 +33,9 @@ const Income = () => {
       <section className="income-section reverse">
         <div className="income-text">
           <p>
-            True income, however, is not just financial. It is about the returns
-            you gain from life itself the knowledge you acquire, the
-            relationships you nurture, and the health you maintain.
+            True income, however is not just financial. It is about the returns
+            you gain from life itself, the knowledge you acquire, the
+            relationships you nurture and the health you maintain.
           </p>
         </div>
         <div className="income-image">
@@ -57,7 +57,7 @@ const Income = () => {
               <br />
               Build lasting wealth and assets.
               <br />
-              Create the freedom to travel, explore, and experience life.
+              Create the freedom to travel, explore and experience life.
               <br />
               Live with peace of mind and purpose.
             </p>

@@ -9,10 +9,11 @@
 /* NAVBAR */
 #navbar {
   margin-left: -50px;
-  width: 100%;
+  width: 105%;
   top: 0;
   z-index: 100;
 }
+
 
 .nav-container {
   display: flex;
@@ -20,7 +21,6 @@
   justify-content: space-between;
   height: 72px;
   padding: 0 -100px; /* increased gap inside navbar */
-  width: 110%;
   background-color: #fff; /* optional */
 }
 
@@ -31,7 +31,7 @@
 .logo img {
   height: 55px;
   display: block;
-  margin-left: 15px;
+  border-radius: 10px;
 }
 
 /* DESKTOP MENU */
@@ -137,6 +137,10 @@
   .contact-btn {
     display: none;
   }
+  .logo img{
+    display: block;
+    margin-left: 80px;  
+  }
 }
 
 .contact-btn:hover {
@@ -147,7 +151,7 @@
 .right-section {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 32px;
   margin-left: auto; /* push to right end */
 }
 
@@ -274,7 +278,11 @@
 
 .mobile-topbar .logo img {
   height: 50px;
+  display: block;
+  margin-left: 80px;
+  border-radius: 10px;
 }
+
 
 .mobile-actions {
   display: flex;
@@ -439,6 +447,17 @@
   .desktop-menu {
     display: none;
   }
+  .logo img{
+    display: block;
+    margin-left: 70px;
+   }
+}
+
+@media screen and (max-width: 720px){
+   .logo img{
+    display: block;
+    margin-left: 80px;
+   }
 }
 
 /* Remove hover/focus background for Menu (☰) and Cancel (✖) */

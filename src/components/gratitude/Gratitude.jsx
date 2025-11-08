@@ -19,13 +19,13 @@ const Gratitude = () => {
             <h1 className="dm-grt-title">THANKS TO<br/>THE UNIVERSE</h1>
             <div className="dm-grt-text-content">
               <p className="dm-grt-paragraph">
-                Today, I express my gratitude to my parents, my ancestors, and to this Universe.
+                Today, I express my gratitude to my parents, my ancestors and to this Universe.
               </p>
               <p className="dm-grt-paragraph">
                 From this moment, my family and I choose to give first priority to health and to live a joyful and prosperous life.
               </p>
               <p className="dm-grt-paragraph">
-                I thank the Universe for blessing us with health, wealth, happiness, our children's future, abundant opportunities to travel, and above all, virtue (good karma).
+                I thank the Universe for blessing us with health, wealth, happiness, our children's future, abundant opportunities to travel and above all, virtue (good karma).
               </p>
               <p className="dm-grt-paragraph">
                 Together with the millions of people around the world benefiting, from today we too begin our journey.

@@ -21,7 +21,7 @@ export default function Womenempowerment() {
         <div className="women-content">
           <h1>Empowered Women Empower Women</h1>
           <p>
-            Empowered women create waves of change inspiring others, strengthening communities, and redefining leadership for a brighter tomorrow.
+            Empowered women create waves of change, inspiring others, strengthening communities and redefining leadership for a brighter tomorrow.
           </p>
         </div>
       </section>
@@ -32,23 +32,23 @@ export default function Womenempowerment() {
         <h2>Empowered Women</h2>
         <ul className="women-points">
           <li className="red-text">
-            <b>
-              Women's empowerment is not just about equality it is about
+            <p>
+              Women's empowerment is not just about equality, it is about
               unlocking the full potential of humanity.
-            </b>
+            </p>
           </li>
           <li className="blue-text">
-            <b>
-              Women's empowerment is not a charity it is justice, progress, and
+            <p>
+              Women's empowerment is not a charity, it is justice, progress and
               the future.
-            </b>
+            </p>
           </li>
           <li className="green-text">
-            <b>
+            <p>
               Empowerment is the recognition that women are not behind, not
               ahead, but standing{" "}
               <span className="highlight-yellow">shoulder to shoulder.</span>
-            </b>
+            </p>
           </li>
         </ul>
 
@@ -83,7 +83,7 @@ export default function Womenempowerment() {
           <div className="women-program">
             <h3>Education</h3>
             <p>
-              Education, career development programs, and economic empowerment
+              Education, career development programs and economic empowerment
               initiatives for women.
             </p>
             <img
@@ -99,7 +99,7 @@ export default function Womenempowerment() {
           <div className="women-program">
             <h3>Economic Empowerment</h3>
             <p>
-              Supporting women in entrepreneurship, employment, and financial
+              Supporting women in entrepreneurship, employment and financial
               independence.
             </p>
             <img

@@ -51,7 +51,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 90px;
-  margin: 20px 40px 120px 40px;
+  margin: 60px auto;
 }
 
 .dm-eldr-row.reverse {
@@ -268,7 +268,5 @@
   .dm-eldr-tick {
     font-size: 1.4rem;
     animation: none; /* Disable pulse on small devices */
-  }
-
-  
+  } 
 }

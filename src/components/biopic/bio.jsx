@@ -148,8 +148,8 @@ function Bio() {
         </div>
         <div className="team-member">
           <div className="profile">
-            <img src="sathish.jpg" alt="Team Member 1"/>
-            <h2>Sathish M</h2>
+            <img src="raju.jpg" alt="xxxx"/>
+            <h2>Illayaraju C</h2>
           </div>
           <a href="Contact" rel="noopener noreferrer" className="team-member-link">
             <span className="slogan">Choosing health and happiness every day.</span>
@@ -158,8 +158,8 @@ function Bio() {
         </div>
         <div className="team-member">
           <div className="profile">
-            <img src="raju.jpg" alt="Team Member 2"/>
-            <h2>Ilayaraju C</h2>
+            <img src="" alt="xxxx"/>
+            <h2>xxxx</h2>
           </div>
           <a href="Contact"  rel="noopener noreferrer" className="team-member-link">
             <span className="slogan">Small steps lead to big changes.</span>
@@ -168,8 +168,8 @@ function Bio() {
         </div>
         <div className="team-member">
           <div className="profile">
-            <img src="baskar.jpg" alt="Team Member 2"/>
-            <h2>Baskar U</h2>
+            <img src="" alt="xxxx"/>
+            <h2>xxxx</h2>
           </div>
           <a href="Contact"  rel="noopener noreferrer" className="team-member-link">
             <span className="slogan">Positive changes lead to powerful results.</span>

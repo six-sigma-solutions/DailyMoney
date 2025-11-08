@@ -7,7 +7,6 @@
 body { color: #222; background: #fff; line-height: 1.5; overflow-x: hidden; padding: 0 20px; }
 
 /* Base text */
-li, p { font-size: 17px; margin-bottom: 5px; }
 
 /* ======================================================= */
 /* NAVBAR                                                   */
@@ -31,7 +30,7 @@ li, p { font-size: 17px; margin-bottom: 5px; }
 .health-heading span { margin: 0 -70px; background-color: darkgreen; color: white; display: inline-block; line-height: 2.6rem; font-size: 24px; padding: 0 10px; border-radius: 5px; }
 
 .grow,
-.subtitle { margin: 0 -25px; color: rgb(3, 3, 88); font-weight: 600; font-size: 18px; text-align: start; line-height: 1.4; }
+.subtitle { margin: 10px -25px; color: rgb(3, 3, 88); font-weight: 600; font-size: 24px; text-align: start; line-height: 1.6; }
 
 /* ======================================================= */
 /* STEP SECTIONS                                            */
@@ -47,16 +46,16 @@ li, p { font-size: 17px; margin-bottom: 5px; }
 /* ======================================================= */
 .step-img {  display: flex; justify-content: center; align-items: center; }
 
-.step-img img { width: 100%; max-width: 350px; height: 250px; border-radius: 12px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12); object-fit: fill; transition: transform 0.4s ease; cursor: pointer; }
+.step-img img { width: 300px; height: 250px; border-radius: 12px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12); object-fit: fill; transition: transform 0.4s ease; cursor: pointer; }
 
 .step-img img:hover { transform: scale(1.05); }
 
 /* ======================================================= */
 /* STEP CONTENT                                             */
 /* ======================================================= */
-.step-content { flex: 1 1 50%; padding: 6px 10px; }
+.step-content { flex: 1 1 50%; padding: 6px 10px; margin: 80px 0;}
 
-.step-content h3 { font-size: 1.4rem; margin-bottom: 0.6rem; }
+.step-content p { font-size: 28px; margin-bottom: 0.6rem; text-align: left; line-height: 1.6; }
 
 .step-content span { color: #d40000; font-weight: bold; }
 
@@ -73,7 +72,7 @@ li, p { font-size: 17px; margin-bottom: 5px; }
 /* BLOG + FOOTER                                            */
 /* ======================================================= */
 /* Changed padding from 1.5rem 5% to 1.5rem 20px */
-.blog { padding: 1.5rem 20px; border-top: 1px solid #eee; margin-top: 5px; }
+
 
 .blog a { color: #d40000; text-decoration: none; font-weight: bold; transition: color 0.3s ease; }
 
@@ -87,7 +86,6 @@ footer .btn { margin: 0.6rem 0; }
 .view-more-link{
   display: flex;
   justify-content: center;
-  padding: 60px 120px;
 }
 
 
@@ -116,7 +114,7 @@ footer .btn { margin: 0.6rem 0; }
   .step-content { padding: 0 6px; }
   .highlight-text { font-size: 1rem; max-width: 95%; }
   .subtitle,
-  .grow { margin-left: 15px; text-align: left; font-size: 17px; }
+  .grow { margin-left: 15px; text-align: left; font-size: 28px; }
 }
 
 /* Small Devices */

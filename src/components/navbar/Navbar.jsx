@@ -24,7 +24,7 @@ export default function Navbar() {
         {/* LEFT: Logo */}
         <Link to="/" className="logo">
           <img
-            src="DM.png" 
+            src="DM-100.jpg" 
             alt="DailyMoney Logo"
           />
         </Link>
@@ -138,7 +138,7 @@ export default function Navbar() {
         <div className="mobile-topbar">
           <Link to="/" className="logo">
             <img
-              src="DM.png"
+              src="DM-100.jpg"
               alt="DailyMoney Logo"
             />
           </Link>

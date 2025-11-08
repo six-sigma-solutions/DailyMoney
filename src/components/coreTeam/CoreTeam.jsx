@@ -27,7 +27,7 @@ const otherMembers = [
     {
         name: "S.Vasu",
         role: "Technocrat & Media Industry",
-        image: "https://via.placeholder.com/120",
+        image: "",
 
     },
    

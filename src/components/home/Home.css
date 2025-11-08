@@ -87,13 +87,14 @@ body {
   background: Linear-gradient(45deg, rgb(206, 219, 28), rgb(121, 216, 216));
   color: navy;
   display: inline-block;
-  font-size: 22px;
-  padding: 0 120px;
+  font-size: 24px;
+  padding: 0 40px;
   border-radius: 15px;
   margin-top: 30px;
   margin-left: -50px;
   font-weight: 600;
-  width: 110%;
+  width: 105%;
+  text-align:center;
 }
 
 .dm span{
@@ -409,6 +410,7 @@ body {
   gap: 60px; /* Space between text and image */
   padding: 40px 0 170px 0;
   flex-wrap: wrap;
+  margin:120px 0 0;
 }
 
 .solution-text-content {
@@ -504,8 +506,9 @@ body {
   color: #111;
 }
 
-.solutions-section .red-text {
+.solutions-section .red-text-1 {
   color: #d32a2a;
+  font-size: 48px;
 }
 
 .solutions-description {
@@ -601,7 +604,7 @@ body {
 .ar-vr-image-column img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .ar-vr-image-title {
@@ -770,7 +773,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
-  border: 3px solid #f0f0f0;
+  border: 3px solid black;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
@@ -868,6 +871,7 @@ body {
 
 .footer-logo-block1 img {
   width: 50px;
+  border-radius:25px;
 }
 
 .footer-logo-text1 {
@@ -876,7 +880,7 @@ body {
 }
 
 .footer-subtext1 {
-  font-size: 1.1em;
+  font-size: 16px;
   color: #bdbdbd;
   padding-left: 10px;
 }
@@ -1222,6 +1226,7 @@ body {
   width: 90px;
   margin-left: 0 !important;
   padding: 0 !important;
+  border-radius:25px;
 }
 
 .footer-logo-text1 {
@@ -1231,7 +1236,7 @@ body {
 }
 
 .footer-subtext1 {
-  font-size: 1.1em;
+  font-size: 16px;
   color: #bdbdbd;
 }
 
@@ -1843,17 +1848,34 @@ cubic-bezier(.175, .885, .32, 1.275);
   }
 }
 
-@media (max-width: 1200px) {
-  .popup-container {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-}
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .popup-container {
     width: 90%;
-    padding: 20px;
+    padding: 20px ;
+    text-align: left;
+  }
+
+  .popup-title {
+    font-size: 1.5em;
+  }
+
+  .popup-text {
+    font-size: 22p;
+    color: #070552;
+  }
+
+  .popup-close-btn {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popup-container {
+    width: 80%;
+    padding: 20px ;
     text-align: left;
   }
 
