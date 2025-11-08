@@ -32,8 +32,8 @@ export default function Home() {
           <div className="popup-container">
             <h2 className="popup-title">Welcome to DM </h2>
             <p className="popup-text">
-              "For the betterment of all people across the world. Especially
-              those driving innovation in the Global IT Community."
+              "For the betterment of all people across the world, especially
+              those driving innovation in the global IT community."
             </p>
             <button
               className="popup-close-btn"
