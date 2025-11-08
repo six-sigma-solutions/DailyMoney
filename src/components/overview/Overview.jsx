@@ -43,7 +43,7 @@ const Overview = () => {
               that build lasting wealth.
             </li>
             <li>
-              <strong>Integration –</strong> Connecting health, wealth, and
+              <strong>Integration –</strong> Connecting health, wealth and
               peace as part of the same journey.
             </li>
             <li>
