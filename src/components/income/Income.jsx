@@ -35,7 +35,7 @@ const Income = () => {
           <p>
             True income, however is not just financial. It is about the returns
             you gain from life itself, the knowledge you acquire, the
-            relationships you nurture, and the health you maintain.
+            relationships you nurture and the health you maintain.
           </p>
         </div>
         <div className="income-image">
