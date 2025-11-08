@@ -300,7 +300,7 @@ function Bio() {
         <div className="card-footer-bg">
             <div className="footer-logo-container">
                 <img
-                    src="DM.png" 
+                    src="DM-100.jpg" 
                     alt="DailyMoney Logo"
                     className="footer-logo"
                 />
