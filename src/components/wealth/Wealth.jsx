@@ -38,7 +38,7 @@ const Wealth = () => {
               <h2>
                 <span className="wealthy-check" >  ✓  </span>
                 Wealth is more than numbers in a bank account. It is the freedom
-                to choose our path, the security to protect what matters, and
+                to choose our path, the security to protect what matters and
                 the power to create a lasting impact.
               </h2>
             </div>
@@ -53,8 +53,8 @@ const Wealth = () => {
               <h2 style={{ backgroundColor: "#382813"}}>
                 <span className="wealthy-check">  ✓  </span>
                 True wealth begins with discipline living with intention,
-                saving with wisdom, and investing with vision. It grows not only
-                through income but also through knowledge, relationships, and the
+                saving with wisdom and investing with vision. It grows not only
+                through income but also through knowledge, relationships and the
                 values we pass on to the next generation.
               </h2>
             </div>
@@ -70,7 +70,7 @@ const Wealth = () => {
                 <span className="wealthy-check">  ✓  </span>
                 Our wealth is not just about what we accumulate, but about what
                 we enable. With it, we gain the ability to support our
-                families, nurture dreams, create opportunities, and contribute
+                families, nurture dreams, create opportunities and contribute
                 to causes that uplift society.
               </h2>
             </div>
@@ -86,8 +86,8 @@ const Wealth = () => {
                 <span className="wealthy-check">  ✓  </span>
                 Wealth is not greed it is growth. It is not selfishness, it is
                 stewardship. When guided by purpose, wealth becomes a force for
-                freedom, impact, and legacy. Our wealth is our power to
-                live with dignity, give with generosity, and build a future that
+                freedom, impact and legacy. Our wealth is our power to
+                live with dignity, give with generosity and build a future that
                 outlives us.
               </h2>
             </div>
