@@ -128,7 +128,7 @@ img:hover { transform: scale(1.05); }
 .view-more {
   width: 200px;
   text-align: center;
-  margin-top: 100px;
+ margin: 5px 0 0;
   
 }
 
@@ -253,7 +253,7 @@ html { scroll-behavior: smooth; }
 .footer {
  
   background: #000000;
-  padding: 20px 60px; /* more horizontal padding so content breathes on wide screens */
+  padding: 0px 20px; /* more horizontal padding so content breathes on wide screens */
   text-align: center;
   border-top: 2px solid #e5e7eb;
   font-size: 1rem;
@@ -262,6 +262,9 @@ html { scroll-behavior: smooth; }
   width: 100%; /* allow footer to span full width */
   max-width: none; /* remove previous cap */
   box-sizing: border-box;
+ 
+  
+  
 }
 
 .footer:hover { transform: translateY(-3px); }
