@@ -54,7 +54,7 @@
   color: #ffffffe0;
   background-image: linear-gradient(to right, #2868a9, #648585);
   border-radius: 15px;
-  margin: 200px 0 0;
+  margin: 200px 0 50px;
 }
 
 .ent-left * {
@@ -68,7 +68,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  margin: 200px 0 0;
+  margin: 200px 0 50px;
   padding: 40px;
   color: #ffffffe0;
   background-image: linear-gradient(to left, #cedb1c, #79d8d8);
