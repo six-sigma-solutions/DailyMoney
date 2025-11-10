@@ -1,19 +1,19 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: "Poppins", sans-serif;
   background-color: #fafafa;
   line-height: 3.2rem;
   font-weight: 400;
 }
 
-.income-header{
+.income-header {
   text-align: center;
-  padding: 15px 15px 15px 15px;
+  padding: 15px;
   color: forestgreen;
 }
 
@@ -28,7 +28,7 @@ body{
   justify-content: space-between;
   padding: 60px 0;
   gap: 50px;
-  margin-bottom:60px;
+  margin-bottom: 60px;
 }
 
 .income-section.reverse {
@@ -36,16 +36,18 @@ body{
 }
 
 .income-text {
-  flex:1;
+  flex: 1;
   font-size: 23px !important;
-  text-align:start;
-  padding:20px;
-  border-radius:20px;
-  margin:0 10px 0 30px;
+  text-align: start;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 0 10px 0 30px;
 }
-.income-text p:hover{
-  animation:highlight 3s infinite;
+
+.income-text p:hover {
+  animation: highlight 3s infinite;
 }
+
 .income-text ul {
   margin-top: 10px;
   list-style-type: disc;
@@ -57,19 +59,17 @@ body{
 }
 
 .income-image {
-  
   display: flex;
-  justify-content: center;
-  
+  justify-content: flex-end;
+  margin: 0 30px 0 10px;
 }
-
 
 .income-image img,
 .responsive-income-img {
   width: 300px;
   height: 400px;
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -97,48 +97,53 @@ body{
   background-color: #2e7d32;
 }
 
-.income-btn a{
+.income-btn a {
   text-decoration: none;
   cursor: pointer;
   color: white;
 }
 
-.inc1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: forestgreen;
-    padding-top: 10px;
-    color: white;
+.inc1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: forestgreen;
+  padding-top: 10px;
+  color: white;
 }
 
-.inc1-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    flex-wrap: wrap;
+.inc1-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  flex-wrap: wrap;
 }
 
-.inc1-img img{
-    width: 475px;
-    height: 475px;
-    border: 3px solid black;
-    border-radius: 20px;
-    animation: bounce 2s infinite;;
+.inc1-img img {
+  width: 475px;
+  height: 475px;
+  border: 3px solid black;
+  border-radius: 20px;
+  animation: bounce 2s infinite;
 }
 
-@keyframes bounce{
-    0%{
-        transform: translateY(20px);
-    }
-    50%{
-        transform: translateY(-20px);
-    }
-    100%{
-        transform: translateY(20px);
-    }
+@keyframes bounce {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+/* ✅ Move the 4th image text further right */
+.income-section.move-right .income-text {
+  margin-left: 150px; /* adjust distance as needed */
 }
 
 @media (max-width: 900px) {
@@ -159,6 +164,12 @@ body{
     margin: 0 auto 20px;
     padding: 15px;
   }
+
+  /* Reset move-right for small screens */
+  .income-section.move-right .income-text {
+    margin-left: 0;
+  }
+
   .income-header h1 {
     font-size: 2rem;
   }
@@ -169,18 +180,18 @@ body{
     padding: 30px 15px;
     gap: 25px;
   }
-  
+
   .income-text {
     margin: 0 10px;
     padding: 15px;
     font-size: 1rem;
   }
-  
+
   .income-image {
     max-width: 350px;
     margin: 0 auto;
   }
-  
+
   .income-image img {
     width: 100%;
     border-radius: 15px;
@@ -191,22 +202,22 @@ body{
   .income-header {
     padding: 25px 10px;
   }
-  
+
   .income-header h1 {
     font-size: 1.8rem;
   }
-  
+
   .income-section {
     padding: 20px 10px;
     gap: 20px;
   }
-  
+
   .income-text {
     font-size: 0.95rem;
     padding: 12px;
     margin: 0 5px;
   }
-  
+
   .income-btn {
     width: 90%;
     padding: 12px 20px;
@@ -232,5 +243,40 @@ body{
     color: darkblue;
     border-radius: 20px;
     padding: 20px;
+  }
+}
+/* Push the 4th section text further right */
+.income-section.move-right {
+  justify-content: flex-end; /* push the content section to the right side */
+  gap: 200px; /* increase space between image and text */
+}
+
+.income-section.move-right .income-text {
+  margin-left: 250px; /* move text even more to right */
+  max-width: 600px;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive correction for small devices */
+@media (max-width: 1024px) {
+  .income-section.move-right {
+    gap: 100px;
+  }
+
+  .income-section.move-right .income-text {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .income-section.move-right {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .income-section.move-right .income-text {
+    margin-left: 0;
+    text-align: center;
   }
 }
