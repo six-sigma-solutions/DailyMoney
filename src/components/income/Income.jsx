@@ -41,7 +41,7 @@ const Income = () => {
         <div className="income-image">
           <img
             className="responsive-income-img"
-            src="bot.jpg"
+            src="income3rdlast.jpg"
             alt="Personal growth and learning"
           />
         </div>
@@ -73,28 +73,28 @@ const Income = () => {
       </section>
 
       {/* Section 4 */}
-      <section className="income-section reverse">
-        <div className="income-text">
-          <p>
-            Income powers growth, not greed.
-            <br />
-            Energy creates opportunity.
-            <br />
-            Wealth begins with wisdom.
-            <br />
-            Freedom follows discipline.
-            <br />
-            Balance builds true success.
-          </p>
-        </div>
-        <div className="income-image">
-          <img
-            className="responsive-income-img"
-            src="income9.png"
-            alt="Growth and Balance"
-          />
-        </div>
-      </section>
+      <section className="income-section reverse move-right">
+  <div className="income-text">
+    <p>
+      Income powers growth, not greed.
+      <br />
+      Energy creates opportunity.
+      <br />
+      Wealth begins with wisdom.
+      <br />
+      Freedom follows discipline.
+      <br />
+      Balance builds true success.
+    </p>
+  </div>
+  <div className="income-image">
+    <img
+      className="responsive-income-img"
+      src="income9.png"
+      alt="Growth and Balance"
+    />
+  </div>
+</section>
 
       <div className="view-more-link-my-life">
       <Link className="view-more-link" to="/womenempowerment">
