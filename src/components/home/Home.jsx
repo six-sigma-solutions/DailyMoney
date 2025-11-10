@@ -65,7 +65,7 @@ export default function Home() {
             <p id="hero-subtitle">Independent for Entire life.</p>
           </strong>
           <p id="hero-desc" className="hero-desc">
-            DM stands for discipline, unity and independance.
+            DM stands for discipline, unity and independence.
           </p>
           <p id="hero-desc" className="hero-desc">
             Together, we are shaping a future of health, wealth and limitless
