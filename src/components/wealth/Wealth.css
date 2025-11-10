@@ -34,7 +34,6 @@
 
 /* Hero section tightened */
 .wealthy-hero-card {
-  box-shadow: 0 6px 20px rgba(15, 20, 25, 0.06);
   margin: 20px auto 0;
 }
 
@@ -88,7 +87,6 @@
   width: 100%;
   max-width: 360px;
   border-radius: 25px;
-  box-shadow: 0 8px 20px rgba(11, 20, 25, 0.06);
   object-fit: cover;
 }
 
@@ -96,7 +94,6 @@
 .wealthy-text-col {
   padding: 20px;
   border-radius: var(--radius);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
   text-align: justify;
 }
