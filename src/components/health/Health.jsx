@@ -96,7 +96,7 @@ const Health = () => {
         </h2>
         <div>
        <h1 className="tamil"> தண்ணீரைச் சாப்பிடு, உணவை அருந்து <br /> உண்மையான ஆரோக்கிய வாழ்க்கையின் ரகசியம்.</h1>
-        <h2 className="tamil-1">💧 Eat your water. Sip your meals. The secret of true healthy life.</h2>
+        <h2 className="tamil-1">💧 Eat water, Sip Food. The secret of true healthy life.</h2>
         </div>
      <section className="blog">
         <div className="view-more-link-my-life">
