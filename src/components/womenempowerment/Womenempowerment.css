@@ -125,7 +125,7 @@
   flex-wrap: wrap;
   width: 100%;
   margin-top: 50px;
-  gap: 20px;
+  gap: 100px;
 }
 
 .women-image-row img {
@@ -168,7 +168,7 @@
 .women-programs {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 50px;
   flex-wrap: wrap;
   margin-top: 40px;
 }
