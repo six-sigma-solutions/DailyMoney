@@ -149,7 +149,7 @@ export default function Home() {
                   </li>
                   <li>
                     <strong>
-                      Empowering You Every Day with Health, and Wealth.
+                      Empowering You Every Day with Health and Wealth.
                     </strong>
                   </li>
                 </ul>
