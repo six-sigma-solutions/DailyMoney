@@ -34,7 +34,7 @@ const Family = () => {
           “Protect. Grow. Prosper.”
         </h2>
         <p className="subtitle">
-          True prosperity begins with good health and grows with financial freedom.
+          True prosperity begins with good health and grows with financial independence.
           With our transparent, collaborative approach, we bring your vision to
           life. Guided by our three-phase methodology, we consistently deliver
           value and adapt to change building the best world:{" "}
