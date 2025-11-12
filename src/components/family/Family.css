@@ -24,10 +24,25 @@ body { color: #222; background: #fff; line-height: 1.5; overflow-x: hidden; padd
 /* PROCESS SECTION                                          */
 /* ======================================================= */
 .process { margin-top: 5px; padding: 5px 0; }
+
 .health-heading{
-  margin: 0 40px;
+  text-align: left;
+  display: inline;
+  margin-bottom: 25px;
+  margin-right: auto;
+  border-radius: 20px;
+  margin: 0 -50px;
 }
-.health-heading span { margin: 0 -70px; background-color: darkgreen; color: white; display: inline-block; line-height: 2.6rem; font-size: 24px; padding: 0 10px; border-radius: 5px; }
+
+.health-heading span {
+  background-color:#047871;
+  color: white;
+  display: inline-block;
+  line-height: 3.2rem;
+  padding: 0 12px;
+  border-radius: 5px;
+  font-size: 28px;
+}
 
 .grow,
 .subtitle { margin: 10px -25px; color: rgb(3, 3, 88); font-weight: 600; font-size: 24px; text-align: start; line-height: 1.6; }
