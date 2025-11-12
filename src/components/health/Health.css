@@ -208,7 +208,7 @@ html { scroll-behavior: smooth; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px;
+  padding: 20px;
   flex-wrap: wrap;
   gap: 40px;
 }
@@ -219,21 +219,21 @@ html { scroll-behavior: smooth; }
   object-fit: fill;
   cursor: pointer;
   box-shadow: 0px 10px 15px rgba(0.5, 0, 0, 0.5);
-  border-radius: 50% 0;
+  border-radius: 40% 0;
 }
 
 .box, .box-1 {
   font-weight: bold;
-  padding: 100px 20px;
+  padding: 60px 20px 100px;
   flex: 1;
   text-align: center;
 }
 
 /* Color Styles */
 .color1 h1 { color: black; font-weight: 600; font-size: 2.5rem; padding: 20px; }
-.color2 h1 { color: grey; font-weight: 600; font-size: 2.5rem; padding: 20px; }
+.color2 h1 { color: black; font-weight: 600; font-size: 2.5rem; padding: 20px; }
 .color3 h1 { color: black; font-weight: 600; font-size: 2.5rem; padding: 20px; }
-.color4 h1 { color: grey; font-weight: 600; font-size: 2.5rem; padding: 20px; }
+.color4 h1 { color: black; font-weight: 600; font-size: 2.5rem; padding: 20px; }
 
 .author {
   font-weight: 700;
