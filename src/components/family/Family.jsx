@@ -47,7 +47,7 @@ const Family = () => {
               fontWeight: "bold",
             }}
           >
-            Healthier, Happier, and Wealthier
+            Healthier, Happier and Wealthier
           </span>
         </p>
 
