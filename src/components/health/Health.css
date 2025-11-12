@@ -177,7 +177,8 @@ html { scroll-behavior: smooth; }
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50px;
+  border-top-left-radius: 45%;
+  border-bottom-right-radius: 45%;
   background: linear-gradient(-45deg, #43cea2, #185a9d, #56ccf2, #2f80ed);
   background-size: 400% 400%;
   animation: gradientShift 12s ease infinite;
@@ -218,7 +219,7 @@ html { scroll-behavior: smooth; }
   object-fit: fill;
   cursor: pointer;
   box-shadow: 0px 10px 15px rgba(0.5, 0, 0, 0.5);
-  border-radius: 50px;
+  border-radius: 50% 0;
 }
 
 .box, .box-1 {
