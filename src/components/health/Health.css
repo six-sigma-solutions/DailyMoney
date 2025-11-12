@@ -177,8 +177,7 @@ html { scroll-behavior: smooth; }
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top-left-radius: 50%;
-  border-bottom-right-radius: 50%;
+  border-radius: 50px;
   background: linear-gradient(-45deg, #43cea2, #185a9d, #56ccf2, #2f80ed);
   background-size: 400% 400%;
   animation: gradientShift 12s ease infinite;
@@ -194,10 +193,7 @@ html { scroll-behavior: smooth; }
 .styled-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
+  object-fit: fill;
   transition: all 0.6s ease;
 }
 
@@ -219,10 +215,10 @@ html { scroll-behavior: smooth; }
 .container img, .container-1 img {
   width: 420px;
   height: 580px;
-  border-radius: 20px;
   object-fit: fill;
   cursor: pointer;
   box-shadow: 0px 10px 15px rgba(0.5, 0, 0, 0.5);
+  border-radius: 50px;
 }
 
 .box, .box-1 {
@@ -233,10 +229,10 @@ html { scroll-behavior: smooth; }
 }
 
 /* Color Styles */
-.color1 h1 { color: #047871; font-weight: 600; font-size: 2.5rem; padding: 20px; }
-.color2 h1 { color: #fb0000; font-weight: 600; font-size: 2.5rem; padding: 20px; }
-.color3 h1 { color: #817676; font-weight: 600; font-size: 2.5rem; padding: 20px; }
-.color4 h1 { color: #000000; font-weight: 600; font-size: 2.5rem; padding: 20px; }
+.color1 h1 { color: black; font-weight: 600; font-size: 2.5rem; padding: 20px; }
+.color2 h1 { color: grey; font-weight: 600; font-size: 2.5rem; padding: 20px; }
+.color3 h1 { color: black; font-weight: 600; font-size: 2.5rem; padding: 20px; }
+.color4 h1 { color: grey; font-weight: 600; font-size: 2.5rem; padding: 20px; }
 
 .author {
   font-weight: 700;
@@ -279,47 +275,84 @@ html { scroll-behavior: smooth; }
 
 /* ---------------- RESPONSIVE ADJUSTMENTS ---------------- */
 
-/* Tablet and below (≤1024px) */
-@media (max-width: 1024px) {
-  .hero { padding: 40px 30px; }
-  .hero-title { font-size: 2.8rem; }
-  .container img, .container-1 img { width: 360px; height: 450px; }
-  .health-page{
-    margin: 0;
+/* ---------------- ADDITIONAL RESPONSIVE FIXES ---------------- */
+
+/* Large tablets and below (≤1200px) */
+@media (max-width: 1200px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-content {
+    max-width: 90%;
+  }
+  .image-health-container {
+    width: 300px;
+    height: 320px;
   }
 }
 
-/* Phone and small tablet (≤768px) */
+/* Tablets (≤992px) */
+@media (max-width: 992px) {
+  .container,
+  .container-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container img,
+  .container-1 img {
+    width: 320px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .box,
+  .box-1 {
+    padding: 40px 20px;
+    text-align: center;
+  }
+}
+
+/* Mobile devices (≤768px) */
 @media (max-width: 768px) {
-  .health-heading { margin: 0; text-align: center; }
-  .hero { flex-direction: column; text-align: center; padding: 20px; }
-  .hero-title { font-size: 2.2rem; white-space: normal; }
-  .hero-content { text-align: center; }
-  .image-health-container { width: 280px; height: 320px; }
-  .container, .container-1 { flex-direction: column; text-align: center; padding: 20px; }
-  .container img, .container-1 img { width: 300px; height: auto; margin: 0 auto; }
-  .box, .box-1 { padding: 20px; text-align: center; }
-  .btn-primary { padding: 10px 20px; margin: 20px auto; }
-  .footer h1, .footer h2, .footer .english { text-align: center; padding: 10px; }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .image-health-container {
+    width: 250px;
+    height: 270px;
+  }
+  .footer h1,
+  .footer h2,
+  .footer .english {
+    padding: 10px;
+    text-align: center;
+  }
 }
 
-/* Small phones (≤480px) */
+/* Small mobile (≤480px) */
 @media (max-width: 480px) {
-  .hero-title { font-size: 1.8rem; }
-  .container img, .container-1 img { max-width: 220px; height: auto; }
-  .box h1, .box-1 h1 { font-size: 1.2rem; }
-  .box p, .box-1 p { font-size: 0.9rem; }
-  .health-heading span { font-size: 1.5rem; line-height: 2rem; margin: 0 auto; display: block; }
-  .footer h1 { font-size: 1.2rem; }
-  .footer h2 { font-size: 1rem; }
-  .footer .english { font-size: 1.1rem; }
-  .author { font-size: 1rem; text-align: center; margin: 10px 0; }
-}
-
-/* Ultra-wide desktops (≥1440px) */
-@media (min-width: 1440px) {
-  .hero-content { max-width: 800px; }
-  .hero-content h1 { font-size: 4rem; }
-  .container img, .container-1 img { width: 500px; height: 650px; }
-  .box h1, .box-1 h1 { font-size: 2.8rem; }
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+  .image-health-container {
+    width: 200px;
+    height: 220px;
+  }
+  .container img,
+  .container-1 img {
+    width: 200px;
+    height: auto;
+  }
+  .health-heading span {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin-left: 40px;
+  }
 }
