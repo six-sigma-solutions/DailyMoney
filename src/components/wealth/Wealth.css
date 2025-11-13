@@ -34,7 +34,6 @@
 
 /* Hero section tightened */
 .wealthy-hero-card {
-  box-shadow: 0 6px 20px rgba(15, 20, 25, 0.06);
   margin: 20px auto 0;
 }
 
@@ -43,7 +42,7 @@
   height: 500px;
   display: block;
   object-fit: fill;
-  border-radius: 10px;
+  border-radius: 50% 0;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -101,7 +100,6 @@
 
 .wealthy-text-col:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
 }
 
 .wealthy-text-col h2 {
@@ -156,7 +154,6 @@
   .wealth-heading span {
     font-size: 22px;
     line-height: 2.8rem;
-    margin: 0 25%;
   }
 
   .wealthy-text-col {
@@ -215,22 +212,8 @@
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsive centering */
-@media (max-width: 768px) {
-  .view-more {
-    justify-content: center;
-  }
 
-  .view-more-btn {
-    width: 100% !important;
-  }
-}
 
-@media (max-width: 480px) {
-  .view-more-btn {
-    width: 200px;
-  }
-}
 
 /* ========================================================= */
 /* EXTRA RESPONSIVE ENHANCEMENTS — without touching original  */
@@ -310,6 +293,7 @@
     font-size: 20px;
     padding: 0 10px;
     line-height: 2.4rem;
+    margin: 0 0 0 80px;
   }
 
   .wealthy-text-col {
@@ -349,6 +333,7 @@
   .wealth-heading span {
     font-size: 18px;
     padding: 0 8px;
+    margin: 0 0 0 60px;
   }
 
   .view-more-btn {
