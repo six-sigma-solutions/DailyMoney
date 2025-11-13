@@ -30,12 +30,12 @@ const Wealth = () => {
         {/* Zigzag Section */}
         <section className="wealthy-container wealthy-zigzag" >
           {/* Row 1 */}
-          <div className="wealthy-row" style={{ background: "#3d6663" }}>
+          <div className="wealthy-row" >
             <div className="wealthy-col wealthy-image-col" >
               <img src="wealth85.png" alt="Wealth concept 1" />
             </div> 
             <div className="wealthy-col wealthy-text-col row1">
-              <h2>
+              <h2 style={{ backgroundColor: "#047871"}}>
                 <span className="wealthy-check" >  ✓  </span>
                 Wealth is more than numbers in a bank account. It is the freedom
                 to choose our path, the security to protect what matters and
@@ -45,7 +45,7 @@ const Wealth = () => {
           </div>
 
           {/* Row 2 */}
-          <div className="wealthy-row wealthy-reverse" style={{ background: "linear-gradient(45deg,chocolate,#6f4e37)" }}>
+          <div className="wealthy-row wealthy-reverse">
             <div className="wealthy-col wealthy-image-col" >
               <img src="wealth99.png" alt="Wealth concept 2" />
             </div>
@@ -61,7 +61,7 @@ const Wealth = () => {
           </div>
 
           {/* Row 3 */}
-          <div className="wealthy-row" style={{ background: "linear-Gradient(45deg,green,darkgreen)" }}>
+          <div className="wealthy-row" >
             <div className="wealthy-col wealthy-image-col">
               <img src="w1.jpg" alt="Wealth concept 3" />
             </div>
@@ -77,12 +77,12 @@ const Wealth = () => {
           </div>
 
           {/* Row 4 */}
-          <div className="wealthy-row wealthy-reverse" style={{ background: "#002147" }}>
+          <div className="wealthy-row wealthy-reverse">
             <div className="wealthy-col wealthy-image-col">
               <img src="wealth44.png" alt="Wealth concept 4" />
             </div>
             <div className="wealthy-col wealthy-text-col row4">
-              <h2 style={{ backgroundColor: "navy"}}>
+              <h2 style={{ backgroundColor: "black"}}>
                 <span className="wealthy-check">  ✓  </span>
                 Wealth is not greed it is growth. It is not selfishness, it is
                 stewardship. When guided by purpose, wealth becomes a force for

@@ -23,29 +23,27 @@
 }
 
 .wealth-heading span {
-  background-color: darkgreen;
+  background-color: #047871;
   color: white;
   display: inline-block;
   line-height: 3.2rem;
-  font-size: 28px;
   padding: 0 12px;
   border-radius: 5px;
+  font-size: 28px;
 }
 
 /* Hero section tightened */
 .wealthy-hero-card {
-  margin: 20px auto 0;
+  margin: 5px auto 0;
 }
 
 .wealthy-hero-card img {
-  width: 1200px;
+  width: 90%;
   height: 500px;
   display: block;
   object-fit: fill;
-  border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
+  border-radius: 25% 0;
+  margin: 20px auto;
 }
 
 /* Zigzag section compact */
@@ -56,6 +54,7 @@
   gap: 60px;
   /* reduced from 3rem */
   padding: 100px 0 0;
+  margin: 30px 0;
   /* reduced from 7rem */
 }
 
@@ -86,7 +85,7 @@
 .wealthy-image-col img {
   width: 100%;
   max-width: 360px;
-  border-radius: 25px;
+  border-radius: 25% 0;
   object-fit: cover;
 }
 
@@ -100,7 +99,6 @@
 
 .wealthy-text-col:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
 }
 
 .wealthy-text-col h2 {
@@ -155,7 +153,6 @@
   .wealth-heading span {
     font-size: 22px;
     line-height: 2.8rem;
-    margin: 0 25%;
   }
 
   .wealthy-text-col {
@@ -214,22 +211,8 @@
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsive centering */
-@media (max-width: 768px) {
-  .view-more {
-    justify-content: center;
-  }
 
-  .view-more-btn {
-    width: 100% !important;
-  }
-}
 
-@media (max-width: 480px) {
-  .view-more-btn {
-    width: 200px;
-  }
-}
 
 /* ========================================================= */
 /* EXTRA RESPONSIVE ENHANCEMENTS — without touching original  */
@@ -309,6 +292,7 @@
     font-size: 20px;
     padding: 0 10px;
     line-height: 2.4rem;
+    margin: 0 0 0 80px;
   }
 
   .wealthy-text-col {
@@ -348,6 +332,7 @@
   .wealth-heading span {
     font-size: 18px;
     padding: 0 8px;
+    margin: 0 0 0 60px;
   }
 
   .view-more-btn {
