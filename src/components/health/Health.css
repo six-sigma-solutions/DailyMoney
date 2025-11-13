@@ -71,7 +71,7 @@ img:hover { transform: scale(1.05); }
   flex-wrap: wrap;
   gap: 10px;
   align-items: center;
-  margin: -65px -40px 20px;
+  margin: -65px 0px 20px -40px;
 }
 
 .hero-content {
@@ -355,6 +355,9 @@ html { scroll-behavior: smooth; }
     font-size: 24px;
     line-height: 1.8rem;
     margin: 0 0 0 140px;
-    padding: 0 15px;
+    padding: 10px 15px;
+  }
+  .hero{
+    margin: 5px 0;
   }
 }
