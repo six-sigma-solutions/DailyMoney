@@ -42,7 +42,7 @@
   height: 500px;
   display: block;
   object-fit: fill;
-  border-radius: 12.5%;
+  border-radius: 25% 0;
   margin: 20px auto;
 }
 
