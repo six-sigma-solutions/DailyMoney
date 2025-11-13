@@ -99,7 +99,7 @@
     text-align: left;
     line-height: 1.5;
     align-content: space-around;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 
@@ -116,7 +116,7 @@
 .stu-page-highlight-text {
   color: var(--stu-page-accent);
   font-weight: bold;
-  font-size: 32px;
+  font-size: 28px;
 }
 
 /* ---------- Footer ---------- */
