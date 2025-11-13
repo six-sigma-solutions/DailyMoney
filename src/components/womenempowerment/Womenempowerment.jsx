@@ -8,7 +8,7 @@ export default function Womenempowerment() {
     <div className="women-container">
       {/* Header */}
       <div className="women-dm-header-wrap">
-        <h1 className="women-header-1">Women Empowerment <br /> A Deeper Vision</h1>
+        <h1 className="women-header-1">Women Empowerment A Deeper Vision</h1>
       </div>
       
 
