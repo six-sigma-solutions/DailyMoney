@@ -38,11 +38,11 @@
 }
 
 .wealthy-hero-card img {
-  width: 88%;
+  width: 90%;
   height: 500px;
   display: block;
   object-fit: fill;
-  border-radius: 12.5%;
+  border-radius: 25% 0;
   margin: 20px auto;
 }
 
