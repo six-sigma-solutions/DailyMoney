@@ -200,7 +200,7 @@ html { scroll-behavior: smooth; }
 }
 
 .styled-img:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
   filter: brightness(1.15) contrast(1.1) saturate(130%);
 }
 
