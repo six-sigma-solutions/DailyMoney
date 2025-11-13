@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import "./Family.css"; // Your CSS file
 import { Link } from "react-router-dom";
@@ -27,12 +28,12 @@ const Family = () => {
     <div className="family-page">
       {/* Process Section */}
       <section className="process">
-      <div className="health-heading">
+      <div className="family-heading">
       <span>Our Family</span>
       </div>
         <h2 className="grow" style={{ color: "#d40000"}}>
           “Protect. Grow. Prosper.”
-        </h2>
+        </h2>
         <p className="subtitle">
           True prosperity begins with good health and grows with financial independence.
           With our transparent, collaborative approach, we bring your vision to
@@ -111,7 +112,7 @@ const Family = () => {
             <h3 className="highlight-text">
               <p>
                 I prioritize my family, ensuring their financial security and providing 
-                emotional support even after me.
+                emotional support even after me.
               </p>
             </h3>
           </div>
@@ -123,7 +124,7 @@ const Family = () => {
             <button className="view-more" type="button">View More</button>
           </Link>
         </div>
-      </section>
+      </section>
       <Footer />
     </div>
       

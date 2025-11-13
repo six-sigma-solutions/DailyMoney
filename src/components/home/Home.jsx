@@ -65,7 +65,7 @@ export default function Home() {
             <p id="hero-subtitle">Independent for Entire life.</p>
           </strong>
           <p id="hero-desc" className="hero-desc">
-            DM stands for discipline, unity and independence.
+            DM stands for discipline, unity and independance.
           </p>
           <p id="hero-desc" className="hero-desc">
             Together, we are shaping a future of health, wealth and limitless
@@ -130,27 +130,24 @@ export default function Home() {
                 </h2>
                 <ul className="solution-bullets">
                   <li>
-                    <strong>
                       Solutions for Every Stage of Your Health & Wealth Journey.
-                    </strong>
+                 
                   </li>
                   <li>
-                    <strong>DM Made Easy, Health & Wealth Made Possible.</strong>
+                    DM Made Easy, Health & Wealth Made Possible.
                   </li>
                   <li>
-                    <strong>
+                   
                       Smart Choices for DM, Smarter Future in Health & Wealth.
-                    </strong>
+                   
                   </li>
                   <li>
-                    <strong>
                       From Today’s Health to Tomorrow’s Wealth & Wellness.
-                    </strong>
+                   
                   </li>
                   <li>
-                    <strong>
-                      Empowering You Every Day with Health and Wealth.
-                    </strong>
+                   
+                      Empowering You Every Day with Health, and Wealth.
                   </li>
                 </ul>
               </div>
@@ -235,44 +232,44 @@ export default function Home() {
                 <h4 className="nested-card-title">The DM Philosophy</h4>
                 <ul className="solution-bullets">
                   <li>
-                    <strong>
+                    
                       Your Partner in DM, Health and Wealth for Life.
-                    </strong>
+                    
                   </li>
                   <li>
-                    <strong>
+                    
                       Every Stage, Every Step, Health & Wealth Solutions.
-                    </strong>
+                    
                   </li>
                   <li>
-                    <strong>
+                    
                       DM Balance Your Life. Build Your Health. Grow Your Wealth.
-                    </strong>
+                    
                   </li>
                   <li>
-                    <strong>
+                    
                       Small Income Wins, Big Health & Wealth Gains.
-                    </strong>
+                    
                   </li>
                   <li>
-                    <strong>
+                    
                       Simplify with DM. Strengthen Health. Secure Wealth.
-                    </strong>
+                   
                   </li>
                   <li>
-                    <strong>
+                   
                       Master Your Day, Master Your Health, Master Your
                       Well-being.
-                    </strong>
+                 
                   </li>
                   <li>
-                    <strong>
+                   
                       Turn Daily Financial Actions into a Lifetime of Health and
                       Wealth.
-                    </strong>
+                   
                   </li>
                   <li>
-                    <strong>Live Well, Live Wealthy, Every Single Day.</strong>
+                    Live Well, Live Wealthy, Every Single Day.
                   </li>
                 </ul>
               </div>
