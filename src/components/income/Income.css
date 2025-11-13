@@ -252,12 +252,10 @@ body {
 }
 /* Push the 4th section text further right */
 .income-section.move-right {
-  justify-content: flex-end; /* push the content section to the right side */
-  gap: 200px; /* increase space between image and text */
+  justify-content: flex-end; /* push the content section to the right side */ /* increase space between image and text */
 }
 
-.income-section.move-right .income-text {
-  margin-left: 250px; /* move text even more to right */
+.income-section.move-right .income-text { /* move text even more to right */
   max-width: 600px;
   text-align: left;
   transition: all 0.3s ease-in-out;
