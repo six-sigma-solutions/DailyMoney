@@ -70,7 +70,7 @@ body { color: #222; background: #fff; line-height: 1.5; overflow-x: hidden; padd
 /* ======================================================= */
 .step-content { flex: 1 1 50%; padding: 6px 10px; margin: 120px 0;}
 
-.step-content p { font-size: 20px; margin-bottom: 0.6rem; text-align: left; line-height: 1.6; }
+.step-content p { font-size: 24px; margin-bottom: 0.6rem; text-align: left; line-height: 1.6; }
 
 .step-content span { color: #d40000; font-weight: bold; }
 
