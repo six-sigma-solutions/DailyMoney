@@ -25,7 +25,7 @@ body { color: #222; background: #fff; line-height: 1.5; overflow-x: hidden; padd
 /* ======================================================= */
 .process { margin-top: 5px; padding: 5px 0; }
 
-.health-heading{
+.family-heading{
   text-align: left;
   display: inline;
   margin-bottom: 25px;
@@ -34,7 +34,7 @@ body { color: #222; background: #fff; line-height: 1.5; overflow-x: hidden; padd
   margin: 0 -50px;
 }
 
-.health-heading span {
+.family-heading span {
   background-color:#047871;
   color: white;
   display: inline-block;
@@ -45,12 +45,12 @@ body { color: #222; background: #fff; line-height: 1.5; overflow-x: hidden; padd
 }
 
 .grow,
-.subtitle { margin: 10px -25px; color: rgb(3, 3, 88); font-weight: 600; font-size: 24px; text-align: start; line-height: 1.6; }
+.subtitle { margin: 10px -50px; color: black; font-weight: 600; font-size: 21px; text-align: start; line-height: 1.6; }
 
 /* ======================================================= */
 /* STEP SECTIONS                                            */
 /* ======================================================= */
-.step { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;     margin: 20px -30px; opacity: 0; transform: translateY(40px); transition: all 0.8s ease-in-out; padding: 5px 0; }
+.step { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin: 20px 20px 30px -20px; opacity: 0; transform: translateY(40px); transition: all 0.8s ease-in-out; padding: 5px 0; }
 
 .step.visible { opacity: 1; transform: translateY(0); }
 
@@ -61,16 +61,16 @@ body { color: #222; background: #fff; line-height: 1.5; overflow-x: hidden; padd
 /* ======================================================= */
 .step-img {  display: flex; justify-content: center; align-items: center; }
 
-.step-img img { width: 300px; height: 250px; border-radius: 12px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12); object-fit: fill; transition: transform 0.4s ease; cursor: pointer; }
+.step-img img { width: 350px; height: 300px; border-radius: 12px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12); object-fit: fill; transition: transform 0.4s ease; cursor: pointer; }
 
 .step-img img:hover { transform: scale(1.05); }
 
 /* ======================================================= */
 /* STEP CONTENT                                             */
 /* ======================================================= */
-.step-content { flex: 1 1 50%; padding: 6px 10px; margin: 80px 0;}
+.step-content { flex: 1 1 50%; padding: 6px 10px; margin: 120px 0;}
 
-.step-content p { font-size: 28px; margin-bottom: 0.6rem; text-align: left; line-height: 1.6; }
+.step-content p { font-size: 20px; margin-bottom: 0.6rem; text-align: left; line-height: 1.6; }
 
 .step-content span { color: #d40000; font-weight: bold; }
 
@@ -115,6 +115,10 @@ footer .btn { margin: 0.6rem 0; }
   .step-content h3 { font-size: 1.3rem; }
   .highlight-text { font-size: 1.05rem; }
   .logo { font-size: 1.2rem; }
+  .family-heading { margin: 0 150px; }
+  .process {
+    margin: 5px 20px;
+  }
 }
 
 /* Mobile */
@@ -130,6 +134,7 @@ footer .btn { margin: 0.6rem 0; }
   .highlight-text { font-size: 1rem; max-width: 95%; }
   .subtitle,
   .grow { margin-left: 15px; text-align: left; font-size: 28px; }
+  .family-heading { margin: 0 70px; }
 }
 
 /* Small Devices */
@@ -142,4 +147,5 @@ footer .btn { margin: 0.6rem 0; }
   .step-content h3 { font-size: 1.2rem; }
   .highlight-text { font-size: 0.95rem; padding: 0 4px; }
   .btn { width: auto; font-size: 0.85rem; padding: 6px 12px; }
+  .family-heading { margin: 0 70px; }
 }
