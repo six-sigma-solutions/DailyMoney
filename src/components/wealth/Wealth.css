@@ -34,18 +34,16 @@
 
 /* Hero section tightened */
 .wealthy-hero-card {
-  margin: 20px auto 0;
+  margin: 5px auto 0;
 }
 
 .wealthy-hero-card img {
-  width: 100%;
+  width: 90%;
   height: 500px;
   display: block;
   object-fit: fill;
-  border-radius: 25% 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
+  border-radius: 12.5%;
+  margin: 20px auto;
 }
 
 /* Zigzag section compact */
@@ -56,6 +54,7 @@
   gap: 60px;
   /* reduced from 3rem */
   padding: 100px 0 0;
+  margin: 30px 0;
   /* reduced from 7rem */
 }
 
