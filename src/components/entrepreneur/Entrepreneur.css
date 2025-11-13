@@ -51,6 +51,7 @@
   align-items: center;
   justify-content: space-around;
   padding: 40px;
+  gap: 30px;
   color: #ffffffe0;
   background-color: #047871;
   border-radius: 25px;
@@ -59,8 +60,9 @@
 
 .ent-left * {
   color: #ffffffe0;
-  font-size: 25px;
+  font-size: 28px;
   text-align: left;
+
 }
 
 .ent-right {
@@ -69,6 +71,7 @@
   justify-content: space-around;
   margin: 200px 0 50px;
   padding: 40px;
+  gap: 30px;
   color: #ffffffe0;
   background-color: #047871;
   border-radius: 25px;
@@ -76,7 +79,7 @@
 
 .ent-right * {
   color: #ffffffe0;
-  font-size: 25px;
+  font-size: 28px;
   text-align: left;
 }
 
