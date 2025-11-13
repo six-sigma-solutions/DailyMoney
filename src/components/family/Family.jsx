@@ -27,7 +27,7 @@ const Family = () => {
     <div className="family-page">
       {/* Process Section */}
       <section className="process">
-      <div className="family-heading">
+      <div className="health-heading">
       <span>Our Family</span>
       </div>
         <h2 className="grow" style={{ color: "#d40000"}}>

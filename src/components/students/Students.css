@@ -8,8 +8,6 @@
   --stu-page-text: #0f172a;
   --stu-page-bg: #ffffff;
   --stu-page-accent: #16a34a; /* Vibrant green */
-  
-  font-family: "Inter", Arial, sans-serif;
   background: var(--stu-page-bg);
   color: var(--stu-page-text);
   line-height: 1.6;
@@ -18,12 +16,13 @@
 /* ---------- Header ---------- */
 .stu-page-header {
   text-align: center;
-  padding: 20px;
-  color: darkgreen;
+  padding: 5px;
+  color: white;
   margin: 30px 40px;
   border-radius: 12px;
   font-weight: bold;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: #047871;
 }
 
 .stu-page-header h1 {
@@ -61,21 +60,18 @@
   flex: 1;
   max-width: 380px;
   border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .stu-page-image-box img {
   width: 320px;
   height: 520px;
-  border-radius: 20px;
+  border-radius: 15% 0;
   cursor: pointer;
 }
 
 .stu-page-image-box:hover {
   transform: scale(1.0);
-  box-shadow: 0 12px 35px rgba(22, 163, 74, 0.35); /* Green glow */
 }
 
 /* ---------- Text Block ---------- */
@@ -103,7 +99,7 @@
     text-align: left;
     line-height: 1.5;
     align-content: space-around;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 
@@ -120,7 +116,7 @@
 .stu-page-highlight-text {
   color: var(--stu-page-accent);
   font-weight: bold;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 /* ---------- Footer ---------- */

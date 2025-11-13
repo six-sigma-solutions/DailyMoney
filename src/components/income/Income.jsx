@@ -54,11 +54,8 @@ const Income = () => {
           <ul>
             <p>
               Secure your family's future.
-              <br />
               Build lasting wealth and assets.
-              <br />
               Create the freedom to travel, explore and experience life.
-              <br />
               Live with peace of mind and purpose.
             </p>
           </ul>
@@ -77,13 +74,9 @@ const Income = () => {
   <div className="income-text">
     <p>
       Income powers growth, not greed.
-      <br />
       Energy creates opportunity.
-      <br />
       Wealth begins with wisdom.
-      <br />
       Freedom follows discipline.
-      <br />
       Balance builds true success.
     </p>
   </div>
