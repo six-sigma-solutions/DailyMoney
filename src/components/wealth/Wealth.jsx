@@ -35,7 +35,7 @@ const Wealth = () => {
               <img src="wealth85.png" alt="Wealth concept 1" />
             </div> 
             <div className="wealthy-col wealthy-text-col row1">
-              <h2>
+              <h2 style={{ backgroundColor: "#047871"}}>
                 <span className="wealthy-check" >  ✓  </span>
                 Wealth is more than numbers in a bank account. It is the freedom
                 to choose our path, the security to protect what matters and
@@ -82,7 +82,7 @@ const Wealth = () => {
               <img src="wealth44.png" alt="Wealth concept 4" />
             </div>
             <div className="wealthy-col wealthy-text-col row4">
-              <h2 style={{ backgroundColor: "navy"}}>
+              <h2 style={{ backgroundColor: "black"}}>
                 <span className="wealthy-check">  ✓  </span>
                 Wealth is not greed it is growth. It is not selfishness, it is
                 stewardship. When guided by purpose, wealth becomes a force for
