@@ -27,7 +27,7 @@ const Family = () => {
     <div className="family-page">
       {/* Process Section */}
       <section className="process">
-      <div className="health-heading">
+      <div className="family-heading">
       <span>Our Family</span>
       </div>
         <h2 className="grow" style={{ color: "#d40000"}}>
@@ -40,14 +40,15 @@ const Family = () => {
           value and adapt to change building the best world:{" "}
           <span
             style={{
-              backgroundColor: "#d4edda",
-              color: "green",
+              backgroundColor: "#047871",
+              color: "#fff",
               borderRadius: "8px",
-              fontSize: "23px",
+              fontSize: "21px",
               fontWeight: "bold",
+              padding: "0 10px",
             }}
           >
-            Healthier, Happier, and Wealthier
+            Healthier, Happier, and Wealthier.
           </span>
         </p>
 
