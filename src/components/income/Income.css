@@ -39,7 +39,7 @@ body {
 
 .income-text {
   flex: 1;
-  font-size: 23px !important;
+  font-size: 27px !important;
   text-align: start;
   padding: 20px;
   border-radius: 20px;
@@ -233,18 +233,21 @@ body {
     color: navy;
     border-radius: 20px;
     padding: 20px;
+    font-size: 30px;
   }
   50% {
     background-color: transparent;
     color: blue;
     border-radius: 20px;
     padding: 20px;
+    font-size: 30px;
   }
   100% {
     background-color: yellow;
     color: darkblue;
     border-radius: 20px;
     padding: 20px;
+    font-size: 30px;
   }
 }
 /* Push the 4th section text further right */
