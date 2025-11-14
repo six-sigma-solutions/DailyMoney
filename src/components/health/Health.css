@@ -249,7 +249,7 @@ html { scroll-behavior: smooth; }
 
 /* ---------------- FOOTER ---------------- */
 .footer {
-  background: #000000;
+  background:#28282B;
   padding: 0px 20px;
   text-align: center;
   border-top: 2px solid #e5e7eb;
@@ -272,8 +272,10 @@ html { scroll-behavior: smooth; }
 }
 .footer h2 { font-size: 1.5rem; line-height: 1.8; font-weight: 900; padding: 20px; margin-bottom: 13px; color: #cdefff }
 
-.footer .english { font-size: 1.8rem; font-weight: 900; margin-bottom: 13px; color: #ffffff; }
-
+.footer .english  { font-size: 1.8rem; font-weight: 900; margin-bottom: 13px; color: #ffffff; }
+.tamil-1{
+  color: #fff;
+}
 /* ---------------- RESPONSIVE ADJUSTMENTS ---------------- */
 
 /* ---------------- ADDITIONAL RESPONSIVE FIXES ---------------- */
