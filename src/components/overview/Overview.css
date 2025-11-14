@@ -224,11 +224,10 @@
   }
 
   .zigzag-image-container img {
-    width: 92%;
-    max-width: 320px;
+    max-width: 270px;
     height: 240px;
     border-radius: 25% 0;
-    object-fit: fill;
+    object-fit: cover;
   }
 
   .zigzag-text-content {
