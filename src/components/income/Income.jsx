@@ -14,16 +14,16 @@ const Income = () => {
       <section className="income-section">
         <div className="income-text">
           <p>
-            Income is more than just money earned, it is the reward for effort,
-            time and value created. Whether through wages, salaries, profits
-            or investments, income provides the foundation for stability and
+            Income is more than just money earned,<br />it is the reward for effort,
+            time and value created.<br /> Whether through wages, salaries, profits
+            or investments,<br /> income provides the foundation for stability and
             growth.
           </p>
         </div>
         <div className="income-image">
           <img
             className="responsive-income-img"
-            src="income1st.jpg"
+            src="incomepls.png"
             alt="Income concept"
           />
         </div>
@@ -33,8 +33,8 @@ const Income = () => {
       <section className="income-section reverse">
         <div className="income-text">
           <p>
-            True income, however is not just financial. It is about the returns
-            you gain from life itself, the knowledge you acquire, the
+            True income, however is not just financial.<br /> It is about the returns
+            you gain from life itself,<br /> the knowledge you acquire, the
             relationships you nurture and the health you maintain.
           </p>
         </div>
@@ -53,13 +53,10 @@ const Income = () => {
           
           <ul>
             <p>
-              Secure your family's future.
-              <br />
-              Build lasting wealth and assets.
-              <br />
-              Create the freedom to travel, explore and experience life.
-              <br />
-              Live with peace of mind and purpose.
+              Secure your family's future.  <br />
+              Build lasting wealth and assets.  <br />
+              Create the freedom to travel, <br /> explore and experience life. <br />
+              Live with peace of mind and purpose. <br />
             </p>
           </ul>
         </div>
@@ -76,15 +73,11 @@ const Income = () => {
       <section className="income-section reverse move-right">
   <div className="income-text">
     <p>
-      Income powers growth, not greed.
-      <br />
-      Energy creates opportunity.
-      <br />
-      Wealth begins with wisdom.
-      <br />
-      Freedom follows discipline.
-      <br />
-      Balance builds true success.
+      Income powers growth, not greed. <br />
+      Energy creates opportunity. <br />
+      Wealth begins with wisdom. <br />
+      Freedom follows discipline. <br />
+      Balance builds true success. <br />
     </p>
   </div>
   <div className="income-image">
