@@ -81,7 +81,7 @@ const Overview = () => {
       {/* Section 4 */}
       <section className="zigzag-layout-section reverse-layout">
         <div className="zigzag-image-container">
-          <img src="image-4.jpg" alt="People celebrating success" />
+          <img style={{ width: "800px" }} src="image-4.jpg" alt="People celebrating success" />
         </div>
 
         <div className="zigzag-text-content">
