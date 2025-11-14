@@ -153,13 +153,13 @@ footer .btn { margin: 0.6rem 0; }
   .highlight-text { font-size: 0.95rem; padding: 0 4px; }
   .btn { width: auto; font-size: 0.85rem; padding: 6px 12px; }
   .family-heading {
-        margin-left: 50px;
+        margin-left: 10px;
         font-size: 18px;
   }
   .family-heading span{
      padding: 0 8px;
       font-size: 24px;
-      line-height: 1.8;
+      line-height: 1.6;
   }
   .process{
     margin: 0 auto;
