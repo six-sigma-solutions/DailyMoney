@@ -109,7 +109,7 @@
     font-weight: 600;
     display: inline;
     text-align: start;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 /* ✅ Tick Icon Alignment */
@@ -129,7 +129,7 @@
 .dm-eldr-highlight {
   color: var(--dm-eldr-accent);
   font-weight: bold;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 /* ---------- SCROLL FADE-IN ANIMATION ---------- */
