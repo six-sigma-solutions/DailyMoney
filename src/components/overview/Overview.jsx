@@ -8,7 +8,7 @@ const Overview = () => {
     <div className="overview-page-container">
 
       {/* Title */}
-      <div className="wealth-heading">
+      <div className="overview-header-title">
         <span>Overview</span>
       </div>
 
@@ -19,7 +19,7 @@ const Overview = () => {
         </div>
 
         <div className="zigzag-text-content">
-          <h2 style={{ color: "green" }}>Our Purpose</h2>
+          <h2 style={{ color: "#80ef80" }}>Our Purpose</h2>
           <p>
             DM exists to make the world healthier, happier, wealthier—one
             person, one family and one community at a time.
@@ -34,7 +34,7 @@ const Overview = () => {
         </div>
 
         <div className="zigzag-text-content">
-          <h2 style={{ color: "lime" }}>Our Approach</h2>
+          <h2 style={{ color: "ffff00" }}>Our Approach</h2>
           <ul>
             <li>
               <strong>Clarity –</strong> Simplifying finance so everyone feels confident.
@@ -60,7 +60,7 @@ const Overview = () => {
         </div>
 
         <div className="zigzag-text-content">
-          <h2 style={{ color: "blue" }}>Our Core Beliefs</h2>
+          <h2 style={{ color: "#89bFFb" }}>Our Core Beliefs</h2>
           <ul>
             <li>
               <strong>Health is Wealth –</strong> Without wellness, income loses meaning.
@@ -85,7 +85,7 @@ const Overview = () => {
         </div>
 
         <div className="zigzag-text-content">
-          <h2 style={{ color: "navy" }}>Our Promise</h2>
+          <h2 style={{ color: "00ffff" }}>Our Promise</h2>
           <p>
             DM stands for more than health—it represents lifelong prosperity.
             We help create strong foundations for generations to flourish in
