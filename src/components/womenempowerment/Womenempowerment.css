@@ -82,14 +82,13 @@
 
 /* Mission Section */
 .women-section {
-  margin-top: 40px;
   padding: 30px 20px;
   border-radius: 10px;
 }
 
 .women-section h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
+  font-size: 30px;
+  margin-bottom: 10px;
   font-weight: 700;
   text-align: center;
 }
@@ -192,12 +191,12 @@
 .women-program h3 {
   color: #b20a2c;
   margin-bottom: 10px;
+  font-size: 24px;
 }
 
 .women-program p {
-  color: #555;
-  margin-bottom: 10px;
-  font-size: 19px;
+  color: black;
+  font-size: 23px;
 }
 
 .women-program img {
