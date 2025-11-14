@@ -175,7 +175,7 @@ export default function Home() {
               </div>
               <img
                 className="solution-card-img1"
-                src="phonef.png"
+                src="ph-1.png"
                 alt="Custom Apps"
               />
             </div>
@@ -192,7 +192,7 @@ export default function Home() {
               </div>
               <img
                 className="solution-card-img1"
-                src="/phonec.png"
+                src="/ph-2.jpg"
                 alt="Design Systems"
               />
             </div>
@@ -209,7 +209,7 @@ export default function Home() {
               </div>
               <img
                 className="solution-card-img1"
-                src="/phonel.png"
+                src="/ph-3.jpg"
                 alt="AI Tools"
               />
             </div>
