@@ -30,7 +30,7 @@
 .entrepreneur-container .ent-title img {
   width: 120%;
   height: 500px;
-  border-radius: 25% 0; 
+  border-radius: 25px; 
   border: 3px solid green;
   object-fit: fill;
   margin: 0 auto;
