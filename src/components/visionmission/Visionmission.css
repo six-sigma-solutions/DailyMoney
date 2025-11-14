@@ -11,7 +11,7 @@
 
 .dm-vsn-main-content {
   background: var(--dm-vsn-bg, #ffffff);
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #111;
   min-height: 100vh;
 }
@@ -36,7 +36,8 @@
   padding: 10px;
   margin: 20px;
   border-radius: 12px;
-  color: #f10a0a;
+  color:#fff;
+  background-color: #407871;
   font-weight: 900;
   font-size: 2.5rem;
   letter-spacing: 1px;
@@ -216,7 +217,7 @@
   gap: 40px;
   padding: 40px 16px;
   background: #ffffff;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .vision-row {
