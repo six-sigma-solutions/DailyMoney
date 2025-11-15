@@ -47,7 +47,7 @@ export default function Home() {
 
       <div className="dm">
         <span>
-          DM for Health and Wellness - The World Premium Healthy and
+          DM - Daily Message - Health and Wellness - The World Premium Healthy and
           Happy Community.
         </span>
       </div>
@@ -223,7 +223,6 @@ export default function Home() {
               {/* The H3 and P tags have been REMOVED from here */}
               
               <div className="ar-vr-nested-card">
-                <h4 className="nested-card-title">The DM Philosophy</h4>
                 <ul className="solution-bullets">
                   <li>
                     
