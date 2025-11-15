@@ -569,6 +569,18 @@ body {
   text-align:center;
   margin-left: 520px;
 }
+@media screen and (max-width: 768px){
+  .vision, .mission{
+    width: 70%;
+    margin-left: 75px;
+  }
+}
+@media screen and (max-width: 480px){
+  .vision, .mission{
+    width: 90%;
+    margin-left: 2px;
+  }
+}
 
 .solution-card-desc1 {
   color: #666;
