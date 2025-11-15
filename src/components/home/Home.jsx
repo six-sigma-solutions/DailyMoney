@@ -162,13 +162,13 @@ export default function Home() {
               ></img>
             </div>
           </div>
+
+          <span className="vision">Vision</span>
           <div className="solutions-grid">
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                  <span style={{color: "white"}} className="vision">Vision</span>{" "}
                   <span>
-                    <br />
                    Vision for your Future
                   </span>
                 </div>
@@ -182,10 +182,7 @@ export default function Home() {
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                 <span style={{color: "white"}} className="vision">Vision</span>{" "}
                   <span>
-                    {" "}
-                    <br />
                     Vision for your Future Generation
                   </span>
                 </div>
@@ -199,10 +196,7 @@ export default function Home() {
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                  <span style={{color: "white"}} className="vision">Vision</span>{" "}
                   <span>
-                    {" "}
-                    <br />
                     Vision for your Generation After Generations
                   </span>
                 </div>
@@ -214,7 +208,7 @@ export default function Home() {
               />
             </div>
           </div>
-
+          <span className="mission">Mission</span> 
           <div className="ar-vr-container">
             {/* Left Column with the Image */}
             <div className="ar-vr-image-column">
@@ -227,9 +221,8 @@ export default function Home() {
             {/* Right Column with Content */}
             <div className="ar-vr-content-column">
               {/* The H3 and P tags have been REMOVED from here */}
-
+              
               <div className="ar-vr-nested-card">
-                <h4 className="nested-card-title">Mission</h4>
                 <h4 className="nested-card-title">The DM Philosophy</h4>
                 <ul className="solution-bullets">
                   <li>
