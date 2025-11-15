@@ -180,4 +180,4 @@ const Visionmission = () => {
   );
 };
 
-export default Visionmission;
+export default Ourcorevalues;

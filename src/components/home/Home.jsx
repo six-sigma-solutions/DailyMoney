@@ -163,7 +163,11 @@ export default function Home() {
             </div>
           </div>
 
+<<<<<<< HEAD
           <span id="vision" className="vision">Vision</span>
+=======
+          <span className="vision">Vision</span>
+>>>>>>> 109e872a107dfc2f8665711dc2eee97481d6a9b8
           <div className="solutions-grid">
             <div className="solution-card1">
               <div className="solution-card-content">

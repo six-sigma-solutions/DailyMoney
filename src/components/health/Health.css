@@ -373,6 +373,12 @@ html { scroll-behavior: smooth; }
     line-height: 1.8rem;
     margin: 0 0 0 80px;
     padding: 10px 15px;
+<<<<<<< HEAD
+  }
+  .hero{
+    margin: 5px auto;
+=======
+>>>>>>> 109e872a107dfc2f8665711dc2eee97481d6a9b8
   }
   .hero{
     margin: 5px auto;
