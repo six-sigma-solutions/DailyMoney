@@ -522,7 +522,7 @@ body {
   gap: 40px;
   justify-items: center;
   align-items: stretch;
-  margin-top: 5px;
+  margin-top: 40px;
   width: 100%;
   margin-bottom: 60px;
 }
@@ -557,32 +557,17 @@ body {
   color: #b71c1c;
 }
 
-.vision{
+.vision, .mission{
   background: #047871;
   color: #fff;
   display: inline-block;
-  font-size: 24px;
+  font-size: 28px;
   padding: 0 40px;
   border-radius: 15px;
-  margin-top: 5px;
   font-weight: 600;
+  width: 28%;
   text-align:center;
-  width: 100%;
-  margin-bottom: 0;
-}
-
-.mission{
-   background: #047871;
-  color: #fff;
-  display: inline-block;
-  font-size: 24px;
-  padding: 0 40px;
-  border-radius: 15px;
-  margin-top: 5px;
-  font-weight: 600;
-  text-align:center;
-  width: 100%;
-  margin-bottom: 0;
+  margin-left: 520px;
 }
 
 .solution-card-desc1 {
@@ -616,7 +601,7 @@ body {
   display: flex;
   gap: 50px;
   align-items: stretch;
-  margin-top: 5px;
+  margin-top: 40px;
 }
 
 .ar-vr-image-column {

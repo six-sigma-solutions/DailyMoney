@@ -223,7 +223,6 @@ export default function Home() {
               {/* The H3 and P tags have been REMOVED from here */}
               
               <div className="ar-vr-nested-card">
-                <h4 className="nested-card-title">The DM Philosophy</h4>
                 <ul className="solution-bullets">
                   <li>
                     
