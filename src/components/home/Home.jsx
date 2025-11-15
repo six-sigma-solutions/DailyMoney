@@ -183,7 +183,7 @@ export default function Home() {
               <div className="solution-card-content">
                 <div className="solution-card-title1">
                   <span>
-                    Vision for your Future Generation
+                    Vision for your <br /> Future Generation
                   </span>
                 </div>
               </div>
@@ -197,7 +197,7 @@ export default function Home() {
               <div className="solution-card-content">
                 <div className="solution-card-title1">
                   <span>
-                    Vision for your Generation After Generations
+                    Vision for your <br /> Generation After Generations
                   </span>
                 </div>
               </div>
