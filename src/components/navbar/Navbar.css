@@ -44,7 +44,7 @@
   align-items: center;
 }
 
-#tab-name, #vision, .link {
+#tab-name {
   font-weight: 600;
   color: #000000a5;
   font-size: 18px;
