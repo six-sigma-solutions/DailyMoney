@@ -32,7 +32,7 @@ const Visionmission = () => {
 
   return (
     <main className="dm-vsn-main-content">
-      <div className="dm-title">DM Vision & Mission</div>
+      <div className="dm-title">0ur Core Values Global</div>
       {/* HERO: centered rounded card with full-width image inside and left text */}
       <section className="dm-vsn-hero-card">
 
@@ -156,12 +156,11 @@ const Visionmission = () => {
 
       {/* Horizontal 4-Image Section */}
       <section className="vision-gallery-section">
-        <h2 className="vision-gallery-title">Core Values</h2>
         <div className="vision-gallery">
           <img src="1.png" alt="Vision gallery 1" />
           <img src="reddoxbox.png" alt="Vision gallery 2" />
           <img src="3.png" alt="Vision gallery 3" />
-          <img src="income4th.jpg" alt="Vision gallery 4" />
+          <img src="4.jpg" alt="Vision gallery 4" />
         </div>
       </section>
 
