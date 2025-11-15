@@ -84,19 +84,8 @@ const Health = () => {
 
       {/* Footer */}
       <footer id="footer" className="footer">
-        <h2 className="english">
-          No Medicine is needed, if you allow proper digestion between meals.
-        </h2>
-        <h1>மருந்தென வேண்டாவாம் யாக்கைக்கு அருந்தியது<br></br>
-          <span className="car"></span>அற்றது போற்றி உணின்.</h1>
-        <h3 className="author">- திருக்குறள்.</h3>
-        <h2>
-          முன் உண்டது செரித்ததைத் தெளிவாக அறிந்து, அதன் பின்னரே உண்பானால்,
-          அவனுடைய உடலுக்கு ‘மருந்து’ வேண்டாம்.
-        </h2>
-        <div>
-       <h1 className="tamil"> தண்ணீரைச் சாப்பிடு, உணவை அருந்து <br /> உண்மையான ஆரோக்கிய வாழ்க்கையின் ரகசியம்.</h1>
-        <h2 className="tamil-1">💧 Eat water, Sip Food. The secret of true healthy life.</h2>
+        <div className="thiru">
+          <img src ="thiruupdate.jpg" alt="thirukural"></img>
         </div>
      <section className="blog">
         <div className="view-more-link-my-life">
@@ -104,9 +93,9 @@ const Health = () => {
             <button className="view-more" type="button">View More</button>
           </Link>
         </div>
-      </section>
+      </section>
       </footer>
-      <Footer />
+      <Footer></Footer>
     </div>
   );
 };

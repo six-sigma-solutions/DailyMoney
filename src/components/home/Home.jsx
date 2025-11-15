@@ -192,7 +192,7 @@ export default function Home() {
               </div>
               <img
                 className="solution-card-img1"
-                src="/ph-2.jpg
+                src="/ph-2.jpg"
                 alt="Design Systems"
               />
             </div>

@@ -1,4 +1,3 @@
-
 /* ---------------- VARIABLES ---------------- */
 :root {
   --font-primary: 'Poppins', sans-serif;
@@ -249,16 +248,15 @@ html { scroll-behavior: smooth; }
 
 /* ---------------- FOOTER ---------------- */
 .footer {
-  background: #000000;
   padding: 0px 20px;
   text-align: center;
-  border-top: 2px solid #e5e7eb;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.15;
   width: 100%;
   max-width: none;
   box-sizing: border-box;
+  background-color: #fff !important;
 }
 
 .footer:hover { transform: translateY(-3px); }
@@ -270,10 +268,12 @@ html { scroll-behavior: smooth; }
   padding: 0 80px;
   line-height: 1.8;
 }
-.footer h2 { font-size: 1.5rem; line-height: 1.8; font-weight: 900; padding: 20px; margin-bottom: 13px; color: #cdefff }
+.footer h2 { font-size: 1.5rem; line-height: 1.8; font-weight: 900; padding: 20px; margin-bottom: 13px; color: #fff }
 
-.footer .english { font-size: 1.8rem; font-weight: 900; margin-bottom: 13px; color: #ffffff; }
-
+.footer .english  { font-size: 1.8rem; font-weight: 900; margin-bottom: 13px; color: #ffffff; }
+.tamil-1{
+  color: #fff;
+}
 /* ---------------- RESPONSIVE ADJUSTMENTS ---------------- */
 
 /* ---------------- ADDITIONAL RESPONSIVE FIXES ---------------- */
@@ -332,6 +332,12 @@ html { scroll-behavior: smooth; }
     padding: 10px;
     text-align: center;
   }
+  .thiru img{
+    height: 350px;
+    width: 600px;
+    filter: brightness(150%);
+    border-radius: 25px;
+  }
 }
 
 /* Small mobile (≤480px) */
@@ -364,7 +370,7 @@ html { scroll-behavior: smooth; }
   .health-heading span {
     font-size: 24px;
     line-height: 1.8rem;
-    margin: 0 0 0 120px;
+    margin: 0 0 0 80px;
     padding: 10px 15px;
   }
   .hero{

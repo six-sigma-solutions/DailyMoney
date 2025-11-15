@@ -158,10 +158,10 @@ const Visionmission = () => {
       <section className="vision-gallery-section">
         <h2 className="vision-gallery-title">Core Values</h2>
         <div className="vision-gallery">
-          <img src="abd.png" alt="Vision gallery 1" />
+          <img src="1.png" alt="Vision gallery 1" />
           <img src="reddoxbox.png" alt="Vision gallery 2" />
-          <img src="test3.jpg" alt="Vision gallery 3" />
-          <img src="create.png" alt="Vision gallery 4" />
+          <img src="3.png" alt="Vision gallery 3" />
+          <img src="income4th.jpg" alt="Vision gallery 4" />
         </div>
       </section>
 

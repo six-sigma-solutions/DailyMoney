@@ -46,7 +46,7 @@ body { color: #222; background: #fff; line-height: 1.5; overflow-x: hidden; padd
 }
 
 .grow,
-.subtitle { margin: 10px -50px; color: black; font-weight: 600; font-size: 21px; text-align: start; line-height: 1.6; }
+.subtitle { margin: 10px -50px; color: black; font-weight: 600; font-size: 28px; text-align: start; line-height: 1.6; }
 
 /* ======================================================= */
 /* STEP SECTIONS                                            */
