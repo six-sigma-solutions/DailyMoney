@@ -166,10 +166,10 @@ export default function Home() {
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                  Vision & Mission is your{" "}
+                  <span style={{color: "white"}} className="vision">Vision</span>{" "}
                   <span>
                     <br />
-                    Future
+                   Vision for your Future
                   </span>
                 </div>
               </div>
@@ -182,11 +182,11 @@ export default function Home() {
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                  Vision & Mission is your{" "}
+                 <span style={{color: "white"}} className="vision">Vision</span>{" "}
                   <span>
                     {" "}
                     <br />
-                    Future Generation
+                    Vision for your Future Generation
                   </span>
                 </div>
               </div>
@@ -199,11 +199,11 @@ export default function Home() {
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
-                  Vision & Mission is your{" "}
+                  <span style={{color: "white"}} className="vision">Vision</span>{" "}
                   <span>
                     {" "}
                     <br />
-                    Generation After Generations
+                    Vision for your Generation After Generations
                   </span>
                 </div>
               </div>
@@ -229,6 +229,7 @@ export default function Home() {
               {/* The H3 and P tags have been REMOVED from here */}
 
               <div className="ar-vr-nested-card">
+                <h4 className="nested-card-title">Mission</h4>
                 <h4 className="nested-card-title">The DM Philosophy</h4>
                 <ul className="solution-bullets">
                   <li>
@@ -294,10 +295,6 @@ export default function Home() {
             <h4 className="team-member-name">S.Vasu</h4>
           </div>
 
-          <div className="team-member-card">
-            <img src="https://via.placeholder.com/120" alt="xxxx" />
-            <h4 className="team-member-name">xxxxx</h4>
-          </div>
 
           <div className="team-member-card">
             <img src="https://via.placeholder.com/120" alt="xxxx" />
