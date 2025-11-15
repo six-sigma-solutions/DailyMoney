@@ -85,11 +85,7 @@ const Health = () => {
       {/* Footer */}
       <footer id="footer" className="footer">
         <div className="thiru">
-<<<<<<< HEAD
           <img src ="Thirukural.jpg" alt="thirukural"></img>
-=======
-          <img src ="thiruupdate.jpg" alt="thirukural"></img>
->>>>>>> 109e872a107dfc2f8665711dc2eee97481d6a9b8
         </div>
      <section className="blog">
         <div className="view-more-link-my-life">
@@ -97,7 +93,7 @@ const Health = () => {
             <button className="view-more" type="button">View More</button>
           </Link>
         </div>
-      </section>
+      </section>
       </footer>
       <Footer></Footer>
     </div>

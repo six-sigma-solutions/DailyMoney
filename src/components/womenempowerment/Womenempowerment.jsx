@@ -15,11 +15,7 @@ export default function Womenempowerment() {
       {/* Hero Section: Image Left, Text Right */}
       <section className="women-hero">
         <div className="women-image">
-<<<<<<< HEAD
           <img src="womenemp.png" alt="Empowered women" />
-=======
-          <img src="womenlogo.png" alt="Empowered women" />
->>>>>>> 109e872a107dfc2f8665711dc2eee97481d6a9b8
         </div>
 
         <div className="women-content">

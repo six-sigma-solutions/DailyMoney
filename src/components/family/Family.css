@@ -152,7 +152,6 @@ footer .btn { margin: 0.6rem 0; }
   .step-content h3 { font-size: 1.2rem; }
   .highlight-text { font-size: 0.95rem; padding: 0 4px; }
   .btn { width: auto; font-size: 0.85rem; padding: 6px 12px; }
-<<<<<<< HEAD
   .family-heading {
         margin-left: 10px;
         font-size: 18px;
@@ -162,12 +161,6 @@ footer .btn { margin: 0.6rem 0; }
       font-size: 24px;
       line-height: 1.6;
   }
-=======
-  .family-heading { font-size: 24px;
-        line-height: 2.4rem;
-        margin: 0 40px;
-        padding: 10px 15px; }
->>>>>>> 109e872a107dfc2f8665711dc2eee97481d6a9b8
   .process{
     margin: 0 auto;
     padding: 0 10px;

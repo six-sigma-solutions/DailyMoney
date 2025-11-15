@@ -38,8 +38,8 @@
 }
 
 .wealthy-hero-card img {
-  width: 90%;
-  height: 560px;
+  width: 100%;
+  height: 500px;
   display: block;
   object-fit: fill;
   border-radius: 25% 0;
@@ -85,23 +85,16 @@
 .wealthy-image-col img {
   width: 100%;
   max-width: 360px;
-<<<<<<< HEAD
   border-radius: 25px;
   box-shadow: 0 8px 20px rgba(11, 20, 25, 0.06);
-=======
-  border-radius: 25% 0;
->>>>>>> 109e872a107dfc2f8665711dc2eee97481d6a9b8
   object-fit: cover;
 }
 
 /* Text column reduced padding */
 .wealthy-text-col {
-<<<<<<< HEAD
   padding: 20px;
   border-radius: var(--radius);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
-=======
->>>>>>> 109e872a107dfc2f8665711dc2eee97481d6a9b8
   transition: all 0.3s ease;
   text-align: justify;
 }
@@ -300,11 +293,7 @@
     font-size: 20px;
     padding: 0 10px;
     line-height: 2.4rem;
-<<<<<<< HEAD
     margin: 0 0 0 20px;
-=======
-    margin: 0 0 0 80px;
->>>>>>> 109e872a107dfc2f8665711dc2eee97481d6a9b8
   }
 
   .wealthy-text-col {
@@ -344,11 +333,7 @@
   .wealth-heading span {
     font-size: 24px;
     padding: 0 8px;
-<<<<<<< HEAD
     margin: 0 0 0 20px;
-=======
-    margin: 0 0 0 60px;
->>>>>>> 109e872a107dfc2f8665711dc2eee97481d6a9b8
   }
 
   .view-more-btn {
