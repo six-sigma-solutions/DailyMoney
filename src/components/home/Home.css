@@ -570,6 +570,13 @@ body {
   margin-left: 520px;
 }
 
+@media screen and (max-width: 480px){
+  .vision, .mission{
+    width: 90%;
+    margin-left: 20px;
+  }
+}
+
 .solution-card-desc1 {
   color: #666;
   font-size: 1.08em;
