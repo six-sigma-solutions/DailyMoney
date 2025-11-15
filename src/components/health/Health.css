@@ -249,16 +249,15 @@ html { scroll-behavior: smooth; }
 
 /* ---------------- FOOTER ---------------- */
 .footer {
-  background:#28282B;
   padding: 0px 20px;
   text-align: center;
-  border-top: 2px solid #e5e7eb;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.15;
   width: 100%;
   max-width: none;
   box-sizing: border-box;
+  background-color: #fff !important;
 }
 
 .footer:hover { transform: translateY(-3px); }
@@ -333,6 +332,12 @@ html { scroll-behavior: smooth; }
   .footer .english {
     padding: 10px;
     text-align: center;
+  }
+  .thiru img{
+    height: 350px;
+    width: 600px;
+    filter: brightness(150%);
+    border-radius: 25px;
   }
 }
 
