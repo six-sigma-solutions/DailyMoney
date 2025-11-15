@@ -32,7 +32,7 @@ const Visionmission = () => {
 
   return (
     <main className="dm-vsn-main-content">
-      <div className="dm-title">0ur Core Values Global</div>
+      <div className="dm-title">0ur Core Values to Global</div>
       {/* HERO: centered rounded card with full-width image inside and left text */}
       <section className="dm-vsn-hero-card">
 
@@ -64,7 +64,7 @@ const Visionmission = () => {
     {/* Section 1: Image Left, Text Right */}
     <div className="vision-row">
       <div className="vision-col vision-image-col">
-        <img src="vee.png" alt="Wealth concept 1" />
+        <img src="vision111.jpg" alt="Wealth concept 1" />
       </div>
       <div className="vision-col vision-text-col">
         <h2>
@@ -84,7 +84,7 @@ const Visionmission = () => {
           {/* Section 2: Image Right, Text Left */}
           <div className="vision-row vision-reverse">
             <div className="vision-col vision-image-col">
-              <img src="misss.png" alt="Wealth concept 2" />
+              <img src="vision222.jpg" alt="Wealth concept 2" />
             </div>
             <div className="vision-col vision-text-col">
               <h2>
@@ -109,7 +109,7 @@ const Visionmission = () => {
     {/* Section 3: Image Left, Text Right */}
     <div className="vision-row">
       <div className="vision-col vision-image-col">
-        <img src="vision420.png" alt="Wealth concept 3" />
+        <img src="vision333.jpg" alt="Wealth concept 3" />
       </div>
       <div className="vision-col vision-text-col">
         <h2>
@@ -131,7 +131,7 @@ const Visionmission = () => {
     {/* Section 4: Image Right, Text Left */}
     <div className="vision-row vision-reverse">
       <div className="vision-col vision-image-col">
-        <img src="veetech.png" alt="Wealth concept 4" />
+        <img src="vision444.jpg" alt="Wealth concept 4" />
       </div>
       <div className="vision-col vision-text-col">
         <h2>
@@ -156,6 +156,7 @@ const Visionmission = () => {
 
       {/* Horizontal 4-Image Section */}
       <section className="vision-gallery-section">
+
         <div className="vision-gallery">
           <img src="1.png" alt="Vision gallery 1" />
           <img src="reddoxbox.png" alt="Vision gallery 2" />
