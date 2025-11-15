@@ -8,7 +8,7 @@ import Wealth from "./components/wealth/Wealth";
 import Family from "./components/family/Family";
 import Contact from "./components/contact/Contact";
 import Overview from "./components/overview/Overview";
-import Visionmission from "./components/visionmission/Visionmission";
+import Ourcorevalue from "./components/ourcorevalue/Ourcorevalues";
 import FounderMsg from "./components/founderMsg/FounderMsg";
 import PresidentMsg from "./components/presidentMsg/PresidentMsg";
 import CoreTeam from "./components/coreTeam/CoreTeam";
@@ -38,7 +38,7 @@ export default function App() {
         <Route path="/family" element={<Family />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/overview" element={<Overview />} />
-        <Route path="/visionmission" element={<Visionmission />} />
+        <Route path="/ourcorevalue" element={<Ourcorevalue />} />
         <Route path="/founders-msg" element={<FounderMsg />} />
         <Route path="/presidents-msg" element={<PresidentMsg />} />
         <Route path="/core-team" element={<CoreTeam />} />

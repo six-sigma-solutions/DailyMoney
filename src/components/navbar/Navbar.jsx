@@ -92,8 +92,8 @@ export default function Navbar() {
                 <Link id="tab-name" to="/overview">
                   ▾ Overview
                 </Link>
-                <Link id="tab-name" to="/visionmission">
-                  ▾ Vision & Mission
+                <Link id="tab-name" to="/ourcorevalue">
+                  ▾ Our Core Value
                 </Link>
                 <Link id="tab-name" to="/founders-msg">
                   ▾ Founder's Message

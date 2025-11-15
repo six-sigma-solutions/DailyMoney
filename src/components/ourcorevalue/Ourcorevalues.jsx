@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
-import './Visionmission.css';
+import './Ourcorevalue.css';
 import Footer from '../footer/Footer';
 
 const Visionmission = () => {
@@ -48,9 +48,7 @@ const Visionmission = () => {
                 Living in flow with nature where wellness nourishes wealth and joy sustains growth.<br></br>
                 Building a future where vitality, happiness and financial independence flow as one.<br></br>
                 To enrich every life with balance, energy and prosperity.
-
               </p>
-
             </div>
           </div>
         </div>
