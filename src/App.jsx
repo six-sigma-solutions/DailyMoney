@@ -50,7 +50,7 @@ export default function App() {
         <Route path="/solution" element={<Solution />} />
         <Route path="/gratitude" element={<Gratitude />} />
         <Route path="/mypromises" element={<Mypromises />} />
-  <Route path="/full-footer" element={<FullFooter />} />
+        <Route path="/full-footer" element={<FullFooter />} />
         <Route path="/bio" element={<Bio />} />
 
         {/* fallback to home */}

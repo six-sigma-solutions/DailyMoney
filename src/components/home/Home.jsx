@@ -163,7 +163,7 @@ export default function Home() {
             </div>
           </div>
 
-          <span className="vision">Vision</span>
+          <span id="vision" className="vision">Vision</span>
           <div className="solutions-grid">
             <div className="solution-card1">
               <div className="solution-card-content">
@@ -179,6 +179,7 @@ export default function Home() {
                 alt="Custom Apps"
               />
             </div>
+             
             <div className="solution-card1">
               <div className="solution-card-content">
                 <div className="solution-card-title1">
@@ -271,7 +272,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="clients-container">
+      <section id="CoreTeam" className="clients-container">
         <div className="clients-title">Core Team</div>
 
         {/* Founder is now in a separate div at the top */}

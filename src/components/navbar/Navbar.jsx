@@ -92,8 +92,8 @@ export default function Navbar() {
                 <Link id="tab-name" to="/overview">
                   ▾ Overview
                 </Link>
-                <Link id="tab-name" to="/ourcorevalue">
-                  ▾ Our Core Value
+                <Link id="tab-name" to="/#vision">
+                  ▾ Vision & Mission
                 </Link>
                 <Link id="tab-name" to="/founders-msg">
                   ▾ Founder's Message
@@ -101,9 +101,11 @@ export default function Navbar() {
                 <Link id="tab-name" to="/presidents-msg">
                   ▾ President's Message
                 </Link>
-                <Link id="tab-name" to="/core-team">
-                  ▾ Core Team
+                <Link id="tab-name" to="/ourcorevalue">
+                  ▾ Our Core Value
                 </Link>
+                <Link id="tab-name" to="/#CoreTeam">
+                  ▾ Core Team</Link>
               </div>
             )}
           </li>
@@ -193,7 +195,7 @@ export default function Navbar() {
                 <Link to="/overview" onClick={() => setMenuOpen(false)}>
                   Overview
                 </Link>
-                <Link to="/visionmission" onClick={() => setMenuOpen(false)}>
+                <Link to="/#vision" onClick={() => setMenuOpen(false)}>
                   Vision & Mission
                 </Link>
                 <Link to="/founders-msg" onClick={() => setMenuOpen(false)}>
@@ -202,7 +204,10 @@ export default function Navbar() {
                 <Link to="/presidents-msg" onClick={() => setMenuOpen(false)}>
                   President's Message
                 </Link>
-                <Link to="/core-team" onClick={() => setMenuOpen(false)}>
+                <Link to="/ourcorevalue" onClick={() => setMenuOpen(false)}>
+                  Our Core Value
+                </Link>
+                <Link to="/#CoreTeam" onClick={() => setMenuOpen(false)}>
                   Core Team
                 </Link>
               </div>
