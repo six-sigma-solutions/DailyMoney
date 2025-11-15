@@ -47,7 +47,7 @@ export default function Home() {
 
       <div className="dm">
         <span>
-          DM - Daily Message - Health and Wellness - The World Premium Healthy and
+          DM for Health and Wellness - The World Premium Healthy and
           Happy Community.
         </span>
       </div>
