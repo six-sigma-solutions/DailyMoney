@@ -92,7 +92,7 @@ body {
   border-radius: 15px;
   margin-top: 30px;
   margin-left: 60px;
-  font-weight: 600;;
+  font-weight: 600;
   text-align:center;
 }
 
@@ -556,6 +556,14 @@ body {
   color: #b71c1c;
 }
 
+.vision{
+  background-color: #047871;
+  padding: 0 10px;
+  color: black;
+  font-size: 24px;
+  border-radius: 8px;
+}
+
 .solution-card-desc1 {
   color: #666;
   font-size: 1.08em;
@@ -755,7 +763,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  gap: 220px;
+  align-items: center;
 }
 
 .team-member-card {
@@ -766,12 +775,12 @@ body {
 }
 
 .team-member-card img {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
-  border: 3px solid black;
+  border: 2.5px solid black;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
@@ -794,16 +803,64 @@ body {
 }
 /* ======================================================= */
 /* FOOTER                       _                        */
+/* ======================================================= */
+.footer-main1 {
+  max-width: 800px;
+  margin: 10px 60px;
+  border-radius: 20px;
+  padding: 0;
+  background: #931616;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+}
 
+.footer-cta1 {
+  text-align: start;
+  margin-bottom: 20px;
+}
 
+.footer-cta1 h2 {
+  font-size: 2.4em;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
 
+.footer-cta1 .say-hello-btn1 {
+  background: #d32a2a;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 32px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
 
+.say-hello-btn1 {
+  padding-left: 0;
+  margin-left: 0;
+}
 
+.footer-cta1 .say-hello-btn1:hover {
+  background: #b71c1c;
+}
 
+.footer-divider1 {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 24px 0;
+}
 
-
-
-
+.footer-bottom-content1 {
+  display: flex;
+  padding: 0 20px;
+  margin-left: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
 .img-fluid {
   animation: none;
