@@ -522,7 +522,7 @@ body {
   gap: 40px;
   justify-items: center;
   align-items: stretch;
-  margin-top: 5px;
+  margin-top: 40px;
   width: 100%;
   margin-bottom: 60px;
 }
@@ -564,11 +564,10 @@ body {
   font-size: 28px;
   padding: 0 40px;
   border-radius: 15px;
-  margin-top: 5px;
   font-weight: 600;
+  width: 28%;
   text-align:center;
-  width: 100%;
-  margin-bottom: 0;
+  margin-left: 520px;
 }
 
 .solution-card-desc1 {
