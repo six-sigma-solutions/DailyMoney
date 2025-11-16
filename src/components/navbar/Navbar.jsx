@@ -101,11 +101,12 @@ export default function Navbar() {
                 <Link id="tab-name" to="/presidents-msg">
                   ▾ President's Message
                 </Link>
-                <Link id="tab-name" to="/ourcorevalue">
-                  ▾ Our Core Value
-                </Link>
                 <Link id="tab-name" to="/#CoreTeam">
-                  ▾ Core Team</Link>
+                  ▾ Core Team
+                </Link>
+                <Link id="tab-name" to="/ourcorevalue">
+                  ▾ Core Values
+                </Link>
               </div>
             )}
           </li>
@@ -184,41 +185,6 @@ export default function Navbar() {
             <span
               onClick={() =>
                 setOpenMobileDropdown(
-                  openMobileDropdown === "about" ? null : "about"
-                )
-              }
-            >
-              About ▾
-            </span>
-            {openMobileDropdown === "about" && (
-              <div className="mobile-submenu">
-                <Link to="/overview" onClick={() => setMenuOpen(false)}>
-                  Overview
-                </Link>
-                <Link to="/#vision" onClick={() => setMenuOpen(false)}>
-                  Vision & Mission
-                </Link>
-                <Link to="/founders-msg" onClick={() => setMenuOpen(false)}>
-                  Founder's Message
-                </Link>
-                <Link to="/presidents-msg" onClick={() => setMenuOpen(false)}>
-                  President's Message
-                </Link>
-                <Link to="/ourcorevalue" onClick={() => setMenuOpen(false)}>
-                  Our Core Value
-                </Link>
-                <Link to="/#CoreTeam" onClick={() => setMenuOpen(false)}>
-                  Core Team
-                </Link>
-              </div>
-            )}
-          </div>
-
-          {/* Entrepreneur Dropdown (mobile) */}
-          <div className="mobile-dropdown">
-            <span
-              onClick={() =>
-                setOpenMobileDropdown(
                   openMobileDropdown === "my-life" ? null : "my-life"
                 )
               }
@@ -240,11 +206,48 @@ export default function Navbar() {
                   Students
                 </Link>
                 <Link to="/elders" onClick={() => setMenuOpen(false)}>
-                  Elder
+                  Elders
                 </Link>
               </div>
             )}
           </div>
+
+          <div className="mobile-dropdown">
+            <span
+              onClick={() =>
+                setOpenMobileDropdown(
+                  openMobileDropdown === "about" ? null : "about"
+                )
+              }
+            >
+              About ▾
+            </span>
+            {openMobileDropdown === "about" && (
+              <div className="mobile-submenu">
+                <Link to="/overview" onClick={() => setMenuOpen(false)}>
+                  Overview
+                </Link>
+                <Link to="/#vision" onClick={() => setMenuOpen(false)}>
+                  Vision & Mission
+                </Link>
+                <Link to="/founders-msg" onClick={() => setMenuOpen(false)}>
+                  Founder's Message
+                </Link>
+                <Link to="/presidents-msg" onClick={() => setMenuOpen(false)}>
+                  President's Message
+                </Link>
+                <Link to="/#CoreTeam" onClick={() => setMenuOpen(false)}>
+                  Core Team
+                </Link>
+                <Link to="/ourcorevalue" onClick={() => setMenuOpen(false)}>
+                   Core Values
+                </Link>
+              </div>
+            )}
+          </div>
+
+          {/* Entrepreneur Dropdown (mobile) */}
+          
         </div>
 
         {/* Footer */}
@@ -259,8 +262,10 @@ export default function Navbar() {
           <div>
             <p className="footer-heading">Get in touch</p>
             <div className="footer-icons">
-              <span>✉</span>
+              <a href="support@dmhealthy.com"><span>✉️</span></a>
+              <a href="tel:+91 7904373255">
               <span>📞</span>
+              </a>
             </div>
           </div>
         </div>

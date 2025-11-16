@@ -433,13 +433,15 @@
   color: #fff;
 }
 
-.footer-icons span {
+.footer-icons a {
   cursor: pointer;
   transition: color 0.3s;
+  text-decoration: none;
 }
 
-.footer-icons span:hover {
-  color: #c00;
+.footer-icons a:hover {
+  color: #fff;
+
 }
 
 /* Desktop vs Mobile toggle */

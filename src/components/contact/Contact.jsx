@@ -215,7 +215,7 @@ export default function Contact() {
             <a href="https://www.instagram.com/daily_message_healthy/">
               <i className="fa-brands fa-instagram"></i>
             </a>
-            <a href="tel:+919884590009">
+            <a href="tel:+91 7904373255">
               <i className="fa-solid fa-phone"></i>
             </a>
           </p>
