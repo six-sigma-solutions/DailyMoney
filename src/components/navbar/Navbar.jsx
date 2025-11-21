@@ -245,9 +245,7 @@ export default function Navbar() {
               </div>
             )}
           </div>
-
           {/* Entrepreneur Dropdown (mobile) */}
-          
         </div>
 
         {/* Footer */}
