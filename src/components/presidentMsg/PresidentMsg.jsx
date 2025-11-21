@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 const president = {
     name: "C.Valarmathi", // Placeholder Name
-    role: "President", 
     // Placeholder image URL 
     image: "pres.png", 
 };
@@ -58,7 +57,7 @@ export default function PresidentMsg() {
                             {president.name}
                         </p>
                         <p className="signature-title">
-                            President, DM
+                            President, [DM]
                         </p>
                     </div>
                 </div>

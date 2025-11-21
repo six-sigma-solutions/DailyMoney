@@ -14,7 +14,7 @@ const Income = () => {
       <section className="income-section">
         <div className="income-text">
           <p>
-            Income is more than just money earned,<br />it is the reward for effort,
+           ● Income is more than just money earned,<br />it is the reward for effort,
             time and value created.<br /> Whether through wages, salaries, profits
             or investments,<br /> income provides the foundation for stability and
             growth.
@@ -33,7 +33,7 @@ const Income = () => {
       <section className="income-section reverse">
         <div className="income-text">
           <p>
-            True income, however is not just financial.<br /> It is about the returns
+           ● True income, however is not just financial.<br /> It is about the returns
             you gain from life itself,<br /> the knowledge you acquire, the
             relationships you nurture and the health you maintain.
           </p>
@@ -53,7 +53,7 @@ const Income = () => {
           
           <ul>
             <p>
-              Secure your family's future.  <br />
+             ● Secure your family's future.  <br />
               Build lasting wealth and assets.  <br />
               Create the freedom to travel, <br /> explore and experience life. <br />
               Live with peace of mind and purpose. <br />
@@ -73,7 +73,7 @@ const Income = () => {
       <section className="income-section reverse move-right">
   <div className="income-text">
     <p>
-      Income powers growth, not greed. <br />
+     ● Income powers growth, not greed. <br />
       Energy creates opportunity. <br />
       Wealth begins with wisdom. <br />
       Freedom follows discipline. <br />

@@ -88,7 +88,7 @@
   align-items: flex-start;
   gap: 10px;
   font-size: 1.4rem;
-  color: var(--stu-page-text);
+  color: black;
   line-height: 1.8;
   flex-wrap: wrap;
   margin: 0;
@@ -102,22 +102,6 @@
     font-size: 30px;
 }
 
-
-/* ✅ Tick icon alignment fix */
-.stu-page-tick-icon {
-  color: var(--stu-page-accent);
-  font-size: 1.4em;
-  line-height: 1.4;
-  margin-top: 4px;
-  flex-shrink: 0;
-}
-
-/* ✅ Highlighted words styling */
-.stu-page-highlight-text {
-  color: var(--stu-page-accent);
-  font-weight: bold;
-  font-size: 30px;
-}
 
 /* ---------- Footer ---------- */
 .stu-page-footer {

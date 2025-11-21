@@ -57,8 +57,7 @@ export default function Elder() {
           <div className="dm-eldr-content">
             <p className="dm-eldr-animate dm-eldr-tagline">
               <strong>
-                <span className="dm-eldr-tick">✔</span>
-                <span className="dm-eldr-highlight"> DM</span> represents a <span className="dm-eldr-highlight">rebirth -</span> a movement, where elders & independent and <span className="dm-eldr-highlight">earn daily</span>, 
+                <span className="dm-eldr-highlight">● DM</span> represents a <span className="dm-eldr-highlight">rebirth -</span> a movement, where elders & independent and <span className="dm-eldr-highlight">earn daily</span>, 
                 <span className="dm-eldr-highlight"> share wisdom</span> and feel <span className="dm-eldr-highlight">valuable</span> again. 
                 Live with <span className="dm-eldr-highlight">financial confidence</span>. 
                 Feel <span className="dm-eldr-highlight">valued</span> and <span className="dm-eldr-highlight">included</span>. 
@@ -77,8 +76,7 @@ export default function Elder() {
           <div className="dm-eldr-content">
             <p className="dm-eldr-animate dm-eldr-tagline">
               <strong>
-                <span className="dm-eldr-tick">✔</span>
-                <span className="dm-eldr-highlight"> Empowerment</span> begins with a <span className="dm-eldr-highlight">choice</span>. 
+                <span className="dm-eldr-highlight">● Empowerment</span> begins with a <span className="dm-eldr-highlight">choice</span>. 
                 Choose to live with <span className="dm-eldr-highlight">abundance</span>, not dependence. 
                 Your <span className="dm-eldr-highlight">experience</span> is your greatest asset and       we help you turn it into <span className="dm-eldr-highlight">income</span>. 
                 It's time to invest in your <span className="dm-eldr-highlight">health</span>, 
@@ -97,7 +95,7 @@ export default function Elder() {
           <div className="dm-eldr-content">
             <p className="dm-eldr-animate dm-eldr-tagline">
               <strong>
-                <span className="dm-eldr-tick">✔</span><span> Retirement means living life on your own</span> <span className="dm-eldr-highlight">schedule</span> and enjoying inner <span className="dm-eldr-highlight">peace</span>. 
+                <span className="dm-eldr-tick">● Retirement means living life on your own</span> <span className="dm-eldr-highlight">schedule</span> and enjoying inner <span className="dm-eldr-highlight">peace</span>. 
                 It’s not the end of <span className="dm-eldr-highlight">possibilities</span> it’s the start of living life on your own <span className="dm-eldr-highlight">terms</span>. 
                 That’s the <span className="dm-eldr-highlight">DM</span> way.
                 Freedom with <span className="dm-eldr-highlight">purpose</span> and dignity at every stage of life.
@@ -114,7 +112,7 @@ export default function Elder() {
           <div className="dm-eldr-content">
             <p className="dm-eldr-animate dm-eldr-tagline">
               <strong>
-                <span className="dm-eldr-tick">✔</span><span>  When</span>
+                <span className="dm-eldr-tick">●  When</span>
                  <span className="dm-eldr-highlight"> elders</span> thrive, <span className="dm-eldr-highlight">families</span> become stronger. 
                 When their <span className="dm-eldr-highlight">voices</span> are valued, <span className="dm-eldr-highlight">communities</span> become wiser. 
                 When they live <span className="dm-eldr-highlight">freely</span> and <span className="dm-eldr-highlight">confidently</span>, 

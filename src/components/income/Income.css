@@ -18,6 +18,7 @@ body {
   background-color: #047871;
   border-radius: 20px;
   font-size: 20px;
+  margin-top: 20px;
 }
 
 .income-header h1 {
@@ -225,29 +226,6 @@ body {
   }
 }
 
-@keyframes highlight {
-  0% {
-    background-color: yellow;
-    color: navy;
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 30px;
-  }
-  50% {
-    background-color: transparent;
-    color: blue;
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 30px;
-  }
-  100% {
-    background-color: yellow;
-    color: darkblue;
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 30px;
-  }
-}
 /* Push the 4th section text further right */
 .income-section.move-right {
   justify-content: flex-end; /* push the content section to the right side */ /* increase space between image and text */
