@@ -153,10 +153,6 @@
     line-height: 1.6;
   }
 
-  .stu-page-highlight-text {
-    font-size: 1.2rem;
-    text-align: center;
-  }
 }
 
 /* ---------- Mobile Layout (768px) ---------- */
@@ -196,7 +192,7 @@
   }
 
   .stu-page-highlight-text {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 1.5;
   }
 
@@ -216,12 +212,6 @@
   .stu-page-tagline-text {
     font-size: 1.1rem;
     line-height: 1.5;
-  }
-
-  .stu-page-highlight-text {
-      font-size: 24px;
-      align-content: center;
-      line-height: 1.5;
   }
 
   .view-more {

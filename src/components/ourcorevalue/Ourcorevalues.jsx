@@ -114,18 +114,15 @@ const Visionmission = () => {
           <div className='vision-paragraph-container'> 
           <p style={{ color: "black", marginRight: "15px" }}>● </p>  <p>A world of harmony where health, happiness 
           and wealth coexist in balance.
-</p>
+          </p>
           </div>
-          
           <div className='vision-paragraph-container'> 
           <p style={{ color: "black", marginRight: "15px" }}>● </p>  <p> To redefine success by aligning health, happiness
           and financial growth.</p>
           </div>
-
               </h2>
             </div>
           </div>
-
     {/* Section 4: Image Right, Text Left */}
     <div className="vision-row vision-reverse">
       <div className="vision-col vision-image-col">
@@ -136,10 +133,9 @@ const Visionmission = () => {
           <div className='vision-paragraph-container'> 
           <p style={{ color: "black", marginRight: "15px" }}>● </p>  <p>To create a global movement that connects well being 
           with wealth building for a better tomorrow.
-</p>
-          </div>
-          
-          <div className='vision-paragraph-container'> 
+          </p>
+          </div>  
+        <div className='vision-paragraph-container'> 
           <p style={{ color: "black", marginRight: "15px" }}>● </p>  <p> Empower every individual to live healthier, 
           happier and more abundant lives through balance and purpose.</p>
           </div>
@@ -147,9 +143,6 @@ const Visionmission = () => {
       </div>
     </div>
   </div>
-
-
-
 </section>
 
       {/* Horizontal 4-Image Section */}
@@ -159,14 +152,9 @@ const Visionmission = () => {
           <img src="1.png" alt="Vision gallery 1" />
           <img src="reddoxbox.png" alt="Vision gallery 2" />
           <img src="CORE.png" alt="Vision gallery 3" />
-          <img src="4.jpg" alt="Vision gallery 4" />
+          <img src="no.jpg" alt="Vision gallery 4" />
         </div>
       </section>
-
-
-
-
-          
 
       <section className="dm-vsn-action-section">
         <button id="dm-vsn-solution-btn" className="dm-vsn-animated-btn" onClick={handleSolutionClick}>

@@ -26,7 +26,6 @@
 
 .card-header-bg {
     background-color: #047871; /* bg-teal-700 */
-    padding: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,8 +51,7 @@
 .president-profile-area { 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 4rem; /* -mt-16 to pull it over the header background */
+    align-items: center;/* -mt-16 to pull it over the header background */
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }

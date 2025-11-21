@@ -135,7 +135,14 @@
   }
   .logo img{
     display: block;
-    margin-left: 80px;  
+    margin-left: 10px;  
+  }
+  #navbar{
+    margin-left: -10px;
+  }
+  .nav-container{
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -447,15 +454,36 @@
   }
   .logo img{
     display: block;
-    margin-left: 70px;
    }
+  #navbar{
+    margin-left: -30px;
+  }
 }
 
 @media screen and (max-width: 720px){
    .logo img{
     display: block;
-    margin-left: 80px;
    }
+   #navbar{
+    margin-left: -20px;
+   }
+}
+
+@media (max-width: 480px) {
+  .contact-btn {
+    display: none;
+  }
+  .logo img{
+    display: block;
+    margin-left: 10px;  
+  }
+  #navbar{
+    margin-left: -10px;
+  }
+  .nav-container{
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 /* Remove hover/focus background for Menu (☰) and Cancel (✖) */
