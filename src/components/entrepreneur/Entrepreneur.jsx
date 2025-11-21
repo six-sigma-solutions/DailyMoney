@@ -118,13 +118,13 @@ export default function Entrepreneur () {
           <img src={img10} alt="Right" />
         </div>
       </div>
-     <div className="view-more-link-my-life">
-      <Link className="view-more-link" to="/income">
-        <button className="view-more" type="button">
-          View More
-        </button>
-      </Link>
-      </div>
+      <section className="blog">
+               <div className="view-more-link-my-life">
+                  <Link className="view-more-link" to="/income">
+                    <button className="view-more" type="button">View More</button>
+                  </Link>
+              </div>
+            </section>
       <Footer />
     </div>
   );
