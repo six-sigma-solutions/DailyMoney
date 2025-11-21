@@ -43,13 +43,15 @@ export default function FounderMsg() {
           </div>
         </div>
 
-        <div className="view-more-link-my-life">
-              <Link className="view-more-link" to="/presidents-msg">
-                <button className="view-more" type="button">
-                  View More
-                </button>
-              </Link>
+              <section className="blog">
+                <div className="view-more-link-my-life">
+                  <Link className="view-more-link" to="/presidents-msg">
+                      <button className="view-more" type="button">
+                        View More
+                      </button>
+                  </Link>
               </div>
+              </section>
 
         {/* Footer/Tagline Section */}
         <div className="card-footer-bg">
