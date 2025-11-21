@@ -85,7 +85,7 @@
 .wealthy-image-col img {
   width: 100%;
   max-width: 360px;
-  border-radius: 25px;
+  border-radius: 25% 0;
   box-shadow: 0 8px 20px rgba(11, 20, 25, 0.06);
   object-fit: cover;
 }
