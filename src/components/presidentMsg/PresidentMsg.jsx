@@ -38,7 +38,7 @@ export default function PresidentMsg() {
 
 
                 {/* Message Content Section (SHARED classes) */}
-                <div className="message-content">
+                <div className="president-content">
                     <p className="message-quote">
                         "It is my Honor to lead the DM community. We are dedicated to translating our Founder's Vision into tangible success for every individual. Our focus remains steadfast on the balance of "Health, Wealth and Family".
                     </p>
@@ -63,7 +63,7 @@ export default function PresidentMsg() {
                 </div>
 
                 <div className="view-more-link-my-life">
-              <Link className="view-more-link" to="/visionmission">
+              <Link className="view-more-link" to="/ourcorevalue">
                 <button className="view-more" type="button">
                   View More
                 </button>
