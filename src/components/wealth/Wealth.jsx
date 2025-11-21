@@ -53,7 +53,7 @@ const Wealth = () => {
               <h2>
                 <span className="wealthy-check">  ✓  </span>
                 True wealth begins with discipline living with intention,
-                saving with wisdom and investing with vision. It grows not only
+                saving with wisdom and investing with vision. <br /><span className="wealthy-check">  ✓  </span> It grows not only
                 through income but also through knowledge, relationships and the
                 values we pass on to the next generation.
               </h2>

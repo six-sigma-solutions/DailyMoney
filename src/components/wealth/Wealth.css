@@ -38,7 +38,7 @@
 }
 
 .wealthy-hero-card img {
-  width: 100%;
+  width: 80%;
   height: 500px;
   display: block;
   object-fit: fill;
@@ -104,7 +104,7 @@
 }
 
 .wealthy-text-col h2 {
-  font-size: 26px;
+  font-size: 27px;
   margin-bottom: 0.6rem;
   text-align: start;
   color: white;
