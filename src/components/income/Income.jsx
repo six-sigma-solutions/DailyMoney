@@ -88,14 +88,13 @@ const Income = () => {
     />
   </div>
 </section>
-
-      <div className="view-more-link-my-life">
-      <Link className="view-more-link" to="/womenempowerment">
-        <button className="view-more" type="button">
-          View More
-        </button>
-      </Link>
-      </div>
+      <section className="blog">
+               <div className="view-more-link-my-life">
+                  <Link className="view-more-link" to="/womenempowerment">
+                    <button className="view-more" type="button">View More</button>
+                  </Link>
+              </div>
+            </section>
       <Footer />
     </div>
   );
