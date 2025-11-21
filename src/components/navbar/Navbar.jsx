@@ -205,7 +205,7 @@ export default function Navbar() {
                 <Link to="/students" onClick={() => setMenuOpen(false)}>
                   Students
                 </Link>
-                <Link to="/elders" onClick={() => setMenuOpen(false)}>
+                <Link to="/elder" onClick={() => setMenuOpen(false)}>
                   Elders
                 </Link>
               </div>
