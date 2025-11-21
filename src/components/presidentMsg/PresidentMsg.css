@@ -94,15 +94,11 @@
  * Message Content & Signature 
  * ---------------------------------- */
 
-.message-content {
+.president-content {
     padding: 2rem;
     text-align: left;
 }
-@media (min-width: 768px) {
-    .message-content {
-        padding: 3rem;
-    }
-}
+
 
 /* Blockquote/Italic Style */
 .message-quote {
