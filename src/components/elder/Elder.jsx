@@ -126,13 +126,15 @@ export default function Elder() {
         </section>
       </main>
 
-      <div className="view-more-link-my-life">
-      <Link className="view-more-link" to="/overview">
-        <button className="view-more" type="button">
-          View More
-        </button>
-      </Link>
+      <section className="blog">
+        <div className="view-more-link-my-life">
+          <Link className="view-more-link" to="/overview">
+              <button className="view-more" type="button">
+                View More
+              </button>
+          </Link>
       </div>
+      </section>
       <Footer />
     </div>
   );
