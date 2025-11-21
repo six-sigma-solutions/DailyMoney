@@ -50,7 +50,7 @@ export default function Students() {
             <p className="stu-page-animate-block stu-page-tagline-text">
               <strong>
                 <span className="stu-page-highlight-text">
-                  ● Our future starts with today's discipline. We help turn student loans into student gains.<br /> 
+                  ● Our future starts with today's discipline.<br /> ● We help turn student loans into student gains.<br /> 
                   ● Your degree gets you a job. <br /> 
                   ● Your DM skills get you freedom.<br />
                   ● Build wealth while you learn. Don't just chase grades, chase growth.
