@@ -112,6 +112,11 @@
     font-size: 28px;
 }
 
+/* dot color */
+.dm-eldr-tick{
+  color: #F7D45A;
+  padding: 5px;
+}
 
 
 /* ---------- SCROLL FADE-IN ANIMATION ---------- */
