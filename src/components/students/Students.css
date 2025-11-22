@@ -87,21 +87,27 @@
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  font-size: 1.4rem;
+  font-size: 28px;
   color: black;
   line-height: 1.8;
   flex-wrap: wrap;
   margin: 0;
+  padding: 20px;
 }
 
 .stu-page-tagline-text strong {
     font-weight: 600;
     text-align: left;
-    line-height: 1.5;
+    line-height: 1.8;
     align-content: space-around;
     font-size: 28px;
 }
 
+/* dot-color */
+.stu-page-tick-icon{
+  color: #f7d45a;
+  padding: 5px;
+}
 
 /* ---------- Footer ---------- */
 .stu-page-footer {
