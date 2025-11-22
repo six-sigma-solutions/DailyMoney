@@ -131,6 +131,11 @@ body {
   animation: bounce 2s infinite;
 }
 
+.dot-1{
+  color: #407871;
+  padding: 2px;
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(20px);
