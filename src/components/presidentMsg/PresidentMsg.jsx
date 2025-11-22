@@ -64,7 +64,7 @@ export default function PresidentMsg() {
 
 <section className="blog">
     <div className="view-more-link-my-life">
-        <Link className="view-more-link" to="/family">
+        <Link className="view-more-link" to="/ourcorevalue">
           <button className="view-more" type="button">View More</button>
         </Link>
     </div>
