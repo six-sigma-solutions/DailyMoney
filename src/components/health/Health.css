@@ -130,10 +130,9 @@ img:hover { transform: scale(1.05); }
 }
 
 .view-more {
-  pointer-events: auto; /* enables click only on the button */
-  z-index: 10;
-  position: relative;
-
+  width: 200px;
+  text-align: center;
+  margin: 5px 0 0;
 }
 
 .view-more-link {
@@ -142,12 +141,11 @@ img:hover { transform: scale(1.05); }
   width: 100%;
 }
 
-.view-more-link-my-life,
-.view-more-link,
-.blog {
-  pointer-events: none;  /* disables clicks */
-  
-
+.view-more-link-my-life {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .btn-primary {
@@ -277,6 +275,31 @@ html { scroll-behavior: smooth; }
 .tamil-1{
   color: #fff;
 }
+
+.btn-center {
+  text-align: center;   /* centers the link */
+  margin-top: 50px;
+}
+
+.view-btn {
+    background-color: #0b3a55;
+    color: #fff;
+    border: none;
+    padding: 12px 60px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 15px #003a5533;
+    transition: all .3s ease;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.btn-center a{
+  text-decoration: none;
+}
+
 /* ---------------- RESPONSIVE ADJUSTMENTS ---------------- */
 
 /* ---------------- ADDITIONAL RESPONSIVE FIXES ---------------- */
@@ -341,6 +364,9 @@ html { scroll-behavior: smooth; }
     filter: brightness(150%);
     border-radius: 25px;
   }
+  .health-heading{
+    margin: 0;
+  }
 }
 
 /* Small mobile (≤480px) */
@@ -371,12 +397,20 @@ html { scroll-behavior: smooth; }
     width: 90%;
   }
   .health-heading span {
-    font-size: 24px;
-    line-height: 1.8rem;
-    margin: 0 0 0 80px;
-    padding: 10px 15px;
+   padding: 0 15px;
+   font-size: 24px;
+   line-height: 1.6;
+   margin-left: -10px;
+   margin-top: 5px;
   }
   .hero{
     margin: 5px auto;
+  }
+  .btn-primary{
+    padding: 0 10px;
+    margin: 15px 100px;
+  }
+  .hero-content p{
+    font-size: 18px;
   }
 }
