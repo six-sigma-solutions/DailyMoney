@@ -130,9 +130,10 @@ img:hover { transform: scale(1.05); }
 }
 
 .view-more {
-  width: 200px;
-  text-align: center;
-  margin: 5px 0 0;
+  pointer-events: auto; /* enables click only on the button */
+  z-index: 10;
+  position: relative;
+
 }
 
 .view-more-link {
@@ -141,11 +142,12 @@ img:hover { transform: scale(1.05); }
   width: 100%;
 }
 
-.view-more-link-my-life {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+.view-more-link-my-life,
+.view-more-link,
+.blog {
+  pointer-events: none;  /* disables clicks */
+  
+
 }
 
 .btn-primary {
