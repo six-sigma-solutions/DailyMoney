@@ -76,7 +76,7 @@ export default function Elder() {
           <div className="dm-eldr-content">
             <p className="dm-eldr-animate dm-eldr-tagline">
               <strong>
-                <span className="dm-eldr-highlight">● Empowerment</span> begins with a <span className="dm-eldr-highlight">choice</span>. <br />
+                <span className="dm-eldr-tick">●</span> Empowerment begins with a <span className="dm-eldr-highlight">choice</span>. <br />
                 <span className="dm-eldr-tick">●  </span>Choose to live with <span className="dm-eldr-highlight">abundance</span>, not dependence. <br />
                 <span className="dm-eldr-tick">●  </span>Your <span className="dm-eldr-highlight">experience</span> is your greatest asset and we help you turn it into <span className="dm-eldr-highlight">income</span>. <br />
                 <span className="dm-eldr-tick">●  </span>It's time to invest in your <span className="dm-eldr-highlight">health</span>, 
@@ -95,7 +95,7 @@ export default function Elder() {
           <div className="dm-eldr-content">
             <p className="dm-eldr-animate dm-eldr-tagline">
               <strong>
-                <span className="dm-eldr-tick">● Retirement means living life on your own</span> <span className="dm-eldr-highlight">schedule</span> and enjoying inner <span className="dm-eldr-highlight">peace</span>.<br /> 
+                <span className="dm-eldr-tick">●</span> Retirement means living life on your own <span className="dm-eldr-highlight">schedule</span> and enjoying inner <span className="dm-eldr-highlight">peace</span>.<br /> 
                 <span className="dm-eldr-tick">●  </span>It’s not the end of <span className="dm-eldr-highlight">possibilities</span> it’s the start of living life on your own <span className="dm-eldr-highlight">terms</span>. <br/>
                 <span className="dm-eldr-tick">●  </span>That’s the <span className="dm-eldr-highlight">DM</span> way.<br />
                 <span className="dm-eldr-tick">●  </span>Freedom with <span className="dm-eldr-highlight">purpose</span> and dignity at every stage of life.
