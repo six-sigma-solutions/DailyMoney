@@ -118,13 +118,9 @@ const Family = () => {
           </div>
         </div>
       </section>
-   <section className="blog">
-        <div className="view-more-link-my-life">
-          <Link className="view-more-link" to="/entrepreneur">
-            <button className="view-more" type="button">View More</button>
-          </Link>
-        </div>
-      </section>
+   <div class="btn-center">
+        <a href="entrepreneur" class="view-btn">View More</a>
+      </div>
       <Footer />
     </div>
       
