@@ -130,15 +130,9 @@ export default function Womenempowerment() {
         </div>
       </section>
 
-      <section className="blog">
-        <div className="view-more-link-my-life">
-          <Link className="view-more-link" to="/students">
-              <button className="view-more" type="button">
-                View More
-              </button>
-          </Link>
+      <div class="btn-center">
+        <a href="students" class="view-btn">View More</a>
       </div>
-      </section>
       <Footer />
     </div>
   );
