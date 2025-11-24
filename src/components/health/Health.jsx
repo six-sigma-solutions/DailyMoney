@@ -37,7 +37,7 @@ const Health = () => {
       {/* Health Section Header */}
       <section className="health-section">
         <h1 className="text-2xl md:text-3xl font-semibold mb-6 text-center">
-          My health is my greatest wealth. 😊
+          My health is my greatest wealth. 
         </h1>
       </section>
 
@@ -87,13 +87,9 @@ const Health = () => {
         <div className="thiru">
           <img src ="Thirukural.jpg" alt="thirukural"></img>
         </div>
-     <section className="blog">
-        <div className="view-more-link-my-life">
-          <Link className="view-more-link" to="/wealth">
-            <button className="view-more" type="button">View More</button>
-          </Link>
-        </div>
-      </section>
+     <div class="btn-center">
+        <a href="wealth" class="view-btn">View More</a>
+      </div>
       </footer>
       <Footer></Footer>
     </div>
