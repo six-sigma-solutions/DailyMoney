@@ -3,7 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+.text{
+  padding-left: 30px;
 
+}
 body {
   font-family: "Poppins", sans-serif;
   background-color: #fafafa;

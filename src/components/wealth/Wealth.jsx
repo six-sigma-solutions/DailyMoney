@@ -37,9 +37,9 @@ const Wealth = () => {
             <div className="wealthy-col wealthy-text-col row1">
               <h2>
                 <span className="wealthy-check" >  ✓  </span>
-                Wealth is more than numbers in a bank account. It is the freedom
-                to choose our path, the security to protect what matters and
-                the power to create a lasting impact.
+                Wealth is more than numbers in a bank <span className="text">account.</span> It is the freedom
+                to choose <span className="text">our path,</span> the security to protect what <span className="text">matters and</span>
+                the power to create a <span className="text">lasting impact.</span>
               </h2>
             </div>
           </div>
@@ -52,10 +52,10 @@ const Wealth = () => {
             <div className="wealthy-col wealthy-text-col row2" >
               <h2>
                 <span className="wealthy-check">  ✓  </span>
-                True wealth begins with discipline living with intention,
-                saving with wisdom and investing with vision. <br /><span className="wealthy-check">  ✓  </span> It grows not only
-                through income but also through knowledge, relationships and the
-                values we pass on to the next generation.
+                True wealth begins with discipline <span className="text">living with intention,</span>
+                saving with <span className="text">wisdom and investing with vision.</span> <br /><span className="wealthy-check">  ✓  </span> It grows not only
+                through income but <span className="text">also through knowledge,</span> relationships <span className="text">and the</span>
+                values we pass on to the next <span className="text">generation.</span>
               </h2>
             </div>
           </div>
@@ -68,10 +68,10 @@ const Wealth = () => {
             <div className="wealthy-col wealthy-text-col row3">
               <h2>
                 <span className="wealthy-check">  ✓  </span>
-                Our wealth is not just about what we accumulate, but about what
-                we enable. With it, we gain the ability to support our
-                families, nurture dreams, create opportunities and contribute
-                to causes that uplift society.
+                Our wealth is not just about what we <span className="text">accumulate,</span> but about what
+                we <span className="text">enable.</span> With it, we gain the ability to <span className="text">support our</span>
+                families, nurture dreams, <span className="text">create opportunities and contribute</span>
+                to <span className="text">causes that uplift society.</span>
               </h2>
             </div>
           </div>
@@ -84,10 +84,10 @@ const Wealth = () => {
             <div className="wealthy-col wealthy-text-col row4">
               <h2>
                 <span className="wealthy-check">  ✓  </span>
-                Wealth is not greed it is growth. It is not selfishness, it is
-                stewardship. When guided by purpose, wealth becomes a force for
-                freedom, impact and legacy. Our wealth is our power to
-                live with dignity, give with generosity and build a future that
+                Wealth is not greed it is growth. It is not <span className="text">selfishness, it is</span>
+                stewardship. When <span className="text">guided by purpose,</span> wealth becomes a <span className="text">force for</span>
+                freedom, impact and legacy. <span className="text">Our wealth is our power to</span>
+                live with <span className="text">dignity, give with generosity</span> and build <span className="text">a future that</span>
                 outlives us.
               </h2>
             </div>

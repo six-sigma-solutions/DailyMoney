@@ -39,8 +39,8 @@ export default function Entrepreneur() {
       {/* RIGHT SECTION */}
       <div className="ent-right">
         <h1>
-          <span className="dot">●</span> I'm ready to start, build and grow something of my own.<br />
-          <span className="dot">●</span> I'm ready to take my first step towards independence.<br />
+          <span className="dot">●</span> I'm ready to start, build and grow something of my <span className="word">own.</span><br />
+          <span className="dot">●</span> I'm ready to take my first step towards <span className="word">independence.</span><br />
           <span className="dot">●</span> I'm ready to shape my own success.<br />
         </h1>
         <div className="ent-box-right">
@@ -53,7 +53,7 @@ export default function Entrepreneur() {
         <img src={img670} alt="Left" />
         <div className="ent-box-left">
           <h1>
-            <span className="dot">●</span> Entrepreneurship is for freedom and financial independence.<br />
+            <span className="dot">●</span> Entrepreneurship is for freedom and financial <span className="word">independence.</span><br />
             <span className="dot">●</span> I choose independence over comfort.<br />
             <span className="dot">●</span> I'm ready to create my own future.<br />
             <span className="dot">●</span> I'm ready to launch my own vision.<br />
@@ -64,8 +64,8 @@ export default function Entrepreneur() {
       {/* RIGHT */}
       <div className="ent-right">
         <h1>
-          <span className="dot">●</span> I'm looking into entrepreneurship to create opportunities.<br />
-          <span className="dot">●</span> I'm drawn to entrepreneurship to make opportunities.<br />
+          <span className="dot">●</span> I'm looking into entrepreneurship to create <span className="word">independence.</span><br />
+          <span className="dot">●</span> I'm drawn to entrepreneurship to make <span className="word">opportunities.</span><br />
           <span className="dot">●</span> I choose entrepreneurship to shape opportunities.<br />
         </h1>
         <div className="ent-box-right">
@@ -117,8 +117,8 @@ export default function Entrepreneur() {
         <h1>
           <span className="dot">●</span> I have dreams of financial independence and impact.<br />
           <span className="dot">●</span> I dream of creating wealth and making a difference.<br />
-          <span className="dot">●</span> My goal is to build economic freedom and inspire change.<br />
-          <span className="dot">●</span> My vision combines financial success with social impact.
+          <span className="dot">●</span> My goal is to build economic freedom and inspire <span className="word">change.</span><br />
+          <span className="dot">●</span> My vision combines financial success with social <span className="word">impact.</span>
         </h1>
         <div className="ent-box-right">
           <img src={img10} alt="Right" />

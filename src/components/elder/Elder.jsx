@@ -57,12 +57,12 @@ export default function Elder() {
           <div className="dm-eldr-content">
             <p className="dm-eldr-animate dm-eldr-tagline">
               <strong>
-                <span className="dm-eldr-tick">●  </span> DM represents a <span className="dm-eldr-highlight">rebirth -</span> a movement, where elders & independent and <span className="dm-eldr-highlight">earn daily</span>, 
-                <span className="dm-eldr-highlight"> share wisdom</span> and feel <span className="dm-eldr-highlight">valuable</span> again.<br /> 
+                <span className="dm-eldr-tick">●  </span> DM represents a <span className="dm-eldr-highlight">rebirth -</span> a movement, <span className="text">where elders & independent and </span> <span className="dm-eldr-highlight">earn daily</span>, 
+                <span className="dm-eldr-highlight"> <span className="text">share wisdom</span></span> and feel <span className="dm-eldr-highlight">valuable</span> again.<br /> 
                 <span className="dm-eldr-tick">●  </span>Live with <span className="dm-eldr-highlight">financial confidence</span>. <br />
                 <span className="dm-eldr-tick">●  </span>Feel <span className="dm-eldr-highlight">valued</span> and <span className="dm-eldr-highlight">included</span>. <br />
                 <span className="dm-eldr-tick">●  </span>Share your <span className="dm-eldr-highlight">wisdom</span> not your worries. <br />
-                <span className="dm-eldr-tick">●  </span>Enjoy <span className="dm-eldr-highlight">peace</span>, <span className="dm-eldr-highlight">purpose</span> and <span className="dm-eldr-highlight">pride</span> in your <span className="dm-eldr-highlight">DM</span> life.
+                <span className="dm-eldr-tick">●  </span>Enjoy <span className="dm-eldr-highlight">peace</span>, <span className="dm-eldr-highlight">purpose</span> and <span className="dm-eldr-highlight">pride</span> in your <span className="dm-eldr-highlight">DM</span> <span className="text">life.</span>
               </strong>
             </p>
           </div>
@@ -77,10 +77,10 @@ export default function Elder() {
             <p className="dm-eldr-animate dm-eldr-tagline">
               <strong>
                 <span className="dm-eldr-tick">●</span> Empowerment begins with a <span className="dm-eldr-highlight">choice</span>. <br />
-                <span className="dm-eldr-tick">●  </span>Choose to live with <span className="dm-eldr-highlight">abundance</span>, not dependence. <br />
-                <span className="dm-eldr-tick">●  </span>Your <span className="dm-eldr-highlight">experience</span> is your greatest asset and we help you turn it into <span className="dm-eldr-highlight">income</span>. <br />
+                <span className="dm-eldr-tick">●  </span>Choose to live with <span className="dm-eldr-highlight">abundance</span>, not <span className="text">dependence.</span> <br />
+                <span className="dm-eldr-tick">●  </span>Your <span className="dm-eldr-highlight">experience</span> is your greatest asset and <span className="text">we help you turn it into</span> <span className="dm-eldr-highlight">income</span>. <br />
                 <span className="dm-eldr-tick">●  </span>It's time to invest in your <span className="dm-eldr-highlight">health</span>, 
-                reclaim your <span className="dm-eldr-highlight">wealth</span> and cherish your <span className="dm-eldr-highlight">family</span>. <br />
+                reclaim <span className="text">your</span> <span className="dm-eldr-highlight">wealth</span> and cherish your <span className="dm-eldr-highlight">family</span>. <br />
                 <span className="dm-eldr-tick">●  </span>That's the <span className="dm-eldr-highlight">DM</span> way.
               </strong>
             </p>
@@ -95,10 +95,10 @@ export default function Elder() {
           <div className="dm-eldr-content">
             <p className="dm-eldr-animate dm-eldr-tagline">
               <strong>
-                <span className="dm-eldr-tick">●</span> Retirement means living life on your own <span className="dm-eldr-highlight">schedule</span> and enjoying inner <span className="dm-eldr-highlight">peace</span>.<br /> 
-                <span className="dm-eldr-tick">●  </span>It’s not the end of <span className="dm-eldr-highlight">possibilities</span> it’s the start of living life on your own <span className="dm-eldr-highlight">terms</span>. <br/>
+                <span className="dm-eldr-tick">●</span> Retirement means living life on your own <span className="dm-eldr-highlight"><span className="text">schedule</span></span> and enjoying inner <span className="dm-eldr-highlight">peace</span>.<br /> 
+                <span className="dm-eldr-tick">●  </span>It’s not the end of <span className="dm-eldr-highlight">possibilities</span> it’s the start <span className="text">of living life on your own</span> <span className="dm-eldr-highlight">terms</span>. <br/>
                 <span className="dm-eldr-tick">●  </span>That’s the <span className="dm-eldr-highlight">DM</span> way.<br />
-                <span className="dm-eldr-tick">●  </span>Freedom with <span className="dm-eldr-highlight">purpose</span> and dignity at every stage of life.
+                <span className="dm-eldr-tick">●  </span>Freedom with <span className="dm-eldr-highlight">purpose</span> and dignity at every <span className="text">stage of life.</span>
               </strong>
             </p>
           </div>
@@ -113,13 +113,13 @@ export default function Elder() {
             <p className="dm-eldr-animate dm-eldr-tagline">
               <strong>
                 <span className="dm-eldr-tick">●  </span>
-                <span className="dm-eldr-highlight"> When elders</span> thrive, <span className="dm-eldr-highlight">families</span> become stronger. <br />
-                <span className="dm-eldr-tick">●  </span>When their <span className="dm-eldr-highlight">voices</span> are valued, <span className="dm-eldr-highlight">communities</span> become wiser. <br /> 
+                <span className="dm-eldr-highlight"> When elders</span> thrive, <span className="dm-eldr-highlight">families</span> become <span className="text">stronger.</span> <br />
+                <span className="dm-eldr-tick">●  </span>When their <span className="dm-eldr-highlight">voices</span> are valued, <span className="dm-eldr-highlight">communities</span><span className="text"> become wiser.</span> <br /> 
                 <span className="dm-eldr-tick">●  </span>When they live <span className="dm-eldr-highlight">freely</span> and <span className="dm-eldr-highlight">confidently</span>, 
-                the <span className="dm-eldr-highlight">society</span> grows richer  
-                in <span className="dm-eldr-highlight">humanity</span>, not just in <span className="dm-eldr-highlight">wealth</span>. <br />
-                <span className="dm-eldr-tick">●  </span>That’s the <span className="dm-eldr-highlight">DM - </span> way, where every generation 
-                learns, earns and lives with <span className="dm-eldr-highlight">purpose</span>.<br />
+                the <span className="dm-eldr-highlight"><span className="text">society</span></span> grows richer  
+                in <span className="dm-eldr-highlight">humanity</span>, not just in <span className="dm-eldr-highlight"><span className="text">wealth</span></span>. <br />
+                <span className="dm-eldr-tick">●  </span>That’s the <span className="dm-eldr-highlight">DM - </span> way, where every <span className="text">generation </span>
+                learns, earns and lives with <span className="dm-eldr-highlight"><span className="text">purpose</span></span>.<br />
               </strong>
             </p>
           </div>

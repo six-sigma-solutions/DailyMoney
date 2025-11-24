@@ -50,10 +50,10 @@ export default function Students() {
             <p className="stu-page-animate-block stu-page-tagline-text">
               <strong>
                 <span className="stu-page-highlight-text">
-                  <span className="stu-page-tick-icon">●</span> Our future starts with today's discipline.<br /> <span className="stu-page-tick-icon">●</span> We help turn student loans into student gains.<br /> 
+                  <span className="stu-page-tick-icon">●</span> Our future starts with today's discipline.<br /> <span className="stu-page-tick-icon">●</span> We help turn student loans into student <span className="text"> gains.</span><br /> 
                   <span className="stu-page-tick-icon">●</span> Your degree gets you a job. <br /> 
                   <span className="stu-page-tick-icon">●</span> Your DM skills get you freedom.<br />
-                  <span className="stu-page-tick-icon">●</span> Build wealth while you learn. Don't just chase grades, chase growth.
+                  <span className="stu-page-tick-icon">●</span> Build wealth while you learn. Don't just <span className="text">chase grades, chase growth.</span>
 </span>
               </strong>
             </p>
@@ -72,9 +72,9 @@ export default function Students() {
                 <span className="stu-page-tick-icon">●</span>
                 <span className="stu-page-highlight-text"> Learn</span> to <span className="stu-page-highlight-text">earn</span> while you still have <span className="stu-page-highlight-text">time.<br />
                 </span><span className="stu-page-tick-icon">●</span> Our<span className="stu-page-highlight-text">side hustle</span> is your <span className="stu-page-highlight-text">main opportunity.<br /></span>
-                <span className="stu-page-tick-icon">●</span> Financial confidence is the best <span className="stu-page-highlight-text">graduation gift.<br /> </span>
+                <span className="stu-page-tick-icon">●</span> Financial confidence is the best <span className="stu-page-highlight-text"><span className="text">graduation gift.</span><br /> </span>
                 <span className="stu-page-highlight-text"> 
-                <span className="stu-page-tick-icon">●</span> DM</span> delivers a <span className="stu-page-highlight-text"> blueprint</span> for <span className="stu-page-highlight-text">students to design their future.</span><br/ > 
+                <span className="stu-page-tick-icon">●</span> DM</span> delivers a <span className="stu-page-highlight-text"> blueprint</span> for <span className="stu-page-highlight-text">students to <span className="text">design their future.</span></span><br/ > 
                 <span className="stu-page-tick-icon">●</span> We train you for <span className="stu-page-highlight-text">real-world success</span>.
               </strong>
             </p>
@@ -91,9 +91,9 @@ export default function Students() {
             <p className="stu-page-animate-block stu-page-tagline-text">
               <strong>
                 <span className="stu-page-tick-icon">● </span>
-                Achieve <span className="stu-page-highlight-text">personal growth</span> and <span className="stu-page-highlight-text">financial independence</span>.<br />
-               <span className="stu-page-tick-icon">● </span>Pay off <span className="stu-page-highlight-text">student debt</span> through your own earned income.<br />
-               <span className="stu-page-tick-icon">● </span>Financial independence that brings <span className="stu-page-highlight-text">confidence</span> and <span className="stu-page-highlight-text">self-respect</span>.
+                Achieve <span className="stu-page-highlight-text">personal growth</span> and <span className="stu-page-highlight-text">financial <span className="text">independence</span></span>.<br />
+               <span className="stu-page-tick-icon">● </span>Pay off <span className="stu-page-highlight-text">student debt</span> through your own  <span className="text">earned income.</span><br />
+               <span className="stu-page-tick-icon">● </span>Financial independence that brings <span className="stu-page-highlight-text"><span className="text">confidence</span></span> and <span className="stu-page-highlight-text">self-respect</span>.
               </strong>
             </p>
           </div>
@@ -109,10 +109,10 @@ export default function Students() {
             <p className="stu-page-animate-block stu-page-tagline-text">
               <strong>
                 <span className="stu-page-tick-icon">●</span>
-                <span className="stu-page-highlight-text"> DM</span> empowered to <span className="stu-page-highlight-text">learn</span>, inspired to <span className="stu-page-highlight-text">earn</span>.<br />
+                <span className="stu-page-highlight-text"> DM</span> empowered to <span className="stu-page-highlight-text">learn</span>, inspired to <span className="stu-page-highlight-text"><span className="text">earn</span></span>.<br />
                <span className="stu-page-tick-icon">●</span> Earn with <span className="stu-page-highlight-text">pride</span>, learn with <span className="stu-page-highlight-text">purpose</span>.<br />
-                <span className="stu-page-tick-icon">●</span> Students <span className="stu-page-highlight-text">earn</span> and the world learns the value of <span className="stu-page-highlight-text">determination</span>.<br />
-               <span className="stu-page-tick-icon">●</span> Self-earned income builds more than <span className="stu-page-highlight-text">wealth</span>, it builds <span className="stu-page-highlight-text">wisdom</span>.
+                <span className="stu-page-tick-icon">●</span> Students <span className="stu-page-highlight-text">earn</span> and the world learns the <span className="text">value of </span> <span className="stu-page-highlight-text">determination</span>.<br />
+               <span className="stu-page-tick-icon">●</span> Self-earned income builds more than <span className="stu-page-highlight-text"><span className="text">wealth</span></span>, it builds <span className="stu-page-highlight-text">wisdom</span>.
               </strong>
             </p>
           </div>

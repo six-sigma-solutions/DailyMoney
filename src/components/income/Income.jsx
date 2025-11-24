@@ -18,8 +18,8 @@ const Income = () => {
            <span className="dot-1">● </span>It is the reward for effort,
              time and value created.<br /> 
            <span className="dot-1">● </span>Whether through wages, salaries, profits
-            or investments,<br /> income provides the foundation for stability and
-            growth.
+            or investments,<br /><span className="text"> income provides the foundation for stability and
+            growth.</span>
           </p>
         </div>
         <div className="income-image">
@@ -37,8 +37,9 @@ const Income = () => {
           <p>
            <span className="dot-1">● </span>True income, however is not just financial.<br />
            <span className="dot-1">● </span>It is about the returns
-            you gain from life itself,<br /> the knowledge you acquire, the
-            relationships you nurture and the health you maintain.
+            you gain from life itself,<br /> <span className="text">the knowledge you acquire, the
+            relationships you nurture and <span className="text">the health you maintain.</span>
+            </span>
           </p>
         </div>
         <div className="income-image">
@@ -58,7 +59,7 @@ const Income = () => {
             <p>
               <span className="dot-1">● </span>Secure your family's future.  <br />
               <span className="dot-1">● </span>Build lasting wealth and assets.  <br />
-              <span className="dot-1">● </span>Create the freedom to travel, <br /> explore and experience life. <br />
+              <span className="dot-1">● </span>Create the freedom to travel, <br /><span className="text"> explore and experience life. </span><br />
               <span className="dot-1">● </span>Live with peace of mind and purpose. <br />
             </p>
           </ul>
