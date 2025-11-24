@@ -119,15 +119,9 @@ export default function Students() {
         </section>
       </main>
 
-            <section className="blog">
-              <div className="view-more-link-my-life">
-                <Link className="view-more-link" to="/elder">
-                    <button className="view-more" type="button">
-                      View More
-                    </button>
-                </Link>
-            </div>
-            </section>
+            <div class="btn-center">
+        <a href="elder" class="view-btn">View More</a>
+      </div>
 
       <Footer />
     </div>
