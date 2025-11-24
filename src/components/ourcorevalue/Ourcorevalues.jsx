@@ -149,9 +149,9 @@ const Visionmission = () => {
       <section className="vision-gallery-section">
 
         <div className="vision-gallery">
-          <img src="1.png" alt="Vision gallery 1" />
+          <img src="core1copy.jpg" alt="Vision gallery 1" />
           <img src="reddoxbox.png" alt="Vision gallery 2" />
-          <img src="CORE.png" alt="Vision gallery 3" />
+          <img src="core3copy.jpg" alt="Vision gallery 3" />
           <img src="no.jpg" alt="Vision gallery 4" />
         </div>
       </section>
