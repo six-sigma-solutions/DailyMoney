@@ -76,7 +76,7 @@ export default function Elder() {
           <div className="dm-eldr-content">
             <p className="dm-eldr-animate dm-eldr-tagline">
               <strong>
-                <span className="dm-eldr-highlight">● Empowerment</span> begins with a <span className="dm-eldr-highlight">choice</span>. <br />
+                <span className="dm-eldr-tick">● </span>Empowerment begins with a <span className="dm-eldr-highlight">choice</span>. <br />
                 <span className="dm-eldr-tick">●  </span>Choose to live with <span className="dm-eldr-highlight">abundance</span>, not dependence. <br />
                 <span className="dm-eldr-tick">●  </span>Your <span className="dm-eldr-highlight">experience</span> is your greatest asset and we help you turn it into <span className="dm-eldr-highlight">income</span>. <br />
                 <span className="dm-eldr-tick">●  </span>It's time to invest in your <span className="dm-eldr-highlight">health</span>, 
