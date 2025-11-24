@@ -125,13 +125,9 @@ export default function Entrepreneur() {
         </div>
       </div>
 
-<section className="blog">
-  <div className="view-more-link-my-life">
-    <Link className="view-more-link" to="/income">
-      <button className="view-more" type="button">View More</button>
-    </Link>
-  </div>
-</section>
+<div class="btn-center">
+        <a href="income" class="view-btn">View More</a>
+      </div>
 <Footer />
   </div>
   );
