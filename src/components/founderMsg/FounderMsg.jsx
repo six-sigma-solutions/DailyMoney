@@ -36,10 +36,10 @@ export default function FounderMsg() {
 
         {/* Message Content Section */}
         <div className="message-content">
-          <img src="Life.jpg" className="message-image" />
+          <img src="change1.jpg" className="message-image" />
 
           <div className="message-section">
-            <img src="founders0.png" alt="Welcome" className="message-image" />
+            <img src="change2.jpg" alt="Welcome" className="message-image" />
           </div>
         </div>
 
