@@ -102,6 +102,7 @@
   .income-section {
     flex-direction: column;
     text-align: center;
+    gap: 20px;
   }
   .income-section {
     padding: 25px 20px;
