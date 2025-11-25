@@ -73,7 +73,7 @@ export default function Students() {
 
 <section className="stu-page-section stu-page-reverse-section">
   <div className="stu-page-image-box">
-    <img src="stu.png" alt="Poster 2" />
+    <img src="student-44.jpg" alt="Poster 2" />
   </div>
 
   <div className="stu-page-text-block">
