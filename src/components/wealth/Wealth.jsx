@@ -84,7 +84,7 @@ const Wealth = () => {
                 <span className="wealthy-check" style={{color:"white"}}>✓</span>
                 <p>
                   Our wealth is not just about what we <span className="text1">accumulate,</span> but about what
-                  we <span className="text1">enable.</span> With it, we gain the ability to <span className="text1">support our</span>
+                  we <span className="text1">enable.</span> With it, we gain the ability to <span className="text1">support our </span>
                   families, nurture dreams, <span className="text1">create opportunities and contribute </span>
                   to <span className="text1">causes that uplift society.</span>
                 </p>
@@ -103,8 +103,8 @@ const Wealth = () => {
                 <span className="wealthy-check" style={{color:"white"}}>✓</span>
                 <p>
                   Wealth is not greed it is growth. It is not <span className="text1">selfishness, it is</span> stewardship.
-                  When <span className="text1">guided by purpose,</span> wealth becomes a <span className="text1">force for</span>
-                  freedom, impact and legacy. <span className="text1">Our wealth is our power to</span>
+                  When <span className="text1">guided by purpose,</span> wealth becomes a <span className="text1">force for </span>
+                  freedom, impact and legacy. <span className="text1">Our wealth is our power to </span>
                   live with <span className="text1">dignity, give with generosity</span> and build <span className="text1">a future that</span>
                   outlives us.
                 </p>
