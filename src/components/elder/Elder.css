@@ -1,237 +1,141 @@
-/* ===================================================== */
-/* Elder Page Styles - ALL CLASSES ARE ISOLATED WITH dm-eldr- PREFIX */
-/* ===================================================== */
-
-/* ---------- Root & Base ---------- */
+/* Main layout */
 .dm-eldr-wrapper {
-  --dm-eldr-muted: #6b7280;
-  --dm-eldr-text: #0f172a;
-  --dm-eldr-bg: #ffffff;
-  --dm-eldr-accent: #1a3ef5; /* Accent blue tone */
-
-  font-family: "Inter", Arial, sans-serif;
-  background: var(--dm-eldr-bg);
-  color: var(--dm-eldr-text);
-  line-height: 1.6;
+  width: 100%;
+  padding-bottom: 40px;
+  background: #f7f7f7;
+  overflow-x: hidden;
 }
 
-.dm-eldr-wrapper * {
-  box-sizing: border-box;
-}
-
-/* ---------- HEADER ---------- */
+/* Header */
 .dm-eldr-header {
   text-align: center;
-  padding: 5px;
-  margin: 20px;
-  color: white;
-  font-weight: bold;
-  letter-spacing: 1px;
-  background-color: #047871;
-  border-radius: 20px;
-  font-size: 20px;
 }
 
 .dm-eldr-header h1 {
-  margin: 0;
-  font-family: 'Poppins', sans-serif !important;
+  font-size: 28px;
+  color: #222;
+  font-weight: 700;text-align: center;
+  padding: 15px;
+  background: #407871;
+  border-radius: 20px;
+  margin-top: 10px;
+  color: #fff;
 }
 
-/* ---------- CONTAINER ---------- */
+/* Container */
 .dm-eldr-container {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 0 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px 60px;
 }
 
-/* ---------- ROWS ---------- */
+/* Row Layout */
 .dm-eldr-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 90px;
-  margin: 60px auto;
+  gap: 50px;
+  margin: 60px 0 40px; 
 }
 
 .dm-eldr-row.reverse {
   flex-direction: row-reverse;
 }
 
-/* ---------- POSTER IMAGE BOX ---------- */
-.dm-eldr-poster {
-  position: relative;
-  flex: 1;
-  max-width: 380px;
-  border-radius: 15% 0;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  cursor: pointer;
-}
-
+/* Images */
 .dm-eldr-poster img {
-  width: 100%;
   height: 450px;
-  object-fit: fill;
-  display: block;
-  
+  max-width: 600px;
+  border-radius: 20% 0;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.dm-eldr-poster:hover {
-  transform: scale(1.02);
-  box-shadow: 0 12px 35px rgba(26, 62, 245, 0.35); /* Accent shadow */
+.dm-eldr-poster img:hover {
+  transform: scale(1.03);
 }
 
-/* ---------- CONTENT ---------- */
-.dm-eldr-content {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* ✅ FIXED Tick + Text Alignment */
-.dm-eldr-tagline {
+/* Bullet line structure */
+.dm-eldr-bullet {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  font-size: 28px;
-  line-height: 1.8;
-  color: black;
-  flex-wrap: wrap;
-  margin: 0;
+  margin-bottom: 12px;
+  padding: 0 80px;
 }
 
-.dm-eldr-tagline strong {
-    font-weight: 600;
-    display: inline;
-    text-align: start;
-    font-size: 28px;
-}
-
-/* dot color */
-.dm-eldr-tick{
+.dm-eldr-bullet .dot {
+  font-size: 26px;
+  margin-right: 12px;
   color: #ffd70f;
-  padding: 5px;
+}
+
+.dm-eldr-bullet .text {
+  font-size: 28px;
+  color: #444;
+  line-height: 1.6;
 }
 
 
-/* ---------- SCROLL FADE-IN ANIMATION ---------- */
+/* Animation */
 .dm-eldr-animate {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transform: translateY(15px);
+  transition: 0.6s ease-in-out;
 }
 
 .dm-eldr-animate.visible {
-  opacity: 1;
   transform: translateY(0);
 }
 
-/* ---------- TICK PULSE EFFECT ---------- */
-@keyframes dm-eldr-pulse {
-  0% {
-    transform: scale(1);
-    text-shadow: 0 0 10px rgba(26, 62, 245, 0.4);
-  }
-  50% {
-    transform: scale(1.2);
-    text-shadow: 0 0 25px rgba(26, 62, 245, 0.9);
-  }
-  100% {
-    transform: scale(1);
-    text-shadow: 0 0 10px rgba(26, 62, 245, 0.4);
-  }
-}
-
-/* ---------- BUTTON STYLING ---------- */
-
-
-
-/* ---------- FOOTER ---------- */
-.dm-eldr-footer {
+/* Button */
+.btn-center {
   text-align: center;
-  padding: 15px;
-  background: #f1f1f1;
-  color: var(--dm-eldr-muted);
-  font-size: 0.9rem;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
-/* ---------- RESPONSIVE STYLES ---------- */
-@media (max-width: 1000px) {
+
+/* Responsive */
+@media (max-width: 900px) {
   .dm-eldr-row {
     flex-direction: column;
-    gap: 30px;
-    text-align: center;
+    text-align: left;
   }
 
   .dm-eldr-row.reverse {
     flex-direction: column;
   }
 
-  .dm-eldr-poster {
-    max-width: 100%;
-    margin-bottom: 20px;
+  .dm-eldr-poster img {
+    width: 80%;
   }
 
-  .dm-eldr-tagline {
-    flex-direction: column;
-    text-align: center;
-    font-size: 28px;
-    line-height: 1.5;
-  }
-
-}
-
-/* ---------- MOBILE STYLES (768px) ---------- */
-@media (max-width: 768px) {
-  .dm-eldr-container {
-    padding: 0 15px;
-    gap: 40px;
-    margin: 20px auto;
-  }
-
-  .dm-eldr-header {
-    margin: 15px 15px;
-    padding: 15px;
-  }
-
-  .dm-eldr-header h1 {
+  .dm-eldr-bullet .text {
     font-size: 24px;
   }
 
-  .dm-eldr-row {
-    gap: 25px;
+  .dm-eldr-bullet .dot {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dm-eldr-header h1 {
+    font-size: 22px;
   }
 
-  .dm-eldr-poster {
-    max-width: 350px;
-    margin: 0 auto 15px;
+  .dm-eldr-container {
+    margin: auto;
+  }
+
+  .dm-eldr-bullet{
+    padding: 0;
+  }
+
+  .dm-eldr-row{
+    margin: 40px 0; 
   }
 
   .dm-eldr-poster img {
     width: 100%;
-    height: auto;
-    border-radius: 15px;
+    height: 350px;
   }
 
-  .dm-eldr-tagline {
-      font-size: 28px;
-      line-height: 1.5;
-  }
-}
-
-/* ---------- EXTRA SMALL DEVICES ---------- */
-@media (max-width: 520px) {
-  .dm-eldr-header h1 {
-    font-size: 20px;
-  }
-  .dm-eldr-tagline {
-    font-size: 28px;
-    line-height: 1.5;
-  } 
 }
