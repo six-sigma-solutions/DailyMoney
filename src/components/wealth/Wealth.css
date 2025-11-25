@@ -64,7 +64,7 @@
   align-items: center;
   padding: 30px;
   border-radius: 40px;
-  margin: 40px 0;
+  margin: 40px 0 ;
   background-color: grey;
 }
 
@@ -112,6 +112,12 @@
   padding: 30px;
 }
 
+.wealthy-text-col p {
+  color: var(--muted);
+  font-size: 1rem;
+  text-align: justify;
+  margin: 0;
+}
 
 /* Footer closer to content */
 .wealthy-footer {
@@ -130,6 +136,7 @@
 .btn-center-1{
   margin: 0 auto;
 }
+
 .wealthy-bullet {
   display: flex;
   align-items: flex-start;
@@ -145,12 +152,60 @@
   color: #fff;
 }
 
-.wealthy-check {
+.wealthy-check{
   font-size: 1.7rem;
   font-weight: 900;
-  color: #0E7A5F;
+  color: #fff;
   flex-shrink: 0;
 }
+
+
+/* ========================================================= */
+/* RESPONSIVE (Compact version)                              */
+/* ========================================================= */
+
+@media (max-width: 1000px) {
+  .wealthy-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .wealthy-image-col img {
+    width: 85%;
+    max-width: 360px;
+  }
+
+  .wealth-heading {
+    margin-right: 200px;
+  }
+}
+
+@media (max-width: 520px) {
+  .wealth-heading span {
+    font-size: 24px;
+    line-height: 2.4rem;
+  }
+
+  .wealthy-text-col {
+    padding: 16px;
+  }
+
+  .wealthy-hero-card img {
+    width: 100%;
+    border-radius: 25% 0;
+    height: 300px;
+  }
+
+  .wealthy-footer {
+    margin-top: 15px;
+    padding: 8px 0;
+  }
+}
+
+
+
+
 
 /* ========================================================= */
 /* EXTRA RESPONSIVE ENHANCEMENTS — without touching original  */
@@ -172,23 +227,6 @@
 
   .wealthy-image-col img {
     max-width: 420px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .wealthy-row {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .wealthy-image-col img {
-    width: 85%;
-    max-width: 360px;
-  }
-
-  .wealth-heading {
-    margin-right: 200px;
   }
 }
 
@@ -228,28 +266,7 @@
     width: 90%;
     max-width: 320px;
   }
-}
 
-@media (max-width: 520px) {
-  .wealth-heading span {
-    font-size: 24px;
-    line-height: 2.4rem;
-  }
-
-  .wealthy-text-col {
-    padding: 16px;
-  }
-
-  .wealthy-hero-card img {
-    width: 100%;
-    border-radius: 25% 0;
-    height: 300px;
-  }
-
-  .wealthy-footer {
-    margin-top: 15px;
-    padding: 8px 0;
-  }
 }
 
 /* ----------- Small phones ----------- */
@@ -285,6 +302,10 @@
     font-size: 12px;
     margin-top: 10px;
   }
+
+  .wealthy-bullet p{
+    font-size: 1.2rem;
+  }
 }
 
 /* ----------- Ultra small devices ----------- */
@@ -301,28 +322,8 @@
    margin-left: -20px;
    margin-top: 5px;
   }
-  .wealth-heading span {
-    font-size: 24px;
-    line-height: 2.4rem;
-  }
 
-  .wealthy-text-col {
-    padding: 16px;
-  }
-
-  .wealthy-hero-card img {
-    width: 100%;
-    border-radius: 25% 0;
-    height: 300px;
-  }
-
-  .wealthy-footer {
-    margin-top: 15px;
-    padding: 8px 0;
-  }
-  .wealthy-row{
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 10px;
+  .wealthy-bullet p{
+    font-size: 1rem;
   }
 }
