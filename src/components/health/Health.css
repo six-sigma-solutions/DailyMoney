@@ -408,9 +408,10 @@ html { scroll-behavior: smooth; }
   }
   .btn-primary{
     padding: 20px;
-    margin: 10px 60px;
+    margin: 10px 100px;
   }
   .hero-content p{
-    font-size: 18px;
+    font-size: 20px;
+    text-align: justify;
   }
 }
