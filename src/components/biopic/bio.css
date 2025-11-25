@@ -102,6 +102,7 @@
     font-weight: bold;
     color: rgb(255, 255, 255);
     margin: 0; 
+    padding: 10px 0;
 }
 
 .founder-slogan{
@@ -128,6 +129,7 @@
     text-align:center;
     background-color: #040464;
     border-radius: 5px;
+    padding: 10px 0;
 }
 
 @keyframes point-animation {
