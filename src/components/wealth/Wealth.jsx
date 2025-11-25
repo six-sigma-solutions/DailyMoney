@@ -40,7 +40,7 @@ const Wealth = () => {
               <div className="wealthy-bullet">
                 <span className="wealthy-check" style={{color:"white"}}>✓</span>
                 <p>
-                  Wealth is more than numbers in a bank <span className="text1">account.</span>
+                  Wealth is more than numbers in a bank <span className="text1">account. </span>
                   It is the freedom to choose <span className="text1">our path,</span> the security to protect what
                   <span className="text1"> matters and</span> the power to create a <span className="text1">lasting impact.</span>
                 </p>
@@ -58,7 +58,7 @@ const Wealth = () => {
               <div className="wealthy-bullet">
                 <span className="wealthy-check" style={{color:"white"}}>✓</span>
                 <p>
-                  True wealth begins with discipline <span className="text1">living with intention,</span>
+                  True wealth begins with discipline <span className="text1">living with intention, </span>
                   saving with <span className="text1">wisdom</span> and investing with vision.
                 </p>
               </div>
@@ -66,7 +66,7 @@ const Wealth = () => {
               <div className="wealthy-bullet">
                 <span className="wealthy-check">✓</span>
                 <p>
-                  It grows not only through income but <span className="text1">also through knowledge,</span>
+                  It grows not only through income but <span className="text1">also through knowledge, </span>
                   relationships <span className="text1">and the</span> values we pass on to the next <span className="text1">generation.</span>
                 </p>
               </div>
@@ -85,7 +85,7 @@ const Wealth = () => {
                 <p>
                   Our wealth is not just about what we <span className="text1">accumulate,</span> but about what
                   we <span className="text1">enable.</span> With it, we gain the ability to <span className="text1">support our</span>
-                  families, nurture dreams, <span className="text1">create opportunities and contribute</span>
+                  families, nurture dreams, <span className="text1">create opportunities and contribute </span>
                   to <span className="text1">causes that uplift society.</span>
                 </p>
               </div>
