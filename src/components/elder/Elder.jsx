@@ -1,39 +1,30 @@
 import React, { useEffect, useRef } from 'react';
 import './Elder.css';
-import { Link } from 'react-router-dom';
 import Footer from '../footer/Footer';
 
 export default function Elder() {
   const animatedRef = useRef(null);
 
   useEffect(() => {
-    // 1. Image Click Logic (Opens image in new tab)
     const imgs = animatedRef.current?.querySelectorAll('.dm-eldr-poster img') || [];
     const onClick = (e) => {
-      // Prevents the animation from interfering with the navigation
-      e.preventDefault(); 
+      e.preventDefault();
       window.open(e.currentTarget.src, '_blank');
     };
     imgs.forEach((img) => img.addEventListener('click', onClick));
 
-    // 2. Scroll Animation Logic (IntersectionObserver)
     const animatedText = animatedRef.current?.querySelectorAll('.dm-eldr-animate') || [];
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          // Add 'visible' class when the element enters the viewport
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
+          if (entry.isIntersecting) entry.target.classList.add('visible');
         });
       },
-      { threshold: 0.2 } // Triggers when 20% of the element is visible
+      { threshold: 0.2 }
     );
 
     animatedText.forEach((el) => observer.observe(el));
 
-    // Cleanup function runs when the component unmounts
     return () => {
       imgs.forEach((img) => img.removeEventListener('click', onClick));
       animatedText.forEach((el) => observer.unobserve(el));
@@ -41,7 +32,6 @@ export default function Elder() {
   }, []);
 
   return (
-    // Top-level container with unique wrapper class and ref for animation
     <div className="dm-eldr-wrapper" ref={animatedRef}>
       <header className="dm-eldr-header">
         <h1>DM – Empower Elders</h1>
@@ -54,17 +44,39 @@ export default function Elder() {
           <div className="dm-eldr-poster">
             <img src="/elder36.png" alt="Poster 1" />
           </div>
-          <div className="dm-eldr-content">
-            <p className="dm-eldr-animate dm-eldr-tagline">
-              <strong>
-                <span className="dm-eldr-tick">●  </span> DM represents a <span className="dm-eldr-highlight">rebirth -</span> a movement, <span className="text">where elders & independent and </span> <span className="dm-eldr-highlight">earn daily</span>, 
-                <span className="dm-eldr-highlight"> <span className="text">share wisdom</span></span> and feel <span className="dm-eldr-highlight">valuable</span> again.<br /> 
-                <span className="dm-eldr-tick">●  </span>Live with <span className="dm-eldr-highlight">financial confidence</span>. <br />
-                <span className="dm-eldr-tick">●  </span>Feel <span className="dm-eldr-highlight">valued</span> and <span className="dm-eldr-highlight">included</span>. <br />
-                <span className="dm-eldr-tick">●  </span>Share your <span className="dm-eldr-highlight">wisdom</span> not your worries. <br />
-                <span className="dm-eldr-tick">●  </span>Enjoy <span className="dm-eldr-highlight">peace</span>, <span className="dm-eldr-highlight">purpose</span> and <span className="dm-eldr-highlight">pride</span> in your <span className="dm-eldr-highlight">DM</span> <span className="text">life.</span>
-              </strong>
-            </p>
+
+          <div className="dm-eldr-content dm-eldr-animate">
+
+            <div className="dm-eldr-bullet">
+              <span className="dot">●</span>
+              <span className="text">
+                DM represents a <span className="dm-eldr-highlight">rebirth</span> – a movement where elders become independent,
+                <span className="dm-eldr-highlight"> earn daily</span>, share wisdom and feel valuable again.
+              </span>
+            </div>
+
+            <div className="dm-eldr-bullet">
+              <span className="dot">●</span>
+              <span className="text">Live with <span className="dm-eldr-highlight">financial confidence</span>.</span>
+            </div>
+
+            <div className="dm-eldr-bullet">
+              <span className="dot">●</span>
+              <span className="text">Feel <span className="dm-eldr-highlight">valued</span> and <span className="dm-eldr-highlight">included</span>.</span>
+            </div>
+
+            <div className="dm-eldr-bullet">
+              <span className="dot">●</span>
+              <span className="text">Share your <span className="dm-eldr-highlight">wisdom</span>, not your worries.</span>
+            </div>
+
+            <div className="dm-eldr-bullet">
+              <span className="dot">●</span>
+              <span className="text">
+                Enjoy peace, purpose and pride in your <span className="dm-eldr-highlight">DM life</span>.
+              </span>
+            </div>
+
           </div>
         </section>
 
@@ -73,17 +85,39 @@ export default function Elder() {
           <div className="dm-eldr-poster">
             <img src="/elders10.png" alt="Poster 2" />
           </div>
-          <div className="dm-eldr-content">
-            <p className="dm-eldr-animate dm-eldr-tagline">
-              <strong>
-                <span className="dm-eldr-tick">●</span> Empowerment begins with a <span className="dm-eldr-highlight">choice</span>. <br />
-                <span className="dm-eldr-tick">●  </span>Choose to live with <span className="dm-eldr-highlight">abundance</span>, not <span className="text">dependence.</span> <br />
-                <span className="dm-eldr-tick">●  </span>Your <span className="dm-eldr-highlight">experience</span> is your greatest asset and <span className="text">we help you turn it into</span> <span className="dm-eldr-highlight">income</span>. <br />
-                <span className="dm-eldr-tick">●  </span>It's time to invest in your <span className="dm-eldr-highlight">health</span>, 
-                reclaim <span className="text">your</span> <span className="dm-eldr-highlight">wealth</span> and cherish your <span className="dm-eldr-highlight">family</span>. <br />
-                <span className="dm-eldr-tick">●  </span>That's the <span className="dm-eldr-highlight">DM</span> way.
-              </strong>
-            </p>
+
+          <div className="dm-eldr-content dm-eldr-animate">
+
+            <div className="dm-eldr-bullet">
+              <span className="dot">●</span>
+              <span className="text">Empowerment begins with a <span className="dm-eldr-highlight">choice</span>.</span>
+            </div>
+
+            <div className="dm-eldr-bullet">
+              <span className="dot">●</span>
+              <span className="text">Choose to live with <span className="dm-eldr-highlight">abundance</span>, not dependence.</span>
+            </div>
+
+            <div className="dm-eldr-bullet">
+              <span className="dot">●</span>
+              <span className="text">
+                Your experience is your greatest asset — we help you turn it into <span className="dm-eldr-highlight">income</span>.
+              </span>
+            </div>
+
+            <div className="dm-eldr-bullet">
+              <span className="dot">●</span>
+              <span className="text">
+                Invest in your <span className="dm-eldr-highlight">health</span>, reclaim wealth and cherish
+                your <span className="dm-eldr-highlight">family</span>.
+              </span>
+            </div>
+
+            <div className="dm-eldr-bullet">
+              <span className="dot">●</span>
+              <span className="text">That’s the <span className="dm-eldr-highlight">DM way</span>.</span>
+            </div>
+
           </div>
         </section>
 
@@ -92,15 +126,35 @@ export default function Elder() {
           <div className="dm-eldr-poster">
             <img src="/9001.jpg" alt="Poster 3" />
           </div>
-          <div className="dm-eldr-content">
-            <p className="dm-eldr-animate dm-eldr-tagline">
-              <strong>
-                <span className="dm-eldr-tick">●</span> Retirement means living life on your own <span className="dm-eldr-highlight"><span className="text">schedule</span></span> and enjoying inner <span className="dm-eldr-highlight">peace</span>.<br /> 
-                <span className="dm-eldr-tick">●  </span>It’s not the end of <span className="dm-eldr-highlight">possibilities</span> it’s the start <span className="text">of living life on your own</span> <span className="dm-eldr-highlight">terms</span>. <br/>
-                <span className="dm-eldr-tick">●  </span>That’s the <span className="dm-eldr-highlight">DM</span> way.<br />
-                <span className="dm-eldr-tick">●  </span>Freedom with <span className="dm-eldr-highlight">purpose</span> and dignity at every <span className="text">stage of life.</span>
-              </strong>
-            </p>
+
+          <div className="dm-eldr-content dm-eldr-animate">
+
+            <div className="dm-eldr-bullet">
+              <span className="dot">●</span>
+              <span className="text">
+                Retirement means enjoying inner <span className="dm-eldr-highlight">peace</span> on your own terms.
+              </span>
+            </div>
+
+            <div className="dm-eldr-bullet">
+              <span className="dot">●</span>
+              <span className="text">
+                It’s not the end — it is the start of living life on your own <span className="dm-eldr-highlight">schedule</span>.
+              </span>
+            </div>
+
+            <div className="dm-eldr-bullet">
+              <span className="dot">●</span>
+              <span className="text">That’s the <span className="dm-eldr-highlight">DM way</span>.</span>
+            </div>
+
+            <div className="dm-eldr-bullet">
+              <span className="dot">●</span>
+              <span className="text">
+                Freedom with <span className="dm-eldr-highlight">purpose</span> and dignity at every stage of life.
+              </span>
+            </div>
+
           </div>
         </section>
 
@@ -109,26 +163,46 @@ export default function Elder() {
           <div className="dm-eldr-poster">
             <img src="/elder200.png" alt="Poster 4" />
           </div>
-          <div className="dm-eldr-content">
-            <p className="dm-eldr-animate dm-eldr-tagline">
-              <strong>
-                <span className="dm-eldr-tick">●  </span>
-                <span className="dm-eldr-highlight"> When elders</span> thrive, <span className="dm-eldr-highlight">families</span> become <span className="text">stronger.</span> <br />
-                <span className="dm-eldr-tick">●  </span>When their <span className="dm-eldr-highlight">voices</span> are valued, <span className="dm-eldr-highlight">communities</span><span className="text"> become wiser.</span> <br /> 
-                <span className="dm-eldr-tick">●  </span>When they live <span className="dm-eldr-highlight">freely</span> and <span className="dm-eldr-highlight">confidently</span>, 
-                the <span className="dm-eldr-highlight"><span className="text">society</span></span> grows richer  
-                in <span className="dm-eldr-highlight">humanity</span>, not just in <span className="dm-eldr-highlight"><span className="text">wealth</span></span>. <br />
-                <span className="dm-eldr-tick">●  </span>That’s the <span className="dm-eldr-highlight">DM - </span> way, where every <span className="text">generation </span>
-                learns, earns and lives with <span className="dm-eldr-highlight"><span className="text">purpose</span></span>.<br />
-              </strong>
-            </p>
+
+          <div className="dm-eldr-content dm-eldr-animate">
+
+            <div className="dm-eldr-bullet">
+              <span className="dot">●</span>
+              <span className="text">
+                When elders thrive, families become stronger.
+              </span>
+            </div>
+
+            <div className="dm-eldr-bullet">
+              <span className="dot">●</span>
+              <span className="text">
+                When their voices are valued, communities become wiser.
+              </span>
+            </div>
+
+            <div className="dm-eldr-bullet">
+              <span className="dot">●</span>
+              <span className="text">
+                When they live confidently, society grows richer in humanity.
+              </span>
+            </div>
+
+            <div className="dm-eldr-bullet">
+              <span className="dot">●</span>
+              <span className="text">
+                That’s the <span className="dm-eldr-highlight">DM way</span> — where every generation learns and lives with purpose.
+              </span>
+            </div>
+
           </div>
         </section>
+
       </main>
 
-      <div class="btn-center">
-        <a href="overview" class="view-btn">View More</a>
+      <div className="btn-center">
+        <a href="overview" className="view-btn">View More</a>
       </div>
+
       <Footer />
     </div>
   );

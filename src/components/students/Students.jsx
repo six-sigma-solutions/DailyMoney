@@ -42,88 +42,146 @@ export default function Students() {
       <main className="stu-page-container">
         {/* Section 1 */}
         <section className="stu-page-section">
-          <div className="stu-page-image-box">
-            <img src="student12.png" alt="Poster 1" />
-          </div>
+  <div className="stu-page-image-box">
+    <img src="student12.png" alt="Poster 1" />
+  </div>
 
-          <div className="stu-page-text-block">
-            <p className="stu-page-animate-block stu-page-tagline-text">
-              <strong>
-                <span className="stu-page-highlight-text">
-                  <span className="stu-page-tick-icon">●</span> Our future starts with today's discipline.<br /> <span className="stu-page-tick-icon">●</span> We help turn student loans into student <span className="text"> gains.</span><br /> 
-                  <span className="stu-page-tick-icon">●</span> Your degree gets you a job. <br /> 
-                  <span className="stu-page-tick-icon">●</span> Your DM skills get you freedom.<br />
-                  <span className="stu-page-tick-icon">●</span> Build wealth while you learn. Don't just <span className="text">chase grades, chase growth.</span>
-</span>
-              </strong>
-            </p>
-          </div>
-        </section>
+  <div className="stu-page-text-block">
 
-        {/* Section 2 */}
-        <section className="stu-page-section stu-page-reverse-section">
-          <div className="stu-page-image-box">
-            <img src="stu.png" alt="Poster 2" />
-          </div>
-
-          <div className="stu-page-text-block">
-            <p className="stu-page-animate-block stu-page-tagline-text">
-              <strong>
-                <span className="stu-page-tick-icon">●</span>
-                <span className="stu-page-highlight-text"> Learn</span> to <span className="stu-page-highlight-text">earn</span> while you still have <span className="stu-page-highlight-text">time.<br />
-                </span><span className="stu-page-tick-icon">●</span> Our<span className="stu-page-highlight-text">side hustle</span> is your <span className="stu-page-highlight-text">main opportunity.<br /></span>
-                <span className="stu-page-tick-icon">●</span> Financial confidence is the best <span className="stu-page-highlight-text"><span className="text">graduation gift.</span><br /> </span>
-                <span className="stu-page-highlight-text"> 
-                <span className="stu-page-tick-icon">●</span> DM</span> delivers a <span className="stu-page-highlight-text"> blueprint</span> for <span className="stu-page-highlight-text">students to <span className="text">design their future.</span></span><br/ > 
-                <span className="stu-page-tick-icon">●</span> We train you for <span className="stu-page-highlight-text">real-world success</span>.
-              </strong>
-            </p>
-          </div>
-        </section>
-
-        {/* Section 3 */}
-        <section className="stu-page-section">
-          <div className="stu-page-image-box">
-            <img src="3002.png" alt="Poster 3" />
-          </div>
-
-          <div className="stu-page-text-block">
-            <p className="stu-page-animate-block stu-page-tagline-text">
-              <strong>
-                <span className="stu-page-tick-icon">● </span>
-                Achieve <span className="stu-page-highlight-text">personal growth</span> and <span className="stu-page-highlight-text">financial <span className="text">independence</span></span>.<br />
-               <span className="stu-page-tick-icon">● </span>Pay off <span className="stu-page-highlight-text">student debt</span> through your own  <span className="text">earned income.</span><br />
-               <span className="stu-page-tick-icon">● </span>Financial independence that brings <span className="stu-page-highlight-text"><span className="text">confidence</span></span> and <span className="stu-page-highlight-text">self-respect</span>.
-              </strong>
-            </p>
-          </div>
-        </section>
-
-        {/* Section 4 */}
-        <section className="stu-page-section stu-page-reverse-section">
-          <div className="stu-page-image-box">
-            <img src="rf.png" alt="Poster 4" />
-          </div>
-
-          <div className="stu-page-text-block">
-            <p className="stu-page-animate-block stu-page-tagline-text">
-              <strong>
-                <span className="stu-page-tick-icon">●</span>
-                <span className="stu-page-highlight-text"> DM</span> empowered to <span className="stu-page-highlight-text">learn</span>, inspired to <span className="stu-page-highlight-text"><span className="text">earn</span></span>.<br />
-               <span className="stu-page-tick-icon">●</span> Earn with <span className="stu-page-highlight-text">pride</span>, learn with <span className="stu-page-highlight-text">purpose</span>.<br />
-                <span className="stu-page-tick-icon">●</span> Students <span className="stu-page-highlight-text">earn</span> and the world learns the <span className="text">value of </span> <span className="stu-page-highlight-text">determination</span>.<br />
-               <span className="stu-page-tick-icon">●</span> Self-earned income builds more than <span className="stu-page-highlight-text"><span className="text">wealth</span></span>, it builds <span className="stu-page-highlight-text">wisdom</span>.
-              </strong>
-            </p>
-          </div>
-        </section>
-      </main>
-
-            <div class="btn-center">
-        <a href="elder" class="view-btn">View More</a>
-      </div>
-
-      <Footer />
+    <div className="stu-bullet stu-page-animate-block">
+      <span className="stu-dot">●</span>
+      <span>Our future starts with today’s discipline.</span>
     </div>
+
+    <div className="stu-bullet stu-page-animate-block">
+      <span className="stu-dot">●</span>
+      <span>We help turn student loans into student gains.</span>
+    </div>
+
+    <div className="stu-bullet stu-page-animate-block">
+      <span className="stu-dot">●</span>
+      <span>Your degree gets you a job, but your DM skills get you freedom.</span>
+    </div>
+
+    <div className="stu-bullet stu-page-animate-block">
+      <span className="stu-dot">●</span>
+      <span>Build wealth while you learn — don’t just chase grades, chase growth.</span>
+    </div>
+
+  </div>
+</section>
+
+<section className="stu-page-section stu-page-reverse-section">
+  <div className="stu-page-image-box">
+    <img src="stu.png" alt="Poster 2" />
+  </div>
+
+  <div className="stu-page-text-block">
+
+    <div className="stu-bullet stu-page-animate-block">
+      <span className="stu-dot">●</span>
+      <span>Learn to earn while you still have time.</span>
+    </div>
+
+    <div className="stu-bullet stu-page-animate-block">
+      <span className="stu-dot">●</span>
+      <span>Our side hustle becomes your main opportunity.</span>
+    </div>
+
+    <div className="stu-bullet stu-page-animate-block">
+      <span className="stu-dot">●</span>
+      <span>Financial confidence is the best graduation gift.</span>
+    </div>
+
+    <div className="stu-bullet stu-page-animate-block">
+      <span className="stu-dot">●</span>
+      <span>
+        DM delivers a blueprint for students to design their future.
+      </span>
+    </div>
+
+    <div className="stu-bullet stu-page-animate-block">
+      <span className="stu-dot">●</span>
+      <span>We train you for real-world success.</span>
+    </div>
+
+  </div>
+</section>
+
+<section className="stu-page-section">
+  <div className="stu-page-image-box">
+    <img src="3002.png" alt="Poster 3" />
+  </div>
+
+  <div className="stu-page-text-block">
+
+    <div className="stu-bullet stu-page-animate-block">
+      <span className="stu-dot">●</span>
+      <span>
+        Achieve personal growth and financial independence.
+      </span>
+    </div>
+
+    <div className="stu-bullet stu-page-animate-block">
+      <span className="stu-dot">●</span>
+      <span>
+        Pay off student debt through your own earned income.
+      </span>
+    </div>
+
+    <div className="stu-bullet stu-page-animate-block">
+      <span className="stu-dot">●</span>
+      <span>
+        Financial independence builds confidence and self-respect.
+      </span>
+    </div>
+
+  </div>
+</section>
+
+<section className="stu-page-section stu-page-reverse-section">
+  <div className="stu-page-image-box">
+    <img src="rf.png" alt="Poster 4" />
+  </div>
+
+  <div className="stu-page-text-block">
+
+    <div className="stu-bullet stu-page-animate-block">
+      <span className="stu-dot">●</span>
+      <span>
+        DM empowers you to learn with purpose and earn with confidence.
+      </span>
+    </div>
+
+    <div className="stu-bullet stu-page-animate-block">
+      <span className="stu-dot">●</span>
+      <span>
+        Earn with pride, learn with purpose.
+      </span>
+    </div>
+
+    <div className="stu-bullet stu-page-animate-block">
+      <span className="stu-dot">●</span>
+      <span>
+        Students earn and the world learns the value of determination.
+      </span>
+    </div>
+
+    <div className="stu-bullet stu-page-animate-block">
+      <span className="stu-dot">●</span>
+      <span>
+        Self-earned income builds more than wealth — it builds wisdom.
+      </span>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<div class="btn-center">
+  <a href="elder" class="view-btn">View More</a>
+</div>
+<Footer />
+</div>
   );
 }

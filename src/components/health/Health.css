@@ -249,21 +249,21 @@ html { scroll-behavior: smooth; }
 
 /* ---------------- FOOTER ---------------- */
 .footer {
-  padding: 0px 20px;
+  padding: 40px !important;
   text-align: center;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.15;
   width: 100%;
   max-width: none;
   box-sizing: border-box;
   background-color: #fff !important;
 }
 
-.footer:hover { transform: translateY(-3px); }
+.footer:hover 
+{
+  transform: scale(1.03);
+}
 
 .footer h1 { font-size: 1.7rem; font-weight: 900; margin-bottom: 13px; 
-  padding: 20px;
+  padding:20px;
   color: #fffb2c; 
   text-align:start;
   padding: 0 80px;
@@ -407,8 +407,8 @@ html { scroll-behavior: smooth; }
     margin: 5px auto;
   }
   .btn-primary{
-    padding: 0 10px;
-    margin: 15px 100px;
+    margin: 10px 0;
+    padding: 20px 10px;
   }
   .hero-content p{
     font-size: 18px;

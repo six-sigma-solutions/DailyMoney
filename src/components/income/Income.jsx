@@ -1,7 +1,7 @@
 import React from "react";
 import "./Income.css";
 import { Link } from "react-router-dom";
-import Footer from '../footer/Footer';
+import Footer from "../footer/Footer";
 
 const Income = () => {
   return (
@@ -13,15 +13,27 @@ const Income = () => {
       {/* Section 1 */}
       <section className="income-section">
         <div className="income-text">
-          <p>
-           <span className="dot-1">● </span>Income is more than just money earned. <br />
-           <span className="dot-1">● </span>It is the reward for effort,
-             time and value created.<br /> 
-           <span className="dot-1">● </span>Whether through wages, salaries, profits
-            or investments,<br /><span className="text"> income provides the foundation for stability and
-            growth.</span>
-          </p>
+
+          <div className="bullet">
+            <span className="dot-1">●</span>
+            <span>Income is more than just money earned.</span>
+          </div>
+
+          <div className="bullet">
+            <span className="dot-1">●</span>
+            <span>It is the reward for effort, time and value created.</span>
+          </div>
+
+          <div className="bullet">
+            <span className="dot-1">●</span>
+            <span>
+              Whether through wages, salaries, profits or investments, income
+              provides the foundation for stability and growth.
+            </span>
+          </div>
+
         </div>
+
         <div className="income-image">
           <img
             className="responsive-income-img"
@@ -34,14 +46,23 @@ const Income = () => {
       {/* Section 2 */}
       <section className="income-section reverse">
         <div className="income-text">
-          <p>
-           <span className="dot-1">● </span>True income, however is not just financial.<br />
-           <span className="dot-1">● </span>It is about the returns
-            you gain from life itself,<br /> <span className="text">the knowledge you acquire, the
-            relationships you nurture and <span className="text">the health you maintain.</span>
+
+          <div className="bullet">
+            <span className="dot-1">●</span>
+            <span>True income, however, is not just financial.</span>
+          </div>
+
+          <div className="bullet">
+            <span className="dot-1">●</span>
+            <span>
+              It is about the returns you gain from life itself — the knowledge
+              you acquire, the relationships you nurture and the health you
+              maintain.
             </span>
-          </p>
+          </div>
+
         </div>
+
         <div className="income-image">
           <img
             className="responsive-income-img"
@@ -54,16 +75,29 @@ const Income = () => {
       {/* Section 3 */}
       <section className="income-section">
         <div className="income-text">
-          
-          <ul>
-            <p>
-              <span className="dot-1">● </span>Secure your family's future.  <br />
-              <span className="dot-1">● </span>Build lasting wealth and assets.  <br />
-              <span className="dot-1">● </span>Create the freedom to travel, <br /><span className="text"> explore and experience life. </span><br />
-              <span className="dot-1">● </span>Live with peace of mind and purpose. <br />
-            </p>
-          </ul>
+
+          <div className="bullet">
+            <span className="dot-1">●</span>
+            <span>Secure your family's future.</span>
+          </div>
+
+          <div className="bullet">
+            <span className="dot-1">●</span>
+            <span>Build lasting wealth and assets.</span>
+          </div>
+
+          <div className="bullet">
+            <span className="dot-1">●</span>
+            <span>Create the freedom to travel, explore and experience life.</span>
+          </div>
+
+          <div className="bullet">
+            <span className="dot-1">●</span>
+            <span>Live with peace of mind and purpose.</span>
+          </div>
+
         </div>
+
         <div className="income-image">
           <img
             className="responsive-income-img"
@@ -75,26 +109,48 @@ const Income = () => {
 
       {/* Section 4 */}
       <section className="income-section reverse move-right">
-  <div className="income-text">
-    <p>
-     <span className="dot-1">● </span>Income powers growth, not greed. <br />
-     <span className="dot-1">● </span>Energy creates opportunity. <br />
-     <span className="dot-1">● </span>Wealth begins with wisdom. <br />
-     <span className="dot-1">● </span>Freedom follows discipline. <br />
-     <span className="dot-1">● </span>Balance builds true success. <br />
-    </p>
-  </div>
-  <div className="income-image">
-    <img
-      className="responsive-income-img"
-      src="income9.png"
-      alt="Growth and Balance"
-    />
-  </div>
-</section>
-      <div class="btn-center">
-        <a href="womenempowerment" class="view-btn">View More</a>
+        <div className="income-text">
+
+          <div className="bullet">
+            <span className="dot-1">●</span>
+            <span>Income powers growth, not greed.</span>
+          </div>
+
+          <div className="bullet">
+            <span className="dot-1">●</span>
+            <span>Energy creates opportunity.</span>
+          </div>
+
+          <div className="bullet">
+            <span className="dot-1">●</span>
+            <span>Wealth begins with wisdom.</span>
+          </div>
+
+          <div className="bullet">
+            <span className="dot-1">●</span>
+            <span>Freedom follows discipline.</span>
+          </div>
+
+          <div className="bullet">
+            <span className="dot-1">●</span>
+            <span>Balance builds true success.</span>
+          </div>
+
+        </div>
+
+        <div className="income-image">
+          <img
+            className="responsive-income-img"
+            src="income9.png"
+            alt="Growth and Balance"
+          />
+        </div>
+      </section>
+
+      <div className="btn-center">
+        <a href="womenempowerment" className="view-btn">View More</a>
       </div>
+
       <Footer />
     </div>
   );

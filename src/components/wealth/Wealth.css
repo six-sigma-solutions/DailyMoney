@@ -137,6 +137,29 @@
   margin: 0 auto;
 }
 
+.wealthy-bullet {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.wealthy-bullet p {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.6;
+  font-weight: 600;
+  text-align: left;
+  color: #fff;
+}
+
+.wealthy-check{
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+
 /* ========================================================= */
 /* RESPONSIVE (Compact version)                              */
 /* ========================================================= */
@@ -279,6 +302,10 @@
     font-size: 12px;
     margin-top: 10px;
   }
+
+  .wealthy-bullet p{
+    font-size: 1.2rem;
+  }
 }
 
 /* ----------- Ultra small devices ----------- */
@@ -294,5 +321,9 @@
    line-height: 1.6;
    margin-left: -20px;
    margin-top: 5px;
+  }
+
+  .wealthy-bullet p{
+    font-size: 1rem;
   }
 }
