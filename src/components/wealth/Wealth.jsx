@@ -106,7 +106,7 @@ const Wealth = () => {
                   When <span className="text1">guided by purpose,</span> wealth becomes a <span className="text1">force for </span>
                   freedom, impact and legacy. <span className="text1">Our wealth is our power to </span>
                   live with <span className="text1">dignity, give with generosity</span> and build <span className="text1">a future that</span>
-                  outlives us.
+                  out lives us.
                 </p>
               </div>
             </div>
