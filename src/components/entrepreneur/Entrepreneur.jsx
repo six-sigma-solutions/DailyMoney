@@ -30,7 +30,7 @@ export default function Entrepreneur() {
         <div className="ent-box-left">
 
           <div className="ent-line"><span className="dot">●</span><span className="text">I want to be my own boss.</span></div>
-          <div className="ent-line"><span className="dot">●</span><span className="text">Freedom is my first goal, purpose is my next.</span></div>
+          <div className="ent-line"><span className="dot">●</span><span className="text">Freedom is my first goal, <br />Purpose is my next.</span></div>
           <div className="ent-line"><span className="dot">●</span><span className="text">Self-leadership is my success story.</span></div>
           <div className="ent-line"><span className="dot">●</span><span className="text">I want to build a life that reflects my values.</span></div>
 
