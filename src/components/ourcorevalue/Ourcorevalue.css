@@ -107,11 +107,19 @@
 }
 
 .dm-vsn-lead {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-  color: #fff;
+  font-size: 18px;
   line-height: 1.6;
+  list-style-type: disc;
+  padding-left: 20px;     /* space for bullet */
 }
+
+.dm-vsn-lead li {
+  text-indent: 0px;     /* pull bullet left */
+  padding-left: 10px;     /* text alignment */
+  line-height: 1.7;
+}
+
+
 
 /* ---------------- CARD FEATURES ---------------- */
 .card-features {
