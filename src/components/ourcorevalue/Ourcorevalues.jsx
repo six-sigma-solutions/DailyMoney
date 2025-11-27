@@ -43,21 +43,19 @@ const Visionmission = () => {
             <div className="dm-vsn-card-text">
               <p className="dm-vsn-kicker"> </p>
               <h1>Improving the world's health, happiness and prosperity<br />deliver with precision.</h1>
-              <p className="dm-vsn-lead">
-                A brighter world healthy in spirit, joyful in living and abundant in growth.<br></br>
-                Living in flow with nature where wellness nourishes wealth and joy sustains growth.<br></br>
-                Building a future where vitality, happiness and financial independence flow as one.<br></br>
-                To enrich every life with balance, energy and prosperity.
-              </p>
+              <ul className="dm-vsn-lead">
+                <li>A brighter world healthy in spirit, joyful in living and abundant in growth.</li>
+                <li>Living in flow with nature where wellness nourishes wealth and joy sustains growth.</li>
+                <li>Building a future where vitality, happiness and financial independence flow as one.</li>
+                <li>To enrich every life with balance, energy and prosperity.</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-
       <section className="vision-section">
         <div className="vision-container">
-
 
     {/* Section 1: Image Left, Text Right */}
     <div className="vision-row">
