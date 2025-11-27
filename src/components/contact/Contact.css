@@ -160,26 +160,25 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /* ========Launching  ======== */
-.launching{
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding-top: 10px;
+.launching {
+  margin-top: 10px;
 }
 
-.launching img {
-  width: 50px;
-  height: 30px;
-  border-radius: 0;
-  box-shadow:none;
-  padding: 0 10px;
+.launching img{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 175px;
+  height: auto;
+  border-radius: 15px;
+  margin: 0 auto;
+  object-fit: cover;
 }
 
 .launching img:hover{
-  transform: none;
+  transform: scale(1.06);
   cursor: default;
 }
-
 
 /* ========== FOOTER ========== */
 .footer-main {
