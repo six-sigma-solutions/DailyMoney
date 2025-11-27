@@ -352,11 +352,14 @@
   }
 
   .dm-vsn-card-text h1 {
-    font-size: 1.4rem;
+    font-size: 17px;
+    margin-top: 5px;
   }
 
-  .dm-vsn-lead {
-    font-size: 0.95rem;
+  .dm-vsn-lead li {
+    font-size: 15px;
+    padding-left: 0px;
+    text-align: left;
   }
 
   .dm-vsn-card-media {
@@ -406,15 +409,10 @@
     margin-top: 5px;
   }
 
-  .dm-vsn-lead{
-    padding-left: 0px;
-  }
-
   .dm-vsn-lead li {
     font-size: 15px;
     padding-left: 0px;
     text-align: left;
-    line-height: 1.5;
   }
 
   .vision-section {
