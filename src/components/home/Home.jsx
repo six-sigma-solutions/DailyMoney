@@ -337,10 +337,10 @@ export default function Home() {
                     <Link to="/family">Family</Link>
                   </li>
                   <li>
-                    <Link to="/overview">About</Link>
+                    <Link to="/entrepreneur">My Life</Link>
                   </li>
                   <li>
-                    <Link to="/entrepreneur">My Life</Link>
+                    <Link to="/overview">About</Link>
                   </li>
                 </ul>
               </div>
