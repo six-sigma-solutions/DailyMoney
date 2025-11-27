@@ -255,7 +255,7 @@ export default function Navbar() {
             <p>
               <b>India</b>
             </p>
-            <p>Salem, Tamil Nadu</p>
+            <p>Chennai, TN - 600077</p>
           </div>
           <div>
             <p className="footer-heading">Get in touch</p>
