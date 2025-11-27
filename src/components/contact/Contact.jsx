@@ -186,10 +186,10 @@ export default function Contact() {
             {/* No 13, Breeze Enclave, Noombal Main Road, <br /> */}
             Chennai, TN-600077. <br />
           <div className="launching">
-            <strong><p style={{fontWeight: "bold", paddingTop: "10px"}}>Launching soon !!!
-              <img src="/ph-2.jpg"></img></p>
-            <p style={{fontWeight: "bold", lineHeight: "1.6"}}>Singapore, Malayasia, Australia, Dubai, London, France, Canada & USA.</p></strong>
-            </div>
+            <strong><p style={{fontWeight: "bold", paddingTop: "10px"}}>Launching soon !!!<br />
+              <img src="/centerphone.jpg"></img></p></strong>
+          </div>
+            <strong><p style={{fontWeight: "bold"}}>Singapore, Malayasia, Australia, Dubai, London, France, Canada & USA.</p></strong>
           </p>
           
           {/* <p style={{ paddingTop: "20px" }}>
