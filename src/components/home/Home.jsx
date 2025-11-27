@@ -310,10 +310,12 @@ export default function Home() {
               <img src="DM-100.jpg" alt="DailyMoney Logo" />
               <span className="footer-subtext1">
                 Six Sigma Solutions,<br />
-                NKC Towers
+                
+                {/* NKC Towers
                 1st Floor,<br /> Opp to Government Engineering College,<br />
-                Kottagoundampatti, Karuppur,<br /> Salem-636011. TamilNadu, India.
+                Kottagoundampatti, Karuppur,<br /> Salem-636011. TamilNadu, India. */}
               </span>
+               
               <span className="footer-copyright1">
                 © 2025. All rights reserved.
               </span>
