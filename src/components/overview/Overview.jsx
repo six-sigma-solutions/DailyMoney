@@ -19,7 +19,7 @@ const Overview = () => {
         </div>
 
         <div className="zigzag-text-content">
-          <h2 style={{ color: "#80ef80" }}>Our Purpose</h2>
+          <h2 style={{ color: "#fff" }}>Our Purpose</h2>
           <p>
             DM exists to make the world healthier, happier, wealthier—one
             person, one family and one community at a time.
@@ -60,7 +60,7 @@ const Overview = () => {
         </div>
 
         <div className="zigzag-text-content">
-          <h2 style={{ color: "#89bFFb" }}>Our Core Beliefs</h2>
+          <h2 style={{ color: "#fff" }}>Our Core Beliefs</h2>
           <ul>
             <li>
               <strong>Health is Wealth –</strong> Without wellness, income loses meaning.

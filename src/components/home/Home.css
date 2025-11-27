@@ -15,6 +15,15 @@
   backdrop-filter: blur(5px);
   /* keeps page visible but soft behind */
 }
+.solution-card-title1 span {
+    color: white;
+    border-radius: 10px;
+    background-color: #047871;
+    font-size: 22px;
+    padding: 10px;
+    display: flex;
+
+}
 
 .popup-container {
   background-color: rgba(255, 255, 255, 0.01);
@@ -88,7 +97,7 @@ body {
   color: #fff;
   display: inline-block;
   font-size: 24px;
-  padding: 10px 40px;
+  padding: 10px 100px;
   border-radius: 15px;
   margin-top: 30px;
   margin-left: 60px;
@@ -553,16 +562,14 @@ body {
   color: #222;
 }
 
-.solution-card-title1 span {
-  color: #b71c1c;
-}
+
 
 .vision, .mission{
   background: #047871;
   color: #fff;
   display: inline-block;
   font-size: 28px;
-  padding: 0 40px;
+  padding: 10 10px;
   border-radius: 15px;
   font-weight: 600;
   width: 28%;
