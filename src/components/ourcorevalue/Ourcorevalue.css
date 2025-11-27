@@ -108,7 +108,6 @@
 
 .dm-vsn-lead {
   font-size: 18px;
-  line-height: 1.6;
   list-style-type: disc;
   padding-left: 20px;     /* space for bullet */
 }
@@ -322,7 +321,7 @@
 
   .dm-vsn-card-text {
     text-align: center;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -403,11 +402,19 @@
   }
 
   .dm-vsn-card-text h1 {
-    font-size: 1.2rem;
+    font-size: 17px;
+    margin-top: 5px;
   }
 
-  .dm-vsn-lead {
-    font-size: 0.9rem;
+  .dm-vsn-lead{
+    padding-left: 0px;
+  }
+
+  .dm-vsn-lead li {
+    font-size: 15px;
+    padding-left: 0px;
+    text-align: left;
+    line-height: 1.5;
   }
 
   .vision-section {
