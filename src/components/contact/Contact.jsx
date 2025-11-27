@@ -185,8 +185,11 @@ export default function Contact() {
             India <br />
             {/* No 13, Breeze Enclave, Noombal Main Road, <br /> */}
             Chennai, TN-600077. <br />
-          </p>
+            <strong><p>Launching soon !!!</p>
+            <p style={{fontWeight: "bold", paddingTop: "10px"}}>Singapore, Malayasia, Australia, Dubai, London, France & USA.</p></strong>
 
+          </p>
+          
           {/* <p style={{ paddingTop: "20px" }}>
             NKC Towers 1st Floor, Karuppur, <br />
             Salem, TN-636011.
@@ -204,11 +207,7 @@ export default function Contact() {
             <a href="tel:+91 7904373255">+91 7904373255</a>
           </p> */}
 
-          <strong style={{ paddingTop: "80px" }}>Get in Touch</strong>
-          <div className="country">
-            <strong><p>Launching soon !!!</p>
-            <p>Singapore, Malayasia, Australia, Dubai, London, France & USA.</p></strong>
-          </div>
+          <strong style={{ paddingTop: "30px" }}></strong>
           <p className="social-links">
             <a href="https://x.com/dailymsghealthy">
               <i className="fa-brands fa-x-twitter"></i>
