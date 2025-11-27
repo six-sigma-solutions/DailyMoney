@@ -331,6 +331,10 @@
     gap: 20px;
   }
 
+  .vision-row p{
+    text-align: start;
+  }
+  
   .vision-image-col img {
     width: 80%;
     height: 260px;
