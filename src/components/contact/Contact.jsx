@@ -183,14 +183,17 @@ export default function Contact() {
 
           <p style={{ paddingTop: "10px" }}>
             India <br />
-            No 13, Breeze Enclave, Noombal Main Road, <br />
+            {/* No 13, Breeze Enclave, Noombal Main Road, <br /> */}
             Chennai, TN-600077. <br />
-          </p>
+            <strong><p style={{fontWeight: "bold", paddingTop: "10px"}}>Launching soon !!!</p>
+            <p style={{fontWeight: "bold", lineHeight: "1.6"}}>Singapore, Malayasia, Australia, Dubai, London, France & USA.</p></strong>
 
-          <p style={{ paddingTop: "20px" }}>
+          </p>
+          
+          {/* <p style={{ paddingTop: "20px" }}>
             NKC Towers 1st Floor, Karuppur, <br />
             Salem, TN-636011.
-          </p>
+          </p> */}
 
           <strong style={{ paddingTop: "80px" }}>Get in touch</strong>
           <h3 style={{ paddingTop: "0px" }}>Email us</h3>
@@ -199,12 +202,12 @@ export default function Contact() {
             <a href="service@dmhealthy.com">service@dmhealthy.com</a>
           </p>
 
-          <strong>Call us</strong>
+          {/* <strong>Call us</strong>
           <p>
             <a href="tel:+91 7904373255">+91 7904373255</a>
-          </p>
+          </p> */}
 
-          <strong style={{ paddingTop: "80px" }}>Get in Touch</strong>
+          <strong style={{ paddingTop: "30px" }}></strong>
           <p className="social-links">
             <a href="https://x.com/dailymsghealthy">
               <i className="fa-brands fa-x-twitter"></i>
@@ -215,9 +218,9 @@ export default function Contact() {
             <a href="https://www.instagram.com/daily_message_healthy/">
               <i className="fa-brands fa-instagram"></i>
             </a>
-            <a href="tel:+91 7904373255">
+            {/* <a href="tel:+91 7904373255">
               <i className="fa-solid fa-phone"></i>
-            </a>
+            </a> */}
           </p>
         </div>
 

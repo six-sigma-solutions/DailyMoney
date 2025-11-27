@@ -261,9 +261,9 @@ export default function Navbar() {
             <p className="footer-heading">Get in touch</p>
             <div className="footer-icons">
               <a href="support@dmhealthy.com"><span>✉️</span></a>
-              <a href="tel:+91 7904373255">
+              {/* <a href="tel:+91 7904373255">
               <span>📞</span>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
