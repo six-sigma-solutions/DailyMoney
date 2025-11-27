@@ -185,8 +185,8 @@ export default function Contact() {
             India <br />
             {/* No 13, Breeze Enclave, Noombal Main Road, <br /> */}
             Chennai, TN-600077. <br />
-            <strong><p>Launching soon !!!</p>
-            <p style={{fontWeight: "bold", paddingTop: "10px"}}>Singapore, Malayasia, Australia, Dubai, London, France & USA.</p></strong>
+            <strong><p style={{fontWeight: "bold", paddingTop: "10px"}}>Launching soon !!!</p>
+            <p style={{fontWeight: "bold", lineHeight: "1.6"}}>Singapore, Malayasia, Australia, Dubai, London, France & USA.</p></strong>
 
           </p>
           
