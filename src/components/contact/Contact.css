@@ -159,6 +159,28 @@ input[type=number]::-webkit-outer-spin-button {
   box-shadow: 0 0 20px rgba(255, 92, 51, 1);
 }
 
+/* ========Launching  ======== */
+.launching{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-top: 10px;
+}
+
+.launching img {
+  width: 50px;
+  height: 30px;
+  border-radius: 0;
+  box-shadow:none;
+  padding: 0 10px;
+}
+
+.launching img:hover{
+  transform: none;
+  cursor: default;
+}
+
+
 /* ========== FOOTER ========== */
 .footer-main {
   max-width: 1200px;
