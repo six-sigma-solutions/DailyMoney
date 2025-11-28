@@ -11,6 +11,7 @@ body {
   margin: 30px;
   line-height: 1.6;
   color: #111;
+  background: #fff; /* Entire page white */
 }
 
 /* ========== CONTACT SECTION ========== */
@@ -159,20 +160,23 @@ input[type=number]::-webkit-outer-spin-button {
   box-shadow: 0 0 20px rgba(255, 92, 51, 1);
 }
 
-/* ========Launching  ======== */
-
-.launching img{
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  width: 175px;
+/* ======== Launching Image (Fixed) ======== */
+.launching img {
+  width: 250px;
   height: auto;
-  border-radius: 15px;
-  margin: 20px auto;
-  object-fit: cover;
+
+
+  /* FIXED: remove white box */
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+
+   /* Make PNG blend cleanly */
+  object-fit: contain;
 }
 
-.launching img:hover{
+.launching img:hover {
   transform: scale(1.06);
   cursor: default;
 }
@@ -367,19 +371,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* ========== ANIMATIONS ========== */
 @keyframes pulseShadow {
-  0% {
-    box-shadow: 0 0 40px rgba(255, 92, 51, 0.6);
-  }
-  50% {
-    box-shadow: 0 0 20px rgba(255, 92, 51, 0.9);
-  }
-  100% {
-    box-shadow: 0 0 10px rgba(255, 92, 51, 0.6);
-  }
+  0% { box-shadow: 0 0 40px rgba(255, 92, 51, 0.6); }
+  50% { box-shadow: 0 0 20px rgba(255, 92, 51, 0.9); }
+  100% { box-shadow: 0 0 10px rgba(255, 92, 51, 0.6); }
 }
-/* ========= Responsive Fix: Country Code Small, Phone Box Big ========= */
 
-/* For mobile devices (≤768px) */
+/* ========= Responsive Fix: Country Code Small, Phone Box Big ========= */
 @media (max-width: 768px) {
   .phone-input-container {
     display: flex;
@@ -388,24 +385,22 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .country-code-select {
-    flex: 0 0 30%;       /* smaller width for country code */
+    flex: 0 0 30%;
     min-width: 100px;
     font-size: 13px;
     padding: 10px;
   }
 
   .phone-number-input {
-    flex: 1;             /* takes remaining space */
-    width: 100%;
+    flex: 1;
     font-size: 14px;
     padding: 12px;
   }
 }
 
-/* For extra small screens (≤480px) */
 @media (max-width: 480px) {
   .country-code-select {
-    flex: 0 0 25%;       /* even smaller */
+    flex: 0 0 25%;
     min-width: 85px;
     font-size: 12px;
     padding: 8px;
@@ -413,9 +408,7 @@ input[type=number]::-webkit-outer-spin-button {
 
   .phone-number-input {
     flex: 1;
-    width: 100%;
     font-size: 13px;
     padding: 10px;
   }
 }
-

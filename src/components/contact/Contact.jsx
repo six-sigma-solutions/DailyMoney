@@ -187,7 +187,7 @@ export default function Contact() {
             Chennai, TN-600077. <br />
           <div className="launching">
             <strong><p style={{fontWeight: "bold", paddingTop: "10px"}}>Launching soon !!!<br />
-              <img src="/centerphone.jpg"></img></p></strong>
+              <img src="/411.png"></img></p></strong>
           </div>
             <strong><p style={{fontWeight: "bold"}}>Singapore, Malayasia, Australia, Dubai, London, France, Canada & USA.</p></strong>
           </p>
