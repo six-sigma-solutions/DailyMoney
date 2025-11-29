@@ -204,7 +204,7 @@ export default function Home() {
               </div>
               <img
                 className="solution-card-img1"
-                src="/ph-3.jpg"
+                src="/3rdneon.jpg"
                 alt="AI Tools"
               />
             </div>
