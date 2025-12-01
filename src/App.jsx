@@ -22,7 +22,7 @@ import Gratitude from "./components/gratitude/Gratitude";
 import Mypromises from "./components/mypromises/Mypromises";
 import FullFooter from "./components/footer/FullFooter";
 import Bio from "./components/biopic/bio";
-import Cp from "./components/cpcontact/cp";
+import Cp from "./components/cpcontact/Cp";
 export default function App() {
   return (
     <AuthProvider>
