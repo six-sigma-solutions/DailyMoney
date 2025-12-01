@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Cp.css";
+import "./Selvamani.css";
 import Footer from "../footer/Footer";
 import emailjs from "@emailjs/browser";
 
@@ -175,8 +175,8 @@ return (
       </div>
 
       <div className="contact-image">
-        <img src="/cpdian12.png" alt="Contact Us" />
-        <span className="slogans">Traveling with Dr.V ChellaPondy</span>
+        <img src="/person2.PNG" alt="Contact Us" />
+        <span className="slogans">Traveling with R.K.Selvamani</span>
       </div>
     </div>
 

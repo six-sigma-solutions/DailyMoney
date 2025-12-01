@@ -3,6 +3,7 @@ import './bio.css'; // This line imports your CSS styles
 
 function Bio() {
   return (
+
     <div className="bio-page-container">
       {/* ================== TOP FOUNDER SECTION ================== */}
       <div className="founder-header">
@@ -41,7 +42,7 @@ function Bio() {
             <h2>S.Vasu</h2>
           </div>
           <a 
-          href="Contact"
+          href="vasu"
          
           rel="noopener noreferrer"
           className="team-member-link"
@@ -62,8 +63,7 @@ function Bio() {
             <h2>R.K.Selvamani</h2>
           </div>
           <a 
-          href="Contact"
-         
+          href="Selvamani"
           rel="noopener noreferrer"
           className="team-member-link"
           >
@@ -81,21 +81,23 @@ function Bio() {
             <img src="person3.jpg" alt="Team Member 2" />
             <h2>C.Arvind</h2>
           </div>
-          <a href="Contact"  rel="noopener noreferrer" className="team-member-link">
+          <a href="arvind"  rel="noopener noreferrer" className="team-member-link">
             <span className="slogan">I want to became Entrepreneur.</span>
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="person4.jpg" alt="Team Member 1" />
             <h2>Dr.K.P.Kosygan</h2>
           </div>
-          <a href="Contact" rel="noopener noreferrer" className="team-member-link">
+          <a href="kosygan" rel="noopener noreferrer" className="team-member-link">
             <span className="slogan">I'm Forever a Student.</span>
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="https://placehold.co/100x100/EFEFEFF/grey?text=Member" alt="Team Member 2"/>
@@ -106,6 +108,7 @@ function Bio() {
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="https://placehold.co/100x100/EFEFEFF/grey?text=Member" alt="Team Member 2"/>
@@ -116,46 +119,51 @@ function Bio() {
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="dhanush.jpg" alt="Team Member 1"/>
             <h2>Dhanush A V</h2>
           </div>
-          <a href="Contact" rel="noopener noreferrer" className="team-member-link">
+          <a href="dhanush" rel="noopener noreferrer" className="team-member-link">
             <span className="slogan">My Healthy weight loss journey starts Now.</span>
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="kisore.jpg" alt="Team Member 2"/>
             <h2>Kishore K</h2>
           </div>
-          <a href="Contact"  rel="noopener noreferrer" className="team-member-link">
+          <a href="kishore"  rel="noopener noreferrer" className="team-member-link">
             <span className="slogan">Slim, Fit, and full of Energy.</span>
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="ai.jpg" alt="Team Member 2"/>
             <h2>Jeganraj A</h2>
           </div>
-          <a href="Contact"  rel="noopener noreferrer" className="team-member-link">
+          <a href="jegan" rel="noopener noreferrer" className="team-member-link">
             <span className="slogan">Healthy living happy living.</span>
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="raju.jpg" alt="xxxx"/>
             <h2>Illayaraju C</h2>
           </div>
-          <a href="Contact" rel="noopener noreferrer" className="team-member-link">
+          <a href="raju" rel="noopener noreferrer" className="team-member-link">
             <span className="slogan">Choosing health and happiness every day.</span>
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="" alt="xxxx"/>
@@ -166,6 +174,7 @@ function Bio() {
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="" alt="xxxx"/>
@@ -176,6 +185,7 @@ function Bio() {
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="https://placehold.co/100x100/EFEFEFF/grey?text=Member" alt="Team Member 2"/>
@@ -186,6 +196,7 @@ function Bio() {
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="https://placehold.co/100x100/EFEFEFF/grey?text=Member" alt="Team Member 2"/>
@@ -196,6 +207,7 @@ function Bio() {
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="https://placehold.co/100x100/EFEFEFF/grey?text=Member" alt="Team Member 2"/>
@@ -206,6 +218,7 @@ function Bio() {
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="https://placehold.co/100x100/EFEFEFF/grey?text=Member" alt="Team Member 2"/>
@@ -216,6 +229,7 @@ function Bio() {
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="https://placehold.co/100x100/EFEFEFF/grey?text=Member" alt="Team Member 2"/>
@@ -226,6 +240,7 @@ function Bio() {
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="https://placehold.co/100x100/EFEFEFF/grey?text=Member" alt="Team Member 2"/>
@@ -236,6 +251,7 @@ function Bio() {
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="https://placehold.co/100x100/EFEFEFF/grey?text=Member" alt="Team Member 2"/>
@@ -246,6 +262,7 @@ function Bio() {
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="https://placehold.co/100x100/EFEFEFF/grey?text=Member" alt="Team Member 2"/>
@@ -256,6 +273,7 @@ function Bio() {
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="https://placehold.co/100x100/EFEFEFF/grey?text=Member" alt="Team Member 2"/>
@@ -266,6 +284,7 @@ function Bio() {
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="https://placehold.co/100x100/EFEFEFF/grey?text=Member" alt="Team Member 2"/>
@@ -276,6 +295,7 @@ function Bio() {
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="https://placehold.co/100x100/EFEFEFF/grey?text=Member" alt="Team Member 2"/>
@@ -286,6 +306,7 @@ function Bio() {
             <div className="pointing-icon">👆</div>
           </a>
         </div>
+
         <div className="team-member">
           <div className="profile">
             <img src="https://placehold.co/100x100/EFEFEFF/grey?text=Member" alt="Team Member 2"/>
