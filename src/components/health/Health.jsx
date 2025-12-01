@@ -63,7 +63,7 @@ const Health = () => {
         </div>
       </div>
     </section>
-    
+
     <section className="divider">
             <div className="container-1 right-image full-screen">
               <img src="sunday.jpg" alt="Styled" className="styled-img" />
@@ -76,7 +76,7 @@ const Health = () => {
       </section>
 
     
-
+      <section className="divider">
       <div className="container left-image">
         <img src="healthcopy.jpg" alt="Styled" className="styled-img" />
         <div className="box-1 color4">
@@ -85,7 +85,7 @@ const Health = () => {
           <h1>I live strong, I stay fit, I grow limitless.</h1>
         </div>
       </div>
-
+      </section>
 
       {/* Footer */}
       <footer id="footer" className="footer">

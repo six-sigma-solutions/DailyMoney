@@ -244,7 +244,7 @@ html { scroll-behavior: smooth; }
 
 /* Zigzag Layout Directions */
 .container.left-image, .container-1.left-image { flex-direction: row;
- }
+}
 .container.right-image, .container-1.right-image { flex-direction: row-reverse;
 }
 
@@ -256,6 +256,7 @@ html { scroll-behavior: smooth; }
   max-width: none;
   box-sizing: border-box;
   background-color: #fff !important;
+  margin-top: 10px;
 }
 
 .footer:hover 
@@ -393,6 +394,10 @@ html { scroll-behavior: smooth; }
     height: auto;
     margin: 0 auto;
   }
+  .color1 h1, .color2 h1, .color3 h1, .color4 h1{
+    font-size: 24px;
+    padding: 10px;
+  } 
   .color h2{
     font-size: 18px;
     width: 90%;
@@ -415,6 +420,8 @@ html { scroll-behavior: smooth; }
     font-size: 18px;
   }
   .divider{
-    box-shadow: 0 20px 60px rgb(255,255,255);
+    margin-top: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 60px rgb(154, 147, 147);
   }
 }
