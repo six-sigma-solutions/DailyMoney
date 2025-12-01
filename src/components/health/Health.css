@@ -182,7 +182,6 @@ html { scroll-behavior: smooth; }
   background: linear-gradient(-45deg, #43cea2, #185a9d, #56ccf2, #2f80ed);
   background-size: 400% 400%;
   animation: gradientShift 12s ease infinite;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 @keyframes gradientShift {
@@ -244,8 +243,10 @@ html { scroll-behavior: smooth; }
 }
 
 /* Zigzag Layout Directions */
-.container.left-image, .container-1.left-image { flex-direction: row; }
-.container.right-image, .container-1.right-image { flex-direction: row-reverse; }
+.container.left-image, .container-1.left-image { flex-direction: row;
+ }
+.container.right-image, .container-1.right-image { flex-direction: row-reverse;
+}
 
 /* ---------------- FOOTER ---------------- */
 .footer {
@@ -412,5 +413,8 @@ html { scroll-behavior: smooth; }
   }
   .hero-content p{
     font-size: 18px;
+  }
+  .divider{
+    box-shadow: 0 20px 60px rgb(255,255,255);
   }
 }

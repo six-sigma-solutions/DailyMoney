@@ -42,7 +42,7 @@ const Health = () => {
       </section>
 
       {/* Container Sections */}
-
+    <section className="divider">
       <div className="container-1 right-image">
         <img src="healthpc.jpg" alt="Styled" className="styled-img" />
         <div className="box color1">
@@ -51,7 +51,9 @@ const Health = () => {
           <h1>Fitness is the art <br />I practice for life.</h1>
         </div>
       </div>
+    </section>
 
+      <section className="divider">
       <div className="container left-image">
         <img src="jokk(h).jpg" alt="Styled" className="styled-img " />
         <div className="box-1 color2">
@@ -60,7 +62,9 @@ const Health = () => {
           <h1>Wellness isn’t a goal, it’s my lifestyle.</h1>
         </div>
       </div>
-
+    </section>
+    
+    <section className="divider">
             <div className="container-1 right-image full-screen">
               <img src="sunday.jpg" alt="Styled" className="styled-img" />
               <div className="box color3">
@@ -69,6 +73,7 @@ const Health = () => {
                 <h1>Wellness is not a goal, it’s my lifetime mission.</h1>
               </div>
             </div>
+      </section>
 
     
 
