@@ -31,7 +31,7 @@ import Selvamani from "./components/selvamanicontact/Selvamani";
 import Dhanush from "./components/dhanushcontact/Dhanush";
 import Kishore from "./components/kishorecontact/Kishore";
 import Raju from "./components/rajucontact/Raju";
-import Jegan from "./components/jegancontact/jegan";
+import Jegan from "./components/jegancontact/Jegan";
 
 export default function App() {
   return (
