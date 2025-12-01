@@ -18,7 +18,7 @@ function Bio() {
         </div>
         <hr />
         <a 
-          href="Contact"
+          href="cp"
           rel="noopener noreferrer"
           className="team-member-link"
         >

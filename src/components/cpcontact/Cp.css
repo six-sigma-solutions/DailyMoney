@@ -1,0 +1,461 @@
+/* -------------------------------------------------------
+   GLOBAL STYLES
+------------------------------------------------------- */
+.contact-page {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/* -------------------------------------------------------
+   TOP SECTION (TEXT LEFT, IMAGE RIGHT)
+------------------------------------------------------- */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-text h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.contact-text h1 {
+  font-size: 30px;
+  font-weight: 200;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.contact-image {
+  position: relative;
+  right: 180px;
+}
+
+.contact-image img {
+  width: 380px;
+  height: 290px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.slogans {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  background-color:#000080;
+  border-radius: 20px;
+  padding: 2px 5px;
+}
+
+/* -------------------------------------------------------
+   MAIN CONTAINER
+------------------------------------------------------- */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+/* ========== OFFICE INFO ========== */
+.office-info h3 {
+  font-size: 18px;
+  margin: 3px 0 4px;
+  padding-top: 40px;
+}
+
+.office-info p {
+  font-size: 18px;
+  line-height: 1.8rem;
+  font-weight: 300;
+  padding: 1px;
+}
+
+.office-info a {
+  text-decoration: none;
+  color: black;
+}
+
+.office-info i {
+  font-size: 22px;
+  padding: 10px 40px 20px 0;
+}
+
+.office-info i:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.office-info strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 4px;
+  padding: 10px 0;
+}
+
+/* ========== FORM SECTION ========== */
+.form-section {
+  padding-top: 40px;
+}
+
+.form-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.form-section input,
+.form-section textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: 0px 8px 16px rgba(0.1, 0.1, 0.1, 0.1);
+}
+
+textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+/* Remove spinner in number inputs */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ========== PHONE INPUT ========== */
+.phone-input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.country-code-select,
+.phone-number-input {
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+  box-shadow: 0px 8px 16px rgba(0.1, 0.1, 0.1, 0.1);
+}
+
+.country-code-select {
+  min-width: 140px;
+  cursor: pointer;
+}
+
+.country-code-select:focus,
+.phone-number-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.phone-number-input {
+  flex: 1;
+}
+
+/* ========== BUTTON ========== */
+.send-btn {
+  width: fit-content;
+  padding: 14px 30px;
+  background: #e63946;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  animation: pulseShadow 2s infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #ff704d;
+  box-shadow: 0 0 20px rgba(255, 92, 51, 1);
+}
+
+/* ========Launching  ======== */
+
+.launching img{
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+  box-shadow: none !important;
+  border-radius: 0px !important
+}
+
+.launching img:hover{
+  transform: scale(1.06);
+  cursor: default;
+}
+
+/* ========== FOOTER ========== */
+.footer-main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 48px 32px 64px;
+  border-radius: 28px;
+  background: #111;
+  color: #fff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-cta {
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.footer-cta h2 {
+  font-size: 2.4em;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.footer-cta .say-hello-btn {
+  background: #e63946;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 32px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  border: none;
+}
+
+.footer-cta .say-hello-btn:hover {
+  background: #b71c1c;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 24px 0;
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-logo-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 340px;
+  gap: 12px;
+}
+
+.footer-logo-block img {
+  width: 50px;
+}
+
+.footer-logo-text {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.footer-subtext {
+  font-size: 1.05em;
+  color: #bdbdbd;
+  max-width: 320px;
+}
+
+.footer-links-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.footer-links-col h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.footer-links-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links-col ul li {
+  margin-bottom: 12px;
+}
+
+.footer-links-col ul li a {
+  color: #949090;
+  line-height: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.footer-links-col ul li a:hover {
+  color: #d32a2a;
+}
+
+.footer-copyright {
+  color: #bdbdbd;
+  font-size: 0.9em;
+  margin-top: 20px;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablets (≤1024px) */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .contact,
+  .contact-1 h1 {
+    padding: 10px 20px;
+  }
+
+  .footer-links-block {
+    gap: 60px;
+  }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  body {
+    margin: 20px;
+  }
+
+  .contact-1 h1 {
+    font-size: 26px;
+  }
+
+  .footer-main {
+    padding: 40px 24px;
+  }
+
+  .footer-cta h2 {
+    font-size: 1.8em;
+  }
+
+  .footer-links-block {
+    gap: 40px;
+  }
+
+  .send-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Small Mobile (≤480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0;
+  }
+
+  .contact,
+  .contact-1 h1 {
+    padding: 5px 15px;
+  }
+
+  .country-code-select {
+    min-width: 100px;
+  }
+
+  .footer-cta h2 {
+    font-size: 1.6em;
+  }
+
+  .footer-links-block {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes pulseShadow {
+  0% {
+    box-shadow: 0 0 40px rgba(255, 92, 51, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 92, 51, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 92, 51, 0.6);
+  }
+}
+/* ========= Responsive Fix: Country Code Small, Phone Box Big ========= */
+
+/* For mobile devices (≤768px) */
+@media (max-width: 768px) {
+  .phone-input-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  .country-code-select {
+    flex: 0 0 30%;       /* smaller width for country code */
+    min-width: 100px;
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .phone-number-input {
+    flex: 1;             /* takes remaining space */
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+/* For extra small screens (≤480px) */
+@media (max-width: 480px) {
+  .container{
+    margin-top: 40px;
+    }
+  .country-code-select {
+    flex: 0 0 25%;       /* even smaller */
+    min-width: 85px;
+    font-size: 12px;
+    padding: 8px;
+  }
+  .phone-number-input {
+    flex: 1;
+    width: 100%;
+    font-size: 13px;
+    padding: 10px;
+  }
+  .contact-image{
+    right: 0;
+  }
+  .slogans{
+    bottom: -60px;
+    font-size: 18px;
+  }
+  .contact-image img{
+    width: 300px;
+    height: 250px;
+    margin: 5px auto;
+  }
+}
