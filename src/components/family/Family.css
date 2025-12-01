@@ -3,7 +3,7 @@
 /* ======================================================= */
 /* RESET + BASE STYLES (TIGHT SPACING VERSION)              */
 /* ======================================================= */
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', 'Arial', sans-serif; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
 
 /* Changed padding: 0 10px; (from prior) or removed it (from last block) to padding: 0 20px; */
 body { color: #222; background: #fff; line-height: 1.5; overflow-x: hidden; padding: 0 20px; }
@@ -144,7 +144,7 @@ footer .btn { margin: 0.6rem 0; }
   /* Changed navbar padding from 0.5rem 4% to 0.5rem 20px */
   .navbar { padding: 0.5rem 20px; }
   .logo { font-size: 1.2rem; }
-  .step { gap: 15px; margin: 2px 0; }
+  .step { gap: 15px; margin: 15px 0; box-shadow: 0 2px 6px rgb(154, 147, 147); padding: 15px 0; }
   .step-img { max-width: 260px; }
   .step-img img{
     margin: 5px auto;
@@ -166,5 +166,12 @@ footer .btn { margin: 0.6rem 0; }
   .process{
     margin: 5px auto;
     padding: 0 10px;
+  }
+  .step-content{
+    margin: 5px;
+  }
+  .step-content p{
+    font-size: 18px;
+
   }
 }
