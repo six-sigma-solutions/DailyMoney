@@ -284,14 +284,14 @@ export default function Home() {
         {/* The other team members remain in the grid below */}
         <div className="team-grid">
           <div className="team-member-card">
-            <img src="person-1.jpg" alt="S.Vasu" />
-            <h4 className="team-member-name">S.Vasu</h4>
+            <img src="person2.PNG" alt="R.K.selvamani" />
+            <h4 className="team-member-name">R.K.Selvamani</h4>
           </div>
 
 
           <div className="team-member-card">
-            <img src="https://via.placeholder.com/120" alt="xxxx" />
-            <h4 className="team-member-name">xxxxx</h4>
+            <img src="person-1.jpg" alt="xxxx" />
+            <h4 className="team-member-name">S.Vasu</h4>
           </div>
         </div>
       </section>
